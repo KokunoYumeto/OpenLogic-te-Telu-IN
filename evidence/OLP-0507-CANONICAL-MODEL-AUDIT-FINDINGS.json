@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTCAN-20260927",
+  "unit_id": "OLP-0507",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+  "source_sha256": "2397d36f77e15b27cf5889ab0e2bdfd34e060416aae5089afbfccb881cde8128",
+  "findings": [
+    {
+      "finding_id": "OLTEINTCAN-001",
+      "source_locator": "canonical-model.tex lines 59-63; final valuation-monotonicity argument",
+      "classification": "induction_parameter_is_starting_sequence_not_extension_length",
+      "source_issue": "Induction on the fixed starting sequence does not establish the inclusion along arbitrary finite extensions.",
+      "minimal_treatment": "Hold the starting sequence fixed and induct on the length of the appended segment, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

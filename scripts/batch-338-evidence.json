@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "338",
+  "unit_id": "OLP-0689",
+  "unit_order": 689,
+  "source_path": "content/proof-theory/propositions-as-types/proofs-to-terms.tex",
+  "blocks": 10,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10188,
+  "previous_terms": 378,
+  "expected_corrections": 643,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నిరూపణ/నియమ గద్యం, సందర్భం, సాక్ష్యం, బంధనం పదాలను పూర్వ లాంబ్డా, సహజ నిగమన విభాగాలతో పోల్చాం.",
+  "evidence_limit": "సాక్షి-పదానికి ప్రత్యేక తెలుగు type-theory సాక్ష్యం పరిమితం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T379",
+    "source_term": "proof-to-term conversion; witnesses in context; proof height; lambda abstraction",
+    "telugu": "నిరూపణ-పద మార్పిడి; సందర్భంలో సాక్ష్యం ఇవ్వడం; నిరూపణ ఎత్తు; లాంబ్డా అమూర్తీకరణ",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సాక్ష్యం ఇవ్వడం సందర్భంలోని సూత్రానికి సంబంధించిన పాత్రగా స్పష్టం; అమూర్తీకరణ ఊహ విడుదలను బంధనంగా నమోదు చేస్తుంది.",
+    "uncertainty": "సాక్షి-పదానికి ప్రత్యేక తెలుగు type-theory సాక్ష్యం పరిమితం; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

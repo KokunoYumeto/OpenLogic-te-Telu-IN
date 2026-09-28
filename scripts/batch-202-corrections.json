@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0553",
+  "source_path": "content/set-theory/ordinals/basic.tex",
+  "source_sha256": "7a9d1d198227e2de1a2af719417ae7d81ffc2c727e6da7d992b194f44a7f19c1",
+  "audit_id": "OLTESTORDBASIC-20260927",
+  "audit_review_path": "evidence/OLP-0553-ORDINAL-BASICS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "63b0a7bdcf74c0d496d1d9700e153b46e8b432a3900013a73c7158d80790be20",
+  "audit_findings_path": "evidence/OLP-0553-ORDINAL-BASICS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "1c0af1e6651a11dcd05a933b74cf468aeb2cc90a51e3f0bf92c63255c254a70a",
+  "previous_corrections": 482,
+  "treatments": {
+    "OLTESTORDBASIC-001": {
+      "target_line": 106,
+      "body_treatment": "మూలంలోని సూత్రాన్ని మూలకంగా అన్న అస్పష్టతను సరిచేసి, సూత్రాన్ని సంతృప్తిపరిచే మూలకాలలో అత్యల్పమైనదాన్ని ఎంచుకుని ముందరి క్రమసంఖ్యలపై సూత్రం అసత్యమని ప్రకటించాం."
+    }
+  }
+}

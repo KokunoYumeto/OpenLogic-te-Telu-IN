@@ -1,386 +1,102 @@
-# OpenLogic తెలుగు — తెలుగు పాఠకుల మార్గదర్శి (te-Telu-IN)
-
-ఇది [ఓపెన్ లాజిక్ ప్రాజెక్ట్](https://openlogicproject.org/) పాఠ్యానికి
-రూపొందుతున్న తెలుగు యంత్రానువాదం. స్థిరపరిచిన
-[మూల సంచిక](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0)
-లోని 722 TeX ఫైళ్లన్నిటినీ అనువదించి ఒక సమగ్ర పాఠక సంచికగా ఇవ్వడమే
-లక్ష్యం. ప్రస్తుతం పూర్తి సంచిక సిద్ధం కాలేదు; ఈ దిగువ పరిధులను
-ఒకదానితో మరొకటి కలపకండి.
-
-## చదవడం, దింపుకోవడం
-
-- [ప్రస్తుత GitHub విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
-  వద్ద OLP-0004–OLP-0279 వరకు 276/722 భాగాల 515-పేజీల PDF,
-  ప్రవాహానికి అనుగుణమైన EPUB, నేరుగా దింపుకోదగిన సమీకృత LaTeX
-  ఫైలు, పూర్తి సవరించదగిన మూల-వృక్ష ZIP ఉన్నాయి. PDFతోపాటు దానికి
-  సరిపడే మూల ఫైళ్లను అదే విడుదలలో ఉంచాం.
-- [వెబ్‌లో చదివే తెలుగు సంచిక](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
-  ఇంకా OLP-0004–OLP-0026 వరకే, అంటే 23/722 భాగాలు.
-- ఈ నిల్వలో నేరుగా సవరించదగిన తెలుగు TeX ముసాయిదాలు
-  OLP-0001–OLP-0426 వరకు వరుసగా 426/722 ఉన్నాయి. ఇవన్నీ
-  ప్రస్తుత PDF, EPUB లేదా వెబ్ పాఠ్యంలో ఉన్నాయని అర్థం కాదు.
-  తదుపరి అనువదించాల్సినది OLP-0427; ఇంకా 296 ఫైళ్లు మిగిలాయి.
-- [తాజా Zenodo సంచిక DOI](https://doi.org/10.5281/zenodo.22726674),
-  [కొనసాగే సంచికల DOI](https://doi.org/10.5281/zenodo.22307937)
-  ప్రస్తుత v0.4.0 మధ్యంతర విడుదలనే సూచిస్తాయి. Zenodoలోనూ
-  276-భాగాల PDF/EPUB, వాటికి సరిపడే LaTeX/నిర్మాణ-మూలం ఉన్నాయి;
-  ఇది 722-భాగాల పూర్తి పాఠ్యం కాదు.
-
-## మూలం, అనువాదం, పరిమితులు
-
-ఆంగ్ల మూలంలోని 722 ఫైళ్ల బైట్లు మారకుండా ఈ నిల్వలోని upstream/content
-వృక్షంలో భద్రపరచబడ్డాయి. మూల రచయితలు, సహకారుల వివరాలు
-[ఇక్కడ](https://openlogicproject.org/people/) ఉన్నాయి. తెలుగు
-సంచికకు మూల రచయితల ఆమోదం ఉందని చెప్పడం లేదు. గణిత నిర్వచనలు,
-సూత్రాలు, లేబుళ్లు, ఉదాహరణలు, సాధనలు, సూచనలు నిలిపి,
-అవసరమైన మూలపాఠ దోషాలను తెలుగు వాక్యం పక్కనే ప్రకటిస్తున్నాం.
-మూల ఆంగ్ల ఫైళ్లను సరిచేయడం లేదు.
-
-స్థానిక ఆంధ్రప్రదేశ్, తెలంగాణ, ఉమ్మడి ఆంధ్రప్రదేశ్ తెలుగు గ్రంథాల
-నిజమైన పేజీలను చూసి పదజాలం, శైలికి ఆధారాలు నమోదు చేశాం.
-వాటి [మూలాల సూచీ](evidence/CANON_SOURCES.jsonl),
-[పేజీల సూచీ](evidence/CANON_PASSAGES.jsonl) ఉన్నాయి.
-పేజీని చూసినంత మాత్రాన ప్రత్యేక లాంబ్డా కలనశాస్త్ర పదానికి
-నేరుగా సాక్ష్యం దొరికిందని చెప్పడం లేదు; ఆ భావానికి స్థిర
-మూలపాఠ నిర్వచనమే ఆధారం. కాపీరైట్ పరిమితులున్న అసలు పుస్తకాలను,
-వాటి పేజీ చిత్రాలను ఇక్కడ పంచడం లేదు.
-
-ప్రస్తుత [పదజాల నిర్ణయాలు](evidence/TERM_DECISIONS.jsonl) 118;
-[ప్రకటిత మూల దోషాలు, సవరణలు](evidence/SOURCE_CORRECTIONS.jsonl) 393.
-వాటిలో ఆల్ఫా-ప్రతిస్థాపన సిద్ధాంతపు రెండు, సమాంతర బీటా
-ప్రతిస్థాపన ఉపసిద్ధాంతపు ఒకటి, బీటా సంకోచనం నుంచి
-సమాంతర తగ్గింపుకు ఒక నిరూపణ ఖాళీ ఇంకా
-పూర్తి నిరూపణ లేకుండానే స్పష్టంగా గుర్తించబడ్డాయి. కొత్త
-బీటా-ఏటా విభాగాల్లో సంపూర్ణ వికాస సమీకరణాల అతివ్యాప్తి,
-నిర్వచించని ఒక-దశ సంకేతం, వారసత్వ నిరూపణ ఖాళీలనూ
-ప్రకటించాం.
-[తెలుగు నిర్ణయాల మార్గదర్శి](evidence/START_HERE.te.md)లో 511 నిర్ణయాలు,
-1,064 అమలు స్థానాలు ఉన్నాయి. తుది పేజీ సంఖ్యలు సమగ్ర పాఠక
-సంచిక ముద్రణ తరువాతే నిర్ణయించగలం; ఇప్పటికి ఫైలు, విభాగం,
-పంక్తి, అనుసంధానిత ఖండం ద్వారా ఖచ్చితమైన స్థానాలు ఉన్నాయి.
-[తాజా తెలుగు పరిశీలన](evidence/BATCH-077-SEMANTIC-REVIEW.md),
-[ప్రామాణిక అనువాదపు మూల పరిశీలన](evidence/source-audits/2026-09-27-modal-standard-translation-telugu/REVIEW.md)
-మోడల్ సూత్రాల ప్రామాణిక అనువాదం, ఏకస్థానిక ద్వితీయ-స్థాయి
-చట్ర నిర్వచనీయత, ఒక ప్రకటిత సత్య-శాఖ సవరణను వివరిస్తాయి. మునుపటి నిర్ణయ
-నమోదుల్లో ఆంగ్లం ఇంకా ఉంది; వాటి పూర్తి తెలుగు రూపం పనిలో ఉంది.
-
-OLP-0001–OLP-0426 వరకు 426/426 ఫైళ్లు మూల-లక్ష్య ఖండాలు,
-TeX నిర్మాణాలు, మూల పదసంకేతాలు, స్థిర గుర్తింపులు,
-ప్రకటిత సవరణలను పరిగణనలోకి తీసుకున్న గణిత రూపాల
-[నిర్మాణ తనిఖీ](evidence/CUMULATIVE-OLP0426-STRUCTURAL-QA.json)
-దాటాయి. 6,496 అనుసంధానిత ఖండాల్లో 4,083 అనువాద
-భాషా ఖండాలు; వాటికి చదివిన తెలుగు పేజీల సూచనలు ఉన్నాయి.
-మిగిలిన 2,413 ఖండాలు నిర్మాణాత్మకమైనవి. పాత వర్గీకరణలో
-పాఠకులకు కనిపించే 110 ఖండాలను పొరపాటున నిర్మాణాత్మకంగా
-చూపిన విషయం [ఇక్కడ](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
-సరిచేశాం; మూల లేదా అనువాద బైట్లు మారలేదు.
-
-ఈ తనిఖీలు యంత్రం, ఇదే Codex ఏజెంట్ చేసినవి; స్వతంత్ర మానవ
-భాషా లేదా గణిత నిపుణ ధృవీకరణ కాదు. కొన్ని ప్రత్యేక పదాలు
-తాత్కాలిక ఎంపికలే. PDF ఇంకా యాక్సెసిబిలిటీ ట్యాగులతో
-లేదు. ప్రస్తుత PDF/EPUBకు ప్రత్యేకంగా నాలుగు-పాస్ TeX నిర్మాణం,
-గ్రంథసూచి/సూచనల తనిఖీ, అన్ని పేజీల చిత్రాల పరిశీలన చేశాం.
-పూర్తి 722-భాగాల పాఠక సంచిక ఇంకా నిర్మించబడలేదు. నిర్వాహకుడి
-వేరైన తెలుగు-మూలాధార సమీక్ష OLP-0004–OLP-0148 వరకే;
-ఈ 426 ముసాయిదాలకు ఆ ధృవీకరణను విస్తరించి చెప్పడం లేదు.
-
-## AI పని వెల్లడింపు, పునర్నిర్మాణం, హక్కులు
-
-ఈ పనిలో OLP-0004–OLP-0355 తెలుగు అనువాదం, సవరణలు,
-సంపాదక పనిని OpenAI Codex — GPT-5.6 Sol, Ultra effort చేసింది;
-OLP-0001–OLP-0003, OLP-0356–OLP-0406పై అదే పనిని OpenAI Codex — GPT-6 Sol,
-Ultra effort చేసింది. OLP-0407–OLP-0414నూ ఇదే Codex పనిలో
-యంత్రానువాదంగా సిద్ధం చేశాం; OLP-0415–OLP-0418కూ
-అదే పనిలో యంత్రానువాదం జరిగింది. ఈ పన్నెండు ఫైళ్లకు ఖచ్చితమైన
-మోడల్ గుర్తింపును స్వతంత్రంగా తిరిగి తనిఖీ చేయలేదు.
-OLP-0419–OLP-0426 అనువాదం, సవరణలు, భావసమీక్షను
-OpenAI Codex — GPT-6 Sol, Ultra effort చేసింది; ఈ శ్రేణి
-కార్య-సందర్భంలో మోడల్, శ్రమ-స్థాయి గుర్తింపును తిరిగి తనిఖీ చేశాం.
-ఇవి మానవ సంపాదకత్వం లేదా సమీక్ష
-అని అర్థం కాదు. OLP-0406 వరకు పేర్కొన్న మోడల్,
-శ్రమ-స్థాయి వివరాలను స్థానిక కార్య-సందర్భ నమోదుతో తనిఖీ చేశాం.
-
-పూర్తి మూలం, నిర్మాణ సూచనలు విడుదలలో ఉన్నాయి.
-ప్రస్తుత 276-భాగాల PDFను మళ్లీ నిర్మించాలంటే Windows,
-PowerShell 7.4+, Node.js 22+, XeLaTeX/MiKTeX, అవసరమైన TeX
-ప్యాకేజీలు కావాలి. నిల్వ మూలం నుంచి ఈ ఆదేశం నడుస్తుంది:
-
-    pwsh -File scripts/build-cumulative-279.ps1
-
-నిర్మాణం యంత్రవ్యాప్త TeX మ్యూటెక్స్‌ను పట్టుకుని నాలుగు
-పాస్‌లు, వెంటనే జరిగే లాగ్ తనిఖీలన్నీ పూర్తయ్యాక విడుస్తుంది.
-పునర్నిర్మాణంలో సాధనాల సంచిక వల్ల PDF బైట్లు మారవచ్చు.
-ఈ పాఠ్యం, అనువాదం తగిన మేరకు
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) కింద;
-Noto Serif Telugu ఫాంటుకు వేరుగా
-[SIL OFL 1.1](fonts/OFL.txt) వర్తిస్తుంది.
-[హక్కులు, భాగాల వివరాలు](ATTRIBUTION.md) చూడండి.
-
-## Additional English information
-
-The English account below is supplementary; the Telugu guide above gives
-the access links, coverage, provenance, review status, AI attribution,
-rebuild command, and licensing information without requiring English.
-
 # OpenLogic తెలుగు (te-Telu-IN)
 
-An in-progress Telugu machine translation of the Open Logic Project.
-The complete target is 722 tracked TeX units at revision
-9620cc73f9c8e0ad003c514a5d3748f29611c4c0.
+ఇది [Open Logic Project](https://openlogicproject.org/) పాఠ్యానికి తెలుగు
+యంత్ర-సహాయ అనువాదం. స్థిరపరిచిన [ఆంగ్ల మూల సవరణ](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0)
+లోని 722 TeX విభాగాలూ ఇక్కడ వాటి మూల మార్గాలు, గుర్తింపులతో సంపాదించగల
+తెలుగు ఫైళ్లుగా ఉన్నాయి. మూల ఆంగ్ల ఫైళ్లు మార్చకుండా ఉంచాం.
 
-## Current release
+## పూర్తి పాఠక సంచిక
 
-The current cumulative checkpoint is
-[v0.4.0-cumulative-olp0279](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279).
-It provides a 515-page cumulative PDF, a reflowable cumulative EPUB, and exact
-editable/build-source packages for OLP-0004 through OLP-0279 (276 of 722
-units). It is also preserved in the existing Zenodo concept. The deployed
-semantic HTML reader remains bounded to OLP-0004 through OLP-0026 (23 units).
-This is **not the
-complete OpenLogic Telugu edition**.
+[v1.0.0 పూర్తి విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
+లో 722/722 విభాగాలను కలిపిన, వెతకగల PDF, రీఫ్లో EPUB, ఆఫ్‌లైన్
+సెమాంటిక్ HTML, సంపాదించగల తెలుగు TeX, పూర్తి మూలసంగ్రహం ఉన్నాయి.
+HTML ZIPను విప్పి `index.html` తెరిస్తే ఇంటర్నెట్ లేకుండానే చదవవచ్చు.
+గణితం MathMLలో, చిత్రాలు స్థానిక SVGలలో ఉన్నాయి; పాఠక రూపానికి
+బాహ్య స్క్రిప్టు సేవ అవసరం లేదు.
 
-Latest version DOI:
-[10.5281/zenodo.22726674](https://doi.org/10.5281/zenodo.22726674).
-Continuing concept DOI:
-[10.5281/zenodo.22307937](https://doi.org/10.5281/zenodo.22307937).
-The version DOI now identifies the v0.4.0 mirror: 20 public files, including
-six unchanged inherited files, with the cumulative PDF as Zenodo's preview.
-GitHub, GitHub Pages, and Zenodo
-publication verification is documented in [PUBLICATION.md](PUBLICATION.md).
-The repaired v0.4.0 release has 16 public assets; its cumulative EPUB and
-source companions, manifest, checksums, and QA records were downloaded
-anonymously and verified byte-for-byte.
+అన్ని 10,611 అనుసంధానిత ఖండాలు — 6,698 భాషా ఖండాలు, 3,913
+నిర్మాణాత్మక లేదా మెటాడేటా ఖండాలు —
+[మొత్తం నిర్మాణ తనిఖీ](evidence/CUMULATIVE-OLP0722-STRUCTURAL-QA.json)
+దాటాయి. [పూర్తి HTML తనిఖీ](evidence/FULL-HTML-QA.json),
+[EPUB తనిఖీ](evidence/FULL-EPUB-QA.json),
+[PDF నిర్మాణ తనిఖీ](evidence/FULL-PDF-STRUCTURAL-QA.json),
+[నమూనా పుటల దృశ్య తనిఖీ](evidence/FULL-PDF-VISUAL-QA.json) కూడా
+విడుదలతో ఉన్నాయి. [పదజాలం, మూల దిద్దుబాట్ల నిర్ణయాలు](evidence/DECISIONS.json)
+మరియు [తెలుగు మూలాధార సూచీ](evidence/CANON_SOURCES.jsonl) పరిశీలనకు
+అందుబాటులో ఉన్నాయి. మూలంలో సందేహాస్పదమైన చోట్ల ప్రకటిత తెలుగు
+[సవరణల నమోదు](evidence/SOURCE_CORRECTIONS.jsonl) ఉంది.
 
-Four hundred twenty-six full-unit editable TeX drafts form the contiguous
-OLP-0001--OLP-0426 range; editable coverage is 426/722 and the next manifest
-cursor is OLP-0427. They cover the
-opening front matter and corpus/part drivers, then the
-Sets, Relations and Functions material, Propositional and First-Order Logic,
-Model Theory, Computability and Turing Machines, plus the complete introductory
-chapter of Incompleteness, the complete Arithmetization of Syntax chapter and
-the complete Representability in Q, Theories and Computability, and
-Incompleteness and Provability chapters, followed by the complete Second-order
-Logic part: its driver and its Syntax and Semantics, Metatheory, and
-Second-order Logic and Set Theory chapters, followed by the Lambda Calculus
-part driver and its complete Introduction and Syntax chapters, plus the
-complete Church--Rosser chapter, followed by the Lambda Definability chapter
-driver and all nine active sections of Lambda Definability, ending with
-Minimization, Partial Recursive Functions, and Lambda-definable Functions
-Are Recursive, followed by the Many-valued Logic part driver and complete
-Syntax and Semantics chapter: its driver, introduction, Languages and
-Connectives, Formulas, Matrices, Valuations and Satisfaction, Semantic Notions,
-and Sublogics sections, followed by the complete Three-valued Logics chapter:
-its driver, introduction, Łukasiewicz, Kleene, Gödel, and Multiple Designation
-sections, followed by the complete Infinite-valued Logics chapter: its driver,
-introduction, Łukasiewicz, and Gödel sections, followed by the Sequent Calculus
-chapter driver and its four active imported sections, followed by the Normal
-Modal Logic part driver, Syntax and Semantics chapter driver, Introduction,
-Language of Basic Modal Logic, Simultaneous Substitution, Relational Models,
-Truth at a World, Truth in a Model, Validity, Tautological Instances, Schemas
-and Validity, and Entailment, followed by the complete Frame Definability
-chapter: its driver, introduction, accessibility properties, frames, modal
-definability, first-order definability, S5 equivalence frames, and standard
-translation with monadic second-order definability. Both chapters' active
-source imports are complete.
-The detached source file OLP-0652 in the preceding Sequent Calculus directory
-remains undrafted. All seventy-seven batches have
-source-aligned structural and same-agent semantic review records.
+ఇది యంత్ర-సహాయ అనువాదం; నిర్మాణ తనిఖీ లేదా పరిమిత నమూనా పరిశీలనను
+స్వతంత్ర భాషా/గణిత నిపుణ సమీక్షగా భావించవద్దు. కొన్ని సాంకేతిక పదాలు
+తాత్కాలిక నిర్ణయాలు; వాటి ఖచ్చితమైన అర్థానికి స్థిర ఆంగ్ల మూలంలోని
+నిర్వచనమే ఆధారం.
 
-Format coverage is deliberately separate. The current cumulative PDF and EPUB
-contain 276 editable units in OLP-0004--OLP-0279. The deployed semantic HTML
-reader contains OLP-0004--OLP-0026 only: 23 units, the complete Sets, Relations
-and Functions chapters. Thus 403 current editable drafts are not yet in that
-23-unit HTML reader, and 150 are not yet in the cumulative PDF or
-EPUB.
-The public browser version is
-[OpenLogic తెలుగు — సమితులు, సంబంధాలు, ప్రమేయాలు](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/).
-No editable-source cursor is presented as reader coverage, and this bounded
-release does not substitute for the unfinished full edition.
+## చారిత్రక పాక్షిక సంచికలు
 
-## Provenance and changes
+[v0.4.0 సంచిత విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
+OLP-0004–OLP-0279లోని 276 విభాగాలకు 515 పేజీల PDF, రీఫ్లో EPUB,
+సంపాదించగల LaTeX, నిర్మాణ మూలాలను ఇస్తుంది. [వెబ్ పాఠక సంచిక](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
+ఇప్పటికీ OLP-0004–OLP-0026లోని 23 విభాగాలకే పరిమితం. ప్రస్తుత
+[Zenodo సంచిక](https://doi.org/10.5281/zenodo.22726674),
+[కొనసాగే DOI](https://doi.org/10.5281/zenodo.22307937) కూడా ఆ పాక్షిక
+విడుదలకే చెందుతాయి; వాటిని 722-విభాగాల పూర్తి పాఠక సంచికగా భావించవద్దు.
 
-Original: [The Open Logic Project](https://openlogicproject.org/),
-[authors and contributors](https://openlogicproject.org/people/),
-[frozen source](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0).
-Edition hub: [OpenLogic translations](https://github.com/KokunoYumeto/OpenLogic-translations).
+పాత వెబ్ నమూనా, దాని Zenodo సంచికలను కొత్త పూర్తి విడుదలతో కలపకండి;
+పూర్తి పాఠ్యానికి పై v1.0.0 ఆస్తులనే వాడండి.
 
-Changes are Telugu machine translation, provisional terminology choices,
-grammatical realization of source text tokens, a foundations reader,
-font shaping and layout. Stable OLP identifiers, source paths, mathematical
-formulas, labels, citation keys, links and exercises are retained in the
-editable translation. The `upstream/content` mirror contains all 722 frozen
-English TeX units, byte-for-byte matched to `evidence/SOURCE_MANIFEST.jsonl`;
-those English source files are unmodified.
-This edition is not endorsed by the original authors.
+## మూలం, హక్కులు, పునర్నిర్మాణం
 
-Native Telugu textbook pages were actually consulted and indexed by source,
-page and hash. Andhra Pradesh, Telangana and pre-bifurcation witnesses are
-distinguished. Evidence for prose/register is not labelled attestation of
-every technical sense. Source definitions control the mathematics; in
-particular, the original zero-inclusive natural-number convention is kept.
-Original rights-restricted Telugu books and their page images are **not**
-redistributed here.
+మూల రచయితలు, సహకారులు [ఇక్కడ](https://openlogicproject.org/people/).
+ఈ అనువాదం వారి ఆమోదాన్ని సూచించదు. మూల పాఠ్యం, అనువాదానికి తగిన మేరకు
+[CC BY 4.0](LICENSE.md) వర్తిస్తుంది; చేర్చిన Noto Serif Telugu ఫాంట్లకు
+[SIL OFL 1.1](fonts/OFL.txt) వర్తిస్తుంది. పూర్తి
+[భాగాల/హక్కుల వివరణ](ATTRIBUTION.md) చూడండి. తెలుగు సాక్ష్య గ్రంథాల
+పుట సూచనలు, చిన్న పదజాల పరిశీలనలు మాత్రమే ఇక్కడ ఉన్నాయి; అసలు గ్రంథాల
+పూర్తి ప్రతులు లేదా స్కాన్లు పంచడం లేదు.
 
-The correction ledger records 393 audited source issues, with repairs or
-explicit disclosures beside the affected Telugu claims. Two gaps in the
-source proof of alpha-safe substitution, one in parallel-beta substitution,
-and one in the β-contraction-to-parallel proof
-remain disclosed, not repaired. The new βη sections also disclose overlapping
-complete-development equations, an undefined one-step relation, and dependent
-proof gaps.
-The new arithmetic-function sections additionally repair a constant-function
-subscript, five misstated one-step reductions, and an alternative multiplication
-term that otherwise ignores its second argument. The following truth-value
-section repairs a declared relation arity from n to k to match its two
-k-argument tests. The primitive-recursion section repairs the composition
-representative index/result name and the recurrence's outer step function.
-The fixpoints section discloses and repairs five slips in the factorial
-example, self-substitution, fixed-point inference, redex description and
-Church/Turing comparison. The final Lambda Definability sections correct the
-minimization result name, search recursion argument and closing parenthesis,
-clarify where self-reference arises, and repair a transposed section identifier.
-The Infinite-valued Logics chapter corrects a zero denominator and an
-out-of-range finite truth value, supplies a disclosed false-constant value,
-and removes stray nested math delimiters in a cases display.
-The Sequent Calculus chapter corrects two mismatched indices and a missing
-valuation argument in its definitions and explanation.
-The Normal Modal Logic language section removes one unmatched closing
-parenthesis from a tagged alternative for the defined conditional.
-The following semantics sections repair two substitution-variant tag scopes
-and one missing world argument in a box/diamond duality proof.
-The Frame Definability chapter additionally discloses a mistaken falsity
-constructor in the standard translation's truth case, corrected in Telugu.
-The frozen English
-bytes remain unchanged. Each correction is bound to a bounded audit, an exact
-source hash, target locator and declared mathematical delta. See
-[SOURCE_CORRECTIONS.jsonl](evidence/SOURCE_CORRECTIONS.jsonl), the
-[source-audit directory](evidence/source-audits/), and the current
-[latest audit](evidence/source-audits/2026-09-27-modal-standard-translation-telugu/REVIEW.md).
+అనువాదం, మూలంతో సరిపోలిక, నిర్ణయ-నమోదు, పాఠక రూపకల్పనలో యంత్ర సహాయం
+ఉంది. నిర్వచనాలు, సూత్రాలు, లేబుళ్లు, గ్రంథ సూచనలు, శ్రేణీకరణను
+నిలిపేందుకు తనిఖీలు చేశాం; ఇవి మానవ లేదా స్వతంత్ర నిపుణ సమీక్ష కావు.
+కొన్ని సాంకేతిక తెలుగు పదాలు తాత్కాలిక నిర్ణయాలు; వాటి గణిత అర్థానికి
+స్థిర ఆంగ్ల మూలంలోని నిర్వచనమే ఆధారం.
 
-The [canonical translation-decision index](evidence/START_HERE.md) exposes all
-118 current terminology/sense decisions and 393 correction/disclosure records across 1,064
-implementation occurrences, with exact
-source/target locators, aligned segment hashes, authorities actually checked,
-known evidence limits, alternatives, uncertainty, and concrete review
-questions. Its status is explicitly partial (426/722); optional expert review
-creates no translation hold. The canonical views include a
-[full readable register](evidence/TRANSLATION_DECISIONS_FULL.md), a
-[priority view](evidence/PRIORITY_REVIEW.md), a
-[one-row-per-occurrence CSV](evidence/DECISION_OCCURRENCES.csv),
-[machine JSON](evidence/DECISIONS.json), the byte-exact shared
-[JSON Schema](evidence/translation-decision.schema.json), and a
-[validation record](evidence/TRANSLATION_DECISION_QA.json). The older
-`EXPERT_REVIEW_*` files remain compatibility views. Final printed/PDF page fields
-remain explicitly pending until each unit enters the coherent reader and final
-pagination exists; exact unit, section, file and line locators are available now.
-The sanitized [canon-revalidation receipt](evidence/CANON-REVALIDATION-RECEIPT.json)
-binds the manager-audited 2,343-choice scope through OLP-0148 and its live
-central-validator `COMPLETE_PASS` result without redistributing the manager package or
-rights-restricted canon originals.
+చారిత్రక పాక్షిక PDFను పునర్నిర్మించడానికి Windows, PowerShell 7.4+,
+Node.js 22+, XeLaTeX/MiKTeX, అవసరమైన TeX ప్యాకేజీలు కావాలి:
 
-## QA and limitations
+```powershell
+pwsh -File scripts/build-cumulative-279.ps1
+```
 
-The 276-unit cumulative PDF passes correction-aware structural checks, a
-four-pass guarded XeLaTeX/BibTeX build with identical last-two-pass hashes,
-full-document text extraction, and all-page raster inspection. The final log
-has zero missing glyphs, undefined references or undefined citations. Its 33
-bounded overfull diagnostics (largest 58.89561 pt) were checked against the
-rendered pages and remain inside the page area.
+ఆ నిర్మాణం `Global\InterlanguageTeXSlotV1`ని అన్ని TeX/BibTeX పాస్‌లు,
+లాగ్ తనిఖీల వరకు పట్టుకుంటుంది. పూర్తి HTML/EPUB నిర్మాణానికి
+`scripts/build-reader-diagrams.py`, `scripts/build-html.mjs`,
+`scripts/audit-html.mjs`, `scripts/build-full-epub.py`,
+`scripts/audit-full-epub.py` ఉన్నాయి. పూర్తి PDFను అంగీకరించిన HTML
+నుంచి Chrome print ద్వారా తయారుచేసి `scripts/audit-full-pdf.py`తో
+తనిఖీ చేస్తాం; ఆ దశలో TeX పని జరగదు.
 
-The 23-unit foundations HTML and EPUB readers pass exact source-to-reader text,
-formula-annotation, identifier, link, statement-class, citation and diagram
-crosswalks. The EPUB is byte-deterministic, reflowable EPUB 3, contains 2,512
-MathML roots and eight packaged SVG resources, and passes EPUBCheck 5.3.0 with
-zero errors or warnings. The deployed reader passed desktop and 390-pixel
-visual, interaction, asset-loading and console checks; all 16 public files were
-then read back anonymously and matched the repository byte-for-byte.
+## English summary
 
-All 426 editable TeX drafts in OLP-0001--OLP-0426 pass correction-aware
-blank-block, environment, source-token, protected-identifier and
-mathematical-form checks. Seventy-seven same-agent semantic reviews record
-source-aligned reverse paraphrases and their limits. The cumulative structural
-receipt is [CUMULATIVE-OLP0426-STRUCTURAL-QA.json](evidence/CUMULATIVE-OLP0426-STRUCTURAL-QA.json).
-The [segment classification repair](evidence/SEGMENT-CLASSIFICATION-REPAIR-20260925.json)
-reclassified 110 previously mislabelled reader-visible blocks without changing
-source or translation bytes; all 6,496 current aligned blocks retain exact hashes.
-Beyond the explicit reader boundaries stated above, source QA does not imply
-PDF, EPUB, or HTML reader integration.
+All 722 tracked content modules at Open Logic Project revision
+`9620cc73f9c8e0ad003c514a5d3748f29611c4c0` now have aligned,
+editable Telugu TeX files at their original paths. A strict structural audit
+passes all 10,611 aligned blocks. This is machine-assisted work with
+source-comparison evidence, not an independently human-reviewed translation.
+The complete integrated reader is available in the
+[v1.0.0 full release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.0-full-olp0722)
+as a tagged/searchable PDF, reflowable EPUB, and self-contained offline HTML,
+alongside all editable TeX units and reproducible source and QA archives.
+Validation is structural and machine-assisted, with sampled semantic and
+visual review; it is not independent expert review.
 
-QA is machine/agent performed, not human or independent review. Several
-technical terms remain provisional. The PDF is not tagged. Source caveats
-and terminology uncertainty are retained in the public evidence directory.
-Checks on this chapter do not establish completion or QA of the whole corpus.
+The [earlier v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
+remains a 276-unit cumulative PDF/EPUB and editable-source tranche. The
+[deployed web reader](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
+covers 23 units. Its [Zenodo version DOI](https://doi.org/10.5281/zenodo.22726674)
+and [continuing concept DOI](https://doi.org/10.5281/zenodo.22307937)
+identify that historical partial edition, not the GitHub v1.0.0 assets.
 
-In this task, OpenAI Codex — GPT-5.6 Sol, Ultra effort produced the editable
-Telugu translation and corrections in OLP-0004--OLP-0355; OpenAI Codex — GPT-6 Sol,
-Ultra effort produced OLP-0001--OLP-0003 and OLP-0356--OLP-0406.
-The OLP-0407--OLP-0418 drafts are also AI work in this Codex task; the exact
-runtime model for these twelve was not separately reverified. None of this is
-human editing or independent specialist review. The earlier model/effort
-ranges were verified from the local task context record.
-OpenAI Codex — GPT-6 Sol, Ultra effort produced the OLP-0419--OLP-0426
-translation, corrections and same-agent semantic reviews; the runtime model
-and effort for these eight files were checked against this task's turn context.
-
-The decision views can be regenerated and schema-validated from the tracked
-ledgers with Node.js 22+, Python 3, and `jsonschema` 4.x:
-
-    npm run evidence:reviews
-
-## Rebuild the cumulative PDF
-
-Requires Windows, PowerShell 7.4+, Node.js 22+, and a current MiKTeX XeLaTeX
-installation with fontspec, ucharclasses, amsmath, amssymb, amsthm, xparse,
-graphicx, xcolor, TikZ, float, geometry and hyperref; Latin Modern must be
-installed. Noto Serif Telugu regular/bold and their OFL are bundled.
-
-From the full-source package or repository root, run:
-
-    pwsh -File scripts/build-cumulative-279.ps1
-
-The builder acquires the machine-wide Global\InterlanguageTeXSlotV1 mutex
-once with a 30-second limit, holds it for all four passes and immediate
-checks, disables shell escape and automatic package installation, and
-releases it in finally. A busy slot launches no TeX. The verified output is
-`output/pdf/openlogic-te-Telu-IN-cumulative-OLP0279.pdf`; a build receipt and
-prepared render manifest are written under `tmp/pdfs/cumulative-279`.
-Toolchain variation may change PDF bytes; replay equality is checked within
-each build.
-
-The earlier seven-unit Sets builder remains available as
-`scripts/build-sets.ps1` for reproducing the v0.2.0 PDF.
-
-The released source ZIP is a frozen snapshot. The packaging script refuses
-to overwrite an existing versioned artifact when current source bytes differ;
-use a new version for later cumulative releases.
-
-## Build and audit the foundations HTML and EPUB readers
-
-Requires Node.js 22+. Install the pinned dependency from `package-lock.json`,
-then generate and audit the self-contained output:
-
-    npm ci --ignore-scripts
-    npm run html:sfr
-    npm run audit:html:sfr
-    npm run epub:sfr
-    python scripts/audit-sets-epub.py --epubcheck-jar <path-to-epubcheck-5.3.0.jar>
-
-The renderer accepts only an explicit TeX subset and fails on unknown prose
-commands, environments, unresolved references, unbalanced groups, unsafe
-links, unsupported diagrams or invalid mathematics. KaTeX runs only at build
-time and emits MathML; the output has no client JavaScript, telemetry or
-network runtime dependency. `npm run html:sfr:pages` reproduces the tracked
-Pages tree under `docs/sfr`. The EPUB builder uses that audited semantic HTML as
-its sole reader input and fixes ZIP timestamps for deterministic replay.
-
-## License
-
-The Open Logic Text is licensed under
-[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
-The complete upstream license and disclaimer are retained in LICENSE.md.
-Translation, reader and original task-authored scripts are offered under
-the same license to the extent copyright applies.
-
-Noto Serif Telugu is Copyright 2018 The Noto Project Authors and uses the
-SIL Open Font License 1.1; see fonts/OFL.txt. It is not relicensed as CC BY.
-See ATTRIBUTION.md for component boundaries and credits.
+The Open Logic text and this adaptation are distributed under CC BY 4.0;
+bundled Noto fonts have their own SIL OFL 1.1 license. See
+[attribution and component boundaries](ATTRIBUTION.md) and the
+[publication record](PUBLICATION.md).

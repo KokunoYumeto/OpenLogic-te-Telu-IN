@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATN2-20260928",
+  "unit_id": "OLP-0667",
+  "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+  "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATN2-001",
+      "source_locator": "rules-N2.tex lines 102–106, N2 table caption",
+      "classification": "inconsistent_quantifier_macros_in_caption",
+      "source_issue": "The caption initially names the rules with bare forall/exists macros but later uses the correct lforall/lexists macros matching the table.",
+      "minimal_treatment": "Use lforall and lexists consistently and disclose the macro correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Elim{\\exists}$",
+          "$\\Intro{\\forall}$"
+        ],
+        "target_only": [
+          "$\\Elim{\\lexists}$",
+          "$\\Intro{\\lforall}$"
+        ]
+      }
+    }
+  ]
+}

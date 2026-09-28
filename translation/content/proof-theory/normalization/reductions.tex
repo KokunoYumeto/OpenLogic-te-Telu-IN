@@ -1,0 +1,272 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: reductions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{red}
+
+\olsection{తగ్గింపు పరివర్తనలు}
+
+\Log{N1i}లోని \tetoken{ఒక నిరూపణ}{!!a{proof}}లో కట్ పొడవు~$1$ అయితే, అది ఒకే \tetoken{సూత్ర}{!!{formula}} ఘటనతో కూడిన ఖండం. ఆ \tetoken{సూత్రం}{!!{formula}} \tetoken{ఒక ప్రవేశ}{!!a{introduction}} అనుమితి నిష్కర్ష, \tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షం రెండూ అవుతుంది. సాధారణీకరణ నిరూపణలో అటువంటి కట్‌లను "తగ్గిస్తాం": \tetoken{ప్రవేశ}{!!{introduction}}/\tetoken{తొలగింపు}{!!{elimination}} అనుమితుల జంటలో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}} స్థానంలో ఆ జంట తొలగించబడిన కొత్త \tetoken{నిరూపణను}{!!{proof}} ఉంచుతాం. ఈ మార్పు కొత్త కట్‌లకు దారితీయవచ్చు. అయితే కొత్త కట్‌ల స్థాయి తగ్గిస్తున్న కట్ స్థాయికంటే తక్కువని నిర్ధారించుకోవచ్చు. కాబట్టి కొత్త \tetoken{నిరూపణ}{!!{proof}} యొక్క కట్ పొడవు తగ్గుతుంది (పొడవు~$1$ ఉన్న గరిష్ఠ కట్ తొలగిపోయినందున), లేదా ఆ \tetoken{నిరూపణ}{!!{proof}} కట్ స్థాయి తగ్గుతుంది (ఆ గరిష్ఠ కట్ ఒక్కటే గరిష్ఠ కట్ అయితే).
+
+ఉదాహరణకు, సంబంధిత అనుమితులు \Intro{\lif}, \Elim{\lif} అయి, $!A \ident !B \lif !C$ అయితే, కింది విధంగా ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\delta_1$ ఉందనుకుందాం:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+ఈ కట్‌ను తొలగించడానికి~$\delta$లోని ఉపనిరూపణ~$\delta_1$ స్థానంలో కిందిదాన్ని ఉంచుతాం:
+\[
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\DeduceC{$!C$}
+\DisplayProof
+\]
+$\Subst{\delta_2}{\delta_3}{!B^x}$ అంటే~$\delta_2$లో $x$ గుర్తుతో ఉన్న ప్రతి ఊహ~$!B$ స్థానంలో మొత్తం \tetoken{నిరూపణ}{!!{proof}}~$\delta_3$ను ఉంచి పొందే \tetoken{నిరూపణ}{!!{proof}}. ఈ \tetoken{నిరూపణ}{!!{proof}}లో ఇక $x$ గుర్తుతో ఉన్న $!B$ రూపపు తెరిచి ఉన్న ఊహలేవీ ఉండవు. ఒకే గుర్తుతో రెండు వేర్వేరు \tetoken{సూత్రాలు}{!!{formula}s} ఊహలుగా ఉండవని ఎప్పటిలాగే అనుకుంటాం కాబట్టి, దీనిలో $x$ గుర్తు ఉన్న ఇతర ఊహలూ ఉండవు. అందువల్ల కొత్త \tetoken{నిరూపణ}{!!{proof}}లోని తెరిచి ఉన్న ఊహలు~$\delta_1$లో ఉన్నవే;~$\delta_2$లో ఊహలను విడుదల చేసే ప్రతి అనుమితి~$\Subst{\delta_2}{\delta_3}{!B^x}$లోనూ అవే ఊహలను విడుదల చేస్తుంది;~$\delta_3$లో ఊహలను విడుదల చేసే ప్రతి అనుమితికి ఒకటికంటే ఎక్కువ ప్రతులు ఏర్పడవచ్చు, అవి~$\Subst{\delta_2}{\delta_3}{!B^x}$లో సంబంధిత ఊహలను విడుదల చేస్తాయి.
+
+$\delta_2$ లేదా $\delta_3$లో పూర్తిగా ఉండే కట్ గానీ,~$\delta$లోని~$\delta_1$కు పూర్తిగా వెలుపల ఉండే కట్ గానీ మారదు: అది అవే \tetoken{సూత్రాలను}{!!{formula}s} కలిగి, అవే అనుమితుల గుండా వెళుతుంది; కాబట్టి ముఖ్యంగా~$\delta$లోని సంబంధిత కట్‌కు ఉన్న స్థాయి, పొడవే దానికీ ఉంటాయి. పొడవు~$1$ ఉన్న ఒక గరిష్ఠ కట్‌ను తొలగించాం; కాబట్టి కట్ పొడవు తగ్గింది, లేదా కట్ స్థాయి తగ్గింది (~$\delta$ కట్ పొడవు~$1$ అయి, ఇదొక్కటే గరిష్ఠ కట్ అయితే).
+\sourcecorrection{OLTEPTNORRED-001}{మూలం ఈ జాబితాలో $\delta_4$ను కూడా పేర్కొంది; ఈ పరివర్తనలో మాత్రం $\delta_2$, $\delta_3$ మాత్రమే ఉన్నాయి.}
+
+అయితే, రెండు విషయాలు జరగవచ్చు:
+\begin{enumerate}
+  \item $!B^x$ అనే అన్ని ఊహల స్థానంలో $\delta_3$ను ఉంచినప్పుడు,~$\delta_3$లోని కట్‌లన్నింటికీ ప్రతులు ఏర్పడతాయి. వాటిలో కొన్ని గరిష్ఠ కట్‌లు అయితే, కొత్త \tetoken{నిరూపణ}{!!{proof}} కట్ పొడవు పాత \tetoken{నిరూపణ}{!!{proof}} కట్ పొడవుకంటే ఎక్కువ కావచ్చు. అలా జరగదని నిర్ధారించాలి. అందుకే తగ్గింపు పరివర్తనలను \emph{అత్యంత కుడివైపు} గరిష్ఠ కట్‌లకే వర్తింపజేస్తాం; అంటే, తగ్గించే కట్‌కు కుడివైపున~$\delta$ గుండా వెళ్లే శాఖపై మరే గరిష్ఠ కట్ ఉండకూడదు. ఇక్కడ~$\delta_3$లో కట్ ఉంటే అది తగ్గించే కట్‌కు కుడివైపున ఉండేది; అప్పుడు మనం అత్యంత కుడివైపు కట్‌పై పనిచేస్తున్నట్టు కాదు. ఎల్లప్పుడూ అత్యంత కుడివైపు కట్‌లనే ఎంచుకోవడం ద్వారా \tetoken{నిరూపణ}{!!{proof}} కట్ పొడవును తగ్గిస్తామని, లేదా కట్ స్థాయినే తగ్గిస్తామని నిర్ధారించుకుంటాం.
+  \item $\delta_2$లోని $!B^x$ అనే ఊహ \tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షమై,~$\delta_3$ చివరి అనుమితి \Elim{\lor}, \Elim{\lexists}, లేదా \tetoken{ఒక ప్రవేశ}{!!a{introduction}} అనుమితి అయితే, అటువంటి ఊహ దగ్గర~$\delta_3$ను $\delta_2$కు అంటించడం వల్ల కొత్త కట్ ఏర్పడుతుంది. ఇంతకు ముందు~$\delta_2$లో కేవలం ఊహగా ఉన్నది ఇప్పుడు పొడవు~$1$ ఉన్న కట్ అవుతుంది (\tetoken{ఒక ప్రవేశ}{!!a{introduction}} అనుమితి నిష్కర్ష, \tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షం); లేదా కట్ ఖండంలోని చివరి \tetoken{సూత్ర}{!!{formula}} ఘటన అవుతుంది (\tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షం, \Elim{\lor} లేదా \Elim{\lexists} నిష్కర్ష). $B^x$, \Elim{\lor} లేదా \Elim{\lexists} యొక్క ఉప పూర్వపక్షమైతే, అది ఇప్పటికే ఒక ఖండంలో—బహుశా కట్ ఖండంలో—మొదటి \tetoken{సూత్ర}{!!{formula}} ఘటన అయి ఉంటుంది. కొత్త \tetoken{నిరూపణ}{!!{proof}}లో ఆ ఖండం మరింత పొడవవచ్చు. అయితే కొత్త కట్‌ను లేదా ఇప్పటికే ఉన్న కట్ ఖండాన్ని ఏర్పరచే \tetoken{సూత్రం}{!!{formula}}~$!B$ అని, $\depth{!B} < \depth{!B \lif !C}$ అని గమనించండి. అందువల్ల మనం కట్‌లను చేర్చినా లేదా వాటి పొడవును పెంచినా, అవేవీ గరిష్ఠ కట్‌లు కావు. కాబట్టి కట్ స్థాయి తగ్గింది; లేదా అదే స్థాయి కట్‌లు మిగిలి ఉంటే, కట్ పొడవు తగ్గింది.
+\end{enumerate}
+
+పొడవు~$1$ ఉన్న కట్‌ను తగ్గించే ప్రక్రియను \emph{తగ్గింపు పరివర్తన} (లేదా \emph{పక్కదారి పరివర్తన}) అంటారు. కొన్ని నియమ-జంటల నమూనాలను \olref{tab:reduction-conversions}లో చూపించాం. (మిగిలినవి అభ్యాసాలుగా వదిలాం.)
+
+\begin{table}
+\begin{multline*}
+\bottomAlignProof
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{!B^x}$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\DisplayProof}\qquad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!C$}
+\DisplayProof}
+\\[4ex]
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{y}$}
+\RightLabel{$\delta_4$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B$}
+\RightLabel{$\Subst{\delta_3}{\delta_2}{!B^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\\[2ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(c)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\Subst{\delta_2}{t}{c}$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\DisplayProof}
+\\[4ex]
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$!D$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$!B(t)$}
+\RightLabel{$\Subst{\Subst{\delta_3}{t}{c}}{\delta_2}{!B(t)^x}$}
+\shortDeduce
+\DeduceC{$!D$}
+\DisplayProof}
+\end{multline*}
+\caption{\Log{N1i}లో కొన్ని తగ్గింపు పరివర్తనలు.}
+\ollabel{tab:reduction-conversions}
+\end{table}
+
+\begin{prob}
+\Intro{\lnot} తరువాత \Elim{\lnot} వచ్చే సందర్భానికి తగ్గింపు పరివర్తనను ఇవ్వండి.
+\end{prob}
+
+ఇంకా ఒక సందర్భాన్ని పరిగణించాలి. కట్ నిర్వచనంలో, కట్ పొడవు~$1$ ఉండి $!A$ అనేది~\FalseInt{} యొక్క నిష్కర్ష, అలాగే \tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షం అయ్యే సందర్భమూ ఉంది. $!A$ అనేది \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం నిష్కర్ష అయిన సందర్భం మాదిరిగానే దీనినీ పరిష్కరిస్తాం. ఉదాహరణకు, కిందిదాని స్థానంలో
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!B \lif !C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+\quad\text{by}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$!C$}
+\DisplayProof
+\]
+అని ఉంచండి. $!A \ident (!B \lor
+!C)$ లేదా $!A \ident \lexists[x][!B(x)]$ అయినప్పుడు కాస్త జాగ్రత్త అవసరం. ఉదాహరణకు, కిందిదాని స్థానంలో
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B \lor !C$}
+\AxiomC{$\Discharge{!B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\AxiomC{$\Discharge{!C}{x}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!D$}
+\DisplayProof
+\quad\text{by}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!D$}
+\DisplayProof
+\]
+అని ఉంచితే, కట్ \tetoken{సూత్రం}{!!{formula}}~$!D$ ఉన్న కొత్త కట్‌ను ప్రవేశపెట్టినట్టవచ్చు; $\depth{!D} < \depth{!B \lor !C}$ అని హామీ లేదు!{} కాబట్టి ఇక్కడ కూడా \Intro{\lor}/\Elim{\lor} తగ్గింపులో చేసినట్టే చేసి, దాని స్థానంలో కిందిదాన్ని ఉంచాలి:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!B$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!D$}
+\DisplayProof
+\quad\text{or}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$!C$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!D$}
+\DisplayProof
+\]
+
+\end{document}

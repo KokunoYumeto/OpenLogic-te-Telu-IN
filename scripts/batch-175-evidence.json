@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "175",
+  "unit_id": "OLP-0526",
+  "unit_order": 526,
+  "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7872,
+  "previous_terms": 215,
+  "expected_corrections": 477,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P021"],
+  "corrections_by_block": {"8": ["OLTECNTANT-001"]},
+  "consultation_phase": "స్థిర పూర్వపక్ష బలపరచడం మూలం, తెలుగు లక్ష్యం, పూర్వ గోళ నమూనా సత్య షరతు, స్థానిక తర్క/సోపాధిక పదాలు ఎదురెదురు చూశాం; అగ్గిపుల్ల బాహ్య-అంతరిక్ష నిగమనం, మూడు లోకాల ప్రతినమూనా, చిత్రపు సత్యమూల్య ప్రాంతాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/021 సాధారణ తర్క/సత్యమూల్య పదాలకు మాత్రమే సాక్షులు. మూలంలో పూర్వపక్ష చర్య మూడు చోట్ల మారిన సవరణ ఉదాహరణ-నమూనా పోలిక ఆధారితం; స్వతంత్ర చిత్ర render లేదా నిపుణ సమీక్ష లేదు.",
+  "term_decision": {
+    "term_id": "TE-T216",
+    "source_term": "antecedent strengthening / counterfactual countermodel",
+    "telugu": "పూర్వపక్షాన్ని బలపరచడం / ప్రతివాస్తవ ప్రతినమూనా",
+    "status": "definition_and_three_world_model_controlled_one_disclosed_prose_semantic_repair",
+    "passages": ["TE-P018", "TE-P019", "TE-P021"],
+    "basis": "భౌతిక $\\lif$కు చెల్లే, ప్రతివాస్తవ $\\cif$కు చెల్లని పూర్వపక్ష బలపరచడం, బాహ్య అంతరిక్ష అగ్గిపుల్ల వాదన, $W,O_w,V$ విలువలతో మూడు లోకాల ప్రతినమూనా నిలిచాయి; మూడు మూల ‘మండించడం’ పూర్వపక్షాలను ‘గీయడం’గా ప్రకటించి సరిచేశాం.",
+    "uncertainty": "ప్రత్యేక ప్రతివాస్తవ పదానికి స్వతంత్ర తెలుగు సాక్షి లేదు; సూత్రం, నమూనా అర్థాన్ని నియంత్రిస్తాయి. చిత్రం PDF దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Lewis/Stalnaker names are transliterated; valuation/world symbols and TikZ diagram stay source-controlled."
+  }
+}

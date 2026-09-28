@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "369",
+  "unit_id": "OLP-0720",
+  "unit_order": 720,
+  "source_path": "content/sets-functions-relations/sets-functions-relations.tex",
+  "blocks": 10,
+  "linguistic_blocks": [
+    4,
+    5
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10568,
+  "previous_terms": 409,
+  "expected_corrections": 703,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సమితి/ప్రమేయం/సంబంధం స్థానిక ప్రయోగాన్ని పోల్చాం; విద్యార్థి-ఉద్దేశిత సంపాదకీయ వివరణకు అదే పదజాలం వర్తింపజేశాం.",
+  "evidence_limit": "This driver alone is not a unified-reader integration; no TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T410",
+    "source_term": "sets; relations; functions; naive set theory",
+    "telugu": "సమితులు; సంబంధాలు; ప్రమేయాలు; అమాయక సమితి సిద్ధాంతం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "మూడు ప్రధాన వస్తువుల పేరు శీర్షికలో తెలుగు బహువచనంలో ఉంది; నెమ్మదైన/పూర్తి రూపాల తేడా స్పష్టంగా ఉంది.",
+    "uncertainty": "This driver alone is not a unified-reader integration; no TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

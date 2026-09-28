@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "250",
+  "unit_id": "OLP-0601",
+  "unit_order": 601,
+  "source_path": "content/methods/methods.tex",
+  "blocks": 9,
+  "linguistic_blocks": [4,5],
+  "previous_segments": 8883,
+  "previous_terms": 290,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P018"],
+  "consultation_phase": "పద్ధతులు భాగం స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ పదం, స్థానిక సిద్ధాంత/తర్క వాడుక పోల్చాం; పాఠక భాగ శీర్షిక, సంపాదక వర్ణన, రెండు అధ్యాయ దిగుమతులు తనిఖీ చేశాం.",
+  "evidence_limit": "పద్ధతిశాస్త్రం ప్రత్యేక తాత్త్విక పదానికి ప్రత్యక్ష స్థానిక సాక్షి లేదు; సాధారణ పద్ధతి, నిరూపణ వాడుక ఆధారమైంది. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T291","source_term":"Methods; proof methods; induction (part title and editorial)","telugu":"పద్ధతులు; నిరూపణ పద్ధతులు; ఆగమనం","status":"methods_part_heading_editorial_and_imports_source_controlled","passages":["TE-P004","TE-P018"],"basis":"పాఠక భాగ శీర్షికతో పాటు నిరూపణలు, ఆగమనం అధ్యాయాల ప్రస్తుత స్థితి మరియు అదనపు విభాగాల ప్రణాళికను వేరుగా నిలిపాం.","uncertainty":"పద్ధతిశాస్త్రం, ఆగమనం ప్రత్యేక పదాల ప్రత్యక్ష సాక్షి పరిమితం; పూర్వ అనువాద నిర్ణయాలు, మూల విభాగ నిర్మాణం ఆధారం.","borrowing":"TeX part identifier, imports and end hook remain unchanged."}
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "183",
+  "unit_id": "OLP-0534",
+  "unit_order": 534,
+  "source_path": "content/set-theory/story/cumulative-approach.tex",
+  "blocks": 11,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10],
+  "previous_segments": 7957,
+  "previous_terms": 223,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర సంచిత-దశలవారీ మూలం, తెలుగు లక్ష్యం, పూర్వ దశలవారీ/సమితి పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; షోన్‌ఫీల్డ్ ఉటంకింపు, 0--3 దశల కొత్త సమితుల సంఖ్యలు, చిత్రం, $R_S$ పరిమిత రసెల్ వాదన, వ్యాఖ్యానిత పాఠ్యం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/మూలకం/తర్క పదాలకు మాత్రమే సాక్షులు; సంచిత నిర్మాణ భావం మూల ఉటంకింపు, దశల ఉదాహరణ నియంత్రితం. చివరి రెండు గద్య బ్లాకులు TeX వ్యాఖ్యలుగానే ఉన్నాయి: తెలుగులో మార్చినా పాఠక PDFలో ముద్రించబడవు. చిత్రం render, ఉటంకింపు స్వతంత్ర తనిఖీ లేవు.",
+  "term_decision": {
+    "term_id": "TE-T224",
+    "source_term": "cumulative-iterative conception / stages / restricted Russell set R_S",
+    "telugu": "సంచిత-దశలవారీ సమితి భావన / దశలు / పరిమిత రసెల్ సమితి R_S",
+    "status": "stage_example_and_restricted_comprehension_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "దశ $0$లో శూన్య సమితి, దశ $1$లో ఒక కొత్త సమితి, దశ $2$లో రెండు, దశ $3$లో పన్నెండు, $R_S$ దశ $S$కు ముందు అందుబాటులో లేదనే వైరుధ్యరాహిత్య వివరణ, వ్యాఖ్యానిత ప్రత్యామ్నాయ గద్య స్థితి నిలిచాయి.",
+    "uncertainty": "షోన్‌ఫీల్డ్ ఉటంకింపు స్వతంత్రంగా చూడలేదు; ‘సంచిత-దశలవారీ’ పదానికి ప్రత్యక్ష ప్రత్యేక తెలుగు సాక్షి లేదు. TeX చిత్రం దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Shoenfield citation, stage numerals and mathematical notation remain source-controlled; comments remain non-rendering."
+  }
+}

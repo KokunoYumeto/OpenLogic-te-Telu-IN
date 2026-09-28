@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "179",
+  "unit_id": "OLP-0530",
+  "unit_order": 530,
+  "source_path": "content/set-theory/story/story.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 7911,
+  "previous_terms": 219,
+  "expected_corrections": 479,
+  "canon_default": ["TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర దశలవారీ సమితి భావన అధ్యాయ శీర్షిక, ఆరు విభాగ దిగుమతులు, పూర్వ సమితి పదాలు ఎదురెదురు చూశాం.",
+  "evidence_limit": "TE-P008/018 సాధారణ సమితి/తర్క పదాలకు మాత్రమే సాక్షులు; ‘దశలవారీ’ ప్రత్యేక దృక్పథం తరువాతి విభాగాల నిర్వచన నియంత్రితం. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T220",
+    "source_term": "iterative conception (set-theory chapter heading)",
+    "telugu": "దశలవారీ భావన",
+    "status": "definition_controlled_iterative_conception_heading_general_set_register_attested",
+    "passages": ["TE-P008", "TE-P018"],
+    "basis": "sth/story అధ్యాయ శీర్షికలో దశలవారీ సమితి నిర్మాణ భావాన్ని సంక్షిప్తంగా చూపి ఆరు విభాగ దిగుమతులు నిలిపాం.",
+    "uncertainty": "‘దశలవారీ భావన’కు ప్రత్యేక ప్రత్యక్ష తెలుగు సాక్షి లేదు; తరువాతి సంచిత నిర్మాణ చర్చ దాని అర్థాన్ని నియంత్రిస్తుంది.",
+    "borrowing": "No English reader-visible heading remains."
+  }
+}

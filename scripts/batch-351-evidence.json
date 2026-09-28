@@ -1,0 +1,86 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "351",
+  "unit_id": "OLP-0702",
+  "unit_order": 702,
+  "source_path": "content/proof-theory/sequent-calculus/proof-examples.tex",
+  "blocks": 26,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "corrections_by_block": {
+    "6": [
+      "OLTEPTSEQEX-001",
+      "OLTEPTSEQEX-002"
+    ],
+    "7": [
+      "OLTEPTSEQEX-003",
+      "OLTEPTSEQEX-004"
+    ],
+    "9": [
+      "OLTEPTSEQEX-005"
+    ],
+    "10": [
+      "OLTEPTSEQEX-006"
+    ],
+    "11": [
+      "OLTEPTSEQEX-012"
+    ],
+    "15": [
+      "OLTEPTSEQEX-008"
+    ],
+    "19": [
+      "OLTEPTSEQEX-009"
+    ],
+    "23": [
+      "OLTEPTSEQEX-010",
+      "OLTEPTSEQEX-011"
+    ]
+  },
+  "previous_segments": 10368,
+  "previous_terms": 391,
+  "expected_corrections": 678,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నిరూపణ అన్వేషణ, లోతు, పరమాణు అక్షయాలు, పథకాత్మకత, స్వీయచర గద్యాన్ని పూర్వ విభాగాలతో పోల్చి ప్రతి చిత్ర నిగమనాన్ని తనిఖీ చేశాం.",
+  "evidence_limit": "నేర చిత్ర/నియమ అర్థ తనిఖీ మాత్రమే; పూర్తి mechanized checker లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T392",
+    "source_term": "backward proof search; schematic proof; formula depth; atomic identity; eigenvariable condition",
+    "telugu": "వెనుక దిశలో నిరూపణ అన్వేషణ; పథకాత్మక నిరూపణ; సూత్ర లోతు; పరమాణు స్వీయ సీక్వెంట్; స్వీయచర షరతు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నిరూపణ నిర్మాణం, సూత్ర పరమాణుత్వం వేరు; సూత్ర లోతు ఆగమన పరికల్పన అన్ని సందర్భాలకు వర్తిస్తుంది.",
+    "uncertainty": "నేర చిత్ర/నియమ అర్థ తనిఖీ మాత్రమే; పూర్తి mechanized checker లేదా TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

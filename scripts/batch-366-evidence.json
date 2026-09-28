@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "366",
+  "unit_id": "OLP-0717",
+  "unit_order": 717,
+  "source_path": "content/sets-functions-relations/functions/isomorphic-functions.tex",
+  "blocks": 8,
+  "linguistic_blocks": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10516,
+  "previous_terms": 406,
+  "expected_corrections": 702,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సమితి, ప్రమేయం, సంబంధం, ద్వైక్యం సందర్భాలను పోల్చాం. సమరూపణం అనే ప్రత్యేక సంయుక్త పదం ఈ నిర్వచనం ఆధారంగా; ప్రత్యక్ష ప్రమాణం ఉన్నట్లు చెప్పలేదు.",
+  "evidence_limit": "Specialized isomorphism term is definition controlled; native witness does not directly certify every compound. No TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T407",
+    "source_term": "isomorphism; structure-preserving bijection; successor relation",
+    "telugu": "సమరూపణం; నిర్మాణాన్ని నిలుపుకునే ద్వైక్యం; ఉత్తరవర్తి సంబంధం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ద్వైక్యానికి మించి సంబంధ నిర్మాణం నిలుపుకోవాలనే నిర్వచన లక్షణాన్ని తెలుగు వివరణలో నిలుపుకున్నాం.",
+    "uncertainty": "Specialized isomorphism term is definition controlled; native witness does not directly certify every compound. No TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

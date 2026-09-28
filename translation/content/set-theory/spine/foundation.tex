@@ -1,0 +1,80 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{foundation}
+
+\olsection{పునాది}
+
+మన పని \emph{దాదాపు} పూర్తయింది---\emph{పూర్తిగా} కాదు---ఎందుకంటే ప్రతి సమితీ ఏదో ఒక $V_\alpha$లో ఉంటుందని, అంటే ఏదో ఒక దశలో ఏర్పడుతుందని, $\ZFminus$లో ఏదీ హామీ ఇవ్వదు.
+
+స్థాయిక్రమం వెలుపల సమితులు ఉన్నాయా లేదా అనేది మనకు (గణితార్థంలో) \emph{ముఖ్యం కాని} విషయంగా భావించవచ్చు. (అవి ఉంటే వాటిని విస్మరించవచ్చు.) కానీ ప్రతి సమితీ ఏదో దశలో ఏర్పడుతుందనే ఆలోచనతో మన సమితి \emph{భావన}ను ప్రేరేపించాం (\olref[z][story]{sec}లోని \stageshier{} చూడండి). కనుక స్థాయిక్రమం వెలుపల సమితులు ఉండే అవకాశాన్ని తొలగించాలనుకుంటాం. అందుకు ప్రతి సమితీ స్థాయిక్రమంలో ఎక్కడో ఒకచోట ఉంటుందని నిర్ధారించే కొత్త స్వయంసిద్ధ సూత్రం చేర్చాలి.
+
+$V_\alpha$లే మన దశలు కాబట్టి, ఈ కింది దానినే స్వయంసిద్ధ సూత్రంగా చేర్చాలని ఆలోచించవచ్చు:
+
+\begin{defish}
+\emph{నియమితత్వం.} $\forall A \exists \alpha\, A \subseteq V_\alpha$
+\end{defish}
+
+ఇది పూర్తిగా సమంజసమైన మార్గమే. అయితే తదుపరి విభాగంలో వివరించే కారణాల వల్ల, దీని బదులు ప్రత్యామ్నాయ స్వయంసిద్ధ సూత్రాన్ని స్వీకరిస్తాం:
+
+\begin{axiom}[పునాది]
+$(\forall A \neq \emptyset)(\exists B \in A)A \cap B = \emptyset$.
+\end{axiom}
+
+కొంత శ్రమతో, $\ZFminus$లో పునాది నుండి నియమితత్వం వస్తుందని చూపవచ్చు:
+\begin{defn}
+ప్రతి సమితి $A$కు ఇలా ఉంచుదాం:
+\begin{align*}
+	\text{cl}_0(A) &= A,\\
+	\text{cl}_{n+1}(A) &= \bigcup \text{cl}_n(A),\\
+	\text{trcl}(A) &= \bigcup_{n < \omega} \text{cl}_{n}(A).
+\end{align*}
+$\text{trcl}(A)$ను $A$ యొక్క \emph{సంక్రమణ ఆవరణ} అంటాం.
+\end{defn}
+\noindent
+``సంక్రమణ ఆవరణ'' అనే పేరు తగినదే:
+\begin{prop}\ollabel{subsetoftrcl}
+$A \subseteq \trcl{A}$; అలాగే $\trcl{A}$ ఒక సంక్రమణ సమితి.
+\end{prop}
+
+\begin{proof}
+స్పష్టంగా $A = \text{cl}_0(A) \subseteq \text{trcl}(A)$. ఇంకా $x
+\in b \in \trcl{A}$ అయితే ఏదో $n$కు $b \in \text{cl}_n(A)$, కాబట్టి $x
+\in \text{cl}_{n+1}(A) \subseteq \text{trcl}(A)$.
+\end{proof}
+
+\begin{lem}\ollabel{lem:TransitiveWellFounded}
+$A$ సంక్రమణ సమితి అయితే $A \subseteq V_\alpha$ అయ్యే ఏదో $\alpha$ ఉంటుంది.
+\end{lem}
+
+\begin{proof}
+\olref[ordinals][opps]{defsupstrict}లోని ``$\supstrict(X)$'' నిర్వచనాన్ని గుర్తుచేసుకుని, రెండు సమితులను నిర్వచిద్దాం:
+\begin{align*}
+	D  &= \Setabs{x \in A}{\forall \delta\ x \nsubseteq V_\delta}\\
+	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
+	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
+\end{align*}
+$D = \emptyset$ అనుకుందాం. అప్పుడు $x \in A$ అయితే $x \subseteq V_\delta$ అయ్యే ఏదో $\delta$ ఉంటుంది; క్రమసంఖ్యల సుక్రమత్వం వల్ల $(\forall \gamma \in \delta)x \nsubseteq V_\gamma$ అయ్యేలా దాన్ని ఎంచుకోవచ్చు. కనుక $\delta \in \alpha$; అందువల్ల \olref[spine][Valphabasic]{Valphabasicprops} ప్రకారం $x \in V_\alpha$. అవసరమైనట్లుగా $A \subseteq V_{\alpha}$.
+
+కాబట్టి $D = \emptyset$ అని చూపితే చాలు. వైరుధ్యార్థం, అలా కాదనుకుందాం. పునాది ప్రకారం $D \cap B
+= \emptyset$ అయ్యే ఏదో $B \in D \subseteq A$ ఉంటుంది. $x \in B$ అయితే, $A$ సంక్రమణ సమితి కాబట్టి $x \in A$; $x \notin D$ కనుక $\exists \delta\ x \subseteq
+V_\delta$. ఇప్పుడు ఇలా ఉంచుదాం:
+\[
+	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
+\]
+\sourcecorrection{OLTESTSPINFOUND-001}{మూల సూత్రంలోని నిర్వచించని చిన్న అక్షరపు $b$ స్థానంలో, ఈ నిరూపణలో ఎంచుకున్న సమితి $B$ను పెట్టాం.}
+మునుపటిలాగే $B \subseteq V_\beta$; ఇది $B \in D$ అన్న వాదనకు విరుద్ధం.
+\end{proof}
+
+\begin{thm}\ollabel{zfentailsregularity}
+నియమితత్వం వర్తిస్తుంది.
+\end{thm}
+
+\begin{proof}
+$A$ను స్థిరపరుచుకుందాం. \olref{subsetoftrcl} ప్రకారం $A \subseteq \trcl{A}$; అది సంక్రమణ సమితి. కనుక \olref{lem:TransitiveWellFounded} ప్రకారం $A \subseteq \trcl{A} \subseteq V_\alpha$ అయ్యే ఏదో $\alpha$ ఉంటుంది.
+\end{proof}
+
+ఈ ఫలితాలు $\ZFminus$లో $\emph{Foundation}\Rightarrow\emph{Regularity}$ షరతు నిరూపించబడుతుందని చూపుతాయి. \olref[spine][rank]{zfminusregularityfoundation}లో, $\ZFminus$లో $\emph{Regularity}\Rightarrow\emph{Foundation}$ కూడా నిరూపించబడుతుందని చూపుతాం. కాబట్టి పునాది, నియమితత్వం ($\ZFminus$ పరంగా) \emph{సమానార్థకాలు}. అందుచేత $\ZFminus$ ఇచ్చినప్పుడు, పునాది నియమితత్వానికి సమానార్థకమని గమనించి దాన్ని సమర్థించవచ్చు. అలాగే \stageshier{} ఆధారంగా నియమితత్వాన్ని నేరుగా సమర్థించవచ్చు.
+
+\end{document}

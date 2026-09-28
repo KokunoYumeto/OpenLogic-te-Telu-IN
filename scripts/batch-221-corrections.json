@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0572",
+  "source_path": "content/set-theory/replacement/refproofs.tex",
+  "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+  "audit_id": "OLTESTREPLREFP-20260927",
+  "audit_review_path": "evidence/OLP-0572-REFLECTION-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e1a722524c62c22991a10a29ba8a930963756ce5e930f21c587b189d323559a7",
+  "audit_findings_path": "evidence/OLP-0572-REFLECTION-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "8bf74de800942d6fe6ad2264a9d0510cff787197060df549b81a4880d32b5a68",
+  "previous_corrections": 488,
+  "treatments": {
+    "OLTESTREPLREFP-001": {
+      "target_line": 27,
+      "body_treatment": "సహాయక దశ షరతు చివరి అదనపు ముగింపు కుండలీకరణాన్ని తీసి ప్రకటించాం."
+    },
+    "OLTESTREPLREFP-002": {
+      "target_line": 36,
+      "body_treatment": "m సూచికపై సమ్మేళనంలో S_n బదులు S_mను పెట్టి ప్రకటించాం."
+    },
+    "OLTESTREPLREFP-003": {
+      "target_line": 106,
+      "body_treatment": "ప్రతిస్థాపన సిద్ధాంతపు సమితి-నిర్మాణ ఆస్తిలో మిగిలిన ముగింపు కుండలీకరణాన్ని చేర్చి ప్రకటించాం."
+    }
+  }
+}

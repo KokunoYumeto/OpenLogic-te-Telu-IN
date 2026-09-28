@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "345",
+  "unit_id": "OLP-0696",
+  "unit_order": 696,
+  "source_path": "content/proof-theory/propositions-as-types/type-preservation.tex",
+  "blocks": 13,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10253,
+  "previous_terms": 385,
+  "expected_corrections": 650,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "రక సంరక్షణ, పురోగతి నిర్వచనాలను నిరూపణ-పద అనురూపత, పూర్వ లాంబ్డా గద్యంతో పోల్చాం.",
+  "evidence_limit": "మూలం సూచించిన పూర్తి ప్రతిస్థాపన ఆగమనం స్వతంత్రంగా formalize చేయలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T386",
+    "source_term": "type preservation; progress; well-typed term; stuck computation",
+    "telugu": "రక సంరక్షణ; పురోగతి; సరిగ్గా రకీకరించిన పదం; ముందుకు సాగలేని గణన స్థితి",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "రకం మారకపోవడం, తరువాతి తగ్గింపు దశ ఉండడం వేర్వేరు లక్షణాలుగా నిలిపాం.",
+    "uncertainty": "మూలం సూచించిన పూర్తి ప్రతిస్థాపన ఆగమనం స్వతంత్రంగా formalize చేయలేదు; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

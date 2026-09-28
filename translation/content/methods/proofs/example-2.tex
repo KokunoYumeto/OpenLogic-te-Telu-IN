@@ -1,0 +1,64 @@
+% Part: methods
+% Chapter: proofs
+% Section: example-2
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{mth}{prf}{ex2}
+
+\olsection{మరో ఉదాహరణ}
+
+\begin{prop}
+$A \subseteq C$ అయితే $A \cup (C \setminus A) = C$.
+\end{prop}
+
+\begin{proof}
+  $A \subseteq C$ అనుకుందాం. $A \cup (C
+  \setminus A) = C$ అని చూపాలి.
+  \begin{quote}
+    ఇది సోపాధిక ప్రకటన అని మొదట గమనిద్దాం. ఇందులో చెప్పకుండానే సార్వత్రిక పరిమాణీకరణ ఉంది: ప్రతిపాదన అన్ని సమితులు $A$, $C$లకు వర్తిస్తుంది. కాబట్టి $A$, $C$ ఏవైనా సమితులకు చరరాశులు. ఇలాంటి ప్రకటనను నిరూపించడానికి పూర్వపక్షాన్ని పరికల్పనగా తీసుకొని పర్యవసానాన్ని నిరూపిస్తాం.
+
+    ఇప్పుడు $A \subseteq C$ పరికల్పనను ఉపయోగిద్దాం. $\subseteq$ నిర్వచనాన్ని విప్పితే, $A$లోని అన్ని \tetoken{మూలకాలు}{!!{element}s}, $C$లోనూ \tetoken{మూలకాలు}{!!{element}s} అని అర్థం. దీన్ని రాసుకుందాం---నిరూపణ అంతటా ఉపయోగించే ముఖ్యమైన విషయం.
+  \end{quote}
+  $\subseteq$ నిర్వచనం ప్రకారం $A \subseteq C$ కనుక ప్రతి $z$కు $z \in A$ అయితే $z \in C$.
+  \begin{quote}
+    పరికల్పనలోని నిర్వచనాలన్నీ విప్పాం. ఇప్పుడు నిష్కర్షకు వెళ్దాం. $A \cup (C \setminus A) = C$ అని చూపాలి. ముందరి ఉదాహరణలాగే నిరూపణను అమర్చి, $A \cup (C \setminus A)$లోని ప్రతి \tetoken{మూలకం}{!!{element}}, $C$లో \tetoken{ఒక మూలకం}{!!a{element}} అని, వ్యతిరేక దిశలో $C$లోని ప్రతి \tetoken{మూలకం}{!!{element}}, $A \cup (C
+    \setminus A)$లో \tetoken{ఒక మూలకం}{!!a{element}} అని చూపాలి. సంక్షిప్తంగా: $A \cup (C \setminus A)
+    \subseteq C$ మరియు $C \subseteq A \cup (C \setminus A)$. (ఇక్కడ నిర్వచనాన్ని విప్పడానికి విరుద్ధంగా దాన్ని మళ్లీ సంక్షిప్తం చేస్తున్నాం; ఇది నిరూపణను చదవడం సులభం చేస్తుంది.) ఇది సంయోగం కనుక రెండు భాగాలనూ నిరూపించాలి. మొదటి భాగం కోసం, అంటే $A \cup (C \setminus A)$లోని ప్రతి \tetoken{మూలకం}{!!{element}}, $C$లో \tetoken{ఒక మూలకం}{!!a{element}} అని చూపడానికి, ఏదైనా~$z$కు $z \in A \cup (C \setminus A)$ అని తీసుకొని $z \in C$ అని చూపాలి. $\cup$ నిర్వచనం ప్రకారం $z \in A \cup (C \setminus A)$ నుంచి $z \in A$ లేదా $z \in C \setminus A$ అని నిగమించవచ్చు. ఇప్పుడు ఈ విధానం మీకు అలవాటవుతూ ఉండాలి.
+  \end{quote}
+  $A \cup (C \setminus A) = C$ అప్పుడూ అప్పుడే $A \cup (C \setminus A) \subseteq
+  C$ మరియు $C \subseteq (A \cup (C \setminus A))$. మొదట $A \cup (C \setminus A) \subseteq C$ అని నిరూపిద్దాం. $z \in A \cup (C
+  \setminus A)$ అనుకుందాం. కాబట్టి $z \in A$ లేదా $z \in (C \setminus A)$.
+  \sourcecorrection{OLTEMTHPRFEX2-001}{మూలంలోని రెండవ ఉపసమితి వ్యక్తీకరణ $C\subseteq(A\cup(C\setminus A)$లో బయట కుండలీకరణం మూసుకోలేదు. ఇక్కడ దాన్ని మూసి సమానత్వానికి అవసరమైన రెండు ఉపసమితి దిశలను నిలిపాం.}
+  \begin{quote}
+    వికల్పానికి చేరుకున్నాం; దాని నుంచి $z \in C$ అని నిరూపించాలి. సందర్భాలవారీ నిరూపణ వాడదాం.
+  \end{quote}
+  సందర్భం 1: $z \in A$. ప్రతి $z$కు $z \in A$ అయితే $z \in C$ కనుక, ఇక్కడ $z \in C$.
+  \begin{quote}
+    ఇక్కడ $A \subseteq C$ అనే ప్రతిపాదన పరికల్పన నుంచి వచ్చిన, ముందే నమోదు చేసిన విషయాన్ని ఉపయోగించాం. మొదటి సందర్భం పూర్తయింది; ఇప్పుడు రెండవ సందర్భం $z \in (C
+    \setminus A)$కు వెళ్దాం. $C \setminus A$ అనేది రెండు సమితుల \emph{భేదం}: $C$లోని \tetoken{మూలకాలలో}{!!{element}s}, $A$లోని \tetoken{మూలకాలు}{!!{element}s} కానివాటి సమితి. $C$లో ఉండి~$A$లో లేని ఏ \tetoken{మూలకం}{!!{element}} అయినా, ముఖ్యంగా~$C$లో \tetoken{ఒక మూలకం}{!!a{element}}.
+  \end{quote}
+  సందర్భం 2: $z \in (C \setminus A)$. అంటే $z \in C$ మరియు $z
+  \notin A$. కనుక ప్రత్యేకంగా $z \in C$.
+  \begin{quote}
+    మొదటి దిశ నిరూపించాం. ఇప్పుడు రెండవ దిశ: $C \subseteq A \cup (C \setminus
+    A)$ అని నిరూపించాలి. కనుక $z \in C$ అని తీసుకొని $z \in A \cup (C
+    \setminus A)$ అని చూపాలి.
+  \end{quote}
+  ఇప్పుడు $z \in C$ అనుకుందాం. $z \in A$ లేదా $z \in C
+  \setminus A$ అని చూపాలి.
+  \begin{quote}
+    $A$లోని అన్ని \tetoken{మూలకాలు}{!!{element}s}, $C$లోనూ \tetoken{మూలకాలు}{!!{element}s}; $C
+    \setminus A$ అనేది $C$లో \tetoken{మూలకాలు}{!!{element}s} అయి $A$లో కాని వాటి సమితి. కనుక $z$ అనేది $A$లో లేదా $C
+    \setminus A$లో ఉంటుంది. ఇది ఎందుకు సత్యమో ముందే తెలియకపోతే ఈ వాదన అస్పష్టంగా అనిపించవచ్చు. దశలవారీగా నిరూపించడం మంచిది. నిరూపణ లేకుండానే చెప్పగల సరళ విషయాన్ని ఉపయోగిద్దాం: $z \in A$ లేదా $z \notin A$. దీనిని ``బహిష్కృత మధ్యమ సూత్రం'' అంటారు: ఏ ప్రకటన~$p$కైనా $p$ సత్యం లేదా దాని నిషేధం సత్యం. (ఇక్కడ $p$ అనేది $z \in A$ అనే ప్రకటన.) ఇది వికల్పం కనుక మళ్లీ సందర్భాలవారీ నిరూపణ వాడవచ్చు.
+  \end{quote}
+  $z \in A$ లేదా $z \notin A$. మొదటి సందర్భంలో $z \in A \cup
+  (C \setminus A)$. రెండవ సందర్భంలో $z \in C$, $z \notin A$ కనుక $z \in C \setminus A$. అప్పుడు $z \in A \cup (C \setminus A)$.
+  \begin{quote}
+    నిరూపణ పూర్తయింది: $A \cup (C \setminus A) = C$ అని చూపాం.
+  \end{quote}
+\end{proof}
+
+\end{document}

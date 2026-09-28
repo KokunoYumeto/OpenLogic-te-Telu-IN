@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "240",
+  "unit_id": "OLP-0591",
+  "unit_order": 591,
+  "source_path": "content/set-theory/card-arithmetic/fix.tex",
+  "blocks": 22,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+  "corrections_by_block": {"21": ["OLTESTCARDFIX-001", "OLTESTCARDFIX-002"]},
+  "previous_segments": 8720,
+  "previous_terms": 280,
+  "expected_corrections": 508,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ఆలెఫ్/బెత్ స్థిర బిందువుల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ స్థాయిక్రమ/పునరావృత్తి/కార్డినల్ పదాలు, స్థానిక సంఖ్య/తర్క సాక్షులు పోల్చాం; రెండు స్థిర బిందు నిర్మాణాలు, V-స్థాయి పరిమాణం, టౌ/W పెరుగుదల, బూలొస్/ట్రిస్ట్రామ్ ఉపమానాలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థిర బిందు ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల సూత్రం నియంత్రించింది. టౌ కఠిన పెరుగుదల, W శూన్య ఆధార లోపం OLTESTCARDFIX-001/002గా ప్రకటించబడ్డాయి; చారిత్రక ఉటంకింపులు మూలం నుంచి అనువదించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T281",
+    "source_term": "aleph/beth fixed points; hierarchy width and height",
+    "telugu": "ఆలెఫ్/బెత్ స్థిర బిందువులు; స్థాయిక్రమం వెడల్పు, ఎత్తు",
+    "status": "fixed_point_recurrences_and_hierarchy_size_source_controlled_two_disclosed_base_repairs",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ఒమేగా శ్రేణి సుప్రీమం ద్వారా స్థిర బిందువు, V స్థాయి పరిమాణ సూత్రం, వెడల్పు-ఎత్తు సమానత్వం, అన్ని సూచికలకు పెరుగుతున్న W నిర్మాణం నిలిచాయి.",
+    "uncertainty": "స్థిర బిందు, స్థాయిక్రమ ప్రత్యేక పదాలకు ప్రత్యక్ష సాక్షి లేదు; పూర్వ స్థానిక పదాలు, మూల సూత్రాలు నియంత్రించాయి.",
+    "borrowing": "Aleph, beth, V, tau and W notation remain source-controlled."
+  }
+}

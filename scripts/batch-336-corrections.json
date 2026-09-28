@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0687",
+  "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+  "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+  "audit_id": "OLTEPTPTYNOR-20260928",
+  "audit_review_path": "evidence/OLP-0687-TYPED-NORMALIZATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4e48462912732d55dc44082b9909e2e8aa37a548122962fec6360d1591c3d073",
+  "audit_findings_path": "evidence/OLP-0687-TYPED-NORMALIZATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "455cbe76366cf9977c78fc18ab5bda9325d579091e38d2bcf255f9cf47064697",
+  "previous_corrections": 628,
+  "treatments": {
+    "OLTEPTPTYNOR-001": {
+      "target_line": 37,
+      "body_treatment": "Use the explicitly declared summand types."
+    },
+    "OLTEPTPTYNOR-002": {
+      "target_line": 38,
+      "body_treatment": "Adjoin zero to the set whose maximum is taken."
+    },
+    "OLTEPTPTYNOR-003": {
+      "target_line": 74,
+      "body_treatment": "Use x in the major-term position."
+    },
+    "OLTEPTPTYNOR-004": {
+      "target_line": 75,
+      "body_treatment": "Remove only the stray parenthesis."
+    },
+    "OLTEPTPTYNOR-005": {
+      "target_line": 76,
+      "body_treatment": "Describe the rank as the length of the substituted variable type."
+    },
+    "OLTEPTPTYNOR-006": {
+      "target_line": 99,
+      "body_treatment": "Include both proper source subterms; the stated strict rank assumption covers them."
+    },
+    "OLTEPTPTYNOR-007": {
+      "target_line": 121,
+      "body_treatment": "Retain the source argument for inspection and explicitly disclose the gap; do not certify normalization or the separately asserted strong normalization."
+    },
+    "OLTEPTPTYNOR-008": {
+      "target_line": 142,
+      "body_treatment": "Use O1' as the common result."
+    },
+    "OLTEPTPTYNOR-009": {
+      "target_line": 143,
+      "body_treatment": "Keep the source example and explicitly disclose that a complete weak Church–Rosser proof has not been supplied."
+    },
+    "OLTEPTPTYNOR-010": {
+      "target_line": 130,
+      "body_treatment": "Apply strong normalization to the one-step relation in the prose, Newman statement and proof; retain multistep confluence."
+    },
+    "OLTEPTPTYNOR-011": {
+      "target_line": 156,
+      "body_treatment": "Write the initial one-step arrows."
+    },
+    "OLTEPTPTYNOR-012": {
+      "target_line": 160,
+      "body_treatment": "Reduce the common descendant to N* under the stated termination assumption, then compare normal forms."
+    }
+  }
+}

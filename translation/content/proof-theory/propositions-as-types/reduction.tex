@@ -1,0 +1,164 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: reduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{red}
+
+\olsection{తగ్గింపు}
+
+సహజ నిగమన \tetoken{నిగమనాల్లో}{!!{derivation}s}, \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం తరువాత \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం రావడం తగ్గించగల మళ్లింపు. ఉదాహరణకు $\Intro{\land}$ తరువాత $\Elim{\land}$ వస్తే అవి “రద్దవుతాయి”; ఎందుకంటే $\Elim{\land}$ నిర్ధారణ ఎప్పుడూ \Intro{\land} ఉత్పత్తి చేసిన సంయోగంలోని ఒక సంయుక్త భాగమే, $\Intro{\land}$ ఆధారాలు ఆ రెండు భాగాలే. కాబట్టి ఒక భాగానికి \tetoken{ఒక నిగమనం}{!!a{derivation}} కావాలంటే, సంయోగాన్ని ప్రవేశపెట్టి తరువాత తొలగించకుండా ఆ \tetoken{నిగమనాన్ని}{!!{derivation}} నేరుగా వాడవచ్చు:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInfC{$!A_1 \land !A_2$}
+  \RightLabel{$\Elim{\land}_i$}
+  \UnaryInfC{$!A_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!A_i$}
+  \DisplayProof
+\end{gather*}
+
+ఈ సరళీకరణ సూచించినట్లుగా సంబంధిత నిరూపణ పదాలపై కూడా తగ్గింపు సంబంధాన్ని పరిగణించవచ్చు. $\delta_1$ నిరూపణ పదం~$N_1$, $\delta_2$ నిరూపణ పదం~$N_2$ అయితే, ఎడమ నిరూపణ పదం కుడి నిరూపణ పదానికి ఒక్క దశలో తగ్గుతుంది:
+\[
+  \proj{i}{\pair{N_1}{N_2}} \redone N_i
+\]
+రకాలతో కూడిన లాంబ్డా కలనశాస్త్రంలో ఇది లబ్ధ రకానికి \emph{బీటా తగ్గింపు} నియమం.
+\sourcecorrection{OLTEPTPTYRED-001}{మూల జత చిహ్నానికి రెండు వేరు ఆర్గ్యుమెంట్లకు బదులు ఒకే కుండలీకరణంలో రెండు పదాలు ఉన్నాయి; పూర్వ నిర్వచనం ప్రకారం రెండు ఆర్గ్యుమెంట్లుగా రాశాం.}
+
+సహజ నిగమనంలో \Intro{\land} తరువాత \Elim{\land} వంటి తగ్గించగల నిగమన జతను \emph{కట్} అంటారు. రక లాంబ్డా కలనశాస్త్రంలో $\redone$కు ఎడమవైపు పదాన్ని \emph{రెడెక్స్}, కుడివైపు పదాన్ని \emph{సంకోచన ఫలితం} అంటారు. రకరహిత లాంబ్డా కలనశాస్త్రంలో $(\lambd[x][N])Q$ను మాత్రమే రెడెక్స్‌గా పరిగణిస్తారు. రక కలనశాస్త్రంలో వాక్యనిర్మాణం $\pair{N}{M}$, $\proj{i}{N}$, $\inj[!A]{i}{N}$, $\dcase{N}{x_1}{M_1}{x_2}{M_2}$, $\abort{!A}{N}$ గల పదాలకు విస్తరించి, వాటికి సంబంధించిన రెడెక్స్‌లను కూడా చేర్చుతుంది.
+\sourcecorrection{OLTEPTPTYRED-002}{మూలం ఇంజెక్షన్ చిహ్నాన్ని మూడు తప్పనిసరి ఆర్గ్యుమెంట్లతో రాసింది; నిర్వచించిన ఐచ్ఛిక రక ఆర్గ్యుమెంట్, సూచిక, పదం అనే రూపానికి సమన్వయం చేశాం.}
+
+అలాగే వియోగానికి తగ్గింపు ఉంది:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$!C$}
+  \DisplayProof
+\end{gather*}
+దానికి అనురూప నిరూపణ-పద తగ్గింపు:
+\begin{gather*}
+  \dcase{\inj[!A_{3-i}]{i}{M}}{x_1}{N_1}{x_2}{N_2} \redone \Subst{N_i}{M}{x_i}
+\end{gather*}
+ఇక్కడ $M$ అనేది~$\delta$ నిరూపణ పదం, $N_i$ అనేది~$\delta_i$ నిరూపణ పదం. ఇది యోగ రకాలకు బీటా తగ్గింపు నియమం. $\Subst{M}{N_i}{x}$ అంటే $M$లో చరం~$x$ యొక్క అన్ని స్వేచ్ఛా ఉనికుల స్థానంలో~$N_i$ను ఉంచడం.
+\sourcecorrection{OLTEPTPTYRED-003}{ఇంజెక్షన్ ఐచ్ఛిక రకం చేర్చని మరో వియోగ భాగం రకం కావాలి. మూలంలోని $!A_i$ను నియమ పట్టికకు అనుగుణంగా $!A_{3-i}$గా సరిచేశాం.}
+
+ప్రమేయ రకం తగ్గింపు, $\Intro\lif$ తరువాత $\Elim\lif$ వచ్చే మళ్లింపును తొలగించడానికి అనురూపం:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!A}{x}$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DischargeRule{$\Intro{\lif}$}{x}
+  \UnaryInfC{$!A \lif !B$}
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$!B$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$!A$}
+  \RightLabel{$\delta$}
+  \DeduceC{$!B$}
+  \DisplayProof
+\end{gather*}
+నిరూపణ పదాల్లో ఇది సాధారణ బీటా తగ్గింపు:
+\begin{gather*}
+  (\lambd[\typeof{x}{!A}][N]M)
+  \redone \Subst{N}{M}{x}
+\end{gather*}
+
+\tetoken{నిరూపణల}{!!{proof}s} తగ్గింపు పరివర్తనలతోపాటు క్రమమార్పు పరివర్తనలను కూడా పరిగణించవచ్చు. \Elim{\lor} తరువాత మరో \tetoken{తొలగింపు}{!!{elimination}} నియమం వచ్చే (ఉప)\tetoken{నిరూపణలకు}{!!{proof}s} ఇవి వర్తిస్తాయి. ఉదాహరణకు:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \\
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$!A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$!A_1 \lor !A_2$}
+  \AxiomC{$\Discharge{!A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \AxiomC{$\Discharge{!A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!C_1 \land !C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$!C_i$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$!C_i$}
+  \DisplayProof
+\end{multline*}
+$\delta$, $\delta_1$, $\delta_2$ నిరూపణ పదాలు వరుసగా $M$, $N_1$, $N_2$ అయితే, వాటికి అనురూప నిరూపణ-పద (అంటే $\lambd$-పద) తగ్గింపు నియమం:
+\[
+  \proj{i}{\dcase{M}{x_1}{N_1}{x_2}{N_2}} \redone 
+\dcase{M}{x_1}{\proj{i}{N_1}}{x_2}{\proj{i}{N_2}}
+\]
+
+మళ్లింపులను \tetoken{నిరూపణల}{!!{proof}s} చివర్లలో మాత్రమే కాదు, \tetoken{నిరూపణల}{!!{proof}s} లోపల కూడా తొలగించవచ్చు: మళ్లింపుతో ముగిసే ఉప-\tetoken{నిరూపణకు}{!!{proof}} తగ్గింపు పరివర్తనను వర్తింపజేస్తాం. అలాగే $\beta$-తగ్గింపు $\lambd$-పదాల ఉపపదాలకు వర్తిస్తుంది. $N$ అనేది $M$ ఉపపదమై, $N \redone
+N'$ అయితే, $M$లోని ఉపపదం~$N$ స్థానంలో $N'$ను ఉంచి $M'$ను పొందవచ్చు. అప్పుడూ $M \redone M'$ అని రాస్తాం. $M = M_1
+\redone M_2 \redone M_3 \redone \dots \redone M_k = M'$ అనే వరుస ఉంటే ($k=1$, అంటే $M = M'$ సందర్భంతో సహా), $M \red M'$ అని రాస్తాం.
+\sourcecorrection{OLTEPTPTYRED-004}{మూల తగ్గింపు వరుసలో రెండవ పదం $M_2$ను మళ్లీ రాశారు; వరుస సూచికలకు అనుగుణంగా తదుపరి పదాన్ని $M_3$గా రాశాం.}
+
+ఏ ఉప-\tetoken{నిరూపణకూ}{!!{proof}} పరివర్తన వర్తింపజేయలేని \tetoken{నిరూపణను}{!!{proof}} \emph{సాధారణమైనది} అంటారు. అలాగే ఏ ఉపపదానికీ పరివర్తన వర్తింపజేయలేని $\lambd$-పదాన్ని \emph{సాధారణమైనది} అంటారు. సాధారణ $\lambd$-పదాన్ని \emph{సాధారణ రూపం} అని కూడా అంటారు.
+
+\end{document}

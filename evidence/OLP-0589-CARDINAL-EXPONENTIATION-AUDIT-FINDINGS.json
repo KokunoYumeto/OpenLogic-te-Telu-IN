@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCARDEXPO-20260927",
+  "unit_id": "OLP-0589",
+  "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+  "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+  "findings": [
+    {
+      "finding_id": "OLTESTCARDEXPO-001",
+      "source_locator": "expotough.tex lines 22–33, first exponent law proof",
+      "classification": "function_restrictions_product_vs_pair",
+      "source_issue": "A Cartesian product of function sets contains pairs of functions, not a product of two functions.",
+      "minimal_treatment": "Map f to the ordered pair of its two restrictions and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$f\\mapsto(f_{\\cardfont{b}}\\timesf_\\cardfont{c})$"],
+        "target_only": ["$f\\mapsto(f_{\\cardfont{b}},f_\\cardfont{c})$"]
+      }
+    },
+    {
+      "finding_id": "OLTESTCARDEXPO-002",
+      "source_locator": "expotough.tex lines 35–44, second exponent law proof",
+      "classification": "cartesian_product_domain_conflated_with_cardinal_product",
+      "source_issue": "The constructed f* has domain b × c, not literally the cardinal product b cardtimes c.",
+      "minimal_treatment": "State the direct bijection for functions on b × c, then pass to the equal cardinality and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\funfromto{\\cardfont{c}}{(\\funfromto{\\cardfont{b}}{\\cardfont{a}})}\\to\\funfromto{\\cardfont{b}\\cardtimes\\cardfont{c}}{\\cardfont{a}}$"],
+        "target_only": ["$\\funfromto{\\cardfont{c}}{(\\funfromto{\\cardfont{b}}{\\cardfont{a}})}\\to\\funfromto{\\cardfont{b}\\times\\cardfont{c}}{\\cardfont{a}}$"]
+      }
+    },
+    {
+      "finding_id": "OLTESTCARDEXPO-003",
+      "source_locator": "expotough.tex lines 76–85, finite exponent proposition",
+      "classification": "zero_exponent_exception_omitted",
+      "source_issue": "For infinite a, a^0 is 1 rather than a.",
+      "minimal_treatment": "Restrict the proposition to nonzero natural exponents and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

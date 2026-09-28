@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "307",
+  "unit_id": "OLP-0658",
+  "unit_order": 658,
+  "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+  "blocks": 37,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],
+  "corrections_by_block": {"23": ["OLTEPTCUTITP-005"], "30": ["OLTEPTCUTITP-006", "OLTEPTCUTITP-001", "OLTEPTCUTITP-002"], "31": ["OLTEPTCUTITP-003"], "32": ["OLTEPTCUTITP-004"]},
+  "previous_segments": 9745,
+  "previous_terms": 347,
+  "expected_corrections": 565,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "అంతర్వర్తన/నిర్వచనీయత/సంయుక్త అవైరుధ్య స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ భాష/వాక్యం/నిరూపణ/ఈజెన్‌చరరాశి పదాలు పోల్చాం; మహేరా విభజన సందర్భాలు, బెత్ నిరూపణ, రాబిన్సన్ షరతులు, ఆరు మూల-లోపాల ప్రకటన తనిఖీ చేశాం.",
+  "evidence_limit": "అంతర్వర్తనానికి తెలుగు పదం భావవివరణతో తాత్కాలికం; ఒకే ఖచ్చిత నిఘంటు సాక్షి ఉన్నట్టు ప్రకటించడం లేదు. క్లిష్ట మహేరా/బెత్ నిరూపణలను స్వతంత్ర పద్ధతిలో పూర్తిగా నిరూపించలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T348","source_term":"interpolation theorem; interpolant; implicit and explicit definability; joint consistency","telugu":"అంతర్వర్తన ప్రమేయం; మధ్యవర్తి వాక్యం/సూత్రం; పరోక్ష/ప్రత్యక్ష నిర్వచనీయత; సంయుక్త అవైరుధ్యం","status":"interpolation_maehara_beth_robinson_six_source_defects_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"క్రెయిగ్, మహేరా, బెత్, రాబిన్సన్ ఫలితాలు, భాషా పరిమితి, ఈజెన్‌చరరాశి వాదనలు నిలిచాయి; ఆరు నిర్దిష్ట మూల లోపాలను ప్రకటించాం.","uncertainty":"అంతర్వర్తన అనే ప్రత్యేక తర్కశాస్త్ర పదం భావపారదర్శక ఎంపిక; ప్రత్యక్ష ప్రామాణిక తెలుగు సమానార్థం నిర్ధారణ బాకీ. సంక్లిష్ట మహేరా నిరూపణ స్వతంత్రంగా పునర్నిర్మించలేదు.","borrowing":"Craig, Maehara, Beth, Robinson names, G3c and symbolic interpolation/proof identifiers remain source-identifying."}
+}

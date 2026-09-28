@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "134",
+  "unit_id": "OLP-0485",
+  "unit_order": 485,
+  "source_path": "content/applied-modal-logic/epistemic-logic/relational-models.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7308,
+  "previous_terms": 174,
+  "expected_corrections": 454,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సంబంధ నమూనాల మూలం, తెలుగు లక్ష్యం, ముందరి మోడల్ ప్రాప్యత పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలు ఎదురెదురు చూశాం; ప్రతి కర్తకు R_a, Wలో లోకాలు, V విలువకేటాయింపు, సమాచార అనుకూలత తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/011/018/024 సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. జ్ఞానసంబంధ సమాచార స్థితి వ్యాఖ్యానానికి అవి ప్రత్యక్ష ఆధారాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T175",
+    "source_term": "multi-agent relational model / agent-indexed accessibility relations / informational compatibility",
+    "telugu": "బహు-కర్త సంబంధ నమూనా / కర్త సూచికగల ప్రాప్యత సంబంధాలు / సమాచారానికి అనుకూలత",
+    "status": "native_general_set_relation_function_logic_derivation_register_attested_epistemic_relational_model_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "W శూన్యం కాని లోకాల సమితి, ప్రతి a∈Gకు R_a, ప్రతి pకు V(p), w నుంచి w'కి ప్రాప్యత, కర్తకు రెండింటి మధ్య తేడా తెలియకపోవడం నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు సమాచార అనుకూలతను జ్ఞానసంబంధ అర్థవిజ్ఞానంగా ధృవీకరించవు; అది మూల వ్యాఖ్యానంపై ఆధారపడింది. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "W/R/V and world/agent indices remain source-controlled notation; ప్రాప్యత సంబంధం continues the prior modal edition term."
+  }
+}

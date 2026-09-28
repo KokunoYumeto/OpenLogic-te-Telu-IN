@@ -1,0 +1,127 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: truth-at-w
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{trw}
+
+\olsection{ఒక లోకం వద్ద సత్యం}
+
+సాధారణ మోడల్ తర్కంలోలాగే, ప్రతి జ్ఞానసంబంధ నమూనా
+దానిలోని ఏ లోకాల వద్ద ఏ \tetoken{సూత్రాలు}{!!{formula}s}
+సత్యమో నిర్ణయిస్తుంది. సంబంధ అర్థవిజ్ఞానపు ప్రాథమిక
+భావన కోసం ``నమూనా~$\mModel{M}$లో
+\tetoken{సూత్రం}{!!{formula}}~$!A$ లోకం~$w$ వద్ద సత్యం''
+అనే సంకేతాన్నే వాడతాం. ఆ సంబంధాన్ని ఆగమన పద్ధతిలో
+నిర్వచిస్తాం; మోడల్ కాని కారకాలన్నింటికీ అది సాధారణ
+మోడల్ తర్కంలోని నిర్వచనమే.
+
+\begin{defn}\ollabel{defn:mmodels}
+  నమూనా~$\mModel M$లో \emph{$w$ వద్ద
+  \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ సత్యం},
+  సంకేతంగా $\mSat{M}{!A}[w]$, ఇలా ఆగమన పద్ధతిలో
+  నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ ఎప్పుడూ కాదు}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ ఎల్లప్పుడూ}.}{}
+  \item $\mSat{M}{p}[w]$ అయితే, అప్పుడే $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$ మరియు $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$} (లేదా రెండూ).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat/{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ సత్యం; లేదా
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ అసత్యం}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $R_a ww'$ అయ్యే ప్రతి $w' \in W$కు $\mSat{M}{!B}[w']$}
+  \end{enumerate}
+\end{defn}
+
+ఇక్కడే ప్రాప్యత సంబంధాలపై పరిమితులను ఆలోచించాలి.
+ఎందుకంటే \olref{defn:sub:mmodels-box} నిబంధన ప్రకారం,
+$R_a ww'$ అయ్యే~$w'$ ఏదీ లేకపోతే
+\tetoken{సూత్రం}{!!a{formula}}~$\Knows_a !B$
+లోకం~$w$ వద్ద సత్యమవుతుంది. సాధారణ మోడల్ తర్కంలోనూ
+ఇదే నిబంధన: ఒక లోకానికి ఉత్తరవర్తులు లేకపోతే,
+అక్కడ అన్ని $\Box$-సూత్రాలు శూన్యసత్యంగా నిలుస్తాయి.
+$\Knows$ \emph{జ్ఞానాన్ని} సూచిస్తుందని భావిస్తే ఇది
+చాలా ప్రతిసహజంగా కనిపిస్తుంది. ఒక కర్తకు ఒకే సమయంలో
+$!A$, $\lnot !A$ రెండూ తెలిసే పరిస్థితులు
+\emph{ఏవీ లేవు} అని సాధారణంగా భావిస్తాం.
+
+ఒక పరిష్కారం: జ్ఞానసంబంధ తర్కంలో మన ప్రాప్యత సంబంధం
+ఎల్లప్పుడూ \emph{స్వావర్తనమైనది} అయ్యేలా చూడటం.
+వాస్తవ లోకం కర్త సమాచారానికి అనుకూలమే అన్న భావనకు
+ఇది స్థూలంగా అనురూపం. నిజానికి జ్ఞానసంబంధ తర్కాలు
+సాధారణంగా S5ను వాడతాయి; అయితే $\Knows_a$
+సంబంధం ఖచ్చితంగా దేనిని సూచించాలనుకుంటున్నారనే దాన్ని
+బట్టి ఇతరులు బలహీనమైన వ్యవస్థలను వాడవచ్చు.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[<->] (w1) to node {$a$} (w2);
+      \draw[->,loop left] (w1) to node {$a,b$} (w1);
+      \draw[<->] (w1) to [swap] node {$b$} (w3);
+      \draw[->,loop above] (w2) to node {$a,b$} (w2) ;
+      \draw[->,loop below] (w3) to node {$a,b$} (w3) ;
+    \end{tikzpicture}
+  \end{center}
+  \caption{సరళమైన జ్ఞానసంబంధ నమూనా.}
+  \ollabel{fig:simple}
+\end{figure}
+
+\begin{prob}
+  కింది వాటిలో ఏవి
+  \olref[aml][el][trw]{fig:simple}లో నిలుస్తాయో పరిశీలించండి:
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_a \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b \lnot q}[w_1]$;
+    \item $\mSat{M}{\Knows_b q \lor \Knows_b \lnot q}[w_2]$;
+    \item $\mSat{M}{\Knows_a( \Knows_b q \lor \Knows_b \lnot q)}[w_2]$;
+    \item $\mSat{M}{\EKnows_{\{a,b\}} \lnot q}[w_3]$;
+    \end{enumerate}
+\end{prob}
+
+ఒక లోకం వద్ద సత్యానికి ప్రాథమిక నిర్వచనాన్ని
+ఇచ్చాం. ఇక మోడల్ చెల్లుబాటు, అనుగమనం వంటి సాధారణ
+మోడల్ తర్కంలోని ఇతర అర్థవిజ్ఞాన భావనలూ ఇక్కడికి
+అలాగే వర్తిస్తాయి; మోడల్ కారకాల వ్యాఖ్యానాన్ని
+కొత్తగా అర్థం చేసుకోవడమే తేడా.
+
+ఇప్పుడు సామాన్య జ్ఞాన కారకం~$\CKnows_G$కు సత్య
+షరతులను ఇవ్వవచ్చు. ఒక సంబంధం~$R$ యొక్క
+\emph{సంక్రామక సంవృతం}~$R^+$ను
+\olref[sfr][rel][ops]{sec} నుంచి గుర్తుచేసుకోండి:
+\begin{align*}
+  R^+ &= \bigcup_{ n \in \mathbb{N}} R^n,
+\intertext{ఇక్కడ}
+  R^0 & = R \text{ మరియు}\\
+  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}.
+\end{align*}
+అప్పుడు, $G$ కర్తల సమూహమైతే,
+అన్ని కర్తల ప్రాప్యత సంబంధాల సమ్మేళనపు
+సంక్రామక సంవృతాన్ని $R_G = ( \bigcup_{b
+\in G} R_b )^+$గా నిర్వచిస్తాం.
+
+\begin{defn}
+$G' \subseteq G$ అయితే, $R_{G'} w w'$ అయ్యే ప్రతి
+$w'$కు $\mSat{M}{!A}[w']$ అయినప్పుడు, అప్పుడే
+$\mSat{M}{\CKnows_{G'} !A}[ w]$ అని నిర్వచిస్తాం.
+\end{defn}
+
+\end{document}

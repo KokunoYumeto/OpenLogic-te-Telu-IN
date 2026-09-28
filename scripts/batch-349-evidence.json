@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "349",
+  "unit_id": "OLP-0700",
+  "unit_order": 700,
+  "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+  "blocks": 18,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10321,
+  "previous_terms": 389,
+  "expected_corrections": 661,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సీక్వెంట్, బహుసమితి, పూర్వ/ఉత్తరపక్షం, నిరూపణ వృక్షం పదాలను పూర్వ సమితి, సహజ నిగమన, అర్థవిచార గద్యంతో పోల్చాం.",
+  "evidence_limit": "బహుసమితి, బాహుళ్యం నిర్వచనాత్మక పదాలు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T390",
+    "source_term": "sequent calculus; multiset; multiplicity; antecedent; succedent; cut elimination",
+    "telugu": "సీక్వెంట్ కలనశాస్త్రం; బహుసమితి; బాహుళ్యం; పూర్వపక్షం; ఉత్తరపక్షం; కట్-తొలగింపు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "బహుసమితిలో క్రమం, ప్రతుల సంఖ్య వేరు; ఖాళీ పక్షాల సత్య అర్థం నిలిపాం.",
+    "uncertainty": "బహుసమితి, బాహుళ్యం నిర్వచనాత్మక పదాలు; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

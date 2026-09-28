@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPSSAL-20260928",
+  "unit_id": "OLP-0683",
+  "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+  "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPSSAL-001",
+      "source_locator": "search-algorithm.tex lines 65–69, choice of k",
+      "classification": "reused_new_formula_index",
+      "source_issue": "k is defined as the current maximum index, then assigned to newly created formulas. When another formula already retains index k, the promised distinctness of indices fails.",
+      "minimal_treatment": "Define k as one plus the current maximum, leaving the displayed k/k+1 patterns unchanged, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSSAL-002",
+      "source_locator": "search-algorithm.tex lines 111–115, right existential reduction tree",
+      "classification": "wrong_rule_label",
+      "source_issue": "A right-existential reduction is labelled with the left-existential rule.",
+      "minimal_treatment": "Use RightR{lexists} in the displayed tree and disclose the rule-name repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^k,!B(t)^{k+1}$\\RightLabel{\\LeftR{\\lexists}}\\UnaryInf$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^i$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^k,!B(t)^{k+1}$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Pi\\fCenter\\Lambda,\\lexists[x][!B(x)]^i$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSSAL-003",
+      "source_locator": "search-algorithm.tex lines 109–110, selected right-existential occurrence",
+      "classification": "missing_occurrence_index",
+      "source_issue": "The prose omits i on the selected existential occurrence, though the matching displayed conclusion has that index.",
+      "minimal_treatment": "Include i in the prose sequent and disclose the omission.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Pi\\Sequent\\Lambda,\\lexists[x][!B(x)]$"
+        ],
+        "target_only": [
+          "$\\Pi\\Sequent\\Lambda,\\lexists[x][!B(x)]^i$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSSAL-004",
+      "source_locator": "search-algorithm.tex lines 117–120, exhausted-term fallback",
+      "classification": "constant_set_invariant_violation",
+      "source_issue": "The fallback c0 need not belong to the assigned constant set C. For example, an initial constant set containing only c1 and no function symbols may exhaust its terms, then acquire c0 in a sequent without adding c0 to C. This contradicts the later invariant and can invalidate a fresh-constant choice.",
+      "minimal_treatment": "Reuse the first constant already in nonempty C instead, preserving the invariant, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Objc_0$"
+        ],
+        "target_only": []
+      }
+    }
+  ]
+}

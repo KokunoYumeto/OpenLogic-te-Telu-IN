@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0615",
+  "source_path": "content/methods/induction/induction-on-N.tex",
+  "source_sha256": "30a7fe3bf67517b5744d826eeb819782d399cf28a018313f5a7eff12843fe222",
+  "audit_id": "OLTEMTHINDN-20260927",
+  "audit_review_path": "evidence/OLP-0615-INDUCTION-N-SOURCE-AUDIT.md",
+  "audit_review_sha256": "a2e23b7adc3789848b9e07a6c35aa0be8069d15344060e498f83891412a9f858",
+  "audit_findings_path": "evidence/OLP-0615-INDUCTION-N-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "bf4903926f6bff85ff4fa9b48d39fec6d0020e6259dc8bb4e9240e145cc7d653",
+  "previous_corrections": 528,
+  "treatments": {
+    "OLTEMTHINDN-001": {"target_line": 20, "body_treatment": "సాధారణ అనువర్తి దశలో k సూచికకు ఒకటి ప్రతిస్థాపించి, మూల n సూచిక పొరపాటును ప్రకటించాం."},
+    "OLTEMTHINDN-002": {"target_line": 35, "body_treatment": "ఒక పాచిక ఆధారానికి ముందుగా శూన్య పాచికల ఒకే సున్నా మొత్తం సందర్భాన్ని విడిగా నిరూపణలో చేర్చి ప్రకటించాం."}
+  }
+}

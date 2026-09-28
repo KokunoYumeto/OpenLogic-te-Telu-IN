@@ -1,0 +1,71 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{tr}
+
+\olsection{\Log{G1c}, \Log{G3c} మధ్య నిరూపణల మార్పిడి}
+
+శాస్త్రీయ తర్కానికి \Log{G1c}, \Log{G3c} రెండూ సార్థకమైనవి, సంపూర్ణమైనవి అని పేర్కొన్నాం; అంటే ప్రతి \tetoken{నిర్మాణంలో}{!!{structure}} సత్యమైన సీక్వెంట్లన్నిటినీ, వాటిని మాత్రమే, ప్రతి వ్యవస్థ నిరూపిస్తుంది. ముఖ్యంగా, అవి ఒకే సీక్వెంట్లను నిరూపిస్తాయి. సార్థకత, సంపూర్ణత సిద్ధాంతాల ద్వారా పక్కదారి పట్టకుండా, పూర్తిగా నిరూపణ-సిద్ధాంత పద్ధతిలో ఈ విషయాన్ని ఇప్పుడు నిరూపించగలం. అటువంటి నిరూపణ \Log{G1c}లోని \tetoken{నిరూపణలను}{!!{proof}s} \Log{G3c}లోని \tetoken{నిరూపణలుగా}{!!{proof}s}, అలాగే వ్యతిరేక దిశలో కూడా, \emph{రూపాంతరం} చేసే పద్ధతులను ఇస్తుంది.
+
+\begin{prop}
+$\Log{G1c} \Proves S$ అయితే $\Log{G3c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+$\pi$ అనేది \Log{G1c}లో ఒక \tetoken{నిరూపణ}{!!a{proof}} అయితే, \Log{G3c}లో~$S$కు ఒక \tetoken{నిరూపణ}{!!a{proof}}~$\pi'$ ఉంటుందని చూపిస్తాం. $n = \pheight{\pi}$పై ఆగమనంతో దీనిని నిరూపిస్తాం.
+
+$n = 0$ అయితే, $\pi$ ఒక స్వయంసిద్ధం. $\lfalse \Sequent \quad$ స్వయంసిద్ధం~\Log{G3c}లో కూడా స్వయంసిద్ధమే (సందర్భం $\Gamma, \Delta$ను ఖాళీగా తీసుకోండి). \Log{G1c}లో $!A \Sequent !A$ స్వయంసిద్ధాలకు పరమాణు~$!A$ మాత్రమే కాక ఏ సూత్రం అయినా అనుమతించబడుతుంది. అటువంటి సీక్వెంట్లన్నీ~\Log{G3c}లో \tetoken{నిరూపించదగినవని}{!!{provable}} \olref[ex]{prop:G3c-axioms}లో నిరూపించాం.\sourcecorrection{OLTEPTSEQTR-001}{మూలంలో ఇక్కడ వ్యవస్థ పేరు తప్పుగా ఉంది. ఏ సూత్రానికైనా స్వయంసిద్ధంగా గుర్తింపును అనుమతించేది మొదటి వ్యవస్థ; రెండో వ్యవస్థలో పరమాణు గుర్తింపులు మాత్రమే స్వయంసిద్ధాలు, ఇతర గుర్తింపులు నిరూపించదగినవి.}
+
+$n>0$ అయితే, $\pi$ ఒక నియమం~$R$తో ముగుస్తుంది. ఆగమన పరికల్పన ప్రకారం ఆ నియమం యొక్క పూర్వపక్షాలకు~\Log{G3c}లో \tetoken{నిరూపణలు}{!!{proof}s} ఉంటాయి; అంటే తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s}~\Log{G3c}లో రూపాంతరాలు ఉంటాయి. నియమం~$R$ కూడా \Log{G3c} నియమమే అయితే, పూర్వపక్షాల రూపాంతరిత \tetoken{నిరూపణలకు}{!!{proof}s} దానిని వర్తింపజేస్తాం. మిగిలిన నియమం~$R$ కోసం అనుకరణను ఉపయోగిస్తాం. అది $\LeftR{\land}$ లేదా $\RightR{\lor}$ అయితే, మొదటి వ్యవస్థ పూర్వపక్షంలో లేని రెండో సంయుక్త భాగాన్ని లేదా రెండో వియుక్త భాగాన్ని బలహీనీకరణతో చేర్చి, రెండో వ్యవస్థలోని సంబంధిత తార్కిక నియమాన్ని వర్తింపజేస్తాం. \LeftR{\lforall}, \RightR{\lexists} నియమాల విషయంలో కూడా రెండో వ్యవస్థ పూర్వపక్షంలో ప్రధాన పరిమాణక సూత్రాన్ని నిలుపుకుంటుంది; ఆ సూత్రాన్ని సరైన వైపున బలహీనీకరణతో చేర్చి సంబంధిత నియమాన్ని వర్తింపజేస్తాం. ఈ బలహీనీకరణలకు, అలాగే చివరి నియమం బలహీనీకరణ అయితేనూ, \olref[adm]{prop:weak-G3c-adm} వర్తిస్తుంది. చివరి నియమం సంకోచనం అయితే, \olref[inv]{prop:G3c-cont-adm}ను వర్తింపజేస్తాం.\sourcecorrection{OLTEPTSEQTR-002}{మూలంలోని సంయోగం/వియోగానికి ఇచ్చిన సూచన వ్యతిరేక దిశలోని వ్యుత్పత్తిని చూపిస్తుంది. దాని బదులు ఇక్కడ అవసరమైన దిశలో బలహీనీకరణ చేసి తార్కిక నియమం వర్తింపజేసే నిర్మాణాన్ని ఇచ్చాం.}\sourcecorrection{OLTEPTSEQTR-003}{మూలం రెండు పరిమాణక నియమాల్లోని తేడాలను విస్మరిస్తుంది. ఈ దిశలో నిలుపుకునే ప్రధాన సూత్రాన్ని బలహీనీకరణతో చేర్చాలి; కింద ఇచ్చే వ్యతిరేక దిశలో నియమం తర్వాత ఏర్పడే రెండు ప్రతులను సంకోచించాలి.}
+\end{proof}
+
+\begin{prop}
+$\Log{G3c} \Proves S$ అయితే $\Log{G1c} \Proves S$.
+\end{prop}
+
+\begin{proof}
+మళ్లీ $S$కు గల ఒక \tetoken{నిరూపణ}{!!a{proof}}~$\pi$ యొక్క \tetoken{ఎత్తుపై}{!!{height}} ఆగమనంతో ముందుకు వెళ్తాం. \Log{G3c}లోని ప్రతి స్వయంసిద్ధాన్ని~\Log{G1c}లో ఒక స్వయంసిద్ధం నుంచి \LeftR{\Weakening}, \RightR{\Weakening} నియమాలను కొన్ని సార్లు వర్తింపజేసి \tetoken{నిరూపించవచ్చు}{!!{prove}d}:
+\[
+  \Axiom$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter !C$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$!C, \Gamma \fCenter \Delta, !C$
+  \DisplayProof
+\qquad
+  \Axiom$\lfalse \fCenter$
+  \RightLabel{\LeftR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter$
+  \RightLabel{\RightR{\Weakening}}
+  \Deduce$\lfalse, \Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+$\pi$ ఒక నియమం~$R$తో ముగిస్తే, ఆగమన పరికల్పన పూర్వపక్షాలకు \Log{G1c}లో \tetoken{నిరూపణలను}{!!{proof}s} ఇస్తుంది. రెండు వ్యవస్థల్లో నియమం ఒకేలా ఉంటే, ఆ \tetoken{నిరూపణలకు}{!!{proof}s} అదే నియమం~$R$ను వర్తింపజేయవచ్చు. \LeftR{\land}, \RightR{\lor} నియమాలు \Log{G1c},~\Log{G3c}లలో వేర్వేరుగా ఉంటాయి. \Log{G3c} రూపాలను \Log{G1c}లో ఇలా వ్యుత్పత్తి చేయవచ్చు:
+\[
+  \Axiom$!A, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+\qquad
+  \Axiom$\Gamma \fCenter \Delta, !A, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !B$
+  \RightLabel{\RightR{\lor}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B, !A \lor !B$
+  \RightLabel{\RightR{\Contraction}}
+  \UnaryInf$\Gamma \fCenter \Delta, !A \lor !B$
+    \DisplayProof
+  \]
+\LeftR{\lforall}, \RightR{\lexists} కూడా వేర్వేరుగా ఉంటాయి. రెండో వ్యవస్థ పూర్వపక్షంలో నిలుపుకున్న ప్రధాన పరిమాణక సూత్రాన్ని సందర్భంలో ఉంచి, మొదటి వ్యవస్థ సంబంధిత నియమాన్ని వర్తింపజేస్తే నిష్కర్షలో ఆ ప్రధాన సూత్రం రెండు ప్రతులు వస్తాయి. సరైన వైపున సంకోచన నియమాన్ని వర్తింపజేస్తే కావలసిన నిష్కర్ష వస్తుంది. ఈ విధంగా మిగిలిన పరిమాణక సందర్భాలు కూడా పూర్తవుతాయి.\sourcecorrection{OLTEPTSEQTR-004}{మూలంలోని రెండో వియోగ అనుమానం నిష్కర్షలో వరుసగా రెండు కామాలు ఉన్నాయి; ఖాళీ సూత్రం ఉన్నట్లు కనిపించకుండా అదనపు కామాను తొలగించాం.}
+\end{proof}
+
+\end{document}

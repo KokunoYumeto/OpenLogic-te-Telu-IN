@@ -1,0 +1,19 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "append": true,
+  "unit_id": "OLP-0718",
+  "source_path": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex",
+  "source_sha256": "fdfbf3efe6aa648adad1e98d6567ecd7941dc41aeb1917b41548ad9568bb41a2",
+  "audit_id": "OLTESFRINDINT-META-20260928",
+  "audit_review_path": "evidence/OLP-0718-FORMULA-METAVARIABLE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4f542ebfd139c4b965725a5628eb6e7b28dba6d7a3587f7cd76749f8de3eb433",
+  "audit_findings_path": "evidence/OLP-0718-FORMULA-METAVARIABLE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "daf49b3adaa2934585e3ee56c0bf604820265cf085d43645cebc0063162b41e8",
+  "previous_corrections": 704,
+  "treatments": {
+    "OLTESFRINDINT-002": {
+      "target_line": 64,
+      "body_treatment": "Use !A consistently in the conjunction constructor and induction cases; leave !B, the constructors, and all proof claims unchanged."
+    }
+  }
+}

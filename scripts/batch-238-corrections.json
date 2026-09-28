@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0589",
+  "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+  "source_sha256": "3c24595966608c406bd3b8f2eec62edc0476017588fee15ec14ba64798b208ec",
+  "audit_id": "OLTESTCARDEXPO-20260927",
+  "audit_review_path": "evidence/OLP-0589-CARDINAL-EXPONENTIATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "12558051a6a6060ffc5f9a062efddfd5a0897bcc8cd2b416544756a154c71789",
+  "audit_findings_path": "evidence/OLP-0589-CARDINAL-EXPONENTIATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "ccc067c3a12e7a26b1fd42670d4913a317599b8491ae234cfda8633046ad7f66",
+  "previous_corrections": 500,
+  "treatments": {
+    "OLTESTCARDEXPO-001": {"target_line": 23, "body_treatment": "విచ్ఛిన్న సమ్మేళనంపై ప్రమేయాన్ని రెండు పరిమితి ప్రమేయాల క్రమయుగ్మానికి పంపి, లక్ష్య కార్టీషియన్ గుణితంతో సరిపోల్చాం."},
+    "OLTESTCARDEXPO-002": {"target_line": 30, "body_treatment": "నిర్మిత ప్రమేయానికి నిజమైన కార్టీషియన్ నిర్వచన సమితి ఇచ్చి, ఆ తరువాత కార్డినల్ గుణితానికి సమసంఖ్యకత్వాన్ని వర్తింపజేశాం."},
+    "OLTESTCARDEXPO-003": {"target_line": 58, "body_treatment": "అనంత ఆధార కార్డినల్ ఘాత వాదనను శూన్యం కాని పరిమిత ఘాతాలకు పరిమితం చేసి శూన్య మినహాయింపును ప్రకటించాం."}
+  }
+}

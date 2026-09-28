@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "299",
+  "unit_id": "OLP-0650",
+  "unit_order": 650,
+  "source_path": "content/lambda-calculus/lambda-definability/lists.tex",
+  "blocks": 10,
+  "linguistic_blocks": [4,5,6,7,8,9,10],
+  "previous_segments": 9604,
+  "previous_terms": 339,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "లాంబ్డా జాబితాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ చర్చి సంఖ్యలు/సంచయం/జాబితా పదాలు పోల్చాం; కుడివైపు మడత సంకేతీకరణ, Sum/Len నిర్వచనాలు, రెండు సాధనలు తనిఖీ చేశాం.",
+  "evidence_limit": "Len, తిరగదోసే ప్రమేయం మూలంలో సాధనలుగానే ఉన్నాయి; ఇక్కడ సమాధానాలు చేర్చలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T340","source_term":"Church-encoded list; accumulator; right fold; Sum and Len","telugu":"చర్చి-సంకేతిత జాబితా; సంచయకం; కుడివైపు మడత; Sum, Len","status":"lambda_list_fold_encoding_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"జాబితా లాంబ్డా సంకేతనం, సంచయక వివరణ, కుడివైపు మడత, Sum/Len ప్రదర్శిత పదాలు, సాధనలు నిలిచాయి.","uncertainty":"సాధనల సమాధానాలు ఈ మూలంలో లేవు; జాబితా తిరగదోసే నిర్మాణం ఇక్కడ నిరూపితం కాదు.","borrowing":"Church, Sum, Len and lambda-term notation remain source-identifying."}
+}

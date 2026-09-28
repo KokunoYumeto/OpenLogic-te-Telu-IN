@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0610",
+  "source_path": "content/methods/proofs/reading-proofs.tex",
+  "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+  "audit_id": "OLTEMTHPRFREA-20260927",
+  "audit_review_path": "evidence/OLP-0610-READING-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "73c249906875f931ae45e5ccf580e82d1ed3bed7ef52e84bdadeecc8960fb6e8",
+  "audit_findings_path": "evidence/OLP-0610-READING-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "68fd25b55e7c41c5983117854557fa119813764230d31595b83a735c580f68a3",
+  "previous_corrections": 526,
+  "treatments": {
+    "OLTEMTHPRFREA-001": {"target_line": 52, "body_treatment": "శోషణ సమానత్వానికి (b)లో పునరావృత ముందరి దిశ బదులు నిజమైన వెనుక ఉపసమితి దిశను చేర్చి ప్రకటించాం."},
+    "OLTEMTHPRFREA-002": {"target_line": 53, "body_treatment": "చివరి సమ్మేళన సభ్యత్వ వ్యక్తీకరణలో అదనపు మూసివేత కుండలీకరణాన్ని తొలగించి ప్రకటించాం."}
+  }
+}

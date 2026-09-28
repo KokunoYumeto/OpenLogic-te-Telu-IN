@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "301",
+  "unit_id": "OLP-0652",
+  "unit_order": 652,
+  "source_path": "content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex",
+  "blocks": 23,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+  "previous_segments": 9621,
+  "previous_terms": 341,
+  "expected_corrections": 548,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "బహుమూల్య తర్క సీక్వెంట్-నిరూపణ భావనల స్థిర మూలం, తెలుగు లక్ష్యం, అదే పాఠ్యపు మొదటిస్థాయి సీక్వెంట్ అనువాదం, స్థానిక తర్క సాక్షులు పోల్చాం; ఏకైక విభిన్న భాగ గుర్తింపు, ప్రూఫ్‌ట్రీలు, అన్ని నిర్వచన/ప్రతిపాదన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "ఈ మూలం మొదటిస్థాయి సీక్వెంట్ పాఠ్యాన్ని భాగ గుర్తింపు తప్ప యథాతథంగా పునర్వినియోగించింది; అనువాదం అదే సమాంతర విభాగం నుంచి స్థానికంగా స్వీకరించాం. LK బహుమూల్య సందర్భంలో తగినదో స్వతంత్రంగా ధృవీకరించలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T342","source_term":"sequent-calculus proof-theoretic notions in many-valued-logic part","telugu":"బహుమూల్య భాగంలోని సీక్వెంట్-కలనం నిరూపణ-సిద్ధాంత భావనలు","status":"parallel_fol_sequent_translation_reused_source_parity_checked","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"సమాంతర మూల పాఠ్యంతో తేడా భాగ గుర్తింపే; పూర్వ తెలుగు సీక్వెంట్ నిర్వచనాలు, స్వావర్తనత్వం/ఏకదిశత/సంక్రామకత్వం/సంహతత్వం నిరూపణలు కొత్త IDతో నిలిచాయి.","uncertainty":"మూల పాఠ్యంలో LK బహుమూల్య తర్క విభాగానికి ఎలా వర్తిస్తుందనే సందర్భం ఇక్కడ స్వతంత్రంగా విశ్లేషించలేదు.","borrowing":"LK, prooftree symbols and source reference IDs remain source-identifying."}
+}

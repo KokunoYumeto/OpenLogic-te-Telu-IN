@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTLIN-20260927",
+  "unit_id": "OLP-0506",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+  "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+  "findings": [
+    {
+      "finding_id": "OLTEINTLIN-001",
+      "source_locator": "lindenbaum.tex lines 99-104; finite-support maximum",
+      "classification": "empty_finite_support_maximum_undefined",
+      "source_issue": "The largest index of members of a finite support is undefined when that support is empty.",
+      "minimal_treatment": "Use the initial stage for the empty case and disclose the repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEINTLIN-002",
+      "source_locator": "lindenbaum.tex lines 120-126; fairness of disjunction enumeration",
+      "classification": "global_eligible_count_need_not_decrease",
+      "source_issue": "Adding a formula can make further disjunctions derivable, so the global number of eligible disjunctions need not decrease at each stage.",
+      "minimal_treatment": "Argue over the finite prefix before a fixed index j, whose indices can each be selected at most once, and disclose the repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

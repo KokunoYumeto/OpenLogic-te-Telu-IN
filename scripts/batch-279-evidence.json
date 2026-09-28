@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "279",
+  "unit_id": "OLP-0630",
+  "unit_order": 630,
+  "source_path": "content/history/biographies/alfred-tarski.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 9304,
+  "previous_terms": 319,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002", "TE-P018", "TE-P023", "TE-P024"],
+  "consultation_phase": "టార్స్కీ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ తార్కిక అనుగమనం/సత్య పదాలు, స్థానిక తర్క సాక్షులు పోల్చాం; బీ గ్రేడ్ కథ-ఏ గ్రేడ్ రికార్డు మధ్య మూల వ్యత్యాసం, వార్సా/వలస కాలక్రమం, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు తార్కిక అనుగమనం, సత్య భాషకు నేపథ్యం మాత్రమే; వ్యక్తి జీవిత, వలస, తరగతి సంఘటనలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T320","source_term":"Alfred Tarski; logical consequence; logical truth","telugu":"ఆల్ఫ్రెడ్ టార్స్కీ; తార్కిక అనుగమనం; తార్కిక సత్యం","status":"anecdote_record_contrast_and_semantic_terms_source_controlled","passages":["TE-P002","TE-P018","TE-P023","TE-P024"],"basis":"తర్కంలో బీ వచ్చిందన్న ఆయన కథను రికార్డుల ఏ గ్రేడ్ సమాచారంతో కలపకుండా వేరుగా చూపాం; అనుగమనం/సత్య రచనలు, 1939 వలస, అధ్యాపక పదవులు, పఠన సూచనలు నిలిచాయి.","uncertainty":"జీవిత కథనం, తరగతి సంఘటనలు బాహ్యంగా ధృవీకరించలేదు; స్థానిక సాక్షులు టార్స్కీ జీవితానికి ప్రత్యక్ష ఆధారం కావు.","borrowing":"Tarski and institution names are source-identifying; English book title and citation keys remain unchanged."}
+}

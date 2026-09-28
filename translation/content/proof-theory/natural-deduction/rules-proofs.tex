@@ -1,0 +1,205 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{rp}
+
+\olsection{నియమాలు మరియు \usetoken{P}{proof}}
+
+మొదట కొన్ని నిర్వచనాలు ఇచ్చి, కొంత పరిభాషను స్థిరపరుద్దాం.
+
+\Log{N1c},~\Log{N1i}లలో $!A
+\lif !B$ను పేర్కొనే రెండు నియమాలను పరిశీలిద్దాం.
+\[
+\bottomAlignProof
+\AxiomC{$\Discharge{!A}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$!A \lif !B$}
+\AxiomC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+\Elim{\lif} నియమం సరళమైనదే. గీత పైనున్న \tetoken{సూత్రాలు}{!!{formula}s} \emph{పూర్వపక్షాలు}. ఎడమవైపు ఉన్న \tetoken{సూత్రం}{!!{formula}}~$!A \lif !B$ \emph{ప్రధాన} \tetoken{సూత్రం}{!!{formula}}. అన్ని \tetoken{తొలగింపు}{!!{elimination}} నియమాలకు ఇలాంటి ఒక పూర్వపక్షం ఉంటుంది; అది ఎప్పుడూ అత్యంత ఎడమవైపు ఉంటుంది. దాన్ని ఆ నిగమనం యొక్క \emph{ముఖ్య} పూర్వపక్షం అంటారు. దీనిలాగా ఇతర పూర్వపక్షాలు ఉంటే వాటిని \emph{ఉప} పూర్వపక్షాలు అంటారు. \tetoken{ప్రవేశ}{!!{introduction}} నియమాల పూర్వపక్షాలను కూడా ముఖ్య పూర్వపక్షాలు అంటారు. గీత కింద ఉన్న \tetoken{సూత్రం}{!!{formula}} \emph{ఫలితం}.
+
+\Intro{\lif} నియమానికి ఒక్క పూర్వపక్షమే ఉంది; ఇక్కడ ఫలితం ప్రధాన సూత్రం~$!A \lif !B$. అన్ని \tetoken{ప్రవేశ}{!!{introduction}} నియమాలు ఇలాగే ఉంటాయి: ఫలితం ప్రధాన సూత్రం; ప్రవేశపెట్టబడుతున్న సంయోజకమే దాని ప్రధాన సంయోజకం.
+
+$\Discharge{!A}{x}$ సంకేతానికి అర్థం ఇది. \tetoken{ఒక నిరూపణలో}{!!a{proof}}, \Intro{\lif} నిగమనాన్ని~$!B$ అనే \tetoken{సూత్రానికి}{!!a{formula}} పూర్వపక్షంగా వర్తింపజేస్తాం. $!B$తో ముగిసే ఉప-\tetoken{నిరూపణకు}{!!{proof}} మొదటిలో అనేక \tetoken{సూత్రాలు}{!!{formula}s} ఉంటాయి. వీటిని \emph{ఉపపత్తులు} అంటారు. $!A$ రూపపు ఒకటి లేదా అంతకంటే ఎక్కువ ఉపపత్తుల నుంచి~$!B$కు గల \tetoken{ఒక నిరూపణ}{!!^a{proof}} అనేది $!A$ నుంచి~$!B$ అనుగమిస్తుందనే \tetoken{నిరూపణ}{!!a{proof}}. \Intro{\lif} నియమాన్ని వర్తింపజేసినప్పుడు~$!A
+\lif !B$ను నిగమిస్తాం; ఆ ఫలితం ఇక~$!A$ ఉపపత్తిపై ఆధారపడదు. దీన్ని సూచించడానికి,~\Intro{\lif} నిగమనం కలిగిన \tetoken{నిరూపణలోని}{!!{proof}} $!A$ రూపపు ఉపపత్తులను \emph{విసర్జించినవి} లేదా \emph{మూసినవి} అంటాం. ఏ ఉపపత్తులను విసర్జించవచ్చో నియమం తెలుపుతుంది. $!A \lif !B$ ఫలితంగా వచ్చే \Intro{\lif} సందర్భంలో అవి~$!A$ రూపపు ఉపపత్తులు, అంటే షరతు వాక్యపు ముందుభాగంతో సరిపోయేవి. ఏ నియమం వద్ద ఏ ఉపపత్తులు విసర్జించబడతాయో చూపడం కొన్నిసార్లు ముఖ్యం; దానికి విసర్జన గుర్తు~$x$ ఉపయోగపడుతుంది. ముఖ్యంగా, ఉపపత్తులను విసర్జించే నియమం తగిన రూపంలోని \emph{అన్ని} ఉపపత్తులనూ, అసలు \emph{ఏదైనా} ఉపపత్తినీ తప్పనిసరిగా విసర్జించవలసిన అవసరం లేదు. ఉదాహరణకు, మొదటి \Intro{\lif} ఏ ఉపపత్తినీ విసర్జించకపోయినా కింది నిరూపణ సరైనదే:
+\[
+\AxiomC{$\Discharge{!A}{y}$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!B \lif !A)$}
+\DisplayProof
+\]
+నియమం ఏ ఉపపత్తినీ విసర్జించనప్పుడు విసర్జన గుర్తును వదిలేస్తాం (ఇక్కడ చేసినట్లే).
+
+ఈ \tetoken{నిరూపణలో}{!!{proof}}
+\[
+\AxiomC{$\Discharge{!A}{x}$}
+\AxiomC{$\Discharge{!A}{y}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!A \land !A$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$!A \lif (!A \lif !A)$}
+\DisplayProof
+\]
+మొదటి \Intro{\lif} నిగమనం ఎడమ ఉపపత్తి $!A^x$ను, రెండోది కుడి ఉపపత్తి~$!A^y$ను విసర్జిస్తాయి. అంటే~$x$ గుర్తు ఉన్న ఉపపత్తులన్నిటినీ అదే~$x$ గుర్తు గల \Intro{\lif} విసర్జిస్తుంది;~$y$ గుర్తు గలవాటిని~$y$ గుర్తు గల నిగమనం విసర్జిస్తుంది. ఇది పనిచేయాలంటే ఒకే గుర్తు ఉన్న ఉపపత్తులన్నీ ఒకే \tetoken{సూత్రం}{!!{formula}} కావాలి.
+
+పరిమాణీకరణిక నియమాలు కొంచెం సంక్లిష్టమైనవి. ఉదాహరణకు~$\lexists$ కోసం \Log{N1i}లోని నియమాలు ఇవి:
+\[
+\bottomAlignProof
+\AxiomC{$!A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][!A(x)]$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$\lexists[x][!A(x)]$} 
+\AxiomC{$\Discharge{!A(c)}{x}$}
+\shortDeduce
+\DeduceC{$!B$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$!B$} \DisplayProof 
+\bottomAlignProof
+\]
+\Intro{\lexists} నియమంలో పూర్వపక్షం~$!A(t)$; ఇక్కడ~$t$ మూసిన పదం, అంటే చరరాశులు లేని పదం. ఇలాంటి నిగమనం సరైనదై—అంటే నమూనా నియమం \Intro{\lexists}కు సరిపోయేలా—ఉండాలంటే ఏదో ఒక \tetoken{సూత్రం}{!!{formula}}~$!A$, చరరాశి~$x$, మూసిన పదం~$t$ ఉండి, ఫలితం $\lexists[x][!A]$, పూర్వపక్షం~$\Subst{!A}{t}{x}$ కావాలి. \Elim{\lexists} నియమం~$!A(c)$ రూపపు ఉపపత్తులను విసర్జించడానికి వీలు కల్పిస్తుంది; అంటే ప్రతి నిగమనానికి ఒక \tetoken{స్థిరాంకం}{!!{constant}}~$c$ ఉంటుంది, $\Subst{!A}{c}{x}$ రూపపు ఉపపత్తులను విసర్జించవచ్చు. ఒక నిగమనంలో విసర్జించిన ఉపపత్తులన్నీ ఒకే~$c$ను ఉపయోగించాలి. ఈ స్థిరాంకాన్ని ఆ \Elim{\lexists} నిగమనం యొక్క \emph{ఐగెన్ చరరాశి} అంటారు. $c$ విసర్జించిన~$!A(c)$ కాక మరే తెరిచి ఉన్న ఉపపత్తిలోనూ,~$!B$లోనూ,~$!A$లోనూ లేకపోతేనే నిగమనం సరైనది. దీన్నే \emph{ఐగెన్ చరరాశి షరతు} అంటారు.
+
+\Log{N1c},~\Log{N1i}లలో \tetoken{నిరూపణలు}{!!^{proof}s} అనేవి ఉపపత్తుల నుంచి నిగమన నియమాల ద్వారా ఆగమనాత్మకంగా నిర్మించిన పరిమిత సూత్ర వృక్షాలు. ప్రతి ఆకూ ఒక ఉపపత్తి; దానికి విసర్జన గుర్తు ఉండవచ్చు. మిగిలిన ప్రతి \tetoken{సూత్రం}{!!{formula}} ఆ పద్ధతిలోని ఏదో నిగమన నియమం ద్వారా దాని తక్షణ పైభాగంలోని \tetoken{సూత్రాల}{!!{formula}s} నుంచి వస్తుంది. ఒక నిగమనం పై వృక్షంలోని ఉపపత్తిగా ఉన్న \tetoken{సూత్ర}{!!{formula}} సంభవాన్ని దాని పై నిగమనం విసర్జించకపోతే, ఆ నిగమనం వద్ద దాన్ని \emph{తెరిచి ఉన్నది} అంటాం.
+\sourcecorrection{OLTEPTNATRPR-001}{మూలంలోని ఈ పరిచయ వాక్యం N1 నిరూపణలను సీక్వెంట్ వృక్షాలుగా పేర్కొంది; వెంటనే వచ్చే నిర్వచనం ప్రకారం అవి సూత్ర వృక్షాలు. ఆ పదాన్ని సరిచేశాం.}
+
+\begin{defn}\ollabel{defn:proof}
+\Log{N1c},~\Log{N1i}లలో \emph{\tetoken{నిరూపణలు}{!!^{proof}s}} అనేవి కిందివిధంగా ఆగమనాత్మకంగా నిర్వచించిన పరిమిత \tetoken{సూత్ర}{!!{formula}s} వృక్షాలు:
+\begin{enumerate}
+  \item\ollabel{defn:prf:assumption} $x$ లేదా $y$ వంటి విసర్జన గుర్తు గల ప్రతి \tetoken{సూత్రం}{!!{formula}} ఒక్కటే \tetoken{ఒక నిరూపణ}{!!a{proof}}. ఒక్క \tetoken{సూత్రం}{!!{formula}}తో కూడిన \tetoken{ఒక నిరూపణలో}{!!a{proof}} ఆ \tetoken{సూత్రం}{!!{formula}} తెరిచి ఉన్న ఉపపత్తిగా పరిగణించబడుతుంది.
+  \item\ollabel{defn:prf:one-prem} $R$ అనేది ఒకటి, రెండు లేదా మూడు పూర్వపక్షాలు $!A_1$, $!A_2$, $!A_3$, ఫలితం~$!A$ గల నియమం అని, $\delta_1$, $\delta_2$, $\delta_3$ వరుసగా $!A_1$, $!A_2$, $!A_3$తో ముగిసే \tetoken{నిరూపణలు}{!!{proof}s} అని అనుకుందాం. అప్పుడు
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$!A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$!A_2$}
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \DeduceC{$!A_3$}
+  \RightLabel{$R$}
+  \TrinaryInfC{$!A$}
+  \DisplayProof
+  \]
+  కూడా వరుసగా \tetoken{ఒక నిరూపణ}{!!a{proof}} అవుతుంది, ఆ \tetoken{నిరూపణలలో}{!!{proof}s} ఉపపత్తి గుర్తులు పరస్పరం సరిపోతే (వేర్వేరు \tetoken{సూత్రాలకు}{!!{formula}s} ఒకే విసర్జన గుర్తు ఉండకపోతే), నిగమనాలు~$R$ యొక్క సరైన ప్రయోగాలైతే.
+  \item కొత్త \tetoken{నిరూపణలో}{!!{proof}} అత్యుపరి \tetoken{సూత్ర}{!!{formula}} సంభవాలు $\delta_1$, $\delta_2$ లేదా~$\delta_3$లలో తెరిచి ఉన్న ఉపపత్తులైతే, నియమం ద్వారా విసర్జించబడినవి తప్ప, అవి కొత్త \tetoken{నిరూపణకు}{!!{proof}} \emph{తెరిచి ఉన్న ఉపపత్తులు}. నియమానికి~$x$ (లేదా $x\, y$) గుర్తు ఉంటే, \Intro{\lif},~\Intro{\lnot}లకు అది~$\delta_1$లో $x$ గుర్తు గల అన్ని తెరిచి ఉన్న ఉపపత్తులు; \Elim{\lexists}కు~$\delta_2$లో $x$ గుర్తు గలవన్నీ; \Elim{\lor}కు~$\delta_2$లో $x$ గుర్తు గలవన్నీ,~$\delta_3$లో $y$ గుర్తు గలవన్నీ.
+\end{enumerate}
+\sourcecorrection{OLTEPTNATRPR-002}{మూడు పూర్వపక్షాల వృక్షంలో మూడో ఉపనిరూపణ $\delta_3$ ఫలితాన్ని మూలం మళ్లీ $!A_2$గా చూపింది. నిర్వచనంలోని క్రమానికి అనుగుణంగా $!A_3$గా సరిచేశాం.}
+\end{defn}
+
+\tetoken{ఒక నిరూపణను}{!!a{proof}} ఆగమనాత్మకంగా నిర్మించడంలో ఉపయోగించిన \tetoken{నిరూపణలను}{!!{proof}s} దాని \emph{ఉప-\tetoken{నిరూపణలు}{!!{proof}s}} అంటారు. నిగమనం యొక్క పూర్వపక్షాలతో ముగిసే ఉప-\tetoken{నిరూపణలను}{!!{proof}s} ఆ నిగమనం యొక్క \emph{తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}} అంటారు. \Log{N1c}, \Log{N1i}ల నియమాలు \olref{tab:N1}లో ఇవ్వబడ్డాయి.
+\sourcecorrection{OLTEPTNATRPR-003}{\olref{tab:N1} పట్టికకు మూలం పొరపాటున N2c/N2i నియమాలని పేరు పెట్టింది. ఆ పట్టికలో ఉన్న N1c/N1i నియమాలుగా సరిచేశాం.}
+
+\subfile{rules-N1}
+
+\begin{defn}
+\tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta$ యొక్క \emph{\tetoken{ఎత్తు}{!!{height}}}~$\pheight{\delta}$ను ఆగమనాత్మకంగా ఇలా నిర్వచిస్తాం.
+\begin{enumerate}
+  \item $\delta$ కేవలం ఒక ఉపపత్తితో కూడి ఉంటే, $\pheight{\delta} = 0$.
+  \item $\delta$ ఒక పూర్వపక్షం గల నిగమనంతో ముగిసి, దాని తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\delta_1$ అయితే, $\pheight{\delta} = \pheight{\delta_1} + 1$.
+  \item $\delta$ రెండు పూర్వపక్షాల నిగమనంతో ముగిసి, తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}~$\delta_1$,~$\delta_2$ అయితే, $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}) + 1$.
+  \item $\delta$ \Elim{\lor}తో ముగిసి, తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}~$\delta_1$, $\delta_2$,~$\delta_3$ అయితే, $\pheight{\delta} =
+  \max(\pheight{\delta_1}, \pheight{\delta_2}, \pheight{\delta_3}) + 1$.
+\end{enumerate}
+సీక్వెంట్~$S$కు ఎత్తు $\le n$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటే, $\Proves[n] S$ అని రాస్తాం.
+\end{defn}
+
+\begin{ex}
+\Log{N1i}లో ఏ \tetoken{సూత్రమైనా}{!!{formula}} తననే తెరిచి ఉన్న ఉపపత్తిగా తీసుకుంటే \tetoken{ఒక నిరూపణ}{!!a{proof}} అవుతుంది. కాబట్టి
+\[
+\Discharge{!A \land !B}{x}
+\]
+అనేది \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1$. దాని ఎత్తు~$0$.
+$\delta_1$ నుంచి~\Elim{\land} యొక్క రెండు రూపాలలో ఒక్కొక్కటి వర్తింపజేసి, రెండు \tetoken{నిరూపణలు}{!!{proof}s}~$\delta_2$,~$\delta_3$ పొందవచ్చు:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\qquad
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\DisplayProof
+\]
+$\delta_2$,~$\delta_3$ల చివరి నిగమనాల తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}s} ఒకటే: $\delta_1$. రెండు \tetoken{నిరూపణలలోనూ}{!!{proof}s} $!A\land !B$ సంభవం తెరిచి ఉన్న ఉపపత్తి. మనకు $\pheight{\delta_1} = 0$ మరియు $\pheight{\delta_2} = \pheight{\delta_3} = 1$.
+\sourcecorrection{OLTEPTNATRPR-004}{ఉదాహరణలో మూలం మొత్తం సంయుక్త సూత్రానికి కాక రెండో భాగానికి మాత్రమే $x$ గుర్తు ఉంచింది. తరువాతి వృక్షానికి అనుగుణంగా మొత్తం ఉపపత్తికి విసర్జన గుర్తు చేర్చాం.}
+\sourcecorrection{OLTEPTNATRPR-005}{మూలం $\delta_1$ ఎత్తును మొదట $0$గా నిర్వచించి, తరువాత $\delta_1$కూ $\delta_2$కూ ఎత్తు $1$ అని చెప్పింది; తక్షణ ఉపనిరూపణను కూడా సూత్రంగా పేర్కొంది. $\delta_1$ ఎత్తు $0$, $\delta_2,\delta_3$ ఎత్తులు $1$ అని సరిచేశాం.}
+
+\Intro{\land} నియమం~$!B$,~$!A$ రూపపు రెండు పూర్వపక్షాల నుంచి~$!B \land !A$ రూపపు ఫలితాన్ని సమర్థిస్తుంది. కాబట్టి కింది \tetoken{నిరూపణ}{!!a{proof}}~$\delta_4$:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DisplayProof
+\]
+దాని ఎత్తు $\pheight{\delta_4} = \max(\pheight{\delta_2},
+\pheight{\delta_3})+1 = \max(1,1) + 1 = 2$. ఉపపత్తులుగా $!A \land !B$కు రెండు సంభవాలు ఉన్నాయి; రెండూ తెరిచి ఉన్నాయి.
+
+చివరగా \Intro{\lif}ను వర్తింపజేసి $\delta_5$ను పొందవచ్చు:
+\[
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$!B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{!A \land !B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$!B \land !A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+\DisplayProof
+\]
+దాని ఎత్తు $\pheight{\delta_4} + 1 = 3$. \Intro{\lif} నిగమనం~$x$ గుర్తు గల $!A \land !B$ రూపపు అన్ని ఉపపత్తి సంభవాలను—అంటే తక్షణ ఉపనిరూపణలో ఇంతవరకు తెరిచి ఉన్న రెండింటినీ—విసర్జిస్తుంది. అవే~$\delta_5$ యొక్క ఏకైక ఉపపత్తులు కాబట్టి, దానికి తెరిచి ఉన్న ఉపపత్తులేవీ లేవు. అందువల్ల అది తన చివరి-\tetoken{సూత్రానికి}{!!{formula}} $(!A \land !B) \lif (!B \land !A)$ \emph{గల} \tetoken{ఒక నిరూపణ}{!!a{proof}}.
+\end{ex}
+
+\end{document}

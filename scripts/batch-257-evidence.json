@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "257",
+  "unit_id": "OLP-0608",
+  "unit_order": 608,
+  "source_path": "content/methods/proofs/example-2.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5,6,7,8],
+  "corrections_by_block": {"8": ["OLTEMTHPRFEX2-001"]},
+  "previous_segments": 9006,
+  "previous_terms": 297,
+  "expected_corrections": 524,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "రెండవ సమితి-నిరూపణ ఉదాహరణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఉపసమితి/భేదం/బహిష్కృత మధ్యమ పదాలు, స్థానిక సమితి-తర్క-నిరూపణ సాక్షులు పోల్చాం; A⊆C పూర్వపక్షం, రెండు ఉపసమితి దిశలు, రెండవ దిశలో z∈A లేదా z∉A విభజన తనిఖీ చేశాం.",
+  "evidence_limit": "బహిష్కృత మధ్యమ ప్రత్యేక పదానికి ప్రత్యక్ష స్థానిక సాక్షి పరిమితం; పూర్వ TE-T052 నిర్ణయం, మూల వాదన నియంత్రించాయి. మూల కుండలీకరణ లోపం OLTEMTHPRFEX2-001గా ప్రకటించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T298","source_term":"set difference proof; law of excluded middle","telugu":"సమితి భేదం నిరూపణ; బహిష్కృత మధ్యమ సూత్రం","status":"set_difference_two_inclusions_excluded_middle_cases_source_controlled_one_parenthesis_repair","passages":["TE-P004","TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"A⊆C నుంచి A∪(C\\A)=Cకు ముందరి దిశలో A, C\\A సందర్భాలు; వెనుక దిశలో z∈A లేదా z∉A అనే బహిష్కృత మధ్యమ విభజన నిలిచాయి.","uncertainty":"సమితి కార్యకలాపాలకు స్థానిక ఆధారం ఉంది; బహిష్కృత మధ్యమ ప్రత్యేక రూపం పూర్వ TE-T052, మూల తర్క వాక్యంతో నియంత్రితమైంది.","borrowing":"Set variables, subset/difference/union notation, protected element tokens and TeX proof environments remain unchanged."}
+}

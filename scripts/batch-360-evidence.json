@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "360",
+  "unit_id": "OLP-0711",
+  "unit_order": 711,
+  "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+  "blocks": 17,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "corrections_by_block": {
+    "13": [
+      "OLTEPTSEQRP-001"
+    ],
+    "15": [
+      "OLTEPTSEQRP-002"
+    ]
+  },
+  "previous_segments": 10443,
+  "previous_terms": 400,
+  "expected_corrections": 697,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P018లో తార్కిక సూత్రాల ప్రయోగం, TE-P024లో నియమం/వ్యుత్పత్తి, TE-P025లో నిరూపణ పదజాలాన్ని పోల్చాం. వృక్ష ఎత్తు, క్రియాశీల/ప్రధాన సూత్రాల ప్రత్యేక సంయుక్త పదాలకు ఈ మూలాల నుంచి ప్రత్యక్ష సంపూర్ణ ప్రమాణం అని చెప్పలేదు; ఇక్కడి నిర్వచనమే అర్థాన్ని నియంత్రిస్తుంది.",
+  "evidence_limit": "Specialized proof-tree compounds are definition controlled; canon evidence is narrower than the entire terminology. No current TeX or visual build verification.",
+  "term_decision": {
+    "term_id": "TE-T401",
+    "source_term": "premise; conclusion; context; side formula; principal formula; active formula; eigenvariable; proof height",
+    "telugu": "పూర్వపక్షం; నిష్కర్ష; సందర్భం; పార్శ్వ సూత్రం; ప్రధాన సూత్రం; క్రియాశీల సూత్రం; ఈగెన్‌చరం; నిరూపణ ఎత్తు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నియమం, నిరూపణ వంటి ప్రాథమిక పదాలకు పరిమిత స్థానిక ప్రమాణం ఉంది; మిగతా పదాలు పూర్వపక్షం/నిష్కర్షలో వాటి పాత్రల ఆధారంగా నిర్వచన నియంత్రణతో ఎంపికయ్యాయి.",
+    "uncertainty": "Specialized proof-tree compounds are definition controlled; canon evidence is narrower than the entire terminology. No current TeX or visual build verification.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "156",
+  "unit_id": "OLP-0507",
+  "unit_order": 507,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7655,
+  "previous_terms": 196,
+  "expected_corrections": 467,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P016", "TE-P018", "TE-P024"],
+  "corrections_by_block": {"9": ["OLTEINTCAN-001"]},
+  "consultation_phase": "స్థిర కానానికల్ నమూనా మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్ తర్క కానానికల్ పదం, స్థానిక సమితి/సంబంధ/ప్రకృతిసంఖ్య/తర్క/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; పరిమిత క్రమాల W, ప్రారంభ-భాగ R, ప్రధాన సమితి Δ(σ), విలువకేటాయింపు, చివరి ఏకదిశ పెరుగుదల కారణం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/016/018/024 సాధారణ సమితి/సంబంధ/ప్రకృతిసంఖ్య/తర్క/నిరూపణ పదాలకు మాత్రమే సాక్షులు. కానానికల్ అనేది పూర్వ అనువాద శాఖతో ఏకరీతిగా ఎంచుకున్న సాంకేతిక ఋణపదం; స్థానిక సాక్షులు ప్రత్యేక నమూనాకు ప్రత్యక్ష ప్రమాణాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T197",
+    "source_term": "canonical model / finite-sequence worlds / initial-segment accessibility / monotone valuation",
+    "telugu": "కానానికల్ నమూనా / పరిమిత క్రమ లోకాలు / ప్రారంభ భాగ ప్రాప్యత / ఏకదిశ విలువకేటాయింపు",
+    "status": "native_general_set_relation_number_logic_register_attested_canonical_model_term_cross_chapter_controlled_one_disclosed_proof_repair",
+    "passages": ["TE-P008", "TE-P010", "TE-P016", "TE-P018", "TE-P024"],
+    "basis": "మునుపటి మోడల్ తర్కం కానానికల్ నమూనా పదంతో ఏకరీతి, W=Nat-star, R ప్రారంభ-భాగ క్రమం, V(p), Δ(σ) ప్రధాన విస్తరణ, ఏకదిశ పెరుగుదల నిలిచాయి; చివరి ఆగమన పరామితి సరిచేసి ప్రకటించాం.",
+    "uncertainty": "స్థానిక సాక్షులు కానానికల్ నమూనా శాఖా నిర్వచనానికి ప్రత్యక్ష ప్రమాణాలు కావు; పూర్తి నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "కానానికల్ is an explicit technical borrowing consistent with earlier modal-logic translation; Greek variables and protected labels remain source-controlled."
+  }
+}

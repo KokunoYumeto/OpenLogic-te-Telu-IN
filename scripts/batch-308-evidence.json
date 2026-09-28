@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "308",
+  "unit_id": "OLP-0659",
+  "unit_order": 659,
+  "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12],
+  "corrections_by_block": {"12": ["OLTEPTCUTINT-001"]},
+  "previous_segments": 9782,
+  "previous_terms": 348,
+  "expected_corrections": 566,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "కట్ తొలగింపు పరిచయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ సిద్ధాంతం/సీక్వెంట్/కట్ ఎత్తు పదాలు పోల్చాం; రెండు కట్ చిత్రాలు, సంపూర్ణత వాదన, నిర్మాణాత్మక అన్వయం, ఒక మూల లేబుల్ లోపం తనిఖీ చేశాం.",
+  "evidence_limit": "చరిత్రాత్మక పేర్లు, అన్వయాల వర్ణన మూలం ప్రకారమే; స్వతంత్ర చరిత్ర పరిశోధన కాదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T349","source_term":"cut elimination; admissible rule; context-sharing cut; constructive proof","telugu":"కట్ తొలగింపు; అనుమతిత నియమం; సందర్భం పంచుకునే కట్; నిర్మాణాత్మక నిరూపణ","status":"cut_elimination_introduction_label_repair_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"జెంట్సెన్ Hauptsatz, కట్ ద్వారా లెమ్మాల కలయిక, సంపూర్ణత ప్రేరణ, రెండు తొలగింపు పద్ధతులు నిలిచాయి; CutCS చిత్ర లేబుల్ సరిచేసి ప్రకటించాం.","uncertainty":"చరిత్రాత్మక విశేషణాలు మూల వచన పరిమితిలోనే ఉన్నాయి; స్వతంత్ర చరిత్రాత్మక నిర్ధారణ కాదు.","borrowing":"Cut, CutCS, LK, G1c, G3c, Hauptsatz and named researchers remain source-identifying."}
+}

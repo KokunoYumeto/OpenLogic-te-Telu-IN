@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0691",
+  "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+  "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+  "audit_id": "OLTEPTPTYRED-20260928",
+  "audit_review_path": "evidence/OLP-0691-TYPED-REDUCTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "f63373d7fc67a8e1f7b527abfb0104d14ab046bb68804bd18a10867d0c19872e",
+  "audit_findings_path": "evidence/OLP-0691-TYPED-REDUCTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f41f0d3052981c931dfccfe3e456a1114fb712ff518f0f3d88addb936fdfe7ef",
+  "previous_corrections": 643,
+  "treatments": {
+    "OLTEPTPTYRED-001": {
+      "target_line": 41,
+      "body_treatment": "Use separate arguments N1 and N2."
+    },
+    "OLTEPTPTYRED-002": {
+      "target_line": 44,
+      "body_treatment": "Use the optional type annotation plus index and term."
+    },
+    "OLTEPTPTYRED-003": {
+      "target_line": 78,
+      "body_treatment": "Use A_(3-i), preserving the branch selection and substitution. This gather expression was inspected directly; the existing parser reports no delta for it."
+    },
+    "OLTEPTPTYRED-004": {
+      "target_line": 160,
+      "body_treatment": "Write the third term M3."
+    }
+  }
+}

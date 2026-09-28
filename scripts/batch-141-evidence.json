@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "141",
+  "unit_id": "OLP-0492",
+  "unit_order": 492,
+  "source_path": "content/intuitionistic-logic/introduction/introduction.tex",
+  "blocks": 11,
+  "linguistic_blocks": [4],
+  "previous_segments": 7414,
+  "previous_terms": 181,
+  "expected_corrections": 456,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద పరిచయ అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ పరిచయం/తర్క రూపాలు, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; ఐదు విభాగ దిగుమతులు, అధ్యాయ హుక్ నిలిపాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తి మాత్రమే; అధ్యాయ విషయం లేదా BHKకు ప్రత్యక్ష సాక్ష్యాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T182",
+    "source_term": "intuitionistic introduction chapter / constructive reasoning, syntax, BHK, natural deduction and axiomatic derivation imports",
+    "telugu": "అంతఃప్రజ్ఞావాద పరిచయ అధ్యాయం / నిర్మాణాత్మక హేతుచింతన, వాక్యనిర్మాణం, BHK, సహజ నిగమనం, స్వీకృతాధారిత వ్యుత్పత్తి దిగుమతులు",
+    "status": "native_general_logic_derivation_register_attested_intuitionistic_introduction_driver_source_controlled",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "పరిచయం శీర్షిక, ఐదు దిగుమతులు, అధ్యాయ గుర్తింపు, అధ్యాయ ముగింపు హుక్ మారలేదు; పూర్వ పరిచయ/నిగమన పదాలు కొనసాగాయి.",
+    "uncertainty": "స్థానిక సాక్షులు BHK లేదా అంతఃప్రజ్ఞావాద సిద్ధాంతానికి ప్రత్యక్ష ఆధారం కావు. పూర్తి TeX నిర్మాణ తనిఖీ లేదు.",
+    "borrowing": "BHK abbreviation, chapter IDs and import paths remain source-controlled notation."
+  }
+}

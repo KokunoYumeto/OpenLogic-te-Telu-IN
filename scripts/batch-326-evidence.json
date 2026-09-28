@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "326",
+  "unit_id": "OLP-0677",
+  "unit_order": 677,
+  "source_path": "content/proof-theory/normalization/segments.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11],
+  "corrections_by_block": {
+    "6": ["OLTEPTNORSEG-001"],
+    "7": ["OLTEPTNORSEG-002"],
+    "10": ["OLTEPTNORSEG-003"]
+  },
+  "previous_segments": 10002,
+  "previous_terms": 366,
+  "expected_corrections": 609,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "ఖండం, కట్, కట్ స్థాయి/పొడవు నిర్వచనాలను ప్రక్కనున్న పరివర్తన విభాగాలతో పోల్చాం; వరుస క్రమం, సూత్ర గుర్తు, అసత్య నియమంపై మూడు స్థానిక లోపాలను ప్రకటించాం.",
+  "evidence_limit": "మూలంలోని తర్క దోషాల స్థానిక సవరణలు ఆడిట్‌లో నమోదు; ప్రదర్శిత నిరూపణ వృక్షాల దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T367",
+    "source_term": "segment; cut; cut rank; cut length",
+    "telugu": "ఖండం; కట్; కట్ స్థాయి; కట్ పొడవు",
+    "status": "segment_cut_definitions_three_disclosed_source_corrections",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "వరుసలోని ఉప పూర్వపక్షం-నిష్కర్ష సంబంధం, ఒక-ఘటన కట్ ప్రత్యామ్నాయాలు, గరిష్ఠ కట్‌ల పొడవు మొత్తం స్పష్టంగా నిలిచాయి.",
+    "uncertainty": "కట్‌కు లిప్యంతరీకరణను కొనసాగించాం; ప్రామాణిక తెలుగు సమానార్థానికి బాహ్య నిఘంటు సాక్ష్యం పరిమితం.",
+    "borrowing": "N1i, cut and proof-tree notation remain source-identifying."
+  }
+}

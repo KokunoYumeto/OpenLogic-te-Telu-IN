@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "306",
+  "unit_id": "OLP-0657",
+  "unit_order": 657,
+  "source_path": "content/proof-theory/cut-elimination/cut-elimination.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 9738,
+  "previous_terms": 346,
+  "expected_corrections": 559,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "కట్ తొలగింపు అధ్యాయ శీర్షికను స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ సిద్ధాంత పదాలతో పోల్చాం; ఐదు దిగుమతుల పేర్లు, క్రమం మారలేదని తనిఖీ చేశాం.",
+  "evidence_limit": "ఇది అధ్యాయ ఆవరకం మాత్రమే; దిగుమతి విభాగాల పూర్తి అనువాదం/నిరూపణలను ఈ యూనిట్ ఒక్కటే ధృవీకరించదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T347","source_term":"Cut Elimination chapter heading","telugu":"కట్ తొలగింపు","status":"cut_elimination_chapter_wrapper","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"అధ్యాయ శీర్షిక తెలుగు; ఐదు దిగుమతులు, పథాలు, హుక్ మూల క్రమంలోనే ఉన్నాయి.","uncertainty":"ఈ ఆవరకం దిగుమతుల అంతర్గత నిరూపణ నాణ్యతను ధృవీకరించదు.","borrowing":"Cut is retained as the established proof-theory loanword; import filenames remain source-identifying."}
+}

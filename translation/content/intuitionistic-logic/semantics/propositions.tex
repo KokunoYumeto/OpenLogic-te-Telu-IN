@@ -1,0 +1,49 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: propositions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{pro}
+
+\olsection{ప్రతిపాదనలు}
+
+కొన్నిసార్లు \tetoken{సంబంధ నమూనా}{!!a{relational model}}~$\mModel{M}$లో \tetoken{సూత్రం}{!!a{formula}}~$!A$ సత్యమయ్యే లోకాల సమితికి పేరు ఉండటం ఉపయోగకరం. దాన్ని~$!A$ నిర్వచించే \emph{ప్రతిపాదన} అని పిలిచి $\Prop{M}{!A}$గా రాస్తాం.
+
+\begin{defn}
+  $V$ ప్రమేయాన్ని $\Prop{M}{!A} \colon \Frm
+  \to \Pow{W}$ ప్రమేయంగా ఆగమనాత్మకంగా ఇలా విస్తరిస్తాం:
+  \begin{enumerate}
+  \item $\Prop{M}{\lfalse} = \emptyset$
+  \item $\Prop{M}{p} = V(p)$
+  \item $\Prop{M}{\lnot !B} = {}$
+    \[
+      \Setabs{w \in W}{\text{$Rww'$ అయ్యే ప్రతి $w'$కు, $w'
+          \notin \Prop{M}{!B}$}}.
+    \]
+  \item $\Prop{M}{!B \land !C} = \Prop{M}{!B} \cap \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lor !C} = \Prop{M}{!B} \cup \Prop{M}{!C}$.
+  \item $\Prop{M}{!B \lif !C} = {}$
+    \[
+      \Setabs{w \in W}{\text{$Rww'$ అయ్యే ప్రతి $w'$కు, $w'
+          \in \Prop{M}{!B}$ అయితే $w' \in \Prop{M}{!C}$}}.
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{prop}
+  \ollabel{prop:propositions-true}
+  $\mModel{M}{!A}[w]$ కావడానికి, కావలసినదీ చాలునదీ $w \in \Prop{M}{!A}$.
+\end{prop}
+
+\begin{proof}
+  సాధన.
+\end{proof}
+
+\begin{prob}
+  \olref[int][sem][pro]{prop:propositions-true}ను నిరూపించండి.
+\end{prob}
+
+\end{document}

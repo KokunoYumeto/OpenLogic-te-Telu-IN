@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQTR-20260928",
+  "unit_id": "OLP-0713",
+  "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+  "source_sha256": "9ae0e40622effab9a067226754c58eeac00c1e21b1ac899c9e2acdebbd12d92c",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQTR-001",
+      "source_locator": "content/proof-theory/sequent-calculus/translations.tex lines 31–36, aligned block 9",
+      "classification": "incorrect_system_in_identity_axiom_base_case",
+      "source_issue": "The source asserts that G3c allows arbitrary rather than just atomic identity axioms, contradicting its table and the subsequent appeal to the derivable identity lemma.",
+      "minimal_treatment": "Attribute arbitrary identity axioms to G1c and preserve the G3c provability citation, with a reader-visible disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQTR-002",
+      "source_locator": "content/proof-theory/sequent-calculus/translations.tex lines 38–49, aligned block 10",
+      "classification": "oppositely_directed_rule_simulation_reference",
+      "source_issue": "prop:lor-G3-adm gives G3c conjunction/disjunction rules derivable in G1c, not the G1c→G3c simulations needed here.",
+      "minimal_treatment": "Remove the misdirected citation; explicitly weaken the missing conjunct/disjunct then apply the G3c rule, using the already cited G3c weakening admissibility.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\olref[adm]{prop:lor-G3-adm}"
+        ],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQTR-003",
+      "source_locator": "content/proof-theory/sequent-calculus/translations.tex lines 38–49, aligned block 10",
+      "classification": "omitted_retained_principal_quantifier_cases",
+      "source_issue": "Both inductions treat all rules other than conjunction-left/disjunction-right as identical, but G3c universal-left and existential-right retain the principal formula in their premise while G1c does not.",
+      "minimal_treatment": "Supply both bounded quantifier simulations: weaken in the principal before applying the G3c rule in the forward direction; apply G1c with the retained principal in context and contract the duplicate principal in the reverse direction (blocks 10 and 12).",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQTR-004",
+      "source_locator": "content/proof-theory/sequent-calculus/translations.tex lines 55–99, aligned block 12",
+      "classification": "extra_comma_in_disjunction_simulation",
+      "source_issue": "The second right-disjunction conclusion contains Delta, , AorB,AorB, falsely suggesting an empty formula.",
+      "minimal_treatment": "Delete the duplicated comma, preserving all formulas and rule labels.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\qquad\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\RightLabel{\\RightR{\\lor}}\\UnaryInf$\\Gamma\\fCenter\\Delta,!A\\lor!B,!B$\\RightLabel{\\RightR{\\lor}}\\UnaryInf$\\Gamma\\fCenter\\Delta,,!A\\lor!B,!A\\lor!B$\\RightLabel{\\RightR{\\Contraction}}\\UnaryInf$\\Gamma\\fCenter\\Delta,!A\\lor!B$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\qquad\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\RightLabel{\\RightR{\\lor}}\\UnaryInf$\\Gamma\\fCenter\\Delta,!A\\lor!B,!B$\\RightLabel{\\RightR{\\lor}}\\UnaryInf$\\Gamma\\fCenter\\Delta,!A\\lor!B,!A\\lor!B$\\RightLabel{\\RightR{\\Contraction}}\\UnaryInf$\\Gamma\\fCenter\\Delta,!A\\lor!B$\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: grafting
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{gra}
+
+\olsection{నిరూపణల అంటుకట్టడం \usetoken{P}{proof}}
+
+\Log{N1c}, \Log{N1i}లలో \tetoken{నిరూపణలు}{!!^{proof}s} అనేవి ఉపపత్తులు~$!B$ నుంచి \tetoken{సూత్రాలు}{!!{formula}s}~$!A$కు గల \tetoken{నిరూపణలు}{!!{proof}s}. $!B$కే \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉందనుకుందాం. అప్పుడు~$!B$ అనే ఉపపత్తిని ఉపయోగించకుండా~$!A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందడానికి,~$!B$ యొక్క \tetoken{నిరూపణను}{!!{proof}}, $!B$ నుంచి~$!A$ యొక్క \tetoken{నిరూపణతో}{!!{proof}} ఎలా కలపాలి?
+
+ఒక మార్గం: \Intro{\lif}ను వర్తింపజేసి~$!A$ యొక్క \tetoken{నిరూపణ}{!!{proof}} నుంచి~$!B$ ఉపపత్తిని తొలగించడం. అప్పుడు వచ్చిన~$!B \lif !A$ యొక్క \tetoken{నిరూపణను}{!!{proof}},~$!B$ యొక్క \tetoken{నిరూపణతో}{!!{proof}} కలిపి ఇది పొందవచ్చు:
+\[
+\AxiomC{$\Discharge{!B}{x}$}
+\DeduceC{$!A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!B \lif !A$}
+\AxiomC{}
+\DeduceC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!A$}
+\DisplayProof
+\]
+ఇది సూటిగా ఉన్నా కొంత అనవసరంగా అనిపిస్తుంది: వెంటనే తొలగించడానికి మాత్రమే~$\lif$ను ఎందుకు ప్రవేశపెట్టాలి? $!B \lif !A$ ద్వారా వెళ్లే ఈ ``పక్కదారి''ని నివారించగలగాలి. (ఇలాంటి పక్కదారులన్నింటినీ నివారించవచ్చనేదే సాధారణీకరణ ప్రమేయంలోని విషయం.)
+\sourcecorrection{OLTEPTNATGRA-001}{ఈ నిరూపణ వృక్షంలోని నిగమనం కోసం మూలం $!B \lif !C$ అని ముద్రించింది. ఉపనిరూపణ $!A$ను ఇస్తుంది; తదుపరి వివరణకు అనుగుణంగా $!B \lif !A$గా సరిచేశాం.}
+
+\Log{N1c}, \Log{N1i}లలో ఈ సందర్భంలో ఆ పక్కదారిని సులభంగానే నివారించవచ్చు:~$!B^x$ ఉపపత్తుల స్థానంలో~$!B$ యొక్క మొత్తం \tetoken{నిరూపణను}{!!{proof}} ఉంచవచ్చు. ఇతర నిరూపణల ఉపపత్తులపై \tetoken{నిరూపణలను}{!!{proof}s} ఇలా ``అంటుకట్టడం'' ఉపయోగకరం; అందుకే దానిని నిర్వచనంగా నమోదు చేద్దాం.
+
+\begin{defn}
+$\delta_1$ అనేది తెరిచి ఉన్న ఉపపత్తి~$!B^x$ నుంచి~$!A$కు గల \Log{N1c}-\tetoken{నిరూపణ}{!!{proof}} (లేదా \Log{N1i}-\tetoken{నిరూపణ}{!!{proof}}), $\delta_2$ అనేది~$!B$కు గల \Log{N1c}-\tetoken{నిరూపణ}{!!{proof}} (లేదా \Log{N1i}-\tetoken{నిరూపణ}{!!{proof}}) అనుకుందాం. అప్పుడు $\Subst{\delta_1}{\delta_2}{!B^x}$ అంటే~$\delta_1$లో విసర్జించబడని ప్రతి~$!B^x$ స్థానంలో~$\delta_2$ను ఉంచిన ఫలితం.
+\end{defn}
+
+$\delta_1$, $\delta_2$లలో ఒకే గుర్తు కలిగిన వేర్వేరు ఉపపత్తి \tetoken{సూత్రాలు}{!!{formula}s} లేకుండా,~$\delta_2$లోని ఏ తెరిచి ఉన్న ఉపపత్తిలోనూ~$\delta_1$ యొక్క ఐగెన్ చరరాశి లేకుండా ఉంటే, ఫలితమైన $\Subst{\delta_1}{\delta_2}{!B^x}$ సరైన \tetoken{నిరూపణ}{!!{proof}}; దాని తెరిచి ఉన్న ఉపపత్తులు~$\delta_1$లోని ప్రతిస్థాపిత ఉపపత్తులు మినహా మిగిలినవి, అలాగే~$\delta_2$లోని తెరిచి ఉన్న ఉపపత్తులు. \tetoken{నిరూపణలను}{!!{proof}s} అంటుకట్టేటప్పుడు ఈ షరతులు సాధారణంగా నెరవేరుతాయి. $\delta_1$, $\delta_2$లు ఒక పెద్ద \tetoken{నిరూపణ}{!!{proof}} యొక్క ఉపనిరూపణలైతే మొదటి షరతు నెరవేరుతుంది. రెండో షరతు నెరవేరకపోతే, అది నెరవేరేలా~$\delta_1$ యొక్క ఐగెన్ చరరాశులకు కొత్త పేర్లు పెట్టవచ్చు.
+\sourcecorrection{OLTEPTNATGRA-004}{మూలం అంటుకట్టిన నిరూపణలో రెండు నిరూపణల తెరిచి ఉన్న ఉపపత్తులన్నీ మిగులుతాయని చెప్పింది. ప్రతిస్థాపిత ఉపపత్తులు ఇక తెరిచి ఉండవు; వాటిని మినహాయించాం.}
+
+దీనికి అనురూపమైన నిర్వచనం \Log{N2c}, \Log{N2i}లకు వర్తిస్తుంది.
+
+\begin{defn}
+$\delta_1$ అనేది~$x:!B, \Gamma_1 \Sequent !A$కు గల \Log{N2c}-\tetoken{నిరూపణ}{!!{proof}} (లేదా \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}), $\delta_2$ అనేది~$\Gamma_2 \Sequent !B$కు గల \Log{N2c}-\tetoken{నిరూపణ}{!!{proof}} (లేదా \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}) అనుకుందాం. అప్పుడు $\Subst{\delta_1}{\delta_2}{x:!B}$ అంటే~$\delta_1$లోని ప్రతి ఆక్సియమ్ $x:!B \Sequent !B$ స్థానంలో~$\delta_2$ను ఉంచి, అటువంటి ఆక్సియమ్‌ల కింద ఉన్న ప్రతి సీక్వెంట్ సందర్భానికి~$\Gamma_2$ను చేర్చిన ఫలితం.
+\end{defn}
+\sourcecorrection{OLTEPTNATGRA-002}{ఈ నిర్వచనంలో $\delta_2$ను మూలం \Log{N1c}/\Log{N1i} నిరూపణగా పేర్కొంది. కానీ అది సీక్వెంట్‌కు గల నిరూపణ; ఈ సందర్భానికి అనుగుణంగా \Log{N2c}/\Log{N2i}గా సరిచేశాం.}
+
+\begin{prop}
+$\delta_1 \Proves x:!B, \Gamma_1 \Sequent
+!A$, $\delta_2 \Proves \Gamma_2 \Sequent !B$ అయితే,~$\delta_1$ యొక్క ఏ ఐగెన్ చరరాశీ~$\Gamma_2$లో లేకపోయినపుడు $\Subst{\delta_1}{\delta_2}{x:!B} \Proves \Gamma_1, \Gamma_2 \Sequent !A$.
+\end{prop}
+
+\begin{proof}
+  $\pheight{\delta_1}$పై ఆగమనంతో.
+  \sourcecorrection{OLTEPTNATGRA-003}{ఆగమన ప్రమాణంలో మూలం నిర్వచించని $\delta$ను ఉపయోగించింది; ప్రతిపాదనలోని మొదటి నిరూపణ $\delta_1$గా సరిచేశాం.}
+\end{proof}
+
+\end{document}

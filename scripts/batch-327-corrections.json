@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0678",
+  "source_path": "content/proof-theory/normalization/translations.tex",
+  "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+  "audit_id": "OLTEPTNORTR-20260928",
+  "audit_review_path": "evidence/OLP-0678-TRANSLATIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "ab9457b8196d8f8e4efbc0fb4d3edc7d6b8b63547ad8cac04443d63a53e60f94",
+  "audit_findings_path": "evidence/OLP-0678-TRANSLATIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "79616aeadf7db5280a6ac4ac837131f47e5493c7bc52e01a6ec5a7f73758f1db",
+  "previous_corrections": 609,
+  "treatments": {
+    "OLTEPTNORTR-001": {
+      "target_line": 14,
+      "body_treatment": "కట్-రహిత అనువాద మూల వ్యవస్థను పక్కనున్న G2i→N2i ప్రతిపాదనకు అనుగుణంగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-002": {
+      "target_line": 20,
+      "body_treatment": "మొదటి ఉపఫలిత లక్ష్యాన్ని N2iగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-003": {
+      "target_line": 32,
+      "body_treatment": "ప్రారంభ నిరూపణ సాధారణమైనప్పుడు కట్ నివారణ సాధ్యమనే తప్పిన షరతును చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-004": {
+      "target_line": 81,
+      "body_treatment": "మార్చి పొందిన నిరూపణ గుర్తును ముందు నిర్వచించిన గుర్తుతో సమన్వయం చేసి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-005": {
+      "target_line": 103,
+      "body_treatment": "G2i సందర్భంలో గుర్తులు తొలగిన సూత్రం, ప్రైమ్ సందర్భాన్ని వృక్షానికి అనుగుణంగా వాడి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-006": {
+      "target_line": 206,
+      "body_treatment": "ఆగమన ఫలితాల రెండు సందర్భ గుర్తులను ఎడమ-ఇంప్లికేషన్ వృక్షంతో సమన్వయం చేసి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-007": {
+      "target_line": 207,
+      "body_treatment": "మొదటి బలహీనీకరణకు అవసరమైన అసత్య సమానత్వ షరతును పూర్తి చేసి ప్రకటించాం."
+    },
+    "OLTEPTNORTR-008": {
+      "target_line": 215,
+      "body_treatment": "N1i ఉపసూత్ర లక్షణ పరిధిలో తెరిచి ఉన్న ఊహలను కూడా చేర్చి, N2i చివరి సీక్వెంట్ వాటిని కలిగి ఉంటుందని ప్రకటించాం."
+    }
+  }
+}

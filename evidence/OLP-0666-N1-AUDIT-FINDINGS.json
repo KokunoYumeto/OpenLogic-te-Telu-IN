@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATN1-20260928",
+  "unit_id": "OLP-0666",
+  "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+  "source_sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATN1-001",
+      "source_locator": "rules-N1.tex lines 128–132, N1 table caption",
+      "classification": "impossible_existential_eigenvariable_condition",
+      "source_issue": "The caption says the eigenconstant of existential elimination must not occur in the premises, but it necessarily occurs in the displayed minor premise A(a).",
+      "minimal_treatment": "State that it is absent from the conclusion and assumptions that remain open after the inference, with an adjacent disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

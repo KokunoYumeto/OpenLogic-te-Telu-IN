@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHINDSTR-20260927",
+  "unit_id": "OLP-0616",
+  "source_path": "content/methods/induction/strong-induction.tex",
+  "source_sha256": "0cec55c0265daa331a4b473daad197d39ef0aaddaa518ae051d3230c1df2560f",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHINDSTR-001",
+      "source_locator": "strong-induction.tex lines 16–19, predecessor formulation",
+      "classification": "unqualified_predecessor_at_zero",
+      "source_issue": "Replacing the ordinary successor step by the predecessor form requires a positive current index; zero has no predecessor in the natural numbers.",
+      "minimal_treatment": "Qualify this rephrasing to positive indices and disclose; no formula needs alteration.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEMTHINDSTR-002",
+      "source_locator": "strong-induction.tex line 43, vacuous base premise",
+      "classification": "constant_zero_predicate_instead_of_variable_induction_premise",
+      "source_issue": "The quoted empty-domain premise says P(0) for every l<0, while the general strong-induction antecedent is P(l) for every l<k. The former is also vacuously true, but it is not the antecedent being instantiated.",
+      "minimal_treatment": "State the instantiated antecedent with P(l) and disclose the index repair.",
+      "expected_core_math_delta": {"source_only": ["$P(0)$"], "target_only": ["$P(l)$"]}
+    }
+  ]
+}

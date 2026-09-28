@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "260",
+  "unit_id": "OLP-0611",
+  "unit_order": 611,
+  "source_path": "content/methods/proofs/cant-do-it.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 9052,
+  "previous_terms": 300,
+  "expected_corrections": 528,
+  "canon_default": ["TE-P004", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిరూపణలో ఇబ్బంది పడే విద్యార్థికి సూచనల మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ పదం, స్థానిక సాధారణ విద్యా భాష పోల్చాం; ముందుగా మొదలుపెట్టడం, తోటి విద్యార్థులతో ఆలోచించడం కాని కాపీ చేయకపోవడం, సహాయం, విరామం, తరువాత స్వతంత్ర సాధన అన్న ఐదు అంశాలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక గణిత పేజీలు నిరూపణ సాధారణ పదానికే ఆధారం; విద్యా సలహాల ప్రయోజనానికి స్వతంత్ర శాస్త్రీయ ఆధారం కాదు. మూల బోధనా స్వరం నిలిచింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T301","source_term":"I Can't Do It!; proof-study advice","telugu":"నా వల్ల కావడం లేదు!; నిరూపణ సాధన సూచనలు","status":"supportive_study_advice_and_four_enumerated_strategies_source_controlled","passages":["TE-P004","TE-P024","TE-P025"],"basis":"ఉత్సాహపరిచే స్వరం, ముందుగా మొదలుపెట్టడం, తోటి విద్యార్థుల సూచన కానీ కాపీ కాదు, అధ్యాపక సహాయం, విరామం, సమాధానం చూడకుండా మళ్లీ ప్రయత్నం అన్న క్రమం నిలిచింది.","uncertainty":"బోధనా సూచనలకు ఈ గణిత సాక్షులు ప్రత్యేక ఆధారం కాదు; మూల గద్యం స్వరం నియంత్రించింది.","borrowing":"TeX enumeration and chapter identifiers remain unchanged."}
+}

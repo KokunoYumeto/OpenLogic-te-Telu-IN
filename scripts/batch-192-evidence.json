@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "192",
+  "unit_id": "OLP-0543",
+  "unit_order": 543,
+  "source_path": "content/set-theory/z/infinity-again.tex",
+  "blocks": 21,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "previous_segments": 8063,
+  "previous_terms": 232,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P034"],
+  "consultation_phase": "స్థిర అనంతత్వ మూలం, తెలుగు లక్ష్యం, పూర్వ అనంత/డెడెకిండ్/ఒకటి-ఒకటి పదాలు, స్థానిక సమితి/సహజ సంఖ్య/ప్రమేయ సాక్షులు ఎదురెదురు చూశాం; పరిమిత వారస సమితుల జాబితా, అనంతత్వ స్వీకృతం, ఒమెగా నిర్వచనం, ఆగమన నిరూపణ రెండు సందర్భాలు, అనంత దశ సమర్థన పరిమితి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/034 సాధారణ సమితి, సహజ సంఖ్య, ప్రమేయ పదాలకు మాత్రమే సాక్షులు; డెడెకిండ్ బీజగణితం/అనంత దశ ప్రత్యేక రూపాలు మూల నిర్వచనాధీనాలు. దశల నుంచి అనంతత్వ స్వీకృతం అనౌపచారిక వాదన; నిర్మాణ QA నిరూపణను ధృవీకరించదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T233",
+    "source_term": "Axiom of Infinity / Dedekind infinite set / infinite stage",
+    "telugu": "అనంతత్వ స్వీకృతం / డెడెకిండ్ అనంత సమితి / అనంత దశ",
+    "status": "definition_controlled_natural_number_and_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P034"],
+    "basis": "అనంతంగా అనేక సమితులు వర్సెస్ ఒక అనంత సమితి తేడా, వారస ప్రమేయం s(x), ఒమెగా సంవృతం, ఏ సహజ సంఖ్యా డెడెకిండ్ అనంతం కాదనే రెండు-సందర్భాల నిరూపణ, అనంత దశ అదనపు అంగీకారం నిలిచాయి.",
+    "uncertainty": "డెడెకిండ్/అనంత దశ పదాలకు ప్రత్యేక ప్రత్యక్ష సాక్షి లేదు; అనంత దశ సమర్థన తాత్త్వికంగా ఇంకా ప్రశ్నార్థకమని మూలమే ప్రకటిస్తుంది.",
+    "borrowing": "Dedekind eponym, omega/stage macros and source-token injection keys remain source-controlled."
+  }
+}

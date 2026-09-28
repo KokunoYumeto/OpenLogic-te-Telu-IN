@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "213",
+  "unit_id": "OLP-0564",
+  "unit_order": 564,
+  "source_path": "content/set-theory/spine/rank.tex",
+  "blocks": 19,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18],
+  "corrections_by_block": {"6": ["OLTESTSPINRANK-001"]},
+  "previous_segments": 8346,
+  "previous_terms": 253,
+  "expected_corrections": 488,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థాయి విభాగపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ దశ/క్రమసంఖ్య/ఆగమన పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; కనిష్ఠ దశ నిర్వచనం, దశ-స్థాయి సంబంధం, సభ్యత్వ ఆగమనం, సుప్రీమం, పునాది అన్వయం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; rank ప్రత్యేక పదం నిర్వచన-నియంత్రితం. మూల వ్యతిరేక నిరూపణ వాక్యం OLTESTSPINRANK-001గా సవరించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T254",
+    "source_term": "set rank; membership induction; rank supremum",
+    "telugu": "సమితి స్థాయి; సభ్యత్వ ఆగమనం; స్థాయి సుప్రీమం",
+    "status": "rank_definition_controlled_set_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "Aకు మొదటిసారి ఉపసమితిగా ఉన్న దశ, సభ్యుల తక్కువ స్థాయిలు, సమితులపై సభ్యత్వ ఆగమనం, క్రమసంఖ్య స్థాయి సమానత్వం నిలిచాయి.",
+    "uncertainty": "rankకు స్థాయి అనే పదం ఈ నిర్వచనానికి కట్టబడింది; మూల నిరూపణలోని స్వవైరుధ్య వాక్యం ప్రకటించి సవరించబడింది.",
+    "borrowing": "Rank macro, ordinal variables and English axiom names inside formulas remain source-controlled."
+  }
+}

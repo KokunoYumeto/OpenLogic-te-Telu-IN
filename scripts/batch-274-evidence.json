@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "274",
+  "unit_id": "OLP-0625",
+  "unit_order": 625,
+  "source_path": "content/history/biographies/kurt-goedel.tex",
+  "blocks": 15,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14],
+  "previous_segments": 9239,
+  "previous_terms": 314,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P018", "TE-P024", "TE-P027"],
+  "consultation_phase": "గ్యోడెల్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సంపూర్ణత/అసంపూర్ణత/ప్రథమ శ్రేణి పదాలు, స్థానిక తర్క-నిరూపణ సాక్షులు పోల్చాం; జీవితకాల సూచనలు, సంపూర్ణత-అసంపూర్ణత ఫలితాల భేదం, అన్ని పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణిత-తర్క భాషా నేపథ్యం మాత్రమే; వ్యక్తి జీవిత, ఆరోగ్య, సంబంధ వివరాలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T315","source_term":"Kurt Gödel; first-order completeness theorem; incompleteness theorems","telugu":"కుర్ట్ గ్యోడెల్; ప్రథమ శ్రేణి సంపూర్ణత సిద్ధాంతం; అసంపూర్ణత సిద్ధాంతాలు","status":"distinct_dissertation_and_later_theorems_biography_source_controlled","passages":["TE-P003","TE-P018","TE-P024","TE-P027"],"basis":"1929 పరిశోధన గ్రంథంలోని తాదాత్మ్యంతో కూడిన ప్రథమ శ్రేణి సంపూర్ణత సిద్ధాంతం, ఏడాది తరువాతి రెండు అసంపూర్ణత సిద్ధాంతాలు వేర్వేరుగా నిలిచాయి; వియన్నా వలయం, వలస, చివరి ఆరోగ్య కథనం, పఠన సూచనలు మూల నియంత్రితం.","uncertainty":"వ్యక్తిగత, వైద్య, చారిత్రక వాదనలు ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు ప్రత్యేక చరిత్రకు ఆధారం కావు.","borrowing":"Gödel and other names are source-identifying borrowings; German nickname, Collected Papers title and citation keys remain unchanged."}
+}

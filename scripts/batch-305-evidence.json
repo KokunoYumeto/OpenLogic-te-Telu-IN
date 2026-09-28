@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "305",
+  "unit_id": "OLP-0656",
+  "unit_order": 656,
+  "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+  "blocks": 41,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+  "corrections_by_block": {"14": ["OLTEPTCUTTOP-001"], "25": ["OLTEPTCUTTOP-004"], "29": ["OLTEPTCUTTOP-002"], "37": ["OLTEPTCUTTOP-003"]},
+  "previous_segments": 9697,
+  "previous_terms": 345,
+  "expected_corrections": 559,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "అత్యున్నత కట్ తొలగింపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ/సీక్వెంట్/కట్-స్థాయి పదాలు పోల్చాం; ద్వంద్వ ఆగమన, A--E సందర్భాలు, వృక్షాల్లో ఎడమ-కుడి క్రమం, నాలుగు మూల-లోపాల ప్రకటన తనిఖీ చేశాం.",
+  "evidence_limit": "నిరూపణ వృక్షాల సంఖ్య/లేబుళ్లు/సందర్భాలు మూలంతో పోల్చాం; ప్రతి లోతైన నిరూపణ దశను స్వతంత్రంగా ప్రామాణికీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T346","source_term":"topmost cut; cut height; cut rank; cut permutation; principal cut reduction","telugu":"అత్యున్నత కట్; కట్ ఎత్తు; కట్ స్థాయి; కట్ స్థానమార్పు; ప్రధాన కట్ సంక్షేపణం","status":"topmost_cut_elimination_four_source_repairs_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"కట్ ఎత్తు/స్థాయి ద్వంద్వ ఆగమన, A--E సందర్భాల వృక్షాలు, అన్ని అత్యున్నత కట్‌ల తొలగింపు నిలిచాయి; నాలుగు మూల తప్పులను పక్కనే సరిచేసి ప్రకటించాం.","uncertainty":"సంక్లిష్ట పరిమాణీకరణిక కట్ మార్పిడి స్వతంత్రంగా పూర్తి నిరూపణతో పునర్నిర్మించలేదు; మూల-లక్ష్య నిబద్ధతే ఈ సమీక్ష పరిమితి.","borrowing":"CutCS, G3c, sequent/proof-tree labels and lemma identifiers remain source-identifying."}
+}

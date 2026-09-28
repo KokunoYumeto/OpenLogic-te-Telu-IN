@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "199",
+  "unit_id": "OLP-0550",
+  "unit_order": 550,
+  "source_path": "content/set-theory/ordinals/wo.tex",
+  "blocks": 14,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "previous_segments": 8133,
+  "previous_terms": 239,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P010", "TE-P018"],
+  "consultation_phase": "స్థిర సుక్రమ నిర్వచన మూలం, తెలుగు లక్ష్యం, పూర్వ సుక్రమ/సంబంధ/మూలకం పదాలు, స్థానిక సమితి/సంబంధ/తర్క సాక్షులు ఎదురెదురు చూశాం; సంపర్కితత్వం, ఖాళీ కాని ఉపసమితి కనిష్ఠం, కఠిన క్రమధర్మాలు, సుక్రమ ఆగమన నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/010/018 సాధారణ సమితి/సంబంధ/తర్క పదాలకు మాత్రమే సాక్షులు; సుక్రమ ప్రత్యేక నిర్వచనం మూల సూత్ర నియంత్రితం. నిర్మాణ QA నిరూపణను ధృవీకరించదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T240",
+    "source_term": "well-ordering / connectedness / least versus minimal element / well-order induction",
+    "telugu": "సుక్రమం / సంపర్కితత్వం / అత్యల్ప, కనిష్ఠ మూలకం / సుక్రమ ఆగమనం",
+    "status": "definition_controlled_relation_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P010", "TE-P018"],
+    "basis": "సంపర్కితత్వం, ప్రతి ఖాళీ కాని ఉపసమితికి కనిష్ఠ మూలకం అనే ద్విషరత నిర్వచనం, అత్యల్ప ఏకైకత్వం, స్వావర్తనరాహిత్యం/అసమమితత్వం/సంక్రామకత్వం, ప్రతికూల ఆగమన వాదన నిలిచాయి.",
+    "uncertainty": "సంపర్కితత్వం, అత్యల్ప/కనిష్ఠ ప్రత్యేక పదాలకు ప్రత్యక్ష స్థానిక సాక్షి లేదు; మూల సూత్రాలు అర్థాన్ని నియంత్రిస్తాయి.",
+    "borrowing": "Order symbols, quantified formulas and source-token element keys remain source-controlled."
+  }
+}

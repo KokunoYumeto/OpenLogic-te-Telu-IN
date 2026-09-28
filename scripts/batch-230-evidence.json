@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "230",
+  "unit_id": "OLP-0581",
+  "unit_order": 581,
+  "source_path": "content/set-theory/cardinals/cp.tex",
+  "blocks": 7,
+  "linguistic_blocks": [3, 4, 5, 6],
+  "previous_segments": 8560,
+  "previous_terms": 270,
+  "expected_corrections": 498,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కాంటర్ సూత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/సమసంఖ్యకత్వ/ద్వైజెక్టివ్ పదాలు, స్థానిక సమితి/సంఖ్య సాక్షులు పోల్చాం; రెండు అప్పుడూ అప్పుడే సమానత్వాలు, హ్యూమ్ సూత్ర సూచన, టోకెన్ ప్రకటనలు పరీక్షించాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ పదాల సాక్షులే; కాంటర్ సూత్ర నిర్దిష్ట సమీకరణం మూల సూత్ర నియంత్రితం. మూలంలోని రూపవిన్యాసం అనుసరించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T271",
+    "source_term": "Cantor's Principle; cardinality; equinumerosity",
+    "telugu": "కాంటర్ సూత్రం; కార్డినాలిటీ; సమసంఖ్యకత్వం",
+    "status": "biconditional_definition_source_controlled_prior_number_register_used",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "క్రమరక సమానత్వం, ద్వైజెక్షన్ సమసంఖ్యకత్వం, కార్డినాలిటీ సమానత్వం మధ్య తేడా, హ్యూమ్ సూత్రానికి తరువాతి సూచన నిలిచాయి.",
+    "uncertainty": "కార్డినాలిటీ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల సమీకరణం, పూర్వ సమసంఖ్యక పదం నియంత్రించాయి.",
+    "borrowing": "Cantor, Hume, and cardinality are conventional name/technical borrowings."
+  }
+}

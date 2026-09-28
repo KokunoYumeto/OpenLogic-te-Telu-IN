@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "221",
+  "unit_id": "OLP-0572",
+  "unit_order": 572,
+  "source_path": "content/set-theory/replacement/refproofs.tex",
+  "blocks": 19,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+  "corrections_by_block": {"7": ["OLTESTREPLREFP-001", "OLTESTREPLREFP-002"], "17": ["OLTESTREPLREFP-003"]},
+  "previous_segments": 8435,
+  "previous_terms": 261,
+  "expected_corrections": 491,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ప్రతిబింబన నిరూపణల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సూత్ర పరిమితీకరణ/పథకం/సంక్రమణ పదాలు, స్థానిక సమితి/క్రమ/తర్క సాక్షులు ఎదురెదురు చూశాం; సాక్షి-దశ ఉపపత్తి, పునరావృత్త దశ సమ్మేళనం, సూత్ర సంక్లిష్టత ఆగమనం, బలహీన ప్రతిబింబనం, 0/1 యుక్తి, వేరుచేయు ముగింపు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; ప్రతిబింబన ప్రత్యేక పథకం మూల సూత్ర నియంత్రితం. మూలంలోని మూడు స్థానిక సూత్ర లోపాలు OLTESTREPLREFP-001--003గా ప్రకటించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T262",
+    "source_term": "weak reflection; absoluteness; simultaneous reflection",
+    "telugu": "బలహీన ప్రతిబింబనం; నిరపేక్షత; ఏకకాల ప్రతిబింబనం",
+    "status": "reflection_proof_formula_controlled_logic_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "పరామితులతో సంక్రమణ S, 0/1 ద్వారా రెండు సూత్రాల ప్రతిబింబనం, Sలో సాక్షులు, చివరి వేరుచేయు సమితి సమానత్వం నిలిచాయి.",
+    "uncertainty": "నిరపేక్షత ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం, నిరూపణ నియంత్రణ.",
+    "borrowing": "Weak-Reflection label inside math, overline notation and cited identifiers remain source-controlled."
+  }
+}

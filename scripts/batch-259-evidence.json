@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "259",
+  "unit_id": "OLP-0610",
+  "unit_order": 610,
+  "source_path": "content/methods/proofs/reading-proofs.tex",
+  "blocks": 15,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11,12,13,14],
+  "corrections_by_block": {"13": ["OLTEMTHPRFREA-001", "OLTEMTHPRFREA-002"]},
+  "previous_segments": 9037,
+  "previous_terms": 299,
+  "expected_corrections": 528,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P024", "TE-P025"],
+  "consultation_phase": "సంక్షిప్త నిరూపణ పఠనం స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి సమానత్వం/సమ్మేళనం/ఛేదన/శోషణ పదాలు, స్థానిక సమితి-నిరూపణ సాక్షులు పోల్చాం; సంక్షిప్త నిరూపణలోని రెండు ఉపసమితి దిశలు, ప్రతి గోప్య నిర్వచన దశ, విస్తరించిన రూపంలోని రెండు మూల లోపాలు తనిఖీ చేశాం.",
+  "evidence_limit": "శోషణ సూత్రానికి ప్రత్యక్ష స్థానిక నామసాక్షి లేదు; మూల సమానత్వం, పూర్వ సమితి పదాలు నియంత్రించాయి. రెండు మూల సవరణలు ప్రకటించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T300","source_term":"reading condensed proofs; absorption law","telugu":"సంక్షిప్త నిరూపణలను చదవడం; శోషణ సూత్రం","status":"implicit_definition_steps_two_inclusions_and_expansion_source_controlled_two_repairs","passages":["TE-P004","TE-P008","TE-P024","TE-P025"],"basis":"A∩(A∪B)=A సంక్షిప్త నిరూపణలో దాచిన రెండు సభ్యత్వ దిశలు, ఛేదన/సమ్మేళన నిర్వచనాలు స్పష్టీకృత వ్యాఖ్యలో నిలిచాయి; చివరి అభ్యాసం అదే పఠన పద్ధతిని కోరుతుంది.","uncertainty":"శోషణ ప్రత్యేక పదానికి ప్రత్యక్ష స్థానిక సాక్షి లేదు; స్థిర గణిత సమానత్వం, సాధారణ నిరూపణ భాష ఆధారం.","borrowing":"Set variables, union/intersection/subset notation, protected element tokens and TeX proof environments remain unchanged."}
+}

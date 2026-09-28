@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPROPOSITIONSASTYPESDRIVER-20260928",
+  "unit_id": "OLP-0690",
+  "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+  "source_sha256": "fe9ab2d869edafb1ddd1f3c2c9d29985cfbe1d561d6bfab42d68d1ef68444001",
+  "findings": []
+}

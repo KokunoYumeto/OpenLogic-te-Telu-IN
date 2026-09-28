@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "364",
+  "unit_id": "OLP-0715",
+  "unit_order": 715,
+  "source_path": "content/propositional-logic/syntax-and-semantics/soundness.tex",
+  "blocks": 9,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10498,
+  "previous_terms": 404,
+  "expected_corrections": 701,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P018 తార్కిక వాక్యాల పదజాలం, TE-P024/025 నిరూపణ సందర్భం పోల్చాం; సార్థకత-నిగమనం వేర్పును ఇక్కడి సిద్ధాంతం నియంత్రిస్తుంది.",
+  "evidence_limit": "No full direct canon attestation for compound; no TeX/layout verification.",
+  "term_decision": {
+    "term_id": "TE-T405",
+    "source_term": "soundness; modus ponens; semantic entailment",
+    "telugu": "సార్థకత; మోడస్ పోనెన్స్; అర్థాత్మక నిగమనం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నిరూపణీయత నుంచి ప్రతి విలువ నిర్ణయంలో సత్యం వస్తుందనే దిశను సార్థకతగా స్థిరపరచాం; మోడస్ పోనెన్స్‌కు గుర్తించదగిన లిప్యంతరీకరణను నిలుపుకున్నాం.",
+    "uncertainty": "No full direct canon attestation for compound; no TeX/layout verification.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

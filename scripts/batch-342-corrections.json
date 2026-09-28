@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0693",
+  "source_path": "content/proof-theory/propositions-as-types/rules-tN3.tex",
+  "source_sha256": "948804549f0622cc616399743fa6fc6680b1b061763d292d7c5e2106fd583656",
+  "audit_id": "OLTEPTPTYTN3-20260928",
+  "audit_review_path": "evidence/OLP-0693-TN3-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9b5095f80f0cad2dc82fbfa47e95406d71c2a47f4803cf4c7ffa5a844d611969",
+  "audit_findings_path": "evidence/OLP-0693-TN3-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "03265540f0a424eaba6890b1eace923434c2ab9e441fbb6be22a6e1d53c14d06",
+  "previous_corrections": 647,
+  "treatments": {
+    "OLTEPTPTYTN3-001": {
+      "target_line": 71,
+      "body_treatment": "Give the tN3 table its own tab:tN3ip label and align the types-section reference."
+    }
+  }
+}

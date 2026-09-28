@@ -1,8 +1,8 @@
 # Priority review
 
-This view contains 70 of 628 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
+This view contains 70 of 1117 decisions marked urgent or high priority. Review is useful but never a release or translation hold.
 
-Final reader pages remain pending; exact source and target file/line locators are shown.
+Accepted HTML unit anchors are recorded in the canonical register; PDF occurrence pages are not asserted. Exact source and target file/line locators are shown.
 
 ## te-Telu-IN-TE-T003 — extensionality
 

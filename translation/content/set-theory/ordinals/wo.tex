@@ -1,0 +1,122 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{wo}
+\olsection{సుక్రమాలు}
+
+ప్రాథమిక భావన ఇది:
+
+\begin{defn}
+$<$ సంబంధం $A$ను
+\emph{సుక్రమితం చేస్తుంది}
+అంటే ఈ రెండు షరతులను
+పూర్తి చేస్తుంది:
+\begin{enumerate}
+	\item $<$ సంపర్కితమైనది; అంటే, ప్రతి $a, b \in A$కూ $a < b$
+	లేదా $a = b$ లేదా $b < a$;
+	\item $A$లోని ప్రతి ఖాళీ కాని ఉపసమితికి ఒక $<$-కనిష్ఠ
+	\tetoken{మూలకం}{!!{element}} ఉంటుంది; అంటే, $\emptyset \neq X \subseteq A$ అయితే $(\exists m \in
+	X)(\forall z \in X)z \nless m$.
+\end{enumerate}
+\end{defn}
+
+ఇప్పుడే పరిశీలించిన మూడు
+ఉదాహరణలు నిజంగా
+సుక్రమ సంబంధాలని
+చూడడం సులభం.
+
+\begin{prob}
+\Olref[sth][ordinals][idea]{sec}
+సహజ సంఖ్యలపై మూడు
+ఉదాహరణ క్రమాలను
+ఇచ్చింది. ప్రతిదీ
+సుక్రమమని తనిఖీ
+చేయండి.
+\end{prob}
+
+సుక్రమం గురించి కొన్ని
+ప్రాథమికమైన, అయితే
+అత్యంత ముఖ్యమైన
+విషయాలు ఇవి.
+
+\begin{prop}\ollabel{wo:strictorder}
+$<$, $A$ను సుక్రమితం
+చేస్తే, $A$లోని ప్రతి
+ఖాళీ కాని ఉపసమితికి
+ఏకైక $<$-అత్యల్ప
+మూలకం ఉంటుంది; ఇంకా
+$<$ స్వావర్తనరహిత,
+అసమమిత, సంక్రామక
+సంబంధం అవుతుంది.
+\end{prop}
+
+\begin{proof}
+$X$, $A$లోని ఖాళీ కాని
+ఉపసమితి అయితే, దానికి
+ఒక $<$-కనిష్ఠ
+\tetoken{మూలకం}{!!{element}}
+$m$ ఉంటుంది; అంటే
+$(\forall z \in X)z \nless m$.
+$<$ సంపర్కితమైనది
+కాబట్టి,
+$(\forall z \in X)m \leq z$.
+అందువల్ల $m$,
+$X$లోని $<$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}.
+
+స్వావర్తనరాహిత్యం కోసం
+$a \in A$ను స్థిరపరచండి;
+$\{a\}$లోని $<$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+$a$నే, కాబట్టి
+$a \nless a$.
+సంక్రామకత్వం కోసం,
+$a < b < c$ అయితే
+$\{a, b, c\}$కు
+$<$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+ఉంది కాబట్టి $a < c$.
+అసమమితత్వం
+స్వావర్తనరాహిత్యం,
+సంక్రామకత్వం నుంచి
+వస్తుంది.
+\end{proof}
+
+\begin{prop}\ollabel{propwoinduction}
+$<$, $A$ను సుక్రమితం
+చేస్తే, ఏ $\phi(x)$
+సూత్రానికైనా:
+\[
+	\text{ఒకవేళ }(\forall a \in A)((\forall b < a)\phi(b) \lif 
+		\phi(a))\text{ అయితే }(\forall a \in A)\phi(a).
+\]
+\end{prop}
+
+\begin{proof}
+విపర్యయాన్ని నిరూపిస్తాం.
+$\lnot(\forall a \in
+A)\phi(a)$ అనుకుందాం;
+అంటే $X = \Setabs{x \in A}{\lnot\phi(x)} \neq
+\emptyset$. అప్పుడు
+$X$లో ఒక $<$-కనిష్ఠ
+\tetoken{మూలకం}{!!{element}},
+$a$, ఉంటుంది. కాబట్టి
+$(\forall
+b < a)\phi(b)$ కానీ
+$\lnot \phi(a)$.
+\end{proof}\noindent
+ఈ చివరి ధర్మం సహజ
+సంఖ్యలపై బలమైన ఆగమన
+సూత్రాన్ని గుర్తుచేయాలి:
+$(\forall n \in \omega)((\forall m < n)\phi(m)
+\lif \phi(n))$ అయితే
+$(\forall n \in \omega)\phi(n)$.
+ఈ ధర్మం సుక్రమాన్ని
+చాలా \emph{దృఢమైన}
+భావనగా చేస్తుంది.\footnote{గుర్తుచేస్తున్నాం:
+వేరుగా స్పష్టంగా చెప్పనంతవరకు,
+అన్ని సూత్రాల్లో పరామితులు
+ఉండవచ్చు.}
+
+\end{document}

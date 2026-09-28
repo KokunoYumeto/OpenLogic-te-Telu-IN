@@ -1,0 +1,3 @@
+# OLP-0703 — regular proofs substitution semantic review
+
+Fourteen aligned blocks retain regularity, safe substitution, quantifier examples, eigenvariable renaming and the standing regular-proof convention. Reverse-paraphrase: regularity prevents reuse and downward escape of eigenvariables; substitution preserves it when neither the replaced constant nor inserted term conflicts with eigenvariables; fresh renaming of a topmost dirty inference strictly lowers the dirty count without changing the end-sequent or height. Four disclosures pass strict QA. Routine cases left as source exercises remain exercises. No visual TeX inspection.

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "223",
+  "unit_id": "OLP-0574",
+  "unit_order": 574,
+  "source_path": "content/set-theory/ord-arithmetic/ord-arithmetic.tex",
+  "blocks": 7,
+  "linguistic_blocks": [1, 4],
+  "previous_segments": 8466,
+  "previous_terms": 263,
+  "expected_corrections": 492,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008"],
+  "consultation_phase": "క్రమసంఖ్య అంకగణిత అధ్యాయ డ్రైవరు మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య పదాలు, స్థానిక సమితి/సంఖ్య సాక్షులు ఎదురెదురు చూశాం; శీర్షిక, ఐదు దిగుమతులు, అధ్యాయ ముగింపు హుక్ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008 సాధారణ సంఖ్య/క్రమ/సమితి పదాలకు మాత్రమే సాక్షులు; అంకగణిత నిర్వచనలు దిగుమతి విభాగ నియంత్రితం. పూర్తి అధ్యాయ దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T264",
+    "source_term": "Ordinal Arithmetic (chapter driver)",
+    "telugu": "క్రమసంఖ్య అంకగణితం",
+    "status": "chapter_heading_source_controlled_number_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008"],
+    "basis": "శీర్షికను తెలుగులో ఇస్తూ కూడిక, వినియోగం, గుణకారం, ఘాతాంక విభాగాల దిగుమతులు నిలిపాం.",
+    "uncertainty": "ప్రత్యేక క్రియల నిర్వచనలు తరువాతి విభాగాల్లోనే సమీక్షించాలి.",
+    "borrowing": "Chapter identifier and import paths remain source-controlled."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEAMLELPALSEM-20260927",
+  "unit_id": "OLP-0490",
+  "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex",
+  "source_sha256": "b5e8c2ba742dc473a01dbc6f3908250b2afc6deb12f338019ac9482cfea361cd",
+  "findings": [
+    {
+      "finding_id": "OLTEAMLELPALSEM-001",
+      "source_locator": "public-announcement-logic-semantics.tex line 66; language formation clause and local announcement truth clause",
+      "classification": "missing_meta_formula_marker_in_announcement_expression",
+      "source_issue": "The vacuity paragraph writes [!A]B without the meta-formula marker used consistently for the operand in the definition.",
+      "minimal_treatment": "Use [!A]!B in that paragraph and disclose adjacent to it.",
+      "expected_core_math_delta": {
+        "source_only": ["$[!A]B$"],
+        "target_only": ["$[!A]!B$"]
+      }
+    }
+  ]
+}

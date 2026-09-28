@@ -1,0 +1,5 @@
+# OLP-0606 — Inference patterns semantic review
+
+The 46 aligned blocks retain the distinction between using and proving a conjunction, proving a disjunction, a conditional and biconditional, universal instantiation versus proof with an arbitrary object, proof by cases, and introducing versus using an existential witness. The phrase “p only if q” is rendered in the p→q direction. The two worked set-theoretic proofs retain their assumptions, disjunctive cases, and conclusions. The final example remains explicitly *invalid*: two separate existential witnesses cannot be silently treated as the same `x`.
+
+One source symbol error in the nonempty-set explanation is corrected and disclosed as `OLTEMTHPRFPAT-001`; this does not change the conclusion of the actual proof. Protected vocabulary tokens, formulas, environment structure and paragraph alignment pass correction-aware bounded QA. The specialized Telugu headings remain provisional; no full TeX visual inspection or independent formal proof check is claimed.

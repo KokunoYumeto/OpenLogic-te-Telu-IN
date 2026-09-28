@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "242",
+  "unit_id": "OLP-0593",
+  "unit_order": 593,
+  "source_path": "content/set-theory/choice/introduction.tex",
+  "blocks": 6,
+  "linguistic_blocks": [4,5],
+  "previous_segments": 8749,
+  "previous_terms": 282,
+  "expected_corrections": 508,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ఎంపిక పరిచయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సుక్రమపరచడం/కార్డినల్ పదాలు, స్థానిక తర్క/సమితి సాక్షులు పోల్చి స్వయంసిద్ధ సమానత్వం, తాత్త్విక ఆమోదయోగ్యత ప్రశ్న తనిఖీ చేశాం.",
+  "evidence_limit": "సుక్రమపరచడం-ఎంపిక సమానత్వం మూల భవిష్యత్ నిరూపణకు సూచన; ప్రత్యక్ష నిపుణ పదసాక్షి లేదు. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T283","source_term":"Axiom of Choice and Well-Ordering equivalence","telugu":"ఎంపిక స్వయంసిద్ధం, సుక్రమపరచడం సమానత్వం","status":"chapter_question_and_axiom_equivalence_source_controlled","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"కార్డినల్ నిర్మాణం సుక్రమపరచడంపై ఆధారపడటం, ఎంపికతో సమానత్వం, వినియోగం/సమర్థన రెండు ప్రశ్నలు నిలిచాయి.","uncertainty":"ఎంపిక/సుక్రమపరచడం ప్రత్యేక పదాలకు ప్రత్యక్ష సాక్షి లేదు; పూర్వ అధ్యాయ వాడుకను కొనసాగించాం.","borrowing":"Axiom names are translated; references remain source-controlled."}
+}

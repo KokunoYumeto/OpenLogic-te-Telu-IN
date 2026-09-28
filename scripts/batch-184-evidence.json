@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "184",
+  "unit_id": "OLP-0535",
+  "unit_order": 535,
+  "source_path": "content/set-theory/story/urelements.tex",
+  "blocks": 9,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8],
+  "previous_segments": 7968,
+  "previous_terms": 224,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి/మూలకం పదనిర్ణయాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; సమితి కాని మూలకాల తాత్త్విక అన్వయం, గణిత పునాదివాద వాదన, చిత్రం, వ్యాఖ్యానిత ఉటంకింపు స్థితి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/మూలకం/తర్క పదాలకు మాత్రమే సాక్షులు; urelement ప్రత్యేక రూపం మూల నిర్వచనంతో నియంత్రితం. కునెన్ ఉటంకింపు స్వతంత్రంగా చూడలేదు; చిత్రం దృశ్య తనిఖీ లేదు; మూలంలోని వ్యాఖ్య పాఠక PDFలో ముద్రించబడదు.",
+  "term_decision": {
+    "term_id": "TE-T225",
+    "source_term": "urelement / non-set / applicability versus pure-set foundationalism",
+    "telugu": "సమితి కాని మూలకం / సమితి కాని వస్తువు / అన్వయయోగ్యత వర్సెస్ శుద్ధ సమితి పునాదివాదం",
+    "status": "definition_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "సమితి కాని మూలకాలను ఆవులు, పందులు, ఇసుక రేణువుల ఉదాహరణతో స్పష్టం చేసి, ప్రతి దశలో వాటితో ఏర్పడే సమితులు, అన్వయయోగ్యత/గణిత పునాది మధ్య ఎంపిక, చివరి తొలగింపు నిర్ణయం వేర్వేరుగా నిలిపాం.",
+    "uncertainty": "Urelementకు ప్రత్యేక ప్రత్యక్ష తెలుగు సాక్షి లేదు; కునెన్ ఉటంకింపు స్వతంత్ర ధృవీకరణ, చిత్రం దృశ్య తనిఖీ చేయలేదు.",
+    "borrowing": "Source parenthetical urelements, citations, stage symbols and diagram commands remain source-controlled."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "281",
+  "unit_id": "OLP-0632",
+  "unit_order": 632,
+  "source_path": "content/history/biographies/ernst-zermelo.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5,6,7,8,9,10,11],
+  "previous_segments": 9329,
+  "previous_terms": 321,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "సెర్మెలో జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక స్వయంసిద్ధం/సమితి సిద్ధాంతం/సెర్మెలో పేరు, స్థానిక సమితి-తర్క సాక్షులు పోల్చాం; 1904/1908 గణిత ఘట్టాలు, ఉద్యోగ/ఆరోగ్య కాలక్రమం, హిట్లర్ వ్యతిరేకతపై మూల వాదన, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సమితి/తర్క పదాలకు నేపథ్యం మాత్రమే; వ్యక్తి జీవిత, ఆరోగ్య, రాజకీయ సంఘటనలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T322","source_term":"Ernst Zermelo; axiom of choice; axiomatization of set theory","telugu":"ఎర్న్‌స్ట్ సెర్మెలో; ఎంపిక స్వయంసిద్ధం; సమితి సిద్ధాంతపు స్వయంసిద్ధీకరణ","status":"1904_choice_1908_axiomatization_milestones_biography_source_controlled","passages":["TE-P003","TE-P004","TE-P008","TE-P018"],"basis":"1904 ఎంపిక స్వయంసిద్ధ ప్రవేశం, 1908 సమితి సిద్ధాంత స్వయంసిద్ధీకరణ వేర్వేరు ఘట్టాలుగా నిలిచాయి; 1894/1897/1910/1916/1921/1935/1951/1953 కాల సూచనలు, పఠన సూచనలు నిలిచాయి.","uncertainty":"సెర్మెలో పేరు పూర్వ అనువాదంలో సెర్మెలో/జెర్మెలో అనే రెండు రూపాల్లో ఉంది; ఈ చరిత్ర భాగంలో తాజా సమితి అధ్యాయ రూపం ఎంచుకున్నాం. చారిత్రక వాదనలు స్వతంత్రంగా ధృవీకరించలేదు.","borrowing":"Zermelo and other personal names are source eponyms; book title and citation keys remain source-identifying."}
+}

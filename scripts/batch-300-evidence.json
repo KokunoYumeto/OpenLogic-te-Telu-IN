@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "300",
+  "unit_id": "OLP-0651",
+  "unit_order": 651,
+  "source_path": "content/lambda-calculus/syntax/conversion.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4,5,6],
+  "corrections_by_block": {"6": ["OLTELAMSYNCONV-001"]},
+  "previous_segments": 9614,
+  "previous_terms": 340,
+  "expected_corrections": 548,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "లాంబ్డా సమానరూప మార్పు మూల తునక, తెలుగు లక్ష్యం, పూర్వ alpha-మార్పు/సంక్షేపణ పదాలు పోల్చాం; రెండు తాదాత్మ్య పదాల సంకేతాలు, మూలం ఆకస్మిక ముగింపు తనిఖీ చేశాం.",
+  "evidence_limit": "మూలంలో alpha-మార్పు ఔపచారిక నియమం, మిగిలిన రెండు మార్పుల వివరణ లేవు; వాటిని కల్పించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T341","source_term":"lambda conversion and reduction; alpha-conversion","telugu":"లాంబ్డా సమానరూప మార్పు, సంక్షేపణం; ఆల్ఫా-సమానరూప మార్పు","status":"conversion_fragment_missing_rule_disclosed_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"మూడు మార్పుల ప్రకటన, ఏకదిశ/ద్విదిశ భేదం, రెండు తాదాత్మ్య లాంబ్డా పదాలు నిలిచాయి; మూలం అసంపూర్ణమని ప్రకటించాం.","uncertainty":"వాగ్దానం చేసిన నియమాలు మూలంలో లేవు; వాటి నిర్వచనాలు ఈ విభాగం ద్వారా ధృవీకరించలేం.","borrowing":"Alpha, lambda terms and source section ID remain source-identifying."}
+}

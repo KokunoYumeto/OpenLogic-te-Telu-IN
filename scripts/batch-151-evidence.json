@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "151",
+  "unit_id": "OLP-0502",
+  "unit_order": 502,
+  "source_path": "content/intuitionistic-logic/semantics/topological-semantics.tex",
+  "blocks": 15,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "previous_segments": 7575,
+  "previous_terms": 191,
+  "expected_corrections": 460,
+  "canon_default": ["TE-P008", "TE-P009", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర స్థలవిజ్ఞాన అర్థవిజ్ఞాన మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి/సంయోజక పదాలు, స్థానిక సమితి/ఉపసమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలు ఎదురెదురు చూశాం; వివృత సమితి మూడు స్వీకృతాలు, అంతర్భాగం, సమితి-చర్యల సంధాయకాలు, అన్వయపు అతి పెద్ద వివృత సమితి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/009/010/011/018/024 సాధారణ సమితి/ఉపసమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. టోపాలజీ, వివృత సమితి శాఖా నిర్వచనాలకు అవి ప్రత్యక్ష మూలాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T192",
+    "source_term": "topological semantics / topology and open sets / interior / implication as greatest open set",
+    "telugu": "స్థలవిజ్ఞాన అర్థవిజ్ఞానం / స్థలవిన్యాసం (టోపాలజీ), వివృత సమితులు / అంతర్భాగం / అతి పెద్ద వివృత సమితిగా సోపాధికం",
+    "status": "native_general_set_subset_relation_function_logic_derivation_register_attested_topological_semantics_source_controlled",
+    "passages": ["TE-P008", "TE-P009", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "Top O వివృత సమితుల వ్యవస్థ, శూన్య/మొత్తం సమితి, పరిమిత ఛేదన, యథేచ్ఛ సమ్మేళనం, PropX యొక్క ఐదు ఆగమన నిబంధనలు, Interior, అనుగమనకు సమితి చేర్పు, →కు అతి పెద్ద వివృత ఉపసమితి నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు topology/interior శాఖా తెలుగు పదాలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. మూలం subset, subseteq రెండు సంకేతాలు వాడుతుంది; ఖచ్చిత/అఖచ్చిత చేర్పు సంప్రదాయం స్పష్టంగా చెప్పదు. సంకేతాలను మార్చలేదు; నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "టోపాలజీ is an explicit technical borrowing paired with transparent స్థలవిన్యాసం; Top, Interior, Prop and subset/subseteq notation remain source-controlled."
+  }
+}

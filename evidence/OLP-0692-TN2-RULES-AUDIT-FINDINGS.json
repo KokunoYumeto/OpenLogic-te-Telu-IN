@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTETN2RULES-20260928",
+  "unit_id": "OLP-0692",
+  "source_path": "content/proof-theory/propositions-as-types/rules-tN2.tex",
+  "source_sha256": "028e19b146423187a4a0057fee449ac084cdfc3c987f0a366787784aa64a2ee2",
+  "findings": []
+}

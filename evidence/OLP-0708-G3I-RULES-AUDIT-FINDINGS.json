@@ -1,0 +1,75 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQG3I-20260928",
+  "unit_id": "OLP-0708",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3i.tex",
+  "source_sha256": "3b754ac3aadeb92362d6eeb398cfa914e2a757e079d5305f3994f938e0ff6933",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQG3I-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G3i.tex lines 9–85, aligned block 4",
+      "classification": "intuitionistic_disjunction_right_multisuccedent_premise",
+      "source_issue": "The right-disjunction premise has A,B together in the succedent, contrary to the table's single-succedent restriction.",
+      "minimal_treatment": "Use the indexed right-disjunction schema with one premise summand Ai and conclusion A1 or A2, for i=1,2.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma\\fCenter!A,!B$",
+          "$\\Gamma\\fCenter!A\\lor!B$"
+        ],
+        "target_only": [
+          "$\\Gamma\\fCenter!A_1\\lor!A_2$",
+          "$\\Gamma\\fCenter!A_i$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQG3I-002",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G3i.tex lines 9–85, aligned block 4",
+      "classification": "universal_left_context_separator_missing",
+      "source_issue": "The retained quantified formula and Gamma are not separated.",
+      "minimal_treatment": "Insert the multiset separator.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A(t),\\lforall[x][!A(x)]\\Gamma\\fCenter\\Delta$"
+        ],
+        "target_only": [
+          "$!A(t),\\lforall[x][!A(x)],\\Gamma\\fCenter\\Delta$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQG3I-003",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G3i.tex lines 9–85, aligned block 4",
+      "classification": "G1_minimal_side_reference_incomplete",
+      "source_issue": "The G1m side definition omits removal of right weakening and uses a non-displayed contextual falsity axiom shape.",
+      "minimal_treatment": "Align this G1m/G1i side reference with the preceding G1i table: remove right weakening and the actual falsity base axiom.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\lfalse,\\Gamma\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$\\lfalse\\Sequent\\quad$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQG3I-004",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G3i.tex lines 9–85, aligned block 4",
+      "classification": "intuitionistic_rule_table_duplicate_classical_label",
+      "source_issue": "The G3i table reuses the G3c label.",
+      "minimal_treatment": "Give this table the distinct tab:G3i label.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\ollabel{tab:G3c}"
+        ],
+        "target_only": [
+          "\\ollabel{tab:G3i}"
+        ]
+      }
+    }
+  ]
+}

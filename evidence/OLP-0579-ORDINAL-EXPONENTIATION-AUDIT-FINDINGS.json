@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDEXPO-20260927",
+  "unit_id": "OLP-0579",
+  "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+  "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDEXPO-001",
+      "source_locator": "exponentiation.tex lines 12–19, finite-support synthetic definition",
+      "classification": "base_exponent_function_type_reversed",
+      "source_issue": "Functions alpha -> beta with colexicographic finite support have the roles of base and exponent reversed relative to the declared alpha^beta order type.",
+      "minimal_treatment": "Use functions beta -> alpha and index both support and greatest difference by beta; disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Setabs{\\gamma\\in\\alpha}{f(\\gamma)\\neq0}$", "$\\gamma_0=\\Setabs{\\gamma\\in\\alpha}{f(\\gamma)\\neqg(\\gamma)}$", "$f\\colon\\alpha\\to\\beta$"],
+        "target_only": ["$\\Setabs{\\gamma\\in\\beta}{f(\\gamma)\\neq0}$", "$\\gamma_0=\\Setabs{\\gamma\\in\\beta}{f(\\gamma)\\neqg(\\gamma)}$", "$f\\colon\\beta\\to\\alpha$"]
+      }
+    },
+    {
+      "finding_id": "OLTESTORDEXPO-002",
+      "source_locator": "exponentiation.tex lines 35–56, recursive definition and synthetic-equivalence exercise",
+      "classification": "zero_base_exception_to_synthetic_recursion_equivalence",
+      "source_issue": "The finite-support construction after type repair gives zero at alpha=0, beta=omega, while the displayed recursive limit union gives one.",
+      "minimal_treatment": "Qualify the synthetic description and equivalence exercise to positive base, retain the source recursion, and disclose.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "275",
+  "unit_id": "OLP-0626",
+  "unit_order": 626,
+  "source_path": "content/history/biographies/emmy-noether.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5,6,7,8,9,10,11],
+  "previous_segments": 9254,
+  "previous_terms": 315,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P008", "TE-P010"],
+  "consultation_phase": "నోయెథర్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సుస్థాపిత క్రమం/ఆగమనం/సమితి పదాలు, స్థానిక గణిత సాక్షులు పోల్చాం; ఆరోహణ-అవరోహణ శ్రేణి భేదం, ఐడియళ్ల క్రమం, తేదీలు, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సమితి/క్రమం/ఆగమనం నేపథ్యానికే తోడు; నోయెథర్ జీవిత, లింగ వివక్ష, ఆరోగ్య వివరాలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T316","source_term":"Emmy Noether; ascending/descending chain condition; Noetherian induction","telugu":"ఎమ్మీ నోయెథర్; ఆరోహణ/అవరోహణ శ్రేణి షరతు; నోయెథరియన్ ఆగమనం","status":"opposite_chain_directions_well_founded_dual_source_controlled","passages":["TE-P003","TE-P004","TE-P008","TE-P010"],"basis":"ఐడియళ్ల కచ్చిత ఆరోహణ అనంత శ్రేణి లేకపోవడం, పాక్షిక క్రమంలో కచ్చిత అవరోహణ శ్రేణి చివరకు ఆగడం, సుస్థాపిత/నోయెథరియన్ క్రమం వెంట ఆగమనం స్పష్టంగా వేరు; జీవిత తేదీలు, మూల సూచనలు నిలిచాయి.","uncertainty":"నోయెథరియన్ ప్రత్యేక పదానికి ప్రత్యక్ష స్థానిక సాక్షి లేదు; గణిత షరతు మూల ఉదాహరణ నియంత్రితం. చారిత్రక, వైద్య వాదనలు ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు.","borrowing":"Noether/Noetherian are source eponyms; ideals formula, citation keys and cited podcast title remain unchanged."}
+}

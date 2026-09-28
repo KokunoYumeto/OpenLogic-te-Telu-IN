@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0495",
+  "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+  "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+  "audit_id": "OLTEINTBHK-20260927",
+  "audit_review_path": "evidence/OLP-0495-BHK-SOURCE-AUDIT.md",
+  "audit_review_sha256": "a50bcea5bf13f7d9ef5d35050a82c08dd693c6e30d93fe90331401556a25a24e",
+  "audit_findings_path": "evidence/OLP-0495-BHK-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2508dcaec1ef58ad919ecd5bac50328391025ffa32b1b3604b925b2b646cf571",
+  "previous_corrections": 456,
+  "treatments": {
+    "OLTEINTBHK-001": {
+      "target_line": 117,
+      "body_treatment": "కర్రీయింగ్ ఉదాహరణలో ఒక్కచోట C ఫలిత-నిర్మాణాన్ని ముందు, తరువాత సూత్రాలకు అనుగుణంగా !Cగా మార్చి పక్కనే ప్రకటించాం."
+    },
+    "OLTEINTBHK-002": {
+      "target_line": 172,
+      "body_treatment": "మొదటి వియోజన శాఖ h_1లో దాని ఇన్‌పుట్ M_1ను ట్యాగ్ 1తో జత చేసి, మూలంలోని M_2 లోపాన్ని పక్కనే ప్రకటించాం."
+    }
+  }
+}

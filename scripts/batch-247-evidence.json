@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "247",
+  "unit_id": "OLP-0598",
+  "unit_order": 598,
+  "source_path": "content/set-theory/choice/justifications.tex",
+  "blocks": 13,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12],
+  "previous_segments": 8821,
+  "previous_terms": 287,
+  "expected_corrections": 516,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ఎంపిక అంతర్గత సమర్థన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ దశ/స్థాయిక్రమ/ఎంపిక పదాలు, స్థానిక సమితి/తర్క సాక్షులు పోల్చాం; దశ-అంగీకారం సూత్రం, జతలవారీ విచ్ఛిన్న కుటుంబ ఎంపిక సమితి సమానత్వం, సాధ్యత ఆధారిత సమర్థన ప్రయత్నం తనిఖీ చేశాం.",
+  "evidence_limit": "అంతర్గత సమర్థన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల తాత్త్విక వాదన, పూర్వ దశ పదాలు నియంత్రించాయి. సమర్థనను సిద్ధాంత నిరూపణగా చూపలేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T288","source_term":"intrinsic justification for Choice; choice set","telugu":"ఎంపికకు అంతర్గత సమర్థన; ఎంపిక సమితి","status":"stage_acceptance_choice_set_argument_source_controlled_as_attempt","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"దశ అంగీకారం సూత్రం, విచ్ఛిన్న ఖాళీ కాని కుటుంబం కోసం ఎంపిక సమితి సమానత్వం, సేకరణ సాధ్యతపై ఆధారిత సమర్థన ప్రయత్నం అనే స్థాయి నిలిచాయి.","uncertainty":"అంతర్గత సమర్థన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల తాత్త్విక ఉద్దేశం నియంత్రించింది.","borrowing":"Stage-principle macros and Potter citation remain source-controlled."}
+}

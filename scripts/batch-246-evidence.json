@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "246",
+  "unit_id": "OLP-0597",
+  "unit_order": 597,
+  "source_path": "content/set-theory/choice/countablechoice.tex",
+  "blocks": 22,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+  "corrections_by_block": {"6": ["OLTESTCHOICECOUNT-001"], "13": ["OLTESTCHOICECOUNT-002"]},
+  "previous_segments": 8799,
+  "previous_terms": 286,
+  "expected_corrections": 516,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "లెక్కించదగిన ఎంపిక స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక/లెక్కించదగిన/ఇంజెక్షన్ పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు పోల్చాం; పరిమిత ఎంపిక, డెడెకిండ్ వాదనలో రెండుసార్లు ఎంపిక, లెక్కించదగిన సమ్మేళనంలో ప్రమేయ శ్రేణి, మేజోళ్ల ఉపమానం, అతికార్య తాత్త్విక పరిమితి తనిఖీ చేశాం.",
+  "evidence_limit": "లెక్కించదగిన ఎంపిక ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం నియంత్రించింది. పరిమిత జాబితా షరతు, పూర్వ సమ్మేళన సూచిక OLTESTCHOICECOUNT-001/002గా ప్రకటించబడ్డాయి; చారిత్రక ఉటంకింపు మూలం నుంచి అనువదించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T287","source_term":"Countable Choice; countable union of countable sets","telugu":"లెక్కించదగిన ఎంపిక; లెక్కించదగిన సమితుల లెక్కించదగిన సమ్మేళనం","status":"two_choice_uses_and_union_result_source_controlled_with_disclosed_index_repair","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"పరిమిత ఎంపిక, లెక్కించదగిన ఎంపిక ప్రత్యేక స్వయంసిద్ధం, డెడెకిండ్ నిరూపణలో రెండు వినియోగాలు, సమ్మేళన ఫలితంలో ప్రమేయ శ్రేణి వినియోగం, పూర్తి ఎంపికతో తేడా నిలిచాయి.","uncertainty":"లెక్కించదగిన ఎంపిక ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ లెక్కించదగిన టోకెన్ పదం కొనసాగింది.","borrowing":"Countable Choice remains in formal theorem environment text and source citations are retained."}
+}

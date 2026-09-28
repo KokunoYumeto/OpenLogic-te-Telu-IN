@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "207",
+  "unit_id": "OLP-0558",
+  "unit_order": 558,
+  "source_path": "content/set-theory/spine/spine.tex",
+  "blocks": 7,
+  "linguistic_blocks": [1, 4],
+  "previous_segments": 8261,
+  "previous_terms": 247,
+  "expected_corrections": 485,
+  "canon_default": ["TE-P004", "TE-P008"],
+  "consultation_phase": "స్థిర దశలు/స్థాయిల అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ దశ/స్థాయి పదాలు, స్థానిక సమితి సాక్షులు ఎదురెదురు చూశాం; శీర్షిక, ఆరు దిగుమతులు, అధ్యాయ ముగింపు హుక్ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008 సాధారణ సమితి/స్థాయి పదాలకు మాత్రమే సాక్షులు; దశ, rank ప్రత్యేక నిర్వచనాలు తదుపరి విభాగ నియంత్రితం. దిగుమతి భాగాల దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T248",
+    "source_term": "Stages and Ranks (chapter driver)",
+    "telugu": "దశలు, స్థాయిలు",
+    "status": "chapter_heading_source_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008"],
+    "basis": "అధ్యాయ శీర్షికను తెలుగులో ఇస్తూ ఆరు దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలిపాం.",
+    "uncertainty": "rank ప్రత్యేక పదం తరువాతి నిర్వచనాధీనం; పూర్తి అధ్యాయ దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Chapter identifier and import paths remain source-controlled."
+  }
+}

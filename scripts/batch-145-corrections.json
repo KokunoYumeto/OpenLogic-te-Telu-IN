@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0496",
+  "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+  "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+  "audit_id": "OLTEINTND-20260927",
+  "audit_review_path": "evidence/OLP-0496-NATURAL-DEDUCTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "d668a797d1fbfb5d42469868cc67c27c511caf671e9a303daa399ea2bdc72abe",
+  "audit_findings_path": "evidence/OLP-0496-NATURAL-DEDUCTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "db69d50e22fbc0c7e91ae913196791d37638c8a100d6d44a6895cb2f7bd18643",
+  "previous_corrections": 458,
+  "treatments": {
+    "OLTEINTND-001": {
+      "target_line": 73,
+      "body_treatment": "సంయోగ విఘటన BHK వివరణలో జత రెండో నిర్మాణం A_2 కాబట్టి మూలంలోని A_1∧A_1ను A_1∧A_2గా మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

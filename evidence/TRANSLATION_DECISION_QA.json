@@ -14,21 +14,21 @@
     "format_checker": true
   },
   "coverage": {
-    "state": "partial",
-    "source_units": 484,
+    "state": "complete",
+    "source_units": 722,
     "corpus_units": 722,
-    "reader_units": null
+    "reader_units": 722
   },
   "counts": {
-    "decisions": 628,
-    "terminology": 174,
-    "source_corrections": 454,
-    "occurrences": 1460,
+    "decisions": 1117,
+    "terminology": 412,
+    "source_corrections": 705,
+    "occurrences": 2446,
     "priority_urgent_or_high": 70,
-    "distinct_source_and_target_files_checked": 804,
-    "public_evidence_file_references_checked": 3324,
+    "distinct_source_and_target_files_checked": 1280,
+    "public_evidence_file_references_checked": 5034,
     "reader_locator_status": {
-      "pending": 1460
+      "available": 2446
     }
   },
   "checks": {
@@ -43,6 +43,7 @@
     "public_evidence_reference_hashes": true,
     "plain_please_double_check_questions": true,
     "reader_pages_never_guessed": true,
+    "accepted_html_unit_anchors_verified": true,
     "full_readable_view_complete": true,
     "priority_view_complete": true,
     "occurrence_csv_reconciled": true
@@ -50,28 +51,28 @@
   "artifacts": [
     {
       "path": "evidence/START_HERE.md",
-      "bytes": 2343,
-      "sha256": "e0454e6dea7b8e0ea1c44ddb5fdba66edde146be5356fcfb9f813abddb8cf3f6"
+      "bytes": 2366,
+      "sha256": "ae1bd9d9739e1643183a82055493238813a320cf759ee6d07314d56a0897a73b"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
-      "bytes": 2375463,
-      "sha256": "82b1f9f8ca05858852cc630d8e12c9f981e4931cb5cf36923384624c930eb2c4"
+      "bytes": 4298707,
+      "sha256": "cc49fea1410a39bf7e48bac9970fd44df878b30dc7bf6c7eca1357e501e43b40"
     },
     {
       "path": "evidence/PRIORITY_REVIEW.md",
-      "bytes": 128735,
-      "sha256": "9ec9d0c5f71d9de9b20d906cfc94e11a5352a508f5de9dc3c5a79dd8c6ff0c03"
+      "bytes": 128807,
+      "sha256": "0f173d4259b05a0efea68122375c1ed0c58ceb07abaffdac2d6878a2c5f4eee1"
     },
     {
       "path": "evidence/DECISION_OCCURRENCES.csv",
-      "bytes": 2537922,
-      "sha256": "61795114c325db911326df05cab87775c54eb13163baa36f5d9a43471e0e27cc"
+      "bytes": 3755852,
+      "sha256": "b0a1799869e0a90ac613c43664d357a49dccea5b892948a4a2a3e733e7c5a5e2"
     },
     {
       "path": "evidence/DECISIONS.json",
-      "bytes": 12122750,
-      "sha256": "6e067fdf508985480ec9dad99fc0c1368c9800a93bba40c7e8235e68d7294d45"
+      "bytes": 21086861,
+      "sha256": "81cd26db4e421fab98948fd3931bfe567a683d4c6f07bec5b249cddbde6492eb"
     },
     {
       "path": "evidence/translation-decision.schema.json",

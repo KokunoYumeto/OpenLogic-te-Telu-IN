@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "354",
+  "unit_id": "OLP-0705",
+  "unit_order": 705,
+  "source_path": "content/proof-theory/sequent-calculus/rules-G1i.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTSEQG1I-001",
+      "OLTEPTSEQG1I-002"
+    ]
+  },
+  "previous_segments": 10413,
+  "previous_terms": 394,
+  "expected_corrections": 686,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నియమ పట్టిక శీర్షికలు, సందర్భ/స్థిరాంక షరతులు పూర్వ సీక్వెంట్ గద్యం, సంప్రదించిన నిరూపణ పదజాలంతో పోల్చాం.",
+  "evidence_limit": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T395",
+    "source_term": "intuitionistic sequent rules; single succedent; minimal variant",
+    "telugu": "అంతఃప్రజ్ఞావాద సీక్వెంట్ నియమాలు; ఒకే ఉత్తరపక్ష సూత్రం; కనిష్ఠ రూపం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పట్టిక గద్యం మాత్రమే స్థానికీకరించి, సందర్భాలు, నియమాల రూపాలను నేరుగా పోల్చాం.",
+    "uncertainty": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

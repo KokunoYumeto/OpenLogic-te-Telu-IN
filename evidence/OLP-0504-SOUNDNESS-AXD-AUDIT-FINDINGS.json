@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTSAX-20260927",
+  "unit_id": "OLP-0504",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+  "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+  "findings": [
+    {
+      "finding_id": "OLTEINTSAX-001",
+      "source_locator": "soundness-axd.tex lines 40-42; premise-membership case",
+      "classification": "extra_satisfaction_argument",
+      "source_issue": "The satisfaction expression includes an extraneous Gamma argument between model and formula.",
+      "minimal_treatment": "Use the defined local truth notation for A_n at w and disclose the change.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\mSat{M}{\\Gamma}{!A_n}[w]$"],
+        "target_only": ["$\\mSat{M}{!A_n}[w]$"]
+      }
+    }
+  ]
+}

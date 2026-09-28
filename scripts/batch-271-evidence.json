@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "271",
+  "unit_id": "OLP-0622",
+  "unit_order": 622,
+  "source_path": "content/history/biographies/georg-cantor.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5,6,7,8,9,10,11],
+  "previous_segments": 9205,
+  "previous_terms": 311,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002", "TE-P004", "TE-P005", "TE-P008"],
+  "consultation_phase": "కాంటర్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి/అతిపరిమిత సంఖ్యల పదాలు, స్థానిక గణిత సాక్షులు పోల్చాం; ఓడ కథ అసత్యమని మూల భేదం, తేదీలు, పేర్లు, నాలుగు పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణిత పదజాల నేపథ్యం మాత్రమే; వ్యక్తి చరిత్రలోని తేదీలు, ఆరోగ్య/మత వాదనలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. మూల జీవిత చరిత్ర, మూల సూచనలు నియంత్రించాయి; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T312","source_term":"Georg Cantor; set theory; transfinite numbers","telugu":"గెయోర్గ్ కాంటర్; సమితి సిద్ధాంతం; అతిపరిమిత సంఖ్యలు","status":"biography_source_attributed_dates_reading_citations_preserved","passages":["TE-P002","TE-P004","TE-P005","TE-P008"],"basis":"కాంటర్ పేరు/ఉచ్చారణ, సెయింట్ పీటర్స్‌బర్గ్ జననం మరియు తప్పుడు ఓడ కథ మధ్య భేదం, 1867/1894/1918 కాల సూచనలు, అనంత సమితుల పరిశోధన, మూల గ్రంథసూచనలు నిలిచాయి.","uncertainty":"జీవిత చరిత్ర వాస్తవాలు ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు చారిత్రక వివరాలకు ప్రత్యక్ష ఆధారాలు కావు.","borrowing":"Citation keys and the BBC programme title remain source-identifying text."}
+}

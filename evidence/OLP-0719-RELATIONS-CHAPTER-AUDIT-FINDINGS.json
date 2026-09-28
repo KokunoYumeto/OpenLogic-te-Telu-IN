@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTERELATIONSCHAPTER-20260928",
+  "unit_id": "OLP-0719",
+  "source_path": "content/sets-functions-relations/relations/relations.tex",
+  "source_sha256": "1c11d0ef727a94d20108024eb994e3707e39198c656882a2120457fa29f7f3b8",
+  "findings": []
+}

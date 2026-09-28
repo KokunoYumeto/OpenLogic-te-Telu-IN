@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "217",
+  "unit_id": "OLP-0568",
+  "unit_order": 568,
+  "source_path": "content/set-theory/replacement/extrinsic.tex",
+  "blocks": 15,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "previous_segments": 8388,
+  "previous_terms": 257,
+  "expected_corrections": 488,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "బాహ్య సమర్థనపై స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రతిస్థాపన/స్థాయి/సుసంగతత పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; బూలాస్ ఉద్ధరణ, LT/Zr ప్రత్యామ్నాయం, ఫలితాల-ఆధార సమర్థన పరిమితులు, సుసంగతత ఆందోళన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; స్థర సిద్ధాంతం, తాత్త్విక సమర్థన మూల స్థానిక వివరణ నియంత్రితం. స్థరం (level), స్థాయి (rank) భేదం ఈ విభాగంలో నిలిచింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T258",
+    "source_term": "Level Theory / rank / extrinsic justification",
+    "telugu": "స్థర సిద్ధాంతం / స్థాయి / బాహ్య సమర్థన",
+    "status": "level_rank_distinction_source_controlled_philosophical_register_defined",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "LT స్థరాన్ని V-alphaవంటి స్థాయిగా కాక ప్రత్యేక levelగా, Zrలో ప్రతి సమితి rankను స్థాయిగా ఉంచి, ఫలితాల ఆధార సమర్థనలోని రెండు అభ్యంతరాలను నిలిపాం.",
+    "uncertainty": "LT ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూలంలోని level/rank భేదం నిర్ణయాన్ని నియంత్రిస్తుంది.",
+    "borrowing": "LT, Zr and bibliographic citation keys remain source-controlled."
+  }
+}

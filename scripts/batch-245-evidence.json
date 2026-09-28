@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "245",
+  "unit_id": "OLP-0596",
+  "unit_order": 596,
+  "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+  "blocks": 18,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+  "corrections_by_block": {"13": ["OLTESTCHOICEWO-001", "OLTESTCHOICEWO-002"]},
+  "previous_segments": 8781,
+  "previous_terms": 285,
+  "expected_corrections": 514,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "సుక్రమపరచడం-ఎంపిక సమానత్వ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక ప్రమేయ/అతిపరిమిత పునరావృత్తి పదాలు, స్థానిక తర్క/సమితి సాక్షులు పోల్చాం; రెండు దిశల నిరూపణ, ఖాళీ సమితి, ఆపు దశ, హార్టోగ్స్ వైరుధ్యం తనిఖీ చేశాం.",
+  "evidence_limit": "ఎంపిక ప్రమేయ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం నియంత్రించింది. ఖాళీ ఆధారం, ఆపు-గుర్తు దిశ OLTESTCHOICEWO-001/002గా ప్రకటించబడ్డాయి; కాంటర్ ఉటంకింపు మూలం నుంచి అనువదించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T286","source_term":"choice function; Axiom of Choice; Well-Ordering equivalence","telugu":"ఎంపిక ప్రమేయం; ఎంపిక స్వయంసిద్ధం; సుక్రమపరచడం సమానత్వం","status":"two_direction_equivalence_source_controlled_two_disclosed_recursion_repairs","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"ఖాళీ కాని ఉపసమితులపై ఎంపిక ప్రమేయం, సుక్రమం నుంచి అత్యల్ప మూలకం ఎంపిక, ఎంపిక నుంచి హార్టోగ్స్‌తో ఆపే సుక్రమ గణన నిలిచాయి.","uncertainty":"ఎంపిక ప్రమేయ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ ప్రమేయ పదం, మూల నిర్వచనం నియంత్రించాయి.","borrowing":"Cantor, Zermelo and source TeX identifiers remain source-controlled."}
+}

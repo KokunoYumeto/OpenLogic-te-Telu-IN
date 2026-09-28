@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "293",
+  "unit_id": "OLP-0644",
+  "unit_order": 644,
+  "source_path": "content/first-order-logic/completeness/maximally-consistent-sets.tex",
+  "blocks": 29,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+  "previous_segments": 9503,
+  "previous_terms": 333,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "గరిష్ఠ అవైరుధ్య సమితుల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ వాక్యం/వ్యుత్పాద్యత/అవైరుధ్యం/నిర్మాణం పదాలు, స్థానిక తర్క సాక్షులు పోల్చాం; నిర్వచన ద్విరూపాలు, ఐదు మూసివేత ధర్మాలు, అన్ని tagrefs శాఖలు, పూర్ణ నిరూపణలను తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ తర్క/నిరూపణ పదాలకు మాత్రమే; గరిష్ఠ సమితి విస్తరణ సిద్ధాంతం ఈ విభాగంలో ప్రకటితమే కానీ ఇక్కడ నిరూపితం కాదు. TeX శాఖల దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T334","source_term":"maximally consistent set of sentences; completeness; membership and connective closure","telugu":"వాక్యాల గరిష్ఠ అవైరుధ్య సమితి; సంపూర్ణత; సభ్యత్వం, సంయోజకాల మూసివేత","status":"maximally_consistent_set_properties_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"రెండు తుల్య నిర్వచనాలు, గరిష్ఠ విస్తరణ పాత్ర, వాక్యం/నిరాకరణ నిర్ణయం, మరియు-లేదా-అయితే సభ్యత్వ లక్షణాలు అన్ని ట్యాగులతో నిలిచాయి.","uncertainty":"గరిష్ఠ విస్తరణ హామీ, నిర్మాణ సత్య ఉపప్రమేయం ఈ విభాగంలో పూర్తి నిరూపణలు కావు; తరువాతి సంపూర్ణత నిర్మాణానికి సందర్భం.","borrowing":"Gamma notation, tags and proof-system reference IDs remain source-identifying."}
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "273",
+  "unit_id": "OLP-0624",
+  "unit_order": 624,
+  "source_path": "content/history/biographies/gerhard-gentzen.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5,6,7,8,9,10,11],
+  "previous_segments": 9227,
+  "previous_terms": 313,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P018", "TE-P024", "TE-P025", "TE-P032"],
+  "consultation_phase": "గెంట్సెన్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సహజ నిగమనం/సీక్వెంట్ కలనం/అవిరోధత్వం పదాలు, స్థానిక నిరూపణ సాక్షులు పోల్చాం; జీవిత తేదీలు, నాజీ సంబంధంపై మూల అనిశ్చితి, రెండు నిగమన టోకెన్లు, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు నిరూపణ/నిగమన పదాలకే నేపథ్యం; వ్యక్తి జీవిత వివరాలు, రాజకీయ సంఘటనలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. మూల అనిశ్చితిని అనిశ్చితిగానే ఉంచాం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T314","source_term":"Gerhard Gentzen; natural deduction; sequent calculus; consistency","telugu":"గెర్హార్డ్ గెంట్సెన్; సహజ నిగమనం; సీక్వెంట్ కలనశాస్త్రం; అవిరోధత్వం","status":"proof_system_eponyms_dates_political_uncertainty_source_controlled","passages":["TE-P003","TE-P018","TE-P024","TE-P025","TE-P032"],"basis":"రెండు నిగమన వ్యవస్థలు, 1936 పియానో స్వయంసిద్ధాల అవిరోధత్వం, 1933/1934/1942/1943/1945 కాల సూచనలు, నాజీ విధేయత స్పష్టంగా తెలియదనే మూల వాదన నిలిచాయి.","uncertainty":"చారిత్రక, ఆరోగ్య, రాజకీయ వివరాలు ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు ప్రత్యేక పేర్లు లేదా చారిత్రక అభిప్రాయాలకు ఆధారం కావు.","borrowing":"Sequent, Gentzen and other personal names are source-identifying borrowings; German paper title and citation keys remain unchanged."}
+}

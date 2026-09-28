@@ -1,0 +1,100 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{opps}
+\olsection{ప్రాథమిక క్రియల నిర్వచనం}
+
+క్రమాన్ని గమనిస్తూ ఉండాల్సిన అవసరం లేదు కాబట్టి, క్రమసంఖ్య అంకగణితం కంటే కార్డినల్ అంకగణితాన్ని నిర్వచించడం కొంత సులభం. కూడిక, గుణకారం, ఘాతాంకాలను ఒకేసారి నిర్వచిస్తాం.
+
+\begin{defn}
+$\cardfont{a}$, $\cardfont{b}$ కార్డినల్ సంఖ్యలు అయితే:
+\begin{align*}
+	\cardfont{a} \cardplus \cardfont{b} &\defis 
+	\card{\cardfont{a} \disjointsum \cardfont{b}}\\
+	\cardfont{a} \cardtimes \cardfont{b} &\defis 
+	\card{\cardfont{a} \times \cardfont{b}}\\
+	\cardexpo{\cardfont{a}}{\cardfont{b}} &\defis 
+	\card{\funfromto{\cardfont{b}}{\cardfont{a}}}
+\end{align*}
+ఇక్కడ $\funfromto{X}{Y} = \Setabs{f}{f \text{ ప్రమేయం } X \to Y}$. ($X$, $Y$ అనే ఏ సమితులకైనా $\funfromto{X}{Y}$ ఉందని చూపడం సులభం; దాన్ని అభ్యాసానికి వదిలేస్తాం.)
+\end{defn}
+
+\begin{prob}
+$X$,~$Y$ అనే ఏ సమితులకైనా $\funfromto{X}{Y}$ ఉందని $\Zminus$లో నిరూపించండి. $\ZF$లో పనిచేస్తూ, \olref[sth][ord-arithmetic][using-addition]{rankcomputation} పద్ధతిలో $\setrank{X}$, $\setrank{Y}$ల నుంచి $\setrank{\funfromto{X}{Y}}$ను లెక్కించండి.
+\end{prob}
+
+ఈ నిర్వచనాన్ని వివరించడం ఉపయోగపడవచ్చు. కూడిక విషయంలో, ఇది \olref[ord-arithmetic][add]{defdissum}లో నిర్వచించిన విచ్ఛిన్న సమ్మేళనం $\disjointsum$ను వాడుతుంది; పరిమిత సందర్భాలకు ఈ నిర్వచనం సరైన ఫలితం ఇస్తుందని సులభంగా చూడవచ్చు. గుణకారం విషయంలో, $A$లో $n$ మూలకాలు, $B$లో $m$ మూలకాలు ఉంటే $A \times B$లో $n \cdot m$ మూలకాలు ఉంటాయని \olref[sfr][set][pai]{cardnmprod} చెబుతుంది; కాబట్టి మన నిర్వచనం ఆ భావనను అతిపరిమిత గుణకారానికి సాధారణీకరిస్తుంది. ఘాతాంకమూ ఇలాంటిదే: పరిమిత సందర్భపు భావనను అతిపరిమిత సందర్భానికి సాధారణీకరిస్తున్నాం. నిజానికి కొన్ని విధాలుగా, అతిపరిమిత కార్డినల్ అంకగణితం అతిపరిమిత క్రమసంఖ్య అంకగణితం కంటే ``సాధారణ'' అంకగణితాన్ని ఎక్కువగా పోలి ఉంటుంది:
+
+\begin{prop}\ollabel{cardplustimescommute}
+$\cardplus$, $\cardtimes$లకు క్రమమార్పిడి, సహచర్య ధర్మాలు ఉన్నాయి.
+\end{prop}
+
+\begin{proof}
+క్రమమార్పిడి కోసం \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} ప్రకారం $\cardeq{(\cardfont{a} \disjointsum
+\cardfont{b})}{(\cardfont{b} \disjointsum \cardfont{a})}$, $\cardeq{(\cardfont{a} \times \cardfont{b})}{(\cardfont{b} \times
+\cardfont{a})}$ అని గమనిస్తే చాలు. సహచర్య ధర్మాన్ని అభ్యాసానికి వదిలేస్తాం.
+\end{proof}
+
+\begin{prob}
+$\cardplus$, $\cardtimes$లకు సహచర్య ధర్మం ఉందని నిరూపించండి.
+\end{prob}
+
+\begin{prop}
+$A$ అనంతం అప్పుడూ అప్పుడే $\card{A} \cardplus 1 = 1 \cardplus \card{A} = \card{A}$.
+\end{prop}
+
+\begin{proof}
+\olref[cardinals][classing]{generalinfinitycharacter}లో వలె, \olref[ord-arithmetic][using-addition]{ordinfinitycharacter}, \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}ల నుంచి వస్తుంది.
+\end{proof}
+
+అందుకే క్రమసంఖ్య కూడిక/గుణకారం, కార్డినల్ కూడిక/గుణకారాలకు వేర్వేరు సంకేతాలు అవసరం: అవి నిజంగానే \emph{భిన్న} క్రియలు. తరువాతి రెండు ఫలితాలు క్రమసంఖ్య ఘాతాంకం, కార్డినల్ ఘాతాంకం కూడా వేర్వేరు క్రియలని చూపుతాయి. ($2 = \{0,
+1\}$ అని \olref[z][infinity-again]{defnomega} నుంచి వస్తుందని గుర్తుచేసుకోండి):
+
+\begin{lem}\ollabel{lem:SizePowerset2Exp}
+ఏ $A$కైనా $\card{\Pow{A}} = \cardexpo{2}{\card{A}}$.
+\end{lem}
+
+\begin{proof}
+ప్రతి ఉపసమితి $B \subseteq A$కు $\chi_B \in \funfromto{A}{2}$ను ఇలా నిర్వచిద్దాం:
+\begin{align*}
+	\chi_{B}(x) &\defis
+	\begin{cases}
+		1 & \text{ఒకవేళ }x\in B\\
+		0 & \text{లేకపోతే.}
+	\end{cases}
+\end{align*}
+ఇప్పుడు $f(B) = \chi_B$ అనుకుందాం; ఇది $f \colon \Pow{A}
+\to \funfromto{A}{2}$ అనే \tetoken{ద్వైజెక్టివ్ ప్రమేయాన్ని}{!!a{bijection}} నిర్వచిస్తుంది. కనుక $\cardeq{\Pow{A}}{\funfromto{A}{2}}$. అందువల్ల $\cardeq{\Pow{A}}{\funfromto{\card{A}}{2}}$; కాబట్టి $\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =
+2^{\card{A}}$.
+\end{proof}
+
+ఈ సంక్షిప్త నిరూపణ \olref[sfr][siz][red-alt]{sec}లోని చర్చను దాదాపు తనలో ఇముడ్చుకుంటుంది. అక్కడ $\Pow{\omega}$ లెక్కించలేనితనాన్ని అనంత ద్విమాన శ్రేణుల సమితి $\Bin^\omega$ లెక్కించలేనితనానికి ఎలా ``తగ్గించాలో'' చూపాం. నిజానికి $\Bin^{\omega}$ అనేది $\funfromto{\omega}{2}$యే; ముందరి నిరూపణ, \olref[sfr][siz][red-alt]{sec}లోని వాదన $\omega$ స్థానంలో ఏ సమితి~$A$ను తీసుకున్నా పనిచేస్తుందని చూపింది. ఈ ఫలితం కార్డినల్ ఘాతాంకం గురించి కూడా ఒక సులభమైన విషయాన్ని ఇస్తుంది:
+
+\begin{cor}\ollabel{cantorcor}
+ఏ కార్డినల్ సంఖ్య~$\cardfont{a}$కైనా $\cardfont{a} < \cardexpo{2}{\cardfont{a}}$.
+\end{cor}
+
+\begin{proof}
+కాంటర్ సిద్ధాంతం (\olref[sfr][siz][car]{thm:cantor}), \olref{lem:SizePowerset2Exp}ల నుంచి వస్తుంది.
+\end{proof}
+\noindent
+అందువల్ల $\omega < \cardexpo{2}{\omega}$. కానీ ఇది \emph{కార్డినల్} ఘాతాంకం గురించి ఫలితం. \emph{క్రమసంఖ్య} ఘాతాంకంతో దీనిని పోల్చాలి: రెండవ సందర్భంలో $\omega =
+\ordexpo{2}{\omega}$ (\olref[ord-arithmetic][expo]{sec} చూడండి).
+
+కార్డినల్ ఘాతాంకం ప్రస్తావన వచ్చినందున $\Real$ \tetoken{లెక్కించలేనిది}{!!{nonenumerable}} అనే విషయం ఏ ``విధంగా'' నిజమో మరింత స్పష్టంగా చెప్పవచ్చు.
+
+\begin{thm}\ollabel{continuumis2aleph0}
+$\card{\Real} = \cardexpo{2}{\omega}$
+\end{thm}
+
+\begin{proof}[నిరూపణ రూపరేఖ]
+దీన్ని నిరూపించడానికి అనేక మార్గాలున్నాయి. సరళమైనది $\cardle{\Pow{\omega}}{\Real}$, $\cardle{\Real}{\Pow{\omega}}$ అని చూపి, ష్రోడర్--బెర్న్‌స్టీన్ ద్వారా $\cardeq{\Real}{\Pow{\omega}}$ అని తేల్చడం; ఆ తరువాత \olref[card-arithmetic][opps]{lem:SizePowerset2Exp} ద్వారా $\card{\Real} = \cardexpo{2}{\omega}$ అని తేల్చడం. $f \colon
+\Pow{\omega} \to \Real$, $g \colon \Real \to \Pow{\omega}$ అనే ఇంజెక్షన్‌లను నిర్వచించడం (ఉపయోగకరమైన) అభ్యాసానికి వదిలేస్తాం.
+\end{proof}
+
+\begin{prob}
+$\cardle{\Pow{\omega}}{\Real}$, $\cardle{\Real}{\Pow{\omega}}$ అని చూపి \olref[sth][card-arithmetic][opps]{continuumis2aleph0} నిరూపణను పూర్తిచేయండి.
+\end{prob}
+
+\end{document}

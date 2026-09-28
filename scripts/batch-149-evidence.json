@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "149",
+  "unit_id": "OLP-0500",
+  "unit_order": 500,
+  "source_path": "content/intuitionistic-logic/semantics/relational-models.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 7548,
+  "previous_terms": 189,
+  "expected_corrections": 459,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సంబంధ నమూనా మూలం, తెలుగు లక్ష్యం, పూర్వ పాక్షిక క్రమ/మూల్యాంకన పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలు ఎదురెదురు చూశాం; W/R/V, V ఏకదిశత, ¬/→ భవిష్యత్ సత్య నిబంధనలు, సత్య ఏకదిశత అభ్యాసం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/011/018/024 సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. క్రిప్కె బలవంతీకరణ సత్య షరతులకు అవి ప్రత్యక్ష మూలాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T190",
+    "source_term": "intuitionistic relational model / monotone valuation / world forcing of implication and negation",
+    "telugu": "అంతఃప్రజ్ఞావాద సంబంధ నమూనా / ఏకదిశ విలువకేటాయింపు / లోకంలో సోపాధికం, నిరాకరణ సత్యం",
+    "status": "native_general_set_relation_function_logic_derivation_register_attested_intuitionistic_relational_semantics_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "శూన్యం కాని W, పాక్షిక క్రమ R, ఉపసమితి కేటాయింపు V మరియు దాని ఏకదిశత, అన్ని ఆరు సత్య నిబంధనలు, స్థానిక అసత్య సంకేతం, Γ సత్యం, ¬A మరియు A→⊥ తుల్యత ప్రశ్న, సత్య ఏకదిశత ప్రతిపాదన నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు అంతఃప్రజ్ఞావాద సత్య నిబంధనలకు ప్రత్యక్ష అధికారాలు కావు. మూలం సత్య ఏకదిశత నిరూపణను అభ్యాసంగా వదిలింది; కొత్త నిరూపణ చేర్చలేదు. TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "mSat and mSat/ remain distinct source truth/nontruth notation; W/R/V and all clause formulas remain exact."
+  }
+}

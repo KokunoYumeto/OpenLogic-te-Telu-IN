@@ -1,0 +1,75 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATN2I-20260928",
+  "unit_id": "OLP-0671",
+  "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+  "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATN2I-001",
+      "source_locator": "translation-N2i.tex lines 13–18, proposition target calculus",
+      "classification": "wrong_intuitionistic_target_calculus",
+      "source_issue": "The proposition repeats N2i in the target pair instead of naming its sequent-calculus counterpart G2i.",
+      "minimal_treatment": "Use G2i and disclose the system-name repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Log{G2c}\\(\\Log{N2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$\\Log{G2c}\\(\\Log{G2i})+\\Cut\\Proves\\Gamma'\\Sequent\\Delta$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATN2I-002",
+      "source_locator": "translation-N2i.tex lines 92–95, implication-elimination false conclusion",
+      "classification": "wrong_induction_result_for_second_premise",
+      "source_issue": "When the overall conclusion A is false, the second immediate subproof still ends in B; its induction translation does not have an empty succedent. The source's proposed weakening step cannot supply the target empty succedent.",
+      "minimal_treatment": "Use the induction proof of B, the false axiom, implication-left and cut, then contraction; disclose the added construction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A$",
+          "$\\Gamma_2'\\Sequent\\$"
+        ],
+        "target_only": [
+          "$!B\\lif\\lfalse,\\Gamma_2'\\Sequent\\$",
+          "$\\Gamma_1',\\Gamma_2'\\Sequent\\$",
+          "$\\Gamma_2'\\Sequent!B$",
+          "$\\lfalse\\Sequent\\$",
+          "$\\pi_1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATN2I-003",
+      "source_locator": "translation-N2i.tex lines 107–117, classical falsehood proof tree",
+      "classification": "labelled_context_leaked_into_G2_tree",
+      "source_issue": "The G2c proof-tree premise retains the N2 label x: before the formula not-A, although G2 antecedents are unlabelled multisets.",
+      "minimal_treatment": "Remove the label and disclose the diagram repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$x:\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A\\fCenter!A$\\RightLabel{\\RightR{\\lnot}}\\UnaryInf$\\fCenter!A,\\lnot!A$\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\lnot!A,\\Gamma'\\fCenter$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma'\\fCenter!A$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATN2I-004",
+      "source_locator": "translation-N2i.tex lines 105–121, classical falsehood with false conclusion",
+      "classification": "empty_succedent_edge_case_omitted",
+      "source_issue": "If the conclusion A itself is false, the displayed classical construction ends with false on the right, while the proposition requires an empty succedent.",
+      "minimal_treatment": "Cut the displayed derivation with the false axiom to obtain the required empty succedent; disclose the edge-case addition.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": [
+          "$!A\\ident\\lfalse$",
+          "$\\Gamma'\\Sequent!A$",
+          "$\\Gamma'\\Sequent\\$",
+          "$\\lfalse\\Sequent\\$"
+        ]
+      }
+    }
+  ]
+}

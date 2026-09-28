@@ -1,0 +1,210 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: ce-largest
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{inv}
+
+\olsection{అత్యధిక స్థాయి కట్‌ల తొలగింపు}
+
+\olref[seq][inv]{lem:G3c-invert} నిరూపణ ప్రకారం, \Log{G3c} ఒక తార్కిక నియమపు (\RightR{\lexists}, \LeftR{\lforall} తప్ప) ముగింపును \tetoken{నిరూపిస్తే}{!!{prove}s}, నిరూపణ \tetoken{ఎత్తును}{!!{height}} పెంచకుండా ఆ నియమపు ప్రతి పూర్వాపేక్షనూ \tetoken{నిరూపిస్తుంది}{!!{prove}s}. దీనికంటే మెరుగైన ఫలితాన్ని, $\Log{G3c} +
+\CutCS$కూ ఇది వర్తిస్తుందని చూపవచ్చు.
+
+మునుపటిలాగే, ఒక \CutCS{} నిగమనపు \emph{కట్ స్థాయి} అంటే దాని కట్ \tetoken{సూత్రం}{!!{formula}} లోతు.
+
+\begin{lem}\ollabel{lem:inv-G3c-cut}
+$\Log{G3c} + \CutCS$ తార్కిక నియమం~$R$ యొక్క ముగింపును (\RightR{\lexists} లేదా \LeftR{\lforall} కానిది) \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$తో \tetoken{నిరూపిస్తే}{!!{prove}s}, ప్రతి పూర్వాపేక్షను \tetoken{నిరూపణ}{!!{proof}}~$\pi'$తో (నియమానికి రెండు పూర్వాపేక్షలుంటే \tetoken{నిరూపణల}{!!{proof}s}~$\pi'$, $\pi''$తో) \tetoken{నిరూపిస్తుంది}{!!{prove}s}. అంతేకాదు, (a)~$\pheight{\pi'}\le\pheight{\pi}$ (అలాగే $\pheight{\pi''}\le\pheight{\pi}$), (b)~$\pi'$లో (అలాగే $\pi''$లో) \CutCS{} నిగమనాల సంఖ్య, వాటి స్థాయిలు $\pi$లో ఉన్నట్లే ఉంటాయి.
+\end{lem}
+
+\begin{proof}
+\cref{pt:seq:inv:lem:G3c-invert,pt:seq:inv:lem:invert-quant} నిరూపణలను పరిశీలించండి. ఆ నిరూపణ~$\pheight{\pi}$పై ఆగమన పద్ధతిలో సాగింది. ఆధార సందర్భంలో ఒక స్వీకృతాన్ని మరొక స్వీకృతంతో భర్తీ చేశాం; కనుక (a),~(b) షరతులు సులభంగా నెరవేరుతాయి. $\pi$లోని చివరి నియమం~$R$ అయితే, దాని తక్షణ ఉప-\tetoken{నిరూపణలే}{!!{proof}s} మనకు కావలసిన \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_i$; (a),~(b) రెండూ నెరవేరుతాయి. మిగతా అన్ని సందర్భాల్లో $\pi$ తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s}, అంటే చివరి నిగమనం~$R$ పూర్వాపేక్షలకు దారితీసేవాటికి, ఆగమన పరికల్పన వర్తింపజేసి, వచ్చిన ఫలితాలకు అదే నియమం $R$ను వర్తింపజేశాం. కొత్త నిరూపణ తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s} (a),~(b) నెరవేరుతాయి; అందుచేత మొత్తం నిరూపణకూ నెరవేరుతాయి. చివరి నిగమనం~\CutCS{} అయ్యే సందర్భం ఇంకా తనిఖీ చేయాలి. మళ్లీ ఒక ఉదాహరణ మాత్రమే చూద్దాం: $\pi$ అనేది \LeftR{\land} ముగింపు $!B \land !C, \Gamma \Sequent
+\Delta$ యొక్క \tetoken{ఒక నిరూపణ}{!!a{proof}} కాగా, చివర్లో~\CutCS{} ఉందనుకుందాం:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, !B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+ఆగమన పరికల్పన $\pi_1$,~$\pi_2$లకు వర్తిస్తుంది (అవీ $\LeftR{\land}$ ముగింపు ఉదాహరణల \tetoken{నిరూపణలే}{!!{proof}s}); దాని వల్ల వరుసగా $!B, !C, \Gamma \fCenter
+\Delta, !A$, $!A, !B, !C, \Gamma \fCenter \Delta$ల \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1'$,~$\pi_2'$ లభిస్తాయి. వాటిని \CutCS{}తో కలిపి~$\pi'$ను పొందుతాం:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$!B, !C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+(a),~(b) నెరవేరాయని స్పష్టమే.
+\end{proof}
+
+ఇక్కడ \CutCS{}కు బదులు \Cut{} వాడితే ఇది పనిచేయదని గమనించండి. అప్పుడు చివరి \tetoken{నిరూపణ}{!!{proof}} ముగింపులో పూర్వాంగంలో $!B, !C, \Gamma$ రెండు ప్రతులు, ఉత్తరాంగంలో $\Delta$ రెండు ప్రతులు ఉంటాయి. సంకోచన అనుమతిత్వాన్ని ఆశ్రయించాలి; కానీ \olref[seq][inv]{prop:G3c-cont-adm} నిరూపణ విలోమయోగ్యత లెమ్మాను ఉపయోగిస్తుంది. అందువల్ల వలయాకార వాదన అవుతుంది.
+
+\cref{pt:cut:inv:lem:inv-G3c-cut}తో కట్ తొలగింపుకు ప్రత్యామ్నాయ నిరూపణ ఇవ్వవచ్చు. ఈ నిరూపణలో అత్యున్నత స్థానాల్లో ఉన్న \CutCS{} నిగమనాలను వరుసగా తొలగించకుండా, అత్యధిక స్థాయి గల \CutCS{} నిగమనాలను తొలగిస్తాం. అంటే $\Log{G3c} + \CutCS$లోని \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$తో మొదలుపెట్టి, దానిలో ఎక్కడైనా ఉన్న ఒక కట్‌ను (బహుశా తక్కువ స్థాయి కట్‌లతో భర్తీ చేస్తూ) తొలగిస్తాం; కట్‌లు మిగలకుండా ఇదే కొనసాగిస్తాం. మనం నిర్వహించే కట్ పైన అదే స్థాయి లేదా ఇంకా ఎక్కువ స్థాయి కట్‌లు ఉండకూడదన్నదే షరతు.
+
+\begin{lem}\ollabel{lem:max-cut-red-G3c} $\pi$ అనేది $\Log{G3c}+\CutCS$లో చివర్లో స్థాయి~$n$ గల \CutCS{} నిగమనంతో ముగిసే \tetoken{నిరూపణ}{!!a{proof}} అయితే, మిగతా నియమాలన్నీ $\Log{G3c}$ నియమాలు లేదా స్థాయి $<n$ గల \CutCS{} నిగమనాలైతే, అదే తుది సీక్వెంట్‌కు $\Log{G3c} + \CutCS$లో ఒక నిరూపణ~$\pi'$ ఉంటుంది; దానిలోని ప్రతి \CutCS{} నిగమన స్థాయి~$<n$.
+\end{lem}
+
+\begin{proof}
+\tetoken{నిరూపణ}{!!{proof}}~$\pi$ ఇలా ముగుస్తుంది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+ఇప్పుడు~$!A$ రూపాన్ని బట్టి సందర్భాలను వేరుచేద్దాం.
+
+$!A$ అణు సూత్రమనుకుందాం. $\pi_1$, $\pi_2$ల్లోని అన్ని \CutCS{} నిగమనాల స్థాయి $<
+\depth{!A} = 0$ కావాలనే షరతు వల్ల $\pi_1$, $\pi_2$ల్లో \CutCS{} నిగమనాలేవీ ఉండవు. $\pheight{\pi_2}$పై ఆగమన పద్ధతిలో $\Gamma \Sequent \Delta$కు కట్-రహిత నిరూపణ ఉందని చూపుతాం. $\pheight{\pi_2} = 0$ అయితే $!A,
+\Gamma \Sequent \Delta$ ఒక స్వీకృతం. $!A$ ప్రధాన సూత్రం కాకపోతే, ఏదో అణు $!C$ అనేది~$\Gamma$, $\Delta$ రెండింటిలోనూ \tetoken{మూలకం}{!!a{element}}; $\Gamma
+\Sequent \Delta$ కూడా స్వీకృతమే. $!A$ ప్రధాన సూత్రమైతే $\Delta = \Delta', !A$. అప్పుడు $\pi_1$ చివర్లో $\Gamma \Sequent
+\Delta', !A, !A$ ఉంటుంది. సంకోచన అనుమతిత్వం \olref[seq][inv]{prop:G3c-cont-adm}ను వర్తింపజేసి $\Gamma \Sequent
+\Delta', !A$కు కట్-రహిత నిరూపణ పొందుతాం. \sourcecorrection{OLTEPTCUTINVL-003}{ఇక్కడ మూలంలోని $\Delta = \Delta, !A$ స్వపునరుక్తికి బదులు $\Delta = \Delta', !A$ కావాలి; తరువాతి సీక్వెంట్‌లోని $\Delta'$తో సరిపడేలా సరిచేశాం.} $\pheight{\pi_2} > 0$ అయితే అది నియమం~$R$తో ముగుస్తుంది. ఆ నియమం ఒక పూర్వాపేక్షను తీసుకోండి: దాని రూపం $!A, \Gamma',
+\Pi \Sequent \Delta', \Lambda$; ఇక్కడ $\Pi$, $\Lambda$లు~$R$లో చురుకైన \tetoken{సూత్రాలు}{!!{formula}s}. $\pi_1$, $\pi_2$లకు \olref[seq][adm]{prop:weak-G3c-adm} వర్తింపజేస్తే $\Gamma, \Gamma',
+\Pi \Sequent \Delta, \Delta', \Lambda, !A$, $!A, \Gamma, \Gamma',
+\Pi \Sequent \Delta, \Delta', \Lambda$లకు \tetoken{నిరూపణలు}{!!{proof}s} లభిస్తాయి; వాటికి ఆగమన పరికల్పన వర్తిస్తుంది. దాని వల్ల~$R$లోని ప్రతి పూర్వాపేక్షకు $\Gamma, \Gamma', \Pi
+\Sequent \Delta, \Delta', \Lambda$ యొక్క \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుంది. $R$ వర్తింపజేస్తే $\Gamma, \Gamma \Sequent \Delta, \Delta$ వస్తుంది; \olref[seq][inv]{prop:G3c-cont-adm} ద్వారా $\Gamma \Sequent \Delta$కు కట్-రహిత నిరూపణ లభిస్తుంది.
+
+$!A$ అణు సూత్రం కాకపోతే, $!A$ యొక్క \tetoken{ప్రధాన సంయోజకం}{!!{main
+operator}} ప్రకారం సందర్భాలను వేరుచేద్దాం. ప్రతి సందర్భంలో $!A$ ప్రధాన సూత్రంగా ఉండే ఎడమ, కుడి నియమాల పూర్వాపేక్షల \tetoken{నిరూపణలు}{!!{proof}s} పొందడానికి \olref{lem:inv-G3c-cut}ను వర్తింపజేస్తాం. తరువాత \olref[top]{lem:cut-adm-G3c} నిరూపణలో E సందర్భంలాగే కొనసాగుతాం.
+\begin{enumerate}
+  \item $!A \ident \lnot !B$. \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$ వరుసగా $\Gamma \Sequent \Delta, \lnot !B$, $\lnot !B, \Gamma \Sequent
+  \Delta$లతో ముగుస్తాయి. \olref{lem:inv-G3c-cut} ప్రకారం $!B, \Gamma \Sequent
+  \Delta$, $\Gamma \Sequent \Delta, !B$లకు \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1'$, $\pi_2'$ ఉంటాయి. \tetoken{నిరూపణ}{!!{proof}}~$\pi'$ ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \lor !C)$. \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$ వరుసగా $\Gamma \Sequent \Delta, !B \lor !C$, $!B \lor !C, \Gamma
+  \Sequent \Delta$లతో ముగుస్తాయి. $\pi_1$కు \RightR{\lor} విలోమాన్ని వర్తింపజేసే \olref{lem:inv-G3c-cut} ప్రకారం $\Gamma \Sequent \Delta, !B, !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_1'$ ఉంది. $\pi_2$కు \LeftR{\lor} విలోమాన్ని వర్తింపజేసే \olref{lem:inv-G3c-cut} ప్రకారం $!B, \Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_2'$, $!C, \Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_2''$ ఉన్నాయి. $\pi_2''$కు \olref[seq][adm]{prop:weak-G3c-adm} వర్తింపజేసి $!C, \Gamma \Sequent \Delta, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_2'''$ కూడా పొందుతాం. \tetoken{నిరూపణ}{!!{proof}}~$\pi'$ ఇలా ఉంటుంది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta, !B, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, \Gamma \fCenter \Delta, !B$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident (!B \land !C)$. సాధన.
+  \item $!A \ident (!B \lif !C)$. \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$ వరుసగా $\Gamma \Sequent \Delta, !B \lif !C$, $!B \lif !C, \Gamma
+  \Sequent \Delta$లతో ముగుస్తాయి. $\pi_1$కు \RightR{\lif} విలోమాన్ని వర్తింపజేసే \olref{lem:inv-G3c-cut} ప్రకారం $!B, \Gamma \Sequent \Delta, !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_1'$ ఉంది. $\pi_2$కు \LeftR{\lif} విలోమాన్ని వర్తింపజేసే \olref{lem:inv-G3c-cut} ప్రకారం $\Gamma \Sequent \Delta, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_2'$, $!C, \Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi_2''$ ఉన్నాయి. $\pi_2''$కు \olref[seq][adm]{prop:weak-G3c-adm} వర్తింపజేసి $!C, !B, \Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_2'''$ కూడా పొందుతాం. \tetoken{నిరూపణ}{!!{proof}}~$\pi'$ ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, !B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$!B, \Gamma \fCenter \Delta, !C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$!C, !B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$!B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $!A \ident \lforall[x][!B(x)]$. \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$ వరుసగా $\Gamma \Sequent \Delta, \lforall[x][!B(x)]$, $\lforall[x][!B(x)], \Gamma \Sequent \Delta$లతో ముగుస్తాయి. \olref{lem:inv-G3c-cut} ప్రకారం $\Gamma
+  \Sequent \Delta, !B(c)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1'$ ఉంది.
+
+  ఇప్పుడు \tetoken{నిరూపణ}{!!{proof}}~$\pi_2$ను పరిశీలిద్దాం. అది $\lforall[x][!B(x)],
+  \Gamma \Sequent \Delta$తో ముగుస్తుంది. $\pi_2$ తుది సీక్వెంట్ నుంచి పైకి వెళ్తూ, ఎడమవైపు కనిపించి ~$\pi_2$ తుది సీక్వెంట్‌లోని $\lforall[x][!B(x)]$ సంభవానికి ``దారితీసే'' ప్రతి $\lforall[x][!B(x)]$ సంభవాన్ని గుర్తించండి. అంటే: (a)~$\pi_2$ తుది సీక్వెంట్‌లోని $\lforall[x][!B(x)]$ను గుర్తించండి. (b)~ఏదైనా నియమం ముగింపు సందర్భంలో $\lforall[x][!B(x)]$ ఉండి అది గుర్తించబడితే, ఆ నియమ పూర్వాపేక్ష(ల)లోని అనుగుణ సంభవాన్ని గుర్తించండి. (c)~\LeftR{\lforall} నియమం ముగింపులో $\lforall[x][!B(x)]$ ప్రధాన సూత్రంగా ఉండి గుర్తించబడితే, పూర్వాపేక్షలోని $\lforall[x][!B(x)]$, $!B(t)$ చురుకైన అనుగుణ సంభవాలను గుర్తించండి.
+  
+  ఇప్పుడు గుర్తించిన $\lforall[x][!B(x)]$ సంభవాలన్నింటినీ చూడండి. వాటిలో ఏదీ \LeftR{\lforall} తప్ప మరొక నియమంలో చురుకుగా ఉండదు (\LeftR{\lforall}లోని చురుకైన \tetoken{సూత్రాలే}{!!{formula}s} గుర్తించబడతాయి). $\pi_2$లో గుర్తించిన $\lforall[x][!B(x)]$ సంభవాలన్నింటినీ తొలగించండి. దాంతో సరైన \tetoken{నిరూపణ}{!!{proof}} మిగిలితే, ఆ గుర్తించిన $\lforall[x][!B(x)]$ సంభవాలు ఏ నియమంలోనూ చురుకుగా లేవు; అవన్నీ నేరుగా స్వీకృతాల నుంచే వచ్చాయి. ఆ \tetoken{నిరూపణ}{!!{proof}}~$\Gamma \Sequent \Delta$తో ముగుస్తుంది; $\pi$ స్థానంలో దాన్ని పెట్టవచ్చు. అత్యధిక స్థాయి గల కట్‌ను తొలగించాం.
+
+  లేకపోతే, తొలగించిన $\lforall[x][!B(x)]$ \tetoken{సూత్రాలు}{!!{formula}s} కొన్ని \LeftR{\lforall} నిగమనాల్లో చురుకుగా ఉన్నందున మిగిలింది సరైన నిరూపణ కాదు. వాటిని ఈ రూపంలోని ``నిగమనాలు''గా మార్చాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_t$}
+  \Deduce$!B(t), \Pi \fCenter \Lambda$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\Pi \fCenter \Lambda$
+  \DisplayProof
+  \]
+  అటువంటి అత్యున్నత స్థానంలోని ప్రతి ``నిగమనం'' స్థానంలో దీన్ని పెట్టండి:
+  \[
+  \AxiomC{}
+  \RightLabel{$\Subst{\pi_1'}{t}{c}[\Pi \Sequent \Lambda]$}
+  \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B(t)$
+  \AxiomC{}
+  \RightLabel{$\pi_t[\Gamma \Sequent \Delta]$}
+  \Deduce$!B(t), \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \DisplayProof
+  \]
+  దాని దిగువ ప్రతి సీక్వెంట్ పూర్వాంగానికి $\Gamma$ను, ఉత్తరాంగానికి $\Delta$ను చేర్చండి. పూర్వాపేక్షలో గుర్తించిన $!B(t)$ గల అన్ని \LeftR{\lforall} ``నిగమనాలు'' ఏదో~$!B(t)$పై \CutCS{} నిగమనంతో భర్తీ అయ్యేవరకు పునరావృతం చేయండి. ఫలిత \tetoken{నిరూపణ}{!!{proof}} తుది సీక్వెంట్ రూపం $\Gamma, \dots, \Gamma \Sequent \Delta, \dots, \Delta$ (ఇప్పుడు అది నిజంగా సరైన \tetoken{నిరూపణ}{!!{proof}}). సంకోచన అనుమతిత్వం వర్తింపజేసి~$\Gamma
+  \Sequent \Delta$ యొక్క \tetoken{ఒక నిరూపణ}{!!a{proof}}గా మార్చి $\pi$ స్థానంలో పెట్టండి. $\lforall[x][!B(x)]$పై ఒక కట్ స్థానంలో $!B(t)$పై (బహుశా అనేక) కట్‌లు వచ్చాయి; ఇవన్నీ తక్కువ స్థాయివి. $\pi_1$, $\pi_2$ల్లో ముందే ఉన్న కట్‌లు అలాగే ఉంటాయి; అవి కూడా తక్కువ స్థాయివే.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref{lem:inv-G3c-cut} నిరూపణలో $!A \ident (!B \land !C)$ సందర్భాన్ని తనిఖీ చేయండి. అంటే, కింది విధంగా ముగిసే \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ ఉంటే,
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B \land !C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+$\pi_1$, $\pi_2$ల్లో స్థాయి $<\depth{!B
+\land !C}$ గల కట్‌లు మాత్రమే ఉంటే, $\Gamma \Sequent \Delta$కు స్థాయి $<\depth{!B \land !C}$ కట్‌లు మాత్రమే గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$ ఉందని చూపండి.
+\end{prob}
+\sourcecorrection{OLTEPTCUTINVL-001}{ఈ సాధనలో చూపిన కట్ సంక్షేపణం ప్రస్తుత \olref{lem:max-cut-red-G3c} నిరూపణలోని సంయోజన సందర్భం. మూలం దానిని ముందున్న విలోమయోగ్యత \olref{lem:inv-G3c-cut} నిరూపణదిగా సూచించింది; ఆ సూచన అసంగతిని పక్కనే ప్రకటించాం.}
+
+% \begin{prob}
+% Verify the case where $!A \ident \lexists[x][!B(x)]$ in the proof of
+% \olref{lem:inv-G3c-cut}.
+% \end{prob}
+
+
+\olref[top]{lem:cut-adm-G3c} ఒక \tetoken{నిరూపణ}{!!a{proof}}లో అత్యధిక స్థాయి గల \CutCS{} నిగమనాన్ని, తక్కువ స్థాయి \CutCS{} నిగమనాలతో భర్తీ చేయవచ్చని స్థాపించిందని మూలం చెబుతుంది. ఆ ఫలితాన్ని మళ్లీ ఉపయోగించి \tetoken{ఒక నిరూపణ}{!!a{proof}} నుంచి ఎన్ని \CutCS{} నిగమనాలనైనా తొలగించవచ్చు: అత్యధిక స్థాయి గల \CutCS{}తో ముగిసే అత్యున్నత ఉప-\tetoken{నిరూపణలకు}{!!{proof}s} దాన్ని వరుసగా వర్తింపజేస్తాం.
+\sourcecorrection{OLTEPTCUTINVL-002}{అత్యధిక స్థాయి కట్‌ను తక్కువ స్థాయి కట్‌లతో భర్తీ చేసే ప్రస్తుత లెమ్మా \olref{lem:max-cut-red-G3c}. మూలం చివరి సాధారణీకరణలో పూర్వపు \olref[top]{lem:cut-adm-G3c}ను ఆ ఫలితంగా పొరపాటున పేర్కొంది; ఆ సూచన భేదాన్ని ప్రకటించాం.}
+
+\begin{thm}\ollabel{thm:cut-elim-G3c-largest}
+$\Log{G3c} + \CutCS$లోని ఏ \tetoken{నిరూపణ}{!!{proof}} $\pi$నైనా~\Log{G3c}లో నిరూపణగా మార్చవచ్చు.
+\end{thm}
+
+\begin{proof}
+  ముందుగా~$\pi$లో అత్యధిక స్థాయి కట్‌లన్నింటినీ తొలగించవచ్చని నిరూపిద్దాం. $d$ అనేది~$\pi$లోని కట్‌ల అత్యధిక స్థాయి, $n$ అనేది స్థాయి~$d$ గల కట్‌ల సంఖ్య అనుకుందాం. నిరూపణ~$n$పై ఆగమన పద్ధతిలో సాగుతుంది. $n=0$ అయితే నిరూపించేదేమీ లేదు. $n>0$ అయితే స్థాయి~$d$ గల అత్యున్నత కట్‌ను తీసుకుని, దానితో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}} $\pi_1$ అనుకుందాం. \olref{lem:max-cut-red-G3c} ప్రకారం అదే తుది సీక్వెంట్‌కు, అన్ని కట్‌లూ స్థాయి $<d$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1'$ ఉంది. $\pi$లో $\pi_1$ స్థానంలో $\pi_1'$ను పెట్టండి. అప్పుడు స్థాయి~$d$ గల కట్‌లు $n-1$ మాత్రమే మిగిలే \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుంది; ఆగమన పరికల్పన వర్తిస్తుంది.
+
+  ఇప్పుడు ఫలితం~$d$పై ఆగమన పద్ధతి వల్ల వస్తుంది. $d=0$ అయితే అన్ని కట్‌లూ అణు కట్‌లే; పూర్వ ఫలితం వల్ల వాటన్నింటినీ తొలగించవచ్చు. $d>0$ అయితే పూర్వ ఫలితం స్థాయి $d$ గల అన్ని కట్‌లు స్థాయి~$<d$ గల కట్‌లతో భర్తీ అయిన నిరూపణను ఇస్తుంది. $d$ అనేది~$\pi$లోని కట్‌ల అత్యధిక స్థాయి కనుక కొత్త నిరూపణలో అత్యధిక కట్ స్థాయి $<d$; ఆగమన పరికల్పన వర్తిస్తుంది.
+\end{proof}
+
+\end{document}

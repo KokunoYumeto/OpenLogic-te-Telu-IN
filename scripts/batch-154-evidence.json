@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "154",
+  "unit_id": "OLP-0505",
+  "unit_order": 505,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+  "blocks": 23,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+  "previous_segments": 7610,
+  "previous_terms": 194,
+  "expected_corrections": 464,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"10": ["OLTEINTSND-001"], "14": ["OLTEINTSND-002", "OLTEINTSND-003"]},
+  "consultation_phase": "స్థిర సహజ నిగమనం నిర్దుష్టత మూలం, తెలుగు లక్ష్యం, పూర్వ సహజ నిగమన/లోక-సత్య/అనుగమన పదాలు, స్థానిక సంబంధ/తర్క/వ్యుత్పత్తి/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; ప్రతి పరిచయ-విసర్జన కేసు, పరికల్పనల సమితులు, భవిష్యత్ లోక ఏకదిశ సత్యం, అభ్యాసంగా వదిలిన నిరాకరణ కేసులు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010/018/024/025/026 సాధారణ సంబంధ, తర్క, వ్యుత్పత్తి, నిరూపణ పదాలకు మాత్రమే సాక్షులు; అన్ని శాఖా సహజ నిగమన నిర్దుష్టత కేసులకు ప్రత్యక్ష సాక్షులు కావు. నిరాకరణ కేసులు మూలంలో అభ్యాసాలుగానే ఉన్నాయి.",
+  "term_decision": {
+    "term_id": "TE-T195",
+    "source_term": "natural-deduction soundness / rule-case induction / undischarged assumption sets / world forcing",
+    "telugu": "సహజ నిగమన నిర్దుష్టత / నియమ-కేసులపై ఆగమనం / ఉపసంహరించని పరికల్పనల సమితులు / లోకంలో సత్యం",
+    "status": "native_general_relation_logic_derivation_proof_register_attested_natural_deduction_soundness_three_disclosed_source_repairs",
+    "passages": ["TE-P010", "TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "వ్యుత్పత్తిపై ఆగమనం, పరికల్పన కేసు, సంయోగ/వియోజన/సోపాధిక పరిచయ-విసర్జన, అసత్య కేసులు, నిరాకరణ అభ్యాసాలు, మూడు అపవ్యుత్పాద్యత సూత్రాలు నిలిచాయి; మూడు మూల సంకేత/లక్ష్య లోపాలను ప్రకటించి సరిచేశాం.",
+    "uncertainty": "మూలం నిరాకరణ కేసులను పూర్తి చేయదు. నిర్దుష్టత నిరూపణలోని కొన్ని సంయోగ/వియోజన కేసులు tag ఆధారంగా అభ్యాసాలుగా కనిపించవచ్చు; ఆ నిర్మాణం మార్చలేదు. పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "The natural-deduction rule macros, mathematical labels and tag IDs remain source-controlled."
+  }
+}

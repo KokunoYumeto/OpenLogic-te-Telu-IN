@@ -1,0 +1,85 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-G3c
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\multicolumn{2}{@{}c@{}}{అక్షయాలు}\\[2ex]
+$!C, \Gamma \Sequent \Delta, !C$ & $\lfalse, \Gamma \Sequent \Delta$
+\\[2ex]
+\multicolumn{2}{@{}c@{}}{తార్కిక నియమాలు}\\[2ex]
+\Axiom$\lnot !A, \Gamma \fCenter \Delta, !A $
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !A, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$!A, \Gamma \fCenter$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lnot !A $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\\[4ex]\Axiom$!A, \Gamma \fCenter \Delta$
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lor !B$
+\DisplayProof
+\\[4ex]
+\Axiom$!A \lif !B, \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ !A, \Gamma \fCenter !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(t), \lforall[x][!A(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \lforall[x][!A(x)]$
+\DisplayProof
+\\[4ex]
+\Axiom$ !A(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][!A(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter \Delta, \lexists[x][!A(x)], !A(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][!A(x)]$
+\DisplayProof
+\end{tabular}
+\caption{అంతఃప్రజ్ఞావాద తర్కానికి బహుళ-నిర్ధారణల \Log{mG3i} నియమాలు. $\RightR{\forall}$, $\LeftR{\exists}$లలో \tetoken{స్థిరాంకం}{!!{constant}}~$a$ నిర్ధారణ సీక్వెంట్‌లో రాకూడదు. $\Gamma$, $\Delta$ \tetoken{సూత్రాల}{!!{formula}s} బహుసమితులు. అక్షయాల్లో \tetoken{సూత్రం}{!!{formula}}~$!C$ పరమాణువు కావాలి. మూల పక్క గమనిక \Log{mG1m}ను, అక్షయాలు $\lfalse,
+\Gamma \Sequent \Delta$ లేని \Log{mG1i}గా పేర్కొంటుంది.}
+\ollabel{tab:mG3i}
+\end{table}
+\sourcecorrection{OLTEPTSEQMG3I-001}{సార్వత్రిక ఎడమ ఆధారంలో ప్రధాన సూత్రం, పక్క సందర్భం మధ్య కామాను చేర్చాం.}
+\sourcecorrection{OLTEPTSEQMG3I-002}{ఈ పట్టిక బహుళ-నిర్ధారణల మూడవ వ్యవస్థను ఇస్తున్నా మూల పక్క గమనిక మొదటి వ్యవస్థ పేర్లను వాడింది; ఆ పేర్లకు వేరు నియమ నిర్వచనం మూల నిరూపణ-సిద్ధాంత పాఠ్యంలో కనిపించలేదు. మూల సూచనగా మాత్రమే నిలిపాం; ఇదే కనిష్ఠ తర్కానికి పూర్తి నిర్వచనమని ధృవీకరించలేదు.}
+\sourcecorrection{OLTEPTSEQMG3I-003}{మూల పట్టిక గుర్తు సాంప్రదాయ వ్యవస్థ గుర్తునే మళ్లీ వాడింది; బహుళ-నిర్ధారణల పట్టికకు ప్రత్యేక గుర్తు ఇచ్చాం.}
+
+\end{document}

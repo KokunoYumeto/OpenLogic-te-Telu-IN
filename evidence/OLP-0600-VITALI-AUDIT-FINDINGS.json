@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCHOICEVITALI-20260927",
+  "unit_id": "OLP-0600",
+  "source_path": "content/set-theory/choice/vitali.tex",
+  "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+  "findings": [
+    {
+      "finding_id": "OLTESTCHOICEVITALI-001",
+      "source_locator": "vitali.tex lines 35–37 and 73–75, rotation-angle definition",
+      "classification": "nonclosed_rational_radian_rotations",
+      "source_issue": "Rational radian angles in [0,2π) are not closed under composition modulo 2π, since 2π is irrational; the intended countable rotation group uses rational multiples of a full turn.",
+      "minimal_treatment": "State that the angles are rational multiples of a full turn in the defining paragraph and the subgroup proof, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCHOICEVITALI-002",
+      "source_locator": "vitali.tex lines 51–53, inverse of the zero rotation",
+      "classification": "zero_rotation_inverse_boundary_case",
+      "source_issue": "The displayed inverse-angle rule yields 2π for the identity rotation, outside the specified half-open angle interval.",
+      "minimal_treatment": "Handle the identity rotation separately and retain the source formula for nonzero angles, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCHOICEVITALI-003",
+      "source_locator": "vitali.tex line 159, undefined R_1",
+      "classification": "undefined_rotation_subset_symbol",
+      "source_issue": "R_1 is not defined; the immediately preceding construction defines rotationsgroup_1.",
+      "minimal_treatment": "Use the defined first rotation subset and disclose the symbol correction.",
+      "expected_core_math_delta": {"source_only": ["$\\rho\\inR_1$"], "target_only": ["$\\rho\\in\\rotationsgroup_1$"]}
+    },
+    {
+      "finding_id": "OLTESTCHOICEVITALI-004",
+      "source_locator": "vitali.tex lines 183–199, free-group and sphere-action sketch",
+      "classification": "overbroad_free_group_claim_and_omitted_exceptional_orbits",
+      "source_issue": "A rank-one free group is amenable and cannot have the asserted paradoxical four-piece partition. The later sphere action is not free at rotation fixed points, so the orbit-representative sketch does not alone justify applying the group partition to every sphere point.",
+      "minimal_treatment": "Qualify the free group as having at least two generators and flag the fixed-point treatment as a missing separate step, without inventing a full proof.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCHOICEVITALI-005",
+      "source_locator": "vitali.tex lines 256–259, measure-proof rotation indices",
+      "classification": "point_set_used_as_rotation_index",
+      "source_issue": "C contains representative points, not rotations; the proof twice quantifies rotation rho over C.",
+      "minimal_treatment": "Index both occurrences over the defined rotation group, with adjacent disclosure.",
+      "expected_core_math_delta": {"source_only": ["$\\rho\\inC$", "$\\rho\\inC$"], "target_only": ["$\\rho\\in\\rotationsgroup$", "$\\rho\\in\\rotationsgroup$"]}
+    }
+  ]
+}

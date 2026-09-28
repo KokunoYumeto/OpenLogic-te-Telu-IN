@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "318",
+  "unit_id": "OLP-0669",
+  "unit_order": 669,
+  "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+  "blocks": 19,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "corrections_by_block": {
+    "6": [
+      "OLTEPTNATSEQ-001"
+    ],
+    "14": [
+      "OLTEPTNATSEQ-002"
+    ],
+    "18": [
+      "OLTEPTNATSEQ-003"
+    ]
+  },
+  "previous_segments": 9900,
+  "previous_terms": 358,
+  "expected_corrections": 590,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "N1 నుంచి N2కు, తిరిగి N2 నుంచి N1కు సీక్వెంట్ అనువాదం, గుర్తు గల సందర్భాలు, విసర్జన-లేని నియమ ప్రయోగాలు, ఆగమన నిర్మాణం పోల్చాం; మూడు మూల లోపాలు ప్రకటించాం.",
+  "evidence_limit": "సీక్వెంట్-శైలి పదం భావపారదర్శక ఎంపిక; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. మూలం ఇతర నియమ సందర్భాలను సాధనలుగా వదిలింది; వాటిని కల్పించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T359",
+    "source_term": "natural deduction in sequent style; context; succedent; labelled assumption",
+    "telugu": "సీక్వెంట్-శైలి సహజ నిగమనం; సందర్భం; ఫలితభాగం; గుర్తు గల ఉపపత్తి",
+    "status": "N1_N2_sequent_translation_three_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "N1/N2 ద్విదిశ అనురూపత, సందర్భం-ఫలితభాగం భేదం, గుర్తు గల ఉపపత్తి విసర్జన నిలిచాయి; మూడు మూల లోపాలు సరిచేసి ప్రకటించాం.",
+    "uncertainty": "సీక్వెంట్-శైలి, ఫలితభాగం పదరూపాలు సందర్భానుసార భావానువాదాలు; మిగిలిన నియమ సందర్భాల నిరూపణ మూలంలో లేదు.",
+    "borrowing": "N1/N2 and G1 system identifiers, sequent symbols and derivation labels remain source-identifying where appropriate."
+  }
+}

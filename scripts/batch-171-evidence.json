@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "171",
+  "unit_id": "OLP-0522",
+  "unit_order": 522,
+  "source_path": "content/counterfactuals/minimal-change-semantics/minimal-change-semantics.tex",
+  "blocks": 12,
+  "linguistic_blocks": [4],
+  "previous_segments": 7828,
+  "previous_terms": 211,
+  "expected_corrections": 475,
+  "canon_default": ["TE-P018", "TE-P021"],
+  "consultation_phase": "ప్రతివాస్తవ భాగంలోని కనిష్ఠ మార్పు అధ్యాయ శీర్షిక, ఆరు దిగుమతులు, స్థిర అర్థవిచార పదాన్ని ఎదురెదురు చూశాం.",
+  "evidence_limit": "TE-P018/021 సాధారణ తర్క/అర్థవిచార పదాలకు మాత్రమే సాక్షులు; సమీప లోకాల ప్రత్యేక నిర్వచనం తరువాతి విభాగ నియంత్రితం. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T212",
+    "source_term": "minimal change semantics (chapter heading)",
+    "telugu": "కనిష్ఠ మార్పు అర్థవిచారం",
+    "status": "definition_controlled_minimal_change_heading_general_semantics_register_attested",
+    "passages": ["TE-P018", "TE-P021"],
+    "basis": "అధ్యాయ శీర్షికను తెలుగు కనిష్ఠ-మార్పు భావంతో ఇచ్చి cnt/min గుర్తింపు, ఆరు ఉపవిభాగ దిగుమతులు నిలిపాం.",
+    "uncertainty": "ప్రత్యేక సమీపలోక అర్థానికి స్వతంత్ర పదసాక్షి లేదు; తరువాతి నమూనా నిర్వచనం దానిని నియంత్రిస్తుంది.",
+    "borrowing": "No English heading remains reader-visible."
+  }
+}

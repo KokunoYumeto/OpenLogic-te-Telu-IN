@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0651",
+  "source_path": "content/lambda-calculus/syntax/conversion.tex",
+  "source_sha256": "0179bc8cb297b394faaa6955ed852a1f0300ee3a9b254081ccfc3ef68844052e",
+  "audit_id": "OLTELAMSYNCONV-20260927",
+  "audit_review_path": "evidence/OLP-0651-CONVERSION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "79ecc5e3b49741c38de3d7db290508b5c4528f180bf17b47f3699e620276f9d1",
+  "audit_findings_path": "evidence/OLP-0651-CONVERSION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "555fb302cc3ac7ae029a0b681a62c7999d038f71fac388a8e5cb15e69b8c8153",
+  "previous_corrections": 547,
+  "treatments": {
+    "OLTELAMSYNCONV-001": {"target_line": 15, "body_treatment": "మూలం వాగ్దానం చేసిన alpha మార్పు నియమం, మిగిలిన మార్పుల వివరణ లేకుండానే ముగుస్తుందని ప్రకటించాం."}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "239",
+  "unit_id": "OLP-0590",
+  "unit_order": 590,
+  "source_path": "content/set-theory/card-arithmetic/ch.tex",
+  "blocks": 25,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+  "corrections_by_block": {"8": ["OLTESTCARDCH-001"], "13": ["OLTESTCARDCH-002"], "16": ["OLTESTCARDCH-003"]},
+  "previous_segments": 8695,
+  "previous_terms": 279,
+  "expected_corrections": 506,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "సాతత్య పరికల్పన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ అనంత కార్డినల్/ఘాత/సహాంత్యత పదాలు, స్థానిక సంఖ్య/తర్క సాక్షులు పోల్చాం; ఆలెఫ్-బెత్ పునరావృత్తి, ప్రతి అనంత కార్డినల్ ఆలెఫ్ రూపం, GCH/CH భేదం, సుసంగతత/స్వతంత్రత/సత్యం భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "సాతత్య పరికల్పన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం నియంత్రించింది. మూల పునరావృత్తి వస్తువు, ఆలెఫ్ ఆగమన పరిధి, శూన్య ఘాత సరిహద్దు OLTESTCARDCH-001/002/003గా ప్రకటించబడ్డాయి; గోడెల్/కోహెన్ చారిత్రక వాదనలు స్వతంత్రంగా పరిశీలించలేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T280",
+    "source_term": "Continuum Hypothesis; Generalized Continuum Hypothesis; aleph and beth",
+    "telugu": "సాతత్య పరికల్పన; సాధారణీకృత సాతత్య పరికల్పన; ఆలెఫ్, బెత్",
+    "status": "hypotheses_independence_truth_distinction_source_controlled_with_disclosed_scope_repairs",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ఆలెఫ్/బెత్ పునరావృత్తి, CH/GCH సమానత్వ రూపాలు, ZFCతో సుసంగతత మరియు స్వతంత్రత, సత్యంపై తాత్విక ప్రశ్న భేదం నిలిచాయి.",
+    "uncertainty": "సాతత్య ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల గణిత నిర్వచనం, పూర్వ సంఖ్య/తర్క పదాలు నియంత్రించాయి.",
+    "borrowing": "Aleph, beth, GCH, CH, ZFC and historical names remain source-controlled."
+  }
+}

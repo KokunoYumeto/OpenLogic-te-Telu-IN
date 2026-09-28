@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "164",
+  "unit_id": "OLP-0515",
+  "unit_order": 515,
+  "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+  "blocks": 26,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+  "previous_segments": 7739,
+  "previous_terms": 204,
+  "expected_corrections": 474,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"6": ["OLTEINTTABSOU-001"], "14": ["OLTEINTTABSOU-002"], "20": ["OLTEINTTABSOU-003"], "24": ["OLTEINTTABSOU-004"]},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద టాబ్లో నిర్దుష్టత మూలం, తెలుగు లక్ష్యం, పూర్వ టాబ్లో నియమాలు/నమూనా అర్థవిచారం, స్థానిక తర్క/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; పూర్వసూచిక అర్థనిర్దేశం, సంవృత శాఖ అసంభవం, విడే మరియు విడని నియమాల కేసులు, పర్యవసాన ఉపపత్తి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024/025/026 సాధారణ తర్క/నిరూపణ పదాలకు మాత్రమే సాక్షులు. నాలుగు మూల నిరూపణ సవరణలు ప్రత్యక్ష నియమ/అర్థవిచార తనిఖీతో ప్రకటించాం; స్వతంత్ర TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+  "term_decision": {
+    "term_id": "TE-T205",
+    "source_term": "intuitionistic tableau soundness / prefix interpretation / satisfiable branch",
+    "telugu": "అంతఃప్రజ్ఞావాద టాబ్లో నిర్దుష్టత / పూర్వసూచిక అర్థనిర్దేశం / సంతృప్తిపరచదగిన శాఖ",
+    "status": "native_general_logic_proof_register_definition_controlled_four_disclosed_source_repairs",
+    "passages": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "టాబ్లో నిర్దుష్టత, నమూనాలో పూర్వసూచిక అర్థనిర్దేశం, శాఖ సంతృప్తి, నియమాల ఆగమన వాదన స్థిరంగా అనువదించాం; మూలంలోని నాలుగు తప్పు నిరూపణ వ్యక్తీకరణలను పక్కనే ప్రకటించి సరిచేశాం.",
+    "uncertainty": "నాలుగు సవరణలు అదే ఏజెంట్ మూల/నియమ తనిఖీ ఆధారితాలు; ముద్రిత PDF/TeX దృశ్య పరీక్ష, స్వతంత్ర గణిత సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో స్థిరీకృత అరువు పదం; signed-formula notation, prefixes and rule symbols source-controlled."
+  }
+}

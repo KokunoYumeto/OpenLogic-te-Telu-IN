@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "234",
+  "unit_id": "OLP-0585",
+  "unit_order": 585,
+  "source_path": "content/set-theory/cardinals/hp.tex",
+  "blocks": 12,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11],
+  "previous_segments": 8619,
+  "previous_terms": 274,
+  "expected_corrections": 499,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "హ్యూమ్ సూత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ స్వవర్గానవలంబిత/స్వవర్గావలంబిత పద నిర్ణయం, స్థానిక తర్క/సంఖ్య సాక్షులు పోల్చాం; కాంటర్/హ్యూమ్ రకభేదం, మౌలిక నియమం V పోలిక, 0-1-2 నిర్మాణం, ఫ్రేగే విస్తరణ సమస్య తనిఖీ చేశాం.",
+  "evidence_limit": "ప్రెడికేటివ్ ప్రత్యేక పదానికి ప్రామాణిక తెలుగు నిపుణ సాక్షి లేదు; పూర్వ TE-T223 నిర్వచన నియంత్రిత పదాన్ని వాడాం. హ్యూమ్ ఉటంకింపు అర్థానువాదం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T275",
+    "source_term": "Hume's Principle; predicative versus impredicative",
+    "telugu": "హ్యూమ్ సూత్రం; స్వవర్గానవలంబిత వర్సెస్ స్వవర్గావలంబిత",
+    "status": "second_order_type_difference_and_prior_predicativity_register_preserved",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "సమితి చరరాశి/విధేయ స్థానం రకభేదం, రెండు ద్విసోపాధిక సూత్రాలు, మౌలిక నియమం Vతో భేదం, స్వవర్గావలంబిత సంఖ్య నిర్మాణం నిలిచాయి.",
+    "uncertainty": "స్వవర్గావలంబిత ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ TE-T223తో సారూప్యం, మూల వివరణలు నియంత్రించాయి.",
+    "borrowing": "Hume, Frege, and logical symbol macros remain source-controlled."
+  }
+}

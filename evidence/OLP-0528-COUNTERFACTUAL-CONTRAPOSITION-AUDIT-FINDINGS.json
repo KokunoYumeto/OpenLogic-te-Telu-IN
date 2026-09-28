@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTECNTCPO-20260927",
+  "unit_id": "OLP-0528",
+  "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+  "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+  "findings": [
+    {
+      "finding_id": "OLTECNTCPO-001",
+      "source_locator": "contraposition.tex sphere countermodel tuple and local sphere assignment",
+      "classification": "sphere_assignment_uses_global_function_instead_of_local_system",
+      "source_issue": "The source lists three spheres as O even though the preceding definition types O as a world-to-sphere-system function; the list is the local system O_w.",
+      "minimal_treatment": "Add the world subscript to this sphere-system assignment and disclose, without supplying unneeded values at other worlds.",
+      "expected_core_math_delta": {
+        "source_only": ["$O=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$"],
+        "target_only": ["$O_w=\\{\\{w\\},\\{w,w_1\\},\\{w,w_1,w_2\\}\\}$"]
+      }
+    }
+  ]
+}

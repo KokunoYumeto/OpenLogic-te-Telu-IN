@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "277",
+  "unit_id": "OLP-0628",
+  "unit_order": 628,
+  "source_path": "content/history/biographies/julia-robinson.tex",
+  "blocks": 12,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11],
+  "previous_segments": 9279,
+  "previous_terms": 317,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P005", "TE-P011", "TE-P018", "TE-P027"],
+  "consultation_phase": "జూలియా రాబిన్సన్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిర్ణయించదగిన/డయోఫాంటైన్/ప్రమేయ పదాలు, స్థానిక సంఖ్య-తర్క సాక్షులు పోల్చాం; వాస్తవ-సహజ-పరిమేయ సిద్ధాంతాల నిర్ణయ భేదం, జె.ఆర్. పరికల్పన నుంచి ఎంఆర్‌డీపీ ఫలితం, తేదీలు-సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణిత-తర్క భాషా నేపథ్యం మాత్రమే; జీవిత, వైద్య, సంస్థాగత చరిత్రను బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. గణిత చారిత్రక వాదనలు మూల పాఠ్యం ఆధారితం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T318","source_term":"Julia Robinson; Hilbert's tenth problem; Diophantine problem; MRDP theorem","telugu":"జూలియా రాబిన్సన్; హిల్బర్ట్ పదవ సమస్య; డయోఫాంటైన్ సమస్య; ఎంఆర్‌డీపీ సిద్ధాంతం","status":"decision_problem_rational_theory_vs_integer_equations_hypothesis_result_distinguished","passages":["TE-P003","TE-P005","TE-P011","TE-P018","TE-P027"],"basis":"పరిమేయ సంఖ్యల ప్రథమ శ్రేణి సిద్ధాంత అనిర్ణయనీయత, పూర్ణసంఖ్య గుణకాల బహుపది సాధన సమస్య, ఘాతీయ డయోఫాంటైన్ అనిర్ణయనీయత, జె.ఆర్. పరికల్పన నిరూపణతో ఎంఆర్‌డీపీ ఫలితం వేర్వేరుగా నిలిచాయి.","uncertainty":"వ్యక్తి జీవిత/వైద్య వాదనలు, ఫలితాల చరిత్ర ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు ప్రత్యేక చారిత్రక అంశాలకు ఆధారం కావు.","borrowing":"Named theorem/problem eponyms, MRDP abbreviation, equation, quoted letter attribution and citation keys remain source-identifying."}
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0699",
+  "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+  "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+  "audit_id": "OLTEPTSEQIRL-20260928",
+  "audit_review_path": "evidence/OLP-0699-INTERPRETATION-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1ab6d3c71cd7d5b179b899af44c334b44474f5eac29d68c757e78e016426ef91",
+  "audit_findings_path": "evidence/OLP-0699-INTERPRETATION-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "767b934535accb890892e758ef2be83af97e793addd7a519631925873309559a",
+  "previous_corrections": 658,
+  "treatments": {
+    "OLTEPTSEQIRL-001": {
+      "target_line": 47,
+      "body_treatment": "Use true on the right or false on the left."
+    },
+    "OLTEPTSEQIRL-002": {
+      "target_line": 37,
+      "body_treatment": "Use the left XOR rule label."
+    },
+    "OLTEPTSEQIRL-003": {
+      "target_line": 73,
+      "body_treatment": "Restrict the necessity argument to distinct atomic placeholders and the last logical inference, setting aside redundant structural endings; keep the displayed construction unchanged."
+    }
+  }
+}

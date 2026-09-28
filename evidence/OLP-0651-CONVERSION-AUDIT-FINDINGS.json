@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTELAMSYNCONV-20260927",
+  "unit_id": "OLP-0651",
+  "source_path": "content/lambda-calculus/syntax/conversion.tex",
+  "source_sha256": "0179bc8cb297b394faaa6955ed852a1f0300ee3a9b254081ccfc3ef68844052e",
+  "findings": [
+    {
+      "finding_id": "OLTELAMSYNCONV-001",
+      "source_locator": "conversion.tex lines 15–22, final paragraph and end of file",
+      "classification": "promised_conversion_rules_missing_from_source",
+      "source_issue": "The source promises a formal alpha-conversion rule 'as follows' and introduces three conversion/reduction types, but ends immediately without the rule or explanations of the other types.",
+      "minimal_treatment": "Translate the introduction and disclose the missing continuation rather than inventing rules not in the frozen source.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

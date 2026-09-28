@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0675",
+  "source_path": "content/proof-theory/normalization/permutations.tex",
+  "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+  "audit_id": "OLTEPTNORPER-20260928",
+  "audit_review_path": "evidence/OLP-0675-PERMUTATIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9e301360b86e52440f43f1b7c68f1d957a546e18bb96b7f7e6ed1f30b4e420eb",
+  "audit_findings_path": "evidence/OLP-0675-PERMUTATIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "b3fcef9c7162d50b84b210a8ee8100c1ffebb4e5b69d01917ccc34c7fc241287",
+  "previous_corrections": 602,
+  "treatments": {
+    "OLTEPTNORPER-001": {
+      "target_line": 33,
+      "body_treatment": "పక్కనున్న నిరూపణ వృక్షానికి అనుగుణంగా కట్ సూత్రంలో సంయోగాన్ని వాడి అసంగతిని ప్రకటించాం."
+    },
+    "OLTEPTNORPER-002": {
+      "target_line": 319,
+      "body_treatment": "అభ్యాసంలోని రెండవ నియమాన్ని N1i సందర్భానికి అనుగుణంగా అస్తిత్వ తొలగింపుగా వాడి ప్రకటించాం."
+    },
+    "OLTEPTNORPER-003": {
+      "target_line": 368,
+      "body_treatment": "స్వతంత్ర చరరాశి వివరణలో నియమ చిహ్నాన్ని ప్రదర్శిత వృక్షానికి అనుగుణంగా అస్తిత్వ తొలగింపుగా వాడి ప్రకటించాం."
+    }
+  }
+}

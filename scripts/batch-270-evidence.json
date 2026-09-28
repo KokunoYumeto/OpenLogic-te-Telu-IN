@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "270",
+  "unit_id": "OLP-0621",
+  "unit_order": 621,
+  "source_path": "content/history/biographies/biographies.tex",
+  "blocks": 17,
+  "linguistic_blocks": [4],
+  "previous_segments": 9188,
+  "previous_terms": 310,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002"],
+  "consultation_phase": "జీవిత చరిత్రల అధ్యాయ శీర్షిక స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ చరిత్ర శీర్షిక, స్థానిక తర్క నేపథ్య సాక్షి పోల్చాం; పదకొండు జీవిత చరిత్ర దిగుమతి మార్గాలు, అధ్యాయ hook తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షి తర్క నేపథ్యం మాత్రమే; జీవిత చరిత్రలు అనే సాధారణ తెలుగు శీర్షికకు ప్రత్యేక చారిత్రక సాక్షి కాదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T311","source_term":"Biographies (chapter title)","telugu":"జీవిత చరిత్రలు","status":"localized_chapter_heading_eleven_import_paths_preserved","passages":["TE-P002"],"basis":"అధ్యాయ శీర్షిక తెలుగులోకి మారింది; పదకొండు వ్యక్తి ఫైలు దిగుమతులు, గుర్తింపు కోడ్, అధ్యాయ ముగింపు hook మారలేదు.","uncertainty":"శీర్షిక సాధారణ తెలుగు వాడుక; పేర్ల చారిత్రక వివరాల సమీక్ష ఈ డ్రైవర్‌లో లేదు.","borrowing":"Chapter codes his/bio and biography import paths remain unchanged."}
+}

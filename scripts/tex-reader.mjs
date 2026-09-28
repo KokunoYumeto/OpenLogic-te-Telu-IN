@@ -1,5 +1,5 @@
 import katex from 'katex';
-import {renderTeluguTokens} from './telugu-token-markup.mjs';
+import {renderTeluguTokens,tokenMap} from './telugu-token-markup.mjs';
 
 export const escapeHtml = text => text.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 export function realizeTokens(text, language='te') {
@@ -9,11 +9,28 @@ export function realizeTokens(text, language='te') {
     if(a)word=(cap?'A ':'a ')+word;
     return word;
   });
-  return renderTeluguTokens(text);
+  // The source-controlled token keys stay intact; a few Telugu title
+  // constructions need oblique forms before the TeX subset is parsed.
+  const contextual=text
+    .replaceAll('\\usetoken{P}{derivation}కు','\\usetoken{వ్యుత్పత్తులకు}{derivation}')
+    .replaceAll('\\usetoken{P}{sentence}ల','\\usetoken{వాక్యాల}{sentence}')
+    .replaceAll('\\usetoken{P}{sentence} యొక్క','\\usetoken{వాక్యాల}{sentence}')
+    .replaceAll('\\usetoken{P}{domain}లను','\\usetoken{వ్యక్తి క్షేత్రాలను}{domain}')
+    .replaceAll('\\usetoken{P}{formula} సమితి','\\usetoken{సూత్రాల}{formula} సమితి')
+    .replaceAll('\\printtoken{P}{sentence}ల','\\printtoken{వాక్యాల}{sentence}')
+    .replaceAll('\\printtoken{P}{structure}ల','\\printtoken{నిర్మాణాల}{structure}');
+  return renderTeluguTokens(contextual);
 }
 
 function inflectToken(form,key,language) {
-  if(language!=='en')return key;
+  if(language!=='en') {
+    if(/^[PpSs]$/u.test(form)) {
+      const entry=tokenMap[key];
+      if(!entry)throw new Error(`Missing Telugu reader token for ${key}`);
+      return /^[Pp]$/u.test(form)?entry.plural:entry.singular;
+    }
+    return form;
+  }
   const plural={tableau:'tableaux'}[key]??(key.endsWith('y')&&!/[aeiou]y$/iu.test(key)?key.slice(0,-1)+'ies':/(?:s|x|z|ch|sh)$/iu.test(key)?key+'es':key+'s');
   let value=/^[Pp]$/u.test(form)?plural:key;
   if(/^[PS]$/u.test(form))value=value.charAt(0).toUpperCase()+value.slice(1);
@@ -70,7 +87,9 @@ export function parseTex(source) {
         pos++;const end=source.indexOf('\\)',pos);if(end<0)throw new Error('Unclosed inline mathematics');
         out.push({type:'math',tex:source.slice(pos,end),display:false,start});pos=end+2;continue;
       }
-      const match=/^[\p{L}\p{M}]+\*?/u.exec(source.slice(pos));
+      // TeX control words stop before Telugu suffix text. Keep that suffix
+      // as ordinary prose (e.g. \MPను -> \MP + ను), not as a new macro.
+      const match=/^(?:[A-Za-z]+\*?|[\u0C00-\u0C7F]+)/u.exec(source.slice(pos));
       if(!match){
         const symbol=source[pos++]??'';
         const accents={'"':'\u0308',"'":'\u0301','`':'\u0300','^':'\u0302','~':'\u0303','=':'\u0304','.':'\u0307'};
@@ -82,6 +101,12 @@ export function parseTex(source) {
         continue;
       }
       const name=match[0];pos+=name.length;
+      if(name==='verb'){
+        const delimiter=source[pos++],end=source.indexOf(delimiter,pos);
+        if(!delimiter||end<0)throw new Error('Unclosed verbatim command at '+start);
+        out.push({type:'command',name,args:[source.slice(pos,end)],options:[],start});
+        pos=end+1;continue;
+      }
       const modifier=name==='indcase'&&source[pos]==='!'?(pos++,'!'):null;
       if(name==='end'){
         const env=group();if(env!==until)throw new Error('Mismatched environment '+env+' / '+until);
@@ -93,11 +118,17 @@ export function parseTex(source) {
           const end=source.indexOf('\\end{'+env+'}',pos);if(end<0)throw new Error('Unclosed math environment '+env);
           out.push({type:'math',tex:source.slice(pos,end),env,display:true,start});pos=end+env.length+6;continue;
         }
-        if(['defish','prooftree','derivation','oltableau','tableau','probtag','tabular','verbatim'].includes(env)){
-          const marker='\\end{'+env+'}',end=source.indexOf(marker,pos);
-          if(end<0)throw new Error('Unclosed raw environment '+env);
+        if(['defish','prooftree','derivation','oltableau','tableau','probtag','tabular','longtable','verbatim'].includes(env)){
+          const marker='\\end{'+env+'}',opener='\\begin{'+env+'}';
+          let depth=1,cursor=pos,end=-1;
+          while(depth){
+            const nextBegin=source.indexOf(opener,cursor),nextEnd=source.indexOf(marker,cursor);
+            if(nextEnd<0)throw new Error('Unclosed raw environment '+env);
+            if(nextBegin>=0&&nextBegin<nextEnd){depth++;cursor=nextBegin+opener.length;}
+            else{depth--;end=nextEnd;cursor=nextEnd+marker.length;}
+          }
           out.push({type:env==='tabular'?'tabular':env==='verbatim'?'verbatim':'formal',name:env,raw:source.slice(pos,end),start});
-          pos=end+marker.length;continue;
+          pos=cursor;continue;
         }
         let option=null,arg=null;space();
         if(source[pos]==='[')option=group('[',']');
@@ -110,12 +141,28 @@ export function parseTex(source) {
         const value='\\'+(literal?(pos+=literal[0].length,literal[0]):source[pos++]??'');
         out.push({type:'command',name,args:[value],options:[],start});continue;
       }
-      const arities={documentclass:1,olpart:2,olchapter:3,olfileid:3,olsection:1,section:1,subsection:1,olimport:1,ollabel:1,olref:1,Olref:1,oliflabeldef:3,olasset:1,readerdiagram:1,intertext:1,H:1,l:0,S:0,P:0,'ను':0,'MPని':0,'QRతో':0,'dotsను':0,'dotsకు':0,item:0,setcounter:2,DeclareRobustCommand:2,usetoken:2,printtoken:2,caption:1,emph:1,textit:1,textbf:1,textrm:1,texttt:1,textsc:1,footnote:1,href:2,url:1,gitissue:1,label:1,ref:1,cref:1,Cref:1,sourcecorrection:2,cite:1,citealt:1,citeauthor:1,citep:1,citet:1,citeyear:1,startycommalist:0,ycomma:0,indcase:3,'indcase*':3,Intro:1,Elim:1,LeftR:1,RightR:1,TRule:2,Weakening:0,Contraction:0,Exchange:0,Cut:0,FalseInt:0,FalseCl:0,MP:0,QR:0,Hyp:0,TAss:0,Log:1,article:1,Article:1,sFmla:2};
-      if(['OLEndPartHook','OLEndChapterHook','dots','ldots','par','noindent','textparagraph','centering','hfill','qquad','quad','small','large','Large','em'].includes(name)){out.push({type:'command',name,args:[],options:[],start});continue;}
+      const arities={documentclass:1,olpart:2,olchapter:3,olfileid:3,olsection:1,chapter:1,'chapter*':1,addcontentsline:3,section:1,subsection:1,olimport:1,ollabel:1,olref:1,Olref:1,oliflabeldef:3,olasset:1,readerdiagram:1,intertext:1,H:1,l:0,S:0,P:0,'ను':0,'MPని':0,'QRతో':0,'dotsను':0,'dotsకు':0,item:0,setcounter:2,DeclareRobustCommand:2,usetoken:2,printtoken:2,caption:1,emph:1,textit:1,textbf:1,textrm:1,texttt:1,textsc:1,footnote:1,href:2,url:1,gitissue:1,label:1,ref:1,cref:1,Cref:1,sourcecorrection:2,cite:1,citealt:1,citeauthor:1,citep:1,citet:1,citeyear:1,startycommalist:0,ycomma:0,indcase:3,'indcase*':3,Intro:1,Elim:1,LeftR:1,RightR:1,TRule:2,Weakening:0,Contraction:0,Exchange:0,Cut:0,FalseInt:0,FalseCl:0,MP:0,QR:0,Hyp:0,TAss:0,Log:1,article:1,Article:1,sFmla:2,ext:0};
+      Object.assign(arities,{LogCL:0,LogLuk:0,L:0,Box:0,lif:0,Ax:1,mTrue:1,mFalse:1,ST:0,RK:0,Nec:0,PL:0,Dual:0,CutCS:0,crefrange:2,eqref:1,olphoto:2,subfile:1,paragraph:1,citeyearpar:1,stageshier:0,stagesord:0,stagesacc:0,stagessucc:0,stagesinf:0,stagesinex:0,stagescofin:0,limofsize:0});
+      Object.assign(arities,{Axiom:0,AxiomC:1,Deduce:0,DeduceC:1,UnaryInf:0,UnaryInfC:1,BinaryInf:0,BinaryInfC:1,TrinaryInf:0,TrinaryInfC:1,RightLabel:1,LeftLabel:1,DisplayProof:0,shortDeduce:0,DischargeRule:2,Discharge:2,bottomAlignProof:0,insertBetweenHyps:1,LeftSubproofLabel:1,RightSubproofLabel:1});
+      Object.assign(arities,{tetoken:2,text:1,hbox:1,texorpdfstring:2,multirow:3,Entails:0,True:0,False:0,Undef:0,sigma:0,liff:0,pSat:0,ss:0,newline:0,noLine:0,iR:2});
+      if(['OLEndPartHook','OLEndChapterHook','clearpage','dots','ldots','par','noindent','textparagraph','centering','hfill','qquad','quad','small','large','Large','em'].includes(name)){out.push({type:'command',name,args:[],options:[],start});continue;}
       if(!(name in arities))throw new Error('Unsupported text command \\'+name+' at '+start);
       const options=[];space();while(source[pos]==='['){options.push(group('[',']'));space();}
       let args;
-      try{args=Array.from({length:arities[name]},()=>group());}
+      try{
+        if(name==='iR'&&source[pos]==='\\'){
+          args=[];
+          for(let i=0;i<2;i++){
+            space();const command=/^\\[A-Za-z]+/u.exec(source.slice(pos));
+            if(!command)throw new Error('Expected two inference-rule components');
+            args.push(command[0]);pos+=command[0].length;
+          }
+        }else if(['Intro','Elim','LeftR','RightR'].includes(name)&&source[pos]==='\\'){
+          const command=/^\\[A-Za-z]+/u.exec(source.slice(pos));
+          if(!command)throw new Error('Expected rule symbol');
+          args=[command[0]];pos+=command[0].length;
+        }else args=Array.from({length:arities[name]},()=>group());
+      }
       catch(error){throw new Error('Command \\'+name+' arguments at '+start+': '+error.message,{cause:error});}
       out.push({type:'command',name,args,options,modifier,start});
     }
@@ -138,7 +185,7 @@ const macros={
   '\\cardeq':'#1\\approx #2', '\\cardneq':'#1\\not\\approx #2',
   '\\closureofunder':'\\mathrm{clo}_{#1}(#2)', '\\equivrep':'[#1]_{#2}', '\\equivclass':'#1/_{#2}',
   '\\nicefrac':'{#1}/{#2}', '\\shoveleft':'#1','\\shoveright':'#1',
-  '\\True':'\\mathbf{T}', '\\False':'\\mathbf{F}',
+  '\\True':'\\mathbf{T}', '\\False':'\\mathbf{F}', '\\Undef':'\\mathbb{U}',
   '\\VDash':'\\mathrel{\\|\\!\\!-}',
   '\\Struct':'\\mathfrak{#1}', '\\Lang':'\\mathcal{#1}', '\\Log':'\\mathbf{#1}',
   '\\Obj':'\\mathsf{#1}', '\\Domain':'\\left|\\mathfrak{#1}\\right|',
@@ -175,12 +222,74 @@ const macros={
   '\\TMendtape':'\\triangleright', '\\TMblank':'0', '\\TMstroke':'1',
   '\\TMright':'R', '\\TMleft':'L', '\\TMstay':'N', '\\TMtrans':'#1,#2,#3',
   '\\subst':'#1/#2', '\\substruct':'\\subseteq', '\\Part':'\\mathsf{P}(#1,#2)',
-  '\\iddots':'⋰', '\\mbox':'\\text{#1}', '\\formula':'\\mathit{#1}'
+  '\\iddots':'⋰', '\\mbox':'\\text{#1}', '\\formula':'\\mathit{#1}',
+  '\\scode':'\\mathrm{c}_{#1}', '\\Gn':'{}^{\\#}#1{}^{\\#}',
+  '\\cardfont':'\\mathfrak{#1}', '\\pheight':'\\mathrm{ht}(#1)',
+  '\\depth':'\\mathrm{dp}(#1)', '\\cutrank':'\\mathrm{cr}(#1)',
+  '\\maxrank':'\\mathrm{mr}(#1)', '\\card':'\\left|#1\\right|',
+  '\\Ax':'\\mathrm{#1}', '\\FV':'\\mathrm{FV}(#1)',
+  '\\mClass':'\\mathcal{#1}', '\\setrank':'\\mathrm{rank}(#1)',
+  '\\ordtype':'\\mathrm{ord}(#1)', '\\ordsucc':'#1^{+}',
+  '\\cardsucc':'#1^{\\oplus}', '\\ordplus':'+', '\\ordtimes':'\\cdot',
+  '\\ordexpo':'#1^{(#2)}', '\\cardplus':'\\oplus', '\\cardtimes':'\\otimes',
+  '\\cardexpo':'#1^{#2}', '\\ordeq':'#1\\cong #2',
+  '\\ordneq':'#1\\ncong #2', '\\cardnless':'#1\\npreceq #2',
+  '\\nSequent':'\\mid', '\\Knows':'\\mathsf{K}',
+  '\\Prop':'[\\! [#2]\\!]_{\\mathfrak{#1}}',
+  '\\typeof':'#1^{#2}', '\\ST':'\\mathrm{ST}',
+  '\\CutCS':'\\mathrm{Cut}_{\\mathrm{CS}}',
+  '\\ZF':'\\mathbf{ZF}', '\\SP':'\\mathbf{SP}',
+  '\\ZFC':'\\mathbf{ZFC}', '\\Z':'\\mathbf{Z}',
+  '\\ZFminus':'\\mathbf{ZF}^{-}', '\\Zminus':'\\mathbf{Z}^{-}',
+  '\\Zr':'\\mathbf{Zr}', '\\LT':'\\mathbf{LT}',
+  '\\rotationsgroup':'R', '\\onesphere':'\\mathbf{S}',
+  '\\unitline':'\\text{L}', '\\unitsquare':'\\text{S}',
+  '\\LogCL':'\\mathbf{C}', '\\LogIL':'\\mathbf{I}',
+  '\\LogLuk':'\\mathbf{\\text{Ł}}', '\\LogGod':'\\mathbf{G}',
+  '\\LogKs':'\\mathbf{Ks}', '\\LogKw':'\\mathbf{Kw}',
+  '\\LogLP':'\\mathbf{LP}', '\\LogRM':'\\mathbf{RM}',
+  '\\LogHal':'\\mathbf{Hal}',
+  '\\pair':'\\langle #1,#2\\rangle', '\\proj':'\\pi_{#1}(#2)',
+  '\\aeq':'\\stackrel{\\alpha}{=}', '\\eqs':'\\equiv',
+  '\\cif':'\\Box\\!\\rightarrow', '\\strictif':'\\hookrightarrow',
+  '\\lnand':'\\uparrow', '\\lnor':'\\downarrow',
+  '\\maeh':'#1\\mathrel{;}#2', '\\supstrict':'\\operatorname{lsub}',
+  '\\bcd':'{#1}^{*{\\beta}}', '\\becd':'{#1}^{*{\\beta\\eta}}',
+  '\\disjointsum':'\\sqcup', '\\Top':'\\mathcal{#1}',
+  '\\Ftemp':'\\mathsf{F}', '\\Gtemp':'\\mathsf{G}',
+  '\\Htemp':'\\mathsf{H}', '\\Ptemp':'\\mathsf{P}',
+  '\\Since':'\\mathsf{S}', '\\Until':'\\mathsf{U}',
+  '\\EKnows':'\\mathsf{E}', '\\CKnows':'\\mathsf{C}',
+  '\\fregeext':'\\varepsilon #1\\,#2', '\\fregenum':'\\# #1\\,#2',
+  '\\canonord':'\\lhd', '\\ORProv':'\\mathsf{RProv}',
+  '\\ext':'\\mathit{ext}', '\\cheight':'\\mathrm{ch}(#1)',
+  '\\ande':'\\mathrm{p}_{#1}(#2)', '\\andi':'\\langle #1,#2\\rangle',
+  '\\dcase':'\\delta\\,#1\\,#2.#3\\,#4.#5',
+  '\\abort':'\\varepsilon^{#1}(#2)', '\\Cut':'\\mathrm{Cut}',
+  '\\ore':'\\mathrm{case}(#1,#2.#3,#4.#5)',
+  '\\Interior':'\\mathrm{Int}(#1)', '\\FalseInt':'\\bot_I',
+  '\\rlexless':'\\sphericalangle', '\\trcl':'\\mathrm{trcl}(#1)',
+  '\\lcm':'\\operatorname{lcm}', '\\leftrightarroweq':'\\leftrightarrow',
+  '\\isomorphic':'\\cong', '\\cutr':'\\mathrm{cr}(#1)',
+  '\\ori':'\\mathrm{in}_{#1}^{#2}(#3)',
+  '\\openTuple':'\\langle', '\\closeTuple':'\\rangle',
+  '\\mTrue':'#1', '\\Nec':'\\text{Nec}', '\\Dual':'\\text{Dual}',
+  '\\Taut':'\\text{Taut}', '\\boxright':'\\Box\\!\\rightarrow',
+  '\\TrmSOL':'\\mathrm{Trm}^2', '\\FrmSOL':'\\mathrm{Frm}^2',
+  '\\PL':'\\text{PL}'
 };
 const names={
  te:{defn:'నిర్వచనం',ex:'ఉదాహరణ',prop:'ప్రతిపాదన',thm:'సిద్ధాంతం',lem:'ఉపసిద్ధాంతం',cor:'పర్యవసానం',prob:'అభ్యాసం',proof:'నిరూపణ',figure:'పటం'},
  en:{defn:'Definition',ex:'Example',prop:'Proposition',thm:'Theorem',lem:'Lemma',cor:'Corollary',prob:'Exercise',proof:'Proof',figure:'Figure'}
 };
+function canonicalReferenceKey(key){
+  if(key==='pl:prp:axd:prop:prov-incons')return 'fol:axd:prv:prop:prov-incons';
+  if(key==='pl:prp:sem:prop:semanticalfacts')return 'pl:syn:sem:prop:semanticalfacts';
+  const match=/^fol:(seq|ntd):prv:prop:provability-(land-left|land-right|lor-left|lor-right|lif|mp)$/u.exec(key);
+  if(!match)return key;
+  const name=match[2]==='lor-left'||match[2]==='lor-right'?'lor':match[2]==='mp'?'lif-left':match[2];
+  return 'fol:'+match[1]+':ppr:prop:provability-'+name;
+}
 function readDelimited(source,index,open,close) {
   while(/\s/u.test(source[index]??''))index++;
   if(source[index]!==open)return null;
@@ -192,6 +301,22 @@ function readDelimited(source,index,open,close) {
   }
   if(depth)throw new Error('Unclosed '+open+' group in mathematics');
   return {value:source.slice(start,index-1),end:index};
+}
+function readMathArgument(source,index){
+  while(/\s/u.test(source[index]??''))index++;
+  const braced=readDelimited(source,index,'{','}');
+  if(braced)return braced;
+  if(source[index]==='\\'){
+    const command=/^\\(?:[\p{L}\p{M}]+|.)/u.exec(source.slice(index));
+    return command?{value:command[0],end:index+command[0].length}:null;
+  }
+  return index<source.length?{value:source[index],end:index+1}:null;
+}
+function mathTextWithInlineFormula(body){
+  const pieces=body.split(/(?<!\\)\$/u);
+  if(pieces.length===1)return '\\text{'+body+'}';
+  if(pieces.length%2===0)return null;
+  return pieces.map((piece,index)=>index%2?' {'+piece+'} ':'\\text{'+piece+'}').join('');
 }
 function rewriteMathCommand(source,name,handler) {
   const pattern=new RegExp('\\\\'+name+'(?![\\p{L}\\p{M}])','gu');
@@ -262,10 +387,59 @@ function normalizeMathTex(input) {
       const language=optional(source,index);return {text:base+(language?'(\\mathcal{'+language.value+'})':''),end:language?.end??index};
     });
     tex=rewriteMathCommand(tex,'pValue',(source,index)=>{
-      const assignment=mandatory(source,index);if(!assignment)return null;let cursor=assignment.end;
-      const formula=paren(source,cursor);if(formula)cursor=formula.end;
-      const logic=optional(source,cursor);if(logic)cursor=logic.end;
+      const assignment=readMathArgument(source,index);if(!assignment)return null;let cursor=assignment.end;
+      let formula=paren(source,cursor),logic=optional(source,cursor);
+      if(logic){cursor=logic.end;formula=paren(source,cursor);if(formula)cursor=formula.end;}
+      else if(formula){cursor=formula.end;logic=optional(source,cursor);if(logic)cursor=logic.end;}
       return {text:'\\overline{\\mathfrak{'+assignment.value+'}}'+(logic?'_{'+logic.value+'}':'')+(formula?'('+formula.value+')':''),end:cursor};
+    });
+    for(const [name,base] of [['tf','\\widetilde'],['iR',null]])tex=rewriteMathCommand(tex,name,(source,index)=>{
+      const first=readMathArgument(source,index);if(!first)return null;
+      let cursor=first.end,second=null;
+      if(name==='iR'){second=readMathArgument(source,cursor);if(!second)return null;cursor=second.end;}
+      const option=optional(source,cursor);if(option)cursor=option.end;
+      return {text:name==='tf'?base+'{'+first.value+'}'+(option?'_{'+option.value+'}':''):'{'+first.value+(option?'_{'+option.value+'}':'')+'}{'+second.value+'}',end:cursor};
+    });
+    for(const [name,arrow,label] of [
+      ['redone','\\xrightarrow',null],['aconvone','\\xrightarrow','\\alpha'],
+      ['bredone','\\xrightarrow','\\beta'],['eredone','\\xrightarrow','\\eta'],
+      ['beredone','\\xrightarrow','\\beta\\eta'],['xredone','\\xrightarrow','X'],
+      ['red','\\Longrightarrow',null],['aconv','\\Longrightarrow','\\alpha'],
+      ['bred','\\Longrightarrow','\\beta'],['ered','\\Longrightarrow','\\eta'],
+      ['bered','\\Longrightarrow','\\beta\\eta'],['xred','\\Longrightarrow','X'],
+      ['redpar','\\Longrightarrow',null],['bredpar','\\Longrightarrow','\\beta'],
+      ['beredpar','\\Longrightarrow','\\beta\\eta']
+    ])tex=rewriteMathCommand(tex,name,(source,index)=>{
+      const option=optional(source,index);
+      return {text:arrow+'{'+(option?.value??label??'')+'}',end:option?.end??index};
+    });
+    tex=rewriteMathCommand(tex,'equal',(source,index)=>{
+      const option=optional(source,index);
+      return {text:option?'\\stackrel{'+option.value+'}{=}':'=',end:option?.end??index};
+    });
+    for(const [name,base] of [['Prf','\\mathrm{Prf}'],['Refut','\\mathrm{Ref}'],['ORefut','\\mathsf{Ref}']])tex=rewriteMathCommand(tex,name,(source,index)=>{
+      const option=optional(source,index);return {text:base+(option?'_{'+option.value+'}':''),end:option?.end??index};
+    });
+    tex=rewriteMathCommand(tex,'ORProv',(source,index)=>{
+      const option=optional(source,index);return {text:'\\mathsf{RProv}'+(option?'_{'+option.value+'}':''),end:option?.end??index};
+    });
+    tex=rewriteMathCommand(tex,'rep',(source,index)=>{
+      const argument=mandatory(source,index);if(!argument)return null;
+      const option=optional(source,argument.end);
+      return {text:'\\underline{'+argument.value+'}'+(option?'_{'+option.value+'}':''),end:option?.end??argument.end};
+    });
+    tex=rewriteMathCommand(tex,'inj',(source,index)=>{
+      const option=optional(source,index),first=mandatory(source,option?.end??index);
+      if(!first)return null;const second=mandatory(source,first.end);if(!second)return null;
+      return {text:'\\iota_{'+first.value+'}'+(option?'^{'+option.value+'}':'')+'('+second.value+')',end:second.end};
+    });
+    for(const [name,base] of [['Sent','\\mathrm{Sent}'],['TrmSOL','\\mathrm{Trm}^2'],['FrmSOL','\\mathrm{Frm}^2'],['LogLuk','\\mathbf{\\text{Ł}}']])tex=rewriteMathCommand(tex,name,(source,index)=>{
+      const option=optional(source,index);
+      return {text:base+(option?'(\\mathcal{'+option.value+'})':''),end:option?.end??index};
+    });
+    tex=rewriteMathCommand(tex,'cd',(source,index)=>{
+      const option=optional(source,index);const argument=mandatory(source,option?.end??index);
+      return argument?{text:'{'+argument.value+'}^{*'+(option?'{'+option.value+'}':'')+'}',end:argument.end}:null;
     });
     tex=rewriteMathCommand(tex,'Mod',(source,index)=>{
       let cursor=index;const language=optional(source,cursor);if(language)cursor=language.end;
@@ -279,7 +453,7 @@ function normalizeMathTex(input) {
     });
     tex=rewriteMathCommand(tex,'tag',(source,index)=>{
       const body=mandatory(source,index);if(!body)return null;
-      const label=body.value.trim().replace(/^\$|\$$/gu,'');
+      const label=body.value.trim().replace(/(?<!\\)\$/gu,'');
       return {text:'\\qquad\\text{(}'+label+'\\text{)}',end:body.end};
     });
     tex=rewriteMathCommand(tex,'intertext',(source,index)=>{
@@ -287,8 +461,15 @@ function normalizeMathTex(input) {
       const prose=body.value
         .replace(/\\MPని/gu,'MPని').replace(/\\QRతో/gu,'QRతో')
         .replace(/\\MP(?:\{\})?(?![\p{L}\p{M}])/gu,'MP')
-        .replace(/\\QR(?:\{\})?(?![\p{L}\p{M}])/gu,'QR');
-      return {text:'\\text{'+prose+'}',end:body.end};
+        .replace(/\\QR(?:\{\})?(?![\p{L}\p{M}])/gu,'QR')
+        .replace(/\\RightR\{\\lnot\}/gu,'¬R')
+        .replace(/\\RightR\{\\lif\}/gu,'→R');
+      return {text:mathTextWithInlineFormula(prose)??'\\text{'+prose.replace(/(?<!\\)\$/gu,'')+'}',end:body.end};
+    });
+    for(const name of ['text','mbox','textrm'])tex=rewriteMathCommand(tex,name,(source,index)=>{
+      const body=mandatory(source,index);if(!body||!/(?<!\\)\$/u.test(body.value))return null;
+      const replacement=mathTextWithInlineFormula(body.value);
+      return replacement?{text:replacement,end:body.end}:null;
     });
     if(tex===before)break;
   }
@@ -296,7 +477,8 @@ function normalizeMathTex(input) {
     .replace(/\\begin\{array\}\{((?:[^{}]|\{[^{}]*\})*)\}/gu,(_,columns)=>'\\begin{array}{'+columns.replace(/@\{[^{}]*\}/gu,'')+'}')
     .replace(/\\centering\b/gu,'')
     .replace(/\\\//gu,'')
-    .replace(/!([A-Z])/gu,'{$1}');
+    .replace(/!([A-Z])/gu,'{$1}')
+    .replace(/(?<!\\)\$/gu,'');
 }
 export class Reader {
   constructor({language='te',labels=new Map(),knownLabels=new Set(),assets,citationData=new Map(),collect=false,prefix=''}){
@@ -323,18 +505,19 @@ export class Reader {
     return '<span class="anchor" id="'+escapeHtml(id)+'"></span>';
   }
   rewriteMathReferences(source){
-    for(const name of ['olref','Olref','ref','cref','Cref'])source=rewriteMathCommand(source,name,(text,index)=>{
+    for(const name of ['olref','Olref','ref','cref','Cref','eqref'])source=rewriteMathCommand(source,name,(text,index)=>{
       let cursor=index;const options=[];let option;
       while((option=readDelimited(text,cursor,'[',']'))){options.push(option.value);cursor=option.end;}
       const argument=readDelimited(text,cursor,'{','}');if(!argument)return null;cursor=argument.end;
-      const keys=['ref','cref','Cref'].includes(name)?argument.value.split(',').map(value=>value.trim()).filter(Boolean):[this.refKey(options,argument.value)];
+      const keys=['ref','cref','Cref','eqref'].includes(name)?argument.value.split(',').map(value=>value.trim()).filter(Boolean):[this.refKey(options,argument.value)];
       const numbers=keys.map(key=>{
-        const target=this.labels.get(key),knownMissing=!target&&this.knownLabels.has(key);
-        this.references.push({key,resolved:!!target,known_missing:knownMissing,context:'math'});
+        const targetKey=canonicalReferenceKey(key);
+        const target=this.labels.get(targetKey),knownMissing=!target&&this.knownLabels.has(key);
+        this.references.push({key,target_key:targetKey,resolved:!!target,known_missing:knownMissing,context:'math'});
         if(!target&&!knownMissing&&!this.collect)throw new Error('Unknown reference '+key);
         return String(target?.number??'[ref]');
       });
-      return {text:numbers.join(', '),end:cursor};
+      return {text:name==='eqref'?'('+numbers.join(', ')+')':numbers.join(', '),end:cursor};
     });
     return source;
   }
@@ -344,6 +527,9 @@ export class Reader {
       const number=this.chapter+'.'+(++this.equation),key=command==='label'?label:this.refKey([],label);
       anchors+=this.register(key,number);return '';
     });
+    if(/\\(?:AxiomC?|UnaryInfC?|BinaryInfC?|TrinaryInfC?|DeduceC|DisplayProof)\b/u.test(sourceWithoutLabels)){
+      return anchors+this.renderFormal(sourceWithoutLabels,'proof');
+    }
     let tex=normalizeMathTex(sourceWithoutLabels);
     if(node.env){
       const env=node.env.startsWith('multline')?'gathered':node.env.startsWith('align')||node.env.startsWith('eqnarray')?'aligned':node.env.startsWith('gather')?'gathered':null;
@@ -378,9 +564,9 @@ export class Reader {
       else if(n.type==='math'){const html=this.renderMath(n);if(n.display)block(html);else paragraph+=html;}
       else if(n.type==='environment'){
         const env=n.name;
-        if(['document','explain','digress','tagblock','center','quote','intro','editorial','table','history'].includes(env)){
+        if(['document','explain','digress','tagblock','center','quote','intro','editorial','table','sidewaysfigure','history','reading','conv'].includes(env)){
           const body=this.renderNodes(n.children);
-          block(env==='tagblock'?'<div class="source-tag" data-source-tag="'+escapeHtml(n.arg)+'">'+body+'</div>':env==='center'||env==='table'?'<div class="center">'+body+'</div>':env==='quote'?'<blockquote>'+body+'</blockquote>':env==='editorial'?'<aside class="editorial">'+body+'</aside>':env==='intro'?'<section class="introduction">'+body+'</section>':env==='history'?'<aside class="history">'+body+'</aside>':body);
+          block(env==='tagblock'?'<div class="source-tag" data-source-tag="'+escapeHtml(n.arg)+'">'+body+'</div>':env==='center'||env==='table'||env==='sidewaysfigure'?'<div class="center">'+body+'</div>':env==='quote'?'<blockquote>'+body+'</blockquote>':env==='editorial'||env==='reading'?'<aside class="'+env+'">'+body+'</aside>':env==='intro'?'<section class="introduction">'+body+'</section>':env==='history'?'<aside class="history">'+body+'</aside>':env==='conv'?'<div class="conversation">'+body+'</div>':body);
         }else if(env==='enumerate'||env==='itemize'){
           const items=[];let current=null,listStart=null;
           for(const child of n.children){
@@ -400,11 +586,11 @@ export class Reader {
           const tag=env==='enumerate'?'ol':'ul';
           const startAttr=tag==='ol'&&listStart!==null?' start="'+listStart+'"':'';
           block('<'+tag+startAttr+'>'+items.map(item=>'<li>'+(item.option?'<span class="item-label">'+this.inline(item.option)+'</span> ':'')+this.renderNodes(item.nodes)+'</li>').join('')+'</'+tag+'>');
-        }else if(['defn','ex','prop','thm','lem','cor','prob','rem'].includes(env)){
+        }else if(['defn','ex','prop','thm','lem','cor','prob','rem','axiom'].includes(env)){
           const count=env==='prob'?++this.problem:++this.statement;
           const number=[this.chapter,this.section,count].join('.');
           const previous=this.currentRef;this.currentRef={number,id:''};
-          const label=env==='rem'?(this.language==='te'?'వ్యాఖ్య':'Remark'):names[this.language][env];
+          const label=env==='rem'?(this.language==='te'?'వ్యాఖ్య':'Remark'):env==='axiom'?(this.language==='te'?'స్వయంసిద్ధం':'Axiom'):names[this.language][env];
           const title=label+' '+number+(n.option?' ('+this.inline(n.option)+')':'');
           let body;
           if(n.children.some(child=>child.type==='command'&&child.name==='item')){
@@ -425,7 +611,8 @@ export class Reader {
           block('<figure>'+body+'</figure>');
         }else throw new Error('Unsupported prose environment '+env);
       }else if(n.type==='tabular'){
-        block(this.renderTabular(n.raw));
+        try{block(this.renderTabular(n.raw));}
+        catch(error){if(error.message!=='Inconsistent tabular row width')throw error;block(this.renderFormal(n.raw,'tabular'));}
       }else if(n.type==='formal'){
         block(this.renderFormal(n.raw,n.name));
       }else if(n.type==='verbatim'){
@@ -433,7 +620,8 @@ export class Reader {
       }else if(n.type==='command'){
         this.commands[n.name]=(this.commands[n.name]??0)+1;
         const [a,b,c]=n.args;
-        if(['documentclass','olimport','OLEndPartHook','OLEndChapterHook','DeclareRobustCommand'].includes(n.name))continue;
+        if(['documentclass','olimport','subfile','addcontentsline','clearpage','noLine','OLEndPartHook','OLEndChapterHook','DeclareRobustCommand'].includes(n.name))continue;
+        if(n.name==='chapter'||n.name==='chapter*'){block('<h2 class="chapter">'+this.inline(a)+'</h2>');continue;}
         if(n.name==='olfileid'){this.identity=[a,b,c];continue;}
         if(n.name==='olpart'){
           this.part++;this.identity=[a,'',''];
@@ -448,24 +636,42 @@ export class Reader {
           const key=this.headingKey(),number=this.chapter+'.'+this.section;
           this.currentRef={number,id:key};
           block(this.register(key,number)+'<h3>'+number+' '+this.inline(a)+'</h3>');
-        }else if(n.name==='section'||n.name==='subsection'){
+        }else if(n.name==='section'||n.name==='subsection'||n.name==='paragraph'){
           block('<'+(n.name==='section'?'h4':'h5')+' class="'+n.name+'">'+this.inline(a)+'</'+(n.name==='section'?'h4':'h5')+'>');
         }else if(n.name==='ollabel'||n.name==='label'){
           const key=n.name==='label'?a:this.refKey([],a);
           paragraph+=this.register(key,this.currentRef.number);
-        }else if(['olref','Olref','ref','cref','Cref'].includes(n.name)){
-          const keys=['ref','cref','Cref'].includes(n.name)?a.split(',').map(value=>value.trim()).filter(Boolean):[this.refKey(n.options,a)];
+        }else if(['olref','Olref','ref','cref','Cref','eqref','crefrange'].includes(n.name)){
+          const keys=n.name==='crefrange'?[a,b]:['ref','cref','Cref','eqref'].includes(n.name)?a.split(',').map(value=>value.trim()).filter(Boolean):[this.refKey(n.options,a)];
+          const open=n.name==='eqref'?'(':'',close=n.name==='eqref'?')':'';
+          paragraph+=open;
           paragraph+=keys.map(key=>{
-            const target=this.labels.get(key),knownMissing=!target&&this.knownLabels.has(key);
-            this.references.push({key,resolved:!!target,known_missing:knownMissing,context:'prose'});
+            const targetKey=canonicalReferenceKey(key);
+            const target=this.labels.get(targetKey),knownMissing=!target&&this.knownLabels.has(key);
+            this.references.push({key,target_key:targetKey,resolved:!!target,known_missing:knownMissing,context:'prose'});
             if(!target&&!knownMissing&&!this.collect)throw new Error('Unknown reference '+key);
             if(target)return '<a href="#'+encodeURIComponent(this.prefix+target.id)+'">'+escapeHtml(target.number)+'</a>';
             return '<span class="reference-unavailable" data-reference="'+escapeHtml(key)+'" title="'+escapeHtml(key)+'">'+(this.language==='te'?'[బాహ్య సూచన]':'[external reference]')+'</span>';
-          }).join(', ');
+          }).join(n.name==='crefrange'?'–':', ');
+          paragraph+=close;
         }else if(n.name==='oliflabeldef'){
           const present=this.labels.has(a);
           this.conditions.push({label:a,selected:present?'true':'false',true_source:b,false_source:c});
           paragraph+=this.inline(present?b:c);
+        }else if(n.name==='tetoken'){
+          paragraph+=this.inline(a);
+        }else if(['text','hbox','texorpdfstring','multirow'].includes(n.name)){
+          paragraph+=this.inline(n.name==='multirow'?c:a);
+        }else if(n.name==='ss'){
+          paragraph+='ß';this.textRuns.push('ß');
+        }else if(n.name==='newline'){
+          paragraph+='<br>';this.textRuns.push('\n');
+        }else if(['Entails','True','False','Undef','sigma','liff'].includes(n.name)){
+          paragraph+=this.renderMath({tex:'\\'+n.name,display:false});
+        }else if(n.name==='pSat'){
+          paragraph+='<code>\\pSat</code>';this.textRuns.push('\\pSat');
+        }else if(n.name==='iR'){
+          paragraph+=this.renderMath({tex:'\\mathrm{'+a.replaceAll('\\','')+'}\\,'+'\\mathrm{'+b.replaceAll('\\','')+'}',display:false});
         }else if(['emph','textit','textbf','textrm','texttt','textsc'].includes(n.name)){
           const tag={emph:'em',textit:'i',textbf:'strong',textrm:'span',texttt:'code',textsc:'span'}[n.name];
           paragraph+='<'+tag+(n.name==='textsc'?' class="small-caps"':'')+'>'+this.inline(a)+'</'+tag+'>';
@@ -502,6 +708,45 @@ export class Reader {
           const value=this.language==='te'?'పరికల్పన':'Assumption';paragraph+=escapeHtml(value);this.textRuns.push(value);
         }else if(n.name==='Log'){
           paragraph+=this.renderMath({tex:`\\mathbf{${a}}${n.options[0]?`_{${n.options[0]}}`:''}`,display:false});
+        }else if(n.name==='ext'){
+          paragraph+=this.renderMath({tex:'\\mathrm{ext}',display:false});
+        }else if(n.name==='LogCL'){
+          paragraph+=this.renderMath({tex:'\\mathbf{C}',display:false});
+        }else if(n.name==='LogLuk'){
+          paragraph+=this.renderMath({tex:'\\mathbf{Ł}'+(n.options[0]?'_{'+n.options[0]+'}':''),display:false});
+        }else if(n.name==='Box'){
+          paragraph+=this.renderMath({tex:'\\Box',display:false});
+        }else if(n.name==='lif'){
+          paragraph+=this.renderMath({tex:'\\rightarrow',display:false});
+        }else if(['AxiomC','DeduceC','UnaryInfC','BinaryInfC','TrinaryInfC'].includes(n.name)){
+          block('<div class="formal-step">'+this.inline(a)+'</div>');
+        }else if(['RightLabel','LeftLabel','LeftSubproofLabel','RightSubproofLabel'].includes(n.name)){
+          paragraph+='<span class="formal-label">'+this.inline(a)+'</span>';
+        }else if(n.name==='DischargeRule'){
+          paragraph+='<span class="formal-label">'+this.inline(a)+'</span>';
+        }else if(n.name==='DisplayProof'){
+          block('<hr class="formal-end">');
+        }else if(['Axiom','Deduce','UnaryInf','BinaryInf','TrinaryInf','shortDeduce','bottomAlignProof','insertBetweenHyps','Discharge'].includes(n.name)){
+          continue;
+        }else if(n.name==='Ax'){
+          paragraph+=this.renderMath({tex:'\\mathrm{'+a+'}',display:false});
+        }else if(n.name==='mTrue'||n.name==='mFalse'){
+          paragraph+=this.renderMath({tex:n.name==='mTrue'?a:'\\lnot '+a,display:false});
+        }else if(n.name==='ST'||n.name==='CutCS'){
+          paragraph+=this.renderMath({tex:n.name==='ST'?'\\mathrm{ST}':'\\mathrm{Cut}_{\\mathrm{CS}}',display:false});
+        }else if(['RK','Nec','PL','Dual'].includes(n.name)){
+          paragraph+='<span class="small-caps">'+n.name.toLowerCase()+'</span>';
+        }else if(n.name==='L'){
+          paragraph+='Ł';this.textRuns.push('Ł');
+        }else if(n.name==='olphoto'){
+          block('<figure class="portrait-unavailable"><figcaption>'+this.inline(b)+'</figcaption></figure>');
+        }else if(n.name==='verb'){
+          paragraph+='<code>'+escapeHtml(a)+'</code>';this.textRuns.push(a);
+        }else if(['stageshier','stagesord','stagesacc','stagessucc','stagesinf','stagesinex','stagescofin','limofsize'].includes(n.name)){
+          const labels=this.language==='te'
+            ?{stageshier:'దశలే కీలకం',stagesord:'దశలు క్రమంలో ఉంటాయి',stagesacc:'దశలు సంచితం అవుతాయి',stagessucc:'దశలు కొనసాగుతాయి',stagesinf:'దశలు అనంతాన్ని చేరుతాయి',stagesinex:'దశలు ఎన్నటికీ తీరిపోవు',stagescofin:'దశలు సూపర్-సహాంత్యమైనవి',limofsize:'పరిమాణ పరిమితి'}
+            :{stageshier:'Stages-are-key',stagesord:'Stages-are-ordered',stagesacc:'Stages-accumulate',stagessucc:'Stages-keep-going',stagesinf:'Stages-hit-infinity',stagesinex:'Stages-are-inexhaustible',stagescofin:'Stages-are-super-cofinal',limofsize:'Limitation-of-size'};
+          paragraph+='<em>'+escapeHtml(labels[n.name])+'</em>';this.textRuns.push(labels[n.name]);
         }else if(n.name==='article'||n.name==='Article'){
           const value=this.language==='en'?(n.name==='Article'?'A ':'a '):'';paragraph+=value;this.textRuns.push(value);
         }else if(n.name==='sFmla'){
@@ -540,7 +785,7 @@ export class Reader {
         }else if(n.name==='gitissue'){
           if(!/^\d+$/u.test(a))throw new Error('Invalid issue number');
           paragraph+='<a href="https://github.com/OpenLogicProject/OpenLogic/issues/'+a+'">issue #'+a+'</a>';
-        }else if(['cite','citealt','citeauthor','citep','citet','citeyear'].includes(n.name)){
+        }else if(['cite','citealt','citeauthor','citep','citet','citeyear','citeyearpar'].includes(n.name)){
           const keys=a.split(',').map(value=>value.trim()).filter(Boolean);
           if(!keys.length)throw new Error('Empty citation');
           const locator=n.options.length?this.inline(n.options.join('; ')):'';
@@ -552,7 +797,7 @@ export class Reader {
             const family=value=>value.includes(',')?value.split(',',1)[0].trim():value.split(/\s+/u).at(-1);
             const author=contributors.length>2?family(contributors[0])+' et al.':contributors.length===2?family(contributors[0])+' and '+family(contributors[1]):family(contributors[0]??key);
             const year=record.year||'n.d.';
-            const label=n.name==='citeauthor'?author:n.name==='citeyear'?year:author+', '+year;
+            const label=n.name==='citeauthor'?author:['citeyear','citeyearpar'].includes(n.name)?year:author+', '+year;
             return '<a class="citation" data-citation-command="'+escapeHtml(n.name)+'" data-citation-key="'+escapeHtml(key)+'" href="#bib-'+encodeURIComponent(key)+'">'+escapeHtml(label)+'</a>';
           }).join('; ')+(locator?', '+locator:'');
           paragraph+=n.name==='citet'?links.replace(/, ([^,;<]+)(?=<\/a>)/,' ($1)'):n.name==='citealt'||n.name==='citeauthor'||n.name==='citeyear'?links:'('+links+')';
@@ -609,6 +854,15 @@ export class Reader {
   }
 
   renderFormal(raw,name){
+    let anchors='';
+    const labelMatches=[...raw.matchAll(/\\(ollabel|label)\{([^{}]+)\}/gu)];
+    const captionCommand=/\\caption\s*\{/u.exec(raw);
+    const caption=captionCommand?readDelimited(raw,captionCommand.index+'\\caption'.length,'{','}')?.value:null;
+    const number=caption||labelMatches.length?this.chapter+'.'+(++this.figure):'';
+    for(const match of labelMatches){
+      const key=match[1]==='label'?match[2]:this.refKey([],match[2]);
+      anchors+=this.register(key,number);
+    }
     const expressions=[];
     const add=tex=>{const cleaned=tex.trim().replace(/^\$|\$$/gu,'');if(cleaned)expressions.push(cleaned);};
     let pos=0;
@@ -646,8 +900,8 @@ export class Reader {
       }
       pos++;
     }
-    const title=this.language==='te'?'ఆధికారిక నిరూపణ ప్రదర్శన':'Formal proof display';
+    const title=caption?this.inline(caption):(this.language==='te'?'ఆధికారిక నిరూపణ ప్రదర్శన':'Formal proof display');
     const steps=expressions.length?'<ol class="formal-steps">'+expressions.map(tex=>'<li>'+this.renderMath({tex,display:true})+'</li>').join('')+'</ol>':'';
-    return '<figure class="formal-display"><figcaption>'+title+'</figcaption>'+steps+'<details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
+    return anchors+'<figure class="formal-display"><figcaption>'+title+'</figcaption>'+steps+'<details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
   }
 }

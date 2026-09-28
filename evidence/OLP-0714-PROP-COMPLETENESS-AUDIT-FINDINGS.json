@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPROPCOMPLETENESS-20260928",
+  "unit_id": "OLP-0714",
+  "source_path": "content/propositional-logic/syntax-and-semantics/completeness.tex",
+  "source_sha256": "9222c1a4bfe25f71a47e9d2447846c67dd8f162e10b394d3a8f9185f30cc6dfe",
+  "findings": []
+}

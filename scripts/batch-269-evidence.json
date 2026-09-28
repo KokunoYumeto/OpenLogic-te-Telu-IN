@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "269",
+  "unit_id": "OLP-0620",
+  "unit_order": 620,
+  "source_path": "content/history/history.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4],
+  "previous_segments": 9180,
+  "previous_terms": 309,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002"],
+  "consultation_phase": "చరిత్ర భాగ శీర్షిక స్థిర మూలం, తెలుగు లక్ష్యం, ముందరి చరిత్ర వాడుక, స్థానిక తర్క నేపథ్య సాక్షి పోల్చాం; రెండు అధ్యాయ దిగుమతి మార్గాలు, భాగ hook యథాతథంగా తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షి తర్క నేపథ్యం మాత్రమే; చరిత్ర అనే సాధారణ తెలుగు శీర్షికకు ప్రత్యేక చారిత్రక సాక్షి అని చెప్పడం లేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T310","source_term":"History (part title)","telugu":"చరిత్ర","status":"localized_part_heading_import_paths_preserved","passages":["TE-P002"],"basis":"భాగ శీర్షిక తెలుగులోకి మారింది; జీవిత చరిత్రలు, సమితి సిద్ధాంతం దిగుమతులు మరియు భాగ ముగింపు hook మారలేదు.","uncertainty":"శీర్షిక సాధారణ తెలుగు వాడుక; స్థానిక సాక్షి పుస్తక విభాగ నిర్మాణానికి ప్రత్యక్ష ఆధారం కాదు.","borrowing":"Part code his and import paths remain unchanged."}
+}

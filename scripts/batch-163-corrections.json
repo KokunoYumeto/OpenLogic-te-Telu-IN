@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0514",
+  "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+  "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+  "audit_id": "OLTEINTTABPRF-20260927",
+  "audit_review_path": "evidence/OLP-0514-INTUITIONISTIC-TABLEAUX-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "af55782f925ecdc887d55cb1b5b71538d2c39c1a0fb5311878bd9633fd4cf3de",
+  "audit_findings_path": "evidence/OLP-0514-INTUITIONISTIC-TABLEAUX-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "08c6c7c48c0272dd5f2f713a74618c608354141f75e4a7bd6ea107dcb111838c",
+  "previous_corrections": 469,
+  "treatments": {
+    "OLTEINTTABPRF-001": {"target_line": 44, "body_treatment": "అసత్య సంయోగ విసర్జన రెండు శాఖల కారణ సూచికలను సంబంధం లేని నాలుగో పంక్తి బదులు పూర్వాపేక్ష ఉన్న ఏడో పంక్తికి మార్చి ఉదాహరణ పక్కనే ప్రకటించాం."}
+  }
+}

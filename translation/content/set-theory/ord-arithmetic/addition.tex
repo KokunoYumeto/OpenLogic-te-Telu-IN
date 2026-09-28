@@ -1,0 +1,159 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{add}
+\olsection{క్రమసంఖ్య కూడిక}
+
+$\alpha$, $\beta$లను కూడాలనుకుందాం. $\alpha$ యొక్క ఒక ప్రతికి వెంటనే $\beta$ యొక్క ఒక ప్రతిని ఉంచవచ్చు. (\olref[ordinals][basic]{ordinalsaresubsets} ప్రకారం $\alpha
+\subseteq \beta$ లేదా $\beta \subseteq \alpha$ అని తెలుసు కాబట్టి \emph{ప్రతులు} తీసుకోవాలి.) దీని సహజ ఫలితం: ముందుగా $\alpha$-శ్రేణి దశలు, \emph{తర్వాత} $\beta$-శ్రేణి దశలు సాగుతాయి. వచ్చిన శ్రేణి సుక్రమబద్ధమైనది; కాబట్టి \olref[ordinals][ordtype]{thmOrdinalRepresentation} ప్రకారం అది ఒక (ఏకైక) క్రమసంఖ్యకు సమరూపం. ఆ క్రమసంఖ్యను $\alpha$, $\beta$ల \emph{మొత్తం}గా భావించవచ్చు.
+
+క్రమసంఖ్య కూడిక వెనుక ఉన్న సహజ భావన అదే. దాన్ని ఖచ్చితంగా నిర్వచించడానికి, సమితుల \emph{ప్రతులు} తీసుకోవడమే మొదలు. ఏ వస్తువు ఎక్కడి నుండి వచ్చిందో గుర్తించడానికి $0$, $1$ అనే గుర్తులను వాడతాం:
+
+\begin{defn}\ollabel{defdissum}
+$A$, $B$ల \emph{విచ్ఛిన్న సమ్మేళనం} $A \disjointsum B = (A\times
+\{0\}) \cup (B \times \{1\})$.
+\end{defn}
+
+తరువాత క్రమసంఖ్యల యుగ్మాలపై ఒక క్రమాన్ని నిర్వచిద్దాం:
+
+\begin{defn}
+ఏ క్రమసంఖ్యలు $\alpha_1, \alpha_2, \beta_1, \beta_2$కైనా ఇలా ఉంచుదాం:
+\begin{align*}
+	\tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ అప్పుడూ అప్పుడే }&
+	\text{ఒకవేళ $\alpha_2 \in \beta_2$}\\
+	& \text{లేదా $\alpha_2 = \beta_2$, $\alpha_1 \in \beta_1$ రెండూ అయితే}
+\end{align*}
+\end{defn}
+
+ఇది \emph{విలోమ నిఘంటు క్రమం}, ఎందుకంటే ముందుగా రెండవ భాగాన్ని, తరువాత మొదటి భాగాన్ని బట్టి క్రమపరుస్తాం. ఇప్పుడు $\alpha$ ప్రతిని అనుసరించి $\beta$ ప్రతిని ఉంచితే వచ్చే క్రమరకాన్ని $\alpha \ordplus \beta$గా నిర్వచించాలనుకున్నామని గుర్తుచేసుకోండి. అందుకు:
+
+\begin{defn}\ollabel{defordplus}
+ఏ క్రమసంఖ్యలు $\alpha$, $\beta$కైనా వాటి మొత్తం $\alpha \ordplus
+\beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$.
+\end{defn}
+\noindent
+ఇక్కడ సంకేతాన్ని కొద్దిగా సడలించి వాడామని గమనించండి; ఖచ్చితంగా అయితే ``$\rlexless$'' బదులు ``$\Setabs{\tuple{x,y}\in \alpha\disjointsum\beta}{x \rlexless y}$'' అని రాయాలి. సంక్షిప్తత కోసం తరువాత కూడా ఈ సడలింపును వాడతాం.
+
+ఈ కింది ఫలితం, \olref[ordinals][ordtype]{thmOrdinalRepresentation}తో కలిసి, మన నిర్వచనం సరిగా ఉందని నిర్ధారిస్తుంది:
+
+\begin{lem}\ollabel{ordsumlessiswo}
+ఏ క్రమసంఖ్యలు $\alpha$, $\beta$కైనా $\tuple{\alpha \disjointsum \beta, \rlexless}$ ఒక సుక్రమం.
+\end{lem}
+
+\begin{proof}
+$\alpha \disjointsum \beta$పై $\rlexless$ సంపర్క ధర్మం గలదని స్పష్టం. అది సుపునాది అని చూపడానికి శూన్యం కాని $X \subseteq \alpha
+\disjointsum \beta$ను స్థిరపరుచుకుందాం. రెండవ నిరూపకం సాధ్యమైనంత చిన్నదిగా ఉన్న $X$ ఉపసమితిని $Y$గా ఉంచుదాం; అంటే $Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$. ఇప్పుడు $Y$లో మొదటి నిరూపకం కనిష్ఠమైన మూలకాన్ని ఎంచుకుందాం.
+\end{proof}
+\noindent
+కాబట్టి క్రమసంఖ్య కూడికకు స్పష్టమైన మంచి నిర్వచనం ఉంది. ఒక ఊహించినట్లే ఉండే వాస్తవం ఇది (\olref[z][infinity-again]{defnomega} ప్రకారం $1 = \{0\}$ అని గుర్తుంచుకోండి):
+\begin{prop}
+ఏ క్రమసంఖ్య $\alpha$కైనా $\alpha \ordplus  1 = \ordsucc{\alpha}$.
+\end{prop}
+
+\begin{proof}
+$\ordsucc{\alpha} = \alpha \cup
+\{\alpha\}$ నుండి $\alpha\disjointsum1 = (\alpha \times \{0\})
+\cup (\{0\} \times \{1\})$కు సమరూపత ప్రమేయం $f$ను పరిగణించండి; $\gamma \in \alpha$కు $f(\gamma) =
+\tuple{\gamma, 0}$, అలాగే $f(\alpha) = \tuple{0,
+1}$ అని ఇచ్చాం.
+\sourcecorrection{OLTESTORDADD-001}{మూల సమరూపత నిరూపణలో గుర్తులు జతచేసిన రెండు ఉపసమితుల మధ్య మళ్లీ విచ్ఛిన్న సమ్మేళనం సంకేతం వాడారు; నిర్వచనం ప్రకారం అక్కడ సాధారణ సమ్మేళనం కావాలి. దాన్ని సరిచేశాం.}
+\end{proof}
+\noindent
+అంతేకాక, కూడిక కొన్ని పునరావృత్త షరతులను పాటిస్తుందని సులభంగా చూపవచ్చు:
+
+\begin{lem}\ollabel{ordadditionrecursion}
+ఏ క్రమసంఖ్యలు $\alpha, \beta$కైనా:
+\begin{align*}
+	\alpha\ordplus 0 &= \alpha\\
+	\alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
+	\alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{$\beta $ సీమా క్రమసంఖ్య అయితే}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+ఒక్కో సందర్భాన్ని తనిఖీ చేద్దాం; మొదట:
+\begin{align*}
+	\alpha \ordplus  0
+	& = \ordtype{(\alpha \times \{0\}) \cup (0 \times \{1\}), \rlexless} \\
+	&= \ordtype{\alpha \times \{0\}, \rlexless}\\
+	&= \alpha\\
+	\alpha \ordplus (\beta \ordplus  1)
+	%&= \ordtype{(\alpha\times \{0\}) \cup (\ordtype{\beta \ordplus  1}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\ordsucc{\beta}\times \{1\}), \rlexless} \\
+	&= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
+	&= (\alpha \ordplus  \beta) \ordplus  1
+\end{align*}
+\sourcecorrection{OLTESTORDADD-002}{మూల శూన్య కూడిక లెక్కలో $0\times\{1\}$కు బదులు $\{0\}$ను పెట్టారు; $0$ శూన్య సమితి కాబట్టి ఆ గుణిత సమితి కూడా శూన్యం. తప్పు అదనపు మూలకాన్ని తొలగించాం.}
+ఇప్పుడు $\beta \neq \emptyset$ సీమా క్రమసంఖ్య అనుకుందాం. $\delta < \beta$ అయితే $\delta\ordplus 1 < \beta$ కూడా; కాబట్టి $\alpha \ordplus  \delta$, $\alpha \ordplus  \beta$ యొక్క సరియైన ఆరంభ ఖండం. కనుక $\alpha
+\ordplus  \beta$, $X = \Setabs{\alpha
+\ordplus  \delta}{\delta < \beta}$కు కఠిన పైహద్దు. అంతేకాక $\alpha \leq \gamma <
+\alpha \ordplus  \beta$ అయితే ఏదో $\delta < \beta$కు $\gamma = \alpha \ordplus
+\delta$ అని స్పష్టం. అందువల్ల $\alpha \ordplus  \beta =
+\supstrict_{\delta< \beta}(\alpha\ordplus \delta)$.
+\end{proof}
+
+ఇక్కడ ఒక ఆశ్చర్యకరమైన విషయం ఉంది. క్రమసంఖ్య కూడికను నిర్వచించడానికి, బదులుగా అతిపరిమిత పునరావృత్తి సిద్ధాంతాన్ని వాడి, \olref{ordadditionrecursion}లోని పునరావృత్త సమీకరణాలనే నేరుగా ఇవ్వవచ్చు (అయితే ``$\beta \ordplus 1$'' బదులు ``$\ordsucc{\beta}$'' వాడాలి).
+
+కాబట్టి క్రమసంఖ్యలపై క్రియలను నిర్వచించడానికి రెండు మార్గాలు ఉన్నాయి. ఒక సుక్రమబద్ధ సమితిని స్పష్టంగా నిర్మించి దాని క్రమరకాన్ని తీసుకుని వాటిని \emph{నిర్మాణాత్మకంగా} నిర్వచించవచ్చు. లేదా పునరావృత్త సమీకరణాలను ఇచ్చి \emph{పునరావృత్తంగా} నిర్వచించవచ్చు. సరిగ్గా చేస్తే ఫలితం ఒకటే. ఎందుకంటే \olref[ordinals][ordtype]{thmOrdinalRepresentation} ప్రకారం ఆ సమీకరణాలు \emph{ఏకైక} క్రమసంఖ్యలను నిర్ణయిస్తాయి.
+
+చాలా విధాలుగా క్రమసంఖ్య అంకగణితం సహజ సంఖ్యల కూడికలాగే ప్రవర్తిస్తుంది. ఉదాహరణకు, ఈ కింది దాన్ని నిరూపించవచ్చు:
+
+\begin{lem}\ollabel{ordinaladditionisnice}
+$\alpha, \beta, \gamma$ క్రమసంఖ్యలు అయితే:
+\begin{enumerate}
+	\item\ollabel{ordaddition1} $\beta < \gamma$ అయితే $\alpha
+	\ordplus  \beta < \alpha \ordplus  \gamma$
+	\item\ollabel{ordaddition2} $\alpha \ordplus  \beta =
+	\alpha\ordplus \gamma$ అయితే $\beta = \gamma$
+	\item\ollabel{ordaddition3} $\alpha \ordplus  (\beta \ordplus
+	\gamma) = (\alpha \ordplus  \beta) \ordplus  \gamma$, అంటే కూడిక సహచర్య ధర్మం గలది
+	\item\ollabel{ordaddition4} $\alpha \leq \beta$ అయితే $\alpha
+	\ordplus  \gamma \leq \beta \ordplus \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+\olref{ordaddition3}ను నిరూపించి మిగతావి అభ్యాసానికి వదిలేస్తాం. \olref{ordadditionrecursion}ను వాడి $\gamma$పై సరళ అతిపరిమిత ఆగమనం చేస్తాం. $\gamma = 0$ అయితే:
+\[
+(\alpha \ordplus  \beta) \ordplus  0 = \alpha \ordplus  \beta  = \alpha \ordplus  (\beta \ordplus  0)
+\]
+$\gamma = \delta\ordplus 1$ అయితే ఆగమన ఊహగా $(\alpha
+\ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
+\delta)$ అనుకుందాం; ఇప్పుడు \olref{ordadditionrecursion}ను మూడుసార్లు వాడితే:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  (\delta \ordplus  1) & = ((\alpha \ordplus  \beta) \ordplus  \delta)\ordplus 1\\
+	& = (\alpha \ordplus  (\beta \ordplus  \delta)) \ordplus  1\\
+	& = \alpha \ordplus  ((\beta \ordplus  \delta)\ordplus 1)\\
+	& = \alpha \ordplus  (\beta \ordplus  (\delta\ordplus 1))
+\end{align*}
+$\gamma$ సీమా క్రమసంఖ్య అయితే, $\delta \in \gamma$కు $(\alpha \ordplus  \beta) \ordplus  \delta =
+\alpha \ordplus  (\beta \ordplus  \delta)$ అని ఆగమన ఊహ అనుకుందాం; అప్పుడు:
+\begin{align*}
+	(\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
+	&= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\
+	&= \alpha \ordplus  \supstrict_{\delta < \gamma}(\beta \ordplus  \delta)\\
+	& = \alpha \ordplus  (\beta \ordplus  \gamma)
+\end{align*}
+\end{proof}
+
+\begin{prob}
+\olref[sth][ord-arithmetic][add]{ordinaladditionisnice}లోని మిగిలిన వాదనలను నిరూపించండి.
+\end{prob}
+
+ఈ విధాలుగా క్రమసంఖ్య కూడిక సుపరిచితంగా అనిపించాలి. అయితే సహజ సంఖ్యల కూడికతో పోలిస్తే ఒక ముఖ్యమైన విషయంలో అది \emph{భిన్నం}.
+
+\begin{prop}\ollabel{ordsumnotcommute}
+క్రమసంఖ్య కూడికకు {క్రమమార్పిడి ధర్మం లేదు}; $1 \ordplus  \omega = \omega <
+\omega \ordplus  1$.
+\end{prop}
+
+\begin{proof}
+$1 \ordplus  \omega = \supstrict_{n < \omega} (1 \ordplus n)
+= \omega \in \omega \cup \{\omega\} = \ordsucc{\omega} = \omega
+\ordplus  1$ అని గమనించండి.
+\end{proof}
+\noindent
+మొదట ఇది ఆశ్చర్యంగా అనిపించినా \emph{అలా అనిపించకూడదు}. ఒక వైపు, $1 \ordplus  \omega$ను పరిగణిస్తే సహజ సంఖ్యలన్నిటికీ \emph{ముందు} అదనపు మూలకాన్ని పెట్టినప్పుడు వచ్చే క్రమరకం గురించి ఆలోచిస్తున్నాం. \olref[sfr][infinite][hilbert]{sec}లో హిల్బర్ట్ హోటల్ గురించి చేసినట్లుగా తర్కిస్తే, సహజార్థంలో ఈ అదనపు తొలి మూలకం మొత్తం క్రమరకాన్ని మార్చకూడదు. మరో వైపు, $\omega \ordplus  1$ను పరిగణిస్తే సహజ సంఖ్యలన్నిటికీ \emph{తరువాత} అదనపు మూలకాన్ని పెట్టినప్పుడు వచ్చే క్రమరకం గురించి ఆలోచిస్తున్నాం. అది పూర్తిగా భిన్నమైన విషయం!
+
+\end{document}

@@ -1,0 +1,19 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0643",
+  "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+  "source_sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+  "audit_id": "OLTEFOLAXDPRV-20260927",
+  "audit_review_path": "evidence/OLP-0643-PROVABILITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "43229df280edcda949e2abd1d78bf3b3b5b1dce97748329c4ccbd208f1e1f724",
+  "audit_findings_path": "evidence/OLP-0643-PROVABILITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "061394de358339e94ee4e57dcf20d2a2d0b5710f77cec46d0a1ea7c46ac8c806",
+  "previous_corrections": 542,
+  "treatments": {
+    "OLTEFOLAXDPRV-001": {"target_line": 78, "body_treatment": "రెండో అంశపు పూర్వాపేక్ష/ముగింపు మూల నిరూపణలో తిరగబడిందని ప్రకటించాం."},
+    "OLTEFOLAXDPRV-002": {"target_line": 121, "body_treatment": "సంయోజన వియోజన ప్రదర్శనలో Aకి బదులు A లేదా B అని తప్పుగా ఉన్న మూడో వరుసను ప్రకటించాం."},
+    "OLTEFOLAXDPRV-003": {"target_line": 136, "body_treatment": "MP అంశపు చివరి వాక్యంలోని నిర్వచించని Gamma_1 ఆధార సమితిని ప్రకటించాం."},
+    "OLTEFOLAXDPRV-004": {"target_line": 182, "body_treatment": "బలహీన సామాన్యీకరణ స్వీకృత సందర్భం ప్రతి A_i కోసం కావాలని, మూలం A అన్నదని ప్రకటించాం."},
+    "OLTEFOLAXDPRV-005": {"target_line": 195, "body_treatment": "లెమ్మా నిరూపణ తొలి వాక్యంలో cకు బదులు x ఉన్న ప్రతిస్థాపన రూప లోపాన్ని ప్రకటించాం."}
+  }
+}

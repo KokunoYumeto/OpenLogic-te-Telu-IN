@@ -1,0 +1,46 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQIRL-20260928",
+  "unit_id": "OLP-0699",
+  "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+  "source_sha256": "5563118c0574c226f19802adfbafc206db1df4d36ced8f3c841814a2f42f3d3a",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQIRL-001",
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex lines 84–91, aligned block 10",
+      "classification": "weakening_truth_polarities_reversed",
+      "source_issue": "The prose says false formula on the right or true formula on the left, reversing its own preceding truth definition.",
+      "minimal_treatment": "Use true on the right or false on the left.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQIRL-002",
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex lines 31–56, aligned block 7",
+      "classification": "xor_left_rule_labelled_right",
+      "source_issue": "The second XOR rule puts its principal formula in the antecedent but is labelled right.",
+      "minimal_treatment": "Use the left XOR rule label.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\begin{align*}&\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!A\\oplus!B$\\DisplayProof\\\\&\\Axiom$!A,\\Gamma\\fCenter\\Delta,!B$\\Axiom$!B,\\Gamma\\fCenter\\Delta,!A$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$!A\\oplus!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}&\\Axiom$\\Gamma\\fCenter\\Delta,!A,!B$\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\oplus}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!A\\oplus!B$\\DisplayProof\\\\&\\Axiom$!A,\\Gamma\\fCenter\\Delta,!B$\\Axiom$!B,\\Gamma\\fCenter\\Delta,!A$\\RightLabel{\\LeftR{\\oplus}}\\BinaryInf$!A\\oplus!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\end{align*}"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQIRL-003",
+      "source_locator": "content/proof-theory/sequent-calculus/interpretation-rules.tex lines 93–127, aligned block 11",
+      "classification": "unqualified_last_rule_necessity_claim",
+      "source_issue": "The implication example need not literally end in right implication if placeholders are compound or redundant contraction steps finish the proof.",
+      "minimal_treatment": "Restrict the necessity argument to distinct atomic placeholders and the last logical inference, setting aside redundant structural endings; keep the displayed construction unchanged.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

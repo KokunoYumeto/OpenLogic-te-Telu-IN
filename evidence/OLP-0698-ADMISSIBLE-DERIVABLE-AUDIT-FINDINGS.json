@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQADM-20260928",
+  "unit_id": "OLP-0698",
+  "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+  "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQADM-001",
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex lines 27–65, aligned block 8",
+      "classification": "simulated_rule_missing_context_separator",
+      "source_issue": "The final conjunction/context separator is missing.",
+      "minimal_treatment": "Insert the multiset comma before Gamma.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_1$}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_2$}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!A,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_1$}\\UnaryInf$!A\\land!B,!B,\\Gamma\\fCenter\\Delta$\\RightLabel{$\\LeftR{\\land}_2$}\\UnaryInf$!A\\land!B,!A\\land!B,\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!A\\land!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQADM-002",
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex lines 108–125, aligned block 15",
+      "classification": "left_biconditional_principal_side_mismatch",
+      "source_issue": "The rule labelled left-biconditional incorrectly puts the principal formula in the succedent; its premises characterize the antecedent occurrence.",
+      "minimal_treatment": "Put A iff B in the antecedent of that rule conclusion.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma\\fCenter\\Delta,!A\\liff!B$"
+        ],
+        "target_only": [
+          "$!A\\liff!B,\\Gamma\\fCenter\\Delta$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQADM-003",
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex lines 127–141, aligned block 16",
+      "classification": "end_sequent_misnamed_formula",
+      "source_issue": "The weakening construction calls its displayed end-sequent an end-formula.",
+      "minimal_treatment": "Render the logical object as the end-sequent and disclose the source wording while preserving the protected token.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQADM-004",
+      "source_locator": "content/proof-theory/sequent-calculus/admissible-derivable.tex aligned block 22, weakening induction base",
+      "classification": "falsity_axiom_base_case_omitted",
+      "source_issue": "The induction base describes only common-atomic-formula axioms, omitting the separate falsity-left axiom family in the frozen G3c table.",
+      "minimal_treatment": "Include falsity-left axioms in the weakening induction base; adding a right formula preserves that axiom family.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: invertibility
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{inv}
+
+\olsection{నియమాల విలోమ్యత}
+
+\begin{defn}
+నియమం~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+ఒక వ్యవస్థలో \emph{విలోమ్యమైనది} అనాలంటే, $\Proves S$ ఉన్నప్పుడల్లా $i = 1$, \dots,~$n$లకు $\Proves[h_i] S_i$ ఉండాలి. $\Proves[h] S$ ఉన్నప్పుడల్లా $i =
+1$, \dots,~$n$లకు $\Proves[h] S_i$ ఉంటే, ఆ నియమం \emph{\tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ విలోమ్యమైనది} (లేదా \emph{\tetoken{ఎత్తు-సంరక్షక}{!!{hp}} విలోమ్యమైనది}).
+\end{defn}
+\sourcecorrection{OLTEPTSEQINV-001}{మూల నిర్వచనంలో ఆధారాల సంఖ్యకు, నిరూపణ ఎత్తు పరిమితికి ఒకే అక్షరాన్ని వాడారు. ఆధార సూచిక పరిమితిని నిలిపి, ఎత్తుకు వేరే అక్షరాన్ని వాడి రెండింటిని వేరు చేశాం.}
+
+\begin{lem}\ollabel{lem:G3c-invert}
+$\lnot$, $\land$, $\lor$, $\lif$లకు \Log{G3c} నియమాలు \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ విలోమ్యమైనవి; అంటే:
+\begin{enumerate}
+  \item \RightR{\lnot}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, \lnot !A$, అయితే $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$.
+  \item \LeftR{\lnot}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma, \lnot !A
+  \Sequent \Delta$, అయితే $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$.
+  \item \RightR{\land}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \land !B$, అయితే $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A$ మరియు $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !B$.
+  \item \LeftR{\land}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma, !A \land !B
+  \Sequent \Delta$, అయితే $\Log{G3c} \Proves[n] !A, !B, \Gamma \Sequent
+  \Delta$.
+  \item \RightR{\lor}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lor !B$, అయితే $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A, !B$.
+  \item \LeftR{\lor}: ఒకవేళ $\Log{G3c} \Proves[n] !A \lor !B, \Gamma \Sequent
+  \Delta$, అయితే $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta$ మరియు $\Log{G3c} \Proves[n] !B, \Gamma \Sequent
+  \Delta$.
+  \item \RightR{\lif}: ఒకవేళ $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A \lif !B$, అయితే $\Log{G3c} \Proves[n] !A, \Gamma \Sequent
+  \Delta, !B$.
+  \item \LeftR{\lif}: ఒకవేళ $\Log{G3c} \Proves[n] !A \lif !B, \Gamma
+  \Sequent \Delta$, అయితే $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  !A$ మరియు $\Log{G3c} \Proves[n] !B, \Gamma \Sequent \Delta$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+ఈ లెమ్మాలోని \Log{G3c} నియమం~$R$కు, $R$ నిర్ధారణ~$S$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ ఉంటే, $R$ ఆధారాలు $S_i$కు కూడా \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_i$ ఉండి, $\pheight{\pi_i}
+\le \pheight{\pi}$ అని చూపాలి. \LeftR{\land}ను పరిగణిద్దాం: $!A \land !B, \Gamma
+\Sequent \Delta$ రూపం గల చివరి సీక్వెంట్‌కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ ఉందని అనుకుందాం. $!A, !B, \Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\pi'$ ఉండి $\pheight{\pi'} \le
+\pheight{\pi}$ అని చూపాలి. $n = \pheight{\pi}$పై ఆగమనంతో చేస్తాం.
+
+$n = 0$ అయితే, $\pi$ అక్షయం $!A \land !B, \Gamma
+\Sequent \Delta$ మాత్రమే. \Log{G3c}లో పరమాణు స్వీయ అక్షయాల రూపం $!C, \Gamma
+\Sequent \Delta, !C$; ఇక్కడ $!C$ పరమాణువు. కాబట్టి $!C$ అనేది $!A \land !B$ కాలేదు. $!A \land !B, \Gamma \Sequent \Delta$ అక్షయం అయితే, ఏదో పరమాణు $!C$ అనేది $\Gamma$, $\Delta$ రెండింటిలోనూ \tetoken{ఒక మూలకం}{!!a{element}} కావాలి. అప్పుడు $!A, !B, \Gamma \Sequent \Delta$ కూడా అక్షయం; మన \tetoken{నిరూపణ}{!!{proof}}~$\pi'$ దొరికింది (దాని \tetoken{ఎత్తు}{!!{height}} కూడా~$0$). అసత్య స్థిరం ఎడమవైపు ఉండే అక్షయంలోనూ ఫలితం వస్తుంది: ప్రధాన సంయోగం అసత్య స్థిరం కాదు కనుక ఆ స్థిరం మిగిలిన ఎడమ సందర్భంలో ఉంది; సంయోగాన్ని రెండు భాగాలుగా విడదీసినా అది అక్కడే ఉంటుంది.
+\sourcecorrection{OLTEPTSEQINV-007}{మూల విలోమ/సంకోచన ఆధార దశలు పరమాణు స్వీయ అక్షయాలనే పేర్కొన్నాయి. అసత్య స్థిరం ఎడమవైపు ఉండే మరో అక్షయ కుటుంబాన్ని కూడా చేర్చాం; సంయోగ విభజన, ఒక్క ప్రతిని సంకోచించడం ఆ అక్షయత్వాన్ని నిలుపుతాయి.}
+
+$n>0$ అయితే, అది ఒక నిగమనంతో ముగుస్తుంది. $n$కు వాదనను నిరూపించాలి; కానీ సందర్భం వేరైనా, $<n$ ఎత్తు గల ఏ \tetoken{నిరూపణకైనా}{!!{proof}} వాదన సత్యమని అనుకోవచ్చు. అంటే ఏ $k<n$కు, ఏ $\Pi$, $\Lambda$లకు అయినా, $!A \land !B, \Pi \Sequent \Lambda$కు \tetoken{ఎత్తు}{!!{height}}~$k$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటే, $!A, !B, \Pi \Sequent \Lambda$కు \tetoken{ఎత్తు}{!!{height}}~$\le k$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటుంది.
+
+రెండు సందర్భాలు ఉన్నాయి: ఎడమవైపు $!A \land
+!B$ ప్రధాన సూత్రం కావచ్చు లేదా కాకపోవచ్చు. ప్రధానమైతే చివరి నియమం \LeftR{\land}; తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$ ముగింపు $!A, !B, \Gamma \Sequent \Delta$. $\pheight{\pi_1} < \pheight{\pi}$ కనుక ఫలితం వస్తుంది.
+
+$!A \land !B$ ప్రధాన సూత్రం కాకపోతే, మరో \tetoken{సూత్రం}{!!{formula}} ప్రధానమవుతుంది; $!A
+\land !B$ చివరి నిగమన సందర్భంలో భాగం. చివరి నియమం~$R$ తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s} ఆగమన పరికల్పన వర్తిస్తుంది. దానివల్ల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1'$ లేదా రెండు \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1'$, $\pi_2'$ వస్తాయి; వాటి \tetoken{ఎత్తు}{!!{height}} అనురూప $\pi$ తక్షణ ఉప-\tetoken{నిరూపణల}{!!{proof}s} ఎత్తు కంటే ఎక్కువ కాదు. $\pi_1'$, $\pi_2'$ చివరి సీక్వెంట్ల ఎడమ సందర్భంలో $!A \land !B$కు బదులు $!A, !B$ ఉంటాయి. $R$ను వర్తింపజేసి నిరూపణ~$\pi'$ను పొందండి. ఉదాహరణకు $\pi$ అనేది \LeftR{\lif}తో ముగుస్తుందని అనుకుందాం:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!A \land !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!A \land !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A \land !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+ఇక్కడ ఎడమవైపు $!C \lif !D$ ప్రధాన సూత్రం; ఎడమ సందర్భం $!A \land !B, \Gamma'$ (అంటే $\Gamma = \Gamma', !C \lif !D$). ఆగమన పరికల్పన వరుసగా $!A, !B, \Gamma' \Sequent \Delta, !C$, $!A, !B, \Gamma',
+!D \Sequent \Delta$లకు \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1'$, $\pi_2'$ను ఇస్తుంది. మళ్లీ ఈ రెండు సీక్వెంట్లను \LeftR{\lif} ఆధారాలుగా తీసుకుని~$\pi'$ను పొందవచ్చు:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!A, !B, \Gamma' \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!A, !B, \Gamma', !D \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!A, !B, \Gamma', !C \lif !D \fCenter \Delta$
+\DisplayProof
+\]
+ఇంకా:
+\begin{align*}
+\pheight{\pi} & = \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1\\
+\pheight{\pi'} & = \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1
+\intertext{నిర్వచనం ప్రకారం; ఇంకా}
+\pheight{\pi_1'} & \le \pheight{\pi_1}\\
+\pheight{\pi_2'} & \le \pheight{\pi_2}
+\intertext{ఆగమన పరికల్పన ప్రకారం. కాబట్టి}
+\pheight{\pi'} & \le \pheight{\pi}.
+\end{align*}
+\end{proof}
+\sourcecorrection{OLTEPTSEQINV-002}{ఆగమన ఫలితంగా చెప్పిన రెండు సీక్వెంట్లలో మూల గద్యం పాత సంయోగాన్ని నిలిపింది; పక్కనున్న సరైన చిత్రంలాగే రెండు వేరు సంయుక్త భాగాలను రాశాం.}
+
+\begin{prob}
+\RightR{\lif}కు \olref{lem:G3c-invert} నిరూపణ ఇవ్వండి.
+\end{prob}
+
+\begin{lem}\ollabel{lem:invert-quant}
+\RightR{\lforall}, \LeftR{\lexists} నియమాలు కింది అర్థంలో \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ విలోమ్యమైనవి:
+\begin{enumerate}
+  \item ఒకవేళ $\Log{G3c} \Proves[n] \Gamma \Sequent \Delta,
+  \lforall[x][!A(x)]$ అయితే $\Log{G3c} \Proves[n] \Gamma \Sequent
+  \Delta, !A(c)$, మరియు
+  \item ఒకవేళ $\Log{G3c} \Proves[n] \lexists[x][!A(x)], \Gamma \Sequent
+  \Delta$ అయితే $\Log{G3c} \Proves[n] !A(c), \Gamma \Sequent \Delta$,
+\end{enumerate}
+ఇక్కడ $c$ అనేది వరుసగా $\Gamma$, $\Delta$, $\lforall[x][!A(x)]$ లేదా $\lexists[x][!A(x)]$లలో రాని ఏ స్థిరాంకమైనా కావచ్చు.
+\end{lem}
+
+\begin{proof}
+  (1) చూపి, (2)ను అభ్యాసంగా వదిలేస్తాం. వాదన \olref{lem:G3c-invert} నిరూపణ వంటిదే. ఆగమన దశలో మళ్లీ రెండు సందర్భాలు ఉన్నాయి. $\lforall[x][!A(x)]$ ప్రధాన సూత్రం అయ్యే సందర్భం సులభమైనది: చివరి $\RightR{\lforall}$ ఆధారం కోరిన రూపం $\Gamma
+  \Sequent \Delta, !A(a)$లో ఉంటుంది; దానితో ముగిసే తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$కు $\pheight{\pi_1} < \pheight{\pi}$. స్వీయచర షరతు వల్ల $a$ అనేది $\Gamma$, $\Delta$, $\lforall[x][!A(x)]$లలో రాదు. $\pi_1$ నియమితమైనదని అనుకోవచ్చు; అవసరమైతే అంతర్గత స్వీయచరాలకు పేర్లు మార్చి ఎంచుకున్న స్థిరాంకంతో కలవకుండా చేస్తాం. అప్పుడు \olref[qua]{lem:subst-regular} ప్రకారం $\Subst{\pi_1}{c}{a}$ అనేది $\Gamma \Sequent \Delta, !A(c)$కు అదే \tetoken{ఎత్తు}{!!{height}} గల \tetoken{ఒక నిరూపణ}{!!a{proof}}.
+\sourcecorrection{OLTEPTSEQINV-003}{నియమిత నిరూపణ అని చెప్పడమే కొత్త స్థిరాంకం అంతర్గత స్వీయచరంగా వాడలేదని నిర్ధారించదు. ప్రతిస్థాపనకు ముందు అంతర్గత స్వీయచరాలకు తగిన తాజా పేర్లు ఎంచుకునే దశను స్పష్టం చేశాం; అదే జాగ్రత్తను తరువాతి పరిమాణక సంకోచనలోనూ పాటించాం.}
+
+  రెండవ సందర్భంలో $\lforall[x][!A(x)]$ చివరి నిగమనంలో ప్రధాన సూత్రం కాదు; మరో సూత్రం ప్రధానమవుతుంది. మళ్లీ ఉదాహరణగా ఒక సందర్భాన్ని తీసుకుందాం. చివరి నియమం \RightR{\land} అని అనుకుందాం. $\Delta$లో~$!B \land !C$ రూపం గల \tetoken{సూత్రం}{!!{formula}} ప్రధానమవుతుంది. \tetoken{నిరూపణ}{!!{proof}}~$\pi$ ముగింపు:
+  \[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', \lforall[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+ఇక్కడ $\Delta = \Delta', !B \land !C$. లెమ్మాలో ప్రకటించిన అన్ని తాజాతన షరతులను తీరుస్తూ, $\Delta$లో రాని \tetoken{ఒక స్థిరాంకం}{!!a{constant}} $c$ను తీసుకోండి; అప్పుడు అది $\Delta', !B$, $\Delta', !C$లలోనూ రాదు. కాబట్టి $\pi_1$, $\pi_2$లకు ఆగమన పరికల్పన వర్తిస్తుంది; $\pheight{\pi_1'} \le \pheight{\pi_1}$, $\pheight{\pi_2'} \le
+\pheight{\pi_2}$ అయ్యే \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1'$, $\pi_2'$ ఉన్నాయి. $\Gamma \Sequent
+\Delta, !A(c)$కు కోరిన \tetoken{నిరూపణ}{!!{proof}}~$\pi'$:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !A(c), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !A(c), !B \land !C$
+\DisplayProof
+\]
+దాని ఎత్తు $\pheight{\pi'} = \max(\pheight{\pi_1'}, \pheight{\pi_2'})+1 \le \pheight{\pi}$.
+\end{proof}
+\sourcecorrection{OLTEPTSEQINV-004}{ఉదాహరణలో మూలం స్థిరాంకం ఉత్తరపక్షంలో రాదనే షరతును మాత్రమే మళ్లీ చెప్పింది. ఆగమన పరికల్పనకు అవసరమైన పూర్వపక్షం, పరిమాణిత సూత్రం తాజాతన షరతులూ వర్తిస్తాయని స్పష్టం చేశాం.}
+
+కట్-తొలగింపు సిద్ధాంత నిరూపణలో \Olref{lem:G3c-invert} ముఖ్య పాత్ర పోషిస్తుంది. దానితో కిందిదీ చూపవచ్చు:
+
+\begin{prop}\ollabel{prop:G3c-cont-adm}
+\Log{G1c}లోని \LeftR{\Contraction}, \RightR{\Contraction} సంకోచన నియమాలు \Log{G3c}లో \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ అనుమతించదగినవి.
+\end{prop}
+
+\begin{proof}
+\RightR{\Contraction}, \LeftR{\Contraction}లకు ఒకేసారి వాదన ఇద్దాం. \Log{G3c}లో $\Gamma \Sequent \Delta, !A, !A$కు లేదా $!A, !A, \Gamma \Sequent
+\Delta$కు $\pi$ \tetoken{ఒక నిరూపణ}{!!a{proof}} అని అనుకుందాం. వరుసగా $\Gamma \Sequent \Delta, !A$కు లేదా $!A,
+\Gamma \Sequent \Delta$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}}~$\pi'$ ఉండి $\pheight{\pi'} \le
+\pheight{\pi}$ అని చూపాలి. $n = \pheight{\pi}$పై ఆగమనంతో చేస్తాం.
+
+$n=0$ అయితే $\pi$ అక్షయం మాత్రమే. కానీ $\Gamma \Sequent \Delta, !A,
+!A$ \Log{G3c} అక్షయం అయితే $\Gamma \Sequent \Delta, !A$ కూడా అక్షయమే: ఏదో పరమాణువు~$!C$, $\Gamma$, $\Delta$ రెండింటిలోనూ \tetoken{ఒక మూలకం}{!!a{element}}; లేదా $!A$ పరమాణువై, $\Gamma$లో \tetoken{ఒక మూలకం}{!!a{element}}. చివరి సీక్వెంట్ $!A, !A, \Gamma \Sequent
+\Delta$ అయినప్పుడూ ఇదే వాదన వర్తిస్తుంది. అసత్య స్థిరం ఉన్న అక్షయ కుటుంబంలోనూ ఫలితం వస్తుంది: కుడివైపు ప్రతిని తొలగించడం ఎడమ అసత్య స్థిరాన్ని మార్చదు; ఎడమవైపు అదే స్థిరానికి రెండు ప్రతులుంటే ఒకటి తొలగించినా ఒక ప్రతిని ఉంచుతాం.
+
+$n>0$ అయితే $\pi$ ఏదో నియమం~$R$తో ముగుస్తుంది. చివరి నిగమనంలో $!A$ ప్రధాన సూత్రం కాకపోతే, \olref{lem:G3c-invert} నిరూపణలోలాగే, $\pi$ తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s} ఆగమన పరికల్పనను వర్తింపజేసి, వచ్చిన \tetoken{నిరూపణ}{!!{proof}}(ల)కు అదే $R$ను వర్తింపజేసి \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$ను పొందవచ్చు. ఆగమన పరికల్పన: $\Pi \Sequent \Lambda, !D,
+!D$కు లేదా $!D, !D, \Pi \Sequent \Lambda$కు \tetoken{ఎత్తు}{!!{height}}~$k<n$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటే, వరుసగా $\Pi \Sequent \Lambda, !D$కు లేదా $!D, \Pi \Sequent
+\Lambda$కు \tetoken{ఎత్తు}{!!{height}}~$\le k$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటుంది. (సందర్భాలు లేదా సంకోచించే \tetoken{సూత్రం}{!!{formula}}, $\Gamma$, $\Delta$, $!A$ల నుంచి వేరైనా పరికల్పన వర్తిస్తుందని గమనించండి!)
+
+ఉదాహరణకు $R$ అనేది $\RightR{\land}$ అయి, $\pi$ ముగింపు ఇలా ఉందని అనుకుందాం:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A, !A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A, !A$
+\DisplayProof
+\]
+ఇక్కడ $\Delta = \Delta', !B \land !C$. ఆగమన పరికల్పన వరుసగా $\Gamma \fCenter \Delta', !B, !A$, $\Gamma \fCenter \Delta', !C, !A$లకు \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1'$, $\pi_2'$ను ఇస్తుంది; వాటికి $\pheight{\pi_1'} \le  \pheight{\pi_1}$, $\pheight{\pi_2'} \le
+\pheight{\pi_2}$. \tetoken{నిరూపణ}{!!{proof}}~$\pi'$:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', !B, !A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta', !C, !A$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+\DisplayProof
+\]
+
+చివరి నిగమనంలో $!A$ ప్రధాన సూత్రం అయితే, $\pi$ తక్షణ ఉప-\tetoken{నిరూపణలకు}{!!{proof}s} విలోమ లెమ్మాను (\olref{lem:G3c-invert}), తరువాత ఆగమన పరికల్పనను, తరువాత మళ్లీ నియమం~$R$ను వర్తింపజేస్తాం. ఉదాహరణకు $\pi$ అనేది $\Gamma \Sequent \Delta, !A, !A$ను నిరూపించి, $!A
+\ident (!B \land !C)$ చివరి నిగమనంలో ప్రధాన సూత్రమని అనుకుందాం. అప్పుడు $\pi$:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma \fCenter \Delta, !B \land !C, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C, !B \land !C$
+\DisplayProof
+\]
+$\pi_1$కు \olref{lem:G3c-invert}ను వర్తింపజేసి $\Gamma \Sequent \Delta, !B, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1'$ను పొందండి. (అది $\Gamma \Sequent \Delta, !C, !B$కు కూడా \tetoken{ఒక నిరూపణ}{!!a{proof}} ఇస్తుంది; కానీ అది అవసరం లేదు.) అలాగే $\pi_2$కు \olref{lem:G3c-invert}ను వర్తింపజేసి $\Gamma \Sequent \Delta, !C, !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_2'$ను పొందుతాం. \RightR{\land} విలోమం \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తుంది కనుక $\pheight{\pi_1'} \le  \pheight{\pi_1} < \pheight{\pi}$, $\pheight{\pi_2'} \le  \pheight{\pi_2} < \pheight{\pi}$. కాబట్టి $\pi_1'$, $\pi_2'$లకు ఆగమన పరికల్పన వర్తిస్తుంది: వరుసగా $\Gamma \Sequent \Delta, !B$, $\Gamma \Sequent \Delta, !C$లకు \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1''$, $\pi_2''$ ఉండి, $\pheight{\pi_1''}
+\le \pheight{\pi_1'} \le \pheight{\pi_1}$, $\pheight{\pi_2''} \le
+\pheight{\pi_2'} \le \pheight{\pi_2}$. అప్పుడు \tetoken{నిరూపణ}{!!{proof}}~$\pi'$:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$\Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+దానికి $\pheight{\pi'} \le \pheight{\pi}$.
+
+\tetoken{సూత్రం}{!!{formula}} ప్రధానమయ్యే సందర్భాల్లో పరిమాణక నియమాలకు ప్రత్యేక జాగ్రత్త అవసరం.
+
+కుడివైపు $!A \ident \lforall[x][!B(x)]$ ప్రధాన సూత్రమని అనుకుందాం. అప్పుడు $\pi$ ముగింపు:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lforall[x][!B(x)], !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)], \lforall[x][!B(x)]$
+\DisplayProof
+\]
+\olref{lem:invert-quant} ప్రకారం, $\Gamma \fCenter \Delta,
+\lforall[x][!B(x)], !B(a)$లో రాని ఏ~$c$కైనా $\Gamma \fCenter \Delta, !B(c),
+!B(a)$కు \tetoken{ఎత్తు}{!!{height}} $\le \pheight{\pi_1}$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1'$ ఉంటుంది. $\pi_1'$ నియమితమైనదిగా, ప్రతిస్థాపనలో చేర్చే పేరుతో అంతర్గత స్వీయచరాలు కలవకుండా పేర్లు మార్చినదిగా తీసుకోవచ్చు. కాబట్టి \olref[qua]{lem:subst-regular} ప్రకారం \tetoken{నిరూపణ}{!!{proof}} $\Subst{\pi_1'}{a}{c}$ అనేది $\Gamma \fCenter \Delta, !B(a),
+!B(a)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}; దాని \tetoken{ఎత్తు}{!!{height}} కూడా $\le \pheight{\pi_1}$. ఇప్పుడు ఆగమన పరికల్పన వర్తించి, $\Gamma
+\fCenter \Delta, !B(a)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1''$ను ఇస్తుంది. \RightR{\lforall}ను వర్తింపజేసి~$\pi'$ను పొందండి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, !B(a)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+దానికి $\pheight{\pi'} \le \pheight{\pi}$.
+\sourcecorrection{OLTEPTSEQINV-005}{మూల తొలి చిత్రంలో సార్వత్రిక ప్రధాన సూత్రానికి అస్తిత్వ కుడి నియమం గుర్తు ఇచ్చారు; సార్వత్రిక కుడి నియమంగా సరిచేశాం.}
+
+ఇప్పుడు $!A \ident \lexists[x][!B(x)]$ కుడివైపు ప్రధాన సూత్రమని అనుకుందాం. అప్పుడు $\pi$ రూపం:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)], \lexists[x][!B(x)]$
+\DisplayProof
+\]
+$\pi_1$కు ఆగమన పరికల్పన వర్తిస్తుంది; $\Gamma \Sequent \Delta, \lexists[x][!B(x)],
+!B(t)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}s}~$\pi_1'$ ఉంది. (ఇక్కడ విలోమ లెమ్మా అవసరం లేదని గమనించండి!) అప్పుడు \tetoken{నిరూపణ}{!!{proof}}~$\pi'$:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta,  \lexists[x][!B(x)], !B(t)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma \fCenter \Delta, \lexists[x][!B(x)]$
+\DisplayProof
+\]
+దానికి $\pheight{\pi'} \le \pheight{\pi}$.
+\end{proof}
+\sourcecorrection{OLTEPTSEQINV-006}{మూల చివరి అస్తిత్వ సంకోచన వాదనలో, గద్యం/చిత్రం రెండింటిలోనూ సాక్షి పదం వద్ద ఉపప్రమేయం $!B(t)$కు బదులు $!B$ ఉంది; తొలగిపోయిన ఆర్గ్యుమెంట్‌ను పునరుద్ధరించాం.}
+
+\begin{prob}
+\LeftR{\Contraction}కు \olref{prop:G3c-cont-adm} నిరూపణను సంక్షిప్తంగా ఇవ్వండి. $!A \ident (!B \land !C)$, $!A \ident (!B
+\lif !C)$ సందర్భాలను వర్ణించండి.
+\end{prob}
+
+\begin{prob}
+\LeftR{\Contraction}కు మిగిలిన పరిమాణక సందర్భాల్లో \olref{prop:G3c-cont-adm} నిరూపణను సంక్షిప్తంగా ఇవ్వండి; అంటే $!A \ident
+\lforall[x][!B(x)]$, $!A \ident \lexists[x][!B(x)]$ సందర్భాల్లో.
+\end{prob}
+
+\end{document}

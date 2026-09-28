@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "232",
+  "unit_id": "OLP-0583",
+  "unit_order": 583,
+  "source_path": "content/set-theory/cardinals/milestone.tex",
+  "blocks": 7,
+  "linguistic_blocks": [3,4,5,6],
+  "previous_segments": 8581,
+  "previous_terms": 272,
+  "expected_corrections": 498,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ZFC మైలురాయి స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ స్వయంసిద్ధ/పథకం పదాలు, స్థానిక సాక్షులు పోల్చి స్వయంసిద్ధ జాబితా, ZFపై సుక్రమపరచడం చేర్పు, ఎంపిక సమానత్వ పరిమితి తనిఖీ చేశాం.",
+  "evidence_limit": "సాధారణ తర్క/సమితి పదాల సాక్షులే; ఎంపిక-సుక్రమపరచడం సమానత్వం మూలంలో భవిష్యత్ నిరూపణగా ఉంది. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T273",
+    "source_term": "ZFC; Well-Ordering; Choice",
+    "telugu": "ZFC; సుక్రమపరచడం; ఎంపిక",
+    "status": "axiom_list_and_equivalence_scope_source_controlled",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ఎనిమిది పేర్కొన్న స్వయంసిద్ధాలు, రెండు పథకాలు, ZFకు సుక్రమపరచడం చేర్పు, ZF పరిధిలో ఎంపికతో సమానత్వం నిలిచాయి.",
+    "uncertainty": "నిర్దిష్ట స్వయంసిద్ధ పదాల వైవిధ్యం ఉంది; మూల జాబితా, ముందరి అధ్యాయ పదాలు నియంత్రించాయి.",
+    "borrowing": "ZFC and ZF remain standard symbolic abbreviations."
+  }
+}

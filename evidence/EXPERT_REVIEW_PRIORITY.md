@@ -1,6 +1,6 @@
 # Priority optional expert-review view
 
-Scope: **partial — 484 of 722 draft units**. This view selects 507 of 628 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
+Scope: **partial — 722 of 722 draft units**. This view selects 759 of 1117 open decisions whose nomenclature is highly provisional or whose correction disclosure merits a human clarity check. It creates no translation hold.
 
 Final printed/PDF pages remain pending coherent-reader pagination; exact unit, section, file and line locators are supplied.
 
@@ -533,6 +533,16 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0348; lambda-calculus/introduction/lambda-definability; translation/content/lambda-calculus/introduction/lambda-definability.tex:17-21; printed/PDF page pending; OLP-0348; lambda-calculus/introduction/lambda-definability; translation/content/lambda-calculus/introduction/lambda-definability.tex:28-41; printed/PDF page pending; OLP-0351; lambda-calculus/introduction/basic-pr-lambda; translation/content/lambda-calculus/introduction/basic-pr-lambda.tex:20-25; printed/PDF page pending; OLP-0352; lambda-calculus/introduction/composition; translation/content/lambda-calculus/introduction/composition.tex:12-14; printed/PDF page pending; OLP-0353; lambda-calculus/introduction/primitive-recursion; translation/content/lambda-calculus/introduction/primitive-recursion.tex:77-79; printed/PDF page pending; OLP-0354; lambda-calculus/introduction/fixed-point-combinator; translation/content/lambda-calculus/introduction/fixed-point-combinator.tex:12-37; printed/PDF page pending; OLP-0355; lambda-calculus/introduction/minimization; translation/content/lambda-calculus/introduction/minimization.tex:9-10; printed/PDF page pending
 
 - Please double-check: Please double-check whether “లాంబ్డాతో నిర్వచించదగిన అంకగణిత ప్రమేయం / చర్చ్ సంఖ్యాంకం, పునరావర్తకం / సంయుక్తం, ఆదిమ పునరావృత్తి కింద సంవృతత / స్థిరబిందు సంయోజకం / కనిష్ఠీకరణ” is idiomatic and technically standard for “lambda-definable arithmetical function / Church numeral and iterator / closure under composition and primitive recursion / fixed-point combinator / minimization” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
+
+## REV-TE-T406 — second-order relation variable; second-order function variable; assignment-dependent expressibility
+
+- Priority/confidence: high / mixed_provisional
+
+- Chosen wording/treatment: ద్వితీయ క్రమ సంబంధ చరం; ద్వితీయ క్రమ ప్రమేయ చరం; విలువ కేటాయింపు ఆధారిత వ్యక్తీకరణ
+
+- Occurrences: OLP-0716; second-order-logic/syntax-and-semantics/language-of-sol; translation/content/second-order-logic/syntax-and-semantics/language-of-sol.tex:11; printed/PDF page pending; OLP-0716; second-order-logic/syntax-and-semantics/language-of-sol; translation/content/second-order-logic/syntax-and-semantics/language-of-sol.tex:13; printed/PDF page pending; OLP-0716; second-order-logic/syntax-and-semantics/language-of-sol; translation/content/second-order-logic/syntax-and-semantics/language-of-sol.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check whether “ద్వితీయ క్రమ సంబంధ చరం; ద్వితీయ క్రమ ప్రమేయ చరం; విలువ కేటాయింపు ఆధారిత వ్యక్తీకరణ” is idiomatic and technically standard for “second-order relation variable; second-order function variable; assignment-dependent expressibility” in Telugu logic/mathematics across Andhra Pradesh and Telangana. If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?
 
 ## REV-OLFUN-001 — OLFUN-001
 
@@ -5073,3 +5083,2513 @@ Final printed/PDF pages remain pending coherent-reader pagination; exact unit, s
 - Occurrences: OLP-0482; applied-modal-logic/epistemic-logic/epistemic-logic; translation/content/applied-modal-logic/epistemic-logic/epistemic-logic.tex:24; printed/PDF page pending
 
 - Please double-check: Please double-check: Does this epistemic olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?
+
+## REV-OLTEAMLELBIS-001 — OLTEAMLELBIS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ద్విసమానుకరణ ముందుకు/వెనక్కి నిబంధనల్లో నిర్వచించని A కర్త సమితిని ముందుగా నిర్వచించిన Gగా రెండు చోట్ల మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0488; applied-modal-logic/epistemic-logic/bisimulations; translation/content/applied-modal-logic/epistemic-logic/bisimulations.tex:50; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both forth and back clauses quantify agents over the language-defined set G, rather than the otherwise undefined A, without changing the bisimulation conditions?
+
+## REV-OLTEAMLELPALSEM-001 — OLTEAMLELPALSEM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రకటన శూన్యసత్యం పేరాలో మూలంలోని [!A]Bకు ముందరి నిర్మాణ నిబంధన ప్రకారం [!A]!B సూత్ర సంకేతం పెట్టి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0490; applied-modal-logic/epistemic-logic/public-announcement-logic-semantics; translation/content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex:75; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the vacuity paragraph now use the same marked operand !B as the announcement formation and truth clauses, without changing its conditional semantics?
+
+## REV-OLTEINTBHK-001 — OLTEINTBHK-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కర్రీయింగ్ ఉదాహరణలో ఒక్కచోట C ఫలిత-నిర్మాణాన్ని ముందు, తరువాత సూత్రాలకు అనుగుణంగా !Cగా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0495; intuitionistic-logic/introduction/bhk-interpretation; translation/content/intuitionistic-logic/introduction/bhk-interpretation.tex:117; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the currying example consistently produce constructions of the target meta-formula !C, including the one corrected codomain mention?
+
+## REV-OLTEINTBHK-002 — OLTEINTBHK-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మొదటి వియోజన శాఖ h_1లో దాని ఇన్‌పుట్ M_1ను ట్యాగ్ 1తో జత చేసి, మూలంలోని M_2 లోపాన్ని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0495; intuitionistic-logic/introduction/bhk-interpretation; translation/content/intuitionistic-logic/introduction/bhk-interpretation.tex:172; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the first tagged disjunction injection h_1 pair tag 1 with its own input M_1, while h_2 still pairs tag 2 with M_2?
+
+## REV-OLTEINTND-001 — OLTEINTND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంయోగ విఘటన BHK వివరణలో జత రెండో నిర్మాణం A_2 కాబట్టి మూలంలోని A_1∧A_1ను A_1∧A_2గా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0496; intuitionistic-logic/introduction/natural-deduction; translation/content/intuitionistic-logic/introduction/natural-deduction.tex:73; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the conjunction-elimination explanation now use A_1 and A_2, matching the pair N_1,N_2 and preceding introduction explanation, without changing any rule tree?
+
+## REV-OLTEINTSEMNOT-001 — OLTEINTSEMNOT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: స్థానిక అనుగమన అంశ నిరూపణలో నమూనా అంతటా సత్యం అనే అదనపు పరికల్పనను తొలగించి, w వద్ద Γ సత్యం నుంచే నిర్వచనాన్ని వర్తింపజేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0501; intuitionistic-logic/semantics/semantic-notions; translation/content/intuitionistic-logic/semantics/semantic-notions.tex:42; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the first proposition proof use the local hypothesis at w rather than an unjustified model-wide hypothesis, while preserving the second item and restriction argument?
+
+## REV-OLTEINTSAX-001 — OLTEINTSAX-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పూర్వాపేక్ష-సభ్యత్వ కేసులో స్థానిక సత్య సంకేతపు అదనపు Gamma వాదన తొలగించి, నిర్వచిత A_n వద్ద w రూపానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0504; intuitionistic-logic/soundness-completeness/soundness-axd; translation/content/intuitionistic-logic/soundness-completeness/soundness-axd.tex:50; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the premise-membership case now use the defined local truth expression for A_n at w, without the source extra Gamma argument, while retaining the three-case induction?
+
+## REV-OLTEINTSND-001 — OLTEINTSND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంయోగ పరిచయ కేసు లక్ష్యాన్ని పూర్వాపేక్షలు B,C మరియు చివరి సత్య షరతు ప్రకారం B∧Cగా ప్రకటించి సరిచేశాం.
+
+- Occurrences: OLP-0505; intuitionistic-logic/soundness-completeness/soundness-nd; translation/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:52; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the conjunction-introduction case state B and C as its goal, matching both premises and its concluding satisfaction clause?
+
+## REV-OLTEINTSND-002 — OLTEINTSND-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వియోజన విసర్జన మొదటి కేసులో లోక-వాదన wను గణిత సత్య సంకేతంలోకి చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0505; intuitionistic-logic/soundness-completeness/soundness-nd; translation/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:121; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the first disjunction-elimination case place [w] inside the local satisfaction expression?
+
+## REV-OLTEINTSND-003 — OLTEINTSND-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండు అనుగమన వ్యక్తీకరణల్లో B,C ఒక్కో మూలక సమితి బ్రేసులను పూర్వ వ్యుత్పత్తులకు అనుగుణంగా చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0505; intuitionistic-logic/soundness-completeness/soundness-nd; translation/content/intuitionistic-logic/soundness-completeness/soundness-nd.tex:124; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both disjunction-elimination entailments use singleton formula sets in their assumption unions, as the premises and induction hypotheses do?
+
+## REV-OLTEINTLIN-001 — OLTEINTLIN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమిత మద్దతు ఖాళీ అయితే సూచికల గరిష్ఠం నిర్వచితం కాకపోవడాన్ని మొదటి దశను ఎంచుకొని పక్కనే ప్రకటించి సరిచేశాం.
+
+- Occurrences: OLP-0506; intuitionistic-logic/soundness-completeness/lindenbaum; translation/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex:147; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the finite-support step handle an empty supporting subset by choosing the initial stage, while retaining the contradiction with nonderivability?
+
+## REV-OLTEINTLIN-002 — OLTEINTLIN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మొత్తం అర్హ వియోజనాల సంఖ్య తగ్గుతుందనే అప్రమాణ వాదనకు బదులు స్థిర సూచికకు ముందున్న పరిమిత సూచికల ఒక్కసారి ఎంపిక కారణాన్ని వాడి ప్రకటించాం.
+
+- Occurrences: OLP-0506; intuitionistic-logic/soundness-completeness/lindenbaum; translation/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex:189; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the enumeration argument use the finite prefix before a fixed index instead of claiming the total number of eligible disjunctions decreases?
+
+## REV-OLTEINTCAN-001 — OLTEINTCAN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: R-విస్తరణల్లో V ఏకదిశ పెరుగుదల నిరూపణలో స్థిర మూల క్రమం బదులు జోడించిన పరిమిత భాగపు పొడవుపై ఆగమన పద్ధతిని పేర్కొని ప్రకటించాం.
+
+- Occurrences: OLP-0507; intuitionistic-logic/soundness-completeness/canonical-model; translation/content/intuitionistic-logic/soundness-completeness/canonical-model.tex:91; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the valuation-monotonicity argument keep the starting sequence fixed and induct on the length of its appended finite segment?
+
+## REV-OLTEINTDEC-001 — OLTEINTDEC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూల అణు-చర సత్య సమితి quotient సోపాధిక సత్యాన్ని నిలపదని వ్యతిరేక ఉదాహరణతో పరిశీలించి, పరిమిత ఉపసూత్రాల సమితి Sపై సత్య రకాలను తీసుకుని ఆ పరిమితికే ఆగమన వాదనను మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0510; intuitionistic-logic/soundness-completeness/decidability; translation/content/intuitionistic-logic/soundness-completeness/decidability.tex:54; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the finite quotient use truth of the target formula’s finite subformulas, not atomic valuations alone, and restrict the truth-preservation exercise to that finite set?
+
+## REV-OLTEINTTABRULE-001 — OLTEINTTABRULE-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సోపాధిక సత్య నియమ గద్యంలోని శాఖల చిహ్నాలను మూల పట్టిక ప్రకారం అసత్య పూర్వపక్షం లేదా సత్య ఉత్తరపక్షంగా, రెండు గద్య నియమ సంకేతాల వాదనల క్రమాన్ని పట్టికతో సరిపోల్చి ప్రకటించాం.
+
+- Occurrences: OLP-0513; intuitionistic-logic/tableaux/rules; translation/content/intuitionistic-logic/tableaux/rules.tex:119; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the true-conditional prose now match the displayed false-antecedent/true-consequent branches and do both prose rule labels use the diagram’s argument order?
+
+## REV-OLTEINTTABPRF-001 — OLTEINTTABPRF-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య సంయోగ విసర్జన రెండు శాఖల కారణ సూచికలను సంబంధం లేని నాలుగో పంక్తి బదులు పూర్వాపేక్ష ఉన్న ఏడో పంక్తికి మార్చి ఉదాహరణ పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0514; intuitionistic-logic/tableaux/proofs; translation/content/intuitionistic-logic/tableaux/proofs.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the two false-conjunction branches cite the seventh tableau line containing their premise, rather than the fourth false-conditional line?
+
+## REV-OLTEINTTABSOU-001 — OLTEINTTABSOU-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతినమూనా వాక్యంలోని ముగింపు సత్య సంకేతాన్ని అసత్య సంకేతానికి మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0515; intuitionistic-logic/tableaux/soundness; translation/content/intuitionistic-logic/tableaux/soundness.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the countermodel make every premise true and the conclusion false at the same world?
+
+## REV-OLTEINTTABSOU-002 — OLTEINTTABSOU-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రాప్య లోకానికి అర్థనిర్దేశం చేర్చి, ఏకదిశత ద్వారా వచ్చే విస్తరించిన లోకపు సత్యాన్నే వ్రాసి ప్రకటించాం.
+
+- Occurrences: OLP-0515; intuitionistic-logic/tableaux/soundness; translation/content/intuitionistic-logic/tableaux/soundness.tex:121; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the closure proof interpret the descendant prefix and apply monotonicity at that descendant?
+
+## REV-OLTEINTTABSOU-003 — OLTEINTTABSOU-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తాజా పూర్వసూచిక వద్ద శాఖకు చేరే రెండు చిహ్నిత సూత్రాలను నియమానుసారం రెండు సమితి వ్యక్తీకరణల్లోనూ సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0515; intuitionistic-logic/tableaux/soundness; translation/content/intuitionistic-logic/tableaux/soundness.tex:249; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both false-conditional branch sets contain the true antecedent and false consequent at the fresh prefix?
+
+## REV-OLTEINTTABSOU-004 — OLTEINTTABSOU-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఉపపత్తి నిరూపణ చివరి వాక్యంలో తిరిగి వచ్చిన పూర్వాపేక్ష బదులు అర్థపరమైన పర్యవసానాన్ని ముగింపుగా వ్రాసి ప్రకటించాం.
+
+- Occurrences: OLP-0515; intuitionistic-logic/tableaux/soundness; translation/content/intuitionistic-logic/tableaux/soundness.tex:343; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the corollary conclude semantic entailment rather than repeat the derivability premise?
+
+## REV-OLTECNTSTR-001 — OLTECNTSTR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య సోపాధిక నిరాకరణ అపర్యవసానం భౌతికానికి కాదు కఠిన సోపాధికానికి చెందాలని ప్రదర్శనలో సంయోజకాన్ని మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0520; counterfactuals/introduction/strict-conditional; translation/content/counterfactuals/introduction/strict-conditional.tex:59; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the fifth non-entailment compare the negation of a strict conditional, rather than the negation of a material conditional that actually entails the displayed consequent?
+
+## REV-OLTECNTSPH-001 — OLTECNTSPH-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య పూర్వపక్షం గల చిన్న గోళంలో సాక్షి ఉండదని గుర్తించి, షరతు వారసత్వాన్ని పూర్వపక్ష-సత్య గోళాలకే పరిమితం చేసి, అత్యంత లోపలి గోళం ఉంటే అనే పరిమితిని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0524; counterfactuals/minimal-change-semantics/sphere-models; translation/content/counterfactuals/minimal-change-semantics/sphere-models.tex:166; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the non-vacuous satisfaction condition passed only to smaller spheres that still contain an antecedent-true world, and is an innermost such sphere asserted only when it exists?
+
+## REV-OLTECNTANT-001 — OLTECNTANT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పూర్వపక్ష చర్యను ‘మండించడం’ అని చెప్పిన మూడు మూల గద్య స్థానాలను ఉదాహరణకు సరిపోయే ‘గీయడం’గా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0526; counterfactuals/minimal-change-semantics/antecedent-strengthening; translation/content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex:46; printed/PDF page pending
+
+- Please double-check: Please double-check: Do all three corrected prose phrases make striking, not lighting, the match the antecedent action, matching the quoted inference and three-world model?
+
+## REV-OLTECNTTRA-001 — OLTECNTTRA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూడు లోకాల ప్రతినమూనాలో $q \lif r$కు మూల సంకేతంలోని అసత్య గీతను తొలగించి, ఇచ్చిన సత్యమూల్య నియామకానికి సరిపోయే సత్య సంకేతాన్ని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0527; counterfactuals/minimal-change-semantics/transitivity; translation/content/counterfactuals/minimal-change-semantics/transitivity.tex:104; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the stated valuation make q→r true throughout the q-admitting sphere, and does the target satisfaction macro now carry the positive sign?
+
+## REV-OLTECNTCPO-001 — OLTECNTCPO-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గోళ నమూనా నిర్వచనానికి అనుగుణంగా మూడు గోళాల జాబితాను ప్రపంచ-ప్రతి ప్రమేయం $O$ బదులు సంబంధిత లోకపు $O_w$ విలువగా వ్రాసి ప్రకటించాం.
+
+- Occurrences: OLP-0528; counterfactuals/minimal-change-semantics/contraposition; translation/content/counterfactuals/minimal-change-semantics/contraposition.tex:51; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the listed sphere family explicitly the local system O_w, given that O is defined as a function on worlds, without claiming unprovided values at other worlds?
+
+## REV-OLTESTPRED-001 — OLTESTPRED-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రసెల్ సమితి $x \notin x$ నిర్వచనానికి విరుద్ధమైన మూల ద్వి-నిరాకరణ తొలగించి, స్వీయ మూలకం కాని సమితులనే పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0533; set-theory/story/predicativity; translation/content/set-theory/story/predicativity.tex:16; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the prose expansion of the Russell-set predicate describe sets that are not self-membered, matching x∉x rather than its double negation?
+
+## REV-OLTESTPRED-002 — OLTESTPRED-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: స్వవర్గావలంబిత నిర్వచనాల తిరస్కరణకు అనుగుణంగా దుష్టవలయ సూత్రాన్ని అంగీకరించే అనుసంధానంగా మార్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0533; set-theory/story/predicativity; translation/content/set-theory/story/predicativity.tex:71; printed/PDF page pending
+
+- Please double-check: Please double-check: Does following the cited authors mean accepting the vicious-circle principle and therefore introducing predicative comprehension?
+
+## REV-OLTESTORDISO-001 — OLTESTORDISO-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సమరూపత లక్ష్య ఖండం విలువల పరిధి B_b2 అని చెప్పి, మూలంలోని నిర్వచన సమితి అనే తప్పును పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0551; set-theory/ordinals/iso; translation/content/set-theory/ordinals/iso.tex:251; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the isomorphism f : A_{a_2} -> B_{b_2} have B_{b_2} as its range rather than its domain, making b_1 < b_2 follow from b_1 = f(a_1)?
+
+## REV-OLTESTORDBASIC-001 — OLTESTORDBASIC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలంలోని సూత్రాన్ని మూలకంగా అన్న అస్పష్టతను సరిచేసి, సూత్రాన్ని సంతృప్తిపరిచే మూలకాలలో అత్యల్పమైనదాన్ని ఎంచుకుని ముందరి క్రమసంఖ్యలపై సూత్రం అసత్యమని ప్రకటించాం.
+
+- Occurrences: OLP-0553; set-theory/ordinals/basic; translation/content/set-theory/ordinals/basic.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the corrected least-witness proof choose the membership-least member satisfying phi within the witness ordinal, ensuring no earlier ordinal satisfies phi?
+
+## REV-OLTESTORDTYPE-001 — OLTESTORDTYPE-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సమరూపత ప్రమేయపు లక్ష్య సమితి క్రమయుగ్మ నిర్మాణం కాక B అని ప్రకటించి సూత్రాన్ని సరిచేశాం.
+
+- Occurrences: OLP-0556; set-theory/ordinals/ordtype; translation/content/set-theory/ordinals/ordtype.tex:137; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the order-isomorphism underlying function map the ordinal beta into the set B, rather than into the ordered-pair structure <B, lessdot>?
+
+## REV-OLTESTORDTYPE-002 — OLTESTORDTYPE-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచితం కాని f(alpha)ను వాడిన మూల ద్విసోపాధిక శ్రేణికి బదులు, ఏదో ఒక B ఆరంభ ఖండంతో సమరూపత రూపంలోని రెండు దిశల సమానార్థకాన్ని ఇచ్చి ప్రకటించాం.
+
+- Occurrences: OLP-0556; set-theory/ordinals/ordtype; translation/content/set-theory/ordinals/ordtype.tex:143; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the existential initial-segment equivalence avoid f(alpha) when alpha is outside beta and establish both directions using restriction and ordinal uniqueness?
+
+## REV-OLTESTSPINREC-001 — OLTESTSPINREC-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సహాయక xi పదంలో శూన్య ప్రమేయానికి విలువ ఇవ్వడానికి మొదటి శాఖలో శూన్య నిర్వచన సమితి సందర్భం చేర్చి సవరణను ప్రకటించాం.
+
+- Occurrences: OLP-0560; set-theory/spine/recursion; translation/content/set-theory/spine/recursion.tex:212; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the auxiliary xi term assign A to the empty function, which has ordinal domain zero, so the subsequent recursion base case is defined?
+
+## REV-OLTESTSPINFOUND-001 — OLTESTSPINFOUND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని చిన్న b స్థానంలో ముందే ఎంచుకున్న B సమితి సభ్యులపై సుప్రీమాన్ని తీసుకున్నాం.
+
+- Occurrences: OLP-0562; set-theory/spine/foundation; translation/content/set-theory/spine/foundation.tex:66; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the supremum in the transitive-set lemma range over the selected set B, rather than the unintroduced lowercase b?
+
+## REV-OLTESTSPINRANK-001 — OLTESTSPINRANK-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఊహించిన సభ్యత్వానికే విరుద్ధమైన మూల ముగింపును, అవసరమైన స్థాయి అసమానత్వంతో మార్చి సవరణను ప్రకటించాం.
+
+- Occurrences: OLP-0564; set-theory/spine/rank; translation/content/set-theory/spine/rank.tex:31; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the converse stage/rank proof exclude rank(x)=alpha, instead of contradicting its premise that x is in V_alpha?
+
+## REV-OLTESTREPLREFP-001 — OLTESTREPLREFP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సహాయక దశ షరతు చివరి అదనపు ముగింపు కుండలీకరణాన్ని తీసి ప్రకటించాం.
+
+- Occurrences: OLP-0572; set-theory/replacement/refproofs; translation/content/set-theory/replacement/refproofs.tex:27; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the auxiliary witness-stage implication a balanced formula after removing the source’s extra closing parenthesis?
+
+## REV-OLTESTREPLREFP-002 — OLTESTREPLREFP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: m సూచికపై సమ్మేళనంలో S_n బదులు S_mను పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0572; set-theory/replacement/refproofs; translation/content/set-theory/replacement/refproofs.tex:36; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the omega-indexed union defining S range over S_m, matching its bound index and the following witness argument?
+
+## REV-OLTESTREPLREFP-003 — OLTESTREPLREFP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతిస్థాపన సిద్ధాంతపు సమితి-నిర్మాణ ఆస్తిలో మిగిలిన ముగింపు కుండలీకరణాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0572; set-theory/replacement/refproofs; translation/content/set-theory/replacement/refproofs.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the existential predicate in the Replacement theorem’s set-builder expression properly closed, matching the proof’s final equality?
+
+## REV-OLTESTREPLFINITE-001 — OLTESTREPLFINITE-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంక్రమణ వాక్యాన్ని Nకే పరిమితం చేసిన మూల పైసూచికను బయటి M నమూనాకు మార్చి సవరణను ప్రకటించాం.
+
+- Occurrences: OLP-0573; set-theory/replacement/finiteaxiomatizability; translation/content/set-theory/replacement/finiteaxiomatizability.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: Is N-is-transitive relativized to the surrounding transitive model M, making the next ambient transitivity step valid?
+
+## REV-OLTESTORDADD-001 — OLTESTORDADD-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గుర్తులు జతచేసిన రెండు భాగాల మధ్య రెండోసారి విచ్ఛిన్న సమ్మేళనం కాక సాధారణ సమ్మేళనం పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0576; set-theory/ord-arithmetic/addition; translation/content/set-theory/ord-arithmetic/addition.tex:60; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the successor-isomorphism codomain use ordinary union of the already tagged alpha and singleton components, as required by the disjoint-sum definition?
+
+## REV-OLTESTORDADD-002 — OLTESTORDADD-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: శూన్య గుణిత సమితిని మూలంలోని శూన్యం కాని ఏకకం కాక తొలగించి లెక్కను సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0576; set-theory/ord-arithmetic/addition; translation/content/set-theory/ord-arithmetic/addition.tex:87; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the zero-addition calculation eliminate the empty product 0 times {1}, rather than replacing it with the nonempty singleton {0}?
+
+## REV-OLTESTORDUSEADD-001 — OLTESTORDUSEADD-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గుణిత సమితి స్థాయి రెండవ అభ్యాస సమీకరణంలో మిస్సైన సంబంధ సంకేతంగా ఎగువ హద్దు సమానత్వాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0577; set-theory/ord-arithmetic/using-addition; translation/content/set-theory/ord-arithmetic/using-addition.tex:50; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the second product-rank exercise explicitly request equality at the lemma’s upper bound, filling its missing relation sign?
+
+## REV-OLTESTORDMULT-001 — OLTESTORDMULT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సీమా పునరావృత్త సమీకరణానికి శూన్యం కాని ఎడమ గుణకం షరతు చేర్చి, శూన్య సందర్భం వేరు అని ప్రకటించాం.
+
+- Occurrences: OLP-0578; set-theory/ord-arithmetic/multiplication; translation/content/set-theory/ord-arithmetic/multiplication.tex:39; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the strict-supremum limit clause restricted to nonzero left factors, with zero left multiplication handled separately?
+
+## REV-OLTESTORDEXPO-001 — OLTESTORDEXPO-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమిత మద్దతు ప్రమేయపు నిర్వచన సమితి, మద్దతు, వ్యత్యాస సూచికను ఘాతంతో, విలువల సమితిని ఆధారంతో సరిపోల్చి ప్రకటించాం.
+
+- Occurrences: OLP-0579; set-theory/ord-arithmetic/exponentiation; translation/content/set-theory/ord-arithmetic/exponentiation.tex:15; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the finite-support functions map exponent beta to base alpha, with support and last-difference indices drawn from beta, so their order type matches alpha^beta?
+
+## REV-OLTESTORDEXPO-002 — OLTESTORDEXPO-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్మాణాత్మక-పునరావృత్త సమానత్వ అభ్యాసాన్ని ధనాత్మక ఆధారానికి పరిమితం చేసి శూన్య ఆధార లోపాన్ని ప్రకటించాం.
+
+- Occurrences: OLP-0579; set-theory/ord-arithmetic/exponentiation; translation/content/set-theory/ord-arithmetic/exponentiation.tex:36; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the synthetic/recursive equivalence exercise restricted to positive base, with the zero-base mismatch disclosed rather than hidden?
+
+## REV-OLTESTCARDCLASS-001 — OLTESTCARDCLASS-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కార్డినాలిటీ ωలో లేకపోవడాన్ని సమితి పరిమితం కాదని వివరించి, సహజ సంఖ్య కాని పరిమిత సమితుల ప్రతివాదాన్ని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0584; set-theory/cardinals/classing; translation/content/set-theory/cardinals/classing.tex:32; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the gloss of card(A) notin omega say that A is not finite, rather than incorrectly saying that A is not a natural number?
+
+## REV-OLTESTCARDSIMP-001 — OLTESTCARDSIMP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రామాణిక క్రమపు ఖండ పరిమాణ వాదనలో పరిమిత గరిష్ఠ నిర్దేశాంకం సందర్భాన్ని పక్కనే చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0588; set-theory/card-arithmetic/simp; translation/content/set-theory/card-arithmetic/simp.tex:69; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the segment-size argument explicitly handle the omitted finite maximum-coordinate case before concluding the bound for every pair?
+
+## REV-OLTESTCARDEXPO-001 — OLTESTCARDEXPO-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: విచ్ఛిన్న సమ్మేళనంపై ప్రమేయాన్ని రెండు పరిమితి ప్రమేయాల క్రమయుగ్మానికి పంపి, లక్ష్య కార్టీషియన్ గుణితంతో సరిపోల్చాం.
+
+- Occurrences: OLP-0589; set-theory/card-arithmetic/expotough; translation/content/set-theory/card-arithmetic/expotough.tex:23; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the disjoint-sum restriction map produce an ordered pair of functions, as required by the Cartesian-product codomain?
+
+## REV-OLTESTCARDEXPO-002 — OLTESTCARDEXPO-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్మిత ప్రమేయానికి నిజమైన కార్టీషియన్ నిర్వచన సమితి ఇచ్చి, ఆ తరువాత కార్డినల్ గుణితానికి సమసంఖ్యకత్వాన్ని వర్తింపజేశాం.
+
+- Occurrences: OLP-0589; set-theory/card-arithmetic/expotough; translation/content/set-theory/card-arithmetic/expotough.tex:30; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the direct curried-function bijection stated over the Cartesian product domain, with cardinal-product equality applied only afterward?
+
+## REV-OLTESTCARDEXPO-003 — OLTESTCARDEXPO-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అనంత ఆధార కార్డినల్ ఘాత వాదనను శూన్యం కాని పరిమిత ఘాతాలకు పరిమితం చేసి శూన్య మినహాయింపును ప్రకటించాం.
+
+- Occurrences: OLP-0589; set-theory/card-arithmetic/expotough; translation/content/set-theory/card-arithmetic/expotough.tex:58; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the infinite-base finite-exponent proposition restricted to nonzero exponents, excluding the false exponent-zero case?
+
+## REV-OLTESTCARDCH-001 — OLTESTCARDCH-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పునరావృత్తి స్థిర కార్డినల్ సంఖ్య నిర్వచనాన్ని కాదు, ఆలెఫ్/బెత్ శ్రేణుల నిర్వచనాన్ని పూర్తిచేస్తుందని చెప్పాం.
+
+- Occurrences: OLP-0590; set-theory/card-arithmetic/ch; translation/content/set-theory/card-arithmetic/ch.tex:26; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the transfinite recursion paragraph identify the aleph and beth sequences, rather than a fixed cardinal, as recursively defined?
+
+## REV-OLTESTCARDCH-002 — OLTESTCARDCH-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఒమేగా ఆధార సందర్భం, అనంత పూర్వ కార్డినల్ పరిమితి, సూచిక ఏకైకత్వ కారణం చేర్చి లోపాన్ని ప్రకటించాం.
+
+- Occurrences: OLP-0590; set-theory/card-arithmetic/ch; translation/content/set-theory/card-arithmetic/ch.tex:55; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the aleph-index proof handle the omega base, restrict indexed predecessors to infinite cardinals, and explain uniqueness?
+
+## REV-OLTESTCARDCH-003 — OLTESTCARDCH-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: GCH ఘాత సరిహద్దును అనంత ఆధారం, శూన్యం కాని చిన్న ఘాతానికి పరిమితం చేసి శూన్య మినహాయింపును ప్రకటించాం.
+
+- Occurrences: OLP-0590; set-theory/card-arithmetic/ch; translation/content/set-theory/card-arithmetic/ch.tex:67; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the GCH exponent bound qualified to infinite base and nonzero smaller exponent, excluding the zero-exponent counterexample?
+
+## REV-OLTESTCARDFIX-001 — OLTESTCARDFIX-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: టౌ ప్రారంభాన్ని కార్డినల్ ఉత్తరవర్తిగా మార్చి ప్రతి సమితి కార్డినాలిటీ కంటే కఠినంగా పెద్ద బెత్-స్థిర బిందువు నిర్మించాం.
+
+- Occurrences: OLP-0591; set-theory/card-arithmetic/fix; translation/content/set-theory/card-arithmetic/fix.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check: Does tau begin above the input cardinal, so the claimed strict inequality still holds when the input cardinal is already a beth fixed point?
+
+## REV-OLTESTCARDFIX-002 — OLTESTCARDFIX-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: W ప్రారంభాన్ని శూన్యం నుంచి టౌ(0)కు మార్చి అన్ని సూచికల్లో బెత్-స్థిర బిందు లక్ష్యాన్ని, వెడల్పు-ఎత్తు వాదనను నిలిపాం.
+
+- Occurrences: OLP-0591; set-theory/card-arithmetic/fix; translation/content/set-theory/card-arithmetic/fix.tex:107; printed/PDF page pending
+
+- Please double-check: Please double-check: Does W begin at a beth fixed point and preserve fixed-point status through successor and limit stages, so the all-index width-height claim holds?
+
+## REV-OLTESTCHOICEHART-001 — OLTESTCHOICEHART-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: హార్టోగ్స్ లెమ్మా సంక్రమణ వాదనలో సుక్రమిత ఉపసమితి మూల సమితికే చెందుతుందని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0595; set-theory/choice/hartogs; translation/content/set-theory/choice/hartogs.tex:27; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the transitivity proof take the well-ordered domain B as a subset of A, rather than of its relation R?
+
+## REV-OLTESTCHOICEHART-002 — OLTESTCHOICEHART-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఇంజెక్షన్ చిత్రంపై సంబంధాన్ని నిర్వచన సమితిలోని రెండు సూచికల క్రమాన్ని చిత్రించేలా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0595; set-theory/choice/hartogs; translation/content/set-theory/choice/hartogs.tex:36; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the transported well-order defined using two actual indices in the domain of f, rather than f(alpha) at an excluded endpoint?
+
+## REV-OLTESTCHOICEHART-003 — OLTESTCHOICEHART-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సమరూపతల ప్రమేయ లక్ష్యాలను క్రమిత నిర్మాణాల బదులు వాటి అంతర్లీన సమితులుగా చూపి ప్రకటించాం.
+
+- Occurrences: OLP-0595; set-theory/choice/hartogs; translation/content/set-theory/choice/hartogs.tex:52; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the order-isomorphism functions have A and B as their underlying codomain sets, while preserving the order-isomorphism property?
+
+## REV-OLTESTCHOICEHART-004 — OLTESTCHOICEHART-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తప్పుగా గూడుకట్టిన సమసంఖ్యకత్వ సూత్రాన్ని సమ్మేళనం/గుణితం గురించి రెండు వేరు సక్రమ పోలికలుగా ఇచ్చి ప్రకటించాం.
+
+- Occurrences: OLP-0595; set-theory/choice/hartogs; translation/content/set-theory/choice/hartogs.tex:60; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the disjoint-sum and Cartesian-product comparisons with the larger set stated separately rather than as a nested cardinal-comparison argument?
+
+## REV-OLTESTCHOICEWO-001 — OLTESTCHOICEWO-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఖాళీ సమితికి సుక్రమం విడిగా ఇచ్చి, ఎంపిక పునరావృత్తికి ఖాళీ కాని సమితినే తీసుకున్నాం.
+
+- Occurrences: OLP-0596; set-theory/choice/wellorderingproblem; translation/content/set-theory/choice/wellorderingproblem.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the empty set handled separately before evaluating f(A), which is undefined for the empty set under the given choice-function domain?
+
+## REV-OLTESTCHOICEWO-002 — OLTESTCHOICEWO-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆపు-గుర్తును ఆపే దశ నుంచి ముందుకు మాత్రమే ఉంచి, గత ఎంపికలను పరిరక్షించే మొదటి భాగాన్నే ప్రమేయంగా వాడాం.
+
+- Occurrences: OLP-0596; set-theory/choice/wellorderingproblem; translation/content/set-theory/choice/wellorderingproblem.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the stop marker begin at or after the first completed stage, leaving the pre-stop choice enumeration intact for the injectivity and bijection argument?
+
+## REV-OLTESTCHOICECOUNT-001 — OLTESTCHOICECOUNT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమిత కుటుంబాన్ని పునరావృత్తి లేని సభ్యుల జాబితాగా తీసుకుని చూపిన సంబంధం ప్రమేయం అయ్యే షరతును స్పష్టం చేశాం.
+
+- Occurrences: OLP-0597; set-theory/choice/countablechoice; translation/content/set-theory/choice/countablechoice.tex:18; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the finite family listed without repetition before the chosen ordered pairs are called a function?
+
+## REV-OLTESTCHOICECOUNT-002 — OLTESTCHOICECOUNT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పూర్వ సమితుల సమ్మేళనంలో తప్పు స్థిర A_nను మారే A_iగా సరిచేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0597; set-theory/choice/countablechoice; translation/content/set-theory/choice/countablechoice.tex:54; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the cardinal bound use the union of prior varying A_i, rather than a repeated A_n under a dummy index?
+
+## REV-OLTESTCHOICEBANACH-001 — OLTESTCHOICEBANACH-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అంతరం నుంచి వాస్తవ సంఖ్యలకు టాంజెంట్ ప్రతిచిత్రణలో మూలంలోని అదనపు మూసివేత కుండలీకరణాన్ని తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0599; set-theory/choice/banach; translation/content/set-theory/choice/banach.tex:26; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the interval-to-real tangent example have balanced parentheses after removing the extra closing parenthesis in the source?
+
+## REV-OLTESTCHOICEVITALI-001 — OLTESTCHOICEVITALI-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమేయ రేడియన్ విలువల స్థానంలో పూర్తి చుట్టుకు పరిమేయ గుణితాలు అని నిర్వచనం, ఉపసమూహ నిరూపణ రెండింటిలో సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0600; set-theory/choice/vitali; translation/content/set-theory/choice/vitali.tex:17; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the chosen rotation angles rational multiples of a full turn, giving a group under composition, rather than rational radian values?
+
+## REV-OLTESTCHOICEVITALI-002 — OLTESTCHOICEVITALI-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: శూన్య భ్రమణం ప్రతిలోమాన్ని విడిగా చూపి, మిగిలిన భ్రమణాలకే మూల ప్రతిలోమ కోణ సూత్రం వర్తింపజేశాం.
+
+- Occurrences: OLP-0600; set-theory/choice/vitali; translation/content/set-theory/choice/vitali.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the inverse construction treat the zero rotation separately from the formula whose value would be the excluded full-turn endpoint?
+
+## REV-OLTESTCHOICEVITALI-003 — OLTESTCHOICEVITALI-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని R_1ను నిర్వచించిన మొదటి భ్రమణ ఉపసమితి గుర్తుతో మార్చి ప్రకటించాం.
+
+- Occurrences: OLP-0600; set-theory/choice/vitali; translation/content/set-theory/choice/vitali.tex:102; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the partition proof index its first part over the defined rotation subset rather than undefined R_1?
+
+## REV-OLTESTCHOICEVITALI-004 — OLTESTCHOICEVITALI-004
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: కనీసం రెండు జనకాలు గల స్వేచ్ఛా సమూహానికి వాదనను పరిమితం చేసి, గోళ భ్రమణ స్థిరబిందువుల పరిష్కారం ఈ రూపరేఖలో లేని నిరూపణ ఖాళీ అని స్పష్టంచేశాం; పూర్తి నిరూపణను ఊహించలేదు.
+
+- Occurrences: OLP-0600; set-theory/choice/vitali; translation/content/set-theory/choice/vitali.tex:109; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the paradoxical free-group claim restricted to rank at least two, and is the missing fixed-point treatment on the sphere clearly disclosed rather than presented as proved?
+
+## REV-OLTESTCHOICEVITALI-005 — OLTESTCHOICEVITALI-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కొలత నిరూపణలో రెండు భ్రమణ సూచికలను బిందు ప్రతినిధుల సమితి నుంచి భ్రమణ సమూహానికి మార్చి ప్రకటించాం.
+
+- Occurrences: OLP-0600; set-theory/choice/vitali; translation/content/set-theory/choice/vitali.tex:138; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both measure-proof rotation quantifiers range over the rotation group rather than over the set of representative points?
+
+## REV-OLTEMTHPRFPAT-001 — OLTEMTHPRFPAT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఖాళీ కాని సమితి సమానార్థకత ముగింపులో మూలంలోని వస్తువు x స్థానంలో నిరూపిస్తున్న సమితి Aను ఉంచి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0606; methods/proofs/inference-patterns; translation/content/methods/proofs/inference-patterns.tex:136; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the nonemptiness equivalence concern the set A rather than the arbitrary member x, while leaving the final deliberately invalid proof clearly invalid?
+
+## REV-OLTEMTHPRFEX2-001 — OLTEMTHPRFEX2-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండవ ఉపసమితి వ్యక్తీకరణలో మూలం వదిలిన బయట మూసివేత కుండలీకరణాన్ని చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0608; methods/proofs/example-2; translation/content/methods/proofs/example-2.tex:34; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the second inclusion expression balanced after closing the outer union parenthesis, without changing the intended two-inclusion equivalence?
+
+## REV-OLTEMTHPRFCON-001 — OLTEMTHPRFCON-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సానుకూల pను ¬¬p నుంచి పొందే పరోక్ష నిరూపణకు సాంప్రదాయిక తర్క పరిధిని చేర్చి పక్కనే ప్రకటించాం; ప్రతికూల వాదన నిరూపణకు అనవసర పరిమితి పెట్టలేదు.
+
+- Occurrences: OLP-0609; methods/proofs/proof-by-contradiction; translation/content/methods/proofs/proof-by-contradiction.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Telugu text explicitly restrict deriving positive p from not-not-p to classical logic, without restricting the valid proof of a negated conclusion?
+
+## REV-OLTEMTHPRFCON-002 — OLTEMTHPRFCON-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని Cను లక్ష్య సమితి A∪Bతో మార్చి, సాక్షి దేనిలో లేదో సరైన గుర్తుతో ప్రకటించాం.
+
+- Occurrences: OLP-0609; methods/proofs/proof-by-contradiction; translation/content/methods/proofs/proof-by-contradiction.tex:67; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the negated-subset counterexample use nonmembership in A union B rather than an undefined C?
+
+## REV-OLTEMTHPRFREA-001 — OLTEMTHPRFREA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: శోషణ సమానత్వానికి (b)లో పునరావృత ముందరి దిశ బదులు నిజమైన వెనుక ఉపసమితి దిశను చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0610; methods/proofs/reading-proofs; translation/content/methods/proofs/reading-proofs.tex:52; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the expanded absorption proof list the reverse inclusion as obligation (b), matching the later proof rather than repeating obligation (a)?
+
+## REV-OLTEMTHPRFREA-002 — OLTEMTHPRFREA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి సమ్మేళన సభ్యత్వ వ్యక్తీకరణలో అదనపు మూసివేత కుండలీకరణాన్ని తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0610; methods/proofs/reading-proofs; translation/content/methods/proofs/reading-proofs.tex:53; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the final union-membership expression balanced after removing the extra closing parenthesis?
+
+## REV-OLTEMTHINDN-001 — OLTEMTHINDN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సాధారణ అనువర్తి దశలో k సూచికకు ఒకటి ప్రతిస్థాపించి, మూల n సూచిక పొరపాటును ప్రకటించాం.
+
+- Occurrences: OLP-0615; methods/induction/induction-on-N; translation/content/methods/induction/induction-on-N.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the successor-step explanation substitute one for the quantified step variable k rather than for n?
+
+## REV-OLTEMTHINDN-002 — OLTEMTHINDN-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఒక పాచిక ఆధారానికి ముందుగా శూన్య పాచికల ఒకే సున్నా మొత్తం సందర్భాన్ని విడిగా నిరూపణలో చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0615; methods/induction/induction-on-N; translation/content/methods/induction/induction-on-N.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the dice theorem now cover zero dice separately while retaining the one-die base and positive successor argument?
+
+## REV-OLTEMTHINDSTR-001 — OLTEMTHINDSTR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పూర్వసంఖ్య రూపాన్ని శూన్యం మినహా ధన సహజ సంఖ్యలకే వర్తిస్తుందని ప్రకటించాం.
+
+- Occurrences: OLP-0616; methods/induction/strong-induction; translation/content/methods/induction/strong-induction.tex:14; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the predecessor-index rephrasing restricted to positive natural numbers, since zero has no predecessor?
+
+## REV-OLTEMTHINDSTR-002 — OLTEMTHINDSTR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఖాళీ పరిధిపై సాధారణ బలమైన ఆగమన పూర్వపక్షంలో P(l) సూచికనే వాడి, మూల P(0) రూపం కూడా ఖాళీగా సత్యమే అయినా ఇక్కడి పూర్వపక్షం కాదని ప్రకటించాం.
+
+- Occurrences: OLP-0616; methods/induction/strong-induction; translation/content/methods/induction/strong-induction.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the empty-domain base instantiate the actual P(l) strong-induction premise, while correctly noting the source P(0) sentence is also vacuously true?
+
+## REV-OLTEHISSETLIM-001 — OLTEHISSETLIM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: స్థిర బిందువు వ్యుత్పన్నం కాక భేద భాగహారం మారుతుందని స్పష్టం చేసి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0635; history/set-theory/limits; translation/content/history/set-theory/limits.tex:16; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the passage identify the beta-dependent difference quotient, not the fixed derivative value, as approaching the gradient?
+
+## REV-OLTEHISSETLIM-002 — OLTEHISSETLIM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమితి నిర్వచనంలో కేంద్ర బిందువును తొలగించే కచ్చిత ధన దూరం షరతు చేర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0635; history/set-theory/limits; translation/content/history/set-theory/limits.tex:30; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the epsilon-delta implication exclude x=c while retaining the source quantifier order and strict epsilon bound?
+
+## REV-OLTEHISSETLIM-003 — OLTEHISSETLIM-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరమ విలువ చిత్రపు అడ్డ అక్షానికి నాలుగు సరైన x/లేబుల్ జతలు అమర్చి పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0635; history/set-theory/limits; translation/content/history/set-theory/limits.tex:46; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the absolute-value graph label exactly the four intended x-axis ticks without an unpaired or duplicated entry?
+
+## REV-OLTEHISSETPATH-001 — OLTEHISSETPATH-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పియానో పటం సున్నితమైనది కాదని, రేఖఖండం నుంచి చతురస్రానికి అవిచ్ఛిన్న పటమని చెప్పి సమీపంలో ప్రకటించాం.
+
+- Occurrences: OLP-0636; history/set-theory/pathologies; translation/content/history/set-theory/pathologies.tex:21; printed/PDF page pending
+
+- Please double-check: Please double-check: Is Peano’s map described as a continuous surjection from a line segment onto a square, without claiming a smooth curve can fill positive planar area?
+
+## REV-OLTEHISSETCANP-001 — OLTEHISSETCANP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతి ద్వియాంశ సంఖ్యకు ఒకే రూపం, 1కు 0.111... రూపం ఎంచుకొని అంతఃక్షేపణ వాదనను సరిచేశాం.
+
+- Occurrences: OLP-0638; history/set-theory/cantor-plane; translation/content/history/set-theory/cantor-plane.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the binary-expansion convention define a total interleaving map on the closed square and justify injectivity, including at 1?
+
+## REV-OLTEHISSETCANP-002 — OLTEHISSETCANP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూల ఉదాహరణ మొత్తం-సమితి పటంలో బింబంలోనే ఉందని చెప్పి, నిజమైన బింబం-బయటి విలువను పక్కనే ఇచ్చాం; విస్తరణలను ద్వియాంశమని సరిచేశాం.
+
+- Occurrences: OLP-0638; history/set-theory/cantor-plane; translation/content/history/set-theory/cantor-plane.tex:38; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the source’s 0.1010... witness rejected under that convention and replaced by a genuinely omitted value while preserving the historical argument?
+
+## REV-OLTEHISSETHILB-001 — OLTEHISSETHILB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పరిమితి నిర్వచనంలో ప్రవేశ సమితిని రేఖఖండంగా సరిచేసి, పరిమితి ఉనికి ఇంకా నిరూపితం కాలేదని ప్రకటించాం.
+
+- Occurrences: OLP-0639; history/set-theory/hilbert-curve; translation/content/history/set-theory/hilbert-curve.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the parameter x in the unit line rather than the square, with convergence still acknowledged as unproved by the sketch?
+
+## REV-OLTEHISSETHILB-002 — OLTEHISSETHILB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఉజ్జాయింపు చిత్రాల గడి-దూర అంచనా నుంచి పరిమితి చిత్రం స్థలాన్ని నింపుతుందని అన్యాయంగా తేల్చిన దశను నిరూపణ ఖాళీగా ప్రకటించాం.
+
+- Occurrences: OLP-0639; history/set-theory/hilbert-curve; translation/content/history/set-theory/hilbert-curve.tex:88; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the target clearly distinguish the dense approximating images from a proved surjective pointwise limit?
+
+## REV-OLTEHISSETHILB-003 — OLTEHISSETHILB-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లక్ష్యబిందు చుట్టూ ఏదో ప్రవేశ విరామం కనుగొనడమే అవిచ్ఛిన్నత నిర్వచనం కాదని పక్కనే ప్రకటించాం.
+
+- Occurrences: OLP-0639; history/set-theory/hilbert-curve; translation/content/history/set-theory/hilbert-curve.tex:97; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the source’s target-neighborhood condition identified as different from continuity at each input parameter?
+
+## REV-OLTEHISSETHILB-004 — OLTEHISSETHILB-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి గడి-విరామ వాదన అవిచ్ఛిన్నతను నిరూపించదని, నిర్దిష్ట పరామితీకరణ/అభిసరణ ఇంకా అవసరమని ప్రకటించాం.
+
+- Occurrences: OLP-0639; history/set-theory/hilbert-curve; translation/content/history/set-theory/hilbert-curve.tex:102; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the final grid argument remain labeled an incomplete continuity proof pending specified parametrizations and convergence?
+
+## REV-OLTEFOLAXDPRV-001 — OLTEFOLAXDPRV-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండో అంశపు పూర్వాపేక్ష/ముగింపు మూల నిరూపణలో తిరగబడిందని ప్రకటించాం.
+
+- Occurrences: OLP-0643; first-order-logic/axiomatic-deduction/provability; translation/content/first-order-logic/axiomatic-deduction/provability.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the second listed proposition distinguished from the opposite implication actually derived in its source proof?
+
+## REV-OLTEFOLAXDPRV-002 — OLTEFOLAXDPRV-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంయోజన వియోజన ప్రదర్శనలో Aకి బదులు A లేదా B అని తప్పుగా ఉన్న మూడో వరుసను ప్రకటించాం.
+
+- Occurrences: OLP-0643; first-order-logic/axiomatic-deduction/provability; translation/content/first-order-logic/axiomatic-deduction/provability.tex:121; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the conjunction-elimination display’s incorrect disjunction conclusion disclosed without changing its protected formula?
+
+## REV-OLTEFOLAXDPRV-003 — OLTEFOLAXDPRV-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: MP అంశపు చివరి వాక్యంలోని నిర్వచించని Gamma_1 ఆధార సమితిని ప్రకటించాం.
+
+- Occurrences: OLP-0643; first-order-logic/axiomatic-deduction/provability; translation/content/first-order-logic/axiomatic-deduction/provability.tex:136; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the undefined Gamma_1 in the modus-ponens conclusion explained as a finite-support slip?
+
+## REV-OLTEFOLAXDPRV-004 — OLTEFOLAXDPRV-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బలహీన సామాన్యీకరణ స్వీకృత సందర్భం ప్రతి A_i కోసం కావాలని, మూలం A అన్నదని ప్రకటించాం.
+
+- Occurrences: OLP-0643; first-order-logic/axiomatic-deduction/provability; translation/content/first-order-logic/axiomatic-deduction/provability.tex:182; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the weak-generalization axiom case understood as referring to each A_i rather than only final A?
+
+## REV-OLTEFOLAXDPRV-005 — OLTEFOLAXDPRV-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: లెమ్మా నిరూపణ తొలి వాక్యంలో cకు బదులు x ఉన్న ప్రతిస్థాపన రూప లోపాన్ని ప్రకటించాం.
+
+- Occurrences: OLP-0643; first-order-logic/axiomatic-deduction/provability; translation/content/first-order-logic/axiomatic-deduction/provability.tex:195; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the free-for lemma’s opening substitution mismatch with its stated target formula disclosed?
+
+## REV-OLTELAMSYNCONV-001 — OLTELAMSYNCONV-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూలం వాగ్దానం చేసిన alpha మార్పు నియమం, మిగిలిన మార్పుల వివరణ లేకుండానే ముగుస్తుందని ప్రకటించాం.
+
+- Occurrences: OLP-0651; lambda-calculus/syntax/conversion; translation/content/lambda-calculus/syntax/conversion.tex:15; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the source fragment’s promised but absent formal alpha-conversion rule disclosed without inventing the missing material?
+
+## REV-OLTEMODBASENSA-001 — OLTEMODBASENSA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అంకగణిత భాషకు L_N/L అని మారిన మూల సంకేత అసంగతిని ప్రకటించాం.
+
+- Occurrences: OLP-0653; model-theory/basics/nonstandard-arithmetic; translation/content/model-theory/basics/nonstandard-arithmetic.tex:40; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the source’s L_N/L notation switch identified without silently redefining the arithmetic language?
+
+## REV-OLTEMODBASENSA-002 — OLTEMODBASENSA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వేర్వేరు బ్లాక్‌ల మధ్య అవసరమైన x*<y ముగింపును ఇచ్చి మూలంలోని బలహీన పునరుక్తిని ప్రకటించాం.
+
+- Occurrences: OLP-0653; model-theory/basics/nonstandard-arithmetic; translation/content/model-theory/basics/nonstandard-arithmetic.tex:76; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the separated-block argument conclude x*<y rather than merely repeat x<y?
+
+## REV-OLTEMODBASENSA-003 — OLTEMODBASENSA-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బ్లాక్‌ల క్రమానికి x,y వేర్వేరు బ్లాక్‌లలో ఉండాలనే షరతును జోడించి ప్రకటించాం.
+
+- Occurrences: OLP-0653; model-theory/basics/nonstandard-arithmetic; translation/content/model-theory/basics/nonstandard-arithmetic.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Is distinct-block membership required before comparing blocks strictly?
+
+## REV-OLTEMODBASENSA-004 — OLTEMODBASENSA-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండుతో భాగించు వాక్యంలో అంతర్గత ప్రతి xను ఏదో xగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0653; model-theory/basics/nonstandard-arithmetic; translation/content/model-theory/basics/nonstandard-arithmetic.tex:86; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the parity sentence say for every y there exists an x, matching division by two and the subsequent proof?
+
+## REV-OLTEPTCUTINVL-001 — OLTEPTCUTINVL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సాధనలో చూపిన కట్ సంక్షేపణం విలోమయోగ్యత కాకుండా అత్యధిక-కట్ సంక్షేపణ లెమ్మాకు చెందినదని ప్రకటించాం.
+
+- Occurrences: OLP-0655; proof-theory/cut-elimination/ce-largest; translation/content/proof-theory/cut-elimination/ce-largest.tex:189; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the conjunction exercise identified as maximal-rank cut reduction rather than invertibility?
+
+## REV-OLTEPTCUTINVL-002 — OLTEPTCUTINVL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి సాధారణీకరణలో మూలం అత్యధిక-కట్ సంక్షేపణ ఫలితాన్ని పూర్వపు కట్ అనుమతిత్వ లెమ్మాకు ఆపాదించిన అసంగతిని ప్రకటించాం.
+
+- Occurrences: OLP-0655; proof-theory/cut-elimination/ce-largest; translation/content/proof-theory/cut-elimination/ce-largest.tex:198; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the final maximal-rank reduction attributed to the local maximal-cut lemma rather than the earlier cut-admissibility lemma?
+
+## REV-OLTEPTCUTINVL-003 — OLTEPTCUTINVL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అణు ప్రధాన స్వీకృత సందర్భంలో Delta స్వపునరుక్తికి బదులు తదుపరి సీక్వెంట్‌కు సరిపడే Delta-primeను పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0655; proof-theory/cut-elimination/ce-largest; translation/content/proof-theory/cut-elimination/ce-largest.tex:79; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the atomic principal-axiom case use Delta-prime in its succedent decomposition, matching the next sequent?
+
+## REV-OLTEPTCUTTOP-001 — OLTEPTCUTTOP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండవ స్వీకృత సందర్భంలో ద్విగుణిత ఉత్తరాంగాన్ని ఇచ్చేది ఎడమ నిరూపణ pi_1 అని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0656; proof-theory/cut-elimination/ce-topmost; translation/content/proof-theory/cut-elimination/ce-topmost.tex:60; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the alternative axiom case name the left premise proof pi_1 for the doubled succedent?
+
+## REV-OLTEPTCUTTOP-002 — OLTEPTCUTTOP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని cutr స్థానంలో ముందే నిర్వచించిన cutrankను పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0656; proof-theory/cut-elimination/ce-topmost; translation/content/proof-theory/cut-elimination/ce-topmost.tex:315; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the disjunction case use the defined cutrank macro instead of the undefined cutr?
+
+## REV-OLTEPTCUTTOP-003 — OLTEPTCUTTOP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: దిగువ కట్ ముగింపు పూర్వాంగం నుంచి కట్ సూత్రం Bను తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0656; proof-theory/cut-elimination/ce-topmost; translation/content/proof-theory/cut-elimination/ce-topmost.tex:465; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the lower cut in the final implication tree remove B from its conclusion?
+
+## REV-OLTEPTCUTTOP-004 — OLTEPTCUTTOP-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: D సందర్భంలోని రెండు నిరూపణ వృక్షాల్లో అదనపు సంయోజన ప్రతులు రాకుండా Delta-prime సందర్భాన్ని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0656; proof-theory/cut-elimination/ce-topmost; translation/content/proof-theory/cut-elimination/ce-topmost.tex:240; printed/PDF page pending
+
+- Please double-check: Please double-check: Do both Case D trees use Delta-prime where an explicit B-and-C copy is appended?
+
+## REV-OLTEPTCUTITP-001 — OLTEPTCUTITP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బెత్ నిరూపణలో నిర్వచించని L_1/L_2 సమానత బదులు మహేరా లెమ్మా ఇచ్చే ఉపసమితి పరిమితిని ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:406; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Beth proof use Maehara’s language inclusion rather than an undefined equality of L_1 and L_2?
+
+## REV-OLTEPTCUTITP-002 — OLTEPTCUTITP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: బెత్ ముగింపులో !R బదులు విధేయ సంకేతం Rను పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:412; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Beth conclusion name predicate R, not the source typo !R?
+
+## REV-OLTEPTCUTITP-003 — OLTEPTCUTITP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సంపూర్ణ సిద్ధాంతానికి పూర్తి ఉమ్మడి భాష అవసరమని చేర్చి మూలపు బలహీన ఉపసమితి షరతును ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:417; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the complete common theory assumed in the whole shared language, as the next argument requires?
+
+## REV-OLTEPTCUTITP-004 — OLTEPTCUTITP-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: విస్తరణ నుంచి ఆధార సిద్ధాంతానికి తిరుగు అనుగమనం బదులు సంపూర్ణత ప్రత్యామ్నాయాలతో సరైన వైరుధ్య క్రమాన్ని ఇచ్చి ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:423; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the joint-consistency argument use completeness and consistency instead of reversing entailment from an extension to its base?
+
+## REV-OLTEPTCUTITP-005 — OLTEPTCUTITP-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రమేయ సంకేతాలు లేనప్పటికీ చరరాశి పదం సాధ్యమని, భాషా చిహ్న సమస్య మాత్రం స్థిరసంకేతానికి మాత్రమేనని ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:292; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the variable-term case separated from the constant-symbol case without function symbols?
+
+## REV-OLTEPTCUTITP-006 — OLTEPTCUTITP-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అంబియెంట్ భాష L-primeను నిర్వచించి, వాడిన సంకేతాల L(Gamma-prime)తో నిరాధార సమానత తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0658; proof-theory/cut-elimination/interpolation; translation/content/proof-theory/cut-elimination/interpolation.tex:390; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the primed ambient language distinguished from the symbols actually occurring in the primed theory?
+
+## REV-OLTEPTCUTINT-001 — OLTEPTCUTINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సందర్భం పంచుకునే కట్ చిత్ర లేబుల్‌ను CutCSగా సరిచేసి మూలపు Cut లేబుల్ అసంగతిని ప్రకటించాం.
+
+- Occurrences: OLP-0659; proof-theory/cut-elimination/introduction; translation/content/proof-theory/cut-elimination/introduction.tex:43; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the context-sharing cut diagram labeled CutCS rather than Cut?
+
+## REV-OLTEPTCUTAUX-001 — OLTEPTCUTAUX-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూడో కట్ వృక్షంలో B!ను !Bగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0660; proof-theory/cut-elimination/intuitionistic; translation/content/proof-theory/cut-elimination/intuitionistic.tex:49; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the reversed B! in the auxiliary implication cut tree corrected to !B?
+
+## REV-OLTEPTCUTAUX-002 — OLTEPTCUTAUX-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని cutr స్థానంలో అధ్యాయపు cutrankను పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0660; proof-theory/cut-elimination/intuitionistic; translation/content/proof-theory/cut-elimination/intuitionistic.tex:65; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the undefined cutr rank macro replaced by cutrank and disclosed?
+
+## REV-OLTEPTCUTAUX-003 — OLTEPTCUTAUX-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చివరి వృక్షాల్లో కట్ ముగింపు, సందర్భ ప్రతుల అసంగతిని మూలరూపంలో నిలిపి స్పష్టంగా ప్రకటించాం.
+
+- Occurrences: OLP-0660; proof-theory/cut-elimination/intuitionistic; translation/content/proof-theory/cut-elimination/intuitionistic.tex:66; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the unresolved final Cut-tree context inconsistencies disclosed without claiming a verified derivation?
+
+## REV-OLTEPTCUTMID-001 — OLTEPTCUTMID-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: చిత్రంలో ఉన్న pi_1 స్థానంలో లేని pi_1-prime సూచనను సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0661; proof-theory/cut-elimination/midsequent; translation/content/proof-theory/cut-elimination/midsequent.tex:51; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Herbrand extraction refer to the displayed pi_1 rather than an undefined pi_1-prime?
+
+## REV-OLTEPTCUTMID-002 — OLTEPTCUTMID-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: క్రమం సున్నా, పరిమాణీకరణిక నిగమనాలు శూన్యం అయ్యే ఆధార సందర్భాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0661; proof-theory/cut-elimination/midsequent; translation/content/proof-theory/cut-elimination/midsequent.tex:60; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the zero-order proof handle the possibility of no quantifier inferences?
+
+## REV-OLTEPTCUTMID-003 — OLTEPTCUTMID-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: వృక్షంలో Gamma-prime ముందున్న అదనపు ఆశ్చర్యార్థ చిహ్నాన్ని తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0661; proof-theory/cut-elimination/midsequent; translation/content/proof-theory/cut-elimination/midsequent.tex:114; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the stray marker before Gamma-prime removed from the existential permutation tree?
+
+## REV-OLTEPTNATGRA-001 — OLTEPTNATGRA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిరూపణ వృక్షంలో B→C స్థానంలో B→A నిగమనాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0662; proof-theory/natural-deduction/grafting; translation/content/proof-theory/natural-deduction/grafting.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the implication-introduction tree conclude B-to-A rather than B-to-C?
+
+## REV-OLTEPTNATGRA-002 — OLTEPTNATGRA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సీక్వెంట్ నిరూపణ కోసం N1c/N1i స్థానంలో N2c/N2i పేర్లు చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0662; proof-theory/natural-deduction/grafting; translation/content/proof-theory/natural-deduction/grafting.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the sequent derivation correctly identified as N2c/N2i rather than N1c/N1i?
+
+## REV-OLTEPTNATGRA-003 — OLTEPTNATGRA-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: నిర్వచించని delta స్థానంలో delta_1పై ఆగమనాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0662; proof-theory/natural-deduction/grafting; translation/content/proof-theory/natural-deduction/grafting.tex:53; printed/PDF page pending
+
+- Please double-check: Please double-check: Is induction on the height of delta_1 rather than an undefined delta?
+
+## REV-OLTEPTNATGRA-004 — OLTEPTNATGRA-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రతిస్థాపిత తెరిచి ఉన్న ఉపపత్తులు ఫలితంలో మిగలవని స్పష్టంచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0662; proof-theory/natural-deduction/grafting; translation/content/proof-theory/natural-deduction/grafting.tex:37; printed/PDF page pending
+
+- Please double-check: Please double-check: Are replaced open assumptions excluded from the grafted derivation’s remaining open assumptions?
+
+## REV-OLTEPTNATINT-001 — OLTEPTNATINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: యాష్కోవ్‌స్కీ పెట్టెలో Aను మొదటి వరుసగా, Bను చివరి వరుసగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0663; proof-theory/natural-deduction/introduction; translation/content/proof-theory/natural-deduction/introduction.tex:18; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the Jaśkowski box begin with assumption A and end with consequent B?
+
+## REV-OLTEPTNATINT-002 — OLTEPTNATINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Γ+A entails B నుంచి Γ entails A→B అనే సరైన నిగమనాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0663; proof-theory/natural-deduction/introduction; translation/content/proof-theory/natural-deduction/introduction.tex:45; printed/PDF page pending
+
+- Please double-check: Please double-check: Does implication introduction conclude Gamma entails A-to-B?
+
+## REV-OLTEPTNATQUA-001 — OLTEPTNATQUA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అస్తిత్వ తొలగింపు శాఖలో ప్రతిస్థాపిత ఫలితాలు, రెండు పూర్వపక్షాల వృక్షం చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0665; proof-theory/natural-deduction/quantifiers; translation/content/proof-theory/natural-deduction/quantifiers.tex:95; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the existential-elimination substitution case show both substituted premises and its correct two-branch inference?
+
+## REV-OLTEPTNATQUA-002 — OLTEPTNATQUA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అత్యుపరి అశుభ్రమైన నిగమనాన్ని ఎంచుకుని దాని ఉపనిరూపణ క్రమబద్ధతను సరైన కారణంతో తెలిపి ప్రకటించాం.
+
+- Occurrences: OLP-0665; proof-theory/natural-deduction/quantifiers; translation/content/proof-theory/natural-deduction/quantifiers.tex:122; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the regularization induction choose a highest dirty inference whose upper subproof is regular?
+
+## REV-OLTEPTNATN1-001 — OLTEPTNATN1-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అస్తిత్వ తొలగింపులో ఐగెన్ స్థిరాంకం పూర్వపక్షంలో తప్పనిసరిగా ఉన్నందున షరతును ఫలితం, తెరిచి మిగిలే ఉపపత్తులపై సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0666; proof-theory/natural-deduction/rules-N1; translation/content/proof-theory/natural-deduction/rules-N1.tex:131; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the existential eigenconstant restriction avoid forbidding its required occurrence in the minor premise?
+
+## REV-OLTEPTNATN2-001 — OLTEPTNATN2-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పట్టికతో సరిపోయేలా forall/exists మాక్రోలను lforall/lexistsగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0667; proof-theory/natural-deduction/rules-N2; translation/content/proof-theory/natural-deduction/rules-N2.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the caption’s quantifier rule macros match the N2 table and its later wording?
+
+## REV-OLTEPTNATRPR-001 — OLTEPTNATRPR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: N1 నిరూపణలను ఉపపత్తుల నుంచి నిర్మించిన సూత్ర వృక్షాలుగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0668; proof-theory/natural-deduction/rules-proofs; translation/content/proof-theory/natural-deduction/rules-proofs.tex:85; printed/PDF page pending
+
+- Please double-check: Please double-check: Are N1 derivations consistently characterized as formula trees built from assumptions?
+
+## REV-OLTEPTNATRPR-002 — OLTEPTNATRPR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూడో పూర్వపక్షపు A2 పునరావృతాన్ని A3గా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0668; proof-theory/natural-deduction/rules-proofs; translation/content/proof-theory/natural-deduction/rules-proofs.tex:126; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the third premise of the generic three-premise tree end in A_3?
+
+## REV-OLTEPTNATRPR-003 — OLTEPTNATRPR-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: tab:N1కు N2 పేర్ల బదులు N1c/N1i పేర్లు చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0668; proof-theory/natural-deduction/rules-proofs; translation/content/proof-theory/natural-deduction/rules-proofs.tex:130; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the reference to tab:N1 correctly name N1c/N1i rules?
+
+## REV-OLTEPTNATRPR-004 — OLTEPTNATRPR-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఉదాహరణలో విసర్జన గుర్తును రెండో సంయుక్త భాగం నుంచి మొత్తం సంయుక్త ఉపపత్తిపైకి మార్చి ప్రకటించాం.
+
+- Occurrences: OLP-0668; proof-theory/natural-deduction/rules-proofs; translation/content/proof-theory/natural-deduction/rules-proofs.tex:166; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the discharge label attached to the whole conjunction assumption in every example diagram?
+
+## REV-OLTEPTNATRPR-005 — OLTEPTNATRPR-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తక్షణ ఉపనిరూపణ δ1ను, δ1=0 మరియు δ2=δ3=1 ఎత్తులను సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0668; proof-theory/natural-deduction/rules-proofs; translation/content/proof-theory/natural-deduction/rules-proofs.tex:167; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the immediate subproof and example heights stated consistently with the derivations?
+
+## REV-OLTEPTNATSEQ-001 — OLTEPTNATSEQ-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సూత్ర-వృక్ష సహజ నిగమనానికి G1 పేర్ల బదులు N1c/N1i పేర్లు చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0669; proof-theory/natural-deduction/sequents; translation/content/proof-theory/natural-deduction/sequents.tex:15; printed/PDF page pending
+
+- Please double-check: Please double-check: Are the opening natural-deduction formula-tree systems named N1c/N1i rather than G1c/G1i?
+
+## REV-OLTEPTNATSEQ-002 — OLTEPTNATSEQ-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: N2 వృక్షంలో x:B స్థానంలో x:!B సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0669; proof-theory/natural-deduction/sequents; translation/content/proof-theory/natural-deduction/sequents.tex:56; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the missing formula marker restored in the N2 implication-introduction tree?
+
+## REV-OLTEPTNATSEQ-003 — OLTEPTNATSEQ-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆగమన N1 ఉపనిరూపణను δ1-primeగా గుర్తించి, తుది నిరూపణతో కలపకుండా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0669; proof-theory/natural-deduction/sequents; translation/content/proof-theory/natural-deduction/sequents.tex:114; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the reverse translation identify the N1 inductive subproof as delta_1-prime in prose and diagrams?
+
+## REV-OLTEPTNATG2I-001 — OLTEPTNATG2I-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: G2ci స్థానంలో G2i వ్యవస్థ పేరు సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:22; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the proof use G2i as the source calculus, consistent with the proposition?
+
+## REV-OLTEPTNATG2I-002 — OLTEPTNATG2I-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆగమన లక్ష్య వ్యవస్థ N2c కాక N2i అని సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the induction hypothesis produce N2i rather than N2c derivations?
+
+## REV-OLTEPTNATG2I-003 — OLTEPTNATG2I-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఎడమ బలహీనీకరణ వృక్షంలోని కుడి-బలహీనీకరణ గుర్తును సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:52; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the left-weakening inference correctly labelled on the diagram?
+
+## REV-OLTEPTNATG2I-004 — OLTEPTNATG2I-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గుర్తు ప్రతిస్థాపనను G2i π1 కాక N2i δ1లో చేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:64; printed/PDF page pending
+
+- Please double-check: Please double-check: Are labelled formulas renamed in the induced N2i derivation rather than the G2i source proof?
+
+## REV-OLTEPTNATG2I-005 — OLTEPTNATG2I-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆగమన నిరూపణ δ1పై ప్రవేశ నియమం వర్తింపజేసి δ పొందే దిశను సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:76; printed/PDF page pending
+
+- Please double-check: Please double-check: Is implication introduction applied to the inductive derivation to obtain the final derivation?
+
+## REV-OLTEPTNATG2I-006 — OLTEPTNATG2I-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఎడమ అన్వయంలో δ1 గుర్తుల పునర్నామకరణం, δ3 వృక్షానికి Γ1-prime సందర్భం చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:102; printed/PDF page pending
+
+- Please double-check: Please double-check: Does implication-left relabel the induced derivation and retain its context in the auxiliary tree?
+
+## REV-OLTEPTNATG2I-007 — OLTEPTNATG2I-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: రెండో సంయోగ పూర్వపక్షాన్ని Bగా, N2i δ2లో గుర్తుల పునర్నామకరణంగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0670; proof-theory/natural-deduction/translation-G2i; translation/content/proof-theory/natural-deduction/translation-G2i.tex:118; printed/PDF page pending
+
+- Please double-check: Please double-check: Does conjunction-right use B for its second premise and relabel the induced N2i derivation?
+
+## REV-OLTEPTNATN2I-001 — OLTEPTNATN2I-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: N2i నుంచి లక్ష్య వ్యవస్థను G2iగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0671; proof-theory/natural-deduction/translation-N2i; translation/content/proof-theory/natural-deduction/translation-N2i.tex:16; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the proposition target G2i rather than repeat N2i?
+
+## REV-OLTEPTNATN2I-002 — OLTEPTNATN2I-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అసత్య ఫలితానికి రెండో ఆగమన నిరూపణ Bను ఇస్తుందని, ఖాళీ ఫలితానికి ఎడమ అన్వయం, కట్ అవసరమని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0671; proof-theory/natural-deduction/translation-N2i; translation/content/proof-theory/natural-deduction/translation-N2i.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Does implication elimination with a false conclusion derive an empty succedent from the actual second-premise result?
+
+## REV-OLTEPTNATN2I-003 — OLTEPTNATN2I-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: G2c వృక్ష పూర్వపక్షం నుంచి N2 యొక్క x గుర్తును తొలగించి ప్రకటించాం.
+
+- Occurrences: OLP-0671; proof-theory/natural-deduction/translation-N2i; translation/content/proof-theory/natural-deduction/translation-N2i.tex:101; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the N2 label removed from the G2c proof-tree premise?
+
+## REV-OLTEPTNATN2I-004 — OLTEPTNATN2I-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: FalseCl అసత్య ఫలిత ప్రత్యేక సందర్భంలో ఖాళీ ఫలితభాగానికి చివరి కట్ చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0671; proof-theory/natural-deduction/translation-N2i; translation/content/proof-theory/natural-deduction/translation-N2i.tex:103; printed/PDF page pending
+
+- Please double-check: Please double-check: Does classical absurdity with a false conclusion reach the required empty succedent?
+
+## REV-OLTEPTNORINT-001 — OLTEPTNORINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: δ1ను A శాఖకు, δ2ను A నుంచి B ఉపనిరూపణకు మాత్రమే ఉంచి ప్రకటించాం.
+
+- Occurrences: OLP-0672; proof-theory/normalization/introduction; translation/content/proof-theory/normalization/introduction.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Are delta_1 and delta_2 consistently assigned to the A proof and the B-from-A subproof?
+
+## REV-OLTEPTNORPER-001 — OLTEPTNORPER-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పక్కనున్న నిరూపణ వృక్షానికి అనుగుణంగా కట్ సూత్రంలో సంయోగాన్ని వాడి అసంగతిని ప్రకటించాం.
+
+- Occurrences: OLP-0675; proof-theory/normalization/permutations; translation/content/proof-theory/normalization/permutations.tex:33; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the first cut formula agree with the displayed conjunction-elimination derivation?
+
+## REV-OLTEPTNORPER-002 — OLTEPTNORPER-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: అభ్యాసంలోని రెండవ నియమాన్ని N1i సందర్భానికి అనుగుణంగా అస్తిత్వ తొలగింపుగా వాడి ప్రకటించాం.
+
+- Occurrences: OLP-0675; proof-theory/normalization/permutations; translation/content/proof-theory/normalization/permutations.tex:319; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the second exercise consistently phrased with the N1i existential-elimination rule?
+
+## REV-OLTEPTNORPER-003 — OLTEPTNORPER-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: స్వతంత్ర చరరాశి వివరణలో నియమ చిహ్నాన్ని ప్రదర్శిత వృక్షానికి అనుగుణంగా అస్తిత్వ తొలగింపుగా వాడి ప్రకటించాం.
+
+- Occurrences: OLP-0675; proof-theory/normalization/permutations; translation/content/proof-theory/normalization/permutations.tex:368; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the eigenvariable explanation use the same existential-elimination rule as its displayed derivation?
+
+## REV-OLTEPTNORRED-001 — OLTEPTNORRED-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఈ పరివర్తనలో లేని నాలుగవ ఉపనిరూపణ గుర్తును జాబితా నుంచి తీసి అసంగతిని ప్రకటించాం.
+
+- Occurrences: OLP-0676; proof-theory/normalization/reductions; translation/content/proof-theory/normalization/reductions.tex:41; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the unexplained fourth subproof removed only from the unchanged-cut list while the actual derivation remains intact?
+
+## REV-OLTEPTNORSEG-001 — OLTEPTNORSEG-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఖండ నిర్వచనం ప్రకారం ఉప పూర్వపక్షం తరువాత నిష్కర్ష వస్తుందని ప్రకటితంగా సరిచేశాం.
+
+- Occurrences: OLP-0677; proof-theory/normalization/segments; translation/content/proof-theory/normalization/segments.tex:54; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the conclusion follow the minor premise in the segment explanation, consistent with the formal definition?
+
+## REV-OLTEPTNORSEG-002 — OLTEPTNORSEG-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మూడవ షరతులో తదుపరి సూత్ర ఘటనకు తప్పిన గుర్తును చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0677; proof-theory/normalization/segments; translation/content/proof-theory/normalization/segments.tex:64; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the next formula occurrence marked with the same exclamation notation as the rest of the sequence?
+
+## REV-OLTEPTNORSEG-003 — OLTEPTNORSEG-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఒక-ఘటన కట్ సంక్షిప్త వివరణలో అధికారిక నిర్వచనంలోని అసత్య నియమ ప్రత్యామ్నాయాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0677; proof-theory/normalization/segments; translation/content/proof-theory/normalization/segments.tex:74; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the one-occurrence cut summary include the falsum-elimination alternative from the formal definition?
+
+## REV-OLTEPTNORTR-001 — OLTEPTNORTR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కట్-రహిత అనువాద మూల వ్యవస్థను పక్కనున్న G2i→N2i ప్రతిపాదనకు అనుగుణంగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:14; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the cut-free source system consistently named G2i?
+
+## REV-OLTEPTNORTR-002 — OLTEPTNORTR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మొదటి ఉపఫలిత లక్ష్యాన్ని N2iగా సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the first corollary consistently targeted at N2i?
+
+## REV-OLTEPTNORTR-003 — OLTEPTNORTR-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రారంభ నిరూపణ సాధారణమైనప్పుడు కట్ నివారణ సాధ్యమనే తప్పిన షరతును చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:32; printed/PDF page pending
+
+- Please double-check: Please double-check: Is normality stated as the condition for avoiding cuts in the reverse translation?
+
+## REV-OLTEPTNORTR-004 — OLTEPTNORTR-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మార్చి పొందిన నిరూపణ గుర్తును ముందు నిర్వచించిన గుర్తుతో సమన్వయం చేసి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:81; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the transformed conjunction-case proof use the declared delta_1 label?
+
+## REV-OLTEPTNORTR-005 — OLTEPTNORTR-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: G2i సందర్భంలో గుర్తులు తొలగిన సూత్రం, ప్రైమ్ సందర్భాన్ని వృక్షానికి అనుగుణంగా వాడి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:103; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the conjunction-case G2i induction result remove labels and use the primed context?
+
+## REV-OLTEPTNORTR-006 — OLTEPTNORTR-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ఆగమన ఫలితాల రెండు సందర్భ గుర్తులను ఎడమ-ఇంప్లికేషన్ వృక్షంతో సమన్వయం చేసి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:206; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the implication-case G2i results use Gamma_1 prime and Gamma_2 prime respectively?
+
+## REV-OLTEPTNORTR-007 — OLTEPTNORTR-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: మొదటి బలహీనీకరణకు అవసరమైన అసత్య సమానత్వ షరతును పూర్తి చేసి ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:207; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the falsum condition for the first right weakening complete?
+
+## REV-OLTEPTNORTR-008 — OLTEPTNORTR-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: N1i ఉపసూత్ర లక్షణ పరిధిలో తెరిచి ఉన్న ఊహలను కూడా చేర్చి, N2i చివరి సీక్వెంట్ వాటిని కలిగి ఉంటుందని ప్రకటించాం.
+
+- Occurrences: OLP-0678; proof-theory/normalization/translations; translation/content/proof-theory/normalization/translations.tex:215; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the N1i subformula scope include open assumptions, as the N2i end-sequent does?
+
+## REV-OLTEPTPSCPL-001 — OLTEPTPSCPL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కుడి సందర్భ సూత్రాల పరిమాణ వాక్యంలో తప్పిన సూత్ర అక్షరాన్ని చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0679; proof-theory/proof-search/completeness; translation/content/proof-theory/proof-search/completeness.tex:14; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the missing formula letter restored in the countermodel condition for the succedent?
+
+## REV-OLTEPTPSCPL-002 — OLTEPTPSCPL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: స్థిరాంక సమితికి అనుబంధ సీక్వెంట్‌లో నిర్వచించిన లాంబ్డా సందర్భ గుర్తును వాడి ప్రకటించాం.
+
+- Occurrences: OLP-0679; proof-theory/proof-search/completeness; translation/content/proof-theory/proof-search/completeness.tex:21; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the failure-branch constant set refer to the defined Lambda_n succedent?
+
+## REV-OLTEPTPSCPL-003 — OLTEPTPSCPL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రమేయం, విధేయం స్థానాల సంఖ్యతో పదాల జాబితాలు, కార్టీషియన్ ఘాతం సమన్వయం చేసి ప్రకటించాం.
+
+- Occurrences: OLP-0679; proof-theory/proof-search/completeness; translation/content/proof-theory/proof-search/completeness.tex:40; printed/PDF page pending
+
+- Please double-check: Please double-check: Do all m-place term-model lists and domain powers use the same arity m?
+
+## REV-OLTEPTPSSAL-001 — OLTEPTPSSAL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కొత్త సూచికలు పాత గరిష్ఠ సూచికను మించేవిగా k నిర్వచనాన్ని ప్రకటితంగా సరిచేశాం.
+
+- Occurrences: OLP-0683; proof-theory/proof-search/search-algorithm; translation/content/proof-theory/proof-search/search-algorithm.tex:32; printed/PDF page pending
+
+- Please double-check: Please double-check: Does fresh index allocation keep every new index strictly above the previous maximum?
+
+## REV-OLTEPTPSSAL-002 — OLTEPTPSSAL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కుడి అస్తిత్వ నియమ వృక్షంలో నియమ పేరు సరిచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0683; proof-theory/proof-search/search-algorithm; translation/content/proof-theory/proof-search/search-algorithm.tex:73; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the right-existential reduction tree labelled with the right rule?
+
+## REV-OLTEPTPSSAL-003 — OLTEPTPSSAL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: గద్యంలో తగ్గించే అస్తిత్వ సూత్ర ఘటనకు తప్పిన సూచికను చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0683; proof-theory/proof-search/search-algorithm; translation/content/proof-theory/proof-search/search-algorithm.tex:74; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the prose retain the selected existential occurrence index?
+
+## REV-OLTEPTPSSAL-004 — OLTEPTPSSAL-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: పదాలు అయిపోయినప్పుడు కేటాయించిన ఖాళీ కాని సమితిలోని స్థిరాంకాన్నే మళ్లీ వాడి స్థిరాంక సమితి షరతును నిలిపాం; సవరణ ప్రకటించాం.
+
+- Occurrences: OLP-0683; proof-theory/proof-search/search-algorithm; translation/content/proof-theory/proof-search/search-algorithm.tex:75; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the exhausted-term fallback stay within the nonempty assigned constant set?
+
+## REV-OLTEPTPSTAB-001 — OLTEPTPSTAB-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: కుడి సందర్భంలోని చివరి సూత్రానికి అసత్య చిహ్నం పెట్టి ప్రకటించాం.
+
+- Occurrences: OLP-0684; proof-theory/proof-search/tableaux; translation/content/proof-theory/proof-search/tableaux.tex:17; printed/PDF page pending
+
+- Please double-check: Please double-check: Are both initial succedent formulas signed false?
+
+## REV-OLTEPTPSTAB-002 — OLTEPTPSTAB-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: సత్యంగా చిహ్నిత అసత్య సూత్రాన్ని శాఖ మూసుకునే కేసుగా, అనువాదంలో అసత్య ఆక్సియమ్ కేసుగా చేర్చి ప్రకటించాం.
+
+- Occurrences: OLP-0684; proof-theory/proof-search/tableaux; translation/content/proof-theory/proof-search/tableaux.tex:87; printed/PDF page pending
+
+- Please double-check: Please double-check: Does true falsum close a branch and translate to the falsum axiom?
+
+## REV-OLTEPTPSTAB-003 — OLTEPTPSTAB-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: తనిఖీ గుర్తు పెట్టని పునర్వినియోగ పరిమాణ సూత్రాల ఘటనలు పూర్తిగా చేరిన శాఖను, కొత్త ఘటన లేకపోతే నోడ్ చేర్చని దశను స్పష్టంచేసి ప్రకటించాం.
+
+- Occurrences: OLP-0684; proof-theory/proof-search/tableaux; translation/content/proof-theory/proof-search/tableaux.tex:99; printed/PDF page pending
+
+- Please double-check: Please double-check: Is finite open-branch saturation distinguished from checking off reusable quantifiers?
+
+## REV-OLTEPTPTYINT-001 — OLTEPTPTYINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: ప్రదర్శిత పద నిర్మాణాన్ని పక్కనున్న నిర్వచనానికి అనుగుణంగా ప్రయోగ పదంగా పేర్కొని మూల పదభేదాన్ని ప్రకటించాం.
+
+- Occurrences: OLP-0686; proof-theory/propositions-as-types/introduction; translation/content/proof-theory/propositions-as-types/introduction.tex:67; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the displayed M1 M2 typing rule clearly described as application rather than function composition?
+
+## REV-OLTEPTPTYNOR-001 — OLTEPTPTYNOR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the explicitly declared summand types.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:37; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Use the explicitly declared summand types.
+
+## REV-OLTEPTPTYNOR-002 — OLTEPTPTYNOR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Adjoin zero to the set whose maximum is taken.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:38; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Adjoin zero to the set whose maximum is taken.
+
+## REV-OLTEPTPTYNOR-003 — OLTEPTPTYNOR-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use x in the major-term position.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:74; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Use x in the major-term position.
+
+## REV-OLTEPTPTYNOR-004 — OLTEPTPTYNOR-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Remove only the stray parenthesis.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:75; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Remove only the stray parenthesis.
+
+## REV-OLTEPTPTYNOR-005 — OLTEPTPTYNOR-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Describe the rank as the length of the substituted variable type.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:76; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Describe the rank as the length of the substituted variable type.
+
+## REV-OLTEPTPTYNOR-006 — OLTEPTPTYNOR-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Include both proper source subterms; the stated strict rank assumption covers them.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:99; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Include both proper source subterms; the stated strict rank assumption covers them.
+
+## REV-OLTEPTPTYNOR-007 — OLTEPTPTYNOR-007
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: Retain the source argument for inspection and explicitly disclose the gap; do not certify normalization or the separately asserted strong normalization.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:121; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Retain the source argument for inspection and explicitly disclose the gap; do not certify normalization or the separately asserted strong normalization.
+
+## REV-OLTEPTPTYNOR-008 — OLTEPTPTYNOR-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use O1' as the common result.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:142; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Use O1' as the common result.
+
+## REV-OLTEPTPTYNOR-009 — OLTEPTPTYNOR-009
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: Keep the source example and explicitly disclose that a complete weak Church–Rosser proof has not been supplied.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:143; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Keep the source example and explicitly disclose that a complete weak Church–Rosser proof has not been supplied.
+
+## REV-OLTEPTPTYNOR-010 — OLTEPTPTYNOR-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Apply strong normalization to the one-step relation in the prose, Newman statement and proof; retain multistep confluence.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:130; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Apply strong normalization to the one-step relation in the prose, Newman statement and proof; retain multistep confluence.
+
+## REV-OLTEPTPTYNOR-011 — OLTEPTPTYNOR-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Write the initial one-step arrows.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:156; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Write the initial one-step arrows.
+
+## REV-OLTEPTPTYNOR-012 — OLTEPTPTYNOR-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Reduce the common descendant to N* under the stated termination assumption, then compare normal forms.
+
+- Occurrences: OLP-0687; proof-theory/propositions-as-types/normalization; translation/content/proof-theory/propositions-as-types/normalization.tex:160; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosed treatment precise: Reduce the common descendant to N* under the stated termination assumption, then compare normal forms.
+
+## REV-OLTEPTPTYTER-001 — OLTEPTPTYTER-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the declared second premise M in the constructor.
+
+- Occurrences: OLP-0688; proof-theory/propositions-as-types/proof-terms; translation/content/proof-theory/propositions-as-types/proof-terms.tex:35; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the declared second premise M in the constructor.
+
+## REV-OLTEPTPTYTER-002 — OLTEPTPTYTER-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Supply the existing premise term N as its argument.
+
+- Occurrences: OLP-0688; proof-theory/propositions-as-types/proof-terms; translation/content/proof-theory/propositions-as-types/proof-terms.tex:49; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Supply the existing premise term N as its argument.
+
+## REV-OLTEPTPTYTER-003 — OLTEPTPTYTER-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the declared proof term N.
+
+- Occurrences: OLP-0688; proof-theory/propositions-as-types/proof-terms; translation/content/proof-theory/propositions-as-types/proof-terms.tex:69; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the declared proof term N.
+
+## REV-OLTEPTPTYRED-001 — OLTEPTPTYRED-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use separate arguments N1 and N2.
+
+- Occurrences: OLP-0691; proof-theory/propositions-as-types/reduction; translation/content/proof-theory/propositions-as-types/reduction.tex:41; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use separate arguments N1 and N2.
+
+## REV-OLTEPTPTYRED-002 — OLTEPTPTYRED-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the optional type annotation plus index and term.
+
+- Occurrences: OLP-0691; proof-theory/propositions-as-types/reduction; translation/content/proof-theory/propositions-as-types/reduction.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the optional type annotation plus index and term.
+
+## REV-OLTEPTPTYRED-003 — OLTEPTPTYRED-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use A_(3-i), preserving the branch selection and substitution. This gather expression was inspected directly; the existing parser reports no delta for it.
+
+- Occurrences: OLP-0691; proof-theory/propositions-as-types/reduction; translation/content/proof-theory/propositions-as-types/reduction.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use A_(3-i), preserving the branch selection and substitution. This gather expression was inspected directly; the existing parser reports no delta for it.
+
+## REV-OLTEPTPTYRED-004 — OLTEPTPTYRED-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Write the third term M3.
+
+- Occurrences: OLP-0691; proof-theory/propositions-as-types/reduction; translation/content/proof-theory/propositions-as-types/reduction.tex:160; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Write the third term M3.
+
+## REV-OLTEPTPTYTN3-001 — OLTEPTPTYTN3-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Give the tN3 table its own tab:tN3ip label and align the types-section reference.
+
+- Occurrences: OLP-0693; proof-theory/propositions-as-types/rules-tN3; translation/content/proof-theory/propositions-as-types/rules-tN3.tex:71; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Give the tN3 table its own tab:tN3ip label and align the types-section reference.
+
+## REV-OLTEPTPTYSND-001 — OLTEPTPTYSND-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Align the second conjunct with B in both opening expressions.
+
+- Occurrences: OLP-0694; proof-theory/propositions-as-types/sequent-natural-deduction; translation/content/proof-theory/propositions-as-types/sequent-natural-deduction.tex:30; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Align the second conjunct with B in both opening expressions.
+
+## REV-OLTEPTPTYSND-002 — OLTEPTPTYSND-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Keep the declared B assumption in each affected context, derive falsity twice, and discharge B only at the end.
+
+- Occurrences: OLP-0694; proof-theory/propositions-as-types/sequent-natural-deduction; translation/content/proof-theory/propositions-as-types/sequent-natural-deduction.tex:111; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Keep the declared B assumption in each affected context, derive falsity twice, and discharge B only at the end.
+
+## REV-OLTEPTPTYTYP-001 — OLTEPTPTYTYP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the declared term N.
+
+- Occurrences: OLP-0697; proof-theory/propositions-as-types/types; translation/content/proof-theory/propositions-as-types/types.tex:38; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the declared term N.
+
+## REV-OLTEPTPTYTYP-002 — OLTEPTPTYTYP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use x,y in the case constructor to match the branch contexts.
+
+- Occurrences: OLP-0697; proof-theory/propositions-as-types/types; translation/content/proof-theory/propositions-as-types/types.tex:39; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use x,y in the case constructor to match the branch contexts.
+
+## REV-OLTEPTPTYTYP-003 — OLTEPTPTYTYP-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: State uniqueness conditional on existence of a type, and qualify the introductory reconstruction claim for correct proof terms.
+
+- Occurrences: OLP-0697; proof-theory/propositions-as-types/types; translation/content/proof-theory/propositions-as-types/types.tex:44; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: State uniqueness conditional on existence of a type, and qualify the introductory reconstruction claim for correct proof terms.
+
+## REV-OLTEPTPTYTYP-004 — OLTEPTPTYTYP-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Refer to the distinct tab:tN3ip label repaired in the actual typing table.
+
+- Occurrences: OLP-0697; proof-theory/propositions-as-types/types; translation/content/proof-theory/propositions-as-types/types.tex:51; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Refer to the distinct tab:tN3ip label repaired in the actual typing table.
+
+## REV-OLTEPTPTYTYP-005 — OLTEPTPTYTYP-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Clarify that contexts are single-valued assignments and alpha-rename binders to fresh names before extending them, while still allowing extra unused variables.
+
+- Occurrences: OLP-0697; proof-theory/propositions-as-types/types; translation/content/proof-theory/propositions-as-types/types.tex:18; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Clarify that contexts are single-valued assignments and alpha-rename binders to fresh names before extending them, while still allowing extra unused variables.
+
+## REV-OLTEPTSEQIRL-001 — OLTEPTSEQIRL-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use true on the right or false on the left.
+
+- Occurrences: OLP-0699; proof-theory/sequent-calculus/interpretation-rules; translation/content/proof-theory/sequent-calculus/interpretation-rules.tex:47; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use true on the right or false on the left.
+
+## REV-OLTEPTSEQIRL-002 — OLTEPTSEQIRL-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the left XOR rule label.
+
+- Occurrences: OLP-0699; proof-theory/sequent-calculus/interpretation-rules; translation/content/proof-theory/sequent-calculus/interpretation-rules.tex:37; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the left XOR rule label.
+
+## REV-OLTEPTSEQIRL-003 — OLTEPTSEQIRL-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Restrict the necessity argument to distinct atomic placeholders and the last logical inference, setting aside redundant structural endings; keep the displayed construction unchanged.
+
+- Occurrences: OLP-0699; proof-theory/sequent-calculus/interpretation-rules; translation/content/proof-theory/sequent-calculus/interpretation-rules.tex:73; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Restrict the necessity argument to distinct atomic placeholders and the last logical inference, setting aside redundant structural endings; keep the displayed construction unchanged.
+
+## REV-OLTEPTSEQEX-001 — OLTEPTSEQEX-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the actual antecedent (C and D) implies E as Gamma.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:65; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the actual antecedent (C and D) implies E as Gamma.
+
+## REV-OLTEPTSEQEX-002 — OLTEPTSEQEX-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the left-implication label.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:66; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the left-implication label.
+
+## REV-OLTEPTSEQEX-003 — OLTEPTSEQEX-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Add the display command inside its existing display.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:106; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Add the display command inside its existing display.
+
+## REV-OLTEPTSEQEX-004 — OLTEPTSEQEX-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Keep E in the succedent of that weakening inference.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:107; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Keep E in the succedent of that weakening inference.
+
+## REV-OLTEPTSEQEX-005 — OLTEPTSEQEX-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Name G3c in the not-yet-established claim.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:118; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Name G3c in the not-yet-established claim.
+
+## REV-OLTEPTSEQEX-006 — OLTEPTSEQEX-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the inner formula B in both quantified forms to agree with the recurrence.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:129; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the inner formula B in both quantified forms to agree with the recurrence.
+
+## REV-OLTEPTSEQEX-008 — OLTEPTSEQEX-008
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Retain the common duplicated antecedent through right conjunction, then contract only on the left and retain the conjunction succedent; remove trailing commas.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:187; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Retain the common duplicated antecedent through right conjunction, then contract only on the left and retain the conjunction succedent; remove trailing commas.
+
+## REV-OLTEPTSEQEX-009 — OLTEPTSEQEX-009
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: State the needed premise-proof restriction instead of the irrelevant empty-context formula.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:222; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: State the needed premise-proof restriction instead of the irrelevant empty-context formula.
+
+## REV-OLTEPTSEQEX-010 — OLTEPTSEQEX-010
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use !D.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:268; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use !D.
+
+## REV-OLTEPTSEQEX-011 — OLTEPTSEQEX-011
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use B,Gamma for the second antecedent context.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:269; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use B,Gamma for the second antecedent context.
+
+## REV-OLTEPTSEQEX-012 — OLTEPTSEQEX-012
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Explicitly restrict that depth observation to logical rules.
+
+- Occurrences: OLP-0702; proof-theory/sequent-calculus/proof-examples; translation/content/proof-theory/sequent-calculus/proof-examples.tex:138; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Explicitly restrict that depth observation to logical rules.
+
+## REV-OLTEPTSEQQUA-001 — OLTEPTSEQQUA-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the universal-left labels in those two diagrams.
+
+- Occurrences: OLP-0703; proof-theory/sequent-calculus/quantifiers; translation/content/proof-theory/sequent-calculus/quantifiers.tex:78; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the universal-left labels in those two diagrams.
+
+## REV-OLTEPTSEQQUA-002 — OLTEPTSEQQUA-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Choose a highest dirty inference, justify regularity by cleanliness of upper inferences, and state a decrease of at least one.
+
+- Occurrences: OLP-0703; proof-theory/sequent-calculus/quantifiers; translation/content/proof-theory/sequent-calculus/quantifiers.tex:107; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Choose a highest dirty inference, justify regularity by cleanliness of upper inferences, and state a decrease of at least one.
+
+## REV-OLTEPTSEQQUA-003 — OLTEPTSEQQUA-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Separate the unchanged eigenvariable set and the inserted-term freshness statements without changing the mathematical content.
+
+- Occurrences: OLP-0703; proof-theory/sequent-calculus/quantifiers; translation/content/proof-theory/sequent-calculus/quantifiers.tex:79; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Separate the unchanged eigenvariable set and the inserted-term freshness statements without changing the mathematical content.
+
+## REV-OLTEPTSEQQUA-004 — OLTEPTSEQQUA-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Clarify capture-avoiding substitution with alpha-renaming of bound variables when needed.
+
+- Occurrences: OLP-0703; proof-theory/sequent-calculus/quantifiers; translation/content/proof-theory/sequent-calculus/quantifiers.tex:28; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Clarify capture-avoiding substitution with alpha-renaming of bound variables when needed.
+
+## REV-OLTEPTSEQADM-001 — OLTEPTSEQADM-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Insert the multiset comma before Gamma.
+
+- Occurrences: OLP-0698; proof-theory/sequent-calculus/admissible-derivable; translation/content/proof-theory/sequent-calculus/admissible-derivable.tex:51; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Insert the multiset comma before Gamma.
+
+## REV-OLTEPTSEQADM-002 — OLTEPTSEQADM-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Put A iff B in the antecedent of that rule conclusion.
+
+- Occurrences: OLP-0698; proof-theory/sequent-calculus/admissible-derivable; translation/content/proof-theory/sequent-calculus/admissible-derivable.tex:99; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Put A iff B in the antecedent of that rule conclusion.
+
+## REV-OLTEPTSEQADM-003 — OLTEPTSEQADM-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Render the logical object as the end-sequent and disclose the source wording while preserving the protected token.
+
+- Occurrences: OLP-0698; proof-theory/sequent-calculus/admissible-derivable; translation/content/proof-theory/sequent-calculus/admissible-derivable.tex:111; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Render the logical object as the end-sequent and disclose the source wording while preserving the protected token.
+
+## REV-OLTEPTSEQADM-004 — OLTEPTSEQADM-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Include falsity-left axioms in the weakening induction base; adding a right formula preserves that axiom family.
+
+- Occurrences: OLP-0698; proof-theory/sequent-calculus/admissible-derivable; translation/content/proof-theory/sequent-calculus/admissible-derivable.tex:176; printed/PDF page pending
+
+- Please double-check: Please double-check: Does the weakening induction explicitly preserve the falsity-left axiom family as well as atomic identity axioms?
+
+## REV-OLTEPTSEQINV-001 — OLTEPTSEQINV-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Keep n as premise count and use a separate height bound h.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:26; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Keep n as premise count and use a separate height bound h.
+
+## REV-OLTEPTSEQINV-002 — OLTEPTSEQINV-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Replace those two narrative conjunction occurrences by separate A,B antecedent entries.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:113; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Replace those two narrative conjunction occurrences by separate A,B antecedent entries.
+
+## REV-OLTEPTSEQINV-003 — OLTEPTSEQINV-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Rename internal eigenvariables away from the inserted constant before substitution, here and in the later universal contraction example.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:134; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Rename internal eigenvariables away from the inserted constant before substitution, here and in the later universal contraction example.
+
+## REV-OLTEPTSEQINV-004 — OLTEPTSEQINV-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Retain every freshness condition of the lemma while applying the induction.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:164; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Retain every freshness condition of the lemma while applying the induction.
+
+## REV-OLTEPTSEQINV-005 — OLTEPTSEQINV-005
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the universal-right label.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:266; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the universal-right label.
+
+## REV-OLTEPTSEQINV-006 — OLTEPTSEQINV-006
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Restore B(t) in both places.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:289; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Restore B(t) in both places.
+
+## REV-OLTEPTSEQINV-007 — OLTEPTSEQINV-007
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Include the falsity-left family: conjunction decomposition preserves its contextual falsity, and contraction never removes the last falsity occurrence.
+
+- Occurrences: OLP-0701; proof-theory/sequent-calculus/invertibility; translation/content/proof-theory/sequent-calculus/invertibility.tex:69; printed/PDF page pending
+
+- Please double-check: Please double-check: Do the inversion and contraction bases explicitly retain the falsity-left axiom family, including a remaining falsity occurrence after contraction?
+
+## REV-OLTEPTSEQG1I-001 — OLTEPTSEQG1I-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Give the G1i table its own tab:G1i label.
+
+- Occurrences: OLP-0705; proof-theory/sequent-calculus/rules-G1i; translation/content/proof-theory/sequent-calculus/rules-G1i.tex:110; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Give the G1i table its own tab:G1i label.
+
+## REV-OLTEPTSEQG1I-002 — OLTEPTSEQG1I-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Name the actual displayed falsity base axiom while retaining removal of right weakening.
+
+- Occurrences: OLP-0705; proof-theory/sequent-calculus/rules-G1i; translation/content/proof-theory/sequent-calculus/rules-G1i.tex:111; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Name the actual displayed falsity base axiom while retaining removal of right weakening.
+
+## REV-OLTEPTSEQG3C-001 — OLTEPTSEQG3C-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Insert the context separator.
+
+- Occurrences: OLP-0707; proof-theory/sequent-calculus/rules-G3c; translation/content/proof-theory/sequent-calculus/rules-G3c.tex:80; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Insert the context separator.
+
+## REV-OLTEPTSEQG3I-001 — OLTEPTSEQG3I-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use the indexed right-disjunction schema with one premise summand Ai and conclusion A1 or A2, for i=1,2.
+
+- Occurrences: OLP-0708; proof-theory/sequent-calculus/rules-G3i; translation/content/proof-theory/sequent-calculus/rules-G3i.tex:80; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Use the indexed right-disjunction schema with one premise summand Ai and conclusion A1 or A2, for i=1,2.
+
+## REV-OLTEPTSEQG3I-002 — OLTEPTSEQG3I-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Insert the multiset separator.
+
+- Occurrences: OLP-0708; proof-theory/sequent-calculus/rules-G3i; translation/content/proof-theory/sequent-calculus/rules-G3i.tex:81; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Insert the multiset separator.
+
+## REV-OLTEPTSEQG3I-003 — OLTEPTSEQG3I-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Align this G1m/G1i side reference with the preceding G1i table: remove right weakening and the actual falsity base axiom.
+
+- Occurrences: OLP-0708; proof-theory/sequent-calculus/rules-G3i; translation/content/proof-theory/sequent-calculus/rules-G3i.tex:82; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Align this G1m/G1i side reference with the preceding G1i table: remove right weakening and the actual falsity base axiom.
+
+## REV-OLTEPTSEQG3I-004 — OLTEPTSEQG3I-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Give this table the distinct tab:G3i label.
+
+- Occurrences: OLP-0708; proof-theory/sequent-calculus/rules-G3i; translation/content/proof-theory/sequent-calculus/rules-G3i.tex:83; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Give this table the distinct tab:G3i label.
+
+## REV-OLTEPTSEQLK-001 — OLTEPTSEQLK-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Give the sequence-based table its own tab:LK label.
+
+- Occurrences: OLP-0709; proof-theory/sequent-calculus/rules-LK; translation/content/proof-theory/sequent-calculus/rules-LK.tex:124; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Give the sequence-based table its own tab:LK label.
+
+## REV-OLTEPTSEQMG3I-001 — OLTEPTSEQMG3I-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Insert the context separator.
+
+- Occurrences: OLP-0710; proof-theory/sequent-calculus/rules-mG3i; translation/content/proof-theory/sequent-calculus/rules-mG3i.tex:81; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Insert the context separator.
+
+## REV-OLTEPTSEQMG3I-002 — OLTEPTSEQMG3I-002
+
+- Priority/confidence: high / source_proof_gap_disclosed_not_repaired
+
+- Chosen wording/treatment: Retain the names as an attributed source remark and disclose the unresolved definition/reference; do not invent or certify a minimal-system definition.
+
+- Occurrences: OLP-0710; proof-theory/sequent-calculus/rules-mG3i; translation/content/proof-theory/sequent-calculus/rules-mG3i.tex:82; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Retain the names as an attributed source remark and disclose the unresolved definition/reference; do not invent or certify a minimal-system definition.
+
+## REV-OLTEPTSEQMG3I-003 — OLTEPTSEQMG3I-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Give this table its own tab:mG3i label.
+
+- Occurrences: OLP-0710; proof-theory/sequent-calculus/rules-mG3i; translation/content/proof-theory/sequent-calculus/rules-mG3i.tex:83; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Give this table its own tab:mG3i label.
+
+## REV-OLTEPTSEQRP-001 — OLTEPTSEQRP-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Describe height as the maximum number of inference steps/tree edges on an end-to-initial path, preserving the recursive definition and documenting the clarification.
+
+- Occurrences: OLP-0711; proof-theory/sequent-calculus/rules-proofs; translation/content/proof-theory/sequent-calculus/rules-proofs.tex:79; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Describe height as the maximum number of inference steps/tree edges on an end-to-initial path, preserving the recursive definition and documenting the clarification.
+
+## REV-OLTEPTSEQRP-002 — OLTEPTSEQRP-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Replace the second succedent D by E and disclose that only antecedent order changes.
+
+- Occurrences: OLP-0711; proof-theory/sequent-calculus/rules-proofs; translation/content/proof-theory/sequent-calculus/rules-proofs.tex:92; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Replace the second succedent D by E and disclose that only antecedent order changes.
+
+## REV-OLTEPTSEQTR-001 — OLTEPTSEQTR-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Attribute arbitrary identity axioms to G1c and preserve the G3c provability citation, with a reader-visible disclosure.
+
+- Occurrences: OLP-0713; proof-theory/sequent-calculus/translations; translation/content/proof-theory/sequent-calculus/translations.tex:22; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Attribute arbitrary identity axioms to G1c and preserve the G3c provability citation, with a reader-visible disclosure.
+
+## REV-OLTEPTSEQTR-002 — OLTEPTSEQTR-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Remove the misdirected citation; explicitly weaken the missing conjunct/disjunct then apply the G3c rule, using the already cited G3c weakening admissibility.
+
+- Occurrences: OLP-0713; proof-theory/sequent-calculus/translations; translation/content/proof-theory/sequent-calculus/translations.tex:24; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Remove the misdirected citation; explicitly weaken the missing conjunct/disjunct then apply the G3c rule, using the already cited G3c weakening admissibility.
+
+## REV-OLTEPTSEQTR-003 — OLTEPTSEQTR-003
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Supply both bounded quantifier simulations: weaken in the principal before applying the G3c rule in the forward direction; apply G1c with the retained principal in context and contract the duplicate principal in the reverse direction (blocks 10 and 12).
+
+- Occurrences: OLP-0713; proof-theory/sequent-calculus/translations; translation/content/proof-theory/sequent-calculus/translations.tex:24; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Supply both bounded quantifier simulations: weaken in the principal before applying the G3c rule in the forward direction; apply G1c with the retained principal in context and contract the duplicate principal in the reverse direction (blocks 10 and 12).
+
+## REV-OLTEPTSEQTR-004 — OLTEPTSEQTR-004
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Delete the duplicated comma, preserving all formulas and rule labels.
+
+- Occurrences: OLP-0713; proof-theory/sequent-calculus/translations; translation/content/proof-theory/sequent-calculus/translations.tex:68; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Delete the duplicated comma, preserving all formulas and rule labels.
+
+## REV-OLTESOLSYNLAN-001 — OLTESOLSYNLAN-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: State the assignment-dependent translation using free relation/function variables, and disclose that quantifying them would change the proposition.
+
+- Occurrences: OLP-0716; second-order-logic/syntax-and-semantics/language-of-sol; translation/content/second-order-logic/syntax-and-semantics/language-of-sol.tex:20; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: State the assignment-dependent translation using free relation/function variables, and disclose that quantifying them would change the proposition.
+
+## REV-OLTESFRINDINT-001 — OLTESFRINDINT-001
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Replace the erroneous leading 2k by k^2. Also localize the two reader-facing equation tags in the same display; disclose the combined display atom delta.
+
+- Occurrences: OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:59; printed/PDF page pending
+
+- Please double-check: Please double-check: Is the disclosure precise: Replace the erroneous leading 2k by k^2. Also localize the two reader-facing equation tags in the same display; disclose the combined display atom delta.
+
+## REV-OLTENMLFRDST-002 — OLTENMLFRDST-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Move the closing math delimiter inside the third indcase argument without changing the formula; disclose the frozen-source repair in the target.
+
+- Occurrences: OLP-0426; normal-modal-logic/frame-definability/second-order-definability; translation/content/normal-modal-logic/frame-definability/second-order-definability.tex:49; printed/PDF page pending
+
+- Please double-check: Please double-check: Does moving the closing math delimiter inside the tagged biconditional case restore TeX grouping without changing the standard-translation identity?
+
+## REV-OLTESFRINDINT-002 — OLTESFRINDINT-002
+
+- Priority/confidence: medium / high_mathematical_repair_moderate_disclosure_wording
+
+- Chosen wording/treatment: Use !A consistently in the conjunction constructor and induction cases; leave !B, the constructors, and all proof claims unchanged.
+
+- Occurrences: OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:62-65; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:67-69; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:71-72; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:74-74; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:76-76; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:78-78; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:80-80; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:82-82; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:84-84; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:86-86; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:88-88; printed/PDF page pending; OLP-0718; sets-functions-relations/inductive-defs-proofs/introduction; translation/content/sets-functions-relations/inductive-defs-proofs/introduction.tex:90-90; printed/PDF page pending
+
+- Please double-check: Please double-check: Does replacing every mathematical !!^a artifact by !A consistently preserve the intended induction template and its pairing with !B?

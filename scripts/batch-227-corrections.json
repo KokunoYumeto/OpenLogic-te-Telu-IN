@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0578",
+  "source_path": "content/set-theory/ord-arithmetic/multiplication.tex",
+  "source_sha256": "eade2bc67a7dede697f1a89e0359c3ef4a1c52154bbcf4b1b45176f5d3742abb",
+  "audit_id": "OLTESTORDMULT-20260927",
+  "audit_review_path": "evidence/OLP-0578-ORDINAL-MULTIPLICATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1fa31d526468cb7cf29df19cb45208eecc6350ca1507db70c69bbffcae8e8e4f",
+  "audit_findings_path": "evidence/OLP-0578-ORDINAL-MULTIPLICATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "cc8e8450cd50f99d147e4ced72881881ace79194387ea7e14e5ba11d68cc8436",
+  "previous_corrections": 495,
+  "treatments": {
+    "OLTESTORDMULT-001": {
+      "target_line": 39,
+      "body_treatment": "సీమా పునరావృత్త సమీకరణానికి శూన్యం కాని ఎడమ గుణకం షరతు చేర్చి, శూన్య సందర్భం వేరు అని ప్రకటించాం."
+    }
+  }
+}

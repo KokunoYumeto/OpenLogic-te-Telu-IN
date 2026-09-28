@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "335",
+  "unit_id": "OLP-0686",
+  "unit_order": 686,
+  "source_path": "content/proof-theory/propositions-as-types/introduction.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "corrections_by_block": {"9": ["OLTEPTPTYINT-001"]},
+  "previous_segments": 10138,
+  "previous_terms": 375,
+  "expected_corrections": 628,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "లాంబ్డా గణన, రకాలు, ప్రయోగం, బద్ధ/స్వేచ్ఛా చరాలు, కర్రీ--హోవర్డ్ అనురూపతను మునుపటి లాంబ్డా వాక్యనిర్మాణంతో పోల్చి పదజాలం సమన్వయం చేశాం.",
+  "evidence_limit": "రకం, లబ్ధ/యోగ రకం పదాలకు ప్రత్యేక ప్రమాణిత పదసూచి సాక్ష్యం పరిమితం; ఈ పరిచయం పూర్తి formalization కాదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T376",
+    "source_term": "typed lambda calculus; type; application; Curry–Howard correspondence; product and sum types",
+    "telugu": "రకాలతో కూడిన లాంబ్డా కలనశాస్త్రం; రకం; ప్రయోగం; కర్రీ--హోవర్డ్ అనురూపత; లబ్ధ/యోగ రకాలు",
+    "status": "propositions_as_types_intro_application_wording_repaired",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "నిరూపణ-పదం, ప్రతిపాదన-రకం, ఊహ-చరం, విడుదల-బంధనం అనురూపతలు పట్టికలో స్పష్టంగా నిలిచాయి; బీటా సంకోచనం, ప్రయోగం పూర్వ పదజాలంతో సమానంగా ఉన్నాయి.",
+    "uncertainty": "లబ్ధ/యోగ రకాలకు నిర్వచనాత్మక పదాలను వాడాం; ప్రత్యేక తెలుగు type-theory నిఘంటు సాక్ష్యం పరిమితం.",
+    "borrowing": "Lambda, Curry–Howard, Turing and program remain explicit technical/name borrowings."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "361",
+  "unit_id": "OLP-0712",
+  "unit_order": 712,
+  "source_path": "content/proof-theory/sequent-calculus/sequent-calculus.tex",
+  "blocks": 7,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10460,
+  "previous_terms": 401,
+  "expected_corrections": 697,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P018 తార్కిక భాష, TE-P024 నియమాల ఆధారాన్ని పోల్చి సీక్వెంట్ కలనశాస్త్రం అనే శీర్షికను ఈ అధ్యాయ నిర్వచనాలతో అనుసంధానించాం; సీక్వెంట్ పదానికి ప్రత్యక్ష స్థానిక ప్రమాణం ఉందని చెప్పలేదు.",
+  "evidence_limit": "Specialist chapter title is definition controlled; no claim of independent native attestation for the whole compound. No TeX/layout verification.",
+  "term_decision": {
+    "term_id": "TE-T402",
+    "source_term": "sequent calculus",
+    "telugu": "సీక్వెంట్ కలనశాస్త్రం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సీక్వెంట్ అనే గుర్తించదగిన లిప్యంతరీకరణతో కలనశాస్త్రం అనే వివరణాత్మక తెలుగు పదాన్ని కలిపాం.",
+    "uncertainty": "Specialist chapter title is definition controlled; no claim of independent native attestation for the whole compound. No TeX/layout verification.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

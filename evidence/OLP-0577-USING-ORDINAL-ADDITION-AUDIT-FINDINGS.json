@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDUSEADD-20260927",
+  "unit_id": "OLP-0577",
+  "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+  "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDUSEADD-001",
+      "source_locator": "using-addition.tex line 61, second product-rank exercise",
+      "classification": "missing_relation_sign_in_rank_exercise",
+      "source_issue": "The second example request juxtaposes rank(A x B) and the upper-bound expression without a relation sign.",
+      "minimal_treatment": "Insert equality to request an example attaining the lemma's upper bound and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\setrank{A\\timesB}\\max(\\setrank{A},\\setrank{B})\\ordplus2$"],
+        "target_only": ["$\\setrank{A\\timesB}=\\max(\\setrank{A},\\setrank{B})\\ordplus2$"]
+      }
+    }
+  ]
+}

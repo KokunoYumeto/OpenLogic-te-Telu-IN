@@ -1,0 +1,83 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATRPR-20260928",
+  "unit_id": "OLP-0668",
+  "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+  "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATRPR-001",
+      "source_locator": "rules-proofs.tex lines 131–139, N1 proof characterization",
+      "classification": "formula_trees_misnamed_sequent_trees",
+      "source_issue": "N1c/N1i proofs are trees of formulas, as the immediately following definition states, not trees of sequents generated from axioms.",
+      "minimal_treatment": "Describe formula trees generated from assumptions and disclose the prose correction.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATRPR-002",
+      "source_locator": "rules-proofs.tex lines 162–183, three-premise construction tree",
+      "classification": "third_premise_repeats_second_formula",
+      "source_issue": "The third subproof is δ3 ending in A3, but its tree node is printed as A2.",
+      "minimal_treatment": "Change the third displayed node to A3 and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\RightLabel{$R$}\\UnaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\RightLabel{$R$}\\BinaryInfC{$!A$}\\DisplayProof\\qquad\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A_1$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A_2$}\\AxiomC{}\\RightLabel{$\\delta_3$}\\DeduceC{$!A_3$}\\RightLabel{$R$}\\TrinaryInfC{$!A$}\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATRPR-003",
+      "source_locator": "rules-proofs.tex lines 199–204, N1 table reference",
+      "classification": "wrong_calculus_names_for_referenced_table",
+      "source_issue": "The prose calls the rules of the referenced N1 table N2c/N2i, while the table and surrounding definition concern N1c/N1i.",
+      "minimal_treatment": "Name N1c/N1i and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATRPR-004",
+      "source_locator": "rules-proofs.tex lines 226–269, labelled conjunction assumption in example",
+      "classification": "discharge_label_attached_only_to_conjunct",
+      "source_issue": "The label x is typeset on B alone in the initial conjunction and two subsequent proof trees, though the whole assumption A∧B is discharged in the final proof tree.",
+      "minimal_treatment": "Attach x to the entire conjunction consistently and disclose the diagram repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[!A\\land!B^x\\]",
+          "\\[\\AxiomC{$!A\\land!B^x$}\\RightLabel{\\Elim{\\land}[2]}\\UnaryInfC{$!B$}\\DisplayProof\\qquad\\AxiomC{$!A\\land!B^x$}\\RightLabel{\\Elim{\\land}[1]}\\UnaryInfC{$!A$}\\DisplayProof\\]",
+          "\\[\\AxiomC{$!A\\land!B^x$}\\RightLabel{\\Elim{\\land}[2]}\\UnaryInfC{$!B$}\\LeftSubproofLabel{$\\delta_2$}\\AxiomC{$!A\\land!B^x$}\\RightLabel{\\Elim{\\land}[1]}\\UnaryInfC{$!A$}\\RightSubproofLabel{$\\delta_3$}\\RightLabel{\\Intro{\\land}}\\BinaryInfC{$!B\\land!A$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{$\\Discharge{!A\\land!B}{x}$}\\RightLabel{\\Elim{\\land}[2]}\\UnaryInfC{$!B$}\\DisplayProof\\qquad\\AxiomC{$\\Discharge{!A\\land!B}{x}$}\\RightLabel{\\Elim{\\land}[1]}\\UnaryInfC{$!A$}\\DisplayProof\\]",
+          "\\[\\AxiomC{$\\Discharge{!A\\land!B}{x}$}\\RightLabel{\\Elim{\\land}[2]}\\UnaryInfC{$!B$}\\LeftSubproofLabel{$\\delta_2$}\\AxiomC{$\\Discharge{!A\\land!B}{x}$}\\RightLabel{\\Elim{\\land}[1]}\\UnaryInfC{$!A$}\\RightSubproofLabel{$\\delta_3$}\\RightLabel{\\Intro{\\land}}\\BinaryInfC{$!B\\land!A$}\\DisplayProof\\]",
+          "\\[\\Discharge{!A\\land!B}{x}\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATRPR-005",
+      "source_locator": "rules-proofs.tex lines 240–247, immediate subproof and heights",
+      "classification": "incorrect_example_height_and_subproof",
+      "source_issue": "The source identifies the immediate subproof as the formula A∧B rather than δ1 and assigns δ1 height one despite having just assigned it height zero; both δ2 and δ3 have height one.",
+      "minimal_treatment": "Name δ1 as the immediate subproof and give δ1 height zero, δ2 and δ3 height one; disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A\\land!B$",
+          "$\\pheight{\\delta_1}=\\pheight{\\delta_2}=1$"
+        ],
+        "target_only": [
+          "$\\delta_1$",
+          "$\\pheight{\\delta_1}=0$",
+          "$\\pheight{\\delta_2}=\\pheight{\\delta_3}=1$"
+        ]
+      }
+    }
+  ]
+}

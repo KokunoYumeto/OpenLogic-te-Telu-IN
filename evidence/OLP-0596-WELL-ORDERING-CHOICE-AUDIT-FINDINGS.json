@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCHOICEWO-20260927",
+  "unit_id": "OLP-0596",
+  "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+  "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+  "findings": [
+    {
+      "finding_id": "OLTESTCHOICEWO-001",
+      "source_locator": "wellorderingproblem.tex lines 57–59, g(0) recurrence",
+      "classification": "empty_set_base_case_missing_for_choice_recursion",
+      "source_issue": "For A empty, f(A) is undefined because f chooses only from nonempty subsets of A.",
+      "minimal_treatment": "Handle the empty well-order separately and apply the displayed recursion only to nonempty A; disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCHOICEWO-002",
+      "source_locator": "wellorderingproblem.tex lines 69–73, stop-marker explanation",
+      "classification": "stop_marker_overwrites_prior_choice_values",
+      "source_issue": "Assigning the stop marker for delta<=alpha erases the preceding enumeration; injectivity concerns only the pre-stop choice segment.",
+      "minimal_treatment": "Set the marker for delta>=alpha and use the pre-stop restriction in the proof; disclose.",
+      "expected_core_math_delta": {"source_only": ["$\\delta\\leq\\alpha$"], "target_only": ["$\\delta\\geq\\alpha$"]}
+    }
+  ]
+}

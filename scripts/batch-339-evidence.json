@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "339",
+  "unit_id": "OLP-0690",
+  "unit_order": 690,
+  "source_path": "content/proof-theory/propositions-as-types/propositions-as-types.tex",
+  "blocks": 8,
+  "linguistic_blocks": [
+    4,
+    5
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10198,
+  "previous_terms": 379,
+  "expected_corrections": 643,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "అధ్యాయం శీర్షిక, జాగ్రత్త సూచన గద్యాన్ని పూర్వ రక/నిరూపణ పదజాలంతో సమన్వయం చేశాం.",
+  "evidence_limit": "నిర్మాణ QA అధ్యాయం పూర్తి mathematical formalizationను సూచించదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T380",
+    "source_term": "propositions as types; experimental draft; permutation and simplification conversions",
+    "telugu": "రకాలుగా ప్రతిపాదనలు; ప్రయోగాత్మక ముసాయిదా; క్రమమార్పు, సరళీకరణ పరివర్తనలు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ప్రయోగాత్మక మూల స్థితి, మిగిలిన నిరూపణ సమీక్ష అవసరం తగ్గించకుండా నిలిపాం.",
+    "uncertainty": "నిర్మాణ QA అధ్యాయం పూర్తి mathematical formalizationను సూచించదు; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

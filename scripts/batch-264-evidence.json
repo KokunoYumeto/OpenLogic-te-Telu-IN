@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "264",
+  "unit_id": "OLP-0615",
+  "unit_order": 615,
+  "source_path": "content/methods/induction/induction-on-N.tex",
+  "blocks": 18,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,15,16,17],
+  "corrections_by_block": {"6": ["OLTEMTHINDN-001"], "9": ["OLTEMTHINDN-002"]},
+  "previous_segments": 9096,
+  "previous_terms": 304,
+  "expected_corrections": 530,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P005", "TE-P024"],
+  "consultation_phase": "సహజ సంఖ్యల ఆగమన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సహజసంఖ్య/ఆగమన/మోడస్ పోనెన్స్ పదాలు, స్థానిక సంఖ్య-నిరూపణ సాక్షులు పోల్చాం; శూన్య ఆధారం-అనువర్తి దశ, పాచికల శూన్య/ధన సందర్భాలు, వరుస మొత్తాల పునరావృత్తి, భిన్న గణన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003 ఆగమన సాధారణ వాడుకకు ఆధారం; పాచికల నమూనా, వరుస మొత్తం సూత్రం మూల గణితం ఆధారితం. రెండు మూల సవరణలు ప్రకటించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T305","source_term":"induction on natural numbers; induction basis, inductive hypothesis and step","telugu":"సహజ సంఖ్యలపై ఆగమనం; ఆగమన ఆధారం, ఆగమన పరికల్పన, ఆగమన దశ","status":"zero_successor_schema_dice_example_recursive_sum_source_controlled_two_scope_repairs","passages":["TE-P003","TE-P004","TE-P005","TE-P024"],"basis":"P(0) ఆధారం, ఏ kకైనా P(k)⇒P(k+1) దశ, పాచికల శూన్య సందర్భం విడి తనిఖీ, P(1) నుంచి ధన సందర్భాలు, s_n పునరావృత్తి-మూసిన సూత్రం వేర్వేరుగా నిలిచాయి.","uncertainty":"ఆగమన సాధారణ పదానికి స్థానిక సాక్షి ఉంది; ఆధారం/పరికల్పన/దశ ప్రత్యేక కూర్పులు మూల నిరూపణ నియంత్రితం.","borrowing":"N, P, k, n, dice formula and TeX recurrence notation remain source-controlled."}
+}

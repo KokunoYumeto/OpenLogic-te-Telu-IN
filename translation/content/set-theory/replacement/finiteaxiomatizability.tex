@@ -1,0 +1,73 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+	
+\olfileid{sth}{replacement}{finiteaxiomatizability}
+\olsection{అనుబంధం: పరిమిత స్వయంసిద్ధీకరణ}
+ప్రతిస్థాపన నుండి కొన్ని ఫలితాలు పొందుతూ ఈ అధ్యాయాన్ని ముగిద్దాం. మొదటి ఫలితం \citet{Montague1961}ది; ఇది $\ZF$ \emph{లోపల} చేసే నిరూపణ కాదు, $\ZF$ \emph{గురించి} చేసే నిరూపణ అని గమనించండి:
+\begin{thm}\ollabel{zfnotfinitely}
+	$\ZF$ను పరిమిత సంఖ్యలో స్వయంసిద్ధ సూత్రాలతో నిర్వచించలేం. మరింత సాధారణంగా: $\Th{T}$ పరిమితమై $\Th{T} \Proves \ZF$ అయితే $\Th{T}$ అసంగతమైనది.
+	
+	(ఇక్కడ తర్కేతర ప్రాథమిక సంకేతం $\in$ మాత్రమే గల ప్రథమ-క్రమ వాక్యాలకే మనం నిశ్శబ్దంగా పరిమితమవుతున్నాం; అలాగే ప్రతి $\phi \in \ZF$కు $\Th{T} \Proves \phi$ అని సూచించడానికి $\Th{T} \Proves \ZF$ అని రాస్తాం.)
+\end{thm}
+\begin{proof}
+	$\Th{T} \Proves \ZF$ అయ్యే పరిమిత $\Th{T}$ను స్థిరపరుచుకుందాం. కాబట్టి $\Th{T}$ ప్రతిబింబనను, అంటే \olref[sth][replacement][ref]{reflectionschema}ను నిరూపిస్తుంది. $\Th{T}$ పరిమితం కాబట్టి దాన్ని ఒక సంయోగం $\theta$గా తిరిగి రాయవచ్చు. ఈ సూత్రంతో ప్రతిబింబిస్తే $\Th{T} \Proves \exists \beta(\theta \liff \theta^{V_\beta})$. సహజంగానే $\Th{T} \Proves \theta$ కనుక $\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$ అని తెలుస్తుంది.
+	
+	ఇప్పుడు $\psi(X)$ ఈ కింది దానికి సంక్షిప్త రూపం అనుకుందాం:
+	\[
+		\theta^X \land X\text{ is transitive} \land (\forall Y \in X)(Y\text{ is transitive}\lif \lnot \theta^{Y})
+	\]
+	స్థూలంగా దీని అర్థం: $X$, $\theta$కు సంక్రమణ నమూనా; ఈ లక్షణంలో $\in$-కనిష్ఠమైనది. $\Th{T} \Proves \exists \beta\ \theta^{V_\beta}$ను గుర్తుచేసుకుంటే, $\ZF$లో, అందువల్ల $\Th{T}$లో, స్థాయిల ప్రాథమిక వాస్తవాల వల్ల:
+	\begin{equation}
+		\Th{T} \Proves \exists M \psi(M). \tag{*}\label{Mpsi}
+	\end{equation}
+	$\psi(X)$ మొదటి సంయోజకాన్ని వాడితే, $\Th{T} \Proves \sigma$ అయినప్పుడల్లా $\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$ అని తెలుస్తుంది. కాబట్టి \eqref{Mpsi} ప్రకారం:
+	\begin{align*}
+		\Th{T} &\Proves \forall X(\psi(X) \lif (\exists N \psi(N))^X)\\
+	\intertext{దీనిని, మళ్లీ \eqref{Mpsi}ను వాడితే:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \psi(N))^M)
+	\intertext{ముఖ్యంగా:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)((N\text{ is transitive})^M \land (\theta^N)^M))
+	\intertext{కాబట్టి సంక్రమణ సమితుల గురించిన ప్రాథమిక తర్కంతో:}
+		\Th{T} &\Proves \exists M(\psi(M) \land (\exists N \in M)(N\text{ is transitive} \land \theta^N))
+	\end{align*}
+	\sourcecorrection{OLTESTREPLFINITE-001}{మూల మూడవ ప్రదర్శిత వరుసలో $N$ సంక్రమణమనే వాక్యాన్ని $N$కే పరిమితం చేశారు; అది నిరపేక్షత ద్వారా చివరి వరుసను ఇవ్వదు. బయటి నమూనా $M$కు పరిమితం చేయడమే ఈ నిరూపణకు అవసరం; అలా సరిచేశాం.}
+	అందువల్ల $\Th{T}$ అసంగతమైనది.\footnote{ఈ ``ప్రాథమిక తర్కం''లో సంక్రమణ సమితుల గురించి కొన్ని ``నిరపేక్షత వాస్తవాలను'' నిరూపించడం ఉంటుంది.}
+\end{proof}
+
+ఇలాంటి మరో ఫలితాన్ని \citet[223]{Potter2004} గుర్తించారు:
+
+\begin{prop}\ollabel{finiteextensionofZ}
+	$\Th{T}$, $\Z$కు పరిమిత సంఖ్యలో కొత్త స్వయంసిద్ధ సూత్రాలు చేర్చి ఏర్పడిందనుకుందాం. $\Th{T} \Proves \ZF$ అయితే $\Th{T}$ అసంగతమైనది. (ఇక్కడ \olref{zfnotfinitely}లోలాగే అదే నిశ్శబ్ద పరిమితులను వాడుతున్నాం.)
+\end{prop}
+\begin{proof}
+	$\Th{T}$ స్వయంసిద్ధ సూత్రాల్లో వేరుచేయు పథకపు (అనంత సంఖ్యలోని) సందర్భాలు తప్ప మిగిలిన వాటి సంయోగానికి $\theta$ను వాడుదాం. \olref{zfnotfinitely}లోలాగే $\theta$ నుండి $\psi$ను నిర్వచిస్తే $\Th{T} \Proves \exists M \psi(M)$ అని చూపవచ్చు.
+	
+	\olref{zfnotfinitely}లోలాగే, $\Th{T} \Proves \sigma$ అయినప్పుడల్లా $\Th{T} \Proves \forall X(\psi(X) \lif \sigma^X)$ అనే పథకాన్ని స్థాపించవచ్చు. తరువాత \olref{zfnotfinitely}లోలాగే నిరూపణను ముగించవచ్చు.
+	
+	అయితే ఈ పథకాన్ని స్థాపించడానికి \olref{zfnotfinitely}కంటే కొంచెం ఎక్కువ పని కావాలి. ఎందుకంటే వేరుచేయు సందర్భాలు $\Th{T}$లో ఉన్నా $\theta$ సంయోజకాలు కావు. కానీ ప్రతి వేరుచేయు సందర్భం $\sigma$కు $\Th{T} \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$ అని నిరూపించి ఈ అడ్డంకిని దాటవచ్చు. దాన్ని పాఠకునికి వదిలేస్తాం.
+\end{proof}
+\begin{prob}
+	ప్రతి వేరుచేయు సందర్భం $\sigma$కు $\Z \Proves \forall X(X\text{ is transitive} \lif \sigma^X)$ అని చూపండి. (ఈ పథకాన్ని \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ}లో వాడాం.)
+\end{prob}
+\begin{prob}
+	ప్రతి $\phi \in \Z$కు $\ZF \Proves \phi^{V_{\omega+\omega}}$ అని చూపండి.
+\end{prob}
+\begin{prob}
+	\olref[sth][replacement][finiteaxiomatizability]{zfnotfinitely}, \olref[sth][replacement][finiteaxiomatizability]{finiteextensionofZ} నిరూపణల్లో వాడిన మిగిలిన పథకరూప ఫలితాలను నిర్ధారించండి.
+\end{prob}
+
+\olref[sth][replacement][absinf]{sec}లో చెప్పినట్లుగా, ప్రతిస్థాపన \olref[ordinals][ordtype]{thmOrdinalRepresentation}కంటే ఖచ్చితంగా బలమైనదని ఇది చూపుతుంది. లేదా మరింత కచ్చితంగా: $\Z$ + ``ప్రతి సుక్రమం ఒక ఏకైక క్రమసంఖ్యకు సమరూపం'' సుసంగతమైతే, అది ప్రతిస్థాపన పథకపు ఏదో సందర్భాన్ని నిరూపించలేదు.
+
+
+	%	By assumption, $\psi^{V_\alpha}$ has the form:
+	%	\[
+	%		(\forall A \in V_\alpha)(\exists S \in V_\alpha)(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A))
+	%	\]
+	%	To establish this holds, fix $A \in V_\alpha$. Using Separation, obtain:
+	%	\[
+	%		S = \Setabs{x \in A}{\phi^{V_\alpha}(x)}
+	%	\]
+	%	Now $S \in V_\alpha$, since $S \subseteq A \in V_\alpha$, and clearly $(\forall x \in V_\alpha)(x \in S \liff (\phi^{V_\alpha}(x) \land x \in A)$.
+
+\end{document}

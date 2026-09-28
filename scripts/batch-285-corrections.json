@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0636",
+  "source_path": "content/history/set-theory/pathologies.tex",
+  "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+  "audit_id": "OLTEHISSETPATH-20260927",
+  "audit_review_path": "evidence/OLP-0636-PATHOLOGIES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "3c46b41d598a85a53e04023ffe9e23c313f980ccc5fce5708d3a45bb172b3ccb",
+  "audit_findings_path": "evidence/OLP-0636-PATHOLOGIES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2e9b41a1a5c91eaa0e5ff6254ee02e90c621cd3885866b29cf71e9da3c6406e2",
+  "previous_corrections": 535,
+  "treatments": {
+    "OLTEHISSETPATH-001": {"target_line": 21, "body_treatment": "పియానో పటం సున్నితమైనది కాదని, రేఖఖండం నుంచి చతురస్రానికి అవిచ్ఛిన్న పటమని చెప్పి సమీపంలో ప్రకటించాం."}
+  }
+}

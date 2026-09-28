@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0679",
+  "source_path": "content/proof-theory/proof-search/completeness.tex",
+  "source_sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665",
+  "audit_id": "OLTEPTPSCPL-20260928",
+  "audit_review_path": "evidence/OLP-0679-PROOF-SEARCH-COMPLETENESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "0a2f9462832f15fa350daf3fb6d696a6656213884ccd7412016310835a0b8dfd",
+  "audit_findings_path": "evidence/OLP-0679-PROOF-SEARCH-COMPLETENESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "51ac219d9151b83d04ba093f9f73a8f2824329b2285b6aacb3fa78c798438a01",
+  "previous_corrections": 617,
+  "treatments": {
+    "OLTEPTPSCPL-001": {
+      "target_line": 14,
+      "body_treatment": "కుడి సందర్భ సూత్రాల పరిమాణ వాక్యంలో తప్పిన సూత్ర అక్షరాన్ని చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTPSCPL-002": {
+      "target_line": 21,
+      "body_treatment": "స్థిరాంక సమితికి అనుబంధ సీక్వెంట్‌లో నిర్వచించిన లాంబ్డా సందర్భ గుర్తును వాడి ప్రకటించాం."
+    },
+    "OLTEPTPSCPL-003": {
+      "target_line": 40,
+      "body_treatment": "ప్రమేయం, విధేయం స్థానాల సంఖ్యతో పదాల జాబితాలు, కార్టీషియన్ ఘాతం సమన్వయం చేసి ప్రకటించాం."
+    }
+  }
+}

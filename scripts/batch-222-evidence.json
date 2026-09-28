@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "222",
+  "unit_id": "OLP-0573",
+  "unit_order": 573,
+  "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+  "blocks": 12,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10],
+  "corrections_by_block": {"5": ["OLTESTREPLFINITE-001"]},
+  "previous_segments": 8454,
+  "previous_terms": 262,
+  "expected_corrections": 492,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "పరిమిత స్వయంసిద్ధీకరణ అనుబంధపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రతిబింబన/సంక్రమణ/సుసంగతత పదాలు, స్థానిక సమితి/క్రమ/తర్క సాక్షులు ఎదురెదురు చూశాం; ZFపై అతిసిద్ధాంత ఫలితం, కనిష్ఠ నమూనా వాదన, Z పరిమిత విస్తరణ, క్రమసంఖ్య ప్రాతినిధ్య బల భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; పరిమిత స్వయంసిద్ధీకరణ ప్రత్యేక ఫలితం మూల నిరూపణ నియంత్రితం. మూల నిరపేక్షత వరుసలోని తప్పు పైసూచిక OLTESTREPLFINITE-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T263",
+    "source_term": "finite axiomatizability; metatheoretic inconsistency; transitive model",
+    "telugu": "పరిమిత స్వయంసిద్ధీకరణ; అతిసిద్ధాంత అసంగతి; సంక్రమణ నమూనా",
+    "status": "metatheorem_and_model_definition_controlled_logic_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ZFలో నిరూపణ, ZF గురించి నిరూపణ భేదం; పరిమిత T సంయోగం, కనిష్ఠ సంక్రమణ నమూనా, Z పరిమిత విస్తరణ ఫలితం నిలిచాయి.",
+    "uncertainty": "అతిసిద్ధాంత పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిరూపణ, పరిమిత-అనంత స్వయంసిద్ధ భేదం నియంత్రణ.",
+    "borrowing": "ZF/Z macros, theory T notation, and transitivity labels inside math remain source-controlled."
+  }
+}

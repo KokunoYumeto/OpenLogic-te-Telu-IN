@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0584",
+  "source_path": "content/set-theory/cardinals/classing.tex",
+  "source_sha256": "facf3eb5d19661a660d1c6441f09c0acc909f944253f4c7fe129048f8ea35bc6",
+  "audit_id": "OLTESTCARDCLASS-20260927",
+  "audit_review_path": "evidence/OLP-0584-CARDINAL-CLASSIFICATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1911981ef38ee2690ebf9fb4595d50e56cac639b93c112f711b6149657d8c376",
+  "audit_findings_path": "evidence/OLP-0584-CARDINAL-CLASSIFICATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "d75db19f12a0db9e2f399957739531ae91d6f17c9b17b1e91ed5d824291203f6",
+  "previous_corrections": 498,
+  "treatments": {
+    "OLTESTCARDCLASS-001": {
+      "target_line": 32,
+      "body_treatment": "కార్డినాలిటీ \u03c9లో లేకపోవడాన్ని సమితి పరిమితం కాదని వివరించి, సహజ సంఖ్య కాని పరిమిత సమితుల ప్రతివాదాన్ని పక్కనే ప్రకటించాం."
+    }
+  }
+}

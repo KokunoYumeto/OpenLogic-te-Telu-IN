@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "147",
+  "unit_id": "OLP-0498",
+  "unit_order": 498,
+  "source_path": "content/intuitionistic-logic/semantics/semantics.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5],
+  "previous_segments": 7526,
+  "previous_terms": 187,
+  "expected_corrections": 459,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అర్థవిజ్ఞాన అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ అంతఃప్రజ్ఞావాద/అర్థవిజ్ఞాన పదాలు, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలు ఎదురెదురు చూశాం; క్రిప్కె, స్థలవిజ్ఞాన పరిధి, ఉదాహరణల లోపం, నాలుగు దిగుమతులు నిలిపాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్క/వ్యుత్పత్తి రిజిస్టర్లే; క్రిప్కె లేదా స్థలవిజ్ఞాన అర్థవిజ్ఞానానికి ప్రత్యక్ష ఆధారాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T188",
+    "source_term": "intuitionistic semantics chapter / Kripke and topological semantics / editorial incompleteness",
+    "telugu": "అంతఃప్రజ్ఞావాద అర్థవిజ్ఞాన అధ్యాయం / క్రిప్కె, స్థలవిజ్ఞాన అర్థవిజ్ఞానాలు / సంపాదకీయ అసంపూర్ణత",
+    "status": "native_general_logic_derivation_register_attested_intuitionistic_semantics_driver_source_controlled",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "అధ్యాయ శీర్షిక, క్రిప్కె/స్థలవిజ్ఞాన పరిధి, నమూనా సత్యం/చెల్లుబాటు నిరూపణల ఉదాహరణలు లేవనే మూల సంపాదకీయ గమనిక, నాలుగు దిగుమతులు నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు శాఖా అర్థవిజ్ఞాన పదాలకు ప్రత్యక్ష ప్రమాణాలు కావు; పూర్తి TeX నిర్మాణ తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Kripke name, chapter IDs and import paths remain identifiable source-controlled material."
+  }
+}

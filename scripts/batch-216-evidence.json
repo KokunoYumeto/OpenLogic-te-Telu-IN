@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "216",
+  "unit_id": "OLP-0567",
+  "unit_order": 567,
+  "source_path": "content/set-theory/replacement/strength.tex",
+  "blocks": 9,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8],
+  "previous_segments": 8379,
+  "previous_terms": 256,
+  "expected_corrections": 488,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ప్రతిస్థాపన బలం మూలం, తెలుగు లక్ష్యం, పూర్వ Z/ZF/క్రమసంఖ్య/నమూనా పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; సూత్ర పరిధి పరిమితి, V-స్థాయి నమూనా, omega-plus-omega సుక్రమ ఉదాహరణ, స్థాయిక్రమ ఎత్తు వాదన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; సూత్ర పరిధి పరిమితి ప్రత్యేక నిర్వచన నియంత్రితం. మూల స్థిరత్వ వాదన మూల పరిధిలోనే ఉంచాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T257",
+    "source_term": "strength of Replacement; formula relativization; very tall hierarchy",
+    "telugu": "ప్రతిస్థాపన బలం; సూత్ర పరిధి పరిమితి; ఎత్తైన స్థాయిక్రమం",
+    "status": "formula_relativization_definition_controlled_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "పరిమాణకారకాలను Mకు పరిమితం చేసే రెండు ప్రత్యామ్నాయాలు, V_omega+omega నమూనా, సరి/బేసి సంఖ్యల సుక్రమం, ప్రతిస్థాపన బలం నిలిచాయి.",
+    "uncertainty": "relativizationకు ప్రత్యక్ష సాక్షి లేదు; నిర్వచనమే పద నియంత్రణ.",
+    "borrowing": "Theory and ordinal macros remain source-controlled."
+  }
+}

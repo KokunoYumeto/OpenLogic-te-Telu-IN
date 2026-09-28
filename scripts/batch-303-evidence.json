@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "303",
+  "unit_id": "OLP-0654",
+  "unit_order": 654,
+  "source_path": "content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 9662,
+  "previous_terms": 343,
+  "expected_corrections": 552,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "సాధారణ మోడల్ తర్క స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్/సర్వసత్యం/ఏకరీతి ప్రతిస్థాపన/అనివార్యతీకరణ పదాలు పోల్చాం; K/Dual ప్రదర్శిత సూత్రాలు, రెండు నిర్వచనాలు, రెండు నిర్దేశ మార్గాలు తనిఖీ చేశాం.",
+  "evidence_limit": "ఇది నిర్వచనాత్మక విభాగం; సంబంధ నమూనా/స్వీకృత వ్యవస్థల తుల్యతా నిరూపణ ఇక్కడ ఇవ్వలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T344","source_term":"normal modal logic; uniform substitution; necessitation; K and Dual","telugu":"సాధారణ మోడల్ తర్కం; ఏకరీతి ప్రతిస్థాపన; అనివార్యతీకరణ; K, Dual","status":"normal_modal_logic_definition_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"మోడల్ తర్కానికి మూడు సంవృత/చేర్పు షరతులు, సాధారణతకు K/Dual/అనివార్యతీకరణ, నిరూపణ/నమూనా రెండు మార్గాలు నిలిచాయి.","uncertainty":"సాధారణ మోడల్ తర్క నిర్దేశాల తుల్యత మూలం ముందస్తుగా సూచిస్తుంది; ఈ విభాగంలో నిరూపితం కాదు.","borrowing":"K and Dual tags, box/diamond notation and Hilbert name remain source-identifying."}
+}

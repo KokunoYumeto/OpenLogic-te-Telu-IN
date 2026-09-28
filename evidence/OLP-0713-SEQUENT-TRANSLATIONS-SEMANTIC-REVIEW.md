@@ -1,0 +1,3 @@
+# OLP-0713 — sequent translations semantic review
+
+Reverse paraphrase: arbitrary G1c identity axioms become provable G3c identities, contextual G3c axioms are simulated by G1c weakenings. For G1c conjunction-left/disjunction-right first weaken the missing component and use the G3c rule. For G1c universal-left/existential-right first weaken in the retained principal. In reverse, apply the G1c quantifier rule with the retained principal as context, then contract the two copies. Existing conjunction/disjunction simulations are preserved apart from the empty-formula comma typo. All constructions are finitely schematic and remain independent of semantic completeness. No current TeX/layout verification.

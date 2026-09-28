@@ -1,6 +1,11 @@
 /build/
 /output/
 /release-stage/
+/tmp/
+# Intermediate cumulative audit snapshots are retained locally; the final
+# 722-unit receipt and earlier published checkpoints remain versioned.
+/evidence/CUMULATIVE-OLP*-STRUCTURAL-QA.json
+!/evidence/CUMULATIVE-OLP0722-STRUCTURAL-QA.json
 /.venv/
 /node_modules/
 __pycache__/

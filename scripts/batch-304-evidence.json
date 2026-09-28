@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "304",
+  "unit_id": "OLP-0655",
+  "unit_order": 655,
+  "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+  "blocks": 25,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24],
+  "corrections_by_block": {"14": ["OLTEPTCUTINVL-003"], "19": ["OLTEPTCUTINVL-001"], "21": ["OLTEPTCUTINVL-002"]},
+  "previous_segments": 9672,
+  "previous_terms": 344,
+  "expected_corrections": 555,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "కట్ తొలగింపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సీక్వెంట్/విలోమయోగ్యత/కట్ స్థాయి పదాలు పోల్చాం; నిరూపణ వృక్షాలు, అణు/సంయోజక/పరిమాణీకరణిక సందర్భాలు, రెండు ఆగమనాలు, మూడు మూల-లోపాల ప్రకటనా స్థానాలు తనిఖీ చేశాం.",
+  "evidence_limit": "నిరూపణ వృక్షాలు, గుర్తింపు-ప్రతిస్థాపన నిర్మాణం మూలానికి అనుగుణంగా ఉన్నాయి; ప్రతి మెటా-తార్కిక దశను స్వతంత్రంగా పునర్నిర్మించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T345","source_term":"maximal-rank cut reduction; invertibility with CutCS; principal formula; topmost subproof","telugu":"అత్యధిక స్థాయి కట్ సంక్షేపణం; CutCSతో విలోమయోగ్యత; ప్రధాన సూత్రం; అత్యున్నత ఉపనిరూపణ","status":"largest_cut_elimination_three_source_defects_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"అత్యధిక స్థాయి కట్‌ల తొలగింపు, విలోమయోగ్యత షరతులు, పరిమాణీకరణిక గుర్తింపు-ప్రతిస్థాపన, చివరి ద్వంద్వ ఆగమనం నిలిచాయి; మూడు మూల అసంగతులు ప్రకటించాం.","uncertainty":"వివరమైన కట్ సంక్షేపణాన్ని స్వతంత్ర ప్రామాణికీకరణతో తిరిగి నిరూపించలేదు; ఈ దశ మూల-లక్ష్య నిబద్ధత తనిఖీ.","borrowing":"CutCS, G3c, proof-tree labels, sequent and lemma identifiers remain source-identifying."}
+}

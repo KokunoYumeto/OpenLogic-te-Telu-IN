@@ -1,0 +1,181 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: admissible-derivable
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{adm}
+
+\olsection{అనుమతించదగిన, వ్యుత్పాదించదగిన నియమాలు}
+
+నిరూపణ సిద్ధాంతంలోని అనేక ఫలితాలు, ఒక ప్రత్యేక నియమంతో \tetoken{నిరూపించగల}{!!{prove}d} ప్రతిదాన్నీ ఆ నియమం లేకుండా కూడా \tetoken{నిరూపించగలమా}{!!{prove}d} అనే ప్రశ్నకు సంబంధించినవి లేదా ఆ ప్రశ్నపై ఫలితాలను వాడతాయి. కట్-తొలగింపు సిద్ధాంతం అత్యంత ప్రసిద్ధ ఉదాహరణ. \Cut{}తో కూడిన సీక్వెంట్ వ్యవస్థ నియమాలతో \tetoken{నిరూపించగల}{!!{prove}d} ఏ సీక్వెంట్‌నైనా \Cut{} లేకుండానే \tetoken{నిరూపించవచ్చని}{!!{prove}d} అది చూపుతుంది. ఈ లక్షణం ముఖ్యమైనది కనుక దానికి ప్రత్యేక పేరు ఉంది.
+
+\begin{defn}
+ఒక సీక్వెంట్ వ్యవస్థకు నియమం~$R$ను చేర్చి నిరూపించగల ఏ సీక్వెంట్‌నైనా $R$ లేకుండానే నిరూపించగలిగితే, ఆ వ్యవస్థలో $R$ \emph{అనుమతించదగినది} అంటాం.
+\end{defn}
+
+\begin{ex}\ollabel{ex:land-deriv}
+$\LeftR{\land}$ నియమం \Log{G1c}, \Log{G3c}లలో వేర్వేరు రూపాల్లో ఉంటుంది. \Log{G1c}లో రెండు రూపాలు ఉన్నాయి: ఒకదాని ఆధారంలో ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$!A \land !B$ యొక్క ఎడమ భాగం $!A$, మరొకదానిలో కుడి భాగం~$!B$ ఉంటుంది:
+\[
+\Axiom$ !A, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$!B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+దీనికి భిన్నంగా \Log{G3c}లో ఒకే నియమం ఉంది:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_3$}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+ఇప్పుడు “\Log{G3c} నియమం $\LeftR{\land}_3$, \Log{G1c}లో అనుమతించదగినదా?” అని అడగవచ్చు. అవును: $\LeftR{\land}_3$తో చేసే ఏ నిగమనాన్నైనా \Log{G1c} నియమాలతో నేరుగా అనుకరించవచ్చు. $\LeftR{\land}_1$, $\LeftR{\land}_2$లతోపాటు నిర్మాణ నియమం~$\LeftR{\Contraction}$ కూడా అవసరం:
+\[
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_1$}
+\UnaryInf$!A \land !B, !B, \Gamma \fCenter \Delta$
+\RightLabel{$\LeftR{\land}_2$}
+\UnaryInf$!A \land !B, !A \land !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\end{ex}
+\sourcecorrection{OLTEPTSEQADM-001}{మూల అనుకరణ చిత్రం చివరి సీక్వెంట్‌లో ప్రధాన సూత్రం, సందర్భం మధ్య కామా లేదు; బహుసమితి సందర్భానికి అనుగుణంగా చేర్చాం.}
+
+ఒక నియమంతో చేసే నిగమనాలను ఇతర నియమాలతో అనుకరించడం, దాని అనుమతించదగినతను చూపే ఒక పద్ధతి. కానీ అదే ఏకైక పద్ధతి కాదు; కొన్ని నియమాలు అనుమతించదగినవైనా ఇలా అనుకరించలేము. అనుకరించగల నియమాలను \emph{వ్యుత్పాదించదగినవి} అంటాం.
+
+\begin{defn}
+నియమం~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+ఒక వ్యవస్థలో \emph{వ్యుత్పాదించదగినది} అనాలంటే, ఆ వ్యవస్థ నియమాలు, అక్షయాలతోపాటు $S_1$, \dots,~$S_n$ రూపాల అదనపు ప్రారంభ సీక్వెంట్లను వాడి సీక్వెంట్~$S$కు పథకాత్మక \tetoken{నిరూపణ}{!!{proof}} ఉండాలి.
+\end{defn}
+
+\olref{ex:land-deriv}లోని \tetoken{నిరూపణ}{!!{proof}}, $\LeftR{\land}_3$ అనేది \Log{G1c}లో వ్యుత్పాదించదగిన నియమమని చూపుతుంది. ఆ \tetoken{నిరూపణ}{!!{proof}}, $\LeftR{\land}_3$ ఆధారాలను ప్రారంభ సీక్వెంట్లుగా తీసుకుని, \Log{G1c} నియమాలతోనే $\LeftR{\land}_3$ నిర్ధారణకు ఇచ్చిన పథకాత్మక \tetoken{నిరూపణ}{!!{proof}}. (\Log{G1c} అక్షయాలను అది వాడలేదు.)
+
+\begin{prop}\ollabel{prop:lor-G3-adm}
+\Log{G3c}లోని $\LeftR{\land}$, $\RightR{\lor}$ నియమాలు \Log{G1c}లో వ్యుత్పాదించదగినవి.
+\end{prop}
+
+\begin{proof}
+  $\LeftR{\land}$ నిరూపణ \olref{ex:land-deriv}లో ఉంది. $\RightR{\lor}$ నిరూపణ అభ్యాసంగా వదిలాం.
+\end{proof}
+
+\begin{prob}
+\Log{G3c}లోని $\RightR{\lor}$ నియమం \Log{G1c}లో వ్యుత్పాదించదగినదని చూపండి.
+\end{prob}
+
+\begin{prob}
+$\liff$ నిర్వచించిన \tetoken{సంచాలకం}{!!{operator}} అని అనుకుందాం: $!A \liff !B$ అనేది $(!A \lif !B) \land (!B \lif !A)$కు సంక్షిప్త రూపం. కింది నియమాలు
+\begin{enumerate}
+\item \Axiom$\Gamma, !A, !B \fCenter \Delta$
+\Axiom$\Gamma \fCenter \Delta, !A, !B$
+\RightLabel{\LeftR{\liff}}
+\BinaryInf$!A \liff !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\item
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\RightR{\liff}}
+\BinaryInf$\Gamma \fCenter \Delta, !A \liff !B$
+\DisplayProof
+\end{enumerate}
+(a)~\Log{G1c}, (b)~\Log{G3c}లలో వ్యుత్పాదించదగినవని చూపండి.
+\end{prob}
+\sourcecorrection{OLTEPTSEQADM-002}{మూల ఎడమ ద్విషరతు నియమం నిర్ధారణలో ప్రధాన సూత్రాన్ని కుడివైపు ఉంచింది. రెండు ఆధారాలు ద్విషరతును ఎడమవైపు తీసుకునే నియమానికి సరిపోతాయి; నిర్ధారణలో ఆ స్థానాన్ని సరిచేశాం.}
+
+\begin{ex}\ollabel{ex:weak-adm}
+\Log{G1c}లోని $\RightR{\Weakening}$ నియమం,
+\[
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A$
+\DisplayProof
+\]
+\Log{G3c}లో అనుమతించదగినది. నిరూపణ ఆలోచన సరళమైనది: ఆధారం $\Gamma \Sequent \Delta$కు \Log{G3c}లో \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ ఉందని అనుకుందాం. $\pi$లో ప్రతి సీక్వెంట్ ఉత్తరపక్షానికి \tetoken{సూత్రం}{!!{formula}}~$!A$ను చేర్చండి. అక్షయాలు అక్షయాలుగానే, సరైన నిగమనాలు సరైనవిగానే ఉంటాయి. కొత్త \tetoken{నిరూపణ}{!!{proof}} యొక్క \tetoken{చివరి సీక్వెంట్}{!!{formula}} $\Gamma \Sequent
+\Delta, !A$.
+\sourcecorrection{OLTEPTSEQADM-003}{మూలం చివరి అంశాన్ని సూత్రం అని పిలిచింది; ప్రదర్శించినది సీక్వెంట్ కనుక ఆ పదాన్ని సరిచేశాం.}
+
+కానీ $\RightR{\Weakening}$ నియమం \Log{G3c}లో వ్యుత్పాదించదగినది కాదు. అది సాధ్యమని అనుకుందాం: \Log{G3c} అక్షయాలు, నియమాలతోపాటు అవసరమైతే అదనపు ప్రారంభ సీక్వెంట్~$\Gamma \Sequent \Delta$ను వాడి, $\Gamma \Sequent
+\Delta, !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} కనుగొనవచ్చని అనుకుందాం. $\RightR{\Weakening}$ వ్యుత్పాదించదగినదవ్వడానికి ఆ \tetoken{నిరూపణ}{!!{proof}} పూర్తిగా పథకాత్మకంగా ఉండాలి. అప్పుడు $\Gamma$, $\Delta$లను తొలగించి~$\Sequent !A$కు \tetoken{ఒక నిరూపణగా}{!!a{proof}} మార్చవచ్చు. అదనపు ప్రారంభ సీక్వెంట్లు~$\Gamma \Sequent \Delta$, ఖాళీ సీక్వెంట్~$\quad \Sequent \quad$గా మారతాయి. ఖాళీ సీక్వెంట్‌లో \tetoken{సూత్రాలు}{!!{formula}s} లేవు; కానీ \Log{G3c} నియమాల ఆధారాల్లో కనీసం ఒక క్రియాశీల \tetoken{సూత్రం}{!!{formula}} అవసరం. కాబట్టి ఈ పథకాత్మక \tetoken{నిరూపణలో}{!!{proof}} ఖాళీ సీక్వెంట్ ఏ నిగమనానికీ ఆధారం కాలేదు. అందువల్ల అదనపు సీక్వెంట్ $\Gamma \Sequent \Delta$ను ప్రారంభ సీక్వెంట్‌గా వాడకపోతేనే ఆ \tetoken{నిరూపణ}{!!{proof}} పథకాత్మకమైనదవుతుంది. అంటే \Log{G3c} అక్షయాలు, నియమాలతోనే $\Gamma \Sequent
+\Delta, !A$కు పథకాత్మక నిగమనం ఉంటుంది; ఆ రూపంలోని ప్రతి సీక్వెంట్‌కూ \Log{G3c}లో \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉందని చూపినట్లవుతుంది. కానీ \Log{G3c} సమర్థమైనది కనుక ప్రతి \tetoken{నిర్మాణంలో}{!!{structure}} సత్యమైన సీక్వెంట్లను మాత్రమే \tetoken{నిరూపించగలదు}{!!{prove}}. $\Gamma = \Delta
+= \emptyset$, $!A \ident \lfalse$ తీసుకుంటే, ఉదాహరణకు $\quad \Sequent \lfalse$ను \Log{G3c} \tetoken{నిరూపించాల్సి}{!!{prove}} వస్తుంది; అది చేయలేదు.
+\end{ex}
+
+బలహీనీకరణ \Log{G3c}లో అనుమతించదగిన నియమమని ఒక చక్కని ఆగమన నిరూపణ ఇద్దాం. సహజ వాదన చూపినట్లు, కొద్దిగా బలమైన ఫలితం ఉంది: $\pi$లో ప్రతి సీక్వెంట్ కుడివైపు $!A$ను చేర్చినా \tetoken{నిరూపణ}{!!{proof}} నిర్మాణం మారదు; ముఖ్యంగా ఎత్తు పెరగదు. ఇది ముఖ్యమైనది కనుక ప్రత్యేక నిర్వచనం ఇద్దాం.
+
+\begin{defn}
+నియమం~$R$,
+\[
+\AxiomC{$S_1$}
+\AxiomC{$\dots$}
+\AxiomC{$S_n$}
+\RightLabel{$R$}
+\TrinaryInfC{$S$}
+\DisplayProof
+\]
+ఒక వ్యవస్థలో \emph{\tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ అనుమతించదగినది} (లేదా \emph{\tetoken{ఎత్తు-సంరక్షక}{!!{hp}} అనుమతించదగినది}) అనాలంటే: $i = 1$, \dots,~$n$లకు $\Proves[h_i] S_i$ ఉన్నప్పుడల్లా, $m = \max(h_1, \dots,
+h_n)$కు $\Proves_m S$ ఉండాలి.
+\end{defn}
+
+నియమం \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ అనుమతించదగినదవ్వడానికి కిందిది చాలు: ఆధారాలు~$S_i$కు \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_i$, వాటి \tetoken{ఎత్తులు}{!!{height}}~$h_i = \pheight{\pi_i}$ ఉన్నప్పుడల్లా, నిర్ధారణకు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ ఉండి, దాని \tetoken{ఎత్తు}{!!{height}}~$\pheight{\pi}$ అనేది~$h_i$ల గరిష్ఠం కంటే ఎక్కువ కాకూడదు. ముఖ్యంగా ఒకే ఆధారం~$S_1$ ఉంటే $\pheight{\pi} \le \pheight{\pi_1}$ చాలు. $\RightR{\Weakening}$, $\LeftR{\Weakening}$లలో నిజానికి $\pheight{\pi} = \pheight{\pi_1}$ ఉంటుంది; కానీ సమానత్వం అవసరం లేదు.
+
+\begin{prop}\ollabel{prop:weak-G3c-adm}
+\Log{G1c}లోని $\RightR{\Weakening}$, $\LeftR{\Weakening}$ నియమాలు \Log{G3c}లో \tetoken{ఎత్తును}{!!{height}} సంరక్షిస్తూ అనుమతించదగినవి.
+\end{prop}
+
+\begin{proof}
+  $\Log{G3c} \Proves \Gamma \Sequent \Delta$కు \tetoken{నిరూపణ}{!!{proof}}~$\pi$ ఉండి, దాని \tetoken{ఎత్తు}{!!{height}}~$\pheight{\pi} = n$ అయితే, $\Gamma \Sequent \Delta, !A$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}} $\pi'$ ఉండి $\pheight{\pi'} = n$ అని చూపాలి. $n$పై ఆగమనంతో నిరూపిస్తాం. $n=0$ అయితే, $\pi$ అక్షయం $\Gamma \Sequent \Delta$ మాత్రమే (అంటే ఏదో పరమాణు $!C$ అనేది $\Gamma$, $\Delta$ రెండింటిలోనూ ఉంటుంది); అప్పుడు $\Gamma
+  \Sequent \Delta, !A$ కూడా అక్షయమే. అసత్య స్థిరం ఎడమవైపు ఉన్న రెండవ అక్షయ కుటుంబంలోనూ, కుడివైపు సూత్రం చేర్చినా ఆ అక్షయత్వం నిలుస్తుంది. $n = \pheight{\pi} >0$ అయితే, \tetoken{నిరూపణ}{!!{proof}}~$\pi$కు చివరి నిగమనం ఉంటుంది. వాడిన నియమాన్ని బట్టి సందర్భాలను వేరు చేస్తాం. ఒక ఉదాహరణ మాత్రమే ఇద్దాం: చివరి నియమం $\RightR{\land}$ అని అనుకుందాం. అప్పుడు $\Delta = \Delta', !B \land !C$; చివరి నిగమనం యొక్క తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$ల చివరి సీక్వెంట్లు వరుసగా $\Gamma \Sequent \Delta', !B$, $\Gamma \Sequent
+  \Delta', !C$. అంటే $\pi$ రూపం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma \fCenter \Delta', !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma \fCenter \Delta', !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C$
+  \DisplayProof
+  \]
+  ఇంకా $n =
+  \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$. కాబట్టి $\pheight{\pi_1} <
+  n$, $\pheight{\pi_2} < n$; ఆగమన పరికల్పన వర్తిస్తుంది: $\Gamma \Sequent
+  \Delta', !B, !A$, $\Gamma \Sequent \Delta', !C, !A$లకు \tetoken{నిరూపణలు}{!!{proof}s} $\pi_1'$, $\pi_2'$ ఉన్నాయి. $\RightR{\land}$ను వాడి $\Gamma
+  \Sequent \Delta', !B \land !C, !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$ను పొందుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta', !B, !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta', !C, !A$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$\Gamma \fCenter \Delta', !B \land !C, !A$
+  \DisplayProof
+  \]
+  అప్పుడు $\pheight{\pi'} =
+  \max(\pheight{\pi_1'}, \pheight{\pi_2'}) + 1 = \max(\pheight{\pi_1},
+  \pheight{\pi_2}) + 1 = \pheight{\pi}$.
+\end{proof}
+\sourcecorrection{OLTEPTSEQADM-004}{మూల ఆగమన ఆధార దశ పరమాణు స్వీయ అక్షయాలను మాత్రమే పేర్కొంది. అసత్య స్థిరం ఎడమవైపు ఉండే మరో అక్షయ కుటుంబంలోనూ బలహీనీకరణ అక్షయత్వాన్ని నిలుపుతుందని చేర్చాం.}
+
+\olref{prop:weak-G3c-adm} చాలా ఉపయోగకరమైనది. దాన్ని పునరావృతంగా వర్తింపజేయడానికి గుర్తును ప్రవేశపెడదాం: $\pi$ అనేది~$\Gamma \Sequent \Delta$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} అయితే, $\pi[\Pi \Sequent \Lambda]$ అనేది $\Pi$లోని అన్ని \tetoken{సూత్రాలతో}{!!{formula}s} ఎడమ బలహీనీకరణ అనుమతించదగినతను, $\Lambda$లోని అన్ని \tetoken{సూత్రాలతో}{!!{formula}s} కుడి బలహీనీకరణ అనుమతించదగినతను వర్తింపజేసిన ఫలితం. అది $\Gamma, \Pi
+\Sequent \Delta, \Lambda$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}.
+
+\end{document}

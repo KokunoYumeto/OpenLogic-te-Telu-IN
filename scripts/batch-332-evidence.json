@@ -1,0 +1,29 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "332",
+  "unit_id": "OLP-0683",
+  "unit_order": 683,
+  "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+  "blocks": 21,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "corrections_by_block": {
+    "14": ["OLTEPTPSSAL-001"],
+    "18": ["OLTEPTPSSAL-002", "OLTEPTPSSAL-003", "OLTEPTPSSAL-004"]
+  },
+  "previous_segments": 10092,
+  "previous_terms": 372,
+  "expected_corrections": 624,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "దశలవారీ అన్వేషణ, సముచిత అవకాశ నిబంధన, కొత్త సూచికలు, స్థిరాంక సమితులు, అస్తిత్వ నియమాలు, స్వతంత్ర చరరాశి షరతును మూలంతో పోల్చి నాలుగు లోపాలు ప్రకటించాం.",
+  "evidence_limit": "మిగిలిన సంయోజక, సార్వత్రిక కేసులు మూలంలో అభ్యాసాలు; పూర్తి స్వతంత్ర అమలు పరీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T373",
+    "source_term": "fairness; maximal index; staged proof-search algorithm",
+    "telugu": "సముచిత అవకాశ నిబంధన; గరిష్ఠ సూచిక; దశలవారీ నిరూపణ అన్వేషణ అల్గోరిథం",
+    "status": "search_algorithm_four_disclosed_source_repairs",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "ప్రతి సూత్రం అవసరమైనన్ని సార్లు తగ్గించబడటం, చిన్న సూచిక ఎంపిక, స్థిరాంక సమితి మార్పు, విజయవంతమైన ముగింపు భావాలను వేరు చేశాం.",
+    "uncertainty": "fairnessకు నిర్వచనాత్మక తెలుగు పదం వాడాం; ప్రత్యేక ప్రమాణిత పదసూచి సాక్ష్యం పరిమితం. పూర్తి అమలు పరీక్ష లేదు.",
+    "borrowing": "G3c, algorithm and formal rule notation remain source-identifying."
+  }
+}

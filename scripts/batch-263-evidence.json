@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "263",
+  "unit_id": "OLP-0614",
+  "unit_order": 614,
+  "source_path": "content/methods/induction/introduction.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5,6,7,8,9],
+  "previous_segments": 9086,
+  "previous_terms": 303,
+  "expected_corrections": 528,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P005", "TE-P018", "TE-P024"],
+  "consultation_phase": "ఆగమన పరిచయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సహజసంఖ్య/ఆగమన/నిర్మాణాత్మక ఆగమన పదాలు, స్థానిక గణిత-తర్క సాక్షులు పోల్చాం; పరిశీలనాత్మక సరళ ఆగమనం, గణిత ఆగమనం భేదం, శూన్య ఆధారం, k నుంచి k+1 దశ, పరిమిత సమితి పరిమాణం, నిర్మాణాత్మక సాధారణీకరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003 సాధారణ ఆగమన/నిగమన వాడుకకు ఆధారం; గణిత ఆగమన పూర్తిసిద్ధాంతానికి కాదు. శూన్యం నుంచి సహజ సంఖ్యల ప్రారంభం మూల సూత్రం, పూర్వ పద నిర్ణయంతో నియంత్రితం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T304","source_term":"mathematical induction versus simple induction; structural induction","telugu":"గణిత ఆగమనం మరియు సరళ ఆగమనం; నిర్మాణాత్మక ఆగమనం","status":"observational_vs_proof_induction_zero_base_successor_step_structural_extension_source_controlled","passages":["TE-P003","TE-P004","TE-P005","TE-P018","TE-P024"],"basis":"ఎమరాల్డ్ పరిశీలన నుంచి వచ్చిన సాధారణీకరణను 0 ఆధారం, k→k+1 దశతో అన్ని సహజ సంఖ్యలకు నిరూపణ ఇచ్చే గణిత ఆగమనం నుంచి వేరు చేశాం; పరిమిత సమితులు, ఆకారిక వ్యక్తీకరణల విస్తరణ నిలిచింది.","uncertainty":"ఆగమన సాధారణ పదానికి స్థానిక ఆధారం ఉంది; నిర్మాణాత్మక ఆగమన ప్రత్యేక రూపం నిర్వచన-నియంత్రిత తాత్కాలిక ఎంపిక.","borrowing":"0, k, k+1, n and TeX mathematical notation remain unchanged; emerald is a source example rendered in Telugu script."}
+}

@@ -36,7 +36,7 @@ const legacyById = Object.fromEntries(legacy.map(item => [item.review_id, item])
 const sourceManifest = readJsonl('SOURCE_MANIFEST.jsonl');
 const sourceUnitTotal = sourceManifest.length;
 const draftedSourceUnits = sourceManifest.filter(item => fs.existsSync(path.join(root, 'translation', ...slash(item.source_path).split('/')))).length;
-const coverageVersion = `partial-${draftedSourceUnits}-of-${sourceUnitTotal}`;
+const coverageVersion = `${draftedSourceUnits}-of-${sourceUnitTotal}-source-units`;
 
 const edition = Object.freeze({
   edition_id: 'openlogic-te-Telu-IN',
@@ -108,10 +108,25 @@ const proseRanges = (locator, fallbackStart, fallbackEnd) => {
   return ranges;
 };
 
-const readerPending = () => ({
+const htmlReader = path.join(root, 'output', 'html', 'full', 'index.html');
+const htmlQaPath = path.join(dataDir, 'FULL-HTML-QA.json');
+const htmlQa = fs.existsSync(htmlQaPath) ? JSON.parse(fs.readFileSync(htmlQaPath, 'utf8')) : null;
+const acceptedReader = draftedSourceUnits === sourceUnitTotal && htmlQa?.status === 'COMPLETE_PASS' &&
+  htmlQa.units === sourceUnitTotal && fs.existsSync(htmlReader) &&
+  htmlQa.files?.some(item => item.name === 'index.html' && item.sha256 === fileInfo(htmlReader).sha256);
+const readerSha = acceptedReader ? fileInfo(htmlReader).sha256 : null;
+const readerLocator = unitId => acceptedReader ? {
+  status: 'available',
+  artifact_filename: 'output/html/full/index.html',
+  artifact_sha256: readerSha,
+  profile: 'full',
+  printed_page: null,
+  assembled_pdf_page: null,
+  provenance: `Verified complete HTML reader, unit-level anchor #${unitId}; source/target line and byte spans locate the exact occurrence. A PDF occurrence page is not asserted.`
+} : {
   status: 'pending',
-  reason: 'The cited unit is not yet integrated into the coherent full reader; no printed or assembled PDF page is guessed.'
-});
+  reason: 'The integrated HTML reader has not passed complete QA; no reader or PDF page locator is asserted.'
+};
 
 const uniqueArtifacts = refs => [...new Map(refs.map(ref => [`${ref.path_or_uri}\0${ref.sha256}`, ref])).values()];
 
@@ -212,7 +227,7 @@ const termDecisions = terms.map(term => {
         intendedSense,
         context: `Accepted Telugu rendering; legacy locator ${location.target_locator}.`
       }),
-      reader_locator: readerPending(),
+      reader_locator: readerLocator(location.unit_id),
       evidence_refs: termEvidenceRefs(term)
     };
   });
@@ -399,7 +414,7 @@ const correctionDecisions = corrections.map(correction => {
             ? correction.target_locator
             : `${correction.target_locator}; mapped segment ${alignedSegment.segment_id}`
         }),
-        reader_locator: readerPending(),
+        reader_locator: readerLocator(correction.unit_id),
         evidence_refs: evidenceRefs
       };
     })
@@ -417,9 +432,9 @@ const canonical = {
     repository: 'https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN',
     doi: null,
     source_revision: '9620cc73f9c8e0ad003c514a5d3748f29611c4c0',
-    coverage_state: 'partial',
+    coverage_state: acceptedReader ? 'complete' : 'partial',
     source_units: draftedSourceUnits,
-    reader_units: null
+    reader_units: acceptedReader ? sourceUnitTotal : null
   },
   generator: {
     path_or_uri: 'scripts/build-translation-decisions.mjs',
@@ -438,7 +453,9 @@ const full = [
   '',
   `Edition: **${edition.language_tag} / ${edition.script} / ${edition.register_or_variant}**. Coverage: **${draftedSourceUnits} of ${sourceUnitTotal} source units drafted**. This readable view contains all ${decisions.length} decisions and ${occurrenceCount} recorded occurrences.`,
   '',
-  'Final reader/PDF page locators remain pending until the cited units are integrated into the coherent reader. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.',
+  acceptedReader
+    ? 'The accepted full HTML reader provides verified unit-level anchors. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators identify exact occurrences; PDF occurrence pages are not asserted. No decision creates a translation hold.'
+    : 'Reader locators remain pending until integrated reader QA passes. Source and target file, line, byte, unit, semantic-unit, and SHA-256 locators are authoritative now. No decision creates a translation hold.',
   ''
 ];
 for (const decision of decisions) {
@@ -469,7 +486,7 @@ for (const decision of decisions) {
     ''
   );
   for (const occurrence of decision.occurrences) {
-    full.push(`  - ${occurrence.occurrence_id}; ${occurrence.unit_id}; ${occurrence.semantic_unit_id}; source ${occurrence.source.path}:${lineLabel(occurrence.source.line_span)} bytes ${byteLabel(occurrence.source.byte_span)} SHA-256 ${occurrence.source.file_sha256}; target ${occurrence.target.path}:${lineLabel(occurrence.target.line_span)} bytes ${byteLabel(occurrence.target.byte_span)} SHA-256 ${occurrence.target.file_sha256}; reader page pending.`);
+    full.push(`  - ${occurrence.occurrence_id}; ${occurrence.unit_id}; ${occurrence.semantic_unit_id}; source ${occurrence.source.path}:${lineLabel(occurrence.source.line_span)} bytes ${byteLabel(occurrence.source.byte_span)} SHA-256 ${occurrence.source.file_sha256}; target ${occurrence.target.path}:${lineLabel(occurrence.target.line_span)} bytes ${byteLabel(occurrence.target.byte_span)} SHA-256 ${occurrence.target.file_sha256}; ${acceptedReader ? `reader output/html/full/index.html#${occurrence.unit_id} (unit-level; PDF occurrence page not asserted)` : 'reader locator pending'}.`);
   }
   full.push('');
 }
@@ -481,7 +498,7 @@ const priority = [
   '',
   `This view contains ${priorityDecisions.length} of ${decisions.length} decisions marked urgent or high priority. Review is useful but never a release or translation hold.`,
   '',
-  'Final reader pages remain pending; exact source and target file/line locators are shown.',
+  acceptedReader ? 'Accepted HTML unit anchors are recorded in the canonical register; PDF occurrence pages are not asserted. Exact source and target file/line locators are shown.' : 'Reader locators remain pending; exact source and target file/line locators are shown.',
   ''
 ];
 for (const decision of priorityDecisions) {
@@ -530,6 +547,8 @@ const occurrenceRows = decisions.flatMap(decision => decision.occurrences.map(oc
   target_byte_start: occurrence.target.byte_span.start,
   target_byte_end_exclusive: occurrence.target.byte_span.end_exclusive,
   reader_status: occurrence.reader_locator.status,
+  reader_artifact: occurrence.reader_locator.artifact_filename ?? '',
+  reader_anchor: occurrence.reader_locator.status === 'available' ? `#${occurrence.unit_id}` : '',
   reader_page: occurrence.reader_locator.printed_page ?? '',
   reader_reason: occurrence.reader_locator.reason ?? '',
   please_double_check_question: decision.please_double_check_question
@@ -541,7 +560,7 @@ fs.writeFileSync(path.join(dataDir, 'DECISION_OCCURRENCES.csv'), csv);
 
 const startHere = `# Start here: Telugu translation decisions
 
-Status: **partial — ${draftedSourceUnits} of ${sourceUnitTotal} source units drafted**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
+Status: **${acceptedReader ? 'complete reader coverage' : 'partial reader coverage'} — ${draftedSourceUnits} of ${sourceUnitTotal} source units translated**. The canonical register currently contains **${decisions.length} decisions** (${termDecisions.length} terminology/sense decisions and ${correctionDecisions.length} source-correction decisions) with **${occurrenceCount} concrete occurrences**.
 
 Use these views:
 
@@ -556,7 +575,7 @@ The edition recommendation is one standard formal Telugu edition in Telugu scrip
 
 No inspected source establishes a current Top 10 language ranking or a quantified adoption effect. Census, PISA, catalogue, and token-size evidence must not be presented as ranking evidence. Any future script, notation, pronunciation, or accessibility companion must be separately authored or deterministically generated and separately manifested; it neither replaces nor delays the faithful Telugu translation.
 
-Every judgment-dependent item records its source-controlled sense, chosen rendering or treatment, rationale, checked authority, alternatives, confidence, provisional status, and a plain “Please double-check” question. Every occurrence binds a unit and semantic-unit identifier to source and target files, lines, byte spans, and SHA-256 hashes. Reader/PDF pages are explicitly pending until coherent-reader pagination exists; no page is guessed. Optional expert review remains useful and creates no translation hold.
+Every judgment-dependent item records its source-controlled sense, chosen rendering or treatment, rationale, checked authority, alternatives, confidence, provisional status, and a plain “Please double-check” question. Every occurrence binds a unit and semantic-unit identifier to source and target files, lines, byte spans, and SHA-256 hashes. ${acceptedReader ? 'Accepted full HTML unit anchors are available and hashed; exact PDF occurrence pages are not asserted.' : 'Integrated reader locators remain pending release QA; no page is guessed.'} Optional expert review remains useful and creates no translation hold.
 
 The older \`EXPERT_REVIEW_*\` files remain as compatibility views. The canonical schema is copied byte-for-byte from OpenLogic-translations commit \`811091d54be4989918864732073279a588340e6f\`; its expected SHA-256 is \`50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90\`.
 `;
@@ -569,5 +588,5 @@ console.log(JSON.stringify({
   source_corrections: correctionDecisions.length,
   priority: priorityDecisions.length,
   occurrences: occurrenceCount,
-  status: 'partial_no_holds_reader_pages_pending'
+  status: acceptedReader ? 'complete_html_locators_no_holds' : 'partial_no_holds_reader_pending'
 }));

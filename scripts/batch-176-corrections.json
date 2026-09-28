@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0527",
+  "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+  "source_sha256": "e5b649b07980ba0ec35bc7b18cfa27c1b9bf28553363ab8a10736c3cc182ee0a",
+  "audit_id": "OLTECNTTRA-20260927",
+  "audit_review_path": "evidence/OLP-0527-COUNTERFACTUAL-TRANSITIVITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "ea26e6e4846b8316f31bf0b28365526551659bc1f9426e03135bf7dba3b389a0",
+  "audit_findings_path": "evidence/OLP-0527-COUNTERFACTUAL-TRANSITIVITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "08913f6a58a26fc01fda30887c2336114525b89d2a10d9250bb2fa2048401f87",
+  "previous_corrections": 477,
+  "treatments": {
+    "OLTECNTTRA-001": {"target_line": 104, "body_treatment": "మూడు లోకాల ప్రతినమూనాలో $q \\lif r$కు మూల సంకేతంలోని అసత్య గీతను తొలగించి, ఇచ్చిన సత్యమూల్య నియామకానికి సరిపోయే సత్య సంకేతాన్ని పక్కనే ప్రకటించాం."}
+  }
+}

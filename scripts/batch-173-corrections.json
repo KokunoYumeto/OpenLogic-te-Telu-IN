@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0524",
+  "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+  "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+  "audit_id": "OLTECNTSPH-20260927",
+  "audit_review_path": "evidence/OLP-0524-SPHERE-MODELS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "5de81da566340acf8c29b8ba5d8a451e748b371d105c28639ebde145e718177f",
+  "audit_findings_path": "evidence/OLP-0524-SPHERE-MODELS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f599ab1241fd368125b5dbca4b132bef28a528f82d2db8a0e17f5527467e5cb5",
+  "previous_corrections": 475,
+  "treatments": {
+    "OLTECNTSPH-001": {"target_line": 166, "body_treatment": "అసత్య పూర్వపక్షం గల చిన్న గోళంలో సాక్షి ఉండదని గుర్తించి, షరతు వారసత్వాన్ని పూర్వపక్ష-సత్య గోళాలకే పరిమితం చేసి, అత్యంత లోపలి గోళం ఉంటే అనే పరిమితిని పక్కనే ప్రకటించాం."}
+  }
+}

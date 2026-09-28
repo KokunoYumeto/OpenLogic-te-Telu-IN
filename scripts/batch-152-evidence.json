@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "152",
+  "unit_id": "OLP-0503",
+  "unit_order": 503,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5],
+  "previous_segments": 7590,
+  "previous_terms": 192,
+  "expected_corrections": 460,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర నిర్దుష్టత/సంపూర్ణత అధ్యాయ మూలం, తెలుగు లక్ష్యం, మునుపటి మోడల్ తర్క అధ్యాయ పదాలు, స్థానిక తర్క/వ్యుత్పత్తి/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; ఏడు దిగుమతులు, పరిచయం-లోపం, నిరూపణకు కావలసిన వ్యుత్పాద్యత వాస్తవాల గమనిక నిలిపాం.",
+  "evidence_limit": "TE-P018/024/025/026 సాధారణ తర్క, వ్యుత్పత్తి, నిరూపణ పదాలకు మాత్రమే సాక్షులు; అంతఃప్రజ్ఞావాద అధ్యాయ ఫలితాలకు ప్రత్యక్ష సాక్షులు కావు.",
+  "term_decision": {
+    "term_id": "TE-T193",
+    "source_term": "soundness and completeness / provability facts / editorial introduction needed",
+    "telugu": "నిర్దుష్టత, సంపూర్ణత / వ్యుత్పాద్యత వాస్తవాలు / పరిచయం అవసరమనే సంపాదకీయ గమనిక",
+    "status": "native_general_logic_proof_register_attested_intuitionistic_chapter_source_controlled",
+    "passages": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "పూర్వ మోడల్ తర్క విభాగాల్లోని నిర్దుష్టత/సంపూర్ణత పదజాలంతో సరిపోల్చి, మూల అధ్యాయ శీర్షిక, అసంపూర్ణ సంపాదకీయ గమనిక, ఏడు దిగుమతులు నిలిపాం.",
+    "uncertainty": "స్థానిక సాక్షులు అంతఃప్రజ్ఞావాద నిర్దుష్టత/సంపూర్ణత నిరూపణలకు ప్రత్యక్ష ధృవీకరణ ఇవ్వవు; TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Chapter IDs and import paths are source-controlled."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHPRFEX2-20260927",
+  "unit_id": "OLP-0608",
+  "source_path": "content/methods/proofs/example-2.tex",
+  "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHPRFEX2-001",
+      "source_locator": "example-2.tex lines 54–55, equality unpacked into two subset claims",
+      "classification": "missing_closing_parenthesis_in_second_subset_claim",
+      "source_issue": "The right-hand union in the second subset claim has an unmatched outer opening parenthesis.",
+      "minimal_treatment": "Close the outer parenthesis and disclose beside the translated proof line.",
+      "expected_core_math_delta": {"source_only": ["$C\\subseteq(A\\cup(C\\setminusA)$"], "target_only": ["$C\\subseteq(A\\cup(C\\setminusA))$"]}
+    }
+  ]
+}

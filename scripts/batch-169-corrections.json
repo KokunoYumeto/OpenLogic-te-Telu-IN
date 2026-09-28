@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0520",
+  "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+  "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+  "audit_id": "OLTECNTSTR-20260927",
+  "audit_review_path": "evidence/OLP-0520-STRICT-CONDITIONAL-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1b0c79d97eb19c994e3a75d0e1e8cab689e6ca4f85cd160e2743d1368e0dd435",
+  "audit_findings_path": "evidence/OLP-0520-STRICT-CONDITIONAL-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "fa339c920eeb20f867217890494348d59baa348c42a5652f6da93fabe2599767",
+  "previous_corrections": 474,
+  "treatments": {
+    "OLTECNTSTR-001": {"target_line": 59, "body_treatment": "అసత్య సోపాధిక నిరాకరణ అపర్యవసానం భౌతికానికి కాదు కఠిన సోపాధికానికి చెందాలని ప్రదర్శనలో సంయోజకాన్ని మార్చి పక్కనే ప్రకటించాం."}
+  }
+}

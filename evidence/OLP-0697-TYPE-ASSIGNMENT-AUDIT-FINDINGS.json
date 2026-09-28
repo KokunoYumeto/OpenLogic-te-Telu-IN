@@ -1,0 +1,80 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYTYP-20260928",
+  "unit_id": "OLP-0697",
+  "source_path": "content/proof-theory/propositions-as-types/types.tex",
+  "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYTYP-001",
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex lines 28–48, aligned block 9",
+      "classification": "injection_typing_undeclared_placeholder",
+      "source_issue": "The injection clause declares N but uses !M.",
+      "minimal_treatment": "Use the declared term N.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\inj[!B]{i}{!M}$"
+        ],
+        "target_only": [
+          "$\\inj[!B]{i}{N}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTYP-002",
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex lines 28–48, aligned block 9",
+      "classification": "case_typing_binder_context_mismatch",
+      "source_issue": "The branch contexts declare x,y, but the case term binds x1,x2.",
+      "minimal_treatment": "Use x,y in the case constructor to match the branch contexts.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\dcase{M}{x_1}{N_1}{x_2}{N_2}$"
+        ],
+        "target_only": [
+          "$\\dcase{M}{x}{N_1}{y}{N_2}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTYP-003",
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex lines 50–53, aligned block 10",
+      "classification": "raw_term_type_existence_false",
+      "source_issue": "Not every syntactic proof term is typable; the preceding section explicitly gives ill-typed terms.",
+      "minimal_treatment": "State uniqueness conditional on existence of a type, and qualify the introductory reconstruction claim for correct proof terms.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTYP-004",
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex lines 59–63, aligned block 12",
+      "classification": "typing_rule_table_wrong_reference",
+      "source_issue": "The definition invokes tN3 but points to the tN2 rule table.",
+      "minimal_treatment": "Refer to the distinct tab:tN3ip label repaired in the actual typing table.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\olref{tab:tN2ip}"
+        ],
+        "target_only": [
+          "\\olref{tab:tN3ip}"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTYP-005",
+      "source_locator": "content/proof-theory/propositions-as-types/types.tex lines 19–22, aligned block 7",
+      "classification": "typing_context_consistency_and_freshness_implicit",
+      "source_issue": "The context definition does not forbid conflicting assignments to extra variables, nor state fresh bound names before extension; this can invalidate uniqueness.",
+      "minimal_treatment": "Clarify that contexts are single-valued assignments and alpha-rename binders to fresh names before extending them, while still allowing extra unused variables.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

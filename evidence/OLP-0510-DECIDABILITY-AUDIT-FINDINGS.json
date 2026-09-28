@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTDEC-20260927",
+  "unit_id": "OLP-0510",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+  "source_sha256": "336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5",
+  "findings": [
+    {
+      "finding_id": "OLTEINTDEC-001",
+      "source_locator": "decidability.tex lines 23-42; atomic-type quotient and truth-preservation exercise",
+      "classification": "atomic_type_quotient_fails_implication_truth_preservation",
+      "source_issue": "Ordering worlds by inclusion of atomic truth sets creates new accessible pairs and need not preserve implication; the claimed induction for every formula over P is false.",
+      "minimal_treatment": "Use truth types over the finite subformula set S of the target formula, keep subset accessibility, restrict the induction and exercise to S, and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": ["$[w]=\\Setabs{p\\inP}{w\\inV(p)}$"],
+        "target_only": ["$S$", "$S$", "$S$", "$[w]=\\Setabs{!B\\inS}{\\mSat{M}{!B}[w]}$"]
+      }
+    }
+  ]
+}

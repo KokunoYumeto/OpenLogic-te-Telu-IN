@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "166",
+  "unit_id": "OLP-0517",
+  "unit_order": 517,
+  "source_path": "content/counterfactuals/introduction/introduction.tex",
+  "blocks": 10,
+  "linguistic_blocks": [4],
+  "previous_segments": 7773,
+  "previous_terms": 206,
+  "expected_corrections": 474,
+  "canon_default": ["TE-P018"],
+  "consultation_phase": "ప్రతివాస్తవ సోపాధికాల పరిచయ అధ్యాయ శీర్షికను, నాలుగు దిగుమతుల క్రమాన్ని, స్థిర పరిచయ పదాన్ని ఎదురెదురు చూశాం.",
+  "evidence_limit": "TE-P018 సాధారణ విద్యా తర్క పదాలకు మాత్రమే సాక్షి; ఈ యూనిట్‌లో ప్రత్యేక ప్రతివాస్తవ సిద్ధాంతం లేదు. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T207",
+    "source_term": "introduction (counterfactuals chapter)",
+    "telugu": "పరిచయం",
+    "status": "stable_chapter_heading_register_source_imports_preserved",
+    "passages": ["TE-P018"],
+    "basis": "అధ్యాయ శీర్షికను స్థిర తెలుగు పరిచయ పదంతో ఇచ్చి నాలుగు ఉపవిభాగ దిగుమతుల క్రమం, cnt/int గుర్తింపులను మార్చలేదు.",
+    "uncertainty": "ఈ యూనిట్ నిర్మాణ, శీర్షిక స్వభావమైంది; ప్రత్యేక గణిత వాదన లేదు.",
+    "borrowing": "No borrowing is needed for the reader-visible chapter title."
+  }
+}

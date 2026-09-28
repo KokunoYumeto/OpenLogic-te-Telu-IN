@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0663",
+  "source_path": "content/proof-theory/natural-deduction/introduction.tex",
+  "source_sha256": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9",
+  "audit_id": "OLTEPTNATINT-20260927",
+  "audit_review_path": "evidence/OLP-0663-NATURAL-INTRO-SOURCE-AUDIT.md",
+  "audit_review_sha256": "bee790a2395438e09afd75756777c18cc0c780d6e8f0b0bfef047a92b0cf8cd3",
+  "audit_findings_path": "evidence/OLP-0663-NATURAL-INTRO-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "93a0553d5dcceb4a25df297cccbf3e59ad45ad51a2ee42c76b222f1fd4bad7a0",
+  "previous_corrections": 576,
+  "treatments": {
+    "OLTEPTNATINT-001": {
+      "target_line": 18,
+      "body_treatment": "యాష్కోవ్‌స్కీ పెట్టెలో Aను మొదటి వరుసగా, Bను చివరి వరుసగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATINT-002": {
+      "target_line": 45,
+      "body_treatment": "Γ+A entails B నుంచి Γ entails A→B అనే సరైన నిగమనాన్ని చేర్చి ప్రకటించాం."
+    }
+  }
+}

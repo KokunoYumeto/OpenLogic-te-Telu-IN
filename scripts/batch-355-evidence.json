@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "355",
+  "unit_id": "OLP-0706",
+  "unit_order": 706,
+  "source_path": "content/proof-theory/sequent-calculus/rules-G2c.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10418,
+  "previous_terms": 395,
+  "expected_corrections": 686,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నియమ పట్టిక శీర్షికలు, సందర్భ/స్థిరాంక షరతులు పూర్వ సీక్వెంట్ గద్యం, సంప్రదించిన నిరూపణ పదజాలంతో పోల్చాం.",
+  "evidence_limit": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T396",
+    "source_term": "independent-context G2c rules; multiset union",
+    "telugu": "స్వతంత్ర సందర్భాల G2c నియమాలు; బహుసమితి సమ్మేళనం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పట్టిక గద్యం మాత్రమే స్థానికీకరించి, సందర్భాలు, నియమాల రూపాలను నేరుగా పోల్చాం.",
+    "uncertainty": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "225",
+  "unit_id": "OLP-0576",
+  "unit_order": 576,
+  "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+  "blocks": 26,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+  "corrections_by_block": {"14": ["OLTESTORDADD-001"], "16": ["OLTESTORDADD-002"]},
+  "previous_segments": 8479,
+  "previous_terms": 265,
+  "expected_corrections": 494,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "క్రమసంఖ్య కూడిక స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమరకం/సుక్రమం/పునరావృత్తి పదాలు, స్థానిక సంఖ్య/సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; విచ్ఛిన్న సమ్మేళనం, విలోమ నిఘంటు క్రమం, క్రమరక కూడిక, శూన్య/ఉత్తరవర్తి/సీమా సమీకరణాలు, సహచర్యం, అక్రమమార్పిడి ఉదాహరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సంఖ్య/సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; క్రమసంఖ్య కూడిక ప్రత్యేక నిర్వచనం మూల సూత్ర నియంత్రితం. మూల సమరూపత, శూన్య లెక్క లోపాలు OLTESTORDADD-001/002గా ప్రకటించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T266",
+    "source_term": "ordinal addition; disjoint sum; reverse lexicographic order",
+    "telugu": "క్రమసంఖ్య కూడిక; విచ్ఛిన్న సమ్మేళనం; విలోమ నిఘంటు క్రమం",
+    "status": "operation_definitions_source_controlled_number_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "రెండు గుర్తుల ప్రతుల సుక్రమం నుండి క్రమరక మొత్తం, పునరావృత్త సమీకరణాలు, సహచర్యం, 1+omega/omega+1 భేదం నిలిచాయి.",
+    "uncertainty": "reverse lexicographic ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; యుగ్మపు రెండవ భాగం ముందుగా పోల్చే మూల నిర్వచనం నియంత్రణ.",
+    "borrowing": "Order-type, ordinal-addition and relation macros remain source-controlled."
+  }
+}

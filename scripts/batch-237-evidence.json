@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "237",
+  "unit_id": "OLP-0588",
+  "unit_order": 588,
+  "source_path": "content/set-theory/card-arithmetic/simp.tex",
+  "blocks": 18,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+  "corrections_by_block": {"12": ["OLTESTCARDSIMP-001"]},
+  "previous_segments": 8661,
+  "previous_terms": 277,
+  "expected_corrections": 500,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ కూడిక/గుణకార సరళీకరణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రామాణిక క్రమ/క్రమరక/సంఘ పదాలు, స్థానిక సంఖ్య/క్రమ సాక్షులు పోల్చాం; యుగ్మాల మూడు-స్థాయి క్రమం, మొదటి ఖండాలు, అనంత కార్డినల్ చతురస్రం, గరిష్ఠ ఫలితం, ఎంపిక-ఆధారిత సంఘ సరిహద్దు తనిఖీ చేశాం.",
+  "evidence_limit": "ప్రామాణిక క్రమ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల మూడు-షరతుల నిర్వచనం నియంత్రితం. మూల నిరూపణలో పరిమిత సూచిక సందర్భం OLTESTCARDSIMP-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T278",
+    "source_term": "canonical ordering; infinite cardinal sum/product simplification",
+    "telugu": "ప్రామాణిక క్రమం; అనంత కార్డినల్ కూడిక/గుణకార సరళీకరణ",
+    "status": "pair_order_and_maximum_theorem_source_controlled_finite_case_disclosed",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "గరిష్ఠ నిర్దేశాంకం, మొదటి/రెండవ నిర్దేశాంకాల క్రమం, అనంత కార్డినల్ చతురస్ర సమసంఖ్యకత్వం, కూడిక-గుణకారం గరిష్ఠానికి సమానత్వం నిలిచాయి.",
+    "uncertainty": "ప్రామాణిక క్రమ పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం నియంత్రించింది.",
+    "borrowing": "Canonical-order and cardinal-operation macros remain source-controlled."
+  }
+}

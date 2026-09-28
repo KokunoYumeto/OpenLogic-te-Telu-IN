@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "298",
+  "unit_id": "OLP-0649",
+  "unit_order": 649,
+  "source_path": "content/intuitionistic-logic/semantics/propositions.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 9593,
+  "previous_terms": 338,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "అంతఃప్రజ్ఞేయ ప్రతిపాదనల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సంబంధ నమూనా/లోకం/సత్యం పదాలు పోల్చాం; ఆరు ఆగమన కేసులు, ప్రతి అందుబాటు లోకం నియమాలు, ప్రతిపాదన-సత్యం సాధన తనిఖీ చేశాం.",
+  "evidence_limit": "చివరి ప్రతిపాదన నిరూపణ మూలంలో సాధనగా వదిలారు; ఇక్కడ పూర్తి చేయలేదు. TeX గణిత పాఠ్య/దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T339","source_term":"proposition as set of worlds in relational model; inductive truth-set clauses","telugu":"సంబంధ నమూనాలో లోకాల సమితిగా ప్రతిపాదన; ఆగమనాత్మక సత్య-సమితి నియమాలు","status":"intuitionistic_propositions_truth_sets_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"అసత్యం, అణు, నిరాకరణ, మరియు, లేదా, అయితే కోసం ప్రతిపాదన సమితి నియమాలు, చివరి సత్య తుల్యత నిలిచాయి.","uncertainty":"సత్య తుల్యతకు మూలం పూర్తి నిరూపణ ఇవ్వదు; అది సాధన.","borrowing":"M, W, R and protected model/formula tokens remain source-identifying."}
+}

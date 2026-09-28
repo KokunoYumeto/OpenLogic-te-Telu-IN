@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0703",
+  "source_path": "content/proof-theory/sequent-calculus/quantifiers.tex",
+  "source_sha256": "a27d60734d10b75dad7ff081448ddad7036694cdb489b2a0cfa8c97d002bc480",
+  "audit_id": "OLTEPTSEQQUA-20260928",
+  "audit_review_path": "evidence/OLP-0703-REGULAR-PROOFS-SUBSTITUTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9aecbb605ce0173ba6d9e3bec6f93e6c990c8e95100235b6bca4d8086319ca52",
+  "audit_findings_path": "evidence/OLP-0703-REGULAR-PROOFS-SUBSTITUTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "78499d86020accd429f004572edb0d4e41e0e96e6d524e07cc3af14f6f8aff9a",
+  "previous_corrections": 678,
+  "treatments": {
+    "OLTEPTSEQQUA-001": {
+      "target_line": 78,
+      "body_treatment": "Use the universal-left labels in those two diagrams."
+    },
+    "OLTEPTSEQQUA-002": {
+      "target_line": 107,
+      "body_treatment": "Choose a highest dirty inference, justify regularity by cleanliness of upper inferences, and state a decrease of at least one."
+    },
+    "OLTEPTSEQQUA-003": {
+      "target_line": 79,
+      "body_treatment": "Separate the unchanged eigenvariable set and the inserted-term freshness statements without changing the mathematical content."
+    },
+    "OLTEPTSEQQUA-004": {
+      "target_line": 28,
+      "body_treatment": "Clarify capture-avoiding substitution with alpha-renaming of bound variables when needed."
+    }
+  }
+}

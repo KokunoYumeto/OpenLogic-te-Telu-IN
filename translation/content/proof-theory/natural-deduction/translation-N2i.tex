@@ -1,0 +1,108 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-N2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tni}
+
+\olsection{\Log{N2} నుంచి \Log{G2}కి అనువాదం}
+
+\begin{prop}\ollabel{prop:N2-to-G2} $\Log{N2c}\ (\Log{N2i}) \Proves
+\Gamma \Sequent !A$ అయితే $\Log{G2c}\ (\Log{G2i}) + \Cut \Proves \Gamma'
+\Sequent \Delta$. ఇక్కడ~$\Gamma'$ అనేది~$\Gamma$లోని గుర్తులను తొలగిస్తే వచ్చే \tetoken{సూత్రాల}{!!{formula}s} బహుసమితి;~$!A$ అనేది~$\lfalse$ కాకపోతే $\Delta = \{!A\}$, అదే అయితే $\Delta = \emptyset$.
+\sourcecorrection{OLTEPTNATN2I-001}{ప్రతిపాదనలో అంతఃప్రజ్ఞావాద లక్ష్య వ్యవస్థను మూలం N2i అని మళ్లీ పేర్కొంది; N2i నుంచి అనువదించే లక్ష్యం G2i. ఆ వ్యవస్థ పేరును సరిచేశాం.}
+\end{prop}
+
+\begin{proof}
+మళ్లీ~$\Gamma \Sequent !A$కు గల \tetoken{నిరూపణ}{!!{proof}}~$\delta$ ఎత్తుపై ఆగమనంతో నిరూపిద్దాం. $\delta$ అనేది $x:!A \Sequent !A$ ఆక్సియమ్ అయితే,~$\pi$ అనేది దానికి అనురూపమైన $!A \Sequent !A$ ఆక్సియమ్; లేదా $!A \ident \lfalse$ అయితే $\lfalse \Sequent \ $ ఆక్సియమ్.
+
+$\delta$ నిగమన నియమంతో ముగిస్తే, సందర్భాలను వేరు చేద్దాం:
+\begin{enumerate}
+  \item $R$ అనేది \Intro{\lif} అయి, ప్రధాన సూత్రం $!B \lif !C$గా, పూర్వపక్ష సందర్భంలో $x:!B$ ఉండి ఫలిత సందర్భంలో లేకపోతే,~$\delta$ ముగింపు ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  ఆగమన ఉపపత్తి నుంచి $!B, \Gamma'
+  \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ వస్తుంది ($!C \ident \lfalse$ అయితే $!B, \Gamma'
+  \Sequent \ $కు). $!C \ident \lfalse$ సందర్భంలో ముందుగా \RightR{\Weakening}ను వర్తింపజేసి, తరువాత~\RightR{\lif}ను వర్తింపజేస్తే~$\pi$ వస్తుంది.
+  \item $R$ అనేది \Intro{\lif} అయినా పూర్వపక్ష సందర్భంలో $x:!B$ లేకపోతే,~$\delta$ ముగింపు ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  ఆగమన ఉపపత్తి నుంచి $\Gamma'
+  \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ వస్తుంది. దానికి~$!B$తో \LeftR{\Weakening}ను, తరువాత~\RightR{\lif}ను వర్తింపజేసి~$\pi$ పొందుతాం.
+  \item $R$ అనేది \Elim{\lif} అయితే~$\delta$ ముగింపు ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$\Gamma_2 \fCenter !B$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  ఇక్కడ $\Gamma = \Gamma_1 \cup \Gamma_2$. ఆగమన ఉపపత్తి నుంచి $\Gamma_1' \Sequent !B \lif !A$కు~$\pi_1$, $\Gamma_2' \Sequent !B$కు~$\pi_2$ అనే \tetoken{నిరూపణలు}{!!{proof}s} వస్తాయి. \tetoken{నిరూపణ}{!!{proof}}~$\pi$ను ఇలా పొందుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !B \lif !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter !B$
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!B \lif !A, \Gamma_2' \fCenter !A$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  బహుసమితి $\Gamma_1' \cup \Gamma_2'$ అనేది $\Gamma' =
+  (\Gamma_1 \cup \Gamma_2)'$కు సమానం కాకపోవచ్చు: ఉదాహరణకు, $\Gamma_1$, $\Gamma_2$ రెండింటిలోనూ $x:!C$ ఉంటే~$\Gamma_1' \cup \Gamma_2'$లో~$!C$ రెండు ప్రతులు ఉంటాయి; కానీ $(\Gamma_1 \cup \Gamma_2)'$లో ఒక్క ప్రతే ఉంటుంది. తగిన \LeftR{\Contraction} నిగమనాలు చేర్చి దీనిని సరిచేయవచ్చు.
+
+  $!A \ident \lfalse$ సందర్భంలో~$\delta_2$కు ఆగమన ఉపపత్తి వర్తిస్తే $\Gamma_2' \Sequent !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుంది; ఖాళీ ఫలితభాగానికి కాదు. $\lfalse \Sequent \ $ ఆక్సియమ్‌తో \LeftR{\lif}ను ఉపయోగించి $!B \lif \lfalse, \Gamma_2' \Sequent \ $ను, ఆ తరువాత~$\pi_1$తో \Cutను ఉపయోగించి $\Gamma_1', \Gamma_2' \Sequent \ $ను పొందవచ్చు. అవసరమైన \LeftR{\Contraction}లను వర్తింపజేస్తే లక్ష్య బహుసమితికి గల \tetoken{నిరూపణ}{!!{proof}}~$\pi$ వస్తుంది.
+  \sourcecorrection{OLTEPTNATN2I-002}{ఫలితం $!A \ident \lfalse$ అయినప్పుడు మూలం $\delta_2$ ఆగమన అనువాదం ఖాళీ ఫలితభాగాన్ని ఇస్తుందని చెప్పింది; $\delta_2$ ఫలితం $!B$, కాబట్టి అది $!B$నే ఇస్తుంది. అసత్య ఆక్సియమ్‌తో ఎడమ అన్వయం, తరువాత కట్ ద్వారా ఖాళీ ఫలితభాగం పొందే దశను చేర్చాం.}
+\item $R$ అనేది \FalseCl అయితే~$\delta$ ముగింపు ఇది:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x: \lnot !A, \Gamma \fCenter \lfalse$
+  \RightLabel{\FalseCl}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof
+  \]
+  ఆగమన ఉపపత్తి ప్రకారం $\lnot !A,
+  \Gamma' \Sequent \ $కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ ఉంటుంది. \tetoken{నిరూపణ}{!!{proof}}~$\pi$ను ఇలా తీసుకుందాం:
+  \[
+  \Axiom$!A \fCenter !A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter !A, \lnot !A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot !A, \Gamma' \fCenter $
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma' \fCenter !A$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLTEPTNATN2I-003}{G2c వృక్ష పూర్వపక్షంలో మూలం N2 గుర్తు $x:$ను మిగిల్చింది. G2c సీక్వెంట్ సందర్భం గుర్తులేని సూత్రాల బహుసమితి; ఆ గుర్తును తొలగించాం.}
+  ఈ సందర్భంలో~$!A \ident \lfalse$ అయితే, చిత్రంలో వచ్చిన $\Gamma' \Sequent !A$ను $\lfalse \Sequent \ $ ఆక్సియమ్‌తో \Cut చేయడం ద్వారా లక్ష్యమైన $\Gamma' \Sequent \ $ను పొందుతాం.
+  \sourcecorrection{OLTEPTNATN2I-004}{\FalseCl ఫలితం అసత్యమే అయిన ప్రత్యేక సందర్భంలో మూల వృక్షం కుడివైపు అసత్యంతో ముగుస్తుంది; ప్రతిపాదనకు ఖాళీ ఫలితభాగం కావాలి. అదనపు కట్ దశను స్పష్టంచేశాం.}
+\end{enumerate}
+\FalseCl{} అనువాదం మాత్రమే కుడివైపు ఒకటి కంటే ఎక్కువ \tetoken{సూత్రాలు}{!!{formula}} గల \tetoken{నిరూపణ}{!!a{proof}}~$\pi$ను ఇస్తుందని గమనించండి. అంటే \Log{N2i} \tetoken{నిరూపణ}{!!{proof}} యొక్క అనువాదం \Log{G2i}-\tetoken{నిరూపణ}{!!{proof}}.
+\end{proof}
+
+\end{document}

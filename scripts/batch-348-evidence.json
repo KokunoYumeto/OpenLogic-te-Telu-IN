@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "348",
+  "unit_id": "OLP-0699",
+  "unit_order": 699,
+  "source_path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+  "blocks": 14,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTSEQIRL-002"
+    ],
+    "10": [
+      "OLTEPTSEQIRL-001"
+    ],
+    "11": [
+      "OLTEPTSEQIRL-003"
+    ]
+  },
+  "previous_segments": 10307,
+  "previous_terms": 388,
+  "expected_corrections": 661,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సీక్వెంట్ సత్య షరతులు, ప్రధాన సూత్రం, నిర్మాణ నియమాల గద్యం పూర్వ అర్థవిచార/నిరూపణ పదాలతో పోల్చాం.",
+  "evidence_limit": "నియమాల నేర సత్య-పట్టిక, ఉదాహరణ తనిఖీ మాత్రమే; పూర్తి formalization లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T389",
+    "source_term": "interpretation of rules; truth condition; principal formula; context sharing; structural rules",
+    "telugu": "నియమాల అర్థవ్యాఖ్యానం; సత్య షరతు; ప్రధాన సూత్రం; సందర్భాన్ని పంచుకోవడం; నిర్మాణ నియమాలు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఎడమ అసత్యం/కుడి సత్యం ధ్రువత్వం నిలిపాం; నియమ సత్య సంరక్షణ, converse వైఫల్యం వేరు చేశాం.",
+    "uncertainty": "నియమాల నేర సత్య-పట్టిక, ఉదాహరణ తనిఖీ మాత్రమే; పూర్తి formalization లేదా TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

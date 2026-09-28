@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "282",
+  "unit_id": "OLP-0633",
+  "unit_order": 633,
+  "source_path": "content/history/set-theory/set-theory.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4,5],
+  "previous_segments": 9341,
+  "previous_terms": 322,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002", "TE-P003", "TE-P008"],
+  "consultation_phase": "సమితి సిద్ధాంతపు చరిత్ర అధ్యాయ డ్రైవర్ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి సిద్ధాంతం/చరిత్ర పదాలు, స్థానిక సమితి సాక్షి పోల్చాం; సంపాదకీయ మూల క్రెడిట్, ఆరు దిగుమతి మార్గాలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షి సమితి/తర్క నేపథ్యం మాత్రమే; టిమ్ బటన్ రచన చారిత్రక క్రెడిట్ మూల పాఠ్యం ఆధారితం. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T323","source_term":"History and Mythology of Set Theory; historical prelude","telugu":"సమితి సిద్ధాంతపు చరిత్ర మరియు పురాణాలు; చారిత్రక ఉపోద్ఘాతం","status":"editorial_attribution_and_six_imports_preserved","passages":["TE-P002","TE-P003","TE-P008"],"basis":"అధ్యాయ శీర్షిక, టిమ్ బటన్ ఓపెన్ సెట్ థియరీ పాఠ్యానికి సంపాదకీయ క్రెడిట్ తెలుగులో; ఆరు దిగుమతుల క్రమం, సంకేతాలు యథాతథం.","uncertainty":"పురాణాలు అనే శీర్షిక మూల mythology పదానికి అనుగుణం; పాఠ్య క్రెడిట్ బాహ్యంగా ధృవీకరించలేదు.","borrowing":"Tim Button and Open Set Theory are source-identifying names; import paths remain unchanged."}
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHPRFPAT-20260927",
+  "unit_id": "OLP-0606",
+  "source_path": "content/methods/proofs/inference-patterns.tex",
+  "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHPRFPAT-001",
+      "source_locator": "inference-patterns.tex lines 310–312, unpacking nonempty-set hypothesis",
+      "classification": "object_variable_replaces_set_in_nonemptiness_equivalence",
+      "source_issue": "After showing that A is nonempty iff some x belongs to A, the source instead writes x ≠ ∅ in the summary. Here x is an arbitrary member, not the set whose nonemptiness is being unpacked.",
+      "minimal_treatment": "Use A ≠ ∅ in that final equivalence and disclose the one-atom repair next to the explanatory passage.",
+      "expected_core_math_delta": {"source_only": ["$x\\neq\\emptyset$"], "target_only": ["$A\\neq\\emptyset$"]}
+    }
+  ]
+}

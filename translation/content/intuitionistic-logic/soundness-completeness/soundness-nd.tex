@@ -1,0 +1,223 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-nd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{snd}
+
+\olsection{సహజ నిగమనం నిర్దుష్టత}
+
+ఇప్పుడు సంబంధ అర్థవిజ్ఞానానికి సంబంధించి సహజ నిగమనం
+నిర్దుష్టతను నిరూపిస్తాం. అంటే, పరికల్పనల సమితి నుంచి
+\tetoken{ఒక సూత్రం}{!!a{formula}} \tetoken{వ్యుత్పాదించదగినదైతే}{!!{derivable}},
+ఆ పరికల్పనల సమితి ఆ \tetoken{సూత్రాన్ని}{!!{formula}}
+అనుగమింపజేస్తుందని చూపుతాం.
+
+\begin{thm}[నిర్దుష్టత]
+  \ollabel{thm:soundness}
+  $\Gamma \Proves !A$ అయితే, $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves !A$ అయితే $\Gamma \Entails !A$
+  అని నిరూపిస్తాం. $\Gamma$ నుంచి~$!A$ యొక్క
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}}పై ఆగమన
+  పద్ధతిలో నిరూపణ సాగుతుంది.
+
+  \begin{enumerate}
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}} కేవలం
+    పరికల్పన~$!A$తోనే ఉంటే, $!A \Proves !A$;
+    $!A \Entails !A$ అని చూపాలి.
+    $\mSat{M}{!A}[w]$ అనుకుందాం. అప్పుడు సహజంగానే
+    $\mSat{M}{!A}[w]$.
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}} చివర
+    $\Intro{\land}$ ఉంటే:
+    \iftag{probAnd}{అభ్యాసం.}{\tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలైన~$\Gamma$ నుంచి $!B$ పూర్వాపేక్షకు,
+      \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలైన~$\Delta$ నుంచి~$!C$ పూర్వాపేక్షకు
+      ఉన్న \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}
+      $\Gamma \Proves !B$, $\Delta \Proves !C$ అని
+      చూపుతాయి. ఆగమన పరికల్పన ప్రకారం $\Gamma
+      \Entails !B$, $\Delta \Entails !C$. మొత్తం
+      \tetoken{వ్యుత్పత్తిలోని}{!!{derivation}}
+      \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలు $\Gamma$, $\Delta$ కలిపినవే
+      కాబట్టి $\Gamma \cup \Delta \Entails !B \land !C$
+      అని చూపాలి.
+      \sourcecorrection{OLTEINTSND-001}{మూలం ఈ సంయోగ పరిచయ కేసు లక్ష్యాన్ని $!A \land !B$గా వ్రాసింది; పూర్వాపేక్షలు, చివరి సత్య నిబంధన రెండూ $!B \land !C$ను నిర్ణయిస్తాయి కాబట్టి దానికి సరిచేశాం.}
+      $\mSat{M}{\Gamma
+        \cup \Delta}[w]$ అనుకుందాం. అప్పుడు
+      $\mSat{M}{\Gamma}[w]$ కూడా. $\Gamma
+      \Entails !B$ కాబట్టి $\mSat{M}{!B}[w]$.
+      అదేవిధంగా $\mSat{M}{!C}[w]$. కనుక
+      $\mSat{M}{!B \land !C}[w]$.}
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}} చివర
+    $\Elim{\land}$ ఉంటే:
+    \iftag{probAnd}{అభ్యాసం.}{$\Gamma$ అనే
+      \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనల నుంచి $!B
+        \land !C$ పూర్వాపేక్ష యొక్క
+      \tetoken{వ్యుత్పత్తి}{!!{derivation}},
+      $\Gamma \Proves !B \land !C$ అని చూపుతుంది.
+      ఆగమన పరికల్పన ప్రకారం $\Gamma \Entails !B
+      \land !C$. $\Gamma \Entails !B$ అని
+      చూపాలి. $\mSat{M}{\Gamma}[w]$ అనుకుందాం.
+      $\Gamma
+        \Entails !B \land !C$ కాబట్టి
+      $\mSat{M}{!B \land !C}[w]$. అప్పుడు
+      $\mSat{M}{!B}[w]$ కూడా. అదేవిధంగా
+      $\Elim\land$ చివర~$!C$ వస్తే $\Gamma
+      \Entails !C$.}
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}} చివర
+    $\Intro{\lor}$ ఉంటే:
+    \iftag{probOr}{అభ్యాసం.}{పూర్వాపేక్ష $!B$ అని,
+      $!B$తో ముగిసే \tetoken{వ్యుత్పత్తిలో}{!!{derivation}}
+      \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలు $\Gamma$ అని అనుకుందాం. అప్పుడు
+      $\Gamma \Proves !B$; ఆగమన పరికల్పన ప్రకారం
+      $\Gamma \Entails !B$. $\Gamma \Entails !B
+      \lor !C$ అని చూపాలి. $\mSat{M}{\Gamma}[w]$
+      అనుకుందాం. $\Gamma \Entails !B$ కాబట్టి
+      $\mSat{M}{!B}[w]$. అప్పుడు $\mSat{M}{!B
+        \lor !C}[w]$ కూడా. అదేవిధంగా పూర్వాపేక్ష~$!C$
+      అయితే $\Gamma \Entails !C$; ఆ కేసులోనూ
+      కోరిన వియోజనం వస్తుంది.}
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర~$\Elim{\lor}$ ఉంటే:
+    \iftag{probOr}{అభ్యాసం.}{పూర్వాపేక్షల్లో మొదటిది
+      \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలు~$\Gamma$ నుంచి $!B \lor !C$,
+      రెండవది \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలు $\Delta_1 \cup \{!B\}$ నుంచి $!D$,
+      మూడవది \tetoken{ఉపసంహరించని}{!!{undischarged}}
+      పరికల్పనలు~$\Delta_2 \cup \{!C\}$ నుంచి
+      $!D$కు చెందిన \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}.
+      కాబట్టి $\Gamma \Proves
+      !B \lor !C$, $\Delta_1 \cup \{!B\} \Proves !D$,
+      $\Delta_2
+      \cup \{!C\} \Proves !D$. ఆగమన పరికల్పన
+      ప్రకారం $\Gamma
+      \Entails !B \lor !C$, $\Delta_1 \cup \{!B\}
+      \Entails !D$, $\Delta_2 \cup \{!C\}
+      \Entails !D$. $\Gamma \cup \Delta_1 \cup
+      \Delta_2 \Entails !D$ అని నిరూపించాలి.
+
+    $\mSat{M}{\Gamma \cup \Delta_1 \cup \Delta_2}[w]$
+    అనుకుందాం. అప్పుడు $\mSat{M}{\Gamma}[w]$;
+    $\Gamma \Entails !B \lor !C$ కాబట్టి
+    $\mSat{M}{!B \lor !C}[w]$. $\mSat{M}{}$
+    నిర్వచనం ప్రకారం $\mSat{M}{!B}[w]$ లేదా
+    $\mSat{M}{!C}[w]$. అందువల్ల రెండు కేసులు:
+    (a)~$\mSat{M}{!B}[w]$. అప్పుడు
+    $\mSat{M}{\Delta_1 \cup \{!B\}}[w]$.
+    \sourcecorrection{OLTEINTSND-002}{మూలం (a) కేసులో $[w]$ను గణిత-సంకేతం బయట ఉంచింది; నిర్వచిత లోక-సత్య సంకేతంలోకి చేర్చాం.}
+    $\Delta_1 \cup \{!B\} \Entails !D$ కాబట్టి
+    $\mSat{M}{!D}[w]$.
+    \sourcecorrection{OLTEINTSND-003}{మూలంలోని రెండు అనుగమన వ్యక్తీకరణల్లో $!B$, $!C$లను సమితి-సమ్మేళనానికి నేరుగా కలిపింది; పూర్వ వ్యుత్పత్తి, ఆగమన పరికల్పనలకు అనుగుణంగా ఒక్కో మూలక సమితి జతచేశాం.}
+    (b)~$\mSat{M}{!C}[w]$. అప్పుడు
+    $\mSat{M}{\Delta_2 \cup \{!C\}}[w]$.
+    $\Delta_2 \cup \{!C\} \Entails !D$ కాబట్టి
+    $\mSat{M}{!D}[w]$. ఏ కేసులోనైనా
+    కోరినట్లుగా $\mSat{M}{!D}[w]$.}
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర $\Intro{\lif}$ ద్వారా~$!B\lif !C$
+    వస్తే, పూర్వాపేక్ష~$!C$. దాని
+    \tetoken{వ్యుత్పత్తిలోని}{!!{derivation}}
+    \tetoken{ఉపసంహరించని}{!!{undischarged}}
+    పరికల్పనలు~$\Gamma \cup \{!B\}$. కాబట్టి
+    $\Gamma \cup \{!B\} \Proves !C$; ఆగమన
+    పరికల్పన ప్రకారం $\Gamma \cup \{!B\}
+    \Entails !C$. $\Gamma \Entails !B \lif !C$
+    అని చూపాలి.
+
+    $\mSat{M}{\Gamma}[w]$ అనుకుందాం. $Rww'$
+    అయ్యే ప్రతి $w'$ వద్ద $\mSat{M}{!B}[w']$
+    అయితే $\mSat{M}{!C}[w']$ అని చూపాలి.
+    కాబట్టి $Rww'$ మరియు $\mSat{M}{!B}[w']$
+    అనుకుందాం. \olref[sem][rel]{prop:true-monotonic}
+    ప్రకారం $\mSat{M}{\Gamma}[w']$.
+    $\Gamma \cup \{!B\} \Entails !C$ కాబట్టి
+    కోరినట్లుగా $\mSat{M}{!C}[w']$.
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర $\Elim{\lif}$ ద్వారా~$!C$ వస్తే,
+    పూర్వాపేక్షలు $!B \lif !C$, $!B$.
+    వాటి \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}
+    వరుసగా \tetoken{ఉపసంహరించని}{!!{undischarged}}
+    పరికల్పనలు $\Gamma$, $\Delta$ నుంచి వస్తాయి.
+    కాబట్టి $\Gamma \Proves !B \lif !C$,
+    $\Delta
+    \Proves !B$. ఆగమన పరికల్పన ప్రకారం
+    $\Gamma \Entails !B \lif !C$, $\Delta
+    \Entails !B$. $\Gamma \cup \Delta \Entails !C$
+    అని చూపాలి.
+
+    $\mSat{M}{\Gamma \cup \Delta}[w]$ అనుకుందాం.
+    $\mSat{M}{\Gamma}[w]$ మరియు
+    $\Gamma \Entails !B \lif !C$ కాబట్టి
+    $\mSat{M}{!B \lif !C}[w]$. నిర్వచనం ప్రకారం
+    $Rww'$ అయ్యే ప్రతి $w'$ వద్ద
+    $\mSat{M}{!B}[w']$ అయితే
+    $\mSat{M}{!C}[w']$. $R$ స్వావర్తనం కాబట్టి
+    $Rww'$ అయ్యే $w'$లలో $w$ కూడా ఉంది; అంటే
+    $\mSat{M}{!B}[w]$ అయితే
+    $\mSat{M}{!C}[w]$. $\mSat{M}{\Delta}[w]$
+    మరియు $\Delta
+    \Entails !B$ కాబట్టి $\mSat{M}{!B}[w]$.
+    కనుక కోరినట్లుగా $\mSat{M}{!C}[w]$.
+
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర $\FalseInt$ ద్వారా~$!A$ వస్తే,
+    పూర్వాపేక్ష $\lfalse$. ఆ పూర్వాపేక్ష
+    \tetoken{వ్యుత్పత్తిలోని}{!!{derivation}}
+    \tetoken{ఉపసంహరించని}{!!{undischarged}}
+    పరికల్పనలు~$\Gamma$. అప్పుడు $\Gamma
+    \Proves \lfalse$. ఆగమన పరికల్పన ప్రకారం
+    $\Gamma \Entails \lfalse$. $\Gamma
+    \Entails !A$ అని చూపాలి.
+
+    పరోక్షంగా నిరూపిద్దాం. $\Gamma \Entails/ !A$
+    అయితే, ఏదో నమూనా~$\mModel{M}$, లోకం~$w$లకు
+    $\mSat{M}{\Gamma}[w]$ మరియు
+    $\mSat/{M}{!A}[w]$. కానీ $\Gamma \Entails
+    \lfalse$ కాబట్టి $\mSat{M}{\lfalse}[w]$.
+    నిర్వచనం ప్రకారం $\mSat/{M}{\lfalse}[w]$
+    కావడంతో ఇది అసాధ్యం. కనుక $\Gamma
+    \Entails !A$.
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర $\Intro\lnot$ ఉంటే: అభ్యాసం.
+  \item \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+    చివర $\Elim\lnot$ ఉంటే: అభ్యాసం.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \olref[int][sc][snd]{thm:soundness} నిరూపణను
+  పూర్తి చేయండి. $\Intro\lnot$, $\Elim\lnot$
+  కేసులకు \olref[int][sem][rel]{defn:true-at-w}లోని
+  $\mSat{M}{\lnot !A}[w]$ నిర్వచనాన్ని వాడండి;
+  అంటే $\lnot !A$ను $!A \lif \lfalse$ ద్వారా
+  నిర్వచించబడినదిగా పరిగణించవద్దు.
+\end{prob}
+
+\begin{prob}
+  కింది \tetoken{సూత్రాలు}{!!{formula}s}
+  అంతఃప్రజ్ఞావాద తర్కంలో
+  \tetoken{వ్యుత్పాదించదగినవి}{!!{derivable}} కావని చూపండి:
+  \begin{enumerate}
+    \item $(!A \lif !B) \lor (!B \lif !A)$
+    \item $(\lnot\lnot !A \lif !A) \lif (!A \lor \lnot !A)$
+    \item $(!A \lif !B \lor !C) \lif \bigl((!A \lif !B)\lor(!A \lif !C)\bigr)$
+  \end{enumerate}
+\end{prob}
+
+\end{document}

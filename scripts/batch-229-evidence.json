@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "229",
+  "unit_id": "OLP-0580",
+  "unit_order": 580,
+  "source_path": "content/set-theory/cardinals/cardinals.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 8553,
+  "previous_terms": 269,
+  "expected_corrections": 498,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ అధ్యాయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సంఖ్య/క్రమసంఖ్య పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు పోల్చి శీర్షికను పరీక్షించాం.",
+  "evidence_limit": "సంఖ్య/సమితి పదాలకు సాధారణ సాక్షులే ఉన్నాయి; కార్డినల్ ప్రత్యేక రూపం మూల అధ్యాయ శీర్షికచే నియంత్రితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T270",
+    "source_term": "Cardinals (chapter title)",
+    "telugu": "కార్డినల్ సంఖ్యలు",
+    "status": "chapter_heading_translated_import_graph_preserved",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "కార్డినల్ సంఖ్యల శీర్షిక, ఐదు దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలిచాయి.",
+    "uncertainty": "కార్డినల్ ప్రత్యేక పదానికి ప్రత్యక్ష ప్రామాణిక సాక్షి లేదు; స్థానిక మూల నిర్వచనం తరువాతి భాగంలో ఉంది.",
+    "borrowing": "Cardinal is a transparent mathematical borrowing; TeX identifiers remain unchanged."
+  }
+}

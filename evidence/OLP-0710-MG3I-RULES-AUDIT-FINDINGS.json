@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQMG3I-20260928",
+  "unit_id": "OLP-0710",
+  "source_path": "content/proof-theory/sequent-calculus/rules-mG3i.tex",
+  "source_sha256": "47a378e14f141af32aa2dd70a066166b587f0c649d4bfaed5921e96789af73d4",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQMG3I-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-mG3i.tex lines 9–85, aligned block 4",
+      "classification": "universal_left_context_separator_missing",
+      "source_issue": "The retained universal principal formula is not separated from Gamma.",
+      "minimal_treatment": "Insert the context separator.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A(t),\\lforall[x][!A(x)]\\Gamma\\fCenter\\Delta$"
+        ],
+        "target_only": [
+          "$!A(t),\\lforall[x][!A(x)],\\Gamma\\fCenter\\Delta$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQMG3I-002",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-mG3i.tex lines 9–85, aligned block 4",
+      "classification": "unresolved_source_minimal_system_reference_gap",
+      "source_issue": "The caption names mG1m and mG1i although the table defines mG3i; a scoped frozen-source search finds no other definition of those names.",
+      "minimal_treatment": "Retain the names as an attributed source remark and disclose the unresolved definition/reference; do not invent or certify a minimal-system definition.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQMG3I-003",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-mG3i.tex lines 9–85, aligned block 4",
+      "classification": "multi_conclusion_table_duplicate_classical_label",
+      "source_issue": "The multi-conclusion table reuses the G3c label.",
+      "minimal_treatment": "Give this table its own tab:mG3i label.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\ollabel{tab:G3c}"
+        ],
+        "target_only": [
+          "\\ollabel{tab:mG3i}"
+        ]
+      }
+    }
+  ]
+}

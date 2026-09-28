@@ -1,0 +1,39 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{expo}
+\olsection{క్రమసంఖ్య ఘాతాంకం}
+
+ఇప్పుడు క్రమసంఖ్య ఘాతాంకం చూద్దాం. దురదృష్టవశాత్తు క్రమసంఖ్య ఘాతాంకానికి \emph{చక్కని} నిర్మాణాత్మక నిర్వచనం లేదు.
+
+అయితే స్పష్టమైన నిర్మాణాత్మక నిర్వచనాలు \emph{ఉన్నాయి}. ధనాత్మక ఆధారానికి ఒకటి ఇది. $\text{finfun}(\alpha,\beta)$ అనేది $f
+\colon \beta \to \alpha$ ప్రమేయాల సమితి; ఇక్కడ $\Setabs{\gamma \in
+\beta}{f(\gamma) \neq 0}$ ఏదో సహజ సంఖ్యతో సమసంఖ్యకంగా ఉండాలి. $\text{finfun}(\alpha,\beta)$పై $f
+\sqsubset g$ అప్పుడూ అప్పుడే $f \neq g$, అలాగే $f(\gamma_0) < g(\gamma_0)$ అయ్యేలా సుక్రమాన్ని నిర్వచిద్దాం; ఇక్కడ $\gamma_0 = \text{max}\Setabs{\gamma \in \beta}{f(\gamma) \neq
+g(\gamma)}$. అప్పుడు $\ordexpo{\alpha}{\beta}$ను $\ordtype{\text{finfun}(\alpha, \beta), \sqsubset}$గా నిర్వచించవచ్చు. పాటర్ ఈ స్పష్టమైన నిర్వచనాన్ని వాడి వెంటనే ఇలా వివరిస్తారు:
+\sourcecorrection{OLTESTORDEXPO-001}{మూల నిర్మాణాత్మక నిర్వచనం $\alpha^\beta$కి బదులు $\beta^\alpha$ను లెక్కించేలా ప్రమేయపు నిర్వచన/లక్ష్య సమితులను తిరగరాసింది. ఘాతానికి అనుగుణంగా నిర్వచన సమితి, మద్దతు, గరిష్ఠ వ్యత్యాస సూచికను $\beta$గా, విలువల సమితిని $\alpha$గా సరిచేశాం.}
+\begin{quote}
+	ఈ క్రమం ఎంపికను నిర్ణయించింది తగిన పునరావృత్త షరతును పాటించే క్రమసంఖ్య ఘాతాంక నిర్వచనం పొందాలనే మన కోరిక మాత్రమే\ldots; క్రమబద్ధ సమ్మేళనం లేదా క్రమబద్ధ గుణితం కంటే దీన్ని ఊహించుకోవడం చాలా కష్టం.
+	\citep[p.~199]{Potter2004}
+\end{quote}
+నిజమే. కూడికను ``$\alpha$ ప్రతిని అనుసరించి $\beta$ ప్రతి''గా, గుణకారాన్ని ``$\alpha$ ప్రతుల $\beta$-శ్రేణి''గా వివరించాం. కానీ $\text{finfun}(\alpha, \gamma)$ గురించి అంత క్లుప్తంగా చెప్పలేం. అందుకే క్రమసంఖ్య ఘాతాంకానికి నిర్వచనాన్ని నేరుగా అతిపరిమిత పునరావృత్తి \emph{ద్వారానే} ఇస్తాం, అంటే:
+
+\begin{defn}\ollabel{ordexporecursion}
+\begin{align*}
+	\ordexpo{\alpha}{0} &= 1\\
+	\ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
+	\ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{$\beta$ సీమా క్రమసంఖ్య అయితే}
+\end{align*}
+\end{defn}
+
+మనం సమితి సిద్ధాంతవేత్తలుగా \emph{పనిచేస్తుంటే}, క్రమసంఖ్య ఘాతాంకపు కొన్ని ధర్మాలను మరింత పరిశీలించేవాళ్లం. కానీ క్రమసంఖ్య ఘాతాంకానికి క్రమమార్పిడి ధర్మం లేదనే ఊహించిన విషయాన్ని గమనించడం తప్ప ఎక్కువ చెప్పాల్సింది లేదు. అందువల్ల $\ordexpo{2}{\omega} =
+\bigcup_{\delta < \omega}\ordexpo{2}{\delta} = \omega$; అయితే $\ordexpo{\omega}{2} = \omega \ordtimes \omega$. సహజ సంఖ్యల ఘాతాంకానికే క్రమమార్పిడి ధర్మం లేదు కాబట్టి, ఇక్కడ దాన్ని \emph{ఆశించకూడదు}: $\ordexpo{2}{3} = 8 < 9 = \ordexpo{3}{2}$.
+
+\begin{prob}
+ధనాత్మక ఆధారానికి, $\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\alpha, \beta),
+\sqsubset}$గా నిర్వచిస్తే \olref[sth][ord-arithmetic][expo]{ordexporecursion}లోని పునరావృత్త సమీకరణాలు వస్తాయని అతిపరిమిత ఆగమనం ద్వారా నిరూపించండి.
+\sourcecorrection{OLTESTORDEXPO-002}{శూన్య ఆధారానికి మూల పునరావృత్త సీమా శాఖ, పరిమిత మద్దతు ప్రమేయాల నిర్మాణం ఒకే విలువ ఇవ్వవు; ఈ నిర్మాణాత్మక సమానత్వ అభ్యాసాన్ని ధనాత్మక ఆధారానికి పరిమితం చేశాం.}
+\end{prob}
+
+\end{document}

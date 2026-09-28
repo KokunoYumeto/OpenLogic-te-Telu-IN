@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "251",
+  "unit_id": "OLP-0602",
+  "unit_order": 602,
+  "source_path": "content/methods/proofs/proofs.tex",
+  "blocks": 16,
+  "linguistic_blocks": [4],
+  "previous_segments": 8892,
+  "previous_terms": 291,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P018"],
+  "consultation_phase": "నిరూపణలు అధ్యాయ శీర్షికను పూర్వ నిరూపణ పదనిర్ణయం, స్థానిక సిద్ధాంత/తర్క వాడుకతో పోల్చి పది దిగుమతులు, ముగింపు హుక్ నిలిచాయని తనిఖీ చేశాం.",
+  "evidence_limit": "శీర్షికకు సాధారణ నిరూపణ వాడుక ఆధారం; పది ఇంకా అనువదించని విభాగాల శాస్త్రీయ ఖచ్చితత్వాన్ని ఈ నిర్మాణ యూనిట్ ధృవీకరించదు.",
+  "term_decision": {"term_id":"TE-T292","source_term":"Proofs (chapter title)","telugu":"నిరూపణలు","status":"proofs_chapter_heading_translated_import_graph_preserved","passages":["TE-P004","TE-P018"],"basis":"అధ్యాయ శీర్షిక అనువదించి పది దిగుమతుల క్రమం, TeX గుర్తులు మార్చలేదు.","uncertainty":"అధ్యాయ పదానికి ప్రత్యక్ష సాధారణ సాక్షి ఉంది; ప్రత్యేక నిరూపణ రకాలు తరువాతి విభాగాల మూలం ద్వారా నిర్ణయించాలి.","borrowing":"TeX chapter identifiers and import paths remain unchanged."}
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "241",
+  "unit_id": "OLP-0592",
+  "unit_order": 592,
+  "source_path": "content/set-theory/choice/choice.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 8742,
+  "previous_terms": 281,
+  "expected_corrections": 508,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ఎంపిక అధ్యాయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక స్వయంసిద్ధ పదం, స్థానిక తర్క/సమితి సాక్షులు పోల్చి శీర్షిక, ఎనిమిది దిగుమతులు తనిఖీ చేశాం.",
+  "evidence_limit": "ఎంపిక ప్రత్యేక స్వయంసిద్ధ పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ అధ్యాయ పద నిర్ణయం అనుసరించాం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T282","source_term":"Choice (chapter title)","telugu":"ఎంపిక","status":"chapter_heading_translated_import_graph_preserved","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"ఎనిమిది దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలిచాయి.","uncertainty":"ఎంపిక స్వయంసిద్ధం ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ వాడుకను కొనసాగించాం.","borrowing":"TeX chapter identifiers remain unchanged."}
+}

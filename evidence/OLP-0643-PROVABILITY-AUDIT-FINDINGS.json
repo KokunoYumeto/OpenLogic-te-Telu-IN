@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEFOLAXDPRV-20260927",
+  "unit_id": "OLP-0643",
+  "source_path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+  "source_sha256": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+  "findings": [
+    {
+      "finding_id": "OLTEFOLAXDPRV-001",
+      "source_locator": "provability.tex lines 76–83, second item of propositional provability proof",
+      "classification": "proof_assumes_negated_premise_and_proves_opposite_conclusion",
+      "source_issue": "The proposition assumes inconsistency of Gamma with A and concludes provability of not-A. Its proof instead assumes inconsistency of Gamma with not-A and derives A. This is the reverse case and does not prove the item.",
+      "minimal_treatment": "Preserve the source formulas but disclose the proof gap and the needed direction adjacent to the derivation.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEFOLAXDPRV-002",
+      "source_locator": "provability.tex lines 119–129, conjunction-left derivation",
+      "classification": "conjunction_elimination_conclusion_misprinted_as_disjunction",
+      "source_issue": "The displayed axiom line is (A and B) implies A, but the MP line concludes A or B instead of A. The following prose claims A.",
+      "minimal_treatment": "Retain the protected displayed formula and disclose the intended A conclusion next to it.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEFOLAXDPRV-003",
+      "source_locator": "provability.tex lines 135–146, modus-ponens item conclusion",
+      "classification": "undefined_second_finite_premise_set",
+      "source_issue": "The derivation uses Gamma_0 for both hypotheses but the final sentence invokes Gamma_0 union Gamma_1 without ever defining Gamma_1.",
+      "minimal_treatment": "Preserve the historical text and note that the two finite premise sets may be combined, or a common Gamma_0 may be chosen.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEFOLAXDPRV-004",
+      "source_locator": "provability.tex lines 193–199, weak generalization proof case split",
+      "classification": "axiom_case_uses_final_formula_instead_of_current_line",
+      "source_issue": "The proof analyzes each A_i of a derivation, but the axiom case says if the final A is an axiom rather than if A_i is an axiom.",
+      "minimal_treatment": "Retain the source's mathematical symbols and disclose that the case must be indexed by i.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEFOLAXDPRV-005",
+      "source_locator": "provability.tex lines 220–232, free-for lemma proof opening",
+      "classification": "substitution_lemma_proof_uses_wrong_intermediate_formula",
+      "source_issue": "The lemma concerns x being free for y in Subst(A,y,c), and the remaining proof reasons about that formula. Its first sentence instead says Subst(A,y,x).",
+      "minimal_treatment": "Preserve the source formula and disclose the inconsistency with the lemma's target formula.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "294",
+  "unit_id": "OLP-0645",
+  "unit_order": 645,
+  "source_path": "content/first-order-logic/syntax-and-semantics/introduction.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5,6,7,8],
+  "previous_segments": 9532,
+  "previous_terms": 334,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "మొదటిస్థాయి వాక్యనిర్మాణ/అర్థవిచార పరిచయం స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ పదం/సూత్రం/నిర్మాణం/సంతృప్తి పదాలు, స్థానిక తర్క సాక్షులు పోల్చాం; అన్ని రక్షిత పదటోకెన్లు, సంతృప్తి/అనుగమనం సంకేతాలు తనిఖీ చేశాం.",
+  "evidence_limit": "ఇది భావనాత్మక పరిచయం; నిర్మాణ, సంతృప్తి, ఆగమనాత్మక నిర్వచనాల పూర్తి ఔపచారిక నిరూపణలు తరువాతి భాగాలకు చెందుతాయి. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T335","source_term":"first-order syntax and semantics; satisfaction; validity; entailment; satisfiability","telugu":"మొదటిస్థాయి వాక్యనిర్మాణం, అర్థవిచారం; సంతృప్తి; చెల్లుబాటు; అనుగమనం; సంతృప్త్యర్హత","status":"syntax_semantics_introduction_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"పదాలు, సూత్రాల ఆగమనాత్మక నిర్మాణం, ఏకైక పఠనం, నిర్మాణ/చరరాశి కేటాయింపు, సంతృప్తి, మూడు ప్రాథమిక అర్థవిచార భావనలు నిలిచాయి.","uncertainty":"ఉచ్చారణ/పదప్రయోగపు సూక్ష్మ భేదాలకు భవిష్యత్ నిపుణ సమీక్ష ఉపయోగకరం; గణిత సంకేతాలు మూలానికి సరిపోతాయి.","borrowing":"Polish notation and protected logical symbols retain source-identifying form."}
+}

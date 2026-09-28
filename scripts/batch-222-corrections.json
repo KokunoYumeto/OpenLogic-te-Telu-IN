@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0573",
+  "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+  "source_sha256": "31413d0ed7d34d8cd7ee45cbf8f137fb28c954de9ed84ef6bed96f502fad4cf4",
+  "audit_id": "OLTESTREPLFINITE-20260927",
+  "audit_review_path": "evidence/OLP-0573-FINITE-AXIOMATIZABILITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4d162504be289770bb0a884808ebc60402b342209fce7c5164fc3b39ac2ade43",
+  "audit_findings_path": "evidence/OLP-0573-FINITE-AXIOMATIZABILITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2f1635da4a0affd269240db1725eb2a157bb9537fd071a206ca2d5de3ea588da",
+  "previous_corrections": 491,
+  "treatments": {
+    "OLTESTREPLFINITE-001": {
+      "target_line": 34,
+      "body_treatment": "సంక్రమణ వాక్యాన్ని Nకే పరిమితం చేసిన మూల పైసూచికను బయటి M నమూనాకు మార్చి సవరణను ప్రకటించాం."
+    }
+  }
+}

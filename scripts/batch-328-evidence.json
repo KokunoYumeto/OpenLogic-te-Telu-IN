@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "328",
+  "unit_id": "OLP-0679",
+  "unit_order": 679,
+  "source_path": "content/proof-theory/proof-search/completeness.tex",
+  "blocks": 28,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+  "corrections_by_block": {
+    "6": ["OLTEPTPSCPL-001"],
+    "7": ["OLTEPTPSCPL-002"],
+    "10": ["OLTEPTPSCPL-003"]
+  },
+  "previous_segments": 10038,
+  "previous_terms": 368,
+  "expected_corrections": 620,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "విఫల శాఖ నుంచి పద నమూనా నిర్మాణం, కోనిగ్ లెమ్మా, సత్య లెమ్మా, అన్వేషణ సంపూర్ణతలను మూలంతో పోల్చాం; ప్రారంభ స్థిరాంకం వల్ల వాహకం ఖాళీ కాదని అన్వేషణ అల్గోరిథం పాఠ్యంలో తనిఖీ చేశాం.",
+  "evidence_limit": "మిగిలిన సంయోజక, సార్వత్రిక పరిమాణ కేసులను మూలం అభ్యాసాలుగా వదిలింది; పూర్తి స్వతంత్ర formalization, TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T369",
+    "source_term": "failure branch; term model; proof-search completeness",
+    "telugu": "విఫల శాఖ; పద నమూనా; నిరూపణ అన్వేషణ సంపూర్ణత",
+    "status": "proof_search_completeness_three_notation_repairs",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "విఫలమయ్యే లేదా ముగియని అన్వేషణ, పరిమిత శాఖాభివృద్ధి, పద వాహకం, సత్య లెమ్మా, సబబుతనం ద్వారా నిరూపణ లేకపోవడం వేర్వేరుగా నిలిచాయి.",
+    "uncertainty": "పద నమూనా, విఫల శాఖలకు ప్రత్యక్ష ప్రమాణిత తెలుగు పదసూచి సాక్ష్యం పరిమితం; నిర్వచనాలు సాంకేతిక అర్థాన్ని స్థిరం చేస్తాయి.",
+    "borrowing": "G3c, König and formal satisfaction notation remain source-identifying."
+  }
+}

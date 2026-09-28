@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "368",
+  "unit_id": "OLP-0719",
+  "unit_order": 719,
+  "source_path": "content/sets-functions-relations/relations/relations.tex",
+  "blocks": 13,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10555,
+  "previous_terms": 408,
+  "expected_corrections": 703,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సమితి/సంబంధం స్థానిక గణిత పదప్రయోగం పోల్చాం; అధ్యాయ శీర్షికను అదే పదంతో కొనసాగించాం.",
+  "evidence_limit": "No new chapter body; no TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T409",
+    "source_term": "relations (chapter)",
+    "telugu": "సంబంధాలు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సంబంధాలు అనే పదం సమితుల మధ్య లేదా మూలకాల మధ్య సంబంధాలకు యథావిధిగా ఉపయోగపడుతుంది.",
+    "uncertainty": "No new chapter body; no TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

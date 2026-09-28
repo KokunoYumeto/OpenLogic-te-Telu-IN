@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEISOMORPHICFUNCTIONS-20260928",
+  "unit_id": "OLP-0717",
+  "source_path": "content/sets-functions-relations/functions/isomorphic-functions.tex",
+  "source_sha256": "1433a675057150e1518e1c73b70ff918c408fa4425e59365c5f9cefa1a51d138",
+  "findings": []
+}

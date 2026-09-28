@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "238",
+  "unit_id": "OLP-0589",
+  "unit_order": 589,
+  "source_path": "content/set-theory/card-arithmetic/expotough.tex",
+  "blocks": 16,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15],
+  "corrections_by_block": {"6": ["OLTESTCARDEXPO-001"], "7": ["OLTESTCARDEXPO-002"], "12": ["OLTESTCARDEXPO-003"]},
+  "previous_segments": 8679,
+  "previous_terms": 278,
+  "expected_corrections": 503,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ ఘాత సరళీకరణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రమేయ/క్రమయుగ్మ/ఘాతాంక పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు పోల్చాం; రెండు ఘాత నియమాల ద్వైజెక్షన్‌లు, ఆధార-ఘాత పరిధి, శూన్య ఘాత మినహాయింపు తనిఖీ చేశాం.",
+  "evidence_limit": "కార్డినల్ ఘాత ప్రత్యేక పదసాక్షి లేదు; మూల సూత్రాలు నియంత్రించాయి. రెండు ప్రమేయ-రక చిక్కులు, శూన్య ఘాత లోపం OLTESTCARDEXPO-001/002/003గా ప్రకటించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T279",
+    "source_term": "cardinal exponentiation simplification; function currying",
+    "telugu": "కార్డినల్ ఘాతాంక సరళీకరణ; ప్రమేయ విభజన/పునర్వ్యవస్థీకరణ",
+    "status": "exponent_laws_source_controlled_three_disclosed_type_domain_repairs",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "విచ్ఛిన్న సమ్మేళనంపై ప్రమేయ విభజన, కార్టీషియన్ గుణితంపై ప్రమేయ పునర్వ్యవస్థీకరణ, రెండు పరిమాణ సరిహద్దులు, శూన్యం కాని పరిమిత ఘాత వాదన నిలిచాయి.",
+    "uncertainty": "కర్రీయింగ్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల ప్రమేయ రకాలు నియంత్రించాయి.",
+    "borrowing": "Cardinal exponent macros and function symbols remain source-controlled."
+  }
+}

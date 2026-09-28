@@ -1,0 +1,64 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: completeness-thm
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{cpl}
+
+\olsection{సంపూర్ణతా సిద్ధాంతం}
+
+\begin{thm}\ollabel{thm:completeness}
+  $\Gamma \Entails !A$ అయితే $\Gamma \Proves !A$.
+\end{thm}
+
+\begin{proof}
+  ప్రతివిపర్యయాన్ని నిరూపిస్తాం:
+  $\Gamma \Proves/ !A$ అనుకుందాం.
+  \olref[lin]{lem:lindenbaum} ప్రకారం
+  $\Gamma^*
+  \supseteq \Gamma$, $\Gamma^* \Proves/ !A$
+  అయ్యే ప్రధాన సమితి ఉంది.
+  \olref[mod]{defn:canonical-model}లో
+  నిర్వచించిన $\Gamma^*$కు చెందిన
+  కానానికల్ నమూనా~$\mModel{M(\Gamma^*)}$ను
+  పరిగణిద్దాం. ఏ $!B \in \Gamma$కైనా
+  $\Gamma^*
+  \Proves !B$. $\Gamma^*(\emptyseq) =
+  \Gamma^*$ అని గమనించండి. సత్య
+  ఉపప్రమేయం (\olref[tru]{lem:truth}) ప్రకారం
+  అన్ని $!B \in \Gamma$లకు
+  $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$,
+  అలాగే $\mSat/{M(\Gamma^*)}{!A}[\emptyseq]$.
+  కాబట్టి $\Gamma
+  \Entails/ !A$.
+\end{proof}
+
+\begin{prob}
+  $!A$లో \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s},
+  $\lor$,~$\land$ మాత్రమే ఉంటే
+  $\Entails/ !A$ అని చూపండి. దీని ద్వారా
+  అంతఃప్రజ్ఞావాద తర్కంలో $\lor$,~$\land$
+  నుంచి $\lif$ను నిర్వచించలేమని తేల్చండి.
+\end{prob}
+
+\begin{prob}
+  సంపూర్ణతా సిద్ధాంతాన్ని ఉపయోగించి
+  $\Proves !A \lor !B$ అయితే $\Proves !A$
+  లేదా $\Proves !B$ అని నిరూపించండి.
+  (సూచన: $\mSat/{M_1}{!A}$,
+  $\mSat/{M_2}{!B}$ అనుకుని
+  $\mSat/{M}{!A \lor !B}$ అయ్యే కొత్త
+  నమూనా~$\mModel{M}$ను నిర్మించండి.)
+\end{prob}
+
+\begin{prob}
+  $\mModel{M}$ ఒక రేఖీయ క్రమాన్ని ఉపయోగించే
+  సంబంధ నమూనా అయితే
+  $\mSat{M}{(!A \lif !B)\lor(!B \lif !A)}$
+  అని చూపండి.
+\end{prob}
+
+\end{document}

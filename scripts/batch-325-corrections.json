@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0676",
+  "source_path": "content/proof-theory/normalization/reductions.tex",
+  "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+  "audit_id": "OLTEPTNORRED-20260928",
+  "audit_review_path": "evidence/OLP-0676-REDUCTIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "be801c7c177f5749c03c1bfa495cd6940276211c0f43979b28356b16561c7c73",
+  "audit_findings_path": "evidence/OLP-0676-REDUCTIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "68f95dc122049e72799fd13c4cca3106dc1d6fe3c920b5e34ebb41d2beaed295",
+  "previous_corrections": 605,
+  "treatments": {
+    "OLTEPTNORRED-001": {
+      "target_line": 41,
+      "body_treatment": "ఈ పరివర్తనలో లేని నాలుగవ ఉపనిరూపణ గుర్తును జాబితా నుంచి తీసి అసంగతిని ప్రకటించాం."
+    }
+  }
+}

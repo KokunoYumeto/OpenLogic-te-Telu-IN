@@ -1,0 +1,89 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "336",
+  "unit_id": "OLP-0687",
+  "unit_order": 687,
+  "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+  "blocks": 24,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTPTYNOR-001",
+      "OLTEPTPTYNOR-002"
+    ],
+    "8": [
+      "OLTEPTPTYNOR-003",
+      "OLTEPTPTYNOR-004",
+      "OLTEPTPTYNOR-005"
+    ],
+    "10": [
+      "OLTEPTPTYNOR-006"
+    ],
+    "14": [
+      "OLTEPTPTYNOR-007"
+    ],
+    "17": [
+      "OLTEPTPTYNOR-010"
+    ],
+    "20": [
+      "OLTEPTPTYNOR-008",
+      "OLTEPTPTYNOR-009"
+    ],
+    "22": [
+      "OLTEPTPTYNOR-011"
+    ],
+    "23": [
+      "OLTEPTPTYNOR-012"
+    ]
+  },
+  "proof_gap_ids": [
+    "OLTEPTPTYNOR-007",
+    "OLTEPTPTYNOR-009"
+  ],
+  "previous_segments": 10150,
+  "previous_terms": 376,
+  "expected_corrections": 640,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సాధారణీకరణ, రెడెక్స్ స్థాయి, ప్రతిస్థాపన, సంగమ లక్షణం, న్యూమన్ వాదనలను పూర్వ లాంబ్డా పదజాలంతో పోల్చి మూల నిరూపణ పరిమితులను విడిగా ప్రకటించాం.",
+  "evidence_limit": "మొత్తం-పద స్థాయి ఆగమనం, బలహీన చర్చ్--రోసర్ సందర్భాల మూల నిరూపణ ఖాళీలు ప్రకటించాం; పూర్తి సాధారణీకరణ/బలమైన సాధారణీకరణ నిరూపణగా ధృవీకరించలేదు. ప్రత్యేక పదాలకు నిర్వచనాత్మక విస్తరణ; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T377",
+    "source_term": "normalization; cut rank; maximum rank; strong normalization; confluence; weak Church–Rosser; Newman lemma",
+    "telugu": "సాధారణీకరణ; కట్ స్థాయి; గరిష్ఠ స్థాయి; బలమైన సాధారణీకరణ; సంగమ లక్షణం; బలహీన చర్చ్--రోసర్; న్యూమన్ లెమ్మా",
+    "status": "typed_normalization_local_repairs_two_source_proof_gaps_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఒక తగ్గింపు క్రమం ముగియడం, ప్రతి క్రమం ముగియడం, రెండు ఫలితాలు ఉమ్మడి ఫలితానికి చేరడం వేర్వేరుగా నిలిపాం. మూలంలోని రెండు పూర్తి కాని వాదనలను నిరూపితంగా ప్రకటించలేదు.",
+    "uncertainty": "కట్ స్థాయి, సంగమ లక్షణం నిర్వచనాత్మక పదాలు; మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర formalization ఇంకా లేదు.",
+    "borrowing": "Redex, Church–Rosser and Newman remain explicit technical/name borrowings."
+  }
+}

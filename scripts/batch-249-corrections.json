@@ -1,0 +1,19 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0600",
+  "source_path": "content/set-theory/choice/vitali.tex",
+  "source_sha256": "e9ae48138df4af723de80b69d70d43e2a77f3cc9c0ec680eded3a333c0892b32",
+  "audit_id": "OLTESTCHOICEVITALI-20260927",
+  "audit_review_path": "evidence/OLP-0600-VITALI-SOURCE-AUDIT.md",
+  "audit_review_sha256": "d591a69969dd35e45d91cf72caec9d87b0da18368ffa035ab43e138a6ef4fa3d",
+  "audit_findings_path": "evidence/OLP-0600-VITALI-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "dabd4b5804546ef9c1aaacdef633ff3b29bb180f821a07d51b5ed18c0b8811de",
+  "previous_corrections": 517,
+  "treatments": {
+    "OLTESTCHOICEVITALI-001": {"target_line": 17, "body_treatment": "పరిమేయ రేడియన్ విలువల స్థానంలో పూర్తి చుట్టుకు పరిమేయ గుణితాలు అని నిర్వచనం, ఉపసమూహ నిరూపణ రెండింటిలో సరిచేసి ప్రకటించాం."},
+    "OLTESTCHOICEVITALI-002": {"target_line": 28, "body_treatment": "శూన్య భ్రమణం ప్రతిలోమాన్ని విడిగా చూపి, మిగిలిన భ్రమణాలకే మూల ప్రతిలోమ కోణ సూత్రం వర్తింపజేశాం."},
+    "OLTESTCHOICEVITALI-003": {"target_line": 102, "body_treatment": "నిర్వచించని R_1ను నిర్వచించిన మొదటి భ్రమణ ఉపసమితి గుర్తుతో మార్చి ప్రకటించాం."},
+    "OLTESTCHOICEVITALI-004": {"target_line": 109, "body_treatment": "కనీసం రెండు జనకాలు గల స్వేచ్ఛా సమూహానికి వాదనను పరిమితం చేసి, గోళ భ్రమణ స్థిరబిందువుల పరిష్కారం ఈ రూపరేఖలో లేని నిరూపణ ఖాళీ అని స్పష్టంచేశాం; పూర్తి నిరూపణను ఊహించలేదు."},
+    "OLTESTCHOICEVITALI-005": {"target_line": 138, "body_treatment": "కొలత నిరూపణలో రెండు భ్రమణ సూచికలను బిందు ప్రతినిధుల సమితి నుంచి భ్రమణ సమూహానికి మార్చి ప్రకటించాం."}
+  }
+}

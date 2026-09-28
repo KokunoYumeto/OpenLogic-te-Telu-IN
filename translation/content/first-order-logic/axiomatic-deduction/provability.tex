@@ -1,0 +1,251 @@
+% Part: first-order-logic
+% Chapter: axiomatic-deduction
+% Section: provability
+
+% verification of properties of provability needed for maximally
+% consistent sets in the completeness chapter.
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\iftag{FOL}
+      {\olfileid{fol}{axd}{prv}}
+      {\olfileid{pl}{axd}{prv}}
+
+\olsection{\usetoken{S}{derivability} యొక్క ధర్మాలు}
+
+\begin{prop}[ఏకదిశత్వం] $\Gamma \subseteq \Delta$, $\Gamma \Proves !A$ అయితే $\Delta \Proves !A$ కూడా అవుతుంది. \end{prop}
+
+\begin{proof} ఏ పరిమిత $\Gamma_0 \subseteq \Gamma$ అయినా $\Delta$కు పరిమిత ఉపసమితియే. కనుక $\Gamma_0 \Proves !A$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}, $\Delta \Proves !A$ అని కూడా చూపుతుంది. \end{proof}
+
+\begin{prop}\ollabel{prop:provability} $\Gamma \Proves !A$ కావడానికి, కావలసినదీ చాలునదీ $\Gamma\cup \{\lnot!A \}$ వైరుధ్యపూరితం కావడమే. \end{prop}
+
+\begin{prop} \begin{enumerate}
+\item \ollabel{prop:provability-contr} $\Gamma \Proves !A$, $\Gamma
+\cup \{ !A\} \Proves \lfalse$ అయితే $\Gamma$ వైరుధ్యపూరితం.
+
+\item \ollabel{prop:provability-lnot} $\Gamma \cup \{!A\}
+\Proves \lfalse$ అయితే $\Gamma \Proves \lnot !A$.
+
+\item \ollabel{prop:provability-exhaustive} $\Gamma \cup \{!A\}
+\Proves \lfalse$, $\Gamma \cup \{\lnot !A\} \Proves
+\lfalse$ రెండూ అయితే $\Gamma \Proves \lfalse$.
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-left} $\Gamma \cup \{!A\}
+\Proves \lfalse$, $\Gamma \cup \{!B\} \Proves
+\lfalse$ అయితే $\Gamma \cup \{!A \lor !B\} \Proves \lfalse$.}{}
+
+\tagitem{prvOr}{\ollabel{prop:provability-lor-right} $\Gamma
+\Proves !A$ లేదా $\Gamma \Proves !B$ అయితే $\Gamma
+\Proves !A \lor !B$.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-left} $\Gamma
+\Proves !A \land !B$ అయితే $\Gamma \Proves !A$, $\Gamma \Proves !B$ రెండూ.}{}
+
+\tagitem{prvAnd}{\ollabel{prop:provability-land-right} $\Gamma
+\Proves !A$, $\Gamma \Proves !B$ అయితే $\Gamma
+\Proves !A \land !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-mp} $\Gamma \Proves
+!A$, $\Gamma \Proves !A \lif !B$ అయితే $\Gamma
+\Proves !B$.}{}
+
+\tagitem{prvIf}{\ollabel{prop:provability-lif} $\Gamma \Proves
+\lnot !A$ లేదా $\Gamma \Proves !B$ అయితే $\Gamma \Proves
+!A \lif !B$.}{} \end{enumerate} \end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item $\Gamma_0 \cup \{!A\} \Proves \lfalse$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \cup \{!A\} \Proves \lfalse$ & పరికల్పన \\
+2. & $\Gamma_1 \Proves !A$ & పరికల్పన \\
+3. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & కట్ \\
+\end{derivation}
+
+$\Gamma_0 \subseteq \Gamma$, $\Gamma_1 \subseteq \Gamma$ కాబట్టి $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; అందువల్ల $\Gamma \Proves \lfalse$.
+
+\item $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ అని మూల నిరూపణ అనుకుంటుంది.
+
+\begin{derivation}
+1. & $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves \lnot !A \lif \lfalse$ & నిగమన సిద్ధాంతం \\
+3. & $\Gamma_0 \Proves (\lnot !A \lif \lfalse) \lif !A$ & Ax0 \\
+4. & $\Gamma_0 \Proves !A$ & MP 2, 3 \\
+\end{derivation}
+\sourcecorrection{OLTEFOLAXDPRV-001}{ఈ అంశపు పూర్వాపేక్ష $\Gamma\cup\{!A\}\Proves\lfalse$ కాగా, మూల నిరూపణ $\Gamma_0\cup\{\lnot !A\}\Proves\lfalse$ను తీసుకొని తిరిగి $!A$ను పొందుతుంది; అది వేరే దిశ. అసలు కావలసిన దిశకు $!A$ నుంచి వైరుధ్యం తీసుకొని $\lnot !A$ పొందాలి. ఇక్కడ మూల దశను నిరూపణ ఖాళీగా ప్రకటించాం.}
+
+\item $\Gamma \cup \{ !A \} \Proves \lfalse$, $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & నిగమన సిద్ధాంతం \\
+3. & $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ & పరికల్పన \\
+4. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0 \\
+5. & $\Gamma_0 \Proves \lnot !A$ & MP 2, 4 \\
+6. & $\Gamma_0 \cup \Gamma_1 \Proves \lfalse$ & కట్ 3, 5 \\
+\end{derivation}
+
+$\Gamma_0 \subseteq \Gamma$, $\Gamma_1 \subseteq \Gamma$ కనుక $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. అందుచేత $\Gamma \Proves \lfalse$.
+
+% prop:provability-lor-left
+\tagitem{defOr}{}{
+\iftag{probOr}{సాధన.}{సాధన.}}
+
+% prop:provability-lor-right
+\tagitem{defOr}{}{ \iftag{probOr}{సాధన.}{
+$\Gamma_0 \Proves !A$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves !A \lif (!A \lor !B)$ & Ax0 \\
+3. & $\Gamma_0 \Proves !A \lor !B$ & MP 1, 2 \\
+\end{derivation}
+
+అందువల్ల $\Gamma \Proves !A \lor !B$. $\Gamma \Proves
+!B$ అయినప్పటి నిరూపణ కూడా ఇదే విధంగా ఉంటుంది.}}
+
+% prop:provability-land-left
+\tagitem{defAnd}{}{ \iftag{probAnd}{సాధన}{
+$\Gamma_0 \Proves !A \land !B$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A \land !B$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves (!A\land !B) \lif !A $ & Ax0 \\
+3. & $\Gamma_0 \Proves !A \lor !B$ & MP 1, 2 \\
+\end{derivation}
+
+కాబట్టి $\Gamma \Proves !A$. ఇదే తరహా \tetoken{వ్యుత్పత్తి}{!!{derivation}}తో $\Gamma \Proves !B$ కూడా వస్తుంది.}}
+\sourcecorrection{OLTEFOLAXDPRV-002}{మూల ప్రదర్శనలో రెండో వరుస $!A\land !B$ నుంచి $!A$కు దారితీస్తుంది, కానీ మూడో వరుస పొరపాటున $!A\lor !B$ అని ఉంది. కావలసిన ముగింపు $!A$; మూల గణిత పంక్తిని మార్చకుండా లోపాన్ని ఇక్కడ ప్రకటించాం.}
+
+% prop:provability-land-right
+\tagitem{defAnd}{}{\iftag{probAnd}{సాధన.}{సాధన.}}
+
+% prop:provability-mp
+\tagitem{defIf}{}{ \iftag{probIf}{సాధన.}{మనం $\Gamma_0 \Proves !A$, $\Gamma_0 \Proves !A \lif !B $ రెండూ అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !A$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves !A \lif !B $ & పరికల్పన \\
+3. & $\Gamma_0 \Proves !B$ & MP 1, 2 \\
+\end{derivation}
+
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$ కాబట్టి $\Gamma \Proves !B$ అని మూలం తేల్చింది.}}
+\sourcecorrection{OLTEFOLAXDPRV-003}{ఈ MP అంశపు చివరి వాక్యంలో $\Gamma_1$ను మూలం ఎక్కడా నిర్వచించలేదు. రెండు పరికల్పనల పరిమిత ఆధార సమితులను వేర్వేరుగా తీసుకుంటే వాటి సమ్మేళనం $\Gamma$లోనే ఉంటుంది; లేదా ఒకే $\Gamma_0$ను రెండింటికీ ఎంచుకోవచ్చు.}
+
+% prop:provability-lif
+\tagitem{defIf}{}{\iftag{probIf}{సాధన.}{మొదట $\Gamma \Proves \lnot !A$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves \lnot !A$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves \lnot !A \lif (!A \lif !B) $ & Ax0 \\
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1,
+2\\ \end{derivation}
+
+$\Gamma \Proves !B$ అయినప్పటి నిరూపణ కూడా ఇదే విధంగా ఉంటుంది:
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves !B$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves !B \lif (!A \lif !B) $ & Ax0 \\
+3. & $\Gamma_0 \Proves !A \lif !B$ & MP 1, 2 \\
+\end{derivation}}}
+
+\end{enumerate}
+\end{proof}
+
+\begin{probtag}{probOr,probAnd,probIf} \olref[fol][axd][prv]{prop:provability} నిరూపణను పూర్తి చేయండి.
+\end{probtag}
+
+\begin{thm}[సామాన్యీకరణ] \ollabel{thm:Generalization} $\Gamma \Proves
+!A$ కాగా, $\Gamma$లోని ఏ \tetoken{సూత్రంలోనూ}{!!{formula}} $x$ స్వేచ్ఛగా లేకపోతే, $\Gamma
+\Proves \lforall[x][!A]$.
+\end{thm}
+
+\begin{proof} $\mathsf{Thm}_\Gamma$పై ఆగమన పద్ధతి వాడుదాం: $!A$ ఒక స్వీకృతం అయితే $\lforall[x][!A]$ కూడా స్వీకృతమే. $!A\in \Gamma$ అయితే $!A$లో $x$ స్వేచ్ఛగా లేదు; కనుక $!A \lif \lforall[x][!A]$ స్వీకృతం (\textbf{Ax3}), MP వల్ల $\Gamma
+\Proves \lforall[x][!A]$. ఇప్పుడు $\Gamma \Proves !B$, $\Gamma \Proves !B \lif !A$ వల్ల MP ద్వారా $!A$ వచ్చిందనుకోండి. ఆగమన పరికల్పన ప్రకారం $\Gamma \Proves \lforall[x][!B]$, $\Gamma \Proves
+\lforall[x][( !B \lif !A)]$. అయితే \textbf{Ax2} ప్రకారం కూడా
+\[ \Gamma \Proves
+\lforall[x][( !B \lif !A)] \lif (\lforall[x][ !B] \lif \lforall[x][!A]), \]
+MPను రెండుసార్లు వర్తింపజేస్తే కావలసినట్లు $\Gamma \Proves \lforall[x][!A]$ వస్తుంది. \end{proof}
+
+\begin{thm}\ollabel{thm:WeakGen} (\emph{స్థిరాంకాలపై బలహీన సామాన్యీకరణ})
+$\Gamma \Proves !A$ కాగా $c$ అనేది $\Gamma$లో కనిపించని \tetoken{స్థిరాంకం}{!!a{constant}} అయితే, $!A$లో కనిపించని ఒక చరరాశి $x$ ఉంటుంది; దానికి $\Gamma
+\Proves \lforall[x][\Subst{!A}{x}{c}]$, అలాగే ఆ నిరూపణలో $c$ ఉండదు.
+\end{thm}
+
+\begin{proof} $\Gamma$ నుంచి $!A$కు ఒక నిరూపణ $!A_1,\ldots,!A_n$ అనుకుందాం; అప్పుడు $!A=!A_n$. $!A_1,\ldots,!A_n$లో కనిపించని చరరాశి $x$ను ఎంచుకుని, ఈ కొత్త క్రమాన్ని పరిశీలించండి: $\Subst{!A_1}{x}{c},\ldots,\Subst{!A_n}{x}{c}.$ ఇది $\Gamma$ నుంచి $\Subst{!A}{x}{c}$కు నిరూపణ. నిజానికి ప్రతి $i=1,\ldots,n$కు: \begin{itemize} \item $!A$ స్వీకృతమైతే $\Subst{!A_i}{x}{c}$ కూడా స్వీకృతమే; \item $!A_i \in \Gamma$ అయితే, $c$ అనేది $\Gamma$లో లేదు కనుక $\Subst{!A_i}{x}{c} = !A_i \in \Gamma$; \item $!A_j$, $!A_j \lif !A_i$ నుంచి $!A_i$ వస్తే, $\Subst{!A_j}{x}{c}$, $\Subst{(!A_j \lif !A_i)}{x}{c}
+= \Subst{!A_j}{x}{c} \lif \Subst{!A_i}{x}{c}$ల నుంచి MP ద్వారా $\Subst{!A_i}{x}{c}$ వస్తుంది. \end{itemize} కొత్త క్రమంలో \tetoken{స్థిరాంకం}{!!{constant}} $c$ ఇక కనిపించదని స్పష్టమే. ఇప్పుడు $\Subst{!A}{x}{c}$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}లో కనిపించే $\Gamma$లోని \tetoken{సూత్రాలతో}{!!{formula}s} $\Gamma'$ను నిర్మించండి. అప్పుడు $\Gamma'$లోని ఏ \tetoken{సూత్రంలోనూ}{!!{formula}} $x$ స్వేచ్ఛగా లేదు; $\Gamma' \Proves \Subst{!A}{x}{c}$. సామాన్యీకరణ (\olref{thm:Generalization}) ద్వారా $\Gamma'
+\Proves \lforall[x][\Subst{!A}{x}{c}]$; ఏకదిశత్వం వల్ల కావలసినట్లు $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$.
+\sourcecorrection{OLTEFOLAXDPRV-004}{స్వీకృతాల అంశంలో మూలం ``$!A$ స్వీకృతమైతే'' అంటుంది; నిరూపణ క్రమంలోని ప్రతి పంక్తి కోసం అవసరమైనది ``$!A_i$ స్వీకృతమైతే''. నిరూపణ యొక్క ఉద్దేశాన్ని నిలిపి ఈ సూచిక లోపాన్ని ప్రకటించాం.}
+\end{proof}
+
+\begin{explain}
+\olref{thm:WeakGen}లో $x$ అనేది $!A$లో అసలే కనిపించకూడదనే షరతును బలహీనమైన రెండు షరతులతో మార్చడం మన లక్ష్యం: $x$, $!A$లో స్వేచ్ఛగా ఉండకూడదు; $!A$లో $c$ స్థానంలో దాన్ని పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉండాలి. బంధిత \tetoken{చరరాశిని}{!!{variable}} మార్చితే ఇది సాధ్యమని స్పష్టమే. అందువల్ల ముందుగా అదే నిరూపిద్దాం.
+\end{explain}
+
+\begin{lem}
+\ollabel{lem:free-for}
+$!A$లో $c$ స్థానంలో $x$ను పెట్టడానికి స్వేచ్ఛ ఉండి, $!A$లో $y$ స్వేచ్ఛగా లేకపోతే, $\Subst{!A}{y}{c}$లో $y$ స్థానంలో $x$ను పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంటుంది.
+\end{lem}
+
+\begin{proof} $\Subst{!A}{y}{x}$లో $y$ స్థానంలో $x$ను పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} లేదనుకుందాం. అప్పుడు $\Subst{!A}{y}{c}$లో $y$ యొక్క ఏదో స్వేచ్ఛా సంభవం $\lforall[x]$ పరిమాణీకరణికం పరిధిలో పడుతుంది. కానీ పరికల్పన ప్రకారం $!A$లో $y$ స్వేచ్ఛగా లేదు; కాబట్టి అటువంటి సంభవాలన్నీ $\Subst{}{y}{c}$ ప్రతిస్థాపన వల్లనే వచ్చాయి. అందుచేత $c$ యొక్క ఏదో సంభవం $\lforall[x]$ పరిధిలో ఉంది; $!A$లో $c$ స్థానంలో $x$ను పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} లేదు.
+\sourcecorrection{OLTEFOLAXDPRV-005}{ఈ లెమ్మా మొదటి వాక్యం లక్ష్యాన్ని $\Subst{!A}{y}{c}$లో చెబుతుంది, కాని నిరూపణ తొలి వాక్యంలో మూలం పొరపాటున $\Subst{!A}{y}{x}$ అని రాసింది. మిగిలిన నిరూపణ లక్ష్య రూపాన్నే వాడుతుంది; తొలి వాక్య లోపాన్ని ప్రకటించాం.}
+\end{proof}
+
+\begin{lem}[బంధిత చరరాశి మార్పు]
+\ollabel{lem:ChangeBdVar}
+$!A$లో $x$, $y$ స్వేచ్ఛగా లేక, $!A$లో $c$ స్థానంలో రెండింటినీ పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంటే, $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$ (ఈ నిరూపణలో $c$ ఉండదు).
+\end{lem}
+
+\begin{proof}
+పరికల్పనల వల్ల $!A$లో $c$ స్థానంలో $y$ను పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంది; $!A$లో $x$ స్వేచ్ఛగా లేదు. కనుక మునుపటి \olref{lem:free-for} ప్రకారం $\Subst{!A}{x}{c}$లో $x$ స్థానంలో $y$ను పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంది. అందువల్ల $\lforall[x][\Subst{!A}{x}{c} \lif \Subst{!A}{x}{c} \Subst{}{y}{x}]$ ఒక స్వీకృతం (\textbf{Ax1}). $!A$లో $x$ స్వేచ్ఛగా లేదు కనుక $\Subst{!A}{x}{c} \Subst{}{y}{x} = \Subst{!A}{y}{c}$; అందుచేత
+\[
+\Proves \lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{y}{c},
+\]
+నిగమన సిద్ధాంతం ప్రకారం $\lforall[x][\Subst{!A}{x}{c}] \Proves
+\Subst{!A}{y}{c}$. $!A$లో $y$ స్వేచ్ఛగా లేదు కనుక $\lforall[x][\Subst{!A}{x}{c}]$లోనూ అది స్వేచ్ఛగా లేదు. సామాన్యీకరణ వల్ల $\lforall[x][\Subst{!A}{x}{c}] \Proves \lforall[y][\Subst{!A}{y}{c}]$; నిగమన సిద్ధాంతం మరోసారి వర్తిస్తే $\Proves
+\lforall[x][\Subst{!A}{x}{c}] \lif \lforall[y][\Subst{!A}{y}{c}]$ వస్తుంది. $\Proves \lforall[y][\Subst{!A}{y}{c}] \lif \lforall[x]
+[\Subst{!A}{x}{c}]$ నిరూపణ పూర్తిగా సమమితంగా ఉంటుంది; కనుక Taut వల్ల ఫలితం వస్తుంది.
+\end{proof}
+
+\begin{thm}[స్థిరాంకాలపై బలమైన సామాన్యీకరణ]
+\ollabel{thm:StrongGen}
+$\Gamma \Proves !A$ కాగా \tetoken{స్థిరాంకం}{!!{constant}} $c$, $\Gamma$లో కనిపించకపోయి, $!A$లో $x$ స్వేచ్ఛగా లేక, $!A$లో $c$ స్థానంలో దాన్ని పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంటే, $\Gamma \Proves \lforall[x][\Subst{!A}{x}{c}]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \Proves !A$ కాగా $c$, $\Gamma$లో లేదు కనుక బలహీన సామాన్యీకరణ ప్రకారం $!A$లో కనిపించని \tetoken{చరరాశి}{!!a{variable}} $y$ ఒకటి ఉంటుంది; దానికి $\Gamma \Proves \lforall[y][\Subst{!A}{y}{c}]$. $!A$లో $y$ అసలే కనిపించదు కనుక అది $!A$లో స్వేచ్ఛగా లేదు; $!A$లో $c$ స్థానంలో దాన్ని పెట్టడానికి కూడా \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంది. పరికల్పన ప్రకారం $!A$లో $x$ కూడా స్వేచ్ఛగా లేదు; $!A$లో $c$ స్థానంలో దాన్ని పెట్టడానికి \tetoken{స్వేచ్ఛ}{!!{free for}} ఉంది. కాబట్టి బంధిత \tetoken{చరరాశి}{!!{variable}} మార్పుకు షరతులు నెరవేరాయి. అందువల్ల $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
+\lforall[y][\Subst{!A}{y}{c}]$; దాంతో $\Gamma \Proves
+\lforall[x][\Subst{!A}{x}{c}]$.
+\end{proof}
+
+\begin{thm}
+\ollabel{thm:provability-quantifiers}
+\begin{tagenumerate}{prvEx,prvAll}
+\tagitem{prvEx}{$\Gamma \Proves !A(t)$ అయితే $\Gamma \Proves
+  \lexists[x][!A(x)]$.}{}
+\tagitem{prvAll}{$\Gamma \Proves \lforall[x][!A(x)]$ అయితే $\Gamma
+  \Proves !A(t)$.}{}
+\end{tagenumerate}
+\end{thm}
+
+\begin{proof}
+\begin{tagenumerate}{prvEx,prvAll}
+%%Need axioms for exists
+\tagitem{prvEx}{సాధన.}{}
+\tagitem{prvAll} {$\Gamma_0 \Proves \lforall[x][!A(x)]$ అని అనుకుందాం.
+
+\begin{derivation}
+1. & $\Gamma_0 \Proves \lforall[x][!A(x)]$ & పరికల్పన \\
+2. & $\Gamma_0 \Proves \lforall[x][!A(x)] \lif \Subst{!A}{t}{x}$ & Ax1 \\
+3. & $\Gamma_0 \Proves \Subst{!A}{t}{x}$ & MP 1, 2 \\
+\end{derivation}}{}
+
+\end{tagenumerate}
+\end{proof}
+
+\end{document}

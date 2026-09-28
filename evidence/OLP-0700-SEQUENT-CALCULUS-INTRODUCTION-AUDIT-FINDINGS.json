@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESEQUENTCALCULUSINTRODUCTION-20260928",
+  "unit_id": "OLP-0700",
+  "source_path": "content/proof-theory/sequent-calculus/introduction.tex",
+  "source_sha256": "e924a772dc7189fa1354d7d0ae3b78120cf8fac7f9ab6d0534a39afb85efa161",
+  "findings": []
+}

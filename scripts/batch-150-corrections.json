@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0501",
+  "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+  "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+  "audit_id": "OLTEINTSEMNOT-20260927",
+  "audit_review_path": "evidence/OLP-0501-SEMANTIC-NOTIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "6ed4ba4d7001fc4256f8f37edc37844cfaa747c8bde0c604567e0700bd8d5204",
+  "audit_findings_path": "evidence/OLP-0501-SEMANTIC-NOTIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "9f7916df6dfd70da0d101fd7f9d5b30575d6fd1835d8e6b9a66d1268aa8b9980",
+  "previous_corrections": 459,
+  "treatments": {
+    "OLTEINTSEMNOT-001": {
+      "target_line": 42,
+      "body_treatment": "స్థానిక అనుగమన అంశ నిరూపణలో నమూనా అంతటా సత్యం అనే అదనపు పరికల్పనను తొలగించి, w వద్ద Γ సత్యం నుంచే నిర్వచనాన్ని వర్తింపజేసి పక్కనే ప్రకటించాం."
+    }
+  }
+}

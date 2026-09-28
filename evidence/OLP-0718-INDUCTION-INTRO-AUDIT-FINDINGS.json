@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESFRINDINT-20260928",
+  "unit_id": "OLP-0718",
+  "source_path": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex",
+  "source_sha256": "fdfbf3efe6aa648adad1e98d6567ecd7941dc41aeb1917b41548ad9568bb41a2",
+  "findings": [
+    {
+      "finding_id": "OLTESFRINDINT-001",
+      "source_locator": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex lines 76–85, aligned block 17",
+      "classification": "incorrect_algebraic_expansion_in_induction_example",
+      "source_issue": "The displayed line expands k(k+1)+2(k+1) into 2k+k+2k+2, which is not equal to the preceding or succeeding expression.",
+      "minimal_treatment": "Replace the erroneous leading 2k by k^2. Also localize the two reader-facing equation tags in the same display; disclose the combined display atom delta.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\begin{align*}0+1+\\ldots+k&=\\frac{k(k+1)}{2}\\tag{Assumption}\\\\0+1+\\ldots+k+(k+1)&=\\frac{k(k+1)}{2}+(k+1)\\tag{Add$k+1$tobothsides}\\\\&=\\frac{k(k+1)+2(k+1)}{2}\\\\&=\\frac{2k+k+2k+2}{2}\\\\&=\\frac{(k+1)(k+2)}{2}\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}0+1+\\ldots+k&=\\frac{k(k+1)}{2}\\tag{పరికల్పన}\\\\0+1+\\ldots+k+(k+1)&=\\frac{k(k+1)}{2}+(k+1)\\tag{రెండువైపులా$k+1$కలిపాం}\\\\&=\\frac{k(k+1)+2(k+1)}{2}\\\\&=\\frac{k^2+k+2k+2}{2}\\\\&=\\frac{(k+1)(k+2)}{2}\\end{align*}"
+        ]
+      }
+    }
+  ]
+}

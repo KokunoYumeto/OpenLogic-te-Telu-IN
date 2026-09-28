@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "255",
+  "unit_id": "OLP-0606",
+  "unit_order": 606,
+  "source_path": "content/methods/proofs/inference-patterns.tex",
+  "blocks": 46,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],
+  "corrections_by_block": {"44": ["OLTEMTHPRFPAT-001"]},
+  "previous_segments": 8946,
+  "previous_terms": 295,
+  "expected_corrections": 523,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిగమన నమూనాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సంయోగం/వికల్పం/సోపాధికం/అస్తిత్వం/సార్వత్రికత పదాలు, స్థానిక సమితి-నిరూపణ-తర్క సాక్షులు పోల్చాం; p only if q దిశ, ప్రతి ఉదాహరణలో పరికల్పన-నిష్కర్ష, సందర్భ విభజన, తాజా సాక్షి పేరు, ఉద్దేశపూర్వక తప్పు చివరి నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ సంయోగం/వికల్పం/నిగమనం, సమితి సభ్యత్వం/సమ్మేళనం వాడుకకు ఆధారం; ప్రత్యేక బోధనా శీర్షికలకు ప్రత్యక్ష సాక్షి పరిమితం. మూల సమితి-వస్తువు గుర్తు లోపం OLTEMTHPRFPAT-001గా ప్రకటించాం; చివరి తప్పు నిరూపణను ఉద్దేశపూర్వకంగా అలాగే తప్పుగా చూపాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T296","source_term":"inference patterns; conditional proof; proof by cases; universal and existential claims","telugu":"నిగమన నమూనాలు; సోపాధిక నిరూపణ; సందర్భాలవారీ నిరూపణ; సార్వత్రిక, అస్తిత్వ వాదనలు","status":"proof_patterns_conditional_direction_witness_freshness_and_invalid_example_source_controlled_one_disclosed_symbol_repair","passages":["TE-P004","TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"సంయోగం నుంచి భాగం తీసుకోవడం, రెండు భాగాలను నిరూపించడం, వికల్పానికి సందర్భాలవారీ వాదన, p→q పూర్వపక్షం నుంచి నిష్కర్ష, ఏదైనా వస్తువు నుంచి సార్వత్రికత్వం, అస్తిత్వ సాక్షి నిర్మాణం/వినియోగం వేర్వేరు నిలిచాయి.","uncertainty":"సాధారణ తర్క, సమితి పదాలకు ఆధారం ఉంది; సందర్భాలవారీ నిరూపణ, సార్వత్రిక/అస్తిత్వ వాదనల ప్రత్యేక శీర్షికలపై నిపుణ సమీక్ష ఉపయోగకరం.","borrowing":"p, q, r, A–E, x, y, a, subset/union notation, protected source tokens and TeX labels remain unchanged."}
+}

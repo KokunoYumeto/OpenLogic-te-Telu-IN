@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0635",
+  "source_path": "content/history/set-theory/limits.tex",
+  "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+  "audit_id": "OLTEHISSETLIM-20260927",
+  "audit_review_path": "evidence/OLP-0635-LIMITS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "62b5d37ecf45663c3b94299512be6084b8e47df58dd685dcae3dc85e111b7cb8",
+  "audit_findings_path": "evidence/OLP-0635-LIMITS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "558d5cb6970029232073396cf1b601a0174d120ae1bcd047dcfcf890a09ce6c4",
+  "previous_corrections": 532,
+  "treatments": {
+    "OLTEHISSETLIM-001": {"target_line": 16, "body_treatment": "స్థిర బిందువు వ్యుత్పన్నం కాక భేద భాగహారం మారుతుందని స్పష్టం చేసి పక్కనే ప్రకటించాం."},
+    "OLTEHISSETLIM-002": {"target_line": 30, "body_treatment": "పరిమితి నిర్వచనంలో కేంద్ర బిందువును తొలగించే కచ్చిత ధన దూరం షరతు చేర్చి పక్కనే ప్రకటించాం."},
+    "OLTEHISSETLIM-003": {"target_line": 46, "body_treatment": "పరమ విలువ చిత్రపు అడ్డ అక్షానికి నాలుగు సరైన x/లేబుల్ జతలు అమర్చి పక్కనే ప్రకటించాం."}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "161",
+  "unit_id": "OLP-0512",
+  "unit_order": 512,
+  "source_path": "content/intuitionistic-logic/tableaux/introduction.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7705,
+  "previous_terms": 201,
+  "expected_corrections": 468,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P019", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర టాబ్లో పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్ తర్క చిహ్నిత సూత్రం/పూర్వసూచిక/సంవృత శాఖ పదాలు, స్థానిక మూలక/సంబంధ/సత్య/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; T/F జతలు, సంవృత టాబ్లో ద్వారా వ్యుత్పత్తి, ధన పూర్ణసంఖ్య పూర్వసూచికలు, σ.* ప్రాప్యత సంకేతం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/019/024/025/026 సాధారణ మూలక/సంబంధ/సత్య/నిరూపణ/టాబ్లో పదాలకు మాత్రమే సాక్షులు. అంతఃప్రజ్ఞావాద పూర్వసూచిక నియమాలకు ప్రత్యక్ష సాక్షులు కావు; మూల పాఠం మధ్యలో మోడల్ టాబ్లోలను ఉదాహరణగా పేర్కొంటుంది.",
+  "term_decision": {
+    "term_id": "TE-T202",
+    "source_term": "signed formula / closed tableau / prefixed signed formula / positive-integer prefixes and sigma-star accessibility",
+    "telugu": "చిహ్నిత సూత్రం / సంవృత టాబ్లో / పూర్వసూచిక గల చిహ్నిత సూత్రం / ధన పూర్ణసంఖ్య పూర్వసూచికలు, సిగ్మా-నక్షత్ర ప్రాప్యత",
+    "status": "native_general_set_relation_truth_proof_register_attested_prefixed_tableau_cross_chapter_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P019", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "చిహ్నిత సూత్రాల T/F జతలు, సంవృత శాఖ/టాబ్లో, Γ వ్యుత్పత్తి నిర్వచనం, శూన్యం కాని ధన పూర్ణసంఖ్య క్రమ పూర్వసూచికలు, σ.n, σ.* విస్తరణ-ప్రాప్యత అర్థం నిలిచాయి.",
+    "uncertainty": "మూలంలోని మోడల్ టాబ్లోల ప్రస్తావనను శాఖ అనుగుణంగా మార్చలేదు. స్థానిక సాక్షులు అంతఃప్రజ్ఞావాద పూర్వసూచిక నియమాలకు ప్రత్యక్ష ప్రమాణాలు కావు; TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established technical borrowing; signed-formula macros and sigma-prefix notation remain source-controlled."
+  }
+}

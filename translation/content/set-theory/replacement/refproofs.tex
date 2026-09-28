@@ -1,0 +1,132 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{replacement}{refproofs}
+\olsection{అనుబంధం: ప్రతిస్థాపనకు సంబంధించిన ఫలితాలు}
+
+ఈ విభాగంలో $\ZF$లో ప్రతిబింబనను నిరూపిస్తాం. ప్రతిబింబనం, ప్రతిస్థాపన ఒక అర్థంలో సమానార్థకాలనీ నిరూపిస్తాం. వీటి బలం గురించి ఒక ఆసక్తికరమైన పర్యవసానాన్ని కూడా నిరూపిస్తాం. \emph{హెచ్చరిక: ఈ పాఠ్యపుస్తకంలో ఇది అత్యంత ఉన్నతమైన గణిత భాగం.}
+
+సంక్షిప్తత కోసం చరరాశులు లేదా వస్తువుల శ్రేణులను సూచించడానికి \emph{పైగీత} సంకేతాన్ని వాడే ఉపపత్తితో మొదలెడదాం. అంటే ``$\overline{a}_k$'' అనేది ``$a_{k_1}$, \dots,
+$a_{k_n}$''కు సంక్షిప్త రూపం; ఇక్కడ $n$ను సందర్భం నిర్ణయిస్తుంది.
+
+\begin{lem}\ollabel{lemreflection}
+ప్రతి $1 \leq i \leq k$కు $\phi_i(\overline{v}_i, x)$ ఒక సూత్రం అనుకుందాం. అప్పుడు ప్రతి $\alpha$కు, ఏ $\overline{a}_1,
+\ldots, \overline{a}_k \in V_\beta$, ప్రతి $1 \leq i \leq k$కైనా ఈ కింది విధంగా అయ్యే $\beta > \alpha$ ఉంటుంది:
+\[
+	\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V_\beta) \phi_i(\overline{a}_i, x)
+\]
+\end{lem}
+
+\begin{proof}
+$\mu$ అనే పదాన్ని ఇలా నిర్వచిద్దాం: $\mu(\overline{a}_1, \ldots,
+\overline{a}_k)$ అనేది ప్రతి $1 \leq i \leq k$కు ఈ కింది షరతులన్నిటినీ తీరుస్తున్న కనిష్ఠ దశ $V$:
+\[
+\exists x\phi_i(\overline{a}_i, x) \rightarrow (\exists x \in V) \phi_i(\overline{a}_i, x)
+\]
+\sourcecorrection{OLTESTREPLREFP-001}{మూల ప్రదర్శిత షరతు చివరలో అదనంగా ఉన్న ముగింపు కుండలీకరణాన్ని తొలగించాం; లేకపోతే సూత్రానికి కుండలీకరణ జత సరిపోదు.}
+ప్రతి $\overline{a}_1, \ldots, \overline{a}_k$కు $\mu(\overline{a}_1, \ldots, \overline{a}_k)$ ఉంటుందని సులభంగా నిర్ధారించవచ్చు. ఇప్పుడు ప్రతిస్థాపనను, మన పునరావృత్తి సిద్ధాంతాన్ని వాడి ఇలా నిర్వచిద్దాం:
+\begin{align*}
+	S_0 & = V_{\alpha+1}\\
+	S_{n+1} & = S_n \cup \bigcup
+	\Setabs{\mu(\overline{a}_1, \ldots, \overline{a}_k)}
+	{\overline{a}_1, \ldots, \overline{a}_k \in S_n} \\
+	S &= \bigcup_{m < \omega} S_m.
+\end{align*}
+\sourcecorrection{OLTESTREPLREFP-002}{మూల సమ్మేళనంలో సూచిక $m$తో బంధించి $S_n$ను వాడారు; అదే సూచికతో $S_m$ను వాడేలా సరిచేశాం.}
+ప్రతి $S_n$, అందువల్ల $S$ కూడా $V_\alpha$ తరువాతి దశ. ఇప్పుడు $\overline{a}_1$, \dots,~$\overline{a}_k \in S$ అని స్థిరపరుచుకుందాం; కనుక $\overline{a}_1$, \dots, $\overline{a}_k \in S_n$ అయ్యే ఏదో $n <
+\omega$ ఉంటుంది. ఏదో $1 \leq i \leq k$ను స్థిరపరచి, $\exists x
+\phi_i(\overline{a}_i,x)$ అనుకుందాం. నిర్మాణం ప్రకారం $(\exists x \in \mu(\overline{a}_1,
+\ldots, \overline{a}_k))\phi_i(\overline{a}_i, x)$; కాబట్టి $(\exists x \in S_{n+1})\phi_i(\overline{a}_i, x)$, అందువల్ల $(\exists x \in S)\phi_i(\overline{a}_i, x)$. కనుక $S$ మన $V_\beta$.
+\end{proof}
+\noindent
+ఇప్పుడు \olref[sth][replacement][ref]{reflectionschema}ను నేరుగా నిరూపించవచ్చు:
+
+\begin{proof}[నిరూపణ]
+$\alpha$ను స్థిరపరుచుకుందాం. సాధారణత్వానికి నష్టం లేకుండా $\phi$లో సంయోజకాలు $\exists$, $\lnot$, $\land$ మాత్రమే ఉన్నాయని అనుకోవచ్చు (ఎందుకంటే ఇవి భావవ్యక్తీకరణకు సరిపోతాయి). $\phi$ ఉపసూత్రాలన్నిటినీ సంక్లిష్టత క్రమంలో $\psi_1, \ldots, \psi_k$గా పేర్కొందాం; అప్పుడు $\psi_k = \phi$. \olref{lemreflection} ప్రకారం, ఏ $\overline{a}_i \in V_\beta$, ప్రతి $1 \leq i \leq k$కైనా ఈ కింది విధంగా అయ్యే $\beta > \alpha$ ఉంటుంది:
+\begin{align}\label{reflectionnicelybehaved}
+	\exists x\psi_i(\overline{a}_i, x) \rightarrow
+	(\exists x \in V_\beta) \psi_i(\overline{a}_i, x)\tag{*}
+\end{align}
+$\psi_i$ సంక్లిష్టతపై ఆగమనం ద్వారా, ఏ $\overline{a}_i \in
+V_\beta$కైనా $\psi_i(\overline{a}_i) \leftrightarrow
+\psi_i^{V_\beta}(\overline{a}_i)$ అని చూపుతాం. $\psi_i$ పరమాణు సూత్రమైతే ఇది స్పష్టం. ఈ ద్విసోపాధికం, ఈ ధర్మం గల ఉపసూత్రాల నిరాకరణ లేదా సంయోగం $\psi_i$ అయినప్పుడు $\psi_i$కూ అదే ధర్మం ఉంటుందని చూపుతుంది. కనుక ఆసక్తికరమైన సందర్భం పరిమాణీకరణ మాత్రమే. $\overline{a}_i \in V_\beta$ను స్థిరపరుచుకుందాం; అప్పుడు:
+\begin{align*}
+	(\exists x \psi_i(\overline{a}_i, x))^{V_\beta}
+	&\text{ అప్పుడూ అప్పుడే }
+	(\exists x \in V_\beta)\psi_i^{V_\beta}(\overline{a}_i, x)
+	&&\text{నిర్వచనం ప్రకారం}\\
+	&\text{ అప్పుడూ అప్పుడే }
+	(\exists x \in V_\beta)\psi_i(\overline{a}_i,  x)
+	&&\text{ఊహ ప్రకారం}\\
+	&\text{ అప్పుడూ అప్పుడే }
+	\exists x \psi_i(\overline{a}_i, x)
+	&&\text{\eqref{reflectionnicelybehaved} ప్రకారం}
+\end{align*}
+దీనితో ఆగమనం పూర్తయింది; $\psi_k = \phi$ కనుక ఫలితం అనుసరిస్తుంది.
+\end{proof}
+
+$\ZF$లో ప్రతిబింబనను నిరూపించాం. మన నిరూపణ ప్రధానంగా \citet{Montague1961}ను అనుసరించింది. ఇప్పుడు $\Z$లో ప్రతిబింబన నుండి ప్రతిస్థాపన వస్తుందని నిరూపిద్దాం. నిరూపణ \citet{Levy1960}ను కొంత సరళీకరించి అనుసరిస్తుంది.
+
+$\Z$లో పనిచేస్తున్నందున, పైన ఇచ్చిన రూపంలోనే ప్రతిబింబనను ప్రకటించలేం. ఎందుకంటే ``$V_\alpha$'' సంకేతంతో ప్రతిబింబనను రూపొందించాం; దాన్ని $\Z$లో నిర్వచించలేం (\olref[sth][spine][zf]{sec} చూడండి). కనుక దాని బదులు, పైకి బలహీనంగా కనిపించే ప్రతిబింబన రూపాన్ని ఇస్తాం:
+
+\begin{defish}
+\emph{బలహీన ప్రతిబింబనం.} ఏ సూత్రం $\phi$కైనా, $0$, $1$, $\phi$కు ఉన్న ఏ పరామితులైనా $S$లో \tetoken{మూలకాలు}{!!{element}s} అయ్యే సంక్రమణ సమితి $S$ ఒకటి ఉంటుంది; ఇంకా $(\forall \overline{x} \in S)(\phi \liff
+\phi^S)$.
+\end{defish}
+
+దీన్ని వాడి ప్రతిస్థాపనను నిరూపించడానికి, ముందుగా \citet[first
+part of Theorem 2]{Levy1960}ను అనుసరించి రెండు సూత్రాలను ఒకేసారి ``ప్రతిబింబింప'' చేయవచ్చని చూపుతాం:
+
+\begin{lem}[$\Z + \text{Weak-Reflection}$లో]\ollabel{lem:reflect}
+ఏ సూత్రాలు $\psi, \chi$కైనా, $0$, $1$ (అలాగే వాటి పరామితులు ఏవైనా) $S$లో \tetoken{మూలకాలు}{!!{element}s} అయ్యే సంక్రమణ సమితి $S$ ఒకటి ఉంటుంది; ఇంకా $(\forall \overline{x} \in S)((\psi \liff \psi^S) \land (\chi
+\liff \chi^S))$.
+\end{lem}
+
+\begin{proof}
+$\phi$ను $(z = 0 \land \psi) \lor (z = 1 \land \chi)$ సూత్రంగా ఉంచుదాం.
+
+ఇక్కడ సంక్షిప్త రూపం వాడుతున్నాం: ``$z = 0$''ను ``$\forall t\, t \notin z$''గా, ``$z =1$''ను ``$\forall s(s \in z
+\liff \forall t\, t \notin s)$''గా పూర్తిగా రాయాలి. అయితే $0, 1 \in S$, $S$ సంక్రమణ సమితి కనుక ఈ సూత్రాలు $S$కు \emph{నిరపేక్షాలు}; అంటే వాటి పరిమాణకారకాలను $S$కు పరిమితం చేసినా అవి అదే వస్తువుకు వర్తిస్తాయి.\footnote{మరింత ఔపచారికంగా, ఈ సూత్రాల్లో ఏదైనా $\xi$ అయితే $\xi(z) \liff \xi^S(z)$.}
+
+బలహీన ప్రతిబింబనం ప్రకారం తగిన $S$ ఒకటి ఉంటుంది; దానికి:
+\begin{align*}
+	(\forall z, \overline{x} \in S)(&\phi \liff \phi^S)\\
+	\text{అంటే }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi)) \liff {}\\
+	&\phantom{(}((z = 0 \land \psi) \lor (z = 1 \land \chi))^S)\\
+	\text{అంటే }(\forall z, \overline{x} \in S)(&((z = 0 \land \psi) \lor (z = 1 \land \chi))\liff {}\\
+	&\phantom{(}((z = 0 \land \psi^S) \lor (z = 1 \land \chi^S)))\\
+	\text{అంటే }(\forall \overline{x} \in S)(&(\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\end{align*}
+రెండవ వాదన నుండి మూడవది వస్తుంది, ఎందుకంటే ``$z = 0$'', ``$z=1$'' $S$కు నిరపేక్షాలు; $0 \neq 1$ కనుక నాలుగవది వస్తుంది.
+\end{proof}\noindent ఇప్పుడు \citet[Theorem 6]{Levy1960}ను అనుసరించి సరళీకరిస్తే ప్రతిస్థాపనను పొందవచ్చు:
+
+\begin{thm}[$\Z$ + బలహీన ప్రతిబింబనలో]\label{thm:replacement}
+ఏ సూత్రం $\phi(v,w)$, ఏ $A$కైనా, $(\forall x \in A)\lexists![y][\phi(x,y)]$ అయితే $\Setabs{y}{(\exists x \in A)\phi(x,y)}$ ఉంటుంది.
+\sourcecorrection{OLTESTREPLREFP-003}{మూల సిద్ధాంత ప్రకటనలో సమితి-నిర్మాణ సూత్రం చివర ఉండవలసిన ముగింపు కుండలీకరణం లేదు; దాన్ని చేర్చాం.}
+\end{thm}
+
+\begin{proof}
+$(\forall x \in A)\lexists![y][\phi(x,y)]$ అయ్యే $A$ను స్థిరపరచి, సూత్రాలను ఇలా నిర్వచిద్దాం:
+\begin{align*}
+	\psi &\text{ అనేది } (\phi(x, z) \land A = A)\\
+	\chi &\text{ అనేది } \lexists[y][\phi(x, y)]
+\end{align*}
+\olref{lem:reflect} ప్రకారం, $A$ అనేది $\psi$కు పరామితి కనుక, $0, 1, A \in S$ (ఇతర పరామితులతో పాటు) అయ్యే సంక్రమణ సమితి~$S$ ఒకటి ఉంటుంది; ఇంకా:
+\[
+	(\forall x,z \in S)((\psi \liff \psi^S) \land (\chi \liff \chi^S))
+\]
+ముఖ్యంగా:
+\begin{align*}
+	(\forall  x, z \in S)(&\phi(x, z) \liff \phi^S(x, z))\\
+	(\forall x \in S)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi^S(x, y))
+\end{align*}
+వీటిని కలిపి, $A \in S$, $S$ సంక్రమణ సమితి కనుక $A \subseteq S$ అని గమనిస్తే:
+\begin{align*}
+	(\forall x \in A)(&\exists y\phi(x, y) \liff (\exists y \in S)\phi(x, y))
+\end{align*}
+ఇప్పుడు $(\forall x \in A)(\lexists![y \in S])\phi(x, y)$; ఎందుకంటే $(\forall x \in A)\lexists![y][\phi(x, y)]$. వేరుచేయడం ద్వారా $\Setabs{y \in S}{(\exists x \in A) \phi(x, y)} = \Setabs{y}{(\exists
+x \in A) \phi(x, y)}$ వస్తుంది.
+\end{proof}
+
+\end{document}

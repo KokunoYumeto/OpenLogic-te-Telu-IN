@@ -1,0 +1,352 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{sou}
+
+\olsection{అంతఃప్రజ్ఞావాద \usetoken{టాబ్లోల}{tableau} నిర్దుష్టత}
+
+\begin{explain}
+  అంతఃప్రజ్ఞావాద \tetoken{టాబ్లోలు}{!!{tableau}s}
+  నిర్దుష్టమైనవని చూపాలంటే, కిందివాటికి
+  \[
+  \sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1], \sFmla{\False}{!A}[1]
+  \]
+  సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఉంటే
+  $!B_1, \dots, !B_n \Entails !A$ అని
+  చూపాలి. ప్రతివిపర్యయం నిరూపించడం సులభం:
+  ఏదో $\mModel{M}$, లోకం~$w$ వద్ద
+  అన్ని $i=1$, \dots,~$n$లకు
+  $\mSat{M}{!B_i}[w]$, కానీ
+  $\mSat/{M}{!A}[w]$ అయితే ఏ
+  \tetoken{టాబ్లోనూ}{!!{tableau}} సంవృతం
+  చేయలేం.
+  \sourcecorrection{OLTEINTTABSOU-001}{మూల ప్రతివిపర్యయ వాక్యం పూర్వాపేక్షలతో పాటు ముగింపూ సత్యమని వ్రాసింది; వ్యతిరేక నమూనా కావాలంటే ముగింపు అసత్యం కావాలి. ప్రతికూల సత్య సంకేతానికి మార్చాం.}
+  అలాంటి ప్రతినమూనా \tetoken{టాబ్లో}{!!{tableau}}
+  ప్రారంభ పరికల్పనలు సంతృప్తిపరచదగినవని
+  చూపుతుంది. నిరూపణ వ్యూహం: ఒక
+  \tetoken{టాబ్లో}{!!a{tableau}} శాఖపై ఉన్న
+  అన్ని పూర్వసూచిక గల
+  \tetoken{సూత్రాలు}{!!{formula}s}
+  సంతృప్తిపరచదగినప్పుడు, ఏ నియమాన్ని
+  వర్తింపజేసినా పొడిగించిన శాఖల్లో
+  కనీసం ఒకటి సంతృప్తిపరచదగినదే
+  అని చూపడం. సంవృత శాఖలు
+  అసంతృప్తిపరచదగినవి కాబట్టి,
+  పూర్వసూచిక గల \tetoken{సూత్రాల}{!!{formula}s}
+  సంతృప్తిపరచదగిన సమితికి చెందిన
+  ఏ \tetoken{టాబ్లోలోనైనా}{!!{tableau}}
+  కనీసం ఒక వివృత శాఖ ఉండాలి.
+
+  మోడల్ తర్క కేసులో ఈ వ్యూహాన్ని
+  వర్తింపజేయాలంటే ``సంతృప్తిపరచదగినది''
+  అనే నిర్వచనాన్ని సంబంధాలు,
+  పూర్వసూచికలకు విస్తరించాలి.
+  అది చేసిన తరువాత నిరూపణ నేరుగా సాగుతుంది.
+\end{explain}
+
+\begin{defn}
+  $P$ పూర్వసూచికల సమితి అని, అంటే
+  $P \subseteq (\PosInt)^*
+  \setminus \{\emptyseq\}$ అని,
+  $\mModel{M}$ ఒక నమూనా అని అనుకుందాం.
+  $\sigma$, $\sigma.n$ రెండూ~$P$లో
+  ఉన్నప్పుడల్లా $Rf(\sigma)f(\sigma.n)$
+  అయితే, ప్రమేయం~$f\colon P \to W$ను
+  $\mModel{M}$లో~$P$ యొక్క
+  \emph{అర్థనిర్దేశం} అంటాం.
+
+  పూర్వసూచికల అర్థనిర్దేశం~$P$కు
+  సంబంధించి ఇలా నిర్వచించవచ్చు:
+  \begin{enumerate}
+  \item $\mSat{M}{!A}[f(\sigma)]$ అయితే,
+    అప్పుడే $\mModel{M}$,
+    $\sFmla{\True}{!A}[\sigma]$ను సంతృప్తిపరుస్తుంది.
+  \item $\mSat/{M}{!A}[f(\sigma)]$ అయితే,
+    అప్పుడే $\mModel{M}$,
+    $\sFmla{\False}{!A}[\sigma]$ను సంతృప్తిపరుస్తుంది.
+  \end{enumerate}
+\end{defn}
+
+$R$ స్వావర్తన, సంక్రామక; $\sigma.{*}$
+అనేది $\sigma$, $\sigma.n_1$,
+$\sigma.n_1.n_2$, \dots ను సూచిస్తుంది.
+కాబట్టి $Rf(\sigma)f(\sigma.{*})$
+కూడా ఉంటుందని గమనించండి.
+
+\begin{defn}
+  $\Gamma$ పూర్వసూచిక గల
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి,
+  $P(\Gamma)$ అందులో కనిపించే
+  పూర్వసూచికల సమితి అనుకుందాం.
+  $f$ అనేది $\mModel{M}$లో~$P(\Gamma)$కు
+  అర్థనిర్దేశమైతే, $\Gamma$లోని ప్రతి
+  పూర్వసూచిక గల \tetoken{సూత్రాన్ని}{!!{formula}}
+  $\mModel{M}$,~$f$కు సంబంధించి
+  సంతృప్తిపరిచినప్పుడే, $\mModel{M}$
+  అనేది~$f$కు సంబంధించి $\Gamma$ను
+  సంతృప్తిపరుస్తుంది,
+  $\mSat{M}{\Gamma}[f]$ అంటాం.
+  $\mSat{M}{\Gamma}[f]$ అయ్యే నమూనా~$\mModel{M}$,
+  $P(\Gamma)$కు అర్థనిర్దేశం~$f$ ఉంటే,
+  అప్పుడే $\Gamma$ \emph{సంతృప్తిపరచదగినది}.
+\end{defn}
+
+\begin{prop}
+  ఏదో \tetoken{సూత్రం}{!!{formula}}~$!A$,
+  పూర్వసూచిక~$\sigma$కు
+  $\Gamma$లో $\sFmla{\True}{!A}[\sigma]$,
+  $\sFmla{\False}{!A}[\sigma.{*}]$
+  రెండూ ఉన్నా, లేదా
+  $\sFmla{\True}{\lfalse}[\sigma]$
+  ఉన్నా, $\Gamma$ అసంతృప్తిపరచదగినది.
+\end{prop}
+
+\begin{proof}
+  ఎల్లప్పుడూ $\mSat/{M}{\lfalse}[f(\sigma)]$
+  కాబట్టి $\sFmla{\True}{\lfalse}$
+  గల $\Gamma$ అసంతృప్తిపరచదగినది.
+
+  $\mModel{M}$ నమూనా, $P(\Gamma)$కు
+  అర్థనిర్దేశం~$f$ వద్ద
+  $\mSat{M}{!A}[f(\sigma)]$ అయితే,
+  \olref[sem][rel]{prop:true-monotonic}
+  ప్రకారం, $Rf(\sigma)f(\sigma.{*})$
+  కావడంతో
+  $\mSat{M}{!A}[f(\sigma.{*})]$.
+  \sourcecorrection{OLTEINTTABSOU-002}{మూల నిరూపణ వాక్యం వ్యాకరణపరంగా తెగిపోయి, ప్రాప్యత సంబంధంలో రెండో లోకానికి $f$ను వదిలింది; ఏకదిశ సత్యం వల్ల విస్తరించిన లోకంలోనే $!A$ సత్యమనే అవసరమైన ముగింపుకు సరిచేశాం.}
+  కాబట్టి $\mSat{M}{!A}[f(\sigma)]$,
+  $\mSat/{M}{!A}[f(\sigma.{*})]$
+  రెండూ కలిసి ఉండలేవు.
+\end{proof}
+
+\begin{thm}[నిర్దుష్టత]
+  \ollabel{thm:tableau-soundness}
+  $\Gamma$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}}
+  ఉంటే, $\Gamma$ అసంతృప్తిపరచదగినది.
+\end{thm}
+
+\begin{proof}
+\tetoken{ఒక టాబ్లో}{!!a{tableau}} శాఖపై ఉన్న
+\tetoken{చిహ్నిత సూత్రాల}{!!{signed formula}s}
+సమితి సంతృప్తిపరచదగినప్పుడే ఆ శాఖ
+సంతృప్తిపరచదగినదని అందాం.
+కనీసం ఒక సంతృప్తిపరచదగిన శాఖ ఉన్న
+\tetoken{ఒక టాబ్లోను}{!!a{tableau}}
+సంతృప్తిపరచదగినదని అందాం.
+
+మనం చూపేది ఇది: సంతృప్తిపరచదగిన
+\tetoken{టాబ్లోను}{!!{tableau}}
+ఏదైనా నిగమన నియమంతో విస్తరిస్తే,
+ఫలిత \tetoken{టాబ్లో}{!!{tableau}}
+కూడా సంతృప్తిపరచదగినదే. దీనివల్ల
+సిద్ధాంతం వస్తుంది: సంవృత
+\tetoken{టాబ్లో}{!!{tableau}}
+అనేది~$\Gamma$ పరికల్పనలు మాత్రమే గల
+\tetoken{టాబ్లోకు}{!!{tableau}}
+నిగమన నియమాలు వర్తింపజేయడం వల్ల
+వస్తుంది. కాబట్టి $\Gamma$
+సంతృప్తిపరచదగినదైతే, దానికి చెందిన
+ప్రతి \tetoken{టాబ్లో}{!!{tableau}}
+సంతృప్తిపరచదగినదే. కానీ సంవృత
+\tetoken{టాబ్లో}{!!{tableau}}
+సంతృప్తిపరచదగినది కాదు: దాని అన్ని
+శాఖలు సంవృతమైనవి, సంవృత శాఖలు
+అసంతృప్తిపరచదగినవి.
+
+మనకు సంతృప్తిపరచదగిన
+\tetoken{టాబ్లో}{!!{tableau}}, అంటే
+కనీసం ఒక సంతృప్తిపరచదగిన శాఖ ఉన్న
+\tetoken{ఒక టాబ్లో}{!!a{tableau}}
+ఉందనుకుందాం. నిగమన నియమం ఒక
+శాఖకు \tetoken{చిహ్నిత
+సూత్రాలను}{!!{signed formula}s} చేరుస్తుంది,
+లేదా శాఖను రెండుగా విడదీస్తుంది.
+నియమం విస్తరించని సంతృప్తిపరచదగిన
+శాఖ \tetoken{టాబ్లోలో}{!!{tableau}}
+ఉంటే, విస్తరించిన
+\tetoken{టాబ్లోలో}{!!{tableau}}
+ఆ శాఖ సంతృప్తిపరచదగినదిగానే
+ఉంటుంది; అందువల్ల విస్తరించిన
+టాబ్లో కూడా సంతృప్తిపరచదగినదే.
+కాబట్టి నియమాన్ని
+సంతృప్తిపరచదగిన శాఖకు
+వర్తింపజేసిన సందర్భాన్నే పరిశీలించాలి.
+
+ఆ శాఖపై ఉన్న \tetoken{చిహ్నిత
+సూత్రాల}{!!{signed formula}s} సమితి
+$\Gamma$ అనుకుందాం; నియమం వర్తించే
+\tetoken{చిహ్నిత సూత్రం}{!!{signed formula}}
+$\sFmla{S}{!A}[\sigma] \in \Gamma$
+అనుకుందాం. నియమం శాఖను
+విడదీయకపోతే, $\Gamma$కు నియమపు
+ఫలితాలను చేర్చిన విస్తరించిన శాఖ
+ఇంకా సంతృప్తిపరచదగినదని చూపాలి.
+శాఖను విడదీస్తే, ఫలిత రెండు
+శాఖల్లో కనీసం ఒకటి
+సంతృప్తిపరచదగినదని చూపాలి.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot !B}[\sigma] \in \Gamma$కు
+  $\TRule{\True}{\lnot}$ వర్తింపజేసి
+  శాఖను విస్తరిద్దాం. విస్తరించిన
+  శాఖలోని \tetoken{చిహ్నిత
+  సూత్రాలు}{!!{signed formula}s} $\Gamma \cup
+  \{\sFmla{\False}{!B}[\sigma.{*}]\}$.
+  $\mSat{M}{\Gamma}[f]$ అనుకుందాం.
+  ముఖ్యంగా $\mSat{M}{\lnot !B}[f(\sigma)]$.
+  అందువల్ల $Rf(\sigma)w$ అయ్యే ఏ $w$
+  వద్దా $\mSat/{M}{!B}[w]$; అందులో
+  $f(\sigma.{*})$ కూడా ఉంది.
+  కాబట్టి $\mModel{M}$,~$f$కు
+  సంబంధించి
+  $\sFmla{\False}{!B}[\sigma.{*}]$ను
+  సంతృప్తిపరుస్తుంది.
+\item $\sFmla{\False}{\lnot !B}[\sigma] \in \Gamma$కు
+  $\TRule{\False}{\lnot}$
+  వర్తింపజేసి శాఖను విస్తరించండి:
+  అభ్యాసం.
+\item $\sFmla{\True}{!B \land !C}[\sigma] \in
+  \Gamma$కు $\TRule{\True}{\land}$
+  వర్తింపజేస్తే, శాఖపై రెండు కొత్త
+  \tetoken{చిహ్నిత సూత్రాలు}{!!{signed formula}s}
+  $\sFmla{\True}{!B}[\sigma]$,
+  $\sFmla{\True}{!C}[\sigma]$ వస్తాయి.
+  $\mSat{M}{\Gamma}[f]$ అనుకుందాం;
+  ముఖ్యంగా $\mSat{M}{!B \land
+    !C}[f(\sigma)]$. అప్పుడు
+  $\mSat{M}{!B}[f(\sigma)]$,
+  $\mSat{M}{!C}[f(\sigma)]$. అంటే
+  $\mModel{M}$,~$f$కు సంబంధించి
+  $\sFmla{\True}{!B}[\sigma]$,
+  $\sFmla{\True}{!C}[\sigma]$
+  రెండింటినీ సంతృప్తిపరుస్తుంది.
+\item $\sFmla{\False}{!B \lor !C} \in \Gamma$కు
+  $\TRule{\False}{\lor}$ వర్తింపజేసి
+  శాఖను విస్తరించండి: అభ్యాసం.
+\item $\sFmla{\False}{!B \lif !C}[\sigma] \in
+  \Gamma$కు $\TRule{\False}{\lif}$
+  వర్తింపజేస్తే, శాఖపై రెండు కొత్త
+  \tetoken{చిహ్నిత సూత్రాలు}{!!{signed formula}s}
+  $\sFmla{\True}{!B}[\sigma.n]$,
+  $\sFmla{\False}{!C}[\sigma.n]$ వస్తాయి;
+  ఇక్కడ $\sigma.n$ ఆ శాఖపై కొత్త
+  పూర్వసూచిక, అంటే
+  $\sigma.n \notin P(\Gamma)$.
+  
+  $\Gamma$ సంతృప్తిపరచదగినది కాబట్టి,
+  $\mSat{M}{\Gamma}[f]$ అయ్యే
+  $\mModel{M}$, $P(\Gamma)$కు
+  అర్థనిర్దేశం~$f$ ఉన్నాయి; ముఖ్యంగా
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$.
+  $\Gamma \cup
+  \{\sFmla{\True}{!B}[\sigma.n],
+    \sFmla{\False}{!C}[\sigma.n]\}$
+  సంతృప్తిపరచదగినదని చూపాలి.
+  \sourcecorrection{OLTEINTTABSOU-003}{మూల నిరూపణలో కొత్త శాఖ లక్ష్యంగా అసత్య సోపాధికాన్ని కొత్త పూర్వసూచిక వద్ద మళ్లీ చేర్చింది; నియమం నిజంగా చేరుస్తున్న సత్య పూర్వపక్షం, అసత్య ఉత్తరపక్షం రెండింటిని లక్ష్యంగా సరిచేశాం.}
+  ఇందుకోసం $P(\Gamma)
+  \cup \{\sigma.n\}$కు అర్థనిర్దేశాన్ని
+  ఇలా నిర్వచిద్దాం:
+  
+  $\mSat/{M}{!B \lif !C}[f(\sigma)]$
+  కాబట్టి $Rf(\sigma)w$ అయ్యే, అలాగే
+  $\mSat{M}{!B}[w]$,
+  $\mSat/{M}{!C}[w]$ అయ్యే ఏదో
+  $w \in W$ ఉంది. $f'$ను $f$లాగే
+  తీసుకొని, $f'(\sigma.n)
+  = w$గా మాత్రమే మార్చుదాం.
+  $f'(\sigma) = f(\sigma)$,
+  $Rf(\sigma)w$ కాబట్టి
+  $Rf'(\sigma)f'(\sigma.n)$;
+  అందువల్ల $f'$,
+  $P(\Gamma) \cup \{\sigma.n\}$కు
+  అర్థనిర్దేశం. స్పష్టంగా
+  $\mSat{M}{!B}[f'(\sigma.n)]$,
+  $\mSat/{M}{!C}[f'(\sigma.n)]$.
+  అన్ని $\sigma' \in
+  P(\Gamma)$లకు $f(\sigma') = f'(\sigma')$
+  కాబట్టి $\mSat{M}{\Gamma}[f']$.
+  అందువల్ల $\mModel{M}, f'$
+  అనేవి $\Gamma \cup
+  \{\sFmla{\True}{!B}[\sigma.n],
+    \sFmla{\False}{!C}[\sigma.n]\}$
+  ను సంతృప్తిపరుస్తాయి.
+\end{enumerate}
+ఇప్పుడు రెండు శాఖలు వచ్చే నిగమనాలను
+పరిశీలిద్దాం.
+\begin{enumerate}
+\item $\sFmla{\False}{!B \land !C}[\sigma] \in \Gamma$కు
+  $\TRule{\False}{\land}$ వర్తింపజేసి శాఖను
+  విస్తరిస్తే, రెండు శాఖలు వస్తాయి:
+  ఎడమ శాఖ $\sFmla{\False}{!B}[\sigma]$తో,
+  కుడి శాఖ $\sFmla{\False}{!C}[\sigma]$తో
+  కొనసాగుతాయి. $\mSat{M}{\Gamma}[f]$
+  అనుకుందాం; ముఖ్యంగా
+  $\mSat/{M}{!B \land !C}[f(\sigma)]$.
+  అప్పుడు $\mSat/{M}{!B}[f(\sigma)]$
+  లేదా $\mSat/{M}{!C}[f(\sigma)]$.
+  మొదటి సందర్భంలో $\mModel{M}, f$,
+  $\sFmla{\False}{!B}[\sigma]$ను
+  సంతృప్తిపరుస్తాయి; అంటే ఎడమ శాఖ
+  సంతృప్తిపరచదగినది. రెండో సందర్భంలో
+  $\mModel{M}, f$,
+  $\sFmla{\False}{!C}[\sigma]$ను
+  సంతృప్తిపరుస్తాయి; అంటే కుడి శాఖ
+  సంతృప్తిపరచదగినది.
+\item $\sFmla{\True}{!B \lor !C}[\sigma] \in \Gamma$కు
+    $\TRule{\True}{\lor}$ వర్తింపజేసి
+    శాఖను విస్తరించండి: అభ్యాసం.
+\item $\sFmla{\True}{!B \lif !C}[\sigma] \in \Gamma$కు
+    $\TRule{\True}{\lif}$ వర్తింపజేసి
+    శాఖను విస్తరించండి: అభ్యాసం.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\olref[int][tab][sou]{thm:tableau-soundness}
+నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\begin{cor}
+\ollabel{cor:entailment-soundness}
+$\Gamma \Proves !A$ అయితే
+$\Gamma \Entails !A$.
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves !A$ అయితే, ఏవో
+  $!B_1$, \dots, $!B_n \in
+  \Gamma$లకు, $\Delta =
+  \{\sFmla{\False}{!A}[1], \sFmla{\True}{!B_1}[1],
+  \dots, \sFmla{\True}{!B_n}[1]\}$కు
+  సంవృత \tetoken{టాబ్లో}{!!{tableau}}
+  ఉంది. $\Gamma \Entails !A$ అని
+  చూపాలి. అలా కాదనుకుందాం. అప్పుడు
+  ఏదో $\mModel{M}$, $w$కు,
+  $i=1$, \dots,~$n$ అన్నింటికీ
+  $\mSat{M}{!B_i}[w]$, కానీ
+  $\mSat/{M}{!A}[w]$.
+  $f(1) = w$గా తీసుకుందాం. అప్పుడు
+  $f$, $P(\Delta)$కు $\mModel{M}$లో
+  అర్థనిర్దేశం; $\mModel{M}$,~$f$కు
+  సంబంధించి $\Delta$ను
+  సంతృప్తిపరుస్తుంది. కానీ
+  \olref{thm:tableau-soundness}
+  ప్రకారం $\Delta$కు సంవృత
+  \tetoken{టాబ్లో}{!!{tableau}}
+  ఉన్నందున అది అసంతృప్తిపరచదగినది;
+  ఇది విరోధం. కాబట్టి
+  $\Gamma \Entails !A$ కావాలి.
+  \sourcecorrection{OLTEINTTABSOU-004}{మూల చివరి వాక్యం ఇప్పటికే పూర్వాపేక్షగా తీసుకున్న $\Gamma \Proves !A$నే మళ్లీ ముగింపుగా పేర్కొంది; నిరూపించాల్సిన అర్థపరమైన పర్యవసానం $\Gamma \Entails !A$గా సరిచేశాం.}
+\end{proof}
+
+\begin{cor}
+\ollabel{cor:weak-soundness}
+$\Proves !A$ అయితే
+$!A$ అన్ని నమూనాల్లో సత్యం.
+\end{cor}
+
+\end{document}

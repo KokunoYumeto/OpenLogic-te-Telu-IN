@@ -1,0 +1,78 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: type-preservation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tpr}
+
+\olsection{రక సంరక్షణ}
+
+పరిగణించిన తగ్గింపు, క్రమమార్పు పరివర్తనలను \Log{tN2i}, \Log{tN3i} వ్యవస్థలకు నేరుగా కూడా నిర్వచించవచ్చు. \Log{tN3i} వ్యవస్థ, సందర్భం~$\Gamma$కు సంబంధించి $\lambd$-పదం~$N$ రకాన్ని, $\Gamma \Sequent N
+: !A$కు \Log{tN3i}లో \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉండే \tetoken{సూత్రం}{!!{formula}}~$!A$గా నిర్వచిస్తుంది. $\lambd$-పదాల $\beta$-తగ్గింపు నియమాలు \tetoken{నిరూపణల}{!!{proof}s} తగ్గింపు, క్రమమార్పు పరివర్తనలను సరిగ్గా ప్రతిబింబించడం వల్ల ముఖ్య ఫలితం వస్తుంది: సందర్భం~$\Gamma$కు సంబంధించి $\lambd$-పదం రకం $\beta$-పరివర్తన తరువాత కూడా మారదు. దీన్ని \emph{రక సంరక్షణ} అంటారు.
+
+\begin{prop}
+$\Gamma$కు సంబంధించి $N$ రకం~$!A$ అయి, $N \redone N'$ అయితే, $N'$ రకం కూడా~$\Gamma$కు సంబంధించి~$!A$.
+\end{prop}
+
+\begin{proof}
+  $N$పై, $\Gamma
+  \Sequent N : !A$ యొక్క \tetoken{నిరూపణలు}{!!{proof}s}~$\delta$ ఎత్తుపై ఆగమనంతో కిందిది సులభంగా స్థాపించవచ్చు. $M$ అనేది~$N$ ఉపపదమైతే, $\delta$లో $\Gamma' \Sequent M : !B$తో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\delta_1$ ఉంటుంది. $M$ రెడెక్స్ అయితే, $\delta_1$కు పరివర్తన వర్తిస్తుంది. $\delta_1$కు తగ్గింపును వర్తింపజేసి, $\Gamma' \Sequent M'
+  : !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1'$ను పొందుతాం. \Log{tN3i} పరివర్తనలను పరిశీలిస్తే, $M'$ అనేది~$M$ సంకోచన ఫలితం. $\delta$లో~$\delta_1$ స్థానంలో $\delta_1'$ను ఉంచితే, $\Gamma \Sequent N' : !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta'$ వస్తుంది; ఇక్కడ $N'$ అనేది~$N$లో ఉపపదం~$M$ స్థానంలో~$M'$ను ఉంచిన ఫలితం.
+
+  ఉదాహరణకు \Intro{\land} తరువాత \Elim{\land} వచ్చే తగ్గింపు పరివర్తనను పరిగణించండి:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_1 : !B_1$
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_2 : !B_2$
+  \RightLabel{\Intro{\land}}
+  \BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : !B_1 \land !B_2$
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInf$\Gamma \fCenter \proj{i}{\pair{N_1}{N_2}} : !B_i$
+  \DisplayProof
+  \quad\redone\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_i : !B_i$
+  \DisplayProof
+  \]
+  కుడివైపు \tetoken{నిరూపణ}{!!{proof}} $\delta_1'$ యొక్క పదం $N_i$ అని చూస్తాం. అది ఎడమ \tetoken{నిరూపణ}{!!{proof}}~($\delta_1$) పదం $\proj{i}{\pair{N_1}{N_2}}$కు $\beta$-పరివర్తనను వర్తింపజేసిన ఫలితమే.
+
+  లేదా \Intro{\lif} తరువాత \Elim{\lif} నిగమనాన్ని, దానికి వర్తింపజేసే తగ్గింపు పరివర్తనను పరిగణించండి:
+  \begin{multline*}
+  \bottomAlignProof
+  \AxiomC{$\delta_2$}
+  \Deduce$x: !B_1, \Gamma \fCenter N : !B_2$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{!B_1}][N] : !B_1 \lif !B_2$
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma \fCenter (\lambd[\typeof{x}{!B_1}][N] M) : !B_2$
+  \DisplayProof
+  \quad\redone\\
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : !B_1$
+  \RightLabel{$\Subst{\delta_2}{\delta_3}{x:!B_1}$}
+  \Deduce$\Gamma \fCenter \Subst{N}{M}{x} : !B_2$
+  \DisplayProof
+  \end{multline*}
+  మళ్లీ, కుడివైపు \tetoken{నిరూపణ}{!!{proof}} పదం, ఎడమ \tetoken{నిరూపణ}{!!{proof}} పదాన్ని $\beta$-తగ్గించిన ఫలితమే. అయితే $\delta_2$ ఎత్తుపై ఆగమనంతో జాగ్రత్తగా తనిఖీ చేయాలి: $\delta_2$లో~$\Gamma' \Sequent x:!B_1$ రూపంలోని అన్ని అక్షయాల స్థానంలో $\Gamma \Sequent M:!B_1$కు \tetoken{నిరూపణ}{!!{proof}}~$\delta_3$ను ఉంచితే, నిజంగా $\Gamma \Sequent
+  \Subst{N}{M}{x} : !B_2$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} $\Subst{\delta_2}{\delta_3}{x:!B_1}$ వస్తుందా అనేది.
+\end{proof}
+
+\tetoken{నిరూపణలకు}{!!{proof}s}, $\lambd$-పదాలకు గల సన్నిహిత అనురూపతకు మరో ఫలితం ఉంది. సందర్భం~$\Gamma$కు సంబంధించి $!A$ రకం గల $\lambd$-పదం $N$లో రెడెక్స్~$M$ ఉంటే (అంటే అది సాధారణ రూపం కాకపోతే), $\Gamma \Sequent N : !A$కు అనురూప \Log{tN3i} నిరూపణ~$\delta$లో పరివర్తన వర్తించే ఉప-\tetoken{నిరూపణ}{!!{proof}} ఉంటుంది; దాని ముగింపు $\Gamma'
+\Sequent M: !B$. $M$ స్థానంలో దాని సంకోచన ఫలితాన్ని ఉంచి $N \redone
+N'$ పొందితే, $\delta$కు అనురూప తగ్గింపును వర్తింపజేసిన ఫలితం $\Gamma \Sequent
+N' : !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}. కాబట్టి సాధారణ రూపంలో లేని ప్రతి $\lambd$-పదమూ మరొక పదానికి $\beta$-తగ్గుతుంది. దీన్ని \emph{పురోగతి} అంటారు.
+
+పురోగతి, రక సంరక్షణ కలిసి $\lambd$-పదాల $\beta$-తగ్గింపు ఎప్పుడూ “ఆగిపోయి ముందుకు సాగలేని స్థితి”కి చేరదని నిర్ధారిస్తాయి: పదం సరిగ్గా రకీకరించబడి, సాధారణ రూపంలో లేకపోతే, అదే రకం గల మరో సరిగ్గా రకీకరించిన పదానికి తగ్గుతుంది.
+
+\end{document}

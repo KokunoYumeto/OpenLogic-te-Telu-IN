@@ -1,0 +1,5 @@
+# OLP-0605 — Using definitions semantic review
+
+The target distinguishes the introduced definiendum from the longer defining condition, and explains why proofs unpack the latter. The set-union example retains the two directions of extensional equality. In particular, the `A` and `B` serving as placeholders in the equality definition are not confused with the proposition's arbitrary sets; the proposition's union expressions are substituted for them. The nested unpacking of union and set-builder membership leads to the same two conditional claims as the source. The final exercise still asks for a restatement of nonempty intersection without the three named symbols.
+
+All 17 paragraph blocks, protected element tokens, identifiers and mathematical atoms pass bounded QA. The Telugu technical labels for definiendum and definiens are definition-controlled and provisional; the checked native sources do not directly attest those specialized labels. No visual TeX build is claimed at this unfinished stage.

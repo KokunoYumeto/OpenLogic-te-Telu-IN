@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "145",
+  "unit_id": "OLP-0496",
+  "unit_order": 496,
+  "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+  "blocks": 34,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 11, 12, 13, 15, 16, 17, 19, 20, 22, 23, 24, 26, 27, 29, 30, 31, 32, 33],
+  "previous_segments": 7479,
+  "previous_terms": 185,
+  "expected_corrections": 459,
+  "canon_default": ["TE-P003", "TE-P018", "TE-P024", "TE-P025"],
+  "corrections_by_block": {"12": ["OLTEINTND-001"]},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద సహజ నిగమన మూలం, తెలుగు లక్ష్యం, ముందు సహజ నిగమన/ఉపసంహరణ/నిర్మాణ పదాలు, స్థానిక సాధారణ నిరూపణ/తర్క/వ్యుత్పత్తి/పరోక్ష రుజువు పేజీలను ఎదురెదురు చూశాం; FalseCl లేకపోవడం, BHK నిర్మాణ సమర్థన, అన్ని నియమ వృక్షాలు, నాలుగు ఉదాహరణలు, సాంప్రదాయిక చేర్పు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003/018/024/025 సాధారణ నిరూపణ, తర్కం, వ్యుత్పత్తి, పరోక్ష రుజువు రిజిస్టర్లకే ప్రత్యక్ష సాక్ష్యాలు. అంతఃప్రజ్ఞావాద నియమాలు లేదా BHK ధ్వనిత్వానికి అవి ప్రత్యక్ష ఆధారాలు కావు; సంయోగ సవరణ అదే పాఠంలోని నిర్మాణ జతపై ఆధారపడింది.",
+  "term_decision": {
+    "term_id": "TE-T186",
+    "source_term": "intuitionistic natural deduction without classical contradiction rule / BHK rule justification / undischarged assumptions",
+    "telugu": "సాంప్రదాయిక వైరుధ్య నియమం లేని అంతఃప్రజ్ఞావాద సహజ నిగమనం / BHK నియమ సమర్థన / ఉపసంహరించని పరికల్పనలు",
+    "status": "native_general_proof_logic_derivation_register_attested_intuitionistic_natural_deduction_source_controlled_one_disclosed_conjunct_repair",
+    "passages": ["TE-P003", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "FalseCl లేకపోవడం, Γ నుంచి A వ్యుత్పత్తిని నిర్మాణాలపై ప్రమేయకంగా చూడటం, ∧/→/∨/⊥/¬ నియమాలు, నాలుగు మూల నిరూపణ వృక్షాలు, ఆరు అభ్యాస సూత్రాలు, అంతఃప్రజ్ఞావాద వ్యుత్పత్తి సాంప్రదాయికమూ అవుతుందనే సిద్ధాంతం నిలిచాయి. A1∧A1 మూల లోపాన్ని A1∧A2గా ప్రకటించి మార్చాం.",
+    "uncertainty": "స్థానిక సాక్షులు అంతఃప్రజ్ఞావాద నియమాల శాస్త్రీయ సౌండ్నెస్‌కు ప్రత్యక్ష ఆధారం కావు. మూల నిరూపణ వృక్షాల పూర్తి TeX దృశ్య తనిఖీ, స్వతంత్ర నిరూపణ/నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "FalseCl, Intro/Elim/Discharge, Gamma, Proves and proof-tree math remain source-controlled notation."
+  }
+}

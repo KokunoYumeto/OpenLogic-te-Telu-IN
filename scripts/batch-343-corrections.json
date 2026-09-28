@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0694",
+  "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+  "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705",
+  "audit_id": "OLTEPTPTYSND-20260928",
+  "audit_review_path": "evidence/OLP-0694-SEQUENT-NATURAL-DEDUCTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "01626c690c04af72e76753bb4cc6ff01e086a2e548662b771dd7497800fc7024",
+  "audit_findings_path": "evidence/OLP-0694-SEQUENT-NATURAL-DEDUCTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "d1bb8d921290d374719ba7536f8037f7a81690bcf862c8f32e972fe95dbba3cd",
+  "previous_corrections": 648,
+  "treatments": {
+    "OLTEPTPTYSND-001": {
+      "target_line": 30,
+      "body_treatment": "Align the second conjunct with B in both opening expressions."
+    },
+    "OLTEPTPTYSND-002": {
+      "target_line": 111,
+      "body_treatment": "Keep the declared B assumption in each affected context, derive falsity twice, and discharge B only at the end."
+    }
+  }
+}

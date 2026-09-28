@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0705",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G1i.tex",
+  "source_sha256": "b16548e594dc5a0a414c919e26078d474488c3186487c7cbdce170fb23035b7b",
+  "audit_id": "OLTEPTSEQG1I-20260928",
+  "audit_review_path": "evidence/OLP-0705-G1I-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e70e75a0386103782777cc03fa38a6968e16b22cb50fa03b607c285a1fee7da9",
+  "audit_findings_path": "evidence/OLP-0705-G1I-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "49cbb256a7adfa0cebede287a88f33094eadda4608da4c832daa9874dd92576d",
+  "previous_corrections": 684,
+  "treatments": {
+    "OLTEPTSEQG1I-001": {
+      "target_line": 110,
+      "body_treatment": "Give the G1i table its own tab:G1i label."
+    },
+    "OLTEPTSEQG1I-002": {
+      "target_line": 111,
+      "body_treatment": "Name the actual displayed falsity base axiom while retaining removal of right weakening."
+    }
+  }
+}

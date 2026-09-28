@@ -1,0 +1,3 @@
+# OLP-0596 Well-Ordering and Choice semantic review
+
+Compared the frozen source and Telugu target by paragraph. Choice-function definition, the Axiom of Choice, and both implications with Well-Ordering are retained. The reverse proof treats the empty set separately because `f(A)` would be undefined there (OLTESTCHOICEWO-001), and puts the recursion stop marker at and after the first completed stage while using only the pre-stop segment for injectivity and bijection (OLTESTCHOICEWO-002). The Hartogs contradiction, token markers and references remain. Strict correction-aware structural QA passed 18/18 blocks. TE-T286 records terminology. Cantor's quotation is translated from the frozen source; full TeX visual compilation remains pending.

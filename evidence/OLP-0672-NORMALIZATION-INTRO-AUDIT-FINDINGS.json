@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNORINT-20260928",
+  "unit_id": "OLP-0672",
+  "source_path": "content/proof-theory/normalization/introduction.tex",
+  "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNORINT-001",
+      "source_locator": "introduction.tex lines 15–31, implication detour example",
+      "classification": "inconsistent_derivation_labels",
+      "source_issue": "The prose calls δ1 both a proof of A and a proof of A→B, and the diagram labels the A-premise derivation δ2, already used for the subproof from A to B.",
+      "minimal_treatment": "Reserve δ1 for the proof of A and δ2 for the subproof from A to B; remove the duplicate prose label and repair the A-premise tree label, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\delta_1$",
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_2$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{$\\Discharge{!A}{x}$}\\RightLabel{$\\delta_2$}\\DeduceC{$!B$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!A\\lif!B$}\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!A$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!B$}\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

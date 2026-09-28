@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTTABSOU-20260927",
+  "unit_id": "OLP-0515",
+  "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+  "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+  "findings": [
+    {
+      "finding_id": "OLTEINTTABSOU-001",
+      "source_locator": "soundness.tex opening explain block; countermodel conclusion",
+      "classification": "contrapositive_countermodel_conclusion_sign_wrong",
+      "source_issue": "The countermodel sentence makes the conclusion true, whereas non-entailment requires it false.",
+      "minimal_treatment": "Change the conclusion satisfaction assertion to non-satisfaction and disclose beside the sentence.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\mSat{M}{!A}[w]$"],
+        "target_only": ["$\\mSat/{M}{!A}[w]$"]
+      }
+    },
+    {
+      "finding_id": "OLTEINTTABSOU-002",
+      "source_locator": "soundness.tex closure proposition proof; accessible-world and monotonicity sentence",
+      "classification": "monotonicity_proof_malformed_accessibility_and_conclusion",
+      "source_issue": "The source omits f on the accessible prefix and repeats truth at the starting world rather than deriving truth at its descendant.",
+      "minimal_treatment": "Write the interpreted accessible world and monotonicity consequence explicitly and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$Rf(\\sigma)(\\sigma.{*})$", "$\\mSat{M}{!A}[f(\\sigma)]$"],
+        "target_only": ["$Rf(\\sigma)f(\\sigma.{*})$", "$\\mSat{M}{!A}[f(\\sigma.{*})]$"]
+      }
+    },
+    {
+      "finding_id": "OLTEINTTABSOU-003",
+      "source_locator": "soundness.tex false-conditional soundness case; branch goal and final satisfied set",
+      "classification": "false_conditional_rule_results_misidentified_twice",
+      "source_issue": "The new branch is twice described as adding a false conditional at the fresh prefix instead of the true antecedent and false consequent actually produced by the rule.",
+      "minimal_treatment": "Name the actual pair of signed formulas in both set expressions and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$", "$\\Gamma\\cup\\{\\sFmla{\\False}{!B\\lif!C}[\\sigma.n]\\}$"],
+        "target_only": ["$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$", "$\\Gamma\\cup\\{\\sFmla{\\True}{!B}[\\sigma.n],\\sFmla{\\False}{!C}[\\sigma.n]\\}$"]
+      }
+    },
+    {
+      "finding_id": "OLTEINTTABSOU-004",
+      "source_locator": "soundness.tex entailment-soundness corollary proof; final sentence",
+      "classification": "corollary_conclusion_repeats_premise",
+      "source_issue": "The final sentence repeats syntactic derivability, already assumed, instead of concluding the semantic entailment proved by contradiction.",
+      "minimal_treatment": "Conclude semantic entailment and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Gamma\\Proves!A$"],
+        "target_only": ["$\\Gamma\\Entails!A$"]
+      }
+    }
+  ]
+}

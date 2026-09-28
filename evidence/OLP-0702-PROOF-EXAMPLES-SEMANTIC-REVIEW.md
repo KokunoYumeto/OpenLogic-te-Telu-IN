@@ -1,0 +1,3 @@
+# OLP-0702 — proof examples semantic review
+
+Twenty-six aligned blocks preserve backward proof search, the complete currying derivation, schematic G1c versus atomic G3c leaves, formula depth, atomic-axiom expansion, the intentional invalid eigenvariable example and generalized G3c identity induction. Reverse-paraphrase checked the repaired conjunction identity: both branches have the same duplicated context, right conjunction retains it, then left contraction leaves one copy with the same conjunction succedent. Eleven declared treatments pass strict QA. No full mechanized proof checker or visual TeX inspection.

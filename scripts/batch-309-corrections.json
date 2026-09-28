@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0660",
+  "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+  "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+  "audit_id": "OLTEPTCUTAUX-20260927",
+  "audit_review_path": "evidence/OLP-0660-INTUITIONISTIC-AUX-SOURCE-AUDIT.md",
+  "audit_review_sha256": "63fea41d2792fdf1ebcb0089d71ac3ea4925d471358d6480e6a73eb69ba1a5e2",
+  "audit_findings_path": "evidence/OLP-0660-INTUITIONISTIC-AUX-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "37fca5dd19de4161fdf61d31476fb63e5a7071ac4fcc892df357dc3e54ddbc2c",
+  "previous_corrections": 566,
+  "treatments": {
+    "OLTEPTCUTAUX-001": {"target_line": 49, "body_treatment": "మూడో కట్ వృక్షంలో B!ను !Bగా సరిచేసి ప్రకటించాం."},
+    "OLTEPTCUTAUX-002": {"target_line": 65, "body_treatment": "నిర్వచించని cutr స్థానంలో అధ్యాయపు cutrankను పెట్టి ప్రకటించాం."},
+    "OLTEPTCUTAUX-003": {"target_line": 66, "body_treatment": "చివరి వృక్షాల్లో కట్ ముగింపు, సందర్భ ప్రతుల అసంగతిని మూలరూపంలో నిలిపి స్పష్టంగా ప్రకటించాం."}
+  }
+}

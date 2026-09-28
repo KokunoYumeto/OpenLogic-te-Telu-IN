@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATSEQ-20260928",
+  "unit_id": "OLP-0669",
+  "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+  "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATSEQ-001",
+      "source_locator": "sequents.tex lines 13–24, N1-to-N2 motivation",
+      "classification": "wrong_system_names_in_natural_deduction_context",
+      "source_issue": "The opening names G1c/G1i, but the derivations under discussion are the N1c/N1i formula-tree natural deduction systems.",
+      "minimal_treatment": "Use N1c/N1i and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATSEQ-002",
+      "source_locator": "sequents.tex lines 78–88, forward implication-introduction tree",
+      "classification": "missing_formula_marker_in_labelled_context",
+      "source_issue": "The tree writes x:B where its own premise and the N2 rule require x:!B.",
+      "minimal_treatment": "Restore the missing formula marker and disclose the tree repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\delta_1'$}\\Deduce$x:!B,\\Gamma\\fCenter!C$\\RightLabel{\\Intro{\\lif}}\\UnaryInf$\\Gamma\\fCenter!B\\lif!C$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATSEQ-003",
+      "source_locator": "sequents.tex lines 137–158, reverse implication-introduction case",
+      "classification": "wrong_inductive_subproof_label",
+      "source_issue": "The inductive hypothesis supplies an N1 subproof, but the text refers to open assumptions of final δ′ before discharge and both final N1 diagrams label the subproof δ1, the N2 derivation, instead of its N1 translation δ1′.",
+      "minimal_treatment": "Name the N1 inductive subproof δ1′ in the explanation and both diagrams, preserving δ′ for the final proof; disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\delta'$",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\delta_1'$",
+          "$\\delta_1'$",
+          "\\[\\bottomAlignProof\\AxiomC{$\\Discharge{!B}{x}$}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\quad\\quad\\bottomAlignProof\\AxiomC{}\\RightLabel{$\\delta_1'$}\\DeduceC{$!C$}\\RightLabel{\\Intro{\\lif}}\\UnaryInfC{$!B\\lif!C$}\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

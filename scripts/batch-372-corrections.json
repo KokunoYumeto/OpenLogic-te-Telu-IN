@@ -1,0 +1,19 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "append": true,
+  "unit_id": "OLP-0426",
+  "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+  "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+  "audit_id": "OLTENMLFRDST-20260928",
+  "audit_review_path": "evidence/OLP-0426-IFF-DELIMITER-SOURCE-AUDIT.md",
+  "audit_review_sha256": "7cf028b085b17e4d68e825aa5c52b7918c7d972d275732fe9529a69326137404",
+  "audit_findings_path": "evidence/OLP-0426-IFF-DELIMITER-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3e5d1865d0ec5012b7a9b63134739f9b0aa2ee264930b1322b5b3b030ae00393",
+  "previous_corrections": 703,
+  "treatments": {
+    "OLTENMLFRDST-002": {
+      "target_line": 49,
+      "body_treatment": "Move the closing math delimiter inside the third indcase argument without changing the formula; disclose the frozen-source repair in the target."
+    }
+  }
+}

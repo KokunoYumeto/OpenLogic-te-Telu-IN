@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPSTAB-20260928",
+  "unit_id": "OLP-0684",
+  "source_path": "content/proof-theory/proof-search/tableaux.tex",
+  "source_sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPSTAB-001",
+      "source_locator": "tableaux.tex lines 25–29, initial signs for a sequent",
+      "classification": "wrong_succedent_sign",
+      "source_issue": "The last initial formula D is signed true, though it belongs to the succedent and the next sentence requires it to be false.",
+      "minimal_treatment": "Sign D false and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\sFmla{\\True}{!A},\\sFmla{\\True}{!B},\\sFmla{\\False}{!C},\\sFmla{\\True}{!D}$"
+        ],
+        "target_only": [
+          "$\\sFmla{\\True}{!A},\\sFmla{\\True}{!B},\\sFmla{\\False}{!C},\\sFmla{\\False}{!D}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSTAB-002",
+      "source_locator": "tableaux.tex lines 44–48 and 160–172, branch closure and sequent translation",
+      "classification": "missing_falsum_closure",
+      "source_issue": "The closure definition includes opposite signs but omits true falsum. A branch containing true falsum alone has no model, contradicting the later open-branch countermodel claim.",
+      "minimal_treatment": "Include true falsum as a closure case and its falsum-axiom sequent in the translation, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": [
+          "$\\lfalse,\\Pi\\Sequent\\Lambda$",
+          "$\\sFmla{\\True}{\\lfalse}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSTAB-003",
+      "source_locator": "tableaux.tex lines 124–140, reusable quantifiers and finite open branches",
+      "classification": "inconsistent_saturation_condition",
+      "source_issue": "Reusable quantified formulas are never checked off, yet the finite-open-branch description says every non-atomic formula is checked off. The term-choice sentence also assumes an unused applicable instance remains.",
+      "minimal_treatment": "Describe a finite saturated branch with other formulas checked and all applicable quantifier instances present; add no node when no unused term remains, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "341",
+  "unit_id": "OLP-0692",
+  "unit_order": 692,
+  "source_path": "content/proof-theory/propositions-as-types/rules-tN2.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10220,
+  "previous_terms": 381,
+  "expected_corrections": 647,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "పట్టిక శీర్షికలు, నియమ/అక్షయ గద్యం పూర్వ సహజ నిగమన పదజాలం, సంప్రదించిన నిరూపణ సాక్ష్యంతో పోల్చాం.",
+  "evidence_limit": "నిర్మాణ QA, నేర పట్టిక పోలిక మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T382",
+    "source_term": "term-labelled natural deduction rules; axiom; context union",
+    "telugu": "పదాలతో గుర్తించిన సహజ నిగమన నియమాలు; అక్షయం; సందర్భాల సమ్మేళనం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సూత్రాలు, నియమ చిహ్నాలు మారవు; పాఠక పట్టిక గద్యం స్థానికీకరించాం.",
+    "uncertainty": "నిర్మాణ QA, నేర పట్టిక పోలిక మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "162",
+  "unit_id": "OLP-0513",
+  "unit_order": 513,
+  "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+  "blocks": 16,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+  "previous_segments": 7715,
+  "previous_terms": 202,
+  "expected_corrections": 469,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P019", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"11": ["OLTEINTTABRULE-001"]},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద టాబ్లో నియమ మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్ తర్క టాబ్లో/సంవృత/పూర్వసూచిక పదాలు, స్థానిక సంబంధ/సత్య చిహ్నం/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; సంయోగ-వియోజన పట్టికలు, ఏకదిశ సత్య సంవృత షరతు, పరికల్పన పూర్వసూచిక, సోపాధిక/నిరాకరణ పట్టికలు, గద్య-పట్టిక విరుద్ధం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010/018/019/024/025/026 సాధారణ సంబంధ/సత్య/తర్క/టాబ్లో పదాలకు మాత్రమే సాక్షులు. శాఖా నియమాల గద్య సవరణ మూల పట్టిక, అంతఃప్రజ్ఞావాద సోపాధిక సత్య నిర్వచనాలకు అనుగుణం; స్థానిక సాక్షులు పూర్తి నియమ వ్యవస్థకు ప్రత్యక్ష నిరూపణలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T203",
+    "source_term": "prefixed tableau rules / branch closure by persistent truth / used accessible prefix / true and false conditional rules",
+    "telugu": "పూర్వసూచిక గల టాబ్లో నియమాలు / సత్య స్థిరత్వంతో శాఖ సంవృతం / వాడిన ప్రాప్య పూర్వసూచిక / సత్య, అసత్య సోపాధిక నియమాలు",
+    "status": "native_general_relation_truth_logic_proof_tableau_register_attested_prefixed_rules_one_disclosed_prose_table_repair",
+    "passages": ["TE-P010", "TE-P018", "TE-P019", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "సంయోగ/వియోజన, నిరాకరణ/సోపాధిక పట్టికల నియమ వృక్షాలు, సంరక్షిత సత్యం ఆధారిత సంవృత షరతు, పరికల్పనల ఒకే పూర్వసూచిక, వాడిన/కొత్త పూర్వసూచిక భేదం నిలిచాయి. సత్య సోపాధిక గద్య విరుద్ధం, గద్య నియమ వాదనల క్రమం ప్రకటించి పట్టికతో సరిపోల్చాం.",
+    "uncertainty": "పట్టిక నియమ వృక్షాలు యథాతథం ఉన్నాయి; పూర్తి TeX దృశ్య తనిఖీ, నియమ వ్యవస్థ స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు. గద్య సవరణ మూల పట్టిక ఆధారితం.",
+    "borrowing": "టాబ్లో is an established borrowing; rule macros, source labels and prefix notation remain source-controlled."
+  }
+}

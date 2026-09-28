@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTSPINFOUND-20260927",
+  "unit_id": "OLP-0562",
+  "source_path": "content/set-theory/spine/foundation.tex",
+  "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+  "findings": [
+    {
+      "finding_id": "OLTESTSPINFOUND-001",
+      "source_locator": "foundation.tex line 82, displayed beta supremum in the transitive-set proof",
+      "classification": "undefined_lowercase_variable_in_supremum_binder",
+      "source_issue": "The proof selects B in D, but the supremum formula binds x in an unintroduced lowercase b.",
+      "minimal_treatment": "Use the selected set B in the binder and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": ["\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inb)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"],
+        "target_only": ["\\[\\beta=\\supstrict\\Setabs{\\delta}{(\\existsx\\inB)(x\\subseteqV_\\delta\\land(\\forall\\gamma<\\delta)x\\nsubseteqV_\\gamma)}.\\]"]
+      }
+    }
+  ]
+}

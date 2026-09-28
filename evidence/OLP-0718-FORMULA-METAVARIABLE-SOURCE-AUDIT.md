@@ -1,0 +1,3 @@
+# OLP-0718 — formula metavariable source audit
+
+The frozen English construction example and induction template repeatedly put the incomplete token `!!^a` inside mathematics, where it is not a formula metavariable. The surrounding paired metavariable `!B`, conjunction constructor, negation case, and quantifier cases identify `!A` as the intended first formula. All 16 occurrences were corrected to `!A` in the Telugu target. The existing algebraic correction in the same unit remains independent. The immutable source retains both defects; the semantic English reader projects this notation correction, while the target discloses it explicitly.

@@ -1,0 +1,108 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQINV-20260928",
+  "unit_id": "OLP-0701",
+  "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+  "source_sha256": "08233bea6d0d9dedcf1d7ed436524c5d36d87a89ba9ea28226f2caefe8c08023",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQINV-001",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 13–28, aligned block 6",
+      "classification": "premise_count_and_height_bound_conflated",
+      "source_issue": "The definition uses n for both premise count and proof-height bound.",
+      "minimal_treatment": "Keep n as premise count and use a separate height bound h.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Proves[n]S_i$",
+          "$\\Proves_nS$"
+        ],
+        "target_only": [
+          "$\\Proves[h]S$",
+          "$\\Proves[h]S_i$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-002",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 95–142, aligned block 12",
+      "classification": "induction_result_conjunction_not_decomposed",
+      "source_issue": "The narrative result of inversion still lists A and B as a conjunction, unlike its following correct diagram.",
+      "minimal_treatment": "Replace those two narrative conjunction occurrences by separate A,B antecedent entries.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A\\land!B,\\Gamma',!D\\Sequent\\Delta$",
+          "$!A\\land!B,\\Gamma'\\Sequent\\Delta,!C$"
+        ],
+        "target_only": [
+          "$!A,!B,\\Gamma',!D\\Sequent\\Delta$",
+          "$!A,!B,\\Gamma'\\Sequent\\Delta,!C$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-003",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 162–174, aligned block 15",
+      "classification": "substitution_internal_eigenvariable_freshness_implicit",
+      "source_issue": "Regularity alone does not guarantee the inserted constant is not used as an internal eigenvariable.",
+      "minimal_treatment": "Rename internal eigenvariables away from the inserted constant before substitution, here and in the later universal contraction example.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-004",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 176–211, aligned block 16",
+      "classification": "quantifier_inversion_freshness_condition_incomplete_restatement",
+      "source_issue": "The example restates only absence of c from Delta although the lemma also requires absence from Gamma and the quantified formula.",
+      "minimal_treatment": "Retain every freshness condition of the lemma while applying the induction.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-005",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 326–353, aligned block 25",
+      "classification": "universal_contraction_inference_label_mismatch",
+      "source_issue": "A universal-right inference is labelled existential-right.",
+      "minimal_treatment": "Use the universal-right label.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta,\\lforall[x][!B(x)],!B(a)$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma\\fCenter\\Delta,\\lforall[x][!B(x)],\\lforall[x][!B(x)]$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta,\\lforall[x][!B(x)],!B(a)$\\RightLabel{\\RightR{\\lforall}}\\UnaryInf$\\Gamma\\fCenter\\Delta,\\lforall[x][!B(x)],\\lforall[x][!B(x)]$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-006",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex lines 355–378, aligned block 26",
+      "classification": "existential_contraction_witness_argument_omitted",
+      "source_issue": "The narrative and reconstructed diagram use B instead of B(t), dropping the witness instance.",
+      "minimal_treatment": "Restore B(t) in both places.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma\\Sequent\\Delta,\\lexists[x][!B(x)],!B$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$\\Gamma\\fCenter\\Delta,\\lexists[x][!B(x)],!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma\\fCenter\\Delta,\\lexists[x][!B(x)]$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\Gamma\\Sequent\\Delta,\\lexists[x][!B(x)],!B(t)$",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$\\Gamma\\fCenter\\Delta,\\lexists[x][!B(x)],!B(t)$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma\\fCenter\\Delta,\\lexists[x][!B(x)]$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQINV-007",
+      "source_locator": "content/proof-theory/sequent-calculus/invertibility.tex aligned blocks 9 and 20, inversion and contraction induction bases",
+      "classification": "falsity_axiom_base_cases_omitted",
+      "source_issue": "Both base-case arguments describe only common-atomic-formula axioms, omitting the separate falsity-left family in the frozen G3c table.",
+      "minimal_treatment": "Include the falsity-left family: conjunction decomposition preserves its contextual falsity, and contraction never removes the last falsity occurrence.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

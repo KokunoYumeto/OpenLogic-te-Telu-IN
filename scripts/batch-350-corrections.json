@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0701",
+  "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+  "source_sha256": "08233bea6d0d9dedcf1d7ed436524c5d36d87a89ba9ea28226f2caefe8c08023",
+  "audit_id": "OLTEPTSEQINV-20260928",
+  "audit_review_path": "evidence/OLP-0701-INVERTIBILITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "a6d7d3ad8952d9b3bdc421491f7fb501c8cbee5868d4c4a53de9edee5617864e",
+  "audit_findings_path": "evidence/OLP-0701-INVERTIBILITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4260856d0b489f9ffbe351f82228025a5e41db1ec8407410752476b8b8e3888f",
+  "previous_corrections": 677,
+  "treatments": {
+    "OLTEPTSEQINV-001": {
+      "target_line": 26,
+      "body_treatment": "Keep n as premise count and use a separate height bound h."
+    },
+    "OLTEPTSEQINV-002": {
+      "target_line": 113,
+      "body_treatment": "Replace those two narrative conjunction occurrences by separate A,B antecedent entries."
+    },
+    "OLTEPTSEQINV-003": {
+      "target_line": 134,
+      "body_treatment": "Rename internal eigenvariables away from the inserted constant before substitution, here and in the later universal contraction example."
+    },
+    "OLTEPTSEQINV-004": {
+      "target_line": 164,
+      "body_treatment": "Retain every freshness condition of the lemma while applying the induction."
+    },
+    "OLTEPTSEQINV-005": {
+      "target_line": 266,
+      "body_treatment": "Use the universal-right label."
+    },
+    "OLTEPTSEQINV-006": {
+      "target_line": 289,
+      "body_treatment": "Restore B(t) in both places."
+    },
+    "OLTEPTSEQINV-007": {
+      "target_line": 69,
+      "body_treatment": "Include the falsity-left family: conjunction decomposition preserves its contextual falsity, and contraction never removes the last falsity occurrence."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTAUX-20260927",
+  "unit_id": "OLP-0660",
+  "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+  "source_sha256": "4fc53ce7b95d519d63b400945ad34012779aee9d48404b74cfbfee829a0c9b26",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTAUX-001",
+      "source_locator": "intuitionistic.tex line 43, third cut tree first premise",
+      "classification": "cut_formula_letters_reversed",
+      "source_issue": "The proof tree has B! where the surrounding formulas and its conclusion require !B.",
+      "minimal_treatment": "Correct B! to !B in the target tree and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$B!,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Pi\\fCenter\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Pi\\fCenter\\Lambda$\\RightLabel{\\Cut}\\BinaryInf$!B,\\Gamma,\\Pi\\fCenter\\Delta,\\Lambda$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTAUX-002",
+      "source_locator": "intuitionistic.tex line 68, last induction bound",
+      "classification": "undefined_cut_rank_macro",
+      "source_issue": "The source uses cutr(pi), which is not defined; the chapter uses cutrank(pi).",
+      "minimal_treatment": "Use cutrank(pi) in the target and disclose the notation correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$<\\cutr{\\pi}$"
+        ],
+        "target_only": [
+          "$<\\cutrank{\\pi}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTAUX-003",
+      "source_locator": "intuitionistic.tex lines 45–71, last two cut diagrams and following prose",
+      "classification": "unreconstructed_cut_context_inconsistencies",
+      "source_issue": "The displayed conclusions of the last cuts and the context multiplicities claimed in the following prose do not follow from the ordinary Cut premises as written.",
+      "minimal_treatment": "Preserve those source-controlled proof trees, disclose the inconsistency, and do not claim the fragment is a complete verified derivation.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

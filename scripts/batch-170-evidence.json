@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "170",
+  "unit_id": "OLP-0521",
+  "unit_order": 521,
+  "source_path": "content/counterfactuals/introduction/counterfactuals.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7817,
+  "previous_terms": 210,
+  "expected_corrections": 475,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P020", "TE-P021"],
+  "consultation_phase": "స్థిర ప్రతివాస్తవ పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ భౌతిక/కఠిన సోపాధిక పదాలు, స్థానిక తర్క సాక్షులు ఎదురెదురు చూశాం; ఓస్వాల్డ్ జంట వాక్యాల సూచనాత్మక-సంభావనార్థక భేదం, అగ్గిపుల్ల కారణ ఉదాహరణ, స్టాల్నేకర్-లూయిస్ సమీప లోక భావం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/020/021 సాధారణ తర్క, సోపాధిక పదాలకు మాత్రమే సాక్షులు; చారిత్రక ఓస్వాల్డ్/వారెన్ వాదనకు స్వతంత్ర చారిత్రక ధృవీకరణ లేదు. సమీప సాధ్యలోక భావం మూల వివరణ నియంత్రితం; PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T211",
+    "source_term": "counterfactual versus indicative conditional / subjunctive / closest possible world / causal reasoning",
+    "telugu": "ప్రతివాస్తవ వర్సెస్ సూచనాత్మక సోపాధికం / సంభావనార్థక రూపం / అత్యంత సమీప సాధ్యలోకం / కారణాత్మక వాదన",
+    "status": "definition_controlled_counterfactual_indicative_distinction_with_native_general_logic_register",
+    "passages": ["TE-P018", "TE-P019", "TE-P020", "TE-P021"],
+    "basis": "ఆడమ్స్ జంట వాక్యాల్లో వాస్తవిక ‘చంపకపోతే’ మరియు ప్రతివాస్తవ ‘చంపి ఉండకపోయి ఉంటే’ భేదం, అగ్గిపుల్ల కారణ ఉదాహరణ, సమీప సాధ్యలోక అర్థవిచారం, రెండు తర్కాల భేదం నిలిచాయి.",
+    "uncertainty": "ప్రతివాస్తవ, సంభావనార్థక, సత్తాత్మక ప్రత్యేక పదాలకు ప్రత్యక్ష సాక్షి లేదు; మూల వాక్యజంట, అర్థవిచార వివరణే అర్థాన్ని నిర్దేశిస్తాయి. చారిత్రక వాదనల స్వతంత్ర తనిఖీ లేదు.",
+    "borrowing": "Oswald, Kennedy, Warren, Adams, Stalnaker and Lewis names are transliterated; S/T and connective notation remain source-controlled."
+  }
+}

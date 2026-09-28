@@ -1,0 +1,89 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{using-addition}
+\olsection{క్రమసంఖ్య కూడిక వినియోగం}
+
+క్రమసంఖ్య కూడికను వాడి, \olref[spine][rank]{defnsetrank} అర్థంలో, వివిధ సమితుల స్థాయిలను స్పష్టంగా లెక్కించవచ్చు:
+
+\begin{lem}\ollabel{rankcomputation}
+$\setrank{A} = \alpha$, $\setrank{B} = \beta$ అయితే:
+\begin{enumerate}
+	\item\ollabel{exrankpow} $\setrank{\Pow{A}} = \alpha\ordplus 1$
+	\item\ollabel{exrankpair} $\setrank{\{A, B\}} = \max(\alpha,
+	\beta) \ordplus 1$
+	\item\ollabel{exrankcup} $\setrank{A \cup B} = \max(\alpha,
+	\beta)$
+	\item\ollabel{exranktuple} $\setrank{\tuple{A,B}} = \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exranktimes} $\setrank{A \times B} \leq \max(\alpha,
+	\beta) \ordplus  2$
+	\item\ollabel{exrankunion} $\alpha$ శూన్యం లేదా సీమా క్రమసంఖ్య అయితే $\setrank{\bigcup A} = \alpha$; $\alpha = \gamma\ordplus 1$ అయితే $\setrank{\bigcup A} = \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+అంతటా \olref[spine][rank]{ranksupstrict}ను పదేపదే వాడతాం.
+
+\emph{\olref{exrankpow}.} $x \subseteq A$ అయితే $\setrank{x} \leq
+\setrank{A}$. కాబట్టి $\setrank{\Pow{A}} \leq \alpha \ordplus  1$. ముఖ్యంగా $A
+\in \Pow{A}$ కాబట్టి $\setrank{\Pow{A}} = \alpha \ordplus  1$.
+
+\emph{\olref{exrankpair}.} \olref[spine][rank]{ranksupstrict} ప్రకారం.
+
+\emph{\olref{exrankcup}.} \olref[spine][rank]{ranksupstrict} ప్రకారం.
+
+\emph{\olref{exranktuple}.} \olref{exrankpair}ను రెండుసార్లు వాడితే.
+
+\emph{\olref{exranktimes}.} $A \times B \subseteq
+\Pow{\Pow{A \cup B}}$ అని గమనించి \olref{exranktuple}ను వాడండి.
+
+\emph{\olref{exrankunion}.} $\alpha = \gamma\ordplus 1$ అయితే $\setrank{c} = \gamma$ అయ్యే ఏదో $c \in A$ ఉంటుంది; $A$లోని ఏ \tetoken{మూలకం}{!!{element}}కూ అంతకంటే పెద్ద స్థాయి ఉండదు. అందువల్ల $\setrank{\bigcup A} = \gamma$. $\alpha$ సీమా క్రమసంఖ్య అయితే $A$లో, $\alpha$కు ఇష్టం వచ్చినంత దగ్గరగా (కానీ కఠినంగా తక్కువగా) స్థాయి గల \tetoken{మూలకాలు}{!!{element}s} ఉంటాయి; అందువల్ల $\bigcup A$లో కూడా $\alpha$కు ఇష్టం వచ్చినంత దగ్గరగా (కానీ కఠినంగా తక్కువగా) స్థాయి గల \tetoken{మూలకాలు}{!!{element}s} ఉంటాయి; కాబట్టి $\setrank{\bigcup A} = \alpha$.
+\end{proof}
+\noindent
+\olref{exranktimes}లో సమానత్వం కాక \emph{అసమానత్వం} ఎందుకు ఉందో చూపడం అభ్యాసానికి వదిలేస్తాం.
+
+\begin{prob}
+$\setrank{A \times B}=
+\max(\setrank{A}, \setrank{B})$ అయ్యే సమితులు $A$, $B$ ఇవ్వండి. అలాగే $\setrank{A \times B}=\max(\setrank{A}, \setrank{B}) \ordplus  2$ అయ్యే సమితులు $A$, $B$ ఇవ్వండి. ఇతర స్థాయిలు సాధ్యమేనా?
+\sourcecorrection{OLTESTORDUSEADD-001}{రెండవ అభ్యాస సమీకరణంలో మూలం $\setrank{A\times B}$ తరువాత సంబంధ సంకేతాన్ని వదిలింది; ఈ అభ్యాసం దిగువ, ఎగువ హద్దులు సాధించే ఉదాహరణలు అడుగుతుంది కాబట్టి సమానత్వాన్ని చేర్చాం.}
+\end{prob}
+
+క్రమసంఖ్యను ``పరిమితం'' లేదా ``అనంతం'' అని చెప్పడానికి సహజంగా అనిపించే పలు భావనలు ఒకటేనని ఇప్పుడు చూపవచ్చు:
+
+\begin{lem}\ollabel{ordinfinitycharacter}
+ఏ క్రమసంఖ్య $\alpha$కైనా ఈ కిందివి సమానార్థకాలు:
+\begin{enumerate}
+	\item\ollabel{ord:notinomega} $\alpha\notin \omega$, అంటే $\alpha$ సహజ సంఖ్య కాదు
+	\item\ollabel{ord:omegaplus} $\omega \leq \alpha$
+	\item\ollabel{ord:oneplus} $1 \ordplus  \alpha = \alpha$
+	%\alpha \approx \alpha \ordplus 1$
+	\item\ollabel{ord:plusone} $\alpha \approx \alpha\ordplus 1$, అంటే $\alpha$, $\alpha\ordplus 1$ సమసంఖ్యకాలు
+	\item\ollabel{ord:infinite} $\alpha$ డెడెకిండ్ అనంతం
+	\end{enumerate}
+\end{lem}
+\noindent
+కాబట్టి ఒక క్రమసంఖ్య (అ)పరిమితమా కాదా అర్థం చేసుకోవడానికి నిరూపించదగిన సమానార్థకమైన ఐదు మార్గాలు ఉన్నాయి.
+
+\begin{proof}
+\emph{\olref{ord:notinomega} $\Rightarrow$ \olref{ord:omegaplus}.} త్రిభేద ధర్మం ప్రకారం.
+
+\emph{\olref{ord:omegaplus} $\Rightarrow$ \olref{ord:oneplus}.} $\alpha \geq \omega$ను స్థిరపరుచుకుందాం. అతిపరిమిత ఆగమనం ప్రకారం $\alpha = \beta \ordplus \gamma$ అయ్యే సీమా క్రమసంఖ్య $\beta$ ఉండటానికి, సాధ్యమైనంత కనిష్ఠ క్రమసంఖ్య $\gamma$ (బహుశా $0$) ఉంటుంది. ఇప్పుడు:
+\[
+	1 \ordplus \alpha =
+	1 \ordplus (\beta \ordplus \gamma) =
+	(1 \ordplus \beta) \ordplus \gamma =
+	\supstrict_{\delta < \beta} (1 \ordplus  \delta) \ordplus  \gamma =
+	\beta \ordplus  \gamma =
+	\alpha.
+\]
+\emph{\olref{ord:oneplus} $\Rightarrow$ \olref{ord:plusone}.} $f \colon (\alpha \disjointsum 1) \to (1
+\disjointsum \alpha)$ అనే \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}} స్పష్టంగా ఉంది. $1 \ordplus \alpha = \alpha$ అయితే $g \colon (1 \disjointsum \alpha) \to \alpha$ అనే సమరూపత ఉంటుంది. ఇప్పుడు $\comp{f}{g}$ను పరిగణించండి.
+
+\emph{\olref{ord:plusone} $\Rightarrow$ \olref{ord:infinite}.} $\alpha \approx \alpha \ordplus 1$ అయితే $f \colon (\alpha \disjointsum 1) \to \alpha$ అనే \tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}} ఉంటుంది. ప్రతి $\gamma < \alpha$కు $g(\gamma) = f(\gamma, 0)$గా నిర్వచించండి; ఈ \tetoken{ఒకటి-ఒకటి ప్రమేయం}{!!{injection}}, $f(0,1) \in \alpha \setminus \ran{g}$ కాబట్టి, $\alpha$ డెడెకిండ్ అనంతమని చూపుతుంది.
+
+\emph{\olref{ord:infinite} $\Rightarrow$ \olref{ord:notinomega}.} ఇది \olref[z][infinity-again]{naturalnumbersarentinfinite}.
+\end{proof}
+
+\end{document}

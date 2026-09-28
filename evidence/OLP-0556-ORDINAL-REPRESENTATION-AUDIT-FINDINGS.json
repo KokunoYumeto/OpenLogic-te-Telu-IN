@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDTYPE-20260927",
+  "unit_id": "OLP-0556",
+  "source_path": "content/set-theory/ordinals/ordtype.tex",
+  "source_sha256": "9a123198cbfcd0000eb27804a39148d5ee5fb7ad41cf7cff04ad78ea320dfcd6",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDTYPE-001",
+      "source_locator": "ordtype.tex line 67, second corollary proof isomorphism declaration",
+      "classification": "isomorphism_function_codomain_misidentified_as_ordered_structure",
+      "source_issue": "f is written beta -> <B,lessdot> although its underlying function has codomain B.",
+      "minimal_treatment": "Write f : beta -> B and disclose, retaining the order-isomorphism context.",
+      "expected_core_math_delta": {
+        "source_only": ["$f\\colon\\beta\\to\\tuple{B,\\lessdot}$"],
+        "target_only": ["$f\\colon\\beta\\toB$"]
+      }
+    },
+    {
+      "finding_id": "OLTESTORDTYPE-002",
+      "source_locator": "ordtype.tex lines 69–74, second corollary proof displayed equivalence chain",
+      "classification": "undefined_function_value_in_biconditional",
+      "source_issue": "The first displayed iff invokes f(alpha) when alpha is not in beta, so the right side is undefined on the false case.",
+      "minimal_treatment": "Replace the chain with an existential proper-initial-segment equivalence valid in both directions and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}\\alpha\\in\\beta&\\funrestrictionto{f}{\\alpha}\\colon\\alpha\\toB_{f(\\alpha)}\\\\&\\ordeq{\\tuple{A,<}}{\\tuple{B_{f(\\alpha)},\\lessdot_{f(\\alpha)}}}\\\\&\\ordeq{\\tuple{A,<}}{\\tuple{B_b,\\lessdot_b}}\\end{align*}"],
+        "target_only": ["\\begin{align*}\\alpha\\in\\beta&\\ordeq{\\alpha}{\\tuple{B_b,\\lessdot_b}}b\\inB\\\\&\\ordeq{\\tuple{A,<}}{\\tuple{B_b,\\lessdot_b}}\\end{align*}"]
+      }
+    }
+  ]
+}

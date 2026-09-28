@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "289",
+  "unit_id": "OLP-0640",
+  "unit_order": 640,
+  "source_path": "content/reference/reference.tex",
+  "blocks": 9,
+  "linguistic_blocks": [4,5],
+  "previous_segments": 9423,
+  "previous_terms": 329,
+  "expected_corrections": 542,
+  "canon_default": ["TE-P003", "TE-P004"],
+  "consultation_phase": "సూచిక భాగం స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ అనుబంధం/నిర్వచనం/నియమం పదాలు పోల్చి రెండు దిగుమతుల నిర్మాణం తనిఖీ చేశాం.",
+  "evidence_limit": "ఇది చిన్న సంపాదకీయ పరిచయం మాత్రమే; దిగుమతి చేసిన అధ్యాయాల విషయ నిర్ధారణ వేరుగా కొనసాగుతుంది. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T330","source_term":"reference; appendix lists","telugu":"సూచిక; అనుబంధ జాబితాలు","status":"reference_part_localized_imports_preserved","passages":["TE-P003","TE-P004"],"basis":"భాగ శీర్షిక, సంపాదకీయ పరిచయం తెలుగులోకి మార్చి గ్రీకు/ఫ్రాక్టూర్ దిగుమతులు మార్చలేదు.","uncertainty":"సూచిక అనే భాగ శీర్షికకు ప్రత్యామ్నాయంగా సందర్శిక వాడవచ్చు; పూర్వ పాఠ్య సందర్భానికి సూచిక ఎంచుకున్నాం.","borrowing":"Import keys and part ID remain source-identifying."}
+}

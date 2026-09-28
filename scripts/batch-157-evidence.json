@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "157",
+  "unit_id": "OLP-0508",
+  "unit_order": 508,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/truth-lemma.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7665,
+  "previous_terms": 197,
+  "expected_corrections": 467,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సత్య ఉపప్రమేయ మూలం, తెలుగు లక్ష్యం, పూర్వ కానానికల్/ప్రధాన-సమితి/లోక-సత్య పదాలు, స్థానిక మూలక/తర్క/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; అసత్య, అణు, సంయోగ, వియోజన, సోపాధిక ఆగమన కేసులు, మూల ఖాళీ నిరాకరణ కేసు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/018/024/025 సాధారణ మూలక/తర్క/నిరూపణ పదాలకు మాత్రమే సాక్షులు. కానానికల్ నమూనా సత్య ఉపప్రమేయానికి ప్రత్యక్ష సాక్షులు కావు; మూల నిరాకరణ ఆగమన కేసును నిరూపణ లేక ఖాళీగా ఉంచుతుంది.",
+  "term_decision": {
+    "term_id": "TE-T198",
+    "source_term": "truth lemma / canonical-model satisfaction iff prime-set derivability / induction cases",
+    "telugu": "సత్య ఉపప్రమేయం / కానానికల్ నమూనా సత్యం, ప్రధాన సమితి వ్యుత్పాద్యత సమానత్వం / ఆగమన కేసులు",
+    "status": "native_general_set_logic_proof_register_attested_truth_lemma_source_controlled_negation_case_unproved_in_source",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "సత్య-వ్యుత్పాద్యత iff, ప్రధానత, అసత్య/అణు/సంయోగ/వియోజన/సోపాధిక కేసులు, లోక విస్తరణల కారణం, మూల ఖాళీ నిరాకరణ కేసు యథాతథంగా నిలిచాయి.",
+    "uncertainty": "మూలంలో నిరాకరణ కేసు indcase! సంకేతంతో ఖాళీగా ఉంది; పూర్తి సత్య ఉపప్రమేయ నిరూపణ ధృవీకరించబడిందని చెప్పలేం. పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Canonical-model and Greek-indexed notation follow established translation usage; protected labels remain source-controlled."
+  }
+}

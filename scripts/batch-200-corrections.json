@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0551",
+  "source_path": "content/set-theory/ordinals/iso.tex",
+  "source_sha256": "eb57a72aed6e4ff2398fe8d9c52239c79d2578df37c5e4bb891568381a41cb39",
+  "audit_id": "OLTESTORDISO-20260927",
+  "audit_review_path": "evidence/OLP-0551-ORDER-ISOMORPHISMS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "08ffc39409ac5e56b16fe6628078282e4f5afb65ebcc6099491c695b0deaf972",
+  "audit_findings_path": "evidence/OLP-0551-ORDER-ISOMORPHISMS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4d3529d24a868130ecadc1cfc7f5460bc304b5e91d4948abf87fba5092629218",
+  "previous_corrections": 481,
+  "treatments": {
+    "OLTESTORDISO-001": {
+      "target_line": 251,
+      "body_treatment": "సమరూపత లక్ష్య ఖండం విలువల పరిధి B_b2 అని చెప్పి, మూలంలోని నిర్వచన సమితి అనే తప్పును పక్కనే ప్రకటించాం."
+    }
+  }
+}

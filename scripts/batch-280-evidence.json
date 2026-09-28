@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "280",
+  "unit_id": "OLP-0631",
+  "unit_order": 631,
+  "source_path": "content/history/biographies/alan-turing.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13],
+  "previous_segments": 9315,
+  "previous_terms": 320,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P005", "TE-P011", "TE-P018", "TE-P024"],
+  "consultation_phase": "ట్యూరింగ్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ట్యూరింగ్ యంత్రం/లాంబ్డా కలనశాస్త్రం/నిర్ణయ సమస్య పదాలు, స్థానిక గణన-తర్క సాక్షులు పోల్చాం; చర్చ్ ముందరి ఫలితం, ఎనిగ్మా-లోరెన్జ్ యంత్రాల భేదం, మరణ కారణంపై మూల సంభావ్యత, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణన/తర్క పదాలకు నేపథ్యం మాత్రమే; యుద్ధ, నేరచట్ట, ఆరోగ్య/మరణ చారిత్రక వివరాలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. మూల అనిశ్చితిని అనిశ్చితిగానే ఉంచాం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T321","source_term":"Alan Turing; Turing machine; Enigma/bombe; Colossus","telugu":"అలన్ ట్యూరింగ్; ట్యూరింగ్ యంత్రం; ఎనిగ్మా/బాంబ్; కొలోసస్","status":"distinct_codebreaking_machines_church_priority_and_suicide_qualification_source_controlled","passages":["TE-P003","TE-P005","TE-P011","TE-P018","TE-P024"],"basis":"ట్యూరింగ్ యంత్రం నిర్ణయ సమస్యకు, చర్చ్ ముందరి లాంబ్డా ఫలితానికి వేరు; ఎనిగ్మా కోసం బాంబ్, లోరెన్జ్ కోసం కొలోసస్ వేరు; మరణం ఆత్మహత్య అయ్యే అవకాశం ఎక్కువ అని మాత్రమే మూలం చెబుతుందని నిలిచింది.","uncertainty":"యుద్ధ సాంకేతిక, న్యాయ, వైద్య చరిత్ర స్వతంత్రంగా ధృవీకరించలేదు; ప్రత్యేక యంత్రాల పేర్లకు స్థానిక సాక్షి లేదు.","borrowing":"Turing, Enigma, bombe, Colossus and film/podcast titles are source-identifying names; citation keys remain unchanged."}
+}

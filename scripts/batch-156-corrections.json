@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0507",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/canonical-model.tex",
+  "source_sha256": "2397d36f77e15b27cf5889ab0e2bdfd34e060416aae5089afbfccb881cde8128",
+  "audit_id": "OLTEINTCAN-20260927",
+  "audit_review_path": "evidence/OLP-0507-CANONICAL-MODEL-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1cace55b0b48ad14f5b4095c1d05ae80c8d4f471219939fc8184be07dae25d5b",
+  "audit_findings_path": "evidence/OLP-0507-CANONICAL-MODEL-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "971583d9ef98b4719abd58f61d70bb39c2712a533b2e56992eabc8b1e39c65ec",
+  "previous_corrections": 466,
+  "treatments": {
+    "OLTEINTCAN-001": {"target_line": 91, "body_treatment": "R-విస్తరణల్లో V ఏకదిశ పెరుగుదల నిరూపణలో స్థిర మూల క్రమం బదులు జోడించిన పరిమిత భాగపు పొడవుపై ఆగమన పద్ధతిని పేర్కొని ప్రకటించాం."}
+  }
+}

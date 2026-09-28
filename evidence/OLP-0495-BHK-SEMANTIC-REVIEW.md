@@ -1,0 +1,7 @@
+# OLP-0495 — same-agent semantic review
+
+- Frozen source: `upstream/content/intuitionistic-logic/introduction/bhk-interpretation.tex`, SHA-256 `4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794`.
+- Telugu target: `translation/content/intuitionistic-logic/introduction/bhk-interpretation.tex`, SHA-256 `f4f88109c087cfa2da1ee9d235cb83c1e173e81048d693a65c3f8363fab045a4`.
+- Bounded QA: `build/BATCH-144-STRUCTURAL-QA.json`, 20 aligned blocks; structure, tokens, identifiers and declared math deltas pass. Same-agent review only, not TeX compilation or a fully independent proof.
+
+The editorial caveat about confusing BHK examples is retained. The construction/proof distinction, conjunction pair, tagged disjunction pair, implication as function, falsity without construction, and negation-as-implication clauses are explicit. The examples retain the identity construction of `\lnot\lfalse`, double-negation introduction, noncontradiction, currying, and the double negation of excluded middle. OLTEINTBHK-001 repairs the single missing meta-formula marker `!` in the currying codomain; OLTEINTBHK-002 pairs the first disjunction tag with its actual input `M_1`. Both changes are disclosed adjacent to their examples. The source's philosophical claim that ordinary excluded middle is not generally constructively provable is not converted into a proof. TE-P003/004/018/024/025 attest only general proof and logic vocabulary.

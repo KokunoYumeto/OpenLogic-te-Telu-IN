@@ -1,0 +1,31 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDADD-20260927",
+  "unit_id": "OLP-0576",
+  "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+  "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDADD-001",
+      "source_locator": "addition.tex lines 77–78, successor-isomorphism proof codomain",
+      "classification": "disjoint_sum_reapplied_to_already_tagged_components",
+      "source_issue": "The equality uses disjointsum between two components that are already the tagged parts of alpha disjointsum 1.",
+      "minimal_treatment": "Use ordinary union between tagged components and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\disjointsum(\\{0\\}\\times\\{1\\})$"],
+        "target_only": ["$\\alpha\\disjointsum1=(\\alpha\\times\\{0\\})\\cup(\\{0\\}\\times\\{1\\})$"]
+      }
+    },
+    {
+      "finding_id": "OLTESTORDADD-002",
+      "source_locator": "addition.tex line 100, second line of zero-addition calculation",
+      "classification": "empty_product_replaced_by_nonempty_singleton",
+      "source_issue": "The source turns the empty set 0 x {1} into the nonempty singleton {0}.",
+      "minimal_treatment": "Eliminate the empty summand in the displayed order type and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup\\{0\\},\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"],
+        "target_only": ["\\begin{align*}\\alpha\\ordplus0&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(0\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{\\alpha\\times\\{0\\},\\rlexless}\\\\&=\\alpha\\\\\\alpha\\ordplus(\\beta\\ordplus1)%&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordtype{\\beta\\ordplus1}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\ordsucc{\\beta}\\times\\{1\\}),\\rlexless}\\\\&=\\ordtype{(\\alpha\\times\\{0\\})\\cup(\\beta\\times\\{1\\}),\\rlexless}\\ordplus1\\\\&=(\\alpha\\ordplus\\beta)\\ordplus1\\end{align*}"]
+      }
+    }
+  ]
+}

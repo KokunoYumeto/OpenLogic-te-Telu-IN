@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMODBASENSA-20260927",
+  "unit_id": "OLP-0653",
+  "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+  "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+  "findings": [
+    {
+      "finding_id": "OLTEMODBASENSA-001",
+      "source_locator": "nonstandard-arithmetic.tex lines 41–54, expanded-language model notation",
+      "classification": "arithmetic_language_name_inconsistent",
+      "source_issue": "The proof explicitly expands L_N, then calls the interpreted arithmetic constants those of L without introducing L as an alias. The intended base language appears to be L_N.",
+      "minimal_treatment": "Preserve the source notation and disclose the name mismatch adjacent to its use.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEMODBASENSA-002",
+      "source_locator": "nonstandard-arithmetic.tex lines 114–124, separated-block successor step",
+      "classification": "successor_step_repeats_weaker_assumption",
+      "source_issue": "After ruling out x*=y, the source repeats x<y, which was already assumed. The needed stronger conclusion is x*<y.",
+      "minimal_treatment": "State x*<y in the target and disclose the one-symbol conclusion repair.",
+      "expected_core_math_delta": {"source_only": ["$x\\precy$"], "target_only": ["$x^*\\precy$"]}
+    },
+    {
+      "finding_id": "OLTEMODBASENSA-003",
+      "source_locator": "nonstandard-arithmetic.tex lines 125–130, lifting the order to blocks",
+      "classification": "strict_order_claim_missing_distinct_block_hypothesis",
+      "source_issue": "The source says x<y implies the block of x is strictly below the block of y, but x and y may lie in the same block. The strict block order requires x not approximately y.",
+      "minimal_treatment": "Add the distinct-block condition in the target and disclose it.",
+      "expected_core_math_delta": {"source_only": [], "target_only": ["$x\\not\\approxy$"]}
+    },
+    {
+      "finding_id": "OLTEMODBASENSA-004",
+      "source_locator": "nonstandard-arithmetic.tex lines 131–144, parity/division sentence",
+      "classification": "universal_witness_quantifier_must_be_existential",
+      "source_issue": "The displayed sentence universally quantifies x in the claim that every y equals 2x or 2x+1. This is false; division by two says for each y there exists such an x. The subsequent argument also uses existence.",
+      "minimal_treatment": "Replace the inner universal quantifier by an existential quantifier and disclose the repair.",
+      "expected_core_math_delta": {"source_only": ["$\\Sat{N}{\\lforall[y][\\lforall[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"], "target_only": ["$\\Sat{N}{\\lforall[y][\\lexists[x][(y=x+x\\lory=x+x+\\Obj{0}')]]}$"]}
+    }
+  ]
+}

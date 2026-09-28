@@ -1,0 +1,132 @@
+% Part: counterfactuals
+% Chapter: introduction
+% Section: strict-conditional
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{int}{str}
+
+\olsection{కఠిన సోపాధికం}
+
+లూయిస్ \emph{కఠిన సోపాధికం}~$\strictif$ను
+ప్రవేశపెట్టి, భౌతిక సోపాధికం కాకుండా ఇదే
+పర్యవసాన భావానికి సరిపోతుందని వాదించారు.
+అలేథిక్ మోడల్ తర్కంలో $!A \strictif !B$ను
+$\Box(!A \lif !B)$గా నిర్వచించవచ్చు.
+కాబట్టి సంబంధిత భౌతిక సోపాధికం
+అనివార్యమైనప్పుడే కఠిన సోపాధికం
+(ఒక లోకంలో) సత్యం.
+
+భౌతిక సోపాధికం వైరుధ్యాభాసాల విషయంలో
+కఠిన సోపాధికం ఎలా పనిచేస్తుంది?
+అసత్య పూర్వపక్షం గల కఠిన సోపాధికం,
+సత్య ఉత్తరపక్షం గల కఠిన సోపాధికం
+సత్యం కావచ్చు, అసత్యమూ కావచ్చు.
+అంతేకాకుండా $(!A \strictif !B) \lor
+(!B \strictif !A)$ సర్వత్ర చెల్లదు.
+కఠిన సోపాధికం $!A \strictif !B$,
+$\lnot !A \lor !B$కు తుల్యమూ కాదు;
+అందువల్ల అది సత్యమూల్యాధారితం కాదు.
+
+మనకు ఇవి ఉన్నాయి:
+\begin{align}
+  !A \strictif !B & \Entails \lnot !A \lor !B
+  \text{ కానీ:}\\
+  \lnot !A \lor !B & \Entails/ !A \strictif !B\\
+  !B & \Entails/ !A \strictif !B\\
+  \lnot !A & \Entails/ !A \strictif !B\\
+  \lnot(!A \strictif !B) & \Entails/ !A \land \lnot !B
+  \text{ కానీ:}\\
+  !A \land \lnot !B & \Entails \lnot(!A \strictif !B)
+  \intertext{అయినా కఠిన సోపాధికానికి
+    మోడస్ పోనెన్స్ వర్తిస్తుంది:}
+  !A, !A \strictif !B & \Entails !B
+  \intertext{కఠిన సోపాధికాలను
+    ఒకటిగా చేర్చవచ్చు:}
+  !A \strictif !B,  !A \strictif !C & \Entails !A \strictif (!B \land !C)
+  \intertext{కఠిన సోపాధికానికి
+    పూర్వపక్ష బలపరచడం వర్తిస్తుంది:}
+  !A \strictif !B & \Entails (!A \land !C) \strictif !B
+  \intertext{కఠిన సోపాధికం కూడా సంక్రామకం:}
+  !A \strictif !B, !B \strictif !C & \Entails !A \strictif !C
+  \intertext{చివరగా, కఠిన సోపాధికం తన
+    ప్రతివిపర్యయానికి తుల్యం:}
+  !A \strictif !B & \Entails \lnot !B \strictif \lnot !A\\
+  \lnot !B \strictif \lnot !A & \Entails !A \strictif !B
+\end{align}
+\sourcecorrection{OLTECNTSTR-001}{మూల ప్రదర్శనలో ఐదో అపర్యవసానానికి భౌతిక సోపాధిక నిరాకరణను వాడారు; అది నిజానికి పూర్వపక్షం-నిరాకృత ఉత్తరపక్షం సంయోగానికి తుల్యం. ఇక్కడ ఉద్దేశించిన అపర్యవసానం కఠిన సోపాధిక నిరాకరణది; దాని సంకేతాన్ని సరిచేశాం.}
+
+\begin{prob}
+  కఠిన సోపాధికానికి వర్తించని
+  పర్యవసాన సంబంధాలకు
+  \Log{S5}-ప్రతిదృష్టాంతాలు ఇవ్వండి; అంటే:
+  \begin{enumerate}
+  \item $\lnot p \Entails/ \Box(p \lif q)$
+  \item $q \Entails/ \Box(p \lif q)$
+  \item $\lnot\Box(p \lif q) \Entails/ p \land \lnot q$
+  \item $\Entails/ \Box(p \lif q) \lor \Box(q \lif p)$
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  కఠిన సోపాధికానికి వర్తించే
+  పర్యవసాన సంబంధాలను కింది వాటికి
+  \Log{S5}-నిరూపణలు ఇచ్చి చూపండి:
+  \begin{enumerate}
+  \item  $\Box(!A \lif !B) \Entails \lnot !A \lor !B$
+  \item $!A \land \lnot !B \Entails \lnot\Box(!A \lif !B)$
+  \item $!A, \Box(!A \lif !B) \Entails !B$
+  \item $\Box(!A \lif !B), \Box(!A \lif !C) \Entails \Box(!A \lif (!B
+    \land !C))$
+  \item $\Box(!A \lif !B) \Entails \Box((!A \land !C) \lif !B)$
+  \item $\Box(!A \lif !B), \Box(!B \lif !C) \Entails \Box(!A
+    \lif !C)$
+  \item $\Box(!A \lif !B) \Entails \Box(\lnot !B \lif \lnot !A)$
+  \item $\Box(\lnot !B \lif \lnot !A) \Entails \Box(!A \lif !B)$
+  \end{enumerate}
+  \end{prob}
+
+అయితే కఠిన సోపాధికానికి కూడా దాని
+సొంత ``వైరుధ్యాభాసాలు'' ఉన్నాయి.
+అసత్య పూర్వపక్షం లేదా సత్య ఉత్తరపక్షం
+గల భౌతిక సోపాధికం సత్యమైనట్టే,
+\emph{అనివార్యంగా} అసత్య పూర్వపక్షం
+లేదా అనివార్యంగా సత్య ఉత్తరపక్షం గల
+కఠిన సోపాధికం సత్యం. అంతేకాకుండా,
+సత్యమైన ఏ కఠిన సోపాధికమైనా అనివార్యంగా
+సత్యం; అసత్యమైన ఏ కఠిన సోపాధికమైనా
+అనివార్యంగా అసత్యం. మరో మాటలో:
+\begin{align}
+  \Box \lnot !A & \Entails !A \strictif !B\\
+  \Box !B & \Entails !A \strictif !B\\
+  !A \strictif !B& \Entails \Box(!A \strictif !B)\\
+  \lnot(!A \strictif !B) & \Entails \Box\lnot(!A \strictif !B)
+\end{align}
+మీరు $\strictif$ను ``పర్యవసిస్తుంది''
+అని భావిస్తే ఇవి సమస్యలు కావు. తార్కిక
+పర్యవసాన సంబంధాలు గణిత వాస్తవాలే;
+అందువల్ల అవి యాదృచ్ఛిక స్థితులపై
+ఆధారపడవు. కానీ ``ఒకవేళ \dots అయితే
+\dots'' భావాన్ని పట్టుకోవాల్సిన తార్కిక
+సంయోజకంగా $\strictif$ను వాడాలంటే,
+ముఖ్యంగా చివరి రెండు వాదనలు సమస్యలు
+రేకెత్తిస్తాయి. ఎందుకంటే అనివార్యం
+కాకుండానే సత్యమైన లేదా అసత్యమైన
+``ఒకవేళ \dots అయితే \dots'' వాక్యాలు
+నిశ్చయంగా ఉన్నాయి; నిజానికి అవి
+సాధారణంగా అనివార్యాలూ కావు,
+అసంభవాలూ కావు.
+
+\begin{prob}
+  \Log{S5}లో కింది వాటికి నిరూపణలు ఇవ్వండి:
+  \begin{enumerate}
+    \item  $\Box \lnot !A \Entails !A \strictif !B$
+    \item $!A \strictif !B \Entails \Box(!A \strictif !B)$
+    \item $\lnot(!A \strictif !B)  \Entails \Box\lnot(!A \strictif !B)$
+  \end{enumerate}
+  అందుకు $\strictif$ నిర్వచనాన్ని వాడండి.
+\end{prob}
+
+\end{document}

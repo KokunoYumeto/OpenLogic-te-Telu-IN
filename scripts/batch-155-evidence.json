@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "155",
+  "unit_id": "OLP-0506",
+  "unit_order": 506,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+  "blocks": 22,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+  "previous_segments": 7633,
+  "previous_terms": 195,
+  "expected_corrections": 466,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"16": ["OLTEINTLIN-001"], "19": ["OLTEINTLIN-002"]},
+  "consultation_phase": "స్థిర లిండెన్‌బామ్ ఉపప్రమేయం మూలం, తెలుగు లక్ష్యం, పూర్వ వ్యుత్పాద్యత/అవైరుధ్య/సంపూర్ణత పదాలు, స్థానిక సమితి/తర్క/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; ప్రధాన సమితి మూడు షరతులు, Γ_n నిర్మాణం, అవ్యుత్పాద్యత ఆగమనం, పరిమిత మద్దతు, వియోజన వరుస న్యాయబద్ధత తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/018/024/025/026 సాధారణ సమితి/తర్క/వ్యుత్పత్తి/నిరూపణ పదాలకు మాత్రమే సాక్షులు. ప్రధాన సమితి శాఖా నిర్వచనం, నిర్మాణ నిరూపణ మూలం చేత నియంత్రితాలు; ఖాళీ మద్దతు, వరుస ఎంపిక గుణాల సవరణలు నేర గణిత పరిశీలన ఆధారితాలు.",
+  "term_decision": {
+    "term_id": "TE-T196",
+    "source_term": "Lindenbaum lemma / prime set / nonderivability-preserving extension / enumeration fairness",
+    "telugu": "లిండెన్‌బామ్ ఉపప్రమేయం / ప్రధాన సమితి / అవ్యుత్పాద్యతను నిలిపే విస్తరణ / వరుస ఎంపిక న్యాయబద్ధత",
+    "status": "native_general_set_logic_proof_register_attested_lindenbaum_construction_source_controlled_two_disclosed_proof_repairs",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "ప్రధాన సమితి మూడు షరతులు, Γ_n పెరుగుదల, B_i/C_i ఎంపిక, అవ్యుత్పాద్యత ఆగమనం, పరిమిత మద్దతు, ప్రధానత నిరూపణ నిలిచాయి; ఖాళీ మద్దతు, మొత్తం అర్హ వియోజనాల తగ్గుదల అనే రెండు మూల నిరూపణ ఖాళీలను ప్రకటించి సరిచేశాం.",
+    "uncertainty": "స్థానిక సాక్షులు ప్రధాన-సమితి నిర్వచనానికి ప్రత్యక్ష ప్రమాణాలు కావు. వరుస ఎంపిక సవరణ స్థిర సూచికకు ముందున్న పరిమిత సూచికలపై ఆధారపడుతుంది; పూర్తి స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "Lindenbaum is a proper-name transliteration; Gamma-indexed constructions and labels remain source-controlled."
+  }
+}

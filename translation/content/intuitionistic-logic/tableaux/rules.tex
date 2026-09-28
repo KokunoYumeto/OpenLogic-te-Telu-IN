@@ -1,0 +1,183 @@
+% Part: intuitionistic-logic
+% Chapter: tableaux
+% Section: rules
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{tab}{rul}
+
+\olsection{అంతఃప్రజ్ఞావాద తర్క నియమాలు}
+
+$\land$, $\lor$ సంధాయకాల నియమాలు సాధారణ
+ప్రతిజ్ఞావాక్య చిహ్నిత \tetoken{టాబ్లోల}{!!{tableau}s}
+నియమాలే; పూర్వసూచికలు మాత్రమే అదనంగా
+ఉంటాయి. ప్రతి సందర్భంలో, చిహ్నిత
+\tetoken{సూత్రం}{!!{formula}}
+$\sFmla{S}{!A}[\sigma]$కు వర్తింపజేసిన నియమం,
+అదే~$\sigma$ పూర్వసూచిక గల కొత్త
+\tetoken{సూత్రాలను}{!!{formula}s}
+ఇస్తుంది. ఇది అంతఃప్రజ్ఞాత్మకంగా స్పష్టం:
+ఉదాహరణకు $!A
+\land !B$ అనేది~$\sigma$ పేరుగల లోకంలో
+సత్యమైతే, $!A$, $!B$ రెండూ~$\sigma$
+వద్దే సత్యం (వేరే లోకంలో అని కాదు).
+$\land$, $\lor$ నియమాలను
+\olref{tab:prop-rules}లో సమీకరించాం.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{!B}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \land !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\False}{!B}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{!A}[\sigma] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lor !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{!A}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{$\land$, $\lor$లకు పూర్వసూచిక గల \tetoken{టాబ్లో}{!!{tableau}} నియమాలు}
+  \ollabel{tab:prop-rules}
+\end{table}
+
+సంవృతం అయ్యే షరతు సాధారణ
+\tetoken{టాబ్లోల}{!!{tableau}s}
+షరతును పోలి ఉంటుంది; అయితే
+\tetoken{సూత్రాలు}{!!{formula}s}
+మాత్రమే కాక పూర్వసూచికలూ సరిపోవాలి.
+నిజానికి కొంచెం ఉదారంగా ఉండవచ్చు:
+అంతఃప్రజ్ఞావాద నమూనాల్లో
+\tetoken{సూత్రాలు}{!!{formula}s}
+ఒకసారి సత్యమైతే సత్యంగానే ఉంటాయి.
+అందువల్ల~$\sigma$ వద్ద $!A$
+సత్యమై, ప్రాప్యమైన ఏ
+పూర్వసూచిక~$\sigma.{*}$ వద్దైనా
+అసత్యమవడం అసాధ్యం. కాబట్టి ఒక శాఖలో
+ఈ రెండూ ఉంటే అది సంవృతం:
+\[
+\sFmla{\True}{!A}[\sigma] \quad\text{and}\quad \sFmla{\False}{!A}[\sigma.{*}]
+\]
+ఏదో పూర్వసూచిక $\sigma$, \tetoken{సూత్రం}{!!{formula}}~$!A$
+కోసం. చిహ్నాలు విరుద్ధ క్రమంలో ఉంటే,
+అంటే కిందివి ఉంటే,
+\[
+\sFmla{\False}{!A}[\sigma] \quad\text{and}\quad \sFmla{\True}{!A}[\sigma.{*}]
+\]
+ఆ శాఖ సంవృతమయ్యేది $*$ శూన్య
+క్రమమైనప్పుడే అని గమనించండి.
+
+అదనంగా, శాఖలో~$\sFmla{\True}{\bot}[\sigma]$
+ఉన్నా అది సంవృతం.
+
+పరికల్పనలను అమర్చే నియమాలూ
+సాధారణ \tetoken{టాబ్లోల}{!!{tableau}s}
+నియమాలే; అయితే పరికల్పనలకు
+ఎల్లప్పుడూ~$1$ పూర్వసూచికను వాడుతాం.
+(అన్ని పరికల్పనలకు ఒకే పూర్వసూచికను
+వాడితే, అది ఏదైనా పరవాలేదు.)
+అందువల్ల, ఉదాహరణకు,
+\[
+!B_1, \dots, !B_n \Proves !A
+\]
+అని చెప్పేది, కింది పరికల్పనలకు
+సంవృత టాబ్లో ఉన్నప్పుడే:
+\[
+\sFmla{\True}{!B_1}[1], \dots, \sFmla{\True}{!B_n}[1],
+\sFmla{\False}{!A}[1].
+\]
+
+సోపాధికం~$\lif$ నియమాలు సాంప్రదాయిక,
+మోడల్ తర్క కేసులకు భిన్నం.
+$\TRule{\True}{\lif}$ నియమం
+$\sFmla{\True}{!A \lif !B}[\sigma]$
+గల శాఖను రెండు వేర్వేరు శాఖలపై
+$\sFmla{\False}{!A}[\sigma.{*}]$,
+$\sFmla{\True}{!B}[\sigma.{*}]$
+చేర్చి విస్తరిస్తుంది.
+\sourcecorrection{OLTEINTTABRULE-001}{మూల గద్యంలో సత్య సోపాధిక నియమం రెండు ఫలితాల సత్య-చిహ్నాలను పట్టికకు విరుద్ధంగా ఇచ్చింది; నియమపు రెండు వాదనల క్రమాన్నీ తారుమారు చేసింది. గద్యాన్ని దిగువ పట్టికలోని అసత్య పూర్వపక్షం లేదా సత్య ఉత్తరపక్షం అనే సరైన శాఖలతో, అదే నియమ సంకేత క్రమంతో సరిపోల్చాం.}
+ఈ నియమాన్ని వర్తింపజేసే శాఖలో
+\emph{ఇప్పటికే} ఉన్న పూర్వసూచిక~$\sigma.{*}$
+కోసమే వర్తింపజేయవచ్చు. అలాంటి
+పూర్వసూచికను ఆ శాఖపై ``వాడినది''
+అందాం. ($\sigma.{*}$లో $\sigma$
+కూడా ఉంటుంది కాబట్టి,
+$\sFmla{\False}{!A}[\sigma]$,
+$\sFmla{\True}{!B}[\sigma]$ అనే
+పూర్వసూచిక గల చిహ్నిత సూత్రాలను
+వేర్వేరు శాఖల్లో చేర్చి ఈ నియమాన్ని
+ఎప్పుడూ వర్తింపజేయవచ్చు.)
+
+$\TRule{\False}{\lif}$ నియమం
+$\sFmla{\False}{!A \lif !B}[\sigma]$
+గల శాఖపై
+$\sFmla{\True}{!A}[\sigma.n]$,
+$\sFmla{\False}{!B}[\sigma.n]$
+రెండింటినీ అదే శాఖకు చేరుస్తుంది;
+ఇక్కడ $\sigma.n$ ఆ శాఖకు కొత్త
+పూర్వసూచిక.
+
+$\lnot$ నియమాలను కూడా
+ఇదే విధంగా నిర్వచిస్తాం
+($\lnot !A$ను $!A \lif \lfalse$గా
+నిర్వచించడాన్ని ఉపయోగించి).
+
+నియమాలు \olref{tab:rules-lif-lnot}లో ఉన్నాయి.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot !A}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ వాడినది} & \text{$\sigma.n$ కొత్తది}\\
+    \hline
+    \AxiomC{\sFmla{\True}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{!A}[\sigma.{*}] \quad \mid \quad
+      \sFmla{\True}{!B}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{!A \lif !B}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{!A}[\sigma.n]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{!B}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ వాడినది} & \text{$\sigma.n$ కొత్తది}\\
+    \hline
+  \end{array}\]
+  \caption{$\lnot$, $\lif$లకు పూర్వసూచిక గల \tetoken{టాబ్లో}{!!{tableau}} నియమాలు}
+  \ollabel{tab:rules-lif-lnot}
+\end{table}
+
+\end{document}

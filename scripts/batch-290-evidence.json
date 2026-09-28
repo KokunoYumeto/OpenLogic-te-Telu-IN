@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "290",
+  "unit_id": "OLP-0641",
+  "unit_order": 641,
+  "source_path": "content/reference/greek-alphabet/greek-alphabet.tex",
+  "blocks": 6,
+  "linguistic_blocks": [4,5],
+  "previous_segments": 9432,
+  "previous_terms": 330,
+  "expected_corrections": 542,
+  "canon_default": ["TE-P003", "TE-P004"],
+  "consultation_phase": "గ్రీకు వర్ణమాల స్థిర మూలం, తెలుగు లక్ష్యం, గ్రీకు అక్షరాల పేర్ల సాధారణ తెలుగు లిప్యంతరీకరణలు పోల్చాం; అన్ని చిన్న/పెద్ద గణిత సంకేతాలు యథాతథంగా ఉన్నాయో తనిఖీ చేశాం.",
+  "evidence_limit": "పేర్ల లిప్యంతరీకరణ స్థానిక సంపాదకీయ ఎంపిక; ఉచ్చారణ ప్రాంతీయ భేదాలు వేరుగా ఉండవచ్చు. TeX పట్టిక దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T331","source_term":"Greek alphabet letter names","telugu":"ఆల్ఫా, బీటా, గామా మొదలైన తెలుగు లిప్యంతరీకరణలు","status":"greek_names_transliterated_symbols_preserved","passages":["TE-P003","TE-P004"],"basis":"అధ్యాయ శీర్షిక, 24 గ్రీకు అక్షరాల పేర్లు తెలుగులో; ప్రతి గణిత గ్లిఫ్ మూల క్రమం/జతతో ఉంది.","uncertainty":"కొన్ని పేర్ల తెలుగు ఉచ్చారణ భేదాలు సాధ్యమే; గణిత సంకేతాలకు భేదం లేదు.","borrowing":"Greek math commands, Latin capital forms and chapter IDs remain source-identifying."}
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "137",
+  "unit_id": "OLP-0488",
+  "unit_order": 488,
+  "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+  "blocks": 17,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 15, 16],
+  "previous_segments": 7346,
+  "previous_terms": 177,
+  "expected_corrections": 455,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {"9": ["OLTEAMLELBIS-001"]},
+  "consultation_phase": "స్థిర ద్విసమానుకరణ మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్ ప్రాప్యత/సూత్ర పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; అణు ఏకీభావం, ముందుకు/వెనక్కి షరతులు, ద్విసమాన సత్య సిద్ధాంతం, చిత్రం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. ద్విసమానుకరణ, తుల్యత సిద్ధాంతానికి అవి ప్రత్యక్ష మూలాలు కావు; A→G సవరణ పూర్వ జ్ఞానసంబంధ భాష నిర్వచనంపై ఆధారపడింది.",
+  "term_decision": {
+    "term_id": "TE-T178",
+    "source_term": "bisimulation / forth and back / bisimilar pointed models / agent-set G correction",
+    "telugu": "ద్విసమానుకరణ / ముందుకు, వెనక్కి నిబంధనలు / ద్విసమాన సూచిత నమూనాలు / G కర్త సమితి సవరణ",
+    "status": "native_general_set_relation_logic_derivation_register_attested_bisimulation_source_controlled_one_disclosed_agent_set_repair",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "రెండు నమూనాలు, వాటి W/R/V త్రయాలు, ద్విస్థానిక R సంబంధం, అణు ఏకీభావం, ముందుకు/వెనక్కి సాక్షులు, సూత్ర సత్య సంరక్షణ, ద్విసమాన చిత్రాన్ని నిలిపాం. మూలంలోని నిర్వచించని A కర్త సమితిని ముందరి Gగా ప్రకటించి మార్చాం.",
+    "uncertainty": "స్థానిక సాక్షులు bisimulation శాఖా పదానికి ప్రత్యక్ష సాక్ష్యాలు ఇవ్వవు. సిద్ధాంతానికి మూలం నిరూపణ ఇవ్వదు; అదనపు నిరూపణ కల్పించలేదు. TeX దృశ్య తనిఖీ, స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "M/W/R/V, tuple, mathcal R and all TikZ labels remain source-controlled notation; ద్విసమానుకరణ is a transparent Telugu rendering."
+  }
+}

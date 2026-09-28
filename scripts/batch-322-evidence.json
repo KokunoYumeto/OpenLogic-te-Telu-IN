@@ -1,0 +1,44 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "322",
+  "unit_id": "OLP-0673",
+  "unit_order": 673,
+  "source_path": "content/proof-theory/normalization/normalization-thm.tex",
+  "blocks": 13,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "previous_segments": 9950,
+  "previous_terms": 362,
+  "expected_corrections": 602,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సాధారణ రూపం, కట్ ఖండం, స్థానమార్పు/తగ్గింపు పరివర్తనలు, కట్ స్థాయి/పొడవుపై ఆగమనం, N1i నుంచి N2i అన్వయాన్ని మూలంతో పోల్చాం.",
+  "evidence_limit": "ఏ క్రమంలోనైనా సాధారణీకరణ సాధ్యమనే బలమైన వాదనను మూలం ప్రకటిస్తుంది; ఈ విభాగంలోని సంక్షిప్త ఆగమనం దాన్ని స్వతంత్రంగా స్థాపిస్తుందో పూర్తిగా తనిఖీ చేయలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T363",
+    "source_term": "normalization theorem; permutation/reduction conversion; cut rank and cut length",
+    "telugu": "సాధారణీకరణ ప్రమేయం; స్థానమార్పు/తగ్గింపు పరివర్తన; కట్ స్థాయి, కట్ పొడవు",
+    "status": "normalization_theorem_source_faithful_provisional_proof_scope",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సాధారణ రూప నిర్వచనం, రెండు ఆగమన కొలమానాలు, పరివర్తన రకాలు, N1i/N2i ప్రమేయాలు నిలిచాయి; మూలంలో లేని పూర్తి నిరూపణను చేర్చలేదు.",
+    "uncertainty": "ఏ క్రమమైనా ఫలితానికి చేరుతుందనే వాదనకు మూలంలోని సంక్షిప్త నిరూపణను స్వతంత్రంగా formalize చేయలేదు.",
+    "borrowing": "N1i/N2i, cut and derivation identifiers remain source-identifying."
+  }
+}

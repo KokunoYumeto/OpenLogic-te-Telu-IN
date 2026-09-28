@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTECNTSPH-20260927",
+  "unit_id": "OLP-0524",
+  "source_path": "content/counterfactuals/minimal-change-semantics/sphere-models.tex",
+  "source_sha256": "8086fe23ef5707ea236526c24de19199690ae25ff49ac7e523d7ca79173fee37",
+  "findings": [
+    {
+      "finding_id": "OLTECNTSPH-001",
+      "source_locator": "sphere-models.tex paragraph after satisfaction definition; inheritance of non-vacuous clause to smaller spheres",
+      "classification": "nonvacuous_condition_not_inherited_by_antecedent_free_subsphere",
+      "source_issue": "A smaller sphere may contain no antecedent-true world, so the non-vacuous clause does not hold for every subsphere of a witnessing sphere.",
+      "minimal_treatment": "Restrict the statement to antecedent-admitting smaller spheres and qualify the innermost-sphere inference by existence; disclose adjacent to it.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHINDN-20260927",
+  "unit_id": "OLP-0615",
+  "source_path": "content/methods/induction/induction-on-N.tex",
+  "source_sha256": "30a7fe3bf67517b5744d826eeb819782d399cf28a018313f5a7eff12843fe222",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHINDN-001",
+      "source_locator": "induction-on-N.tex line 31, applying the successor step at one",
+      "classification": "wrong_induction_step_index_in_substitution",
+      "source_issue": "The general successor step uses variable k, but the explanation says to substitute one for n.",
+      "minimal_treatment": "Name k as the substituted step variable and disclose the change.",
+      "expected_core_math_delta": {"source_only": ["$n$"], "target_only": ["$k$"]}
+    },
+    {
+      "finding_id": "OLTEMTHINDN-002",
+      "source_locator": "induction-on-N.tex lines 54–67, dice theorem and base case",
+      "classification": "zero_dice_case_not_included_in_induction_proof",
+      "source_issue": "The theorem and preceding exposition include zero dice, but the displayed induction proof starts from the one-die base and therefore only establishes the positive-dice cases unless zero is handled separately.",
+      "minimal_treatment": "State the already explained zero-dice case separately within the proof, keep the source one-die base and step, and disclose the scope repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

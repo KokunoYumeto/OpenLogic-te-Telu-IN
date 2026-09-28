@@ -1,0 +1,32 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "249",
+  "unit_id": "OLP-0600",
+  "unit_order": 600,
+  "source_path": "content/set-theory/choice/vitali.tex",
+  "blocks": 37,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36],
+  "corrections_by_block": {
+    "7": ["OLTESTCHOICEVITALI-001"],
+    "10": ["OLTESTCHOICEVITALI-002"],
+    "26": ["OLTESTCHOICEVITALI-003"],
+    "29": ["OLTESTCHOICEVITALI-004"],
+    "36": ["OLTESTCHOICEVITALI-005"]
+  },
+  "previous_segments": 8846,
+  "previous_terms": 289,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "విటాలి స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక/విభజన/కొలత పద నిర్ణయాలు, TE-P004/008/018 స్థానిక గణిత-తర్క వాడుక పోల్చాం; పరిమేయ మలుపుల సమూహం, సమానత్వ తరగతులు, లెక్కించదగిన విభజన, కొలత వైరుధ్యం, గోళ స్థిరబిందు ఖాళీ వేరుగా తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ సిద్ధాంత/నిరూపణ, సమితి మూలకం/సమ్మేళనం, తర్క వాడుకను మాత్రమే సమర్థిస్తాయి; విటాలి, భ్రమణ సమూహం, కొలవలేనితనం వంటి ప్రత్యేక పేర్లకు ప్రత్యక్ష నామసాక్ష్యం కాదు. ఐదు మూల సవరణలు బహిర్గతం; గోళపు స్థిరబిందువుల పూర్తి పరిష్కారం ఈ రూపరేఖలో లేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T290",
+    "source_term": "Vitali's paradox; rational-turn rotations; nonmeasurable set",
+    "telugu": "విటాలి వైరుధ్యాభాసం; పరిమేయ-మలుపు భ్రమణాలు; కొలవలేని సమితి",
+    "status": "circle_equivalence_class_countable_partition_measure_distinction_source_controlled_five_repairs_disclosed",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "వృత్తంపై పరిమేయ పూర్తి-చుట్టు భ్రమణాల లెక్కించదగిన సమూహం, ప్రతి సమానత్వ తరగతికి ఒక్క ప్రతినిధి, విభజన, కొలత వైరుధ్యం మూల నిర్వచనాలపై ఆధారపడ్డాయి. స్థానిక సాక్షులు సాధారణ సిద్ధాంత/సమితి/తర్క రూపాలకే పరిమితం.",
+    "uncertainty": "విటాలి, పరిమేయ-మలుపు భ్రమణాలు, కొలవలేనితనం ప్రత్యేక రూపాలకు ప్రత్యక్ష స్థానిక సాక్షి లేదు; గోళ చర్య స్థిరబిందు దశ మూల రూపరేఖలో పరిష్కరించబడలేదు.",
+    "borrowing": "Vitali, Banach--Tarski, Hausdorff, rotation-group and set notation, theorem labels and historical citations remain source-controlled."
+  }
+}

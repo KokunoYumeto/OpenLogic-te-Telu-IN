@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEG2CRULES-20260928",
+  "unit_id": "OLP-0706",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G2c.tex",
+  "source_sha256": "893ca1fbed732661a22f9c3f1bb68c3d39e38174af37fb1a316fc20a62facb75",
+  "findings": []
+}

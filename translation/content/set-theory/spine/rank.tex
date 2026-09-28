@@ -1,0 +1,103 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{rank}
+\olsection{స్థాయి}
+
+దశలను $V_\alpha$లుగా నిర్వచించాం; ప్రతి సమితీ ఏదో దశకు ఉపసమితి అని కూడా తెలుసు. ఇప్పుడు సమితి $A$ యొక్క \emph{స్థాయి}ని నిర్వచించవచ్చు. సహజార్థంలో, $A$ ఏర్పడిన తొలి దశ దాని స్థాయి. మరింత ఖచ్చితంగా:
+
+\begin{defn}\ollabel{defnsetrank}
+ప్రతి సమితి $A$కు, $A \subseteq V_\alpha$ అయ్యే కనిష్ఠ క్రమసంఖ్య $\alpha$ను $\setrank{A}$ అంటాం.
+\end{defn}
+\begin{prop}\ollabel{ranksexist}
+	ఏ $A$కైనా $\setrank{A}$ ఉంటుంది.
+\end{prop}
+\begin{proof}
+	అభ్యాసానికి వదిలాం.
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{ranksexist}ను నిరూపించండి.
+\end{prob}
+\noindent
+స్థాయిల సుక్రమత్వంతో కొన్ని ముఖ్యమైన ఫలితాలు నిరూపించవచ్చు:
+\begin{prop}\ollabel{valphalowerrank}
+ఏ క్రమసంఖ్య $\alpha$కైనా $V_\alpha = \Setabs{x}{\setrank{x} \in \alpha}$.
+\end{prop}
+
+\begin{proof}
+$\setrank{x} \in \alpha$ అయితే $x \subseteq V_{\setrank{x}} \in
+V_\alpha$; \olref[Valphabasic]{Valphabasicprops}ను పలుమార్లు వాడితే $V_\alpha$ సమర్థమైనది కాబట్టి $x \in V_\alpha$. తిరిగి, $x \in V_\alpha$ అయితే $x \subseteq V_\alpha$; కాబట్టి $\setrank{x} \leq \alpha$. ఇప్పుడు సరళ అతిపరిమిత ఆగమనం ద్వారా $\setrank{x} \neq \alpha$ అని చూపవచ్చు.
+\sourcecorrection{OLTESTSPINRANK-001}{మూలంలోని ఆఖరి వాక్యం ఊహించిన $x\in V_\alpha$కే విరుద్ధంగా $x\notin V_\alpha$ అని చెబుతుంది. ఉద్దేశిత వాదన స్థాయి $\alpha$తో సమానం కాదని; దానిని సరిచేశాం.}
+\end{proof}
+\begin{prob}
+	\olref[sth][spine][rank]{valphalowerrank}లో ప్రస్తావించిన సరళ అతిపరిమిత ఆగమనాన్ని పూర్తి చేయండి.
+\end{prob}
+
+\begin{prop}\ollabel{rankmemberslower}
+$B \in A$ అయితే $\setrank{B} \in \setrank{A}$.
+\end{prop}
+
+\begin{proof}
+\olref{valphalowerrank} ప్రకారం $A \subseteq V_{\setrank{A}} = \Setabs{x}{\setrank{x} \in
+\setrank{A}}$.
+\end{proof}
+\noindent
+దీన్ని వాడి, ఒక ఆగమన రూపం ద్వారా \emph{అన్ని సమితుల} గురించి నిరూపించడానికి సహాయపడే ఫలితం స్థాపించవచ్చు:
+
+\begin{thm}[$\in$-ఆగమన పథకం]
+ఏ సూత్రం $\phi$కైనా:
+\[
+	\forall A((\forall x \in A)\phi(x) \lif \phi(A)) \lif \forall A \phi(A).
+\]
+\end{thm}
+
+\begin{proof}
+వ్యతిరేక రూపాన్ని నిరూపిస్తాం. $\lnot \forall A
+\phi(A)$ అనుకుందాం. అతిపరిమిత ఆగమనం (\olref[ordinals][basic]{ordinductionschema}) ద్వారా, సాధ్యమైనంత కనిష్ఠ స్థాయి గల $\phi$ కాని ఏదో సమితి ఉంటుంది; అంటే $\lnot \phi(A)$, అలాగే $\forall x(\setrank{x} \in \setrank{A}
+\lif \phi(x))$ అయ్యే ఏదో $A$ ఉంటుంది. ఇప్పుడు $x \in A$ అయితే \olref{rankmemberslower} ప్రకారం $\setrank{x} \in
+\setrank{A}$, కనుక $\phi(x)$; అంటే $(\forall x \in
+A)\phi(x) \land \lnot \phi(A)$.
+\end{proof}\noindent ఈ బలమైన ఫలితాన్ని అనౌపచారికంగా ఇలా చెప్పవచ్చు. ఒక సమితిలోని ప్రతి \tetoken{మూలకం}{!!{element}} $\phi$ అయితే ఆ సమితి కూడా $\phi$ అయ్యే సందర్భంలో $\phi$ను \emph{వంశపారంపర్యం} అంటాం. అప్పుడు $\in$-ఆగమనం చెప్పేది: $\phi$ వంశపారంపర్యం అయితే ప్రతి సమితీ $\phi$.
+
+స్థాయిల చర్చను (ప్రస్తుతానికి) ముగించడానికి, ముందే పలుమార్లు సూచించిన కొన్ని వాదనలు నిరూపిద్దాం.
+
+\begin{prop}\ollabel{ranksupstrict}
+$\setrank{A} = \supstrict_{x \in A}\setrank{x}$.
+\end{prop}
+
+\begin{proof}
+$\alpha = \supstrict_{x \in A}\setrank{x}$ అనుకుందాం. \olref{rankmemberslower} ప్రకారం $\alpha \leq \setrank{A}$. కానీ $x \in A$ అయితే $\setrank{x} \in \alpha$; కనుక \olref{valphalowerrank} ప్రకారం $x \in V_\alpha$; అందువల్ల $A
+\subseteq V_\alpha$, అంటే $\setrank{A} \leq \alpha$. కాబట్టి $\setrank{A} = \alpha$.
+\end{proof}
+
+\begin{cor}\ollabel{ordsetrankalpha}
+ఏ క్రమసంఖ్య $\alpha$కైనా $\setrank{\alpha} = \alpha$.
+\end{cor}
+
+\begin{proof}
+అతిపరిమిత ఆగమనం కోసం ప్రతి $\beta \in \alpha$కు $\setrank{\beta} = \beta$ అనుకుందాం. అప్పుడు \olref{ranksupstrict} ప్రకారం $\setrank{\alpha} = \supstrict_{\beta \in
+\alpha}\setrank{\beta} = \supstrict_{\beta \in \alpha}\beta = \alpha$.
+%	First note that $\setrank{\alpha} \neq \beta$ for any $\beta \in
+%	\alpha$. For otherwise we would have $\beta = \setrank{\beta} \in
+%	\setrank{\alpha} = \beta$ by \olref{rankmemberslower}, i.e.,
+%	$\beta \in \beta$, a contradiction.
+%
+%	Now note that $\alpha \subseteq V_\alpha$. For $\alpha =
+%	\Setabs{\beta}{\beta \in \alpha}$ by
+%	\olref[sfr][ordinals][basic]{ordissetofsmallerord}. And if
+%	$\beta \in \alpha$ then $\beta \subseteq V_{\setrank{\beta}} =
+%	V_\beta \in V_\alpha$, hence $\beta \in V_\alpha$, by
+%	\olref[sfr][spine][Valphabasic]{Valphabasicprops} twice.
+\end{proof}
+
+చివరగా, \olref[foundation]{sec} చివరలో వాగ్దానం చేసిన ఫలితానికి చిన్న నిరూపణ ఇస్తాం: $\ZFminus$లో $\emph{Regularity} \Rightarrow \emph{Foundation}$ షరతు నిరూపించవచ్చు. (ఈ నిరూపణలో ``స్థాయి'' భావనను, \olref{rankmemberslower}ను వాడవచ్చు; ఎందుకంటే ఈ విభాగం మొదట్లో చెప్పినట్లుగా, వాటిని $\ZFminus + \text{Regularity}$తో సమర్పించవచ్చు.)
+
+\begin{prop}[$\ZFminus + \text{Regularity}$లో పనిచేస్తూ]\ollabel{zfminusregularityfoundation} పునాది వర్తిస్తుంది.
+\end{prop}
+
+\begin{proof}
+$A \neq \emptyset$ను, సాధ్యమైనంత కనిష్ఠ స్థాయి గల ఏదో $B \in A$ను స్థిరపరుచుకుందాం. $c \in B$ అయితే \olref{rankmemberslower} ప్రకారం $\setrank{c} \in \setrank{B}$; కాబట్టి $B$ ఎంపిక వల్ల $c \notin A$.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTSPINREC-20260927",
+  "unit_id": "OLP-0560",
+  "source_path": "content/set-theory/spine/recursion.tex",
+  "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+  "findings": [
+    {
+      "finding_id": "OLTESTSPINREC-001",
+      "source_locator": "recursion.tex lines 101–120, piecewise xi term and base case",
+      "classification": "empty_function_base_case_missing_in_piecewise_recursion_term",
+      "source_issue": "The empty function has ordinal domain 0, yet no case defines xi(emptyset), although the proof uses xi(emptyset)=A.",
+      "minimal_treatment": "Extend the A branch to functions with empty domain and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

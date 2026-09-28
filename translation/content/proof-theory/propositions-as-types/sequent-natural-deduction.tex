@@ -1,0 +1,113 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: sequent-natural-deduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{snd}
+
+\olsection{సీక్వెంట్ సహజ నిగమనం}
+
+సహజ నిగమన \tetoken{నిగమనంలో}{!!{derivation}} $\Gamma$ \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహలుగా, $!A$ నిర్ధారణగా ఉంటే $\Gamma \Sequent !A$ అని రాద్దాం; $\Gamma$ ఖాళీ అయితే $\Sequent !A$ అని రాస్తాం.
+
+$\Gamma \cup \{!A_1, \dots,
+!A_n\}$కు $\Gamma, !A_1, \dots, !A_n$ అని, $\Gamma \cup \Delta$కు $\Gamma, \Delta$ అని రాస్తాం.
+
+$\Gamma \Sequent !A \land !B$ ఉందంటే, $\Gamma$ \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహలుగా, $!A \land !B$ చివరి-\tetoken{సూత్రంగా}{!!{formula}} గల \tetoken{ఒక నిగమనం}{!!a{derivation}} ఉంది. దాని చివర $\Elim{\land}$ను వర్తింపజేస్తే, అదే \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహల నుంచి $!A$ నిర్ధారణ గల \tetoken{ఒక నిగమనం}{!!a{derivation}} వస్తుంది. అంటే $\Gamma
+\Sequent !A \land !B$ అయితే $\Gamma \Sequent !A$.
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !A$
+  \DisplayProof\qquad\bottomAlignProof
+  \Axiom$\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}$}
+  \UnaryInf$\Gamma \fCenter !B$
+\end{prooftree}
+$\Elim{\land}$ గుర్తు, సహజ నిగమనంలోని అదే పేరుగల నియమంతో సంబంధాన్ని సూచిస్తుంది.
+\sourcecorrection{OLTEPTPTYSND-001}{మూల వివరణ మొదట ఒకే సంయుక్త భాగాన్ని రెండుసార్లు రాసింది; తదుపరి గద్యం, రెండు నియమ చిత్రాలకు అనుగుణంగా రెండవ భాగాన్ని $!B$గా సమన్వయం చేశాం.}
+
+అలాగే $\Gamma, !A \Sequent !B$ ఉందని అనుకుందాం; అంటే \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహలు $\Gamma, !A$, చివరి-\tetoken{సూత్రం}{!!{formula}}~$!B$ గల \tetoken{ఒక నిగమనం}{!!a{derivation}} ఉంది. $\Intro{\lif}$ నియమాన్ని వర్తింపజేస్తే, $\Gamma$ \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహలుగా, $!A
+\lif !B$ చివరి-\tetoken{సూత్రంగా}{!!{formula}} గల \tetoken{ఒక నిగమనం}{!!a{derivation}} వస్తుంది; అంటే $\Gamma \Sequent !A \lif
+!B$. ఇలా ఊహల \tetoken{విడుదల}{!!{discharge}} మరింత స్పష్టమైందని గమనించండి.
+\begin{prooftree}
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+\end{prooftree}
+
+ఇతర నియమాల నుంచి కూడా ఇదే విధంగా నిర్ధారణలను పొందవచ్చు. వివరంగా:
+\begin{gather*}
+  \Axiom $\Gamma \fCenter !A$
+  \Axiom $\Delta \fCenter !B$
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInf $\Gamma,\Delta \fCenter !A \land !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_1$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+  \qquad
+  \Axiom $\Gamma \fCenter !A \land !B$
+  \RightLabel{$\Elim{\land}_2$}
+  \UnaryInf $\Gamma \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Intro{\lor}_1$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\qquad
+  \Axiom $\Gamma \fCenter !B$
+  \RightLabel{$\Intro{\lor}_2$}
+  \UnaryInf $\Gamma \fCenter !A \lor !B$
+  \DisplayProof\\
+  \Axiom $\Gamma \fCenter !A \lor !B$
+  \Axiom $\Delta, !A \fCenter !C$
+  \Axiom $\Delta', !B \fCenter !C$
+  \RightLabel{$\Elim{\lor}$}
+  \TrinaryInf $\Gamma, \Delta, \Delta' \fCenter !C$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma, !A \fCenter !B$
+  \RightLabel{$\Intro{\lif}$}
+  \UnaryInf $\Gamma \fCenter !A \lif !B$
+  \DisplayProof
+  \qquad
+  \Axiom $\Delta \fCenter !A \lif !B$
+  \Axiom $\Gamma \fCenter !A$
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInf $\Gamma, \Delta \fCenter !B$
+  \DisplayProof
+  \\
+  \Axiom $\Gamma \fCenter \lfalse$
+  \RightLabel{$\FalseInt$}
+  \UnaryInf $\Gamma \fCenter !A$
+  \DisplayProof
+\end{gather*}
+
+ఏ ఊహ అయినా స్వయంగా~$!A$ నుంచి $!A$కు \tetoken{ఒక నిగమనం}{!!a{derivation}}; అంటే ఎప్పుడూ $!A \Sequent !A$ ఉంటుంది.
+
+\begin{prooftree}
+  \AxiomC{$ $}
+  \UnaryInfC{$!A \fCenter !A$}
+\end{prooftree}
+
+ఈ నియమాలను కలిపి, ఏ సహజ నిగమన \tetoken{నిగమనాలు}{!!{derivation}s} ఉంటాయో తెలిపే కలనశాస్త్రంగా తీసుకోవచ్చు. లేదా సహజ నిగమనానికి సంకేతాత్మక ప్రత్యామ్నాయంగా తీసుకోవచ్చు; ప్రతి దశలో \tetoken{వ్యుత్పన్నమైన}{!!{derive}d} \tetoken{సూత్రాన్ని}{!!{formula}} మాత్రమే కాక, అది ఏ \tetoken{విడుదల చేయని}{!!{undischarged}} ఊహల నుంచి \tetoken{వ్యుత్పన్నమైందో}{!!{derive}d} కూడా నమోదు చేస్తుంది.
+
+\begin{prooftree}
+  \Axiom$!A \fCenter !A$
+  \UnaryInf $!A \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom $!B \fCenter !B$
+  \BinaryInf$!A, !B \fCenter \lfalse$
+  \UnaryInf$!B \fCenter !A \lif \lfalse$
+  \UnaryInf$!B \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom$!B \fCenter !B$
+  \BinaryInf$!B \fCenter \lfalse$
+  \UnaryInf$\fCenter !B \lif \lfalse$
+\end{prooftree}
+ఇక్కడ $!B$ అనేది $(!A \lor (!A \lif \lfalse))\lif \lfalse$కు సంక్షిప్త గుర్తు.
+\sourcecorrection{OLTEPTPTYSND-002}{మూల చివరి నిరూపణ చిత్రంలో సందర్భాల దగ్గర సంబంధం లేని మూసని కుండలీకరణాలు, ఒక అవసరం లేని షరతు చిహ్నం ఉన్నాయి. ప్రకటించిన $!B$ ఊహను నిలిపి, చివర దాన్ని విడుదల చేసే చెల్లుబాటు గల చిత్రంగా ఆ స్థానాలను సరిచేశాం.}
+
+\end{document}

@@ -20,19 +20,20 @@ if(authority.audit_id!==c.audit_id||authority.unit_id!==c.unit_id||
   throw new Error('Finding set mismatch');
 const file=path.join(root,'evidence/SOURCE_CORRECTIONS.jsonl');
 const records=fs.readFileSync(file,'utf8').trimEnd().split(/\r?\n/u).map(JSON.parse);
-const previous=records.filter(row=>row.unit_id!==c.unit_id);
+const previous=c.append?records:records.filter(row=>row.unit_id!==c.unit_id);
 const ownRecords=records.filter(row=>row.unit_id===c.unit_id);
 const existing=new Map(ownRecords.map(row=>[row.finding_id,row]));
 if(previous.length!==c.previous_corrections||
-   existing.size!==ownRecords.length||ownRecords.length>authority.findings.length||
-   ownRecords.some(row=>!authority.findings.some(f=>f.finding_id===row.finding_id)))
+   existing.size!==ownRecords.length||(!c.append&&ownRecords.length>authority.findings.length)||
+   (c.append?authority.findings.some(f=>existing.has(f.finding_id)):
+    ownRecords.some(row=>!authority.findings.some(f=>f.finding_id===row.finding_id))))
   throw new Error('Unexpected correction cursor');
 const added=authority.findings.map(f=>{
   const treatment=c.treatments[f.finding_id];
   if(!treatment||!Number.isInteger(treatment.target_line))throw new Error('Missing correction treatment '+f.finding_id);
   return {audit_id:authority.audit_id,audit_review_sha256:sha(c.audit_review_path),
     audit_findings_sha256:sha(c.audit_findings_path),
-    status:existing.get(f.finding_id)?.status==='applied_qa_pass'?'applied_qa_pass':'applied_pending_qa',
+    status:['applied_qa_pass','source_proof_gap_disclosed_structural_qa_pass'].includes(existing.get(f.finding_id)?.status)?existing.get(f.finding_id).status:'applied_pending_qa',
     finding_id:f.finding_id,unit_id:c.unit_id,source_path:c.source_path,
     source_sha256:c.source_sha256,source_locator:f.source_locator,
     target_locator:`translation/${c.source_path}:${treatment.target_line}`,

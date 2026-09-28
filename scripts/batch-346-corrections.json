@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0697",
+  "source_path": "content/proof-theory/propositions-as-types/types.tex",
+  "source_sha256": "8e3fa53eb78ebc918ee94e0eead7724d931e5a27b75d714bca1db80f04ba9152",
+  "audit_id": "OLTEPTPTYTYP-20260928",
+  "audit_review_path": "evidence/OLP-0697-TYPE-ASSIGNMENT-SOURCE-AUDIT.md",
+  "audit_review_sha256": "26dbac5c27e4c8a82343dd62018f5be84c9fe658123e24d7be0b4a69fba32a5c",
+  "audit_findings_path": "evidence/OLP-0697-TYPE-ASSIGNMENT-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "ffa064a29bc6e2b5c90feb2bcc8b3737153e96316f636b30429cbe3124105ece",
+  "previous_corrections": 650,
+  "treatments": {
+    "OLTEPTPTYTYP-001": {
+      "target_line": 38,
+      "body_treatment": "Use the declared term N."
+    },
+    "OLTEPTPTYTYP-002": {
+      "target_line": 39,
+      "body_treatment": "Use x,y in the case constructor to match the branch contexts."
+    },
+    "OLTEPTPTYTYP-003": {
+      "target_line": 44,
+      "body_treatment": "State uniqueness conditional on existence of a type, and qualify the introductory reconstruction claim for correct proof terms."
+    },
+    "OLTEPTPTYTYP-004": {
+      "target_line": 51,
+      "body_treatment": "Refer to the distinct tab:tN3ip label repaired in the actual typing table."
+    },
+    "OLTEPTPTYTYP-005": {
+      "target_line": 18,
+      "body_treatment": "Clarify that contexts are single-valued assignments and alpha-rename binders to fresh names before extending them, while still allowing extra unused variables."
+    }
+  }
+}

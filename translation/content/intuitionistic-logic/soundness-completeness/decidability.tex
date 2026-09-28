@@ -1,0 +1,70 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: decidability
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{dec}
+
+\olsection{నిర్ణేయత}
+$\Gamma \Proves/ !A$ అయిన ప్రతి సందర్భంలోనూ,
+సంపూర్ణతా సిద్ధాంత నిరూపణ
+$\Gamma \Entails/ !A$కు సాక్ష్యంగా
+అనంత లోకాలు గల నమూనాను ఇస్తుందని
+గమనించండి. కింది ప్రతిపాదన ప్రకారం,
+$\Entails !A$ను నిరూపించడానికి అన్ని పరిమిత
+నమూనాల్లో (అంటే పరిమిత లోకాల సమితి గల
+నమూనాల్లో) $\mSat{M}{!A}$ అని
+నిరూపిస్తే చాలు.
+
+\begin{thm}\ollabel{thm:decidability}
+  $\Entails/ !A$ అయితే
+  $\mSat/{M'}{!A}$ అయ్యే పరిమిత నమూనా ఉంది.
+\end{thm}
+
+\begin{proof}
+  $\mModel{M}=\tuple{W, R, V}$లో
+  $\mSat/{M}{!A}$ అని, $P$ అనేది~$!A$లో
+  కనిపించే \tetoken{ప్రతిజ్ఞావాక్య
+  చరాల}{!!{propositional variable}s}
+  సమితి అని, $S$ అనేది ఆ లక్ష్య సూత్రం యొక్క
+  అన్ని ఉపసూత్రాల సమితి అని అనుకుందాం.
+  $\mModel{M'}=\tuple{W', R', V'}$ను ఇలా
+  నిర్వచిద్దాం: $W' = \Setabs{[w]}{w \in W}$,
+  ఇక్కడ $[w] = \Setabs{!B \in S}{\mSat{M}{!B}[w]}$;
+  $R'$ ఉపసమితి సంబంధం; మరియు
+  $V'(p)=\Setabs{[w]}{p \in [w]}$.
+  $W'$ పరిమిత సమితి అని,
+  $\mModel{M'}$ \tetoken{ఒక సంబంధ
+  నమూనా}{!!a{relational model}} అని
+  స్పష్టమే.
+
+  $!A$పై ఆగమన పద్ధతిలో,~$P$ నుంచి
+  \tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s}
+  మాత్రమే గల $S$లోని అన్ని
+  \tetoken{సూత్రాల}{!!{formula}s}
+  $!A$కు
+  \[
+    \mSat{M}{!A}[w] \text{ అయితే, అప్పుడే } \mSat{M'}{!A}[{[w]}]
+  \]
+  అని చూపవచ్చు. దీన్ని పాఠకునికి
+  అభ్యాసంగా వదులుతున్నాం.
+  \sourcecorrection{OLTEINTDEC-001}{మూల నిర్మాణం లోకాలను $P$లోని అణు చరాల సత్యంతో మాత్రమే ఏకీకరించి, వాటి ఆధారంగా అన్ని సూత్రాల సత్యం నిలుస్తుందని పేర్కొంది; సోపాధికానికి అది తప్పు. పరిమిత ఉపసూత్ర సమితి $S$లో సత్యం ద్వారా లోకాలను వేరు చేసి, ఆ సమితిలోని సూత్రాలకు మాత్రమే ఆగమన వాదనను వర్తింపజేశాం.}
+\end{proof}
+
+\begin{prob}
+~$P$ నుంచి ప్రతిజ్ఞావాక్య చరాలు మాత్రమే
+గల $S$లోని అన్ని \tetoken{సూత్రాల}{!!{formula}s}~$!A$కు
+$\mSat{M,w}{!A}$ అయితే, అప్పుడే
+$\mSat{M',[w]}{!A}$ అని చూపి
+\olref[int][sc][dec]{thm:decidability}
+నిరూపణను పూర్తి చేయండి.
+\end{prob}
+
+\olref{thm:decidability} ప్రకారం
+~$\Entails !A$ నిజమో కాదో నిర్ణయించే
+కలనం ఉంది.
+
+\end{document}

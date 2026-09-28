@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCARDFIX-20260927",
+  "unit_id": "OLP-0591",
+  "source_path": "content/set-theory/card-arithmetic/fix.tex",
+  "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+  "findings": [
+    {
+      "finding_id": "OLTESTCARDFIX-001",
+      "source_locator": "fix.tex lines 147–157, tau and W recurrence",
+      "classification": "tau_not_strictly_above_fixed_point_input",
+      "source_issue": "If card(A) is already a beth fixed point, tau starting at card(A) equals it, contradicting the claimed strict inequality.",
+      "minimal_treatment": "Start tau at the successor cardinal of card(A); disclose. The shared displayed-math delta also contains the W-base repair in OLTESTCARDFIX-002.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}\\tau_0(A)&\\defis\\card{A}\\\\\\tau_{n+1}(A)&\\defis\\beth_{\\tau_n(A)}\\\\\\tau(A)&\\defis\\bigcup_{n<\\omega}\\tau_n(A)W_0&\\defis0\\\\W_{\\alpha+1}&\\defis\\tau(W_\\alpha)\\\\W_\\alpha&\\defis\\bigcup_{\\beta<\\alpha}W_\\beta\\end{align*}"],
+        "target_only": ["\\begin{align*}\\tau_0(A)&\\defis\\cardsucc{\\card{A}}\\\\\\tau_{n+1}(A)&\\defis\\beth_{\\tau_n(A)}\\\\\\tau(A)&\\defis\\bigcup_{n<\\omega}\\tau_n(A)W_0&\\defis\\tau(0)\\\\W_{\\alpha+1}&\\defis\\tau(W_\\alpha)\\\\W_\\alpha&\\defis\\bigcup_{\\beta<\\alpha}W_\\beta\\end{align*}"]
+      }
+    },
+    {
+      "finding_id": "OLTESTCARDFIX-002",
+      "source_locator": "fix.tex lines 154–166, W base and all-index conclusion",
+      "classification": "zero_not_beth_fixed_point_at_W_base",
+      "source_issue": "W_0=0 is not a beth fixed point, contrary to the claimed codomain and every-index width-height conclusion.",
+      "minimal_treatment": "Start W_0 at tau(0), retain the transfinite recurrence, and explain limit preservation; disclose. Shared math atom is accounted for under OLTESTCARDFIX-001.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

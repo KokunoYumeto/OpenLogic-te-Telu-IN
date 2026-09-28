@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0577",
+  "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+  "source_sha256": "9641a137f0347689fad7fc04337f8889991e482c6179513c19a0bfbc619eaff1",
+  "audit_id": "OLTESTORDUSEADD-20260927",
+  "audit_review_path": "evidence/OLP-0577-USING-ORDINAL-ADDITION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "91aa5d7c3ac977482cfdc9e03753881ae502e1f638c51e568b3b00e06b9f02df",
+  "audit_findings_path": "evidence/OLP-0577-USING-ORDINAL-ADDITION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "32c6cce5feaccecf3768a8cd2db3f2eacc3955f2279b345b379e535225ed420c",
+  "previous_corrections": 494,
+  "treatments": {
+    "OLTESTORDUSEADD-001": {
+      "target_line": 50,
+      "body_treatment": "గుణిత సమితి స్థాయి రెండవ అభ్యాస సమీకరణంలో మిస్సైన సంబంధ సంకేతంగా ఎగువ హద్దు సమానత్వాన్ని చేర్చి ప్రకటించాం."
+    }
+  }
+}

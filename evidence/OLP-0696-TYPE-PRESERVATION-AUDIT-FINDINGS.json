@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTETYPEPRESERVATION-20260928",
+  "unit_id": "OLP-0696",
+  "source_path": "content/proof-theory/propositions-as-types/type-preservation.tex",
+  "source_sha256": "45707be51e3f9c94199c7d8ac0656d402a50f99b12504c33b217bfe86f040d8f",
+  "findings": []
+}

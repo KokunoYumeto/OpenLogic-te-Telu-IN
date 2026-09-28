@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "284",
+  "unit_id": "OLP-0635",
+  "unit_order": 635,
+  "source_path": "content/history/set-theory/limits.tex",
+  "blocks": 15,
+  "linguistic_blocks": [5,6,7,8,11,12,13,14],
+  "corrections_by_block": {"7": ["OLTEHISSETLIM-001"], "8": ["OLTEHISSETLIM-002"], "11": ["OLTEHISSETLIM-003"]},
+  "previous_segments": 9361,
+  "previous_terms": 324,
+  "expected_corrections": 535,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P017"],
+  "consultation_phase": "పరిమితి కచ్చిత నిర్వచన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ పరిమితి/అవకలనం పదాలు, స్థానిక వాస్తవసంఖ్య సాక్షులు పోల్చాం; భేద భాగహారం-స్థిర వ్యుత్పన్నం, రంధ్రిత పరిసర పరిమాణకాలు, పరమ విలువ చిత్రం, కుడి/ఎడమ వాలు, అవిచ్ఛిన్నత తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు విశ్లేషణ సాధారణ నేపథ్యం మాత్రమే; పరిమితి కచ్చిత గణితం మూలం/సమీప ఉదాహరణలతో నియంత్రితం. మూడు మూల సవరణలు ప్రకటించాం; పూర్తి TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T325","source_term":"rigorous limit; epsilon-delta definition; differentiable; continuous","telugu":"కచ్చిత పరిమితి; ఎప్సిలాన్-డెల్టా నిర్వచనం; అవకలనీయ; అవిచ్ఛిన్న","status":"punctured_neighborhood_limit_derivative_two_sided_continuity_three_disclosures","passages":["TE-P003","TE-P004","TE-P006","TE-P017"],"basis":"x=cను మినహాయించే రంధ్రిత పరిసరంతో సాధారణ పరిమితి, |x|కు కుడి/ఎడమ వాలు భేదం, పరిమితి ఉన్నప్పుడే అవకలనీయత, f(c)=lim f(x) అవిచ్ఛిన్నత నిలిచాయి.","uncertainty":"ఎప్సిలాన్-డెల్టా ప్రత్యేక పదాలకు ప్రత్యక్ష స్థానిక సాక్షి లేదు; మూల ప్రదర్శనలో మూడు ప్రకటిత సవరణలు ఉన్నాయి.","borrowing":"Cauchy, Weierstrass, Bolzano names, Greek symbols, absolute-value and limit formulas remain source-controlled except the declared puncture repair."}
+}

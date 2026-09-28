@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "167",
+  "unit_id": "OLP-0518",
+  "unit_order": 518,
+  "source_path": "content/counterfactuals/introduction/material-conditional.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5, 6, 7, 8, 9],
+  "previous_segments": 7783,
+  "previous_terms": 207,
+  "expected_corrections": 474,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P020", "TE-P021"],
+  "consultation_phase": "స్థిర భౌతిక సోపాధిక మూలం, తెలుగు లక్ష్యం, పూర్వ సోపాధిక/సత్యమూల్య పదాలు, స్థానిక తర్క సాక్షులు ఎదురెదురు చూశాం; సత్యపట్టిక-సమాన నిర్వచనం, ద్విదిశ సమతుల్యతలు, నిగమనాలన్నీ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/020/021 సాధారణ తర్క, సత్యమూల్య, సంయోజక పదాలకు మాత్రమే సాక్షులు; భౌతిక సోపాధిక విశేష భావం మూల నిర్వచన నియంత్రితం. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T208",
+    "source_term": "material conditional / truth-functional / antecedent and consequent",
+    "telugu": "భౌతిక సోపాధికం / సత్యమూల్యాధారితం / పూర్వపక్షం మరియు ఉత్తరపక్షం",
+    "status": "native_connective_truth_register_definition_controlled_material_conditional",
+    "passages": ["TE-P018", "TE-P019", "TE-P020", "TE-P021"],
+    "basis": "$\\lif$కు ఇచ్చిన సత్యమూల్య-నిర్ణయ నిర్వచనం, $\\lnot !A \\lor !B$తో తుల్యత, నిగమన సిద్ధాంతం, మోడస్ పోనెన్స్, బలపరిచే/సంక్రామక/ప్రతివిపర్యయ వాదనల సూత్రాలు నిలిపాం.",
+    "uncertainty": "భౌతిక సోపాధికం సమాసానికి ప్రత్యేక ప్రత్యక్ష తెలుగు సాక్షి లేదు; మూల సత్యనిర్వచనమే అర్థాన్ని నిర్ణయిస్తుంది.",
+    "borrowing": "మోడస్ పోనెన్స్ స్థిర అరువు పదం; connective symbol and formula variables source-controlled."
+  }
+}

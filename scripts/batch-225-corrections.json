@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0576",
+  "source_path": "content/set-theory/ord-arithmetic/addition.tex",
+  "source_sha256": "e812adca016fb2b68daed98ef2bc27f45e48a57ceeeb27d244ad5c92a453a6e6",
+  "audit_id": "OLTESTORDADD-20260927",
+  "audit_review_path": "evidence/OLP-0576-ORDINAL-ADDITION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9baacc0cc46f585ada0041e276a6ed8fd10458eba799e1d842a7d365c8f363a0",
+  "audit_findings_path": "evidence/OLP-0576-ORDINAL-ADDITION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "dff6d855b70bce599d1d03910b7e9b20f24973aa0b891ab9943af8461a0d5458",
+  "previous_corrections": 492,
+  "treatments": {
+    "OLTESTORDADD-001": {
+      "target_line": 60,
+      "body_treatment": "గుర్తులు జతచేసిన రెండు భాగాల మధ్య రెండోసారి విచ్ఛిన్న సమ్మేళనం కాక సాధారణ సమ్మేళనం పెట్టి ప్రకటించాం."
+    },
+    "OLTESTORDADD-002": {
+      "target_line": 87,
+      "body_treatment": "శూన్య గుణిత సమితిని మూలంలోని శూన్యం కాని ఏకకం కాక తొలగించి లెక్కను సరిచేసి ప్రకటించాం."
+    }
+  }
+}

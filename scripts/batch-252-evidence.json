@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "252",
+  "unit_id": "OLP-0603",
+  "unit_order": 603,
+  "source_path": "content/methods/proofs/introduction.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 8908,
+  "previous_terms": 292,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిరూపణ పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ వ్యుత్పత్తి/సూత్రం/సిద్ధాంతం పదాలు, స్థానిక నిరూపణ-తర్క సాక్షులు పోల్చాం; సహజ భాష నిరూపణ, కట్టుదిట్టత, ప్రతిపాదన/సిద్ధాంతం/ఉపప్రమేయం/అనుబంధ ఫలితం భేదం, పరికల్పన పరిధి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P024/025 వ్యుత్పత్తి, నిరూపణ సాధారణ వాడుకను సమర్థిస్తాయి; ఉపప్రమేయం/అనుబంధ ఫలితం ప్రత్యేక పదాలకు ప్రత్యక్ష సాక్షి పరిమితం. మూలంలో ఆంగ్లంలో రాసే నిరూపణల విషయాన్ని తెలుగు ముద్రణ సందర్భానికి స్పష్టంగా స్థానికీకరించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T293","source_term":"derivation system; proof; proposition; theorem; lemma; corollary; hypothesis","telugu":"వ్యుత్పత్తి వ్యవస్థ; నిరూపణ; ప్రతిపాదన; సిద్ధాంతం; ఉపప్రమేయం; అనుబంధ ఫలితం; పరికల్పన","status":"proof_vs_formal_derivation_and_result_taxonomy_source_controlled_native_register_partly_attested","passages":["TE-P004","TE-P018","TE-P024","TE-P025"],"basis":"సహజభాష నిరూపణను నియమానుసార వ్యుత్పత్తి వ్యవస్థ నుంచి వేరు చేశాం; నిరూపణలో ప్రతి దశ సమర్థన, నాలుగు రకాల ఫలితాల పాత్ర, పరికల్పనల పరిధి మూల వివరణకు అనుగుణంగా నిలిచాయి.","uncertainty":"వ్యుత్పత్తి, నిరూపణకు స్థానిక ఆధారం ఉంది; ఉపప్రమేయం, అనుబంధ ఫలితం, పరికల్పన పదాల ప్రత్యేక పాఠ్యసాధారణతపై నిపుణ సమీక్ష ఉపయోగకరం.","borrowing":"Fitch, Cantor, Löwenheim--Skolem and Zorn names are transliterated; symbolic formulas and protected source tokens remain unchanged."}
+}

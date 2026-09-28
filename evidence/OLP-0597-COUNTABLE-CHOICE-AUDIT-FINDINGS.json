@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCHOICECOUNT-20260927",
+  "unit_id": "OLP-0597",
+  "source_path": "content/set-theory/choice/countablechoice.tex",
+  "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+  "findings": [
+    {
+      "finding_id": "OLTESTCHOICECOUNT-001",
+      "source_locator": "countablechoice.tex lines 16–25, finite-choice proof",
+      "classification": "finite_enumeration_distinctness_implicit",
+      "source_issue": "A finite-set listing can repeat a member; choosing different values for repeated entries would make the displayed pair relation nonfunctional.",
+      "minimal_treatment": "Explicitly choose a repetition-free listing of the finite set and disclose the clarification.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCHOICECOUNT-002",
+      "source_locator": "countablechoice.tex lines 63–70, bound on previous-set union",
+      "classification": "bound_union_uses_wrong_indexed_set",
+      "source_issue": "The displayed union has A_n instead of A_i under index i<n, contradicting its own sum bound and B_n definition.",
+      "minimal_treatment": "Use the union of preceding A_i and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}\\card{\\bigcup_{i<n}A_n}&\\leq\\card{A_0}+\\card{A_1}+\\ldots+\\card{A_{n-1}}\\\\&=1+2+\\ldots+2^{n-1}\\\\&=2^n-1\\\\&<2^n=\\card{A_n}\\end{align*}"],
+        "target_only": ["\\begin{align*}\\card{\\bigcup_{i<n}A_i}&\\leq\\card{A_0}+\\card{A_1}+\\ldots+\\card{A_{n-1}}\\\\&=1+2+\\ldots+2^{n-1}\\\\&=2^n-1\\\\&<2^n=\\card{A_n}\\end{align*}"]
+      }
+    }
+  ]
+}

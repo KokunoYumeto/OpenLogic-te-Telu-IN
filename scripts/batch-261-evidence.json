@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "261",
+  "unit_id": "OLP-0612",
+  "unit_order": 612,
+  "source_path": "content/methods/proofs/resources.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5,6,7,8,9],
+  "previous_segments": 9063,
+  "previous_terms": 301,
+  "expected_corrections": 528,
+  "canon_default": ["TE-P004", "TE-P024", "TE-P025"],
+  "consultation_phase": "ఇతర వనరుల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిరూపణ/గణిత తర్కణ పదాలు, స్థానిక విద్యా భాష పోల్చాం; అన్ని పుస్తక శీర్షికలు, ఏడాది ఉటంకింపులు, నాలుగు పాఠ్య లింకులు, మూడు వీడియో URLలను యథాతథంగా తనిఖీ చేశాం.",
+  "evidence_limit": "బాహ్య URLలు, ఉచిత లభ్యత వాదనలు మూల కాలపు సమాచారం; ప్రస్తుత ఆన్‌లైన్ లభ్యతను తిరిగి తనిఖీ చేయలేదు. పుస్తక శీర్షికలను శోధన సౌలభ్యం కోసం మూల భాషలో నిలిపాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T302","source_term":"Other Resources; Motivational Videos","telugu":"ఇతర వనరులు; ప్రేరణనిచ్చే వీడియోలు","status":"resource_headings_translated_bibliographic_titles_citations_urls_preserved","passages":["TE-P004","TE-P024","TE-P025"],"basis":"పుస్తకాలు, ఆన్‌లైన్ మార్గదర్శకాలు, వీడియోలు వేరు వేరు విభాగాలుగా నిలిపి, అసలు శీర్షికలు, ఉటంకింపులు, చిరునామాలు మార్చలేదు.","uncertainty":"బాహ్య లింకుల ప్రస్తుత లభ్యత తెలియదు; మూల జాబితా అనువాదమే, కొత్త సిఫారసు కాదు.","borrowing":"English bibliographic titles, citation keys and all source URLs are retained verbatim."}
+}

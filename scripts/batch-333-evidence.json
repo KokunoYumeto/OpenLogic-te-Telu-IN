@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "333",
+  "unit_id": "OLP-0684",
+  "unit_order": 684,
+  "source_path": "content/proof-theory/proof-search/tableaux.tex",
+  "blocks": 17,
+  "linguistic_blocks": [5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16],
+  "corrections_by_block": {
+    "7": ["OLTEPTPSTAB-001"],
+    "11": ["OLTEPTPSTAB-002"],
+    "15": ["OLTEPTPSTAB-003"]
+  },
+  "previous_segments": 10113,
+  "previous_terms": 373,
+  "expected_corrections": 627,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "చిహ్నిత టాబ్లోలు, శాఖ విస్తరణ, మూసుకున్న శాఖ, పునర్వినియోగ పరిమాణ సూత్రాల ఘటనలు, సీక్వెంట్ అనువాదాన్ని మునుపటి టాబ్లో పదజాలంతో పోల్చాం; మూడు లోపాలు ప్రకటించాం.",
+  "evidence_limit": "రెండు ఉదాహరణ వృక్షాలు మూలానుసారం నిలిచాయి; పూర్తి అల్గోరిథం అమలు పరీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T374",
+    "source_term": "signed tableau; semantic tableau; closed branch; truth tree",
+    "telugu": "చిహ్నిత టాబ్లో; అర్థవిచార టాబ్లో; మూసుకున్న శాఖ; సత్య వృక్షం",
+    "status": "tableaux_three_disclosed_source_repairs",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "సత్య/అసత్య చిహ్నాలు, విస్తరణ-శాఖ విభజన, శాఖ మూసుకోవడం, నమూనా అన్వేషణ, G3c అనువాదం భావాలను వేరు చేశాం.",
+    "uncertainty": "టాబ్లో లిప్యంతరీకరణను కొనసాగించాం; అర్థవిచార పదానికి ప్రత్యేక ప్రమాణిత పదసూచి సాక్ష్యం పరిమితం.",
+    "borrowing": "Tableau/Tc/G3c and signed-formula notation remain explicit borrowings."
+  }
+}

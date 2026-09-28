@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "266",
+  "unit_id": "OLP-0617",
+  "unit_order": 617,
+  "source_path": "content/methods/induction/inductive-definitions.tex",
+  "blocks": 18,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17],
+  "previous_segments": 9124,
+  "previous_terms": 306,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P024"],
+  "consultation_phase": "ఆగమనాత్మక నిర్వచనాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఆగమన/పదం/నిరూపణ పదాలు, స్థానిక తర్క-గణిత సాక్షులు పోల్చాం; నిర్మాణ నియమాలు, పరిమిత నిర్మాణం, బ్రాకెట్ లెక్క బలమైన ఆగమన నిరూపణ, అత్యంత చక్కని పదాల ప్రశ్న తనిఖీ చేశాం.",
+  "evidence_limit": "ఆగమన సాధారణ పదానికి స్థానిక సాక్షి ఉంది; చక్కని పదాల నిర్మాణ ఉదాహరణ, అసమానత నిరూపణ మూల గణితం ఆధారితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T307","source_term":"inductive definition; nice term; supernice term","telugu":"ఆగమనాత్మక నిర్వచనం; చక్కని పదం; అత్యంత చక్కని పదం","status":"finite_constructor_closure_strong_induction_bracket_bound_source_controlled","passages":["TE-P003","TE-P004","TE-P024"],"basis":"నాలుగు అక్షరాల ఆధార పదాలు, ద్విపద నిర్మాణ నియమం, మరేదీ కాదు అనే మూసివేత, బలమైన ఆగమనంలో ఉపపదాల పొడవుల చిన్నదనం, బ్రాకెట్ లెక్క అసమానత నిలిచాయి.","uncertainty":"చక్కని/అత్యంత చక్కని పదాలు ఉదాహరణకు మాత్రమే ఇచ్చిన స్థానిక పేర్లు; ఆగమనాత్మక నిర్మాణ గణితం మూలం నియంత్రితం.","borrowing":"Letter symbols, bracket strings, circle and inequality notation remain unchanged."}
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "189",
+  "unit_id": "OLP-0540",
+  "unit_order": 540,
+  "source_path": "content/set-theory/z/union.tex",
+  "blocks": 7,
+  "linguistic_blocks": [3, 4, 5, 6],
+  "previous_segments": 8027,
+  "previous_terms": 229,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008"],
+  "consultation_phase": "స్థిర సమ్మేళన స్వీకృత మూలం, తెలుగు లక్ష్యం, TE-T009 సమ్మేళనం/ఛేదనం పదాలు, స్థానిక సమితి సాక్షులు ఎదురెదురు చూశాం; సర్వసామాన్య సమ్మేళన సూత్రం, దశల సమర్థన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008 సమితి కార్యకలాప పదాలకు మాత్రమే సాక్షులు; దశల సమర్థన మూల భావనాధీనం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T230",
+    "source_term": "Axiom of Union / arbitrary union",
+    "telugu": "సమ్మేళన స్వీకృతం / సర్వసామాన్య సమ్మేళనం",
+    "status": "set_operation_register_attested_axiom_source_controlled",
+    "passages": ["TE-P004", "TE-P008"],
+    "basis": "TE-T009లోని సమ్మేళనం/ఛేదనం రూపాలను నిలిపి, సమ్మేళన నిర్వచన సూత్రం, సభ్యుల సభ్యులు ముందరి దశలో ఉండే వాదనను మార్చకుండా ఇచ్చాం.",
+    "uncertainty": "దశల అనౌపచారిక సమర్థనకు స్వతంత్ర నిరూపణ తనిఖీ లేదు.",
+    "borrowing": "Union formula and cross-reference remain source-controlled."
+  }
+}

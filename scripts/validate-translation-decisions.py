@@ -87,6 +87,10 @@ def main() -> None:
     occurrence_ids: set[str] = set()
     checked_files: dict[str, str] = {}
     reader_status_counts: dict[str, int] = {}
+    accepted_reader = repo / "output" / "html" / "full" / "index.html"
+    reader_bytes = accepted_reader.read_bytes() if accepted_reader.is_file() else b""
+    reader_hash = digest(reader_bytes) if reader_bytes else None
+    reader_text = reader_bytes.decode("utf-8") if reader_bytes else ""
     evidence_file_refs = 0
     for decision in decisions:
         decision_id = decision["decision_id"]
@@ -117,6 +121,14 @@ def main() -> None:
             reader_status_counts[reader_status] = reader_status_counts.get(reader_status, 0) + 1
             if reader_status == "pending" and not occurrence["reader_locator"].get("reason"):
                 raise ValueError(f"Pending reader locator lacks reason: {occurrence_id}")
+            if reader_status == "available":
+                locator = occurrence["reader_locator"]
+                if (locator["artifact_filename"] != "output/html/full/index.html"
+                        or locator["artifact_sha256"] != reader_hash
+                        or locator["profile"] != "full"
+                        or f' id="{occurrence["unit_id"]}"' not in reader_text
+                        or f'#{occurrence["unit_id"]}' not in locator["provenance"]):
+                    raise ValueError(f"Unverified reader unit anchor: {occurrence_id}")
             for reference in occurrence["evidence_refs"]:
                 if reference["path_or_uri"].startswith("evidence/"):
                     evidence_file_refs += 1
@@ -189,7 +201,12 @@ def main() -> None:
             "source_target_byte_span_excerpts": True,
             "public_evidence_reference_hashes": True,
             "plain_please_double_check_questions": True,
-            "reader_pages_never_guessed": all(status == "pending" for status in reader_status_counts),
+            "reader_pages_never_guessed": all(
+                occurrence["reader_locator"].get("printed_page") is None
+                and occurrence["reader_locator"].get("assembled_pdf_page") is None
+                for decision in decisions for occurrence in decision["occurrences"]
+            ),
+            "accepted_html_unit_anchors_verified": reader_status_counts.get("available", 0) == len(occurrence_ids) if register["edition_release"]["coverage_state"] == "complete" else True,
             "full_readable_view_complete": True,
             "priority_view_complete": True,
             "occurrence_csv_reconciled": True,

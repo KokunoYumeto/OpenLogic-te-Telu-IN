@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0510",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+  "source_sha256": "336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5",
+  "audit_id": "OLTEINTDEC-20260927",
+  "audit_review_path": "evidence/OLP-0510-DECIDABILITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1de5961412d8a779441307693dabe870962550f72071c6c3bf9626d4c1fae65b",
+  "audit_findings_path": "evidence/OLP-0510-DECIDABILITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "79daf7dce6420b09a0f0dbbd69a8fc4c2ebc94b7694b27dc4f0679c925f0ab28",
+  "previous_corrections": 467,
+  "treatments": {
+    "OLTEINTDEC-001": {"target_line": 54, "body_treatment": "మూల అణు-చర సత్య సమితి quotient సోపాధిక సత్యాన్ని నిలపదని వ్యతిరేక ఉదాహరణతో పరిశీలించి, పరిమిత ఉపసూత్రాల సమితి Sపై సత్య రకాలను తీసుకుని ఆ పరిమితికే ఆగమన వాదనను మార్చి పక్కనే ప్రకటించాం."}
+  }
+}

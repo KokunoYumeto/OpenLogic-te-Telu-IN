@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "337",
+  "unit_id": "OLP-0688",
+  "unit_order": 688,
+  "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+  "blocks": 14,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTPTYTER-001"
+    ],
+    "8": [
+      "OLTEPTPTYTER-002"
+    ],
+    "11": [
+      "OLTEPTPTYTER-003"
+    ]
+  },
+  "previous_segments": 10174,
+  "previous_terms": 377,
+  "expected_corrections": 643,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "ఊహ-చరం, విడుదల-బంధనం, నిరూపణ-పదం అనురూపతలను పూర్వ లాంబ్డా పదజాలంతో సమన్వయం చేసి ప్రమాణిత నిరూపణ/నియమ గద్యాన్ని సంప్రదించాం.",
+  "evidence_limit": "ప్రత్యేక type-theory పదాలకు నేర తెలుగు నిఘంటు సాక్ష్యం పరిమితం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T378",
+    "source_term": "proof term; constructor; destructor; discharge label; correct proof term",
+    "telugu": "నిరూపణ పదం; నిర్మాణ చిహ్నం/నిర్మాత; విచ్ఛేదకం; విడుదల గుర్తు; సరైన నిరూపణ పదం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నిర్మాణం, విచ్ఛేదం అనే పాత్రలు నియమ నిర్వచనాలతో నియంత్రితమైనవి; బద్ధ చరాలు, రకాలకు పూర్వ పదజాలం నిలిపాం.",
+    "uncertainty": "ప్రత్యేక type-theory పదాలకు నేర తెలుగు నిఘంటు సాక్ష్యం పరిమితం; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

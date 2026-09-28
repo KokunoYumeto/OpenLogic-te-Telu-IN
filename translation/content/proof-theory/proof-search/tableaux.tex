@@ -1,0 +1,134 @@
+% Part: proof-theory
+% Chapter: proof-search
+% Section: tableaux
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{ps}{tab}
+
+\olsection{టాబ్లోలు}
+
+టాబ్లో పద్ధతులు సీక్వెంట్ కలనాలకు దగ్గర సంబంధమున్న \tetoken{నిరూపణ}{!!{proof}} పద్ధతులు; చేతితోనూ సాఫ్ట్‌వేర్‌లోనూ నిరూపణ అన్వేషణకు ప్రత్యేకంగా అనుకూలమైనవి. సీక్వెంట్‌ల వృక్షాలకు బదులు, టాబ్లోలో \tetoken{ఒక నిరూపణ}{!!a{proof}} \tetoken{సూత్రాల}{!!{formula}s} వృక్షం. అయితే సహజ నిగమనానికి భిన్నంగా, దాని నియమాలు సీక్వెంట్ కలన నియమాలను అనుసరిస్తాయి. టాబ్లో \tetoken{నిరూపణ}{!!{proof}} అనేది ప్రధానంగా ఒక నమూనా కోసం స్పష్టమైన అన్వేషణ. అందువల్ల వాటిని \emph{అర్థవిచార టాబ్లోలు} లేదా \emph{సత్య వృక్షాలు} అని కూడా అంటారు.
+
+\emph{చిహ్నిత} టాబ్లో అంటే $\sFmla{\True}{!A}$ లేదా $\sFmla{\False}{!A}$ రూపంలోని చిహ్నిత \tetoken{సూత్రాల}{!!{formula}s} వృక్షం. వృక్షాలు కిందికి పెరుగుతాయి. ఏమి \tetoken{నిరూపించాలనుకుంటున్నామో}{!!{prove}} తెలిపే \tetoken{సూత్రాలతో}{!!{formula}s} మొదలవుతాయి. ఉదాహరణకు $!A, !B \Sequent !C, !D$ సీక్వెంట్‌ను \tetoken{నిరూపించడానికి}{!!{prove}} $\sFmla{\True}{!A}, \sFmla{\True}{!B},
+\sFmla{\False}{!C}, \sFmla{\False}{!D}$తో మొదలవుతుంది. $!A$, $!B$లను సత్యం, $!C$, $!D$లను అసత్యం చేసే \tetoken{ఒక నిర్మాణం}{!!^a{structure}}, $!A, !B \Sequent !C, !D$ సర్వసత్యం కాదని చూపే \tetoken{ఒక నిర్మాణం}{!!a{structure}}.
+\sourcecorrection{OLTEPTPSTAB-001}{ప్రారంభ చిహ్నాల జాబితాలో మూలం $!D$కు సత్య చిహ్నాన్ని పెట్టింది; కుడి సందర్భ సూత్రంగా దానికి అసత్య చిహ్నం కావాలని వెంటనే ఉన్న వివరణ చెబుతుంది.}
+
+టాబ్లోలోని ఆకు (అత్యంత కింది) నోడ్‌ను శాఖ విస్తరణ నియమాలతో విస్తరించవచ్చు. అవి అదే శాఖకు అదనపు నోడ్‌లను చేర్చవచ్చు లేదా రెండు సోదర నోడ్‌లను కింద చేర్చి శాఖను రెండు కొత్త శాఖలుగా విభజించవచ్చు. అదే శాఖలో పైనున్న ఏ చిహ్నిత \tetoken{సూత్రానికైనా}{!!{formula}} నియమాలను వర్తింపజేయవచ్చు. సంప్రదాయ టాబ్లో పద్ధతి~\Log{Tc} శాఖ విస్తరణ నియమాలు \olref{tab:Tc}లో ఉన్నాయి.
+
+\subfile{rules-Tc}
+
+చూసినట్లుగా, ఈ నియమాలు తలకిందులు చేసిన \Log{G3c} నియమాలే; $\True$, $\False$ చిహ్నాలు \tetoken{ఒక సూత్రం}{!!a{formula}} వరుసగా సీక్వెంట్ ఎడమవైపునా కుడివైపునా ప్రధాన సూత్రంగా ఉందని సూచిస్తాయి.
+
+ఒక టాబ్లో శాఖలో $\sFmla{\True}{!A}$, $\sFmla{\False}{!A}$ రెండూ ఉంటే, లేదా $\sFmla{\True}{\lfalse}$ ఉంటే, ఆ శాఖ \emph{మూసుకుంది} అంటాం. ప్రతి శాఖా మూసుకుంటే మొత్తం టాబ్లో మూసుకుంది అంటాం. ఉదాహరణకు, $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
+(!A \lor !C)$కు ఒక మూసుకున్న టాబ్లో ఇది; అంటే $\sFmla{\True}{!A \lor (!B \land
+!C)}$, $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$తో మొదలుపెడతాం:
+\begin{oltableau}
+  [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
+        (\formula{A} \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\formula{A}}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{B}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\formula{A}},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\formula{B} \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\formula{A} \lor \formula{B}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+            [\sFmla{\True}{\formula{C}},
+              just={\TRule{\True}{\land}[3]}
+              [\sFmla{\False}{\formula{A}},
+                just={\TRule{\False}{\lor}[4]}
+                [\sFmla{\False}{\formula{B}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\formula{A} \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\True}{\formula{B}},
+            just={\TRule{\True}{\land}[3]}, move by=2
+              [\sFmla{\True}{\formula{C}},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\False}{\formula{A}},
+                  just={\TRule{\False}{\lor}[4]}
+                  [\sFmla{\False}{\formula{C}},
+                  just={\TRule{\False}{\lor}[4]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\sourcecorrection{OLTEPTPSTAB-002}{మూలం శాఖ మూసుకోవడానికి ఒకే సూత్రం రెండు చిహ్నాలతో ఉండటాన్ని మాత్రమే పేర్కొంది; సత్యంగా చిహ్నితమైన అసత్య సూత్రం ఉన్న శాఖ కూడా మూసుకోవాలి. లేకపోతే అటువంటి తెరిచి ఉన్న శాఖకు నమూనా ఉందనే తరువాతి వాదన తప్పుతుంది. అనువాదంలో దానికి అనురూపమైన అసత్య ఆక్సియమ్ కేసునూ చేర్చాం.}
+
+తనిఖీ గుర్తులు, సంబంధిత నియమం \tetoken{ఒక సూత్రం}{!!a{formula}} కింద ఉన్న అన్ని శాఖల్లోనూ వర్తింపజేయబడిందని సూచిస్తాయి. $\otimes$ చిహ్నం శాఖ మూసుకుందని తెలుపుతుంది. నియమాల తరువాత ఉన్న పంక్తి సంఖ్యలు ఏ చిహ్నిత \tetoken{సూత్రాలకు}{!!{formula}s} నియమం వర్తించిందో సూచిస్తాయి (అంటే అదే శాఖలో సూచించిన పంక్తిలోని \tetoken{సూత్రానికి}{!!{formula}}).
+
+టాబ్లోల్లో నిరూపణ అన్వేషణ సులభం. దశలవారీగా టాబ్లోను ఉత్పత్తి చేస్తాం. $0$ దశలో ప్రారంభ \tetoken{సూత్రాలను}{!!{formula}s} పైభాగంలో రాయాలి. $n+1$ దశలో ప్రతి ఆకు నోడ్‌కు ఇలా చేయాలి: ఇంకా తనిఖీ గుర్తు పెట్టని మొదటి (అత్యుపరి) చిహ్నిత సూత్రాన్ని కనుగొని, దానికి శాఖ విస్తరణ నియమాన్ని వర్తింపజేయాలి. ఆ చిహ్నిత సూత్రం ఉన్న ప్రతి శాఖలోనూ నియమం వర్తించిన తరువాత దానికి తనిఖీ గుర్తు పెట్టాలి. (పై ఉదాహరణ ఈ అల్గోరిథంతో ఉత్పత్తి అయింది.)
+
+$\sFmla{\True}{\lforall}$, $\sFmla{\False}{\lexists}$ రూపంలోని చిహ్నిత \tetoken{సూత్రాలకు}{!!{formula}s} ఎప్పుడూ తనిఖీ గుర్తు పెట్టం; కాబట్టి వాటిని ప్రత్యేకంగా చూడాలి. అవి ఉంటే $\TRule{\True}{\forall}$, $\TRule{\False}{\lexists}$ నియమాలు వర్తించగల అన్ని పదాలకు చివరకు వర్తించేలా చూడాలి. ఉదాహరణకు, ఈ రూపంలో లేని అత్యుపరి చిహ్నిత \tetoken{సూత్రాన్ని}{!!{formula}} పరిష్కరించిన తరువాత, ప్రతి దశలో ప్రతి శాఖలోని అటువంటి సూత్రాలన్నింటికీ ఈ నియమాలను వర్తింపజేయవచ్చు. వాడవలసిన పదం~$t$ ఏమిటంటే: శాఖలో ఇప్పటికే ఉన్న \tetoken{స్థిరాంకాల}{!!{constant}s} నుంచి (ఏ \tetoken{స్థిరాంకం}{!!{constant}} లేకపోతే $\Obj
+c_0$ నుంచి), ప్రారంభ \tetoken{సూత్రాల్లోని}{!!{formula}s} \tetoken{ప్రమేయాలను}{!!{function}s} ఉపయోగించి ఏర్పడే మొదటి పదం~$t$; దానికి సంబంధించిన చిహ్నిత \tetoken{సూత్రం}{!!{formula}} $\sFmla{\True}{!B(t)}$ లేదా~$\sFmla{\False}{!B(t)}$ ఇప్పటికే శాఖలో ఉండకూడదు. అటువంటి పదం లేకపోతే ఆ సూత్రానికి ఈ దశలో కొత్త ఘటనను చేర్చవలసిన అవసరం లేదు.
+
+ఈ అన్వేషణ మూసుకున్న టాబ్లోను ఉత్పత్తి చేయకపోతే, అన్ని ఇతర అణుకాని \tetoken{సూత్రాలకు}{!!{formula}s} తనిఖీ గుర్తులు పెట్టి, పునర్వినియోగ పరిమాణ సూత్రాలకు వర్తించగల అన్ని పదాల ఘటనలను ఇప్పటికే చేర్చిన పరిమిత తెరిచి ఉన్న శాఖ ఉంటుంది; లేదా అన్వేషణ అనంతమైన, పరిమిత శాఖాభివృద్ధి గల వృక్షాన్ని ఉత్పత్తి చేస్తుంది, దానికి అనంత శాఖ ఉంటుంది. \olref[cpl]{sec}లోలాగే, $\sFmla{\True}{!A}$ శాఖలో ఉంటే $\Sat{M}{!A}$, $\sFmla{\False}{!A}$ ఉంటే $\Sat/{M}{!A}$ అయ్యే \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$ను నిర్వచించవచ్చు. ($\Theta =
+\Setabs{!A}{\sFmla{\True}{!A} \text{ శాఖలో ఉంది}}$, $\Xi =
+\Setabs{!A}{\sFmla{\False}{!A} \text{ శాఖలో ఉంది}}$గా తీసుకోండి.)
+\sourcecorrection{OLTEPTPSTAB-003}{పునర్వినియోగ పరిమాణ సూత్రాలకు ఎప్పుడూ తనిఖీ గుర్తు పెట్టమని మూలం చెప్పినా, తరువాత పరిమిత తెరిచి ఉన్న శాఖలో అన్ని అణుకాని సూత్రాలూ తనిఖీ చేయబడతాయని చెప్పింది. తగిన అన్ని పదాలకు ఘటనలు చేర్చబడిన, పూర్తిగా విస్తరించిన శాఖను ఉద్దేశించామని, అటువంటి కొత్త పదం లేకపోతే కొత్త నోడ్ చేర్చనవసరం లేదని స్పష్టంచేశాం.}
+
+ఈ అన్వేషణ పద్ధతి ఉత్పత్తి చేసే టాబ్లోలను, ప్రతి నోడ్‌కు ఒక సీక్వెంట్ కేటాయించి సులభంగా \Log{G3c} నిరూపణలుగా అనువదించవచ్చు. ప్రారంభ సూత్రాలు $\Gamma \Sequent
+\Delta$ సీక్వెంట్‌కు అనురూపమైతే, ప్రతి ప్రారంభ సూత్రానికి $\Gamma \Sequent
+\Delta$ను గుర్తుగా కేటాయించండి. చిహ్నిత \tetoken{సూత్రం}{!!{formula}} $\sFmla{\True}{!A}$కు శాఖ విస్తరణ నియమం వర్తింపజేస్తే, ఆకు గుర్తు $!A, \Pi \Sequent \Lambda$; చిహ్నిత \tetoken{సూత్రం}{!!{formula}} $\sFmla{\False}{!A}$కు వర్తింపజేస్తే, ఆకు గుర్తు $\Pi \Sequent
+\Lambda, !A$. టాబ్లోలో \TRule{\True}{\star} నియమం వాడిన చోట సీక్వెంట్‌కు \LeftR{\star} నియమాన్ని ($!A$ ప్రధాన సూత్రంగా) వర్తింపజేయండి; \TRule{\False}{\star} వాడిన చోట \RightR{\star}ను వర్తింపజేయండి. నియమపు పూర్వపక్షాలు టాబ్లోకు చేర్చిన సంబంధిత నోడ్‌లకు గుర్తులుగా ఉన్న సీక్వెంట్‌లు. $\sFmla{\True}{!A}$, $\sFmla{\False}{!A}$తో శాఖ మూసుకుంటే, చివరి ఆకు గుర్తు $!A, \Pi \Sequent \Lambda,
+!A$ రూపపు సీక్వెంట్ అవుతుంది. సత్యంగా చిహ్నితమైన అసత్య సూత్రం వల్ల మూసుకున్న శాఖకు $\lfalse, \Pi \Sequent \Lambda$ రూపపు అసత్య ఆక్సియమ్ వస్తుంది. టాబ్లోలోని కొన్ని వరుస నోడ్‌లకు ఒకే సీక్వెంట్ కేటాయించబడుతుంది; పునరుక్తులను తొలగించండి. ఉదాహరణకు పై టాబ్లో కింది \tetoken{నిరూపణగా}{!!{proof}} అనువదించబడుతుంది:
+\[\small
+\Axiom$!A \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !B$
+\Axiom$!A \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!A \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!A \fCenter (!A \lor !B) \land (!A \lor !C)$
+\Axiom$!B, !C \fCenter !A, !B$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !B$
+\Axiom$!B, !C \fCenter !A, !C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$!B, !C \fCenter !A \lor !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C \fCenter !A \lor !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
+(!A \lor !C)$
+\DisplayProof
+\]
+
+\end{document}

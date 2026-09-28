@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "315",
+  "unit_id": "OLP-0666",
+  "unit_order": 666,
+  "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTNATN1-001"
+    ]
+  },
+  "previous_segments": 9870,
+  "previous_terms": 355,
+  "expected_corrections": 581,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "N1i/N1c ప్రవేశ/తొలగింపు నియమాల పూర్తి పట్టిక, ఐగెన్ స్థిరాంకం షరతు, FalseInt/FalseCl భేదం మూలంతో పోల్చాం; అసాధ్యమైన మూల శీర్షిక షరతును ప్రకటితంగా సరిచేశాం.",
+  "evidence_limit": "పట్టికలోని వృక్షాలు యథాతథం; తెలుగు ప్రధానంగా శీర్షికలో ఉంది. ఐగెన్ చరరాశి షరతు సరైన అర్థాన్ని పోల్చినా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T356",
+    "source_term": "N1 introduction/elimination rules; existential eigenconstant side condition",
+    "telugu": "N1 ప్రవేశ/తొలగింపు నియమాలు; అస్తిత్వ ఐగెన్ స్థిరాంకం షరతు",
+    "status": "N1_rule_table_side_condition_repaired",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నియమ వృక్షాలు నిలిపి, N1iలో FalseCl లేకపోవడం, ఐగెన్ స్థిరాంకం ఫలితం/తెరిచి మిగిలే ఉపపత్తుల్లో లేకపోవడం వర్ణించాం.",
+    "uncertainty": "పట్టిక గద్యానికి తెలుగు నిఘంటు సాక్ష్యం పరిమితం; దృశ్య కంపైలేషన్ పెండింగ్.",
+    "borrowing": "N1i/N1c, inference-rule macros and diagram formulas remain source-identifying."
+  }
+}

@@ -1,0 +1,82 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{expotough}
+
+\olsection[కొన్ని సరళీకరణలు]{కార్డినల్ ఘాతాంకంలో కొన్ని సరళీకరణలు}
+
+$\canonord$ను నిర్వచించడం కొంచెం క్లిష్టమైనా, దాని ఫలితంగా కార్డినల్ కూడిక, గుణకారం గురించి ఉపయోగకరమైన \olref[simp]{cardplustimesmax} వచ్చింది. అయితే అతిపరిమిత ఘాతాంకాన్ని అంత నేరుగా సరళీకరించలేం. ఎందుకో వివరించడానికి ముందుగా పరిమిత సందర్భపు పరిచిత నమూనాను పొడిగించే ఫలితాన్ని చూద్దాం (దాని నిరూపణ మాత్రం ఎక్కువ అమూర్త స్థాయిలో ఉంటుంది):
+
+\begin{prop}\ollabel{simplecardexpo}
+ఏ కార్డినల్ సంఖ్యలు $\cardfont{a}, \cardfont{b}, \cardfont{c}$కైనా $\cardexpo{\cardfont{a}}{\cardfont{b} \cardplus \cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b}} \cardtimes
+\cardexpo{\cardfont{a}}{\cardfont{c}}$, అలాగే $\cardexpo{(\cardexpo{\cardfont{a}}{\cardfont{b}})}{\cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b} \cardtimes \cardfont{c}}$.
+\end{prop}
+
+\begin{proof}
+మొదటి వాదన కోసం $f \colon
+(\cardfont{b}\disjointsum\cardfont{c}) \to \cardfont{a}$ అనే ప్రమేయాన్ని తీసుకోండి. ప్రతి $\beta \in \cardfont{b}$కు $f_\cardfont{b}(\beta) = f(\beta, 0)$గా, ప్రతి $\gamma \in \cardfont{c}$కు $f_\cardfont{c}(\gamma) = f(\gamma, 1)$గా నిర్వచించి దాన్ని ``రెండుగా విడదీయండి''. $f \mapsto
+(f_{\cardfont{b}}, f_\cardfont{c})$ అనే ప్రతిచిత్రణ $\funfromto{\cardfont{b} \disjointsum \cardfont{c}}{\cardfont{a}} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}} \times
+\funfromto{\cardfont{c}}{\cardfont{a}})$ \tetoken{ద్వైజెక్షన్}{!!a{bijection}}.
+\sourcecorrection{OLTESTCARDEXPO-001}{మూలంలో రెండు పరిమితి ప్రమేయాల క్రమయుగ్మం బదులు వాటి గుణితాన్ని వ్రాసింది. ద్వైజెక్షన్ లక్ష్య సమితిలోని మూలకం క్రమయుగ్మం కాబట్టి దాన్ని సరిచేశాం.}
+
+రెండవ వాదన కోసం $f \colon \cardfont{c} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}})$ ప్రమేయాన్ని తీసుకోండి; అప్పుడు ప్రతి $\gamma \in
+\cardfont{c}$కు $f(\gamma) \colon \cardfont{b} \to
+\cardfont{a}$ అనే ప్రమేయం ఉంది. ప్రతి $\tuple{\beta, \gamma} \in \cardfont{b} \times \cardfont{c}$కు $f^*(\beta, \gamma) = (f(\gamma))(\beta)$గా నిర్వచిద్దాం. $f \mapsto f^*$ అనే ప్రతిచిత్రణ $\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
+\to \funfromto{\cardfont{b} \times \cardfont{c}}{\cardfont{a}}$ \tetoken{ద్వైజెక్షన్}{!!a{bijection}}. కార్టీషియన్ గుణితపు కార్డినాలిటీయే కార్డినల్ గుణితం కాబట్టి కావలసిన సమానత్వం వస్తుంది.
+\sourcecorrection{OLTESTCARDEXPO-002}{మూలం $f^*$ను కార్టీషియన్ గుణితంపై నిర్వచించి, నేరుగా కార్డినల్ గుణితాన్ని నిర్వచన సమితిగా గల ప్రమేయాల సమితితో ద్వైజెక్షన్ అని చెప్పింది. ముందుగా నిజమైన కార్టీషియన్ గుణితంపై ద్వైజెక్షన్ ఇచ్చి, తరువాత కార్డినాలిటీ సమానత్వాన్ని వాడాం.}
+\end{proof}
+
+అనంత కార్డినల్ సంఖ్యల విషయంలో $\cardexpo{\cardfont{a}}{\cardfont{b}}$ను లెక్కించడానికి సులభమైన మార్గం ఉంటే \emph{బాగుంటుంది}. ఆ దిశగా ఒక మంచి అడుగు ఇది:
+
+\begin{prop}\ollabel{cardexpo2reduct}
+$2 \leq \cardfont{a} \leq \cardfont{b}$, అలాగే $\cardfont{b}$ అనంతమైతే, $\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+\begin{align*}
+	\cardexpo{2}{\cardfont{b}} &\leq 
+	\cardexpo{\cardfont{a}}{\cardfont{b}}\text{, ఎందుకంటే $2 \leq \cardfont{a}$}\\
+	&\leq \cardexpo{(2^\cardfont{a})}{\cardfont{b}}
+	\text{, \olref[opps]{lem:SizePowerset2Exp} ప్రకారం}\\
+	&= \cardexpo{2}{\cardfont{a} \cardtimes \cardfont{b}}
+	\text{, \olref{simplecardexpo} ప్రకారం} \\
+	&= \cardexpo{2}{\cardfont{b}}
+	\text{, \olref[simp]{cardplustimesmax} ప్రకారం}
+\end{align*}
+\end{proof}
+
+దీన్ని ఇంకా సరళీకరించగలమని ఆశించకూడదు; ఎందుకంటే \olref[card-arithmetic][opps]{lem:SizePowerset2Exp} ప్రకారం $\cardfont{b} < \cardexpo{2}{\cardfont{b}}$. అయితే $\cardfont{b} <
+\cardfont{a}$ అయినప్పుడు $\cardexpo{\cardfont{a}}{\cardfont{b}}$ గురించి ఏం చెప్పాలో ఇది తెలియజేయదు. $\cardfont{b}$ \emph{పరిమిత}మైతే మాత్రం ఏం చేయాలో మనకు తెలుసు.
+
+\begin{prop}
+$\cardfont{a}$ అనంతమై, $n \in \omega$ శూన్యం కాని సంఖ్య అయితే $\cardexpo{\cardfont{a}}{n} = \cardfont{a}$.
+\sourcecorrection{OLTESTCARDEXPO-003}{మూల వాదనలో $n=0$నూ చేర్చారు; కానీ అనంత ఆధారానికి శూన్య ఘాతం ఒకటి, ఆధారం కాదు. శూన్యం కాని పరిమిత ఘాతానికి వాదనను పరిమితం చేశాం.}
+\end{prop}
+
+\begin{proof}
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a} \cardtimes \cardfont{a}
+\cardtimes \ldots \cardtimes \cardfont{a} = \cardfont{a}$, \olref[simp]{cardplustimesmax} ప్రకారం.
+\end{proof}
+\noindent
+ఇంకా కొన్ని సందర్భాల్లో $\cardexpo{\cardfont{a}}{\cardfont{b}}$ పరిమాణాన్ని నిర్ణయించవచ్చు:
+
+\begin{prop}
+$2 \leq \cardfont{b} < \cardfont{a} \leq
+\cardexpo{2}{\cardfont{b}}$, అలాగే $\cardfont{b}$ అనంతమైతే, $\cardexpo{\cardfont{a}}{\cardfont{b}} = \cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+\olref{cardexpo2reduct}లోని వాదనలతోనే $\cardexpo{2}{\cardfont{b}}\leq \cardexpo{\cardfont{a}}{\cardfont{b}}
+\leq \cardexpo{(\cardexpo{2}{\cardfont{b}})}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}\cardtimes\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$.
+\end{proof}
+\noindent
+కానీ దీన్ని దాటితే విషయాలు మరింత సూక్ష్మమవుతాయి.
+
+\end{document}

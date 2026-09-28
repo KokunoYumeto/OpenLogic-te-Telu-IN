@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCARDCH-20260927",
+  "unit_id": "OLP-0590",
+  "source_path": "content/set-theory/card-arithmetic/ch.tex",
+  "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+  "findings": [
+    {
+      "finding_id": "OLTESTCARDCH-001",
+      "source_locator": "ch.tex lines 32–36, recursion paragraph",
+      "classification": "wrong_object_named_as_recursively_defined",
+      "source_issue": "The recurrence defines the aleph and beth sequences, not the fixed cardinal a.",
+      "minimal_treatment": "Name the two recursively defined sequences and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTCARDCH-002",
+      "source_locator": "ch.tex lines 68–82, every infinite cardinal is an aleph proof",
+      "classification": "finite_predecessors_in_alef_induction_and_union",
+      "source_issue": "Finite predecessor cardinals have no aleph index, yet are included in the induction hypothesis and indexed unions; uniqueness is asserted without explanation.",
+      "minimal_treatment": "Give the omega base, restrict indexed predecessors to infinite cardinals, and explain uniqueness by strict successor growth and limit continuity; disclose.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\cardfont{a}=\\bigcup_{\\cardfont{b}<\\cardfont{a}}\\cardfont{b}=\\bigcup_{\\cardfont{b}<\\cardfont{a}}{\\aleph_{\\gamma_\\cardfont{b}}}$",
+          "$\\gamma=\\bigcup_{\\cardfont{b}<\\cardfont{a}}\\gamma_\\cardfont{b}$"
+        ],
+        "target_only": [
+          "$\\cardfont{a}=\\bigcup_{\\cardfont{b}<\\cardfont{a}}\\cardfont{b}=\\bigcup_{\\omega\\leq\\cardfont{b}<\\cardfont{a}}{\\aleph_{\\gamma_\\cardfont{b}}}$",
+          "$\\gamma=\\bigcup_{\\omega\\leq\\cardfont{b}<\\cardfont{a}}\\gamma_\\cardfont{b}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTESTCARDCH-003",
+      "source_locator": "ch.tex lines 91–101, GCH exponent bound paragraph",
+      "classification": "zero_exponent_and_base_scope_missing_from_bound",
+      "source_issue": "The lower bound a <= a^b fails at b=0; the intended statement also concerns infinite base cardinals.",
+      "minimal_treatment": "Restrict the prose to infinite base and nonzero smaller exponent and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

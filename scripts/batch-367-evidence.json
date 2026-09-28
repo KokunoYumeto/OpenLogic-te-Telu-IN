@@ -1,0 +1,67 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "367",
+  "unit_id": "OLP-0718",
+  "unit_order": 718,
+  "source_path": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex",
+  "blocks": 31,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "corrections_by_block": {
+    "17": [
+      "OLTESFRINDINT-001"
+    ]
+  },
+  "previous_segments": 10524,
+  "previous_terms": 407,
+  "expected_corrections": 703,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సమితి/ప్రమేయం, TE-P024/025 నిరూపణ/ఆగమన ప్రయోగాలను పోల్చాం. నిర్మాణాత్మక ఆగమనం ప్రత్యేక పదబంధం స్థానిక నిర్వచనాలు, ఉదాహరణలతో నియంత్రితమైంది; అన్ని సంయుక్త పదాలకు ప్రత్యక్ష ప్రమాణం ఉందని అనుకోలేదు.",
+  "evidence_limit": "Equation-tag language and arithmetic share a display-level declared delta. Specialist terms definition controlled; no current TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T408",
+    "source_term": "induction; closure under a function; preservation under a function; base case; inductive step",
+    "telugu": "ఆగమనం; ప్రమేయం కింద సంవృతత; ప్రమేయం కింద లక్షణం నిలుపుదల; ఆధార దశ; ఆగమన దశ",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఆధార దశ, ఆగమన దశ మరియు మూసివేత/నిలుపుదల మధ్య స్పష్టమైన పాత్ర భేదం తెలుగు వివరణలోనూ నిలుపుకున్నాం.",
+    "uncertainty": "Equation-tag language and arithmetic share a display-level declared delta. Specialist terms definition controlled; no current TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

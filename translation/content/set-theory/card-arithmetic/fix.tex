@@ -1,0 +1,110 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{card-arithmetic}{fix}
+\olsection{$\aleph$-స్థిర బిందువులు}
+
+ప్రతిస్థాపన వల్ల స్థాయిక్రమం చాలా ఎత్తుగా ఉండాల్సి వస్తుందని, అందుకే దానికి సమర్థన కావాలని \olref[spine][]{chap}లో సూచించాం. కొంత కార్డినల్ అంకగణితం చేసుకున్నాక, ఆ స్థాయిక్రమం ఎత్తును చూపే ఒక చిన్న ఉదాహరణ ఇవ్వవచ్చు.
+
+$0 < \aleph_0$, $1 < \aleph_1$, $2 < \aleph_2$\ldots అని స్పష్టం. నిజానికి ప్రతి దశతో పరిమాణ భేదం \emph{పెరుగుతూనే} ఉంటుంది. కనుక ప్రతి క్రమసంఖ్య $\kappa$కూ $\kappa< \aleph_\kappa$ అని ఊహించాలనిపిస్తుంది.
+
+కానీ $\ZFC$లో ఈ ఊహ \emph{తప్పు}. నిజానికి $\kappa=\aleph_\kappa$ అయ్యే కార్డినల్ సంఖ్యలు $\kappa$, అంటే \emph{$\aleph$-స్థిర బిందువులు}, ఉన్నాయని నిరూపించవచ్చు.
+
+\begin{prop}\ollabel{alephfixed}
+ఒక $\aleph$-స్థిర బిందువు ఉంది.
+\end{prop}
+
+\begin{proof}
+పునరావృత్తి ద్వారా ఇలా నిర్వచిద్దాం:
+\begin{align*}
+	\kappa_0 &= 0\\
+	\kappa_{n+1} &= \aleph_{\kappa_n}\\
+	\kappa&= \bigcup_{n < \omega}\kappa_n
+\end{align*}
+\olref[cardinals][classing]{unioncardinalscardinal} ప్రకారం $\kappa$ కార్డినల్ సంఖ్య. ఇక:
+\[
+	\kappa= \bigcup_{n < \omega} \kappa_{n+1} = 
+	\bigcup_{n < \omega}\aleph_{\kappa_n} = 
+	\bigcup_{\alpha < \kappa}\aleph_\alpha = \aleph_\kappa
+\]
+%\tBy construction, $\kappa$ is the least cardinal greater than each
+%\t$\kappa_n$. So $\aleph_\kappa$ is the least cardinal greater than
+%\teach $\aleph_{\kappa_n}$, and hence greater than each
+%\t$\kappa_{n+1}$. But equally $\kappa$ is the least cardinal greater
+%\tthan each $\kappa_{n+1} = \aleph_{\kappa_n}$. So $\kappa=
+%\t\aleph_\kappa$.
+\end{proof}
+
+మనం ఇప్పుడే నిర్మించిన $\aleph$-స్థిర బిందువు గురించే బూలొస్ ఒక వ్యాసం రాశారు. వ్యాసం ప్రారంభంలో $\kappa$ అస్తిత్వాన్ని గమనించి, ఆయన ఇలా అన్నారు:
+\begin{quote}
+	[సమితి సిద్ధాంతం ఇంతకుముందు తెలియనివారి దృష్టిలో $\kappa$] \emph{చాలా పెద్ద} సంఖ్య; కనీసం $\kappa$ వస్తువులున్నాయని చెప్పే వాదన ఏ సిద్ధాంతంలోనైనా ఉంటే, ఆ సిద్ధాంత సత్యాన్నే ప్రశ్నించేంత పెద్దదని నాకు అనిపిస్తుంది.
+	\citep[p.~257]{Boolos2000}
+\end{quote}
+తన వ్యాసం చివర్లో ఆయన ఇలా అడిగారు:
+\begin{quote}
+	[కథ ప్రారంభంలో పరిస్థితి ఎలా ఉన్నా,] ఇంత దూరం వచ్చేసరికి చక్రాలు ఖాళీగా తిరుగుతున్నాయనీ, నిజంగా ఉన్న దేనినీ వర్ణించడం మనం ఇక వినడం లేదనీ అనుమానించాలా?
+	\citep[p.~268]{Boolos2000}
+\end{quote}
+మనం నిజంగానే ``నిజంగా ఉన్నదాన్ని'' దాటిపోయి ఉంటే, నిందను నేరుగా ప్రతిస్థాపనపైనే వేయాలి. ఎందుకంటే ఈ స్వయంసిద్ధమే మన నిరూపణను సాధ్యం చేస్తుంది. అలా అయితే, కొన్ని దశాబ్దాల క్రితం ప్రతిస్థాపనకు ``అవాంఛనీయ'' పరిణామాలు లేవని తాను చేసిన వాదనను బూలొస్ మళ్లీ పరిశీలించాల్సి ఉంటుంది (\olref[replacement][extrinsic]{sec} చూడండి).
+
+అయితే $\kappa$ అస్తిత్వం నిజంగా అంత చెడ్డదా? ఇక్కడ రస్సెల్ చెప్పిన \emph{ట్రిస్ట్రామ్ షాండీ వైరుధ్యాభాసం}ను ఆలోచించడం ఉపయోగపడవచ్చు. ట్రిస్ట్రామ్ షాండీ తన జీవితాన్ని డైరీలో రాస్తాడు, కానీ ఒక్క రోజును రాయడానికి అతనికి ఒక సంవత్సరం పడుతుంది. ప్రతి సంవత్సరంతో అతను ఇంకా వెనుకపడతాడు: ఒక సంవత్సరం తరువాత ఒక్క రోజే రాసి, 364 రోజులను రాయకుండా గడిపాడు; రెండు సంవత్సరాల తరువాత రెండు రోజులే రాసి, 728 రోజులను రాయకుండా గడిపాడు; మూడు సంవత్సరాల తరువాత మూడు రోజులే రాసి, 1092 రోజులను రాయకుండా గడిపాడు \dots\footnote{లీపు సంవత్సరాలను పక్కనపెడుతున్నాం.} అయినా ట్రిస్ట్రామ్ \emph{అమరుడు} అయితే ప్రతి రోజునూ చివరికి రాయగలుగుతాడు: తన జీవితంలోని $n$వ రోజును $n$వ సంవత్సరంలో రాస్తాడు. కనుక ``కాలాంతంలో'' అతనికి సంపూర్ణ డైరీ ఉంటుంది.
+
+ఇది $\alpha$ సంఖ్య $\aleph_\alpha$ కంటే చిన్నదిగా---అంతకంతకూ బాగా చిన్నదిగా---ఉంటూ, $\kappa$ వద్ద సమానం కావడం, అంటే $\kappa
+= \aleph_\kappa$, అనే ఆలోచనకు అంత భిన్నంగా ఎందుకు ఉంటుంది?
+
+ఆ విషయాన్ని పక్కనపెట్టి, $\ZFC$ను అంగీకరిస్తున్నామని అనుకొని, స్థిర బిందు నిర్మాణాల గురించి ఇంకొంచెం చూద్దాం. తరువాతి మూడు ఫలితాలు స్థాయిక్రమం వెడల్పు, ఎత్తు సమానమయ్యే ఒక (సామాన్యం కాని) దశ ఉందని సహజంగా చూపుతాయి:
+
+\begin{prop}\ollabel{bethfixed}
+$\kappa=
+\beth_\kappa$ అయ్యే $\kappa$, అంటే ఒక $\beth$-స్థిర బిందువు, ఉంది.
+\end{prop}
+
+\begin{proof}
+\olref{alephfixed}లో వలెనే, ``$\aleph$'' స్థానంలో ``$\beth$'' వాడితే చాలు.
+\end{proof}
+
+\begin{prop}\ollabel{stagesize}
+$\card{V_{\omega+\alpha}} = \beth_{\alpha}$. $\omega \ordtimes
+\omega \leq \alpha$ అయితే $\card{V_\alpha} = \beth_\alpha$.
+\end{prop}
+
+\begin{proof}
+మొదటి వాదన సరళమైన అతిపరిమిత ఆగమనంతో వస్తుంది. రెండవది $\omega \ordtimes \omega \leq \alpha$ అయితే $\omega + \alpha = \alpha$ కాబట్టి వస్తుంది. దీన్ని నిరూపించడానికి \olref[ord-arithmetic][]{chap}లోని క్రమసంఖ్య అంకగణిత విషయాలను వాడుతాం. ముందుగా $\omega \ordtimes \omega = \omega \ordtimes (1 \ordplus \omega) =
+(\omega  \ordtimes 1) \ordplus (\omega\ordtimes\omega) = \omega
+\ordplus (\omega \ordtimes \omega)$ అని గమనించండి. ఇప్పుడు $\omega \ordtimes \omega
+\leq \alpha$, అంటే ఏదో $\beta$కు $\alpha = (\omega\ordtimes\omega) \ordplus \beta$ అయితే, $\omega \ordplus \alpha = \omega \ordplus
+((\omega \ordtimes \omega) \ordplus \beta) = (\omega \ordplus (\omega
+\ordtimes \omega)) \ordplus \beta = (\omega \ordtimes \omega) \ordplus
+\beta = \alpha$.
+\end{proof}
+
+\begin{cor}
+$\card{V_\kappa} = \kappa$ అయ్యే $\kappa$ ఉంది.
+\end{cor}
+
+\begin{proof}
+\olref{bethfixed} ఇచ్చినట్లుగా $\kappa$ను $\beth$-స్థిర బిందువుగా తీసుకుందాం. $\omega \ordtimes \omega < \kappa$ అని స్పష్టం. కాబట్టి \olref{stagesize} ప్రకారం $\card{V_\kappa} =
+\beth_\kappa= \kappa$.
+\end{proof}
+
+$V_\kappa$ క్రింద ఉన్న దశలు ఎన్ని ఉన్నాయో, $V_\kappa$లోని \tetoken{మూలకాలూ}{!!{element}s} అన్నే ఉన్నాయి. అందువల్ల సహజంగా $V_\kappa$ వెడల్పు దాని ఎత్తుతో సమానం. ఇది ట్రిస్ట్రామ్ షాండీ ఉదాహరణలాంటిదే: ప్రతి దశలో \emph{ఘాత సమితి} తీసుకుంటాం; అందువల్ల స్థాయిక్రమం \emph{చాలా} పెద్దదవుతుంది. కానీ ``చివరికి'', అంటే $\kappa$ దశలో, దాని వెడల్పు ఎత్తును అందుకుంటుంది.
+
+ఎవరైనా \emph{స్థాయిక్రమం వెడల్పు దాని ఎత్తుతో ఎన్ని సార్లు సరిపోతుంది?} అని అడగవచ్చు. సమాధానం: \emph{క్రమసంఖ్యలు ఎన్ని ఉంటాయో అన్నిసార్లు.} అయితే దీనికి కొంత వివరణ కావాలి.
+
+$\tau$ అనే పదాన్ని ఇలా నిర్వచిద్దాం. ఏ $A$కైనా:
+\begin{align*}
+	\tau_0(A) & \defis \cardsucc{\card{A}}\\
+	\tau_{n+1}(A) & \defis \beth_{\tau_n(A)}\\
+	\tau(A) & \defis \bigcup_{n < \omega}\tau_n(A)
+\intertext{\olref{bethfixed}లో వలె, ఏ $A$కైనా $\tau(A)$ ఒక $\beth$-స్థిర బిందువు. ప్రారంభ విలువను కార్డినల్ ఉత్తరవర్తిగా తీసుకున్నాం కాబట్టి $\card{A} < \tau(A)$ కూడా. ఇప్పుడు ఈ పునరావృత్త నిర్వచనాన్ని చూడండి:}
+	W_0 &\defis \tau(0)\\
+	W_{\alpha + 1} & \defis \tau(W_\alpha)\\
+	W_\alpha & \defis \bigcup_{\beta < \alpha} W_\beta
+	\text{, $\alpha$ సీమా అయితే}
+\end{align*}
+\sourcecorrection{OLTESTCARDFIX-001}{మూలంలో $\tau_0(A)=\card{A}$ వల్ల ప్రారంభ కార్డినాలిటీ ఇప్పటికే $\beth$-స్థిర బిందువు అయితే $\card{A}<\tau(A)$ తప్పు. ప్రారంభాన్ని $\card{A}$ ఉత్తరవర్తిగా మార్చి కఠిన పెరుగుదలను నిర్ధారించాం.}
+\sourcecorrection{OLTESTCARDFIX-002}{మూలం $W_0=0$గా ఉంచి $W$ అన్ని క్రమసంఖ్యల నుంచి $\beth$-స్థిర బిందువులకు ప్రతిచిత్రణ అని, ప్రతి సూచికలో స్థాయి వెడల్పు-ఎత్తు సమానమని చెప్పింది; శూన్యం స్థిర బిందువు కాదు. మొదటినే $\tau(0)$గా తీసుకుని, సీమా దశలో స్థిర బిందువుల సమ్మేళనం కూడా స్థిర బిందువని స్పష్టం చేశాం.}
+ఈ నిర్మాణం అన్ని క్రమసంఖ్యలకూ నిర్వచితమే. ప్రతి ఉత్తరవర్తి దశలో విలువ కఠినంగా పెరుగుతుంది; సీమా దశలో పూర్వ బెత్-స్థిర బిందువుల సమ్మేళనం మళ్లీ స్థిర బిందువే. అందువల్ల $W$ క్రమసంఖ్యల నుంచి $\beth$-స్థిర బిందువులకు ``\tetoken{ఇంజెక్షన్}{!!a{injection}}''గా ఉంటుంది. ముందటిలాగే, ప్రతి $\alpha$కు $V_{W_\alpha}$ వెడల్పు దాని ఎత్తుతో సమానం.
+
+\end{document}

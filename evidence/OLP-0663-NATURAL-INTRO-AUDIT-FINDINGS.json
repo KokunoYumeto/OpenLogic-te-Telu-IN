@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATINT-20260927",
+  "unit_id": "OLP-0663",
+  "source_path": "content/proof-theory/natural-deduction/introduction.tex",
+  "source_sha256": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATINT-001",
+      "source_locator": "introduction.tex lines 39–43, Jaśkowski box description",
+      "classification": "wrong_first_line_of_conditional_subproof",
+      "source_issue": "The source says the consequent B is both the first and last line in the box, although the assumption A must be the first line and B the last.",
+      "minimal_treatment": "Name A as the box's first line and B as its last line, with an adjacent disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATINT-002",
+      "source_locator": "introduction.tex lines 73–76, implication introduction entailment",
+      "classification": "implication_conclusion_omitted",
+      "source_issue": "The source says Γ+A⊨B implies Γ⊨B. Implication introduction instead yields Γ⊨A→B.",
+      "minimal_treatment": "Correct the conclusion to Γ⊨A→B and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma\\Entails!B$"
+        ],
+        "target_only": [
+          "$\\Gamma\\Entails!A\\lif!B$"
+        ]
+      }
+    }
+  ]
+}

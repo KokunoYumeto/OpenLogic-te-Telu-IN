@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTINT-20260927",
+  "unit_id": "OLP-0659",
+  "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+  "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTINT-001",
+      "source_locator": "introduction.tex lines 104–113, displayed context-sharing cut",
+      "classification": "context_sharing_cut_rule_mislabeled",
+      "source_issue": "The text explicitly introduces context-sharing cut CutCS and the two premises share Gamma and Delta, but the displayed proof-tree label is Cut rather than CutCS.",
+      "minimal_treatment": "Label the displayed rule CutCS in the target and disclose the source mismatch immediately after the diagram.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\Cut}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma\\fCenter\\Delta,!A$\\Axiom$!A,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

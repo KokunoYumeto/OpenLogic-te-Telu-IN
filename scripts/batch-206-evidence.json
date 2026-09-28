@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "206",
+  "unit_id": "OLP-0557",
+  "unit_order": 557,
+  "source_path": "content/set-theory/ordinals/opps.tex",
+  "blocks": 15,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "previous_segments": 8246,
+  "previous_terms": 246,
+  "expected_corrections": 485,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P010", "TE-P018"],
+  "consultation_phase": "స్థిర ఉత్తరవర్తి/సీమా మూలం, తెలుగు లక్ష్యం, పూర్వ ఉత్తరవర్తి/క్రమసంఖ్య/సుక్రమ పదాలు, స్థానిక సంఖ్య/సమితి/సంబంధ సాక్షులు ఎదురెదురు చూశాం; ఉత్తరవర్తి, సీమా నిర్వచనాలు, సరళ అతిపరిమిత ఆగమన మూడు సందర్భాలు, కనిష్ఠ కఠిన పై హద్దు నిర్వచన నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/010/018 సాధారణ సంఖ్య/సమితి/క్రమ పదాలకు మాత్రమే సాక్షులు; సీమా క్రమసంఖ్య, కఠిన పై హద్దు ప్రత్యేక రూపాలు మూల నిర్వచన నియంత్రితం. మూల నిరూపణల చివరి విరోధ/కనిష్ఠ వాక్యాలను పాఠక స్పష్టత కోసం గద్యంగా విస్తరించాం; సూత్రాలు మారలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T247",
+    "source_term": "successor ordinal / limit ordinal / simple transfinite induction / least strict upper bound",
+    "telugu": "ఉత్తరవర్తి క్రమసంఖ్య / సీమా క్రమసంఖ్య / సరళ అతిపరిమిత ఆగమనం / కనిష్ఠ కఠిన పై హద్దు",
+    "status": "definition_and_proof_controlled_general_order_number_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P010", "TE-P018"],
+    "basis": "ఉత్తరవర్తి alpha∪{alpha}, శూన్యం లేదా ఉత్తరవర్తి కాని సీమా, మూడు-సందర్భాల ఆగమనం, ప్రతి X మూలకానికంటే కఠినంగా పెద్ద అతి చిన్న క్రమసంఖ్యగా supstrict నిర్వచనం నిలిచాయి.",
+    "uncertainty": "సీమా/కఠిన పై హద్దు ప్రత్యేక పదాలకు ప్రత్యక్ష తెలుగు సాక్షి లేదు; మూల సూత్రాలు అర్థాన్ని నియంత్రిస్తాయి.",
+    "borrowing": "Ordinal and supstrict macros and comparison formulas remain source-controlled."
+  }
+}

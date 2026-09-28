@@ -1,0 +1,135 @@
+% Part: conditional-logics
+% Chapter: minimal-change-semantics
+% Section: true-false
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{con}{min}{tf}
+
+\olsection{ప్రతివాస్తవాల సత్యం, అసత్యం}
+
+\olref{fig:true}లో చూపినట్లుగా,
+అత్యంత సమీప $!A$-లోకాలన్నీ
+$!B$-లోకాలైతే ప్రతివాస్తవం
+$!A \cif !B$ (శూన్యసత్యం
+కాని విధంగా) సత్యం.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{శూన్యసత్యం కాని సత్య ప్రతివాస్తవం}
+\ollabel{fig:true}
+\end{center}
+\end{figure}
+~$w$ చుట్టూ ఉన్న గోళ
+వ్యవస్థలో అసలు ఏ $!A$-లోకాన్నీ
+కలిగిన గోళం లేకపోయినా, ఆ
+ప్రతివాస్తవం~$w$ వద్ద సత్యమే.
+ఈ సందర్భంలో అది \emph{శూన్యసత్యం}
+(\olref{fig:vacuous} చూడండి).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \proposition{0}{6.5}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.2,-1)}]{90}{1}{30}{4}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \spherepos{0}{7}{node {$\formula{A}$}}
+\end{tikzpicture}
+\caption{శూన్యసత్య ప్రతివాస్తవం}
+\ollabel{fig:vacuous}
+\end{center}
+\end{figure}
+
+ప్రతివాస్తవం రెండు విధాలుగా
+అసత్యమవుతుంది. ఒక విధం:
+అత్యంత సమీప $!A$-లోకాలన్నీ
+$!B$-లోకాలు కావు, కానీ
+కొన్ని మాత్రం అటువంటివే.
+ఈ సందర్భంలో $!A \cif
+\lnot !B$ కూడా అసత్యమే
+(\olref{fig:false} చూడండి).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(1.6,0)}]{90}{1}{30}{3}}
+  \path (1.5,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{అసత్య ప్రతివాస్తవం; వ్యతిరేకమూ అసత్యం}
+\ollabel{fig:false}
+\end{center}
+\end{figure}
+అత్యంత సమీప $!A$-లోకాలతో
+$!B$-లోకాలకు ఏ అతివ్యాప్తీ
+లేకపోతే, $!A \cif !B$
+అసత్యం. కానీ ఈ సందర్భంలో
+అత్యంత సమీప $!A$-లోకాలన్నీ
+$\lnot !B$-లోకాలు; అందువల్ల
+$!A \cif \lnot !B$ సత్యం
+(\olref{fig:false-opposite} చూడండి).
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.7]\small
+  \spheresystem{5}
+  \draw (0,0) node {$w$};
+  \propositionintersect{0}{4}{40}{3.5}
+  {\tikzset{proposition/.append={smooth,tension=1.4}}
+  \proposition[shift={(-1,0)}]{90}{1}{30}{3}}
+  \path (-1,3) node[below] {$\formula{B}$};
+  \path (3,0) node {$\formula{A}$};
+\end{tikzpicture}
+\caption{అసత్య ప్రతివాస్తవం; వ్యతిరేకం సత్యం}
+\ollabel{fig:false-opposite}
+\end{center}
+\end{figure}
+
+కఠిన సోపాధికానికి భిన్నంగా,
+ప్రతివాస్తవాలు స్థితిని బట్టి
+సత్యమో అసత్యమో కావచ్చు.
+\olref{fig:contingent}లోని
+గోళ నమూనాను పరిశీలించండి.
+~$u$కు అత్యంత సమీప
+$!A$-లోకాలన్నీ $!B$-లోకాలు;
+కాబట్టి $\mSat{M}{!A \cif
+  !B}[u]$. కానీ~$v$కు
+అత్యంత సమీపంగా ఉన్న కొన్ని
+$!A$-లోకాలు $!B$-లోకాలు
+కావు; కాబట్టి
+$\mSat/{M}{!A \cif !B}[v]$.
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=.6]\small
+  \spheresystem{7}
+  \spheresystem[shift={(0:3.1)},dashed]{4}
+  \propositionintersect{45}{4}{40}{4.5}
+  \begin{scope}
+    \clip \propositionplot{45}{4}{40}{4.5} ;
+    \spherelayer[shift={(0:3.1)}]{3}
+  \end{scope}
+  \proposition[shift={(1.4,-.5)}]{90}{1}{35}{5}
+  \path (0,0) node {$u$};
+  \path (0:3.1) node {$v$};
+  \spherepos{35}{9}{node {$\formula{A}$}}
+  \spherepos{80}{9}{node {$\formula{B}$}}
+\end{tikzpicture}
+\end{center}
+\caption{స్థితిని బట్టి సత్యం మారే ప్రతివాస్తవం}
+\ollabel{fig:contingent}
+\end{figure}
+\end{document}

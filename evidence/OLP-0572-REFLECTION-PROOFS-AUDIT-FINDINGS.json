@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTREPLREFP-20260927",
+  "unit_id": "OLP-0572",
+  "source_path": "content/set-theory/replacement/refproofs.tex",
+  "source_sha256": "c034323f1402beaf3d329ac7d7a0be6e192bd86ea81ff3efffe29229aca9cf43",
+  "findings": [
+    {
+      "finding_id": "OLTESTREPLREFP-001",
+      "source_locator": "refproofs.tex line 34, displayed mu condition",
+      "classification": "unmatched_closing_parenthesis_in_formula",
+      "source_issue": "The implication defining the witness stage ends in x)) with only one parenthesis opened for the bounded quantifier.",
+      "minimal_treatment": "Remove the extra terminal parenthesis and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x))\\]"],
+        "target_only": ["\\[\\existsx\\phi_i(\\overline{a}_i,x)\\rightarrow(\\existsx\\inV)\\phi_i(\\overline{a}_i,x)\\]"]
+      }
+    },
+    {
+      "finding_id": "OLTESTREPLREFP-002",
+      "source_locator": "refproofs.tex line 42, recursive union defining S",
+      "classification": "bound_index_mismatched_with_union_summand",
+      "source_issue": "The union ranges over m < omega but repeats S_n instead of ranging over S_m.",
+      "minimal_treatment": "Use S_m in the union body and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_n.\\end{align*}"],
+        "target_only": ["\\begin{align*}S_0&=V_{\\alpha+1}\\\\S_{n+1}&=S_n\\cup\\bigcup\\Setabs{\\mu(\\overline{a}_1,\\ldots,\\overline{a}_k)}{\\overline{a}_1,\\ldots,\\overline{a}_k\\inS_n}\\\\S&=\\bigcup_{m<\\omega}S_m.\\end{align*}"]
+      }
+    },
+    {
+      "finding_id": "OLTESTREPLREFP-003",
+      "source_locator": "refproofs.tex line 147, Replacement theorem statement",
+      "classification": "unmatched_opening_parenthesis_in_set_comprehension",
+      "source_issue": "The set-builder predicate has an opening parenthesis before exists but none after phi(x,y).",
+      "minimal_treatment": "Close the existential predicate and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y}$"],
+        "target_only": ["$\\Setabs{y}{(\\existsx\\inA)\\phi(x,y)}$"]
+      }
+    }
+  ]
+}

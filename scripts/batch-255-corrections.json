@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0606",
+  "source_path": "content/methods/proofs/inference-patterns.tex",
+  "source_sha256": "dec51f23018334023107ecfaa7a2f31fdf964b2b0cb7aebaeeb4e1688ed6dd31",
+  "audit_id": "OLTEMTHPRFPAT-20260927",
+  "audit_review_path": "evidence/OLP-0606-INFERENCE-PATTERNS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e525912afefa4b4deb546c300539ae42fda2a72a18a7b5063e2917fc1ae63c13",
+  "audit_findings_path": "evidence/OLP-0606-INFERENCE-PATTERNS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "209833f6af6910dfbe26fa0bdca1eda16ab71595a3828956261ec1fd1905116d",
+  "previous_corrections": 522,
+  "treatments": {
+    "OLTEMTHPRFPAT-001": {"target_line": 136, "body_treatment": "ఖాళీ కాని సమితి సమానార్థకత ముగింపులో మూలంలోని వస్తువు x స్థానంలో నిరూపిస్తున్న సమితి Aను ఉంచి పక్కనే ప్రకటించాం."}
+  }
+}

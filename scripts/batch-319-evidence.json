@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "319",
+  "unit_id": "OLP-0670",
+  "unit_order": 670,
+  "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+  "blocks": 12,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "corrections_by_block": {
+    "8": [
+      "OLTEPTNATG2I-001"
+    ],
+    "10": [
+      "OLTEPTNATG2I-002"
+    ],
+    "11": [
+      "OLTEPTNATG2I-003",
+      "OLTEPTNATG2I-004",
+      "OLTEPTNATG2I-005",
+      "OLTEPTNATG2I-006",
+      "OLTEPTNATG2I-007"
+    ]
+  },
+  "previous_segments": 9919,
+  "previous_terms": 359,
+  "expected_corrections": 597,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "G2i కట్-సహిత సీక్వెంట్ నిరూపణను N2iకు అనువదించే బహుసమితి/గుర్తు సమితి అనురూపత, ఎనిమిది నియమ సందర్భాలు, ఏడు ప్రకటిత మూల సవరణలను పోల్చాం.",
+  "evidence_limit": "అనురూపత, బహుసమితి పదాలు భావపారదర్శక ఎంపికలు; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. అన్ని నియమ సందర్భాలు మూలంలోని పరిమిత నిర్మాణానుసారం మాత్రమే; స్వతంత్ర formal verification లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T360",
+    "source_term": "G2i-to-N2i translation; multiset correspondence; labelled formula multiplicity",
+    "telugu": "G2i నుంచి N2iకి అనువాదం; బహుసమితి అనురూపత; గుర్తు గల సూత్ర బహుళత్వం",
+    "status": "G2i_N2i_translation_seven_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "బహుసమితి/గుర్తు సమితి పరిమాణ షరతు, బలహీనీకరణ, సంకోచనం, అన్వయం, సంయోగం, కట్ సందర్భాలు నిలిచాయి; ఏడు మూల లోపాలు సరిచేసి ప్రకటించాం.",
+    "uncertainty": "బహుసమితి సాంకేతిక పదం భావానువాదం; నిరూపణల పూర్తి formal ధృవీకరణ జరగలేదు.",
+    "borrowing": "G2i/N2i, Cut, context and derivation symbols remain source-identifying."
+  }
+}

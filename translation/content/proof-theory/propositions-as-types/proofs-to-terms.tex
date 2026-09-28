@@ -1,0 +1,75 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: proofs-to-terms
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{pt}
+
+\olsection{\tetoken{నిగమనాలను}{\usetoken{P}{derivation}} నిరూపణ పదాలుగా మార్చడం}
+
+సహజ నిగమన \tetoken{నిరూపణలను}{!!{proof}s} నిరూపణ పదాలుగా మార్చడం—అంటే \Log{N2i}లోని \tetoken{నిరూపణలను}{!!{proof}s} \Log{tN2i}లోని \tetoken{నిరూపణలుగా}{!!{proof}s} అనువదించడం—చాలా సరళమైనది. \tetoken{నిగమనంలోని}{!!{derivation}} ప్రతి సీక్వెంట్ కుడివైపు \tetoken{సూత్రానికి}{!!{formula}} ఎడమవైపున నిరూపణ పదం రాస్తే చాలు; అప్పుడు సీక్వెంట్ల రూపం $\Gamma \Sequent M :
+!A$ అవుతుంది. సందర్భం~$\Gamma$లో $M$ అనేది~$!A$కు \emph{సాక్ష్యం ఇస్తుంది} అంటాం. ఏ నిరూపణ పదం రాయాలో \Log{tN2i} నియమాలే పూర్తిగా నిర్ణయిస్తాయి.
+
+\begin{prop}
+\Log{N2i}లో $\Gamma \Sequent !A$కు ప్రతి \tetoken{నిరూపణ}{!!{proof}}~$\delta$కు, \Log{tN2i}లో $\Gamma \Sequent N : !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta'$ అనురూపంగా ఉంటుంది. నిరూపణ పదం $N$ను~$\delta$ అనన్యంగా నిర్ణయిస్తుంది.
+\end{prop}
+
+\begin{proof}
+$\delta$ ఎత్తుపై ఆగమనంతో ముందుకు వెళ్దాం. $\delta$ అక్షయం $x:!A \Sequent !A$ అయితే, $\delta'$ అక్షయం~$x:!A \Sequent
+x:!A$. $\delta$ ఒక నిగమన నియమంతో ముగిస్తే, ఆగమన పరికల్పన ప్రతి ఆధారానికి నిరూపణ పదాన్ని, ఆ పదంతో కూడిన సీక్వెంట్‌కు అనురూప \Log{tN2i}-\tetoken{నిరూపణలను}{!!{proof}s} ఇస్తుంది. అనురూప \Log{tN2i} నియమాన్ని వర్తింపజేస్తాం; దాని నిగమన నియమమే నిరూపణ పదాన్ని నిర్ణయిస్తుంది.
+\end{proof}
+
+\begin{ex}
+  \Log{N1i}లో $(!A \land !B)
+  \lif (!B \land !A)$కు ఈ చాలా సరళమైన \tetoken{నిరూపణను}{!!{proof}} పరిగణించండి:
+  \[
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[2]}
+  \UnaryInfC{$!B$}
+  \AxiomC{$\Discharge{!A\land !B}{x}$}
+  \RightLabel{\Elim\land[1]}
+  \UnaryInfC{$!A$}
+  \RightLabel{\Intro\land}
+  \BinaryInfC{$!B \land !A$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$(!A \land !B) \lif (!B \land !A)$}
+  \DisplayProof
+  \]
+  \Log{N2i}లో అది ఇలా ఉంటుంది:
+  \[
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter !B$
+  \Axiom$x : !A\land !B \fCenter !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+  పై నుంచి కిందికి నిరూపణ పదాలను కేటాయిస్తాం. అక్షయాల పదం సందర్భంలోని చరం~$x$ స్వయమే. $\Elim\land[i]$కు సంబంధించిన పదాలు $\proj{2}{x}$, $\proj{1}{x}$గా నిర్ణయించబడతాయి. \Intro{\land}ను వర్తింపజేసినప్పుడు ఈ రెండు పదాలను కలుపుతాం: $\pair{\proj{2}{x}}{\proj{1}{x}}$. చివరగా \Intro{\lif} నియమం $\lambd$-అమూర్తీకరణను వర్తింపజేస్తుంది; అది~$x$ను బంధించి, $x$ ఊహ~$!A \land
+  !B$కు గుర్తుగా ఉందని నమోదు చేస్తుంది: $\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]$. అప్పుడు \Log{tN2i}లో \tetoken{నిరూపణ}{!!{proof}} ఇలా ఉంటుంది:
+  \[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+\end{ex}
+
+\end{document}

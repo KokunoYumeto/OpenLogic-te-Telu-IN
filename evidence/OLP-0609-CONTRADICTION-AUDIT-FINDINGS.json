@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHPRFCON-20260927",
+  "unit_id": "OLP-0609",
+  "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+  "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHPRFCON-001",
+      "source_locator": "proof-by-contradiction.tex lines 81–86, positive conclusion by double negation",
+      "classification": "unqualified_classical_double_negation_elimination",
+      "source_issue": "The source presents p iff not-not-p as an unconditional logical equivalence and uses it to infer a positive p from a contradiction under not-p. That last step is classically valid but not generally intuitionistically valid.",
+      "minimal_treatment": "Qualify the positive indirect proof as classical reasoning and disclose the scope, retaining the source formulas.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEMTHPRFCON-002",
+      "source_locator": "proof-by-contradiction.tex line 134, negation of A-subset-of-A-union-B",
+      "classification": "undefined_set_C_in_counterexample_witness",
+      "source_issue": "The source says the counterexample witness is not in C although C is not used or defined in this example; the target set is A union B.",
+      "minimal_treatment": "Write not-in-A-union-B for that witness and disclose the one-atom correction.",
+      "expected_core_math_delta": {"source_only": ["$\\notinC$"], "target_only": ["$\\notinA\\cupB$"]}
+    }
+  ]
+}

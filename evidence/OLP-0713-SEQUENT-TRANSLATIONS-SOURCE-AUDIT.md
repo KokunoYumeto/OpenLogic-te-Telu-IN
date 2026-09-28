@@ -1,0 +1,3 @@
+# OLP-0713 — sequent translations source audit
+
+Read all thirteen frozen blocks and compare the G1c/G3c rule tables. The base case misattributes arbitrary identity axioms to G3c rather than G1c; the conjunction/disjunction citation prop:lor-G3-adm has the opposite simulation direction; both inductions omit the retained-principal left-universal/right-existential rule differences; and the disjunction diagram has a double comma. Local constructions repair these with weakening in G1c→G3c and contraction in G3c→G1c. Shared quantifier rules preserve eigenconstant freshness. The first direction invokes previously established weakening/contraction, not the oppositely directed proposition.

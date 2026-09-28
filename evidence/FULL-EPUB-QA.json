@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-te-full-epub-qa/1",
+  "status": "COMPLETE_PASS",
+  "filename": "openlogic-te-Telu-IN-full-OLP0722.epub",
+  "bytes": 4139571,
+  "sha256": "3746638afa7da9324273535ef782d0043e80a140d6df447c21afcd4cd8f94211",
+  "cold_replay_sha256": "3746638afa7da9324273535ef782d0043e80a140d6df447c21afcd4cd8f94211",
+  "source_html_sha256": "cc5561696999656a79eb02df4e115413c79c486c7bf0ae94e660abe44689eea1",
+  "units": 722,
+  "reader_documents": 146,
+  "maximum_reader_document_bytes": 449977,
+  "mathml_roots": 81184,
+  "english_disclosures": 722,
+  "diagram_assets": 103,
+  "image_instances": 134,
+  "links_checked": 5354,
+  "zip_entries": 260,
+  "epubcheck": {
+    "tool": "EPUBCheck 5.4.0",
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 0
+  }
+}

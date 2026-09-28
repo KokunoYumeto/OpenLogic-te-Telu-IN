@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "309",
+  "unit_id": "OLP-0660",
+  "unit_order": 660,
+  "source_path": "content/proof-theory/cut-elimination/intuitionistic.tex",
+  "blocks": 1,
+  "linguistic_blocks": [1],
+  "corrections_by_block": {"1": ["OLTEPTCUTAUX-001", "OLTEPTCUTAUX-002", "OLTEPTCUTAUX-003"]},
+  "previous_segments": 9795,
+  "previous_terms": 349,
+  "expected_corrections": 569,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "విడిగా ఉన్న అంతఃప్రజ్ఞాత్మక కట్ తునక స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కట్ ఎత్తు/స్థాయి/నిరూపణ పదాలు పోల్చాం; నాలుగు వృక్షాలు, రెండు నిర్దిష్ట సంకేత లోపాలు, చివరి అసంగత గద్యాన్ని తనిఖీ చేశాం.",
+  "evidence_limit": "ఇది అధ్యాయ ఆవరకం లేని సహాయక తునక; చివరి కట్ సందర్భ గణన మూలంలో అసంగతమైనందున పూర్తి నిరూపణగా ధృవీకరించలేదు. TeX దృశ్య/స్వతంత్ర compilation లేదు.",
+  "term_decision": {"term_id":"TE-T350","source_term":"implication cut reduction; cut height; cut rank in detached auxiliary fragment","telugu":"అన్వయ కట్ సంక్షేపణం; కట్ ఎత్తు; కట్ స్థాయి","status":"auxiliary_fragment_two_notation_repairs_and_unresolved_proof_defect","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"ఒక-బ్లాక్ సహాయక తునక నాలుగు వృక్షాలతో అనువదించాం; B! మరియు cutr సరిచేసి ప్రకటించాం, చివరి వృక్ష అసంగతిని ప్రకటించి మూలరూపంలో ఉంచాం.","uncertainty":"చివరి కట్ వృక్షాలు సాధారణ Cut నియమంతో సరిపోవు; ఈ తునకను ధృవీకరించిన నిరూపణగా చూడరాదు.","borrowing":"Cut, G3c, proof-tree and lemma identifiers remain source-identifying."}
+}

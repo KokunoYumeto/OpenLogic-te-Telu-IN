@@ -1,0 +1,3 @@
+# OLP-0718 — induction intro source audit
+
+Read all 31 aligned blocks: closure under a function, preservation of a property, natural-number induction, the arithmetic series worked example, formula constructors, and the seven schematic formula cases. The source's penultimate algebra line incorrectly expands k(k+1)+2(k+1) as 2k+k+2k+2; corrected to k^2+k+2k+2. English explanatory equation tags were localized in the same display, hence the display-level math delta records both the arithmetic fix and language substitution. The ellipsis placeholders in the template are intentional source skeletons and remain as such.

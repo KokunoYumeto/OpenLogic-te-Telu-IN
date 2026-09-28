@@ -1,0 +1,3 @@
+# OLP-0711 — rules proofs semantic review
+
+Reverse paraphrase preserves the two conjunction rules, closed-term instantiation, lower-sequent freshness for the eigenconstant, finite-tree constructors, end-sequent notation, and immediate versus general subproofs. Height counts inference edges, agreeing with the source recursion. The example's reordered sequent retains E as succedent. The original bound four is explicitly a valid upper bound although the exhibited proof has height two. All displayed diagrams are copied exactly; only one inline mathematical atom changes as disclosed. Linguistic coverage is blocks 5–16. Structural QA is not independent proof certification or compiled layout validation.

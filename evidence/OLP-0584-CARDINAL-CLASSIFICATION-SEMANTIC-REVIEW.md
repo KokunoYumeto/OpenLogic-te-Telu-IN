@@ -1,0 +1,3 @@
+# OLP-0584 Cardinal classification semantic review
+
+Compared the frozen source and Telugu target by paragraph. The finite-cardinal identity, Dedekind-infinite equivalences under ZFC, status of omega, enumerable/nonenumerable cut, closure under union, no-largest-cardinal theorem, and proper-class argument are retained. The source's incorrect gloss of `card(A) notin omega` as `A` not being a natural number is corrected to `A` not being finite, with an adjacent disclosure and source-error audit OLTESTCARDCLASS-001. All source token markers and references are retained. Strict correction-aware structural QA passed 31/31 blocks. TE-T274 records terminology. Full TeX visual compilation remains pending.

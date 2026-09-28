@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "197",
+  "unit_id": "OLP-0548",
+  "unit_order": 548,
+  "source_path": "content/set-theory/ordinals/introduction.tex",
+  "blocks": 8,
+  "linguistic_blocks": [1, 5, 6, 7],
+  "previous_segments": 8118,
+  "previous_terms": 237,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008"],
+  "consultation_phase": "స్థిర క్రమసంఖ్యల పరిచయ మూలం, తెలుగు లక్ష్యం, పూర్వ అనంత దశ/సహజ సంఖ్య పదాలు, స్థానిక సమితి/సంఖ్య సాక్షులు ఎదురెదురు చూశాం; తొలి అనంత దశ తరువాత కొనసాగింపు, అతిపరిమిత భావన, అధ్యాయ లక్ష్యం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008 సాధారణ దశ/సంఖ్య/క్రమ పదాలకు మాత్రమే సాక్షులు; అతిపరిమిత క్రమసంఖ్య మూల భావన నియంత్రితం. దశల అనంత కొనసాగింపు తాత్త్వికంగా పూర్వ అంగీకారాలపై ఆధారితం.",
+  "term_decision": {
+    "term_id": "TE-T238",
+    "source_term": "transfinite ordinal / first infinite stage and later stages",
+    "telugu": "అతిపరిమిత క్రమసంఖ్య / తొలి అనంత దశ, తరువాతి దశలు",
+    "status": "definition_controlled_general_number_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008"],
+    "basis": "మొదటి అనంత దశ ఉన్నా చివరి దశ లేదనే సూత్రంతో ఆగలేమని, సహజ సంఖ్యలన్నింటి తరువాత సంఖ్యలు ఉండవచ్చనే క్రమసంఖ్య ఆలోచనను వేరు చేసి నిలిపాం.",
+    "uncertainty": "అతిపరిమిత పదానికి ప్రత్యక్ష తెలుగు సాక్షి లేదు; అధ్యాయం తరువాతి నిర్వచనాలు ఖచ్చిత అర్థాన్ని నియంత్రిస్తాయి.",
+    "borrowing": "Stage macros and references remain source-controlled."
+  }
+}

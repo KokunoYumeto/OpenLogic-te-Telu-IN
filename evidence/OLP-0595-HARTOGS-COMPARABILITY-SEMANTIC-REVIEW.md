@@ -1,0 +1,3 @@
+# OLP-0595 Hartogs and comparability semantic review
+
+Compared the frozen source and Telugu target by paragraph. Hartogs' ZF construction of an ordinal not injecting into a set, and the two directions of Well-Ordering versus cardinal comparability, are retained. Four source defects are corrected and disclosed: the subset domain in the transitivity proof, indices in the transported order, codomains of order-isomorphism functions, and a malformed nested cardinal comparison in the final illustration. Exact math deltas are recorded in the source audit. All injection token markers and protected references remain. Strict correction-aware structural QA passed 12/12 blocks. TE-T285 records terminology. Full TeX visual compilation remains pending.

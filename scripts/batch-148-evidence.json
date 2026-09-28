@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "148",
+  "unit_id": "OLP-0499",
+  "unit_order": 499,
+  "source_path": "content/intuitionistic-logic/semantics/introduction.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "previous_segments": 7534,
+  "previous_terms": 188,
+  "expected_corrections": 459,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అర్థవిజ్ఞాన పరిచయం, తెలుగు లక్ష్యం, పూర్వ ప్రాప్యత/పాక్షిక క్రమ/జ్ఞాన పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలు ఎదురెదురు చూశాం; జ్ఞాన ఏకదిశత, ∧/∨, భవిష్యత్-సోపాధికం, నిరాకరణ, బహిష్కృత మధ్యమ, వివృత సమితుల ప్రత్యామ్నాయం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. అంతఃప్రజ్ఞావాద జ్ఞానస్థితి వ్యాఖ్యానం, సంబంధ-స్థలవిజ్ఞాన పోలికకు అవి ప్రత్యక్ష మూలాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T189",
+    "source_term": "Kripke knowledge states / monotonicity / future-state conditional and negation / topological alternative",
+    "telugu": "క్రిప్కె జ్ఞానస్థితులు / ఏకదిశ పెరుగుదల / భవిష్యత్ స్థితి ఆధారిత సోపాధికం, నిరాకరణ / స్థలవిజ్ఞాన ప్రత్యామ్నాయం",
+    "status": "native_general_set_relation_logic_derivation_register_attested_intuitionistic_semantics_introduction_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "ప్రాప్యత పాక్షిక క్రమం, జ్ఞానం తిరోగమన రాహిత్యం, సంయోజనం/విడియోజనం ప్రస్తుత స్థితి షరతులు, అన్వయం/నిరాకరణ భవిష్యత్ షరతులు, బహిష్కృత మధ్యమ వైఫల్యం, వివృత సమితుల అర్థవిజ్ఞానం నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు క్రిప్కె epistemic reading లేదా స్థలవిజ్ఞాన అర్థవిజ్ఞానానికి ప్రత్యక్ష ధృవీకరణ ఇవ్వవు. మూల తాత్విక పోలికను మాత్రమే అనువదించాం; TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "R, w, w-prime and connective macros retain source-controlled notation; ప్రాప్యత సంబంధం and పాక్షిక క్రమం continue prior edition forms."
+  }
+}

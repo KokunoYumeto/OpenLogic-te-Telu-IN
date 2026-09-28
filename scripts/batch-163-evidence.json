@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "163",
+  "unit_id": "OLP-0514",
+  "unit_order": 514,
+  "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+  "blocks": 8,
+  "linguistic_blocks": [5, 6, 7],
+  "previous_segments": 7731,
+  "previous_terms": 203,
+  "expected_corrections": 470,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"6": ["OLTEINTTABPRF-001"]},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద టాబ్లో నిరూపణ మూలం, తెలుగు లక్ష్యం, పూర్వ సంవృత టాబ్లో/నియమ పదాలు, స్థానిక తర్క/నిరూపణ/టాబ్లో సాక్షులు ఎదురెదురు చూశాం; ఒక పూర్తి వృక్షం, రెండు శాఖల అసత్య సంయోగ కారణ సూచికలు, నాలుగు అభ్యాస సూత్రాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024/025/026 సాధారణ తర్క/నిరూపణ/టాబ్లో పదాలకు మాత్రమే సాక్షులు. ప్రత్యేక వృక్షంలోని పంక్తి సూచిక సవరణ వృక్షపు ప్రత్యక్ష పూర్వాపేక్ష ఆధారితం; స్వతంత్ర TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T204",
+    "source_term": "closed intuitionistic tableau example / rule-justification line / tableau proof exercises",
+    "telugu": "సంవృత అంతఃప్రజ్ఞావాద టాబ్లో ఉదాహరణ / నియమ కారణ పంక్తి / టాబ్లో నిరూపణ అభ్యాసాలు",
+    "status": "native_general_logic_proof_tableau_register_attested_tree_source_controlled_one_disclosed_justification_repair",
+    "passages": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "సంవృత టాబ్లో వృక్షపు సూత్రాలు, పూర్వసూచికలు, శాఖల ఆకృతి, సంవృత చిహ్నాలు, నాలుగు అభ్యాసాలు నిలిచాయి; అసత్య సంయోగం నుంచి వచ్చే రెండు శాఖల కారణ సూచికలను నాలుగో పంక్తి నుంచి ఏడో పంక్తికి ప్రకటించి సరిచేశాం.",
+    "uncertainty": "పంక్తి సంఖ్యలు వృక్షంలో చూపిన నోడ్ క్రమం ఆధారితం; PDF/TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established borrowing; tableau environment, formulas and prefixes remain source-controlled."
+  }
+}

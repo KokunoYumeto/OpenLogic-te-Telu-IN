@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0672",
+  "source_path": "content/proof-theory/normalization/introduction.tex",
+  "source_sha256": "0fa27f608c760663b6380ea308e56269a9d6659e37cfad14a5e3ec7ca6940dd5",
+  "audit_id": "OLTEPTNORINT-20260928",
+  "audit_review_path": "evidence/OLP-0672-NORMALIZATION-INTRO-SOURCE-AUDIT.md",
+  "audit_review_sha256": "c39c97bfd281c39df63a76bd63ff48eecbccbb3d01b99365b594a3a69c722e24",
+  "audit_findings_path": "evidence/OLP-0672-NORMALIZATION-INTRO-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3c1d7db61364464e65ac76b4400ed7d4c2c1006df83dfdcc85d6a9698a37ec25",
+  "previous_corrections": 601,
+  "treatments": {
+    "OLTEPTNORINT-001": {
+      "target_line": 28,
+      "body_treatment": "δ1ను A శాఖకు, δ2ను A నుంచి B ఉపనిరూపణకు మాత్రమే ఉంచి ప్రకటించాం."
+    }
+  }
+}

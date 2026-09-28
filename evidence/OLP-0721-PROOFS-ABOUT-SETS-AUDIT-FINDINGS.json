@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPROOFSABOUTSETS-20260928",
+  "unit_id": "OLP-0721",
+  "source_path": "content/sets-functions-relations/sets/proofs-about-sets.tex",
+  "source_sha256": "8f93670032cba429dab9426b50df980a5525413e67bd736f67153da40f7d2475",
+  "findings": []
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0616",
+  "source_path": "content/methods/induction/strong-induction.tex",
+  "source_sha256": "0cec55c0265daa331a4b473daad197d39ef0aaddaa518ae051d3230c1df2560f",
+  "audit_id": "OLTEMTHINDSTR-20260927",
+  "audit_review_path": "evidence/OLP-0616-STRONG-INDUCTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "535fd805c3c72706d029585a908b8a324cf84b3eb29f1e03ef901006dd36fe83",
+  "audit_findings_path": "evidence/OLP-0616-STRONG-INDUCTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "ff48be58272ff1a1fbdc29439c6a2fe2ee78ee70c75fa589c96eacd0551383ae",
+  "previous_corrections": 530,
+  "treatments": {
+    "OLTEMTHINDSTR-001": {"target_line": 14, "body_treatment": "పూర్వసంఖ్య రూపాన్ని శూన్యం మినహా ధన సహజ సంఖ్యలకే వర్తిస్తుందని ప్రకటించాం."},
+    "OLTEMTHINDSTR-002": {"target_line": 20, "body_treatment": "ఖాళీ పరిధిపై సాధారణ బలమైన ఆగమన పూర్వపక్షంలో P(l) సూచికనే వాడి, మూల P(0) రూపం కూడా ఖాళీగా సత్యమే అయినా ఇక్కడి పూర్వపక్షం కాదని ప్రకటించాం."}
+  }
+}

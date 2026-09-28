@@ -1,0 +1,88 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: language-epistemic-logic
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{pal}
+
+\olsection{బహిరంగ ప్రకటన తర్కం}
+
+కర్తల జ్ఞానం కాలక్రమంలో లేదా వారికి కొత్త సమాచారం
+అందినప్పుడు ఎలా మారుతుందో గతి జ్ఞానసంబంధ తర్కాలు
+వ్యక్తీకరించగలవు. వీటిలో అనేకం సమాచార
+\emph{ఘటనలు} లేదా \emph{నవీకరణల} ద్వారా జ్ఞాన
+మార్పులను చూపుతాయి. అత్యంత ప్రాథమిక నవీకరణ
+బహిరంగ ప్రకటన: ఏదో సూత్రాన్ని సత్యంగా ప్రకటించడం,
+ఆ ప్రకటన జరగడాన్ని కర్తలందరూ కలిసి గమనించడం.
+దీన్ని చూపడానికి భాషను ఇలా విస్తరిస్తాం.
+
+\begin{defn}
+$G$ కర్త-సంకేతాల సమితి అనుకుందాం. బహిరంగ
+ప్రకటనలతో కూడిన బహు-కర్త జ్ఞానసంబంధ తర్కపు
+ప్రాథమిక భాషలో ఇవి ఉంటాయి:
+\begin{enumerate}
+  \tagitem{prvFalse}{\tetoken{అసత్యం}{!!{falsity}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\lfalse$.}{}
+  \tagitem{prvTrue}{\tetoken{సత్యం}{!!{truth}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\ltrue$.}{}
+  \item \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
+    \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s} సమితి: $\Obj
+    p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item ప్రతిజ్ఞావాక్య సంధాయకాలు: \startycommalist
+  \iftag{prvNot}{\ycomma $\lnot$ (నిరాకరణ)}{}%
+  \iftag{prvAnd}{\ycomma $\land$ (సంయోజనం)}{}%
+  \iftag{prvOr}{\ycomma $\lor$ (విడియోజనం)}{}%
+  \iftag{prvIf}{\ycomma $\lif$ (\tetoken{సోపాధికం}{!!{conditional}})}{}%
+  \item $a \in G$ అయినప్పుడు జ్ఞాన కారకం $\Knows_a$.
+  \item $!B$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయినప్పుడు బహిరంగ ప్రకటన కారకం $[!B]$.
+\end{enumerate}
+\end{defn}
+
+బహిరంగ ప్రకటన కారకం బాక్స్ కారకంలా పనిచేస్తుంది;
+దానికి అనుగుణంగానే భాషకు ఆగమన నిర్వచనం ఇస్తాం:
+
+\begin{defn}
+  జ్ఞానసంబంధ భాషలోని \emph{\tetoken{సూత్రాలను}{!!^{formula}s}}
+  ఇలా ఆగమన పద్ధతిలో నిర్వచిస్తాం:
+  \begin{enumerate}
+  \tagitem{prvFalse}{$\lfalse$ ఒక అణు \tetoken{సూత్రం}{!!{formula}}.}{}
+
+  \tagitem{prvTrue}{$\ltrue$ ఒక అణు \tetoken{సూత్రం}{!!{formula}}.}{}
+
+  \item ప్రతి ప్రతిజ్ఞావాక్య చరం $\Obj p_i$ ఒక (అణు)
+  \tetoken{సూత్రం}{!!{formula}}.
+
+  \tagitem{prvNot}{$!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయితే, $\lnot !A$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+  \tagitem{prvAnd}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \land
+  !B)$ \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+  \tagitem{prvOr}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lor !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+  \tagitem{prvIf}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \lif !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+  \tagitem{prvIff}{$!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $(!A \liff !B)$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.}{}
+
+  \item $!A$ \tetoken{ఒక సూత్రం}{!!a{formula}} అయి, $a \in G$ అయితే, $\Knows_a !A$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+  \item $!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే, $[!A] !B$
+  \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+  \tagitem{limitClause}{ఇవి తప్ప మరేదీ \tetoken{సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+\tetoken{సూత్రం}{!!{formula}} $[!A] !B$కు ఉద్దేశించిన
+పఠనం: ``$!A$ను సత్యంగా ప్రకటించిన తరువాత
+$!B$ నిలుస్తుంది.'' బహిరంగ ప్రకటనల సందర్భంలో
+సామాన్య జ్ఞానం గురించీ మాట్లాడాల్సి రావచ్చు.
+కాబట్టి భాషలో సామాన్య జ్ఞాన కారకం~$\CKnows_G
+!A$ను కూడా చేర్చవచ్చు.
+
+\end{document}

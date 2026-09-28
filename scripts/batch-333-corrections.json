@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0684",
+  "source_path": "content/proof-theory/proof-search/tableaux.tex",
+  "source_sha256": "593c823ad413a4db7c58f783d612a3fb14cc8fbaa790c50c26d0f7709b6a8d14",
+  "audit_id": "OLTEPTPSTAB-20260928",
+  "audit_review_path": "evidence/OLP-0684-TABLEAUX-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4c734561a413d16ffd18b29ef7ca46902100df82e851f5e5a7b2ce6d8cc9c9d8",
+  "audit_findings_path": "evidence/OLP-0684-TABLEAUX-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "c63fb78cccfd4c443441c495c4980f247fec4587438abd7fde57b753561f1378",
+  "previous_corrections": 624,
+  "treatments": {
+    "OLTEPTPSTAB-001": {
+      "target_line": 17,
+      "body_treatment": "కుడి సందర్భంలోని చివరి సూత్రానికి అసత్య చిహ్నం పెట్టి ప్రకటించాం."
+    },
+    "OLTEPTPSTAB-002": {
+      "target_line": 87,
+      "body_treatment": "సత్యంగా చిహ్నిత అసత్య సూత్రాన్ని శాఖ మూసుకునే కేసుగా, అనువాదంలో అసత్య ఆక్సియమ్ కేసుగా చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTPSTAB-003": {
+      "target_line": 99,
+      "body_treatment": "తనిఖీ గుర్తు పెట్టని పునర్వినియోగ పరిమాణ సూత్రాల ఘటనలు పూర్తిగా చేరిన శాఖను, కొత్త ఘటన లేకపోతే నోడ్ చేర్చని దశను స్పష్టంచేసి ప్రకటించాం."
+    }
+  }
+}

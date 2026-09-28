@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "228",
+  "unit_id": "OLP-0579",
+  "unit_order": 579,
+  "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+  "blocks": 9,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8],
+  "corrections_by_block": {"5": ["OLTESTORDEXPO-001"], "8": ["OLTESTORDEXPO-002"]},
+  "previous_segments": 8544,
+  "previous_terms": 268,
+  "expected_corrections": 498,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "క్రమసంఖ్య ఘాతాంక స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కూడిక/గుణకారం/పునరావృత్తి పదాలు, స్థానిక సంఖ్య/క్రమ/సమితి సాక్షులు ఎదురెదురు చూశాం; పరిమిత మద్దతు ప్రమేయ నిర్మాణం, వ్యత్యాస సూచిక క్రమం, పునరావృత్త మూడు శాఖలు, అక్రమమార్పిడి ఉదాహరణలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సంఖ్య/క్రమ/సమితి/తర్క పదాలకు మాత్రమే సాక్షులు; ఘాతాంక ప్రత్యేక నిర్వచనం మూల సూత్ర నియంత్రితం. మూల నిర్మాణాత్మక రక మార్పు, శూన్య ఆధార మినహాయింపు OLTESTORDEXPO-001/002గా ప్రకటించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T269",
+    "source_term": "ordinal exponentiation; finite-support function synthetic definition",
+    "telugu": "క్రమసంఖ్య ఘాతాంకం; పరిమిత మద్దతు ప్రమేయ నిర్మాణాత్మక నిర్వచనం",
+    "status": "recursion_definition_source_controlled_with_disclosed_synthetic_domain_repairs",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "శూన్య/ఉత్తరవర్తి/సీమా పునరావృత్త శాఖలు, ఘాత ఆధార రకం భేదం, ధనాత్మక ఆధార నిర్మాణాత్మక సమానత్వం, 2^omega/omega^2 భేదం నిలిచాయి.",
+    "uncertainty": "పరిమిత మద్దతు ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; శూన్య ఆధారంలో మూల పునరావృత్తి, నిర్మాణాత్మక నిర్మాణం తేడా ప్రకటించబడింది.",
+    "borrowing": "Ordinal-exponent and finfun notation remain source-controlled."
+  }
+}

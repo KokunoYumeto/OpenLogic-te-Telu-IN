@@ -1,0 +1,43 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{z}{union}
+\olsection{సమ్మేళనం}
+
+\olref[sth][z][sep]{prop:intersectionsexist}
+ద్వారా ఛేదనలు లభించాయి.
+కానీ ఏవైనా సమితుల
+సమ్మేళనాలు ఉండాలని
+కోరుకుంటే, మరో స్వీకృతాన్ని
+నిర్దేశించాలి:
+
+\begin{axiom}[సమ్మేళనం] ఏ సమితి $A$కైనా,
+$\bigcup A =
+\Setabs{x}{(\exists b \in A) x \in b}$ సమితి ఉంటుంది.
+\[
+	\forall A \exists U \forall x(x \in U \liff (\exists b \in A)x \in b)
+\]
+\end{axiom}
+
+సంచిత-దశలవారీ భావన
+ఈ స్వీకృతాన్ని కూడా
+సమర్థిస్తుంది. $A$ ఒక
+సమితి అనుకుందాం; అప్పుడు
+\stageshier\ ప్రకారం $A$
+ఏదో ఒక దశ $S$లో
+ఏర్పడుతుంది. $A$లోని
+ప్రతి మూలకమూ $S$కు
+\emph{ముందు} ఏర్పడింది
+(\stagesacc\ ప్రకారం);
+అందువల్ల అదే తర్కంతో,
+$A$లోని ప్రతి మూలకపు
+ప్రతి మూలకమూ $S$కు
+ముందే ఏర్పడింది. కాబట్టి
+ఆ సమితులన్నీ $S$కు
+ముందే అందుబాటులో ఉన్నాయి;
+వాటిని $S$లో ఒక సమితిగా
+ఏర్పరచవచ్చు. ఆ సమితియే
+$\bigcup A$.
+
+\end{document}

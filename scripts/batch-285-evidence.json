@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "285",
+  "unit_id": "OLP-0636",
+  "unit_order": 636,
+  "source_path": "content/history/set-theory/pathologies.tex",
+  "blocks": 10,
+  "linguistic_blocks": [3,4,5,6,7,8,9],
+  "corrections_by_block": {"8": ["OLTEHISSETPATH-001"]},
+  "previous_segments": 9376,
+  "previous_terms": 325,
+  "expected_corrections": 536,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P008", "TE-P017"],
+  "consultation_phase": "విచిత్ర నిర్మాణాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ అవిచ్ఛిన్నత/అవకలనీయత/సమితి పదాలు, స్థానిక విశ్లేషణ-సమితి సాక్షులు పోల్చాం; బోల్జానో-వైయర్‌స్ట్రాస్ వాదన, కాంటర్ రేఖ-చతురస్ర అనుగుణ్యత, పియానో అవిచ్ఛిన్న పటం, హిల్బర్ట్ ఆరు దశల చిత్రం తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ విశ్లేషణ/సమితి నేపథ్యమే; చరిత్ర, వికీపీడియా పాదసూచిక, హిల్బర్ట్ ఎక్కడా అవకలనీయంకాదనే మూల వాదన బాహ్యంగా ధృవీకరించలేదు. పియానో smooth/continuous లోపం ప్రకటించాం; పూర్తి TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T326","source_term":"pathological construction; space-filling curve; continuous nowhere differentiable","telugu":"విచిత్ర నిర్మాణం; స్థలాన్ని నింపే వక్రరేఖ; ప్రతిచోటా అవిచ్ఛిన్నం, ఎక్కడా అవకలనీయం కానిది","status":"cantor_peano_hilbert_geometry_smoothness_repair_source_controlled","passages":["TE-P003","TE-P004","TE-P006","TE-P008","TE-P017"],"basis":"రేఖ-చతురస్ర బిందు సమసంఖ్యాకత, స్థలపూరక వక్రరేఖ అవిచ్ఛిన్నత, సున్నితత్వం అసాధ్యత ప్రకటిత భేదం, ఆరు చిత్ర దశలు, జ్యామితీయ అంతఃప్రజ్ఞపై చారిత్రక కథనం నిలిచాయి.","uncertainty":"బోల్జానో/కాంటర్/హిల్బర్ట్ చారిత్రక వివరణ, ఎక్కడా అవకలనీయంకాని లక్షణం స్వతంత్రంగా ధృవీకరించలేదు; పియానో మృదుత్వ లోపానికి గణిత తర్కం auditలో ఇచ్చాం.","borrowing":"Cantor, Peano, Hilbert and cited names, TikZ parameters and color token remain source-identifying."}
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0638",
+  "source_path": "content/history/set-theory/cantor-plane.tex",
+  "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+  "audit_id": "OLTEHISSETCANP-20260927",
+  "audit_review_path": "evidence/OLP-0638-CANTOR-PLANE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "3f6642f953a5f52317de96f14004ad557674bbacd553e888136af06d1030424c",
+  "audit_findings_path": "evidence/OLP-0638-CANTOR-PLANE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "70d4eccdd954ae16a2391c696f0aef6f012bbe4c253cec3827fc8e9a9c65ef01",
+  "previous_corrections": 536,
+  "treatments": {
+    "OLTEHISSETCANP-001": {"target_line": 28, "body_treatment": "ప్రతి ద్వియాంశ సంఖ్యకు ఒకే రూపం, 1కు 0.111... రూపం ఎంచుకొని అంతఃక్షేపణ వాదనను సరిచేశాం."},
+    "OLTEHISSETCANP-002": {"target_line": 38, "body_treatment": "మూల ఉదాహరణ మొత్తం-సమితి పటంలో బింబంలోనే ఉందని చెప్పి, నిజమైన బింబం-బయటి విలువను పక్కనే ఇచ్చాం; విస్తరణలను ద్వియాంశమని సరిచేశాం."}
+  }
+}

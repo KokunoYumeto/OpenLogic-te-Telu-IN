@@ -1,0 +1,151 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{ordtype}
+\olsection{క్రమరకాలుగా క్రమసంఖ్యలు}
+
+ప్రతిస్థాపనతో, అంటే
+ఇప్పుడు $\ZFminus$లో
+పని చేస్తూ, మనం
+లక్ష్యంగా పెట్టుకున్న
+ఫలితాన్ని చివరకు
+నిరూపించవచ్చు:
+
+\begin{thm}\ollabel{thmOrdinalRepresentation}
+ప్రతి సుక్రమమూ ఒక
+ఏకైక క్రమసంఖ్యతో
+సమరూపమవుతుంది.
+\end{thm}
+
+\begin{proof}
+$\tuple{A, <}$ ఒక
+సుక్రమం అనుకుందాం.
+\olref[basic]{ordisoidentity}
+ప్రకారం, అది గరిష్ఠంగా
+ఒక క్రమసంఖ్యతో
+సమరూపమవుతుంది.
+కాబట్టి వైరుధ్యాన్ని
+చూపడానికి, $\tuple{A, <}$
+\emph{ఏ} క్రమసంఖ్యతోనూ
+సమరూపం కాదనుకుందాం.
+మొదట $\tuple{A, <}$ను
+``సాధ్యమైనంత చిన్నదిగా''
+చేస్తాం. వివరంగా:
+దాని తనకన్నా చిన్న
+ఆరంభ ఖండం
+$\tuple{A_a,
+<_a}$ ఏ క్రమసంఖ్యతోనూ
+సమరూపం కాకపోతే,
+ఆ ధర్మం గల అత్యల్ప
+$a \in A$ ఉంటుంది;
+అప్పుడు $B = A_a$,
+$\mathord{\lessdot} =
+\mathord{<_a}$ అనుకుందాం.
+లేకపోతే $B = A$,
+$\mathord{\lessdot} =
+\mathord{<}$ అనుకుందాం.
+
+నిర్వచనం వల్ల $B$
+యొక్క ప్రతి తనకన్నా
+చిన్న ఆరంభ ఖండం
+ఏదో ఒక క్రమసంఖ్యతో
+సమరూపం; అది పైన
+చెప్పినట్టు ఏకైకం.
+కాబట్టి ప్రతిస్థాపన
+ప్రకారం ఈ కింది సమితి
+ఉంటుంది; అది ఒక
+ప్రమేయం కూడా:
+\[
+	f = \Setabs{\tuple{\beta, b}}{b \in B\text{ మరియు }\ordeq{\beta}{\tuple{B_b, \lessdot_b}}}
+\]
+వైరుధ్యాన్ని పూర్తి
+చేయడానికి, ఏదో
+క్రమసంఖ్య $\alpha$కు
+$f$ ఒక $\alpha \to B$
+సమరూపత అని చూపుతాం.
+
+$\ran{f}
+= B$ అనేది స్పష్టం.
+\olref[iso]{lemordsegments}
+ప్రకారం $f$ క్రమాన్ని
+సంరక్షిస్తుంది; అంటే,
+$\gamma \in \beta$
+అప్పుడే మరియు అప్పుడే
+$f(\gamma) \lessdot f(\beta)$.
+$\dom{f}$ క్రమసంఖ్య
+అని చూపడానికి,
+\olref[basic]{corordtransitiveord}
+ప్రకారం $\dom{f}$
+సంక్రామకమని చూపితే
+సరిపోతుంది. అందుకోసం
+$\beta \in \dom{f}$ను
+స్థిరపరచండి; అంటే,
+ఏదో $b$కు
+$\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$.
+$\gamma \in
+\beta$ అయితే,
+\olref[iso]{wellordinitialsegment}
+ప్రకారం
+$\gamma \in \dom{f}$;
+సాధారణీకరిస్తే,
+$\beta \subseteq
+\dom{f}$.
+\end{proof}
+
+ఈ ఫలితంతో,
+\olref[vn]{sec} నుంచి
+ఇవ్వాలనుకున్న ఈ
+నిర్వచనాన్ని ఇప్పుడు
+ఇవ్వవచ్చు:
+
+\begin{defn}
+$\tuple{A, <}$ ఒక
+సుక్రమం అయితే,
+దాని క్రమరకం
+$\ordtype{A, <}$ అంటే
+$\ordeq{\tuple{A, < }}{\alpha}$
+అయ్యే ఏకైక
+క్రమసంఖ్య $\alpha$.
+\end{defn}
+
+ఇంకా ఈ నిర్వచనం
+రెండు మంచి సూత్రాలను
+ఇస్తుంది:
+
+\begin{cor}\ollabel{ordtypesworklikeyouwant}
+$\tuple{A, <}$,
+$\tuple{B, \lessdot}$
+సుక్రమాలైతే:
+\begin{align*}
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ అప్పుడే మరియు అప్పుడే }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ అప్పుడే మరియు అప్పుడే }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ ఏదో ఒక }b \in B
+\end{align*}
+\end{cor}
+
+\begin{proof}
+సమానత్వం
+\olref[basic]{ordisoidentity}
+ప్రకారం వస్తుంది.
+రెండవ వాదన కోసం
+$\ordtype{A, <} = \alpha$,
+$\ordtype{B,
+\lessdot} = \beta$
+అనుకుందాం; మన సమరూపత
+$f \colon \beta \to B$
+అనుకుందాం.
+\sourcecorrection{OLTESTORDTYPE-001}{మూలం సమరూపత ప్రమేయానికి క్రమయుగ్మాన్నే లక్ష్య సమితిగా రాసింది; ఇక్కడ దాని సమితి లక్ష్యం అని సరిచేశాం.}
+అప్పుడు:
+\begin{align*}
+	\alpha \in \beta&\text{ అప్పుడే మరియు అప్పుడే }\ordeq{\alpha}{\tuple{B_b, \lessdot_b}}\text{ ఏదో ఒక }b \in B\\
+	&\text{ అప్పుడే మరియు అప్పుడే }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ ఏదో ఒక $b \in B$ కోసం}
+\end{align*}
+\sourcecorrection{OLTESTORDTYPE-002}{మూల సమానార్థక శ్రేణిలో సభ్యత్వం అసత్యమైతే నిర్వచితం కాని ప్రమేయ విలువను వాడారు; ఇక్కడ ఏదో ఒక ఆరంభ ఖండంతో సమరూపత రూపంలో రెండు దిశలనూ ప్రకటించాం.}
+ఈ సమానార్థకాలు
+\olref[iso]{ordisounique},
+\olref[iso]{wellordinitialsegment},
+\olref[basic]{ordissetofsmallerord}
+ద్వారా వస్తాయి.
+\end{proof}
+
+\end{document}

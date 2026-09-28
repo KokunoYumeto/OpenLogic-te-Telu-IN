@@ -1,0 +1,126 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{classing}
+\olsection{పరిమిత, \usetoken{S}{enumerable}, \usetoken{S}{nonenumerable}}
+
+కార్డినల్ సంఖ్యలను పరిచయం చేసుకున్నాం కాబట్టి వాటి రకాలను, ముఖ్యంగా పరిమిత, \tetoken{లెక్కించదగిన}{!!{enumerable}}, \tetoken{లెక్కించలేని}{!!{nonenumerable}} కార్డినల్ సంఖ్యలను, కొద్దిసేపు చర్చిద్దాం.
+
+మన మొదటి రెండు ఫలితాల ప్రకారం పరిమిత కార్డినల్ సంఖ్యలు ఖచ్చితంగా పరిమిత క్రమసంఖ్యలే. వీటినే \olref[z][infinity-again]{defnomega}లో మన \emph{సహజ సంఖ్యలు}గా నిర్వచించాం:
+
+\begin{prop}\ollabel{finitecardisoequal}
+$n, m \in \omega$ అనుకుందాం. అప్పుడు $n = m$ అప్పుడూ అప్పుడే $\cardeq{n}{m}$.
+\end{prop}
+
+\begin{proof}
+\emph{ఎడమ నుంచి కుడికి} దిశ స్పష్టం. \emph{కుడి నుంచి ఎడమకు} దిశ కోసం $n \neq m$ అయినా $\cardeq{n}{m}$ అని అనుకుందాం. త్రివిభాగ ధర్మం ప్రకారం $n \in m$ లేదా $m \in n$; సాధారణతకు భంగం లేకుండా $n \in m$ అనుకుందాం. అప్పుడు $n \subsetneq m$, అలాగే $f \colon m \to n$ అనే \tetoken{ద్వైజెక్టివ్ ప్రమేయం}{!!a{bijection}} ఉంది. అందువల్ల $m$ డెడెకిండ్ అనంత సమితి; ఇది \olref[z][infinity-again]{naturalnumbersarentinfinite}కు విరుద్ధం.
+\end{proof}
+
+\begin{cor}\ollabel{naturalsarecardinals}
+$n \in \omega$ అయితే $n$ కార్డినల్ సంఖ్య.
+\end{cor}
+
+\begin{proof}
+నేరుగా వస్తుంది.
+\end{proof}
+\noindent
+కార్డినల్ సంఖ్యను ``పరిమితం'' లేదా ``అనంతం'' అని అనడానికి సహజంగా తోచే పలు అర్థాలూ ఒకదానితో ఒకటి సమానమని కూడా తెలుస్తుంది:
+\begin{thm}\ollabel{generalinfinitycharacter}ఏ సమితి $A$కైనా ఈ కింది వాదనలు సమానార్థకాలు:
+\begin{enumerate}
+	\item\ollabel{card:notinomega} $\card{A} \notin \omega$, అంటే $A$ పరిమిత సమితి కాదు;
+	\sourcecorrection{OLTESTCARDCLASS-001}{మూలంలో $\card{A}\notin\omega$ను ``$A$ సహజ సంఖ్య కాదు'' అని వివరించారు. అది సమానార్థకం కాదు: సహజ సంఖ్య కాని పరిమిత సమితులూ ఉంటాయి. కార్డినాలిటీ పరిమిత కాదనే సరైన అర్థాన్ని ఇచ్చాం.}
+	\item\ollabel{card:omegaplus} $\omega \leq \card{A}$;
+	\item\ollabel{card:infinite} $A$ డెడెకిండ్ అనంత సమితి.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\olref[ord-arithmetic][using-addition]{ordinfinitycharacter}, \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}, \olref{naturalsarecardinals}ల నుంచి వస్తుంది.
+\end{proof}
+
+దీంతో \olref[sfr][][]{part}లో కొంత అనౌపచారికంగా వాడిన భావనలకు ఈ \emph{నిర్వచనం} ఇవ్వవచ్చు:
+
+\begin{defn}\ollabel{defnfinite}
+$\card{A}$ సహజ సంఖ్య, అంటే $\card{A} \in \omega$, అయితే అప్పుడే $A$ను \emph{పరిమిత} సమితి అంటాం. లేకపోతే $A$ను \emph{అనంత} సమితి అంటాం.
+\end{defn}
+\noindent
+అయితే ఈ నిర్వచనం $\ZFC$ నేపథ్యంలో ఇచ్చినదని గమనించండి. ప్రతి సమితికీ కార్డినాలిటీ ఉంటుందని నిర్ధారించడానికి సుక్రమపరచడం అవసరమైంది. నిజానికి సుక్రమపరచడం లేకపోతే, పరిమితమూ కాని డెడెకిండ్ అనంతమూ కాని సమితి ఉండవచ్చు. ఈ విషయానికి \olref[choice][]{chap}లో తిరిగి వస్తాం. ప్రస్తుతానికి సుక్రమపరచడంపై ఆధారపడుతూనే ఉంటాం.
+
+ఇప్పుడు పరిమిత కార్డినల్ సంఖ్యల నుంచి అనంత కార్డినల్ సంఖ్యలకు వెళ్దాం. ముందుగా రెండు ప్రాథమిక విషయాలు:
+
+\begin{cor}\ollabel{omegaisacardinal}
+$\omega$ అత్యల్ప అనంత కార్డినల్ సంఖ్య.
+\end{cor}
+
+\begin{proof}
+$\omega$ కార్డినల్ సంఖ్యే: $\omega$ డెడెకిండ్ అనంతం; ఏ $n \in \omega$కైనా $\cardeq{\omega}{n}$ అయితే $n$ కూడా డెడెకిండ్ అనంతమవుతుంది, ఇది \olref[z][infinity-again]{naturalnumbersarentinfinite}కు విరుద్ధం. నిర్వచనం ప్రకారం $\omega$ అత్యల్ప అనంత కార్డినల్ సంఖ్య.
+\end{proof}
+
+\begin{cor}
+ప్రతి అనంత కార్డినల్ సంఖ్య సీమా క్రమసంఖ్య.
+\end{cor}
+
+\begin{proof}
+$\alpha$ అనంత ఉత్తరవర్తి క్రమసంఖ్య అనుకుందాం; అప్పుడు ఏదో $\beta$కు $\alpha = \beta
+\ordplus 1$. \olref{finitecardisoequal} ప్రకారం $\beta$ కూడా అనంతం. కాబట్టి \olref[ord-arithmetic][using-addition]{ordinfinitycharacter} ప్రకారం $\cardeq{\beta}{\beta \ordplus 1}$. ఇప్పుడు \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} ప్రకారం $\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$; అందువల్ల $\alpha \neq \card{\alpha}$.
+\end{proof}
+
+\olref[sfr][siz][enm-alt]{defn:enumerable}లోనే \tetoken{లెక్కించదగిన}{!!{enumerable}}, \tetoken{లెక్కించలేని}{!!{nonenumerable}} అనంత సమితులను వేరు చేయవచ్చని సూచించాం. ఆ నిర్వచనం సహజంగానే ఈ ఫలితానికి దారి తీస్తుంది:
+
+\begin{prop}
+$A$ \tetoken{లెక్కించదగినది}{!!{enumerable}} అప్పుడూ అప్పుడే $\card{A} \leq \omega$; $A$ \tetoken{లెక్కించలేనిది}{!!{nonenumerable}} అప్పుడూ అప్పుడే $\omega < \card{A}$.
+\end{prop}
+
+\begin{proof}
+త్రివిభాగ ధర్మం వల్ల రెండు వాదనలు సమానమైనవి; అందువల్ల $A$ \tetoken{లెక్కించదగినది}{!!{enumerable}} అప్పుడూ అప్పుడే $\card{A} \leq \omega$ అని నిరూపిస్తే చాలు. \emph{కుడి నుంచి ఎడమకు}: $\card{A} \leq \omega$ అయితే \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight}, \olref{omegaisacardinal} ప్రకారం $\cardle{A}{\omega}$. \emph{ఎడమ నుంచి కుడికి}: $A$ \tetoken{లెక్కించదగినది}{!!{enumerable}} అనుకుందాం; అప్పుడు \olref[sfr][siz][enm-alt]{defn:enumerable} ప్రకారం మూడు అవకాశాలు ఉన్నాయి:
+\begin{enumerate}
+	\item $A = \emptyset$ అయితే \olref{naturalsarecardinals}, \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} ప్రకారం $\card{A} = 0 \in \omega$.
+	\item $\cardeq{n}{A}$ అయితే \olref{naturalsarecardinals}, \olref[cardinals][cardsasords]{lem:CardinalsBehaveRight} ప్రకారం $\card{A} = n \in \omega$.
+	\item $\cardeq{\omega}{A}$ అయితే \olref{omegaisacardinal} ప్రకారం $\card{A} = \omega$.
+\end{enumerate}
+కాబట్టి అన్ని సందర్భాలలోనూ $\card{A} \leq \omega$.
+\end{proof}
+\noindent
+నిజానికి $\omega$కు ప్రత్యేక స్థానం ఉంది. లెక్కించదగిన క్రమసంఖ్యలు ఎన్నో ఉన్నప్పటికీ:
+
+\begin{cor}
+$\omega$ మాత్రమే అనంత \tetoken{లెక్కించదగిన}{!!{enumerable}} కార్డినల్ సంఖ్య.
+\end{cor}
+
+\begin{proof}
+$\cardfont{a}$ \tetoken{లెక్కించదగిన}{!!a{enumerable}} అనంత కార్డినల్ సంఖ్య అనుకుందాం. $\cardfont{a}$ అనంతం కాబట్టి $\omega \leq \cardfont{a}$. $\cardfont{a}$ \tetoken{లెక్కించదగిన}{!!a{enumerable}} కార్డినల్ సంఖ్య కాబట్టి $\cardfont{a} =
+\card{\cardfont{a}} \leq \omega$. త్రివిభాగ ధర్మం ప్రకారం $\cardfont{a} = \omega$. \end{proof}
+
+వాస్తవానికి కార్డినల్ సంఖ్యలు అనంతంగా ఉన్నాయి. కాబట్టి \emph{కార్డినల్ సంఖ్యలు ఎన్ని?} అని అడగవచ్చు. తరువాతి ఫలితాలను చూశాక ఆ ప్రశ్ననే మళ్లీ ఆలోచించాల్సి వస్తుంది.
+
+\begin{prop}\ollabel{unioncardinalscardinal}
+$X$లోని ప్రతి మూలకం కార్డినల్ సంఖ్య అయితే, $\bigcup X$ కూడా కార్డినల్ సంఖ్య.
+\end{prop}
+
+\begin{proof}
+$\bigcup X$ క్రమసంఖ్య అని సులభంగా తనిఖీ చేయవచ్చు. $\alpha \in
+\bigcup X$ అనే క్రమసంఖ్య తీసుకుందాం; అప్పుడు ఏదో కార్డినల్ సంఖ్య $\cardfont{b}$కు $\alpha \in \cardfont{b} \in X$. $\cardfont{b}$ కార్డినల్ సంఖ్య కాబట్టి $\cardless{\alpha}{\cardfont{b}}$. అంతేకాక $\cardfont{b} \subseteq
+\bigcup X$ కనుక $\cardle{\cardfont{b}}{\bigcup X}$, అందువల్ల $\cardneq{\alpha}{\bigcup X}$. దీన్ని సాధారణీకరిస్తే $\bigcup X$ కార్డినల్ సంఖ్య.
+\end{proof}
+
+\begin{thm}\ollabel{lem:NoLargestCardinal}
+అత్యంత పెద్ద కార్డినల్ సంఖ్య లేదు.
+\end{thm}
+
+\begin{proof}
+ఏ కార్డినల్ సంఖ్య $\cardfont{a}$కైనా కాంటర్ సిద్ధాంతం (\olref[sfr][siz][car]{thm:cantor}), \olref[cardinals][cardsasords]{lem:CardinalsExist}ల ప్రకారం $\cardfont{a} < \card{\Pow{\cardfont{a}}}$.
+\end{proof}
+
+\begin{thm}
+అన్ని కార్డినల్ సంఖ్యల సమితి లేదు.
+\end{thm}
+
+\begin{proof}
+వైరుధ్యం కోసం $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
+కార్డినల్ సంఖ్య}}$ అని అనుకుందాం. \olref{unioncardinalscardinal} ప్రకారం $\bigcup C$ కార్డినల్ సంఖ్య. కాబట్టి \olref{lem:NoLargestCardinal} ప్రకారం $\cardfont{b} > \bigcup C$ అయ్యే కార్డినల్ సంఖ్య ఉంది. నిర్వచనం ప్రకారం $\cardfont{b} \in C$; అందువల్ల $\cardfont{b} \subseteq \bigcup{C}$, అంటే $\cardfont{b} \leq \bigcup C$. ఇది వైరుధ్యం.
+\end{proof}
+
+దీన్ని రస్సెల్ వైరుధ్యాభాసంతోనూ బురాలీ--ఫోర్టీ వైరుధ్యాభాసంతోనూ పోల్చండి.
+
+\end{document}

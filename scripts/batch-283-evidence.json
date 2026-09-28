@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "283",
+  "unit_id": "OLP-0634",
+  "unit_order": 634,
+  "source_path": "content/history/set-theory/infinitesimals.tex",
+  "blocks": 13,
+  "linguistic_blocks": [3,4,5,8,9,10,11,12],
+  "previous_segments": 9348,
+  "previous_terms": 323,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P017"],
+  "consultation_phase": "అనంతసూక్ష్మ అవకలన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ వాస్తవ సంఖ్య/పరిమితి పదాలు, స్థానిక గణిత సాక్షులు పోల్చాం; మూడు రంగు త్రిభుజాల పాదం-వాలు గణన, శూన్యంతో భాగహారం సందిగ్ధం, బర్క్లీ రెండు ఉటంకింపులు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు విశ్లేషణ సాధారణ నేపథ్యం మాత్రమే; అనంతసూక్ష్మ చారిత్రక వాదన, బర్క్లీ అనువాదం మూల పాఠ్యం ఆధారితం. రంగుల అర్థం మూల చిత్రం/నిర్వచనంతో సరిచూశాం; పూర్తి TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T324","source_term":"infinitesimal; differentiation; derivative; gradient","telugu":"అనంతసూక్ష్మం; అవకలనం; వ్యుత్పన్నం; వాలు","status":"finite_secant_slopes_zero_division_dilemma_color_diagram_source_controlled","passages":["TE-P003","TE-P004","TE-P006","TE-P017"],"basis":"f(x)=x²/4+1/2 వద్ద మూడు పాదాల వాలు 1, 3/4, 1/2 క్రమం; beta=0 అయితే భాగహారం నిర్వచనలేమి, beta>0 అయితే ఉజ్జాయింపే అనే భేదం; బర్క్లీ రెండు విమర్శలు నిలిచాయి.","uncertainty":"ప్రత్యేక అనంతసూక్ష్మ/అవకలన పదాలకు స్థానిక ప్రత్యక్ష సాక్షి లేదు; మూల గణన, పూర్వ పరిమితి అధ్యాయం అర్థాన్ని నియంత్రిస్తాయి.","borrowing":"Newton, Leibniz, Berkeley names, Latin quotation, TeX colors and formulas remain source-identifying."}
+}

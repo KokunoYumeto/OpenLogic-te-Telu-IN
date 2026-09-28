@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "182",
+  "unit_id": "OLP-0533",
+  "unit_order": 533,
+  "source_path": "content/set-theory/story/predicativity.tex",
+  "blocks": 17,
+  "linguistic_blocks": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "previous_segments": 7940,
+  "previous_terms": 222,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "corrections_by_block": {"5": ["OLTESTPRED-001"], "8": ["OLTESTPRED-002"]},
+  "consultation_phase": "స్థిర స్వవర్గావలంబన మూలం, తెలుగు లక్ష్యం, పూర్వ రసెల్/ధర్మసంగ్రహ పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; $R$ నిర్వచన దిశ, దుష్టవలయ ఉటంకింపు, సమితుల ప్రైమ్-రకాల క్రమం, రామ్సే అత్యంత పొడవైన వ్యక్తి ఉదాహరణ, సంచిత దశల ముగింపు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/తర్క పదాలకు మాత్రమే సాక్షులు; స్వవర్గావలంబిత/అనవలంబిత ప్రత్యేక సమాసాలకు ప్రత్యక్ష తెలుగు సాక్షి లేదు. రెండు మూల గద్య-తర్క సవరణలు ప్రత్యక్ష నిర్వచన/వాదన పోలిక ఆధారితం; చారిత్రక ఉటంకింపుల స్వతంత్ర మూల తనిఖీ, PDF/TeX దృశ్య తనిఖీ లేవు.",
+  "term_decision": {
+    "term_id": "TE-T223",
+    "source_term": "predicative versus impredicative definition / vicious-circle principle / simple theory of types",
+    "telugu": "స్వవర్గానవలంబిత వర్సెస్ స్వవర్గావలంబిత నిర్వచనం / దుష్టవలయ సూత్రం / సరళ రకాల సిద్ధాంతం",
+    "status": "definition_controlled_specialized_compounds_two_disclosed_source_prose_repairs",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "నిర్వచించబడే వస్తువునే కలిగిన ప్రవేశంపై పరిమాణకం అనే స్వవర్గావలంబిత అర్థం, వేర్వేరు సమితి-రకాల ప్రైమ్/సూచిక క్రమం, రామ్సే ప్రతిస్పందన, సంచిత-దశలవారీ భేదం నిలిచాయి; మూల రెండు తిరిగిన గద్య వాదనలను ప్రకటించి సరిచేశాం.",
+    "uncertainty": "ప్రెడికేటివ్/ఇంప్రెడికేటివ్‌కు తెలుగు నిపుణ పదసాక్షి ఇంకా లేదు; వివరణాత్మక సమాసాలు మూల నిర్వచన నియంత్రితం. ఉటంకింపుల చారిత్రక ఖచ్చితత్వం స్వతంత్రంగా చూడలేదు.",
+    "borrowing": "Impredicative is retained parenthetically on first definition; names/citation identifiers and set-type notation remain source-controlled."
+  }
+}

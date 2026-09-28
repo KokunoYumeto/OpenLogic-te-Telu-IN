@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "205",
+  "unit_id": "OLP-0556",
+  "unit_order": 556,
+  "source_path": "content/set-theory/ordinals/ordtype.tex",
+  "blocks": 14,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "previous_segments": 8232,
+  "previous_terms": 245,
+  "expected_corrections": 485,
+  "corrections_by_block": {"13": ["OLTESTORDTYPE-001", "OLTESTORDTYPE-002"]},
+  "canon_default": ["TE-P004", "TE-P008", "TE-P010", "TE-P018", "TE-P034"],
+  "consultation_phase": "స్థిర క్రమరక ప్రతినిధిత్వ మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/సుక్రమ-సమరూపత/ప్రతిస్థాపన పదాలు, స్థానిక సమితి/సంబంధ/తర్క సాక్షులు ఎదురెదురు చూశాం; ఏకైక క్రమసంఖ్య ప్రతినిధి నిరూపణ, క్రమరక నిర్వచనం, రెండు పర్యవసానాలు, తప్పు లక్ష్య సమితి మరియు నిర్వచితం కాని f(alpha) మూల లోపాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/010/018/034 సాధారణ సమితి/సంబంధ/ప్రమేయ పదాలకు మాత్రమే సాక్షులు; క్రమరక ప్రతినిధిత్వం మూల నిరూపణ నియంత్రితం. OLTESTORDTYPE-001/002 సూత్ర సవరణలు స్థానిక నిరూపణ ఆధారితం; స్వతంత్ర నిపుణ నిరూపణ ధృవీకరణ, TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T246",
+    "source_term": "ordinal representation theorem / order type and its membership characterization",
+    "telugu": "క్రమసంఖ్య ప్రతినిధిత్వ సిద్ధాంతం / క్రమరకం, దాని సభ్యత్వ లక్షణం",
+    "status": "theorem_and_definition_controlled_order_set_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P010", "TE-P018", "TE-P034"],
+    "basis": "ప్రతి సుక్రమానికి ఏకైక క్రమసంఖ్య సమరూప ప్రతినిధి, ప్రతిస్థాపనతో ఆరంభ ఖండాల చిత్రం, క్రమరక నిర్వచనం, సమానత్వ/సభ్యత్వ పర్యవసానాలు నిలిచాయి; f లక్ష్య సమితి మరియు నిర్వచితం కాని విలువ ద్విసోపాధిక లోపాలు ప్రకటించి సరిచేశాం.",
+    "uncertainty": "సరిచేసిన చివరి నిరూపణకు స్వతంత్ర నిపుణ తనిఖీ లేదు; క్రమరక ప్రత్యేక తెలుగు పదానికి ప్రత్యక్ష సాక్షి లేదు.",
+    "borrowing": "Ordinal symbols, order-isomorphism macros and references remain source-controlled, except the two declared mathematical source repairs."
+  }
+}

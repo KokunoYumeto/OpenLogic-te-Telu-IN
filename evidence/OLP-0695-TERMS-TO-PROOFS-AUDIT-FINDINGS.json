@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTETERMSTOPROOFS-20260928",
+  "unit_id": "OLP-0695",
+  "source_path": "content/proof-theory/propositions-as-types/terms-to-proofs.tex",
+  "source_sha256": "0f91cc46f6a51b41d17bc3817c450ac73887d6114130365f9449ba7c7b4cc61d",
+  "findings": []
+}

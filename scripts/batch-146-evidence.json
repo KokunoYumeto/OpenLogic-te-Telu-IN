@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "146",
+  "unit_id": "OLP-0497",
+  "unit_order": 497,
+  "source_path": "content/intuitionistic-logic/introduction/axiomatic-derivations.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 7513,
+  "previous_terms": 186,
+  "expected_corrections": 459,
+  "canon_default": ["TE-P003", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద స్వీకృతాధారిత వ్యుత్పత్తి మూలం, తెలుగు లక్ష్యం, పూర్వ స్వీకృత/వ్యుత్పత్తి పదాలు, స్థానిక సాధారణ నిరూపణ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; పరిమిత క్రమ నిర్వచనం, తొమ్మిది స్వీకృత పథకాలు, వ్యుత్పాద్యత/సిద్ధాంతం, సాంప్రదాయిక చేర్పు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003/018/024 సాధారణ నిరూపణ, తర్కం, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. అంతఃప్రజ్ఞావాద స్వీకృత వ్యవస్థ నిర్దుష్టత లేదా సంపూర్ణతకు అవి ప్రత్యక్ష ప్రమాణాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T187",
+    "source_term": "intuitionistic axiomatic derivation / derivability / axioms and theorems",
+    "telugu": "అంతఃప్రజ్ఞావాద స్వీకృతాధారిత వ్యుత్పత్తి / వ్యుత్పాద్యత / స్వీకృతాలు, సిద్ధాంతాలు",
+    "status": "native_general_proof_logic_derivation_register_attested_intuitionistic_axiomatic_system_source_controlled",
+    "passages": ["TE-P003", "TE-P018", "TE-P024"],
+    "basis": "Γ నుంచి పరిమిత వ్యుత్పత్తి క్రమంలో సభ్యత్వం/స్వీకృతం/మోడస్ పోనెన్స్ మూడు మూలాలు, తొమ్మిది స్వీకృత పథకాలు, Γ⊢A, ఖాళీ సమితి సిద్ధాంతం, సాంప్రదాయిక వ్యుత్పత్తి చేర్పు నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు అంతఃప్రజ్ఞావాద ప్రత్యేక స్వీకృతాల ప్రమాణానికి ప్రత్యక్ష ఆధారాలు కావు. పూర్తి స్వతంత్ర గణిత నిరూపణ, TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "PAx, Lang, Proves and all axiom labels/formulas remain source-controlled notation; మోడస్ పోనెన్స్ continues the prior edition borrowing."
+  }
+}

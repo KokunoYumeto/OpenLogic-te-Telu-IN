@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "365",
+  "unit_id": "OLP-0716",
+  "unit_order": 716,
+  "source_path": "content/second-order-logic/syntax-and-semantics/language-of-sol.tex",
+  "blocks": 9,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "corrections_by_block": {
+    "8": [
+      "OLTESOLSYNLAN-001"
+    ]
+  },
+  "previous_segments": 10507,
+  "previous_terms": 405,
+  "expected_corrections": 702,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P018 తార్కిక వాక్యాల ప్రయోగం, TE-P024 నియమ ఆధారం, TE-P008 ప్రమేయ పదజాలం పోల్చాం. ద్వితీయ క్రమ ప్రత్యేక సంయుక్త పదాలకు ఈ మూలాల నుంచి ప్రత్యక్ష సంపూర్ణ ప్రమాణం లేదు; స్థానిక నిర్వచనం నియంత్రిస్తుంది.",
+  "evidence_limit": "No direct full-canon attestation for higher-order compounds. Qualification is relative to matching assignments; no independent expressibility theorem proved. No TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T406",
+    "source_term": "second-order relation variable; second-order function variable; assignment-dependent expressibility",
+    "telugu": "ద్వితీయ క్రమ సంబంధ చరం; ద్వితీయ క్రమ ప్రమేయ చరం; విలువ కేటాయింపు ఆధారిత వ్యక్తీకరణ",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "వస్తు చరాలు, సంబంధ/ప్రమేయ చరాలను వేరు చేసి, పరిమాణీకరణ పాత్రను ప్రత్యక్షంగా వివరించే పదసమూహం ఎంపికైంది.",
+    "uncertainty": "No direct full-canon attestation for higher-order compounds. Qualification is relative to matching assignments; no independent expressibility theorem proved. No TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

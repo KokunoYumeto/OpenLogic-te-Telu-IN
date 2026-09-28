@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYINT-20260928",
+  "unit_id": "OLP-0686",
+  "source_path": "content/proof-theory/propositions-as-types/introduction.tex",
+  "source_sha256": "d1e4e979af0f251cc4e7d93d8f32e4e0b9e2e8b71e349b0deecfa78649f460c9",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYINT-001",
+      "source_locator": "introduction.tex lines 75–76, implication elimination and term typing",
+      "classification": "misnamed_application_term",
+      "source_issue": "The typing rule for (M1 M2) is called a rule for composition terms, although the adjoining explanation and lambda-calculus syntax define this construction as application.",
+      "minimal_treatment": "Call these application terms, following the explicit local definition, and disclose the source wording.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

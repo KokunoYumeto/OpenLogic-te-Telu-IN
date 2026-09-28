@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "248",
+  "unit_id": "OLP-0599",
+  "unit_order": 599,
+  "source_path": "content/set-theory/choice/banach.tex",
+  "blocks": 12,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11],
+  "corrections_by_block": {"9": ["OLTESTCHOICEBANACH-001"]},
+  "previous_segments": 8834,
+  "previous_terms": 288,
+  "expected_corrections": 517,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "బనాక్--టార్స్కీ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఎంపిక/బాహ్య సమర్థన/ఘనపరిమాణ పదాలు, స్థానిక గణిత/తర్క సాక్షులు పోల్చాం; ఘన గోళ విభజన, కొలవలేని ముక్కలు, మూడు పోలికలు, భౌతిక పదార్థంతో సూత్ర భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "కొలవదగిన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల ఘనపరిమాణ వాదన నియంత్రించింది. టాంజెంట్ వ్యక్తీకరణలో అదనపు కుండలీకరణం OLTESTCHOICEBANACH-001గా ప్రకటించబడింది; చారిత్రక వాదనలు మూలం నుంచి అనువదించబడ్డాయి; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T289","source_term":"Banach--Tarski paradox; nonmeasurable pieces","telugu":"బనాక్--టార్స్కీ వైరుధ్యాభాసం; కొలవదగని ముక్కలు","status":"solid_ball_nonmeasurability_distinction_source_controlled_tangent_notation_repaired","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"పరిమిత ముక్కల ఘన గోళ నిర్మాణం, దృఢ చలనాలు ఘనపరిమాణ పరిరక్షణ, ముక్కల కొలవలేనితనం, ఎంపికపై బాహ్య వాదన భేదం నిలిచాయి.","uncertainty":"కొలవదగిన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; గణిత సందర్భం, మూల వాదన నియంత్రించాయి.","borrowing":"Banach--Tarski and original-language anagram remain source-controlled."}
+}

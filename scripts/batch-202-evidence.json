@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "202",
+  "unit_id": "OLP-0553",
+  "unit_order": 553,
+  "source_path": "content/set-theory/ordinals/basic.tex",
+  "blocks": 35,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34],
+  "previous_segments": 8180,
+  "previous_terms": 242,
+  "expected_corrections": 483,
+  "corrections_by_block": {"12": ["OLTESTORDBASIC-001"]},
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P010", "TE-P018"],
+  "consultation_phase": "స్థిర క్రమసంఖ్యల ప్రాథమిక ధర్మాల మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/సుక్రమ/సంక్రామక పదాలు, స్థానిక సమితి/సంఖ్య/సంబంధ/తర్క సాక్షులు ఎదురెదురు చూశాం; మూలక-క్రమసంఖ్య లెమ్మా, అతిపరిమిత ఆగమనం, త్రివిధత, బురాలి-ఫోర్టీ వైరుధ్యం, అవరోహణ/ఉపసమితి/సమరూపత ఫలితాలు, మూల ఆగమన నిరూపణ లోపం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/010/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; క్రమసంఖ్య నిరూపణలు మూల సూత్రాలతో నియంత్రితం. OLTESTORDBASIC-001 స్థానిక మూల నిరూపణ లోపానికి ప్రకటిత సవరణ. Burali-Forti/Cantor చరిత్ర ఉటంకింపులు స్వతంత్రంగా చూడలేదు; QA సంపూర్ణ నిరూపణ ధృవీకరణ కాదు.",
+  "term_decision": {
+    "term_id": "TE-T243",
+    "source_term": "transfinite induction / ordinal trichotomy / Burali-Forti paradox",
+    "telugu": "అతిపరిమిత ఆగమనం / క్రమసంఖ్యల త్రివిధత / బురాలి-ఫోర్టీ వైరుధ్యం",
+    "status": "theorem_and_proof_controlled_general_order_logic_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P010", "TE-P018"],
+    "basis": "క్రమసంఖ్య మూలకాలు క్రమసంఖ్యలే, phi సాక్షికి అత్యల్ప క్రమసంఖ్య, సభ్యత్వ త్రివిధత, అన్ని క్రమసంఖ్యల సమితి వైరుధ్యం, అవరోహణ/ఉపసమితి/సమరూపత పర్యవసానాలు నిలిచాయి; phi-సంతృప్తి కనిష్ఠ సాక్షి మూల లోపాన్ని ప్రకటించి స్పష్టం చేశాం.",
+    "uncertainty": "బురాలి-ఫోర్టీ చారిత్రక వివరణ స్వతంత్రంగా ధృవీకరించలేదు; నిరూపణలకు స్వతంత్ర నిపుణ తనిఖీ లేదు. ప్రత్యేక తెలుగు క్రమసంఖ్య పదాలు మూల సూత్ర నియంత్రితం.",
+    "borrowing": "Burali-Forti/Cantor names, ordinal symbols and source-token element keys remain source-controlled."
+  }
+}

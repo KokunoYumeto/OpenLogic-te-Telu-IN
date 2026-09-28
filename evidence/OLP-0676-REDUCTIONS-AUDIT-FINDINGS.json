@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNORRED-20260928",
+  "unit_id": "OLP-0676",
+  "source_path": "content/proof-theory/normalization/reductions.tex",
+  "source_sha256": "2785b7f36d7c9deb83028e80f89d1143f05e56ea6ca37ffeda8a66af4f4ce731",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNORRED-001",
+      "source_locator": "reductions.tex lines 64–66, cuts unchanged under implication reduction",
+      "classification": "nonexistent_subproof_reference",
+      "source_issue": "The paragraph names δ4, but the displayed implication-reduction derivation contains only δ2 and δ3 within δ1.",
+      "minimal_treatment": "Omit δ4 from the unchanged-cuts list and disclose the omission.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\delta_4$"],
+        "target_only": []
+      }
+    }
+  ]
+}

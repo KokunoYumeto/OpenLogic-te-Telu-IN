@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0564",
+  "source_path": "content/set-theory/spine/rank.tex",
+  "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+  "audit_id": "OLTESTSPINRANK-20260927",
+  "audit_review_path": "evidence/OLP-0564-RANK-SOURCE-AUDIT.md",
+  "audit_review_sha256": "c8a47ff61dc54345192e426ec7bd200f03939a78dc829b87c4442561d342dc94",
+  "audit_findings_path": "evidence/OLP-0564-RANK-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f8ee6974afabe3d9111bed4369ac692bbed9a07db80193545ba703881c2ad364",
+  "previous_corrections": 487,
+  "treatments": {
+    "OLTESTSPINRANK-001": {
+      "target_line": 31,
+      "body_treatment": "ఊహించిన సభ్యత్వానికే విరుద్ధమైన మూల ముగింపును, అవసరమైన స్థాయి అసమానత్వంతో మార్చి సవరణను ప్రకటించాం."
+    }
+  }
+}

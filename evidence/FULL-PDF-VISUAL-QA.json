@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-full-pdf-visual-qa/1",
+  "status": "COMPLETE_PASS",
+  "pdf_filename": "openlogic-te-Telu-IN-full-OLP0722.pdf",
+  "pdf_sha256": "a41a29f8af252b4645b901c88021320b12b14968e32e26cfa5ea66816f565a38",
+  "pages": 951,
+  "method": "Rendered the accepted PDF pages to PNG with Poppler and inspected the page images at readable scale.",
+  "sampled_pages": [1, 2, 49, 103, 125, 186, 250, 359, 474, 951],
+  "observations": [
+    "Opening title, Telugu paragraphs, unit headings and print margins are legible.",
+    "Formerly stranded unit labels on sampled pages remain inline with their headings.",
+    "Mathematical notation, formal proof layouts, source-defect notices and closing attribution are visible.",
+    "Pages 103 and 250 have short content followed by white space because the next statement is kept together; they are not empty pages."
+  ],
+  "scope_limit": "Visual inspection is sampled and does not constitute a page-by-page linguistic or mathematical expert review; all-page text-layer, pagination, font, tag and unit-coverage checks are recorded separately."
+}

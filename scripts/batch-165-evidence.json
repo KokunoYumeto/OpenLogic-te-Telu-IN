@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "165",
+  "unit_id": "OLP-0516",
+  "unit_order": 516,
+  "source_path": "content/counterfactuals/counterfactuals.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4],
+  "previous_segments": 7765,
+  "previous_terms": 205,
+  "expected_corrections": 474,
+  "canon_default": ["TE-P018", "TE-P021"],
+  "consultation_phase": "ప్రతివాస్తవ సోపాధికాల భాగశీర్షికను, మునుపటి సోపాధిక పదప్రయోగాన్ని, దిగుమతి నిర్మాణాన్ని ఎదురెదురు చూశాం; శీర్షిక మాత్రమే పాఠక భాషగా మారింది.",
+  "evidence_limit": "TE-P018/021 సాధారణ తర్క, సోపాధిక పదాలకు మాత్రమే సాక్షులు; ప్రత్యేక ప్రతివాస్తవిక భావం తరువాతి విభాగ నిర్వచనంతో నియంత్రితం. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T206",
+    "source_term": "counterfactuals (part title)",
+    "telugu": "ప్రతివాస్తవ సోపాధికాలు",
+    "status": "definition_controlled_counterfactual_compound_general_conditional_register_attested",
+    "passages": ["TE-P018", "TE-P021"],
+    "basis": "భాగ శీర్షికలో ప్రతివాస్తవ అర్థం, సోపాధిక రూపం తెలుగులో స్పష్టంగా చూపి cnt గుర్తింపు, రెండు అధ్యాయ దిగుమతులు యథాతథంగా ఉంచాం.",
+    "uncertainty": "ప్రతివాస్తవ ప్రత్యేక సమాసానికి ప్రత్యక్ష స్వతంత్ర నిఘంటు సాక్షి లేదు; పిమ్మటి అర్థవిచార నిర్వచనమే అర్థాన్ని నిర్ణయిస్తుంది.",
+    "borrowing": "No English counterfactual label remains reader-visible in the heading."
+  }
+}

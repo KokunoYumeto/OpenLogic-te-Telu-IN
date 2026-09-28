@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0661",
+  "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+  "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+  "audit_id": "OLTEPTCUTMID-20260927",
+  "audit_review_path": "evidence/OLP-0661-MIDSEQUENT-SOURCE-AUDIT.md",
+  "audit_review_sha256": "f59c71be24991a29c6412e2c94881c85839aa08770c31821ab9059192907dae6",
+  "audit_findings_path": "evidence/OLP-0661-MIDSEQUENT-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "62981dbda5620f38858aad2ef1028bbedf2b057f8d31037a05dba44b2b1a6911",
+  "previous_corrections": 569,
+  "treatments": {
+    "OLTEPTCUTMID-001": {"target_line": 51, "body_treatment": "చిత్రంలో ఉన్న pi_1 స్థానంలో లేని pi_1-prime సూచనను సరిచేసి ప్రకటించాం."},
+    "OLTEPTCUTMID-002": {"target_line": 60, "body_treatment": "క్రమం సున్నా, పరిమాణీకరణిక నిగమనాలు శూన్యం అయ్యే ఆధార సందర్భాన్ని చేర్చి ప్రకటించాం."},
+    "OLTEPTCUTMID-003": {"target_line": 114, "body_treatment": "వృక్షంలో Gamma-prime ముందున్న అదనపు ఆశ్చర్యార్థ చిహ్నాన్ని తొలగించి ప్రకటించాం."}
+  }
+}

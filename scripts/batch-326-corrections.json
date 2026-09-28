@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0677",
+  "source_path": "content/proof-theory/normalization/segments.tex",
+  "source_sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+  "audit_id": "OLTEPTNORSEG-20260928",
+  "audit_review_path": "evidence/OLP-0677-SEGMENTS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "29abe468cc1f5a18d17ef8a419a8d048ca145349f46e1a3e709a488b6ca26b64",
+  "audit_findings_path": "evidence/OLP-0677-SEGMENTS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "de8be06f89da5322c13955e92c822c0d222f271ff0f25effc10fab1b7a873707",
+  "previous_corrections": 606,
+  "treatments": {
+    "OLTEPTNORSEG-001": {
+      "target_line": 54,
+      "body_treatment": "ఖండ నిర్వచనం ప్రకారం ఉప పూర్వపక్షం తరువాత నిష్కర్ష వస్తుందని ప్రకటితంగా సరిచేశాం."
+    },
+    "OLTEPTNORSEG-002": {
+      "target_line": 64,
+      "body_treatment": "మూడవ షరతులో తదుపరి సూత్ర ఘటనకు తప్పిన గుర్తును చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNORSEG-003": {
+      "target_line": 74,
+      "body_treatment": "ఒక-ఘటన కట్ సంక్షిప్త వివరణలో అధికారిక నిర్వచనంలోని అసత్య నియమ ప్రత్యామ్నాయాన్ని చేర్చి ప్రకటించాం."
+    }
+  }
+}

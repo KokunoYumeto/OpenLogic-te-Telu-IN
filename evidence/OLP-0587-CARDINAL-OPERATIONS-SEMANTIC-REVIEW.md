@@ -1,0 +1,3 @@
+# OLP-0587 Cardinal operations semantic review
+
+Compared the frozen source and Telugu target by paragraph. Cardinal addition, multiplication and exponentiation retain their disjoint-union, Cartesian-product and function-set bases. The rank exercise, commutativity/associativity statements, infinite-cardinal addition characterization, power-set characteristic-function bijection, Cantor corollary, cardinal/ordinal contrast, and real-cardinality proof skeleton are preserved. Both source token markers have target declarations. Strict structural QA passed 23/23 blocks without correction. TE-T277 records terminology. Full TeX visual compilation remains pending.

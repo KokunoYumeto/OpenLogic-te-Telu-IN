@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "178",
+  "unit_id": "OLP-0529",
+  "unit_order": 529,
+  "source_path": "content/set-theory/set-theory.tex",
+  "blocks": 6,
+  "linguistic_blocks": [4],
+  "previous_segments": 7905,
+  "previous_terms": 218,
+  "expected_corrections": 479,
+  "canon_default": ["TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర సమితి సిద్ధాంత భాగశీర్షికను, తొమ్మిది అధ్యాయ దిగుమతులను, పూర్వ సమితి పదప్రయోగం/స్థానిక సాక్షులను ఎదురెదురు చూశాం.",
+  "evidence_limit": "TE-P008/018 సమితి, తర్క విద్యా పదాలకు మాత్రమే సాక్షులు; అధ్యాయ విషయాలకు ఇంకా విడి తనిఖీ అవసరం. PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T219",
+    "source_term": "set theory (part heading)",
+    "telugu": "సమితి సిద్ధాంతం",
+    "status": "native_set_theory_register_attested_part_imports_preserved",
+    "passages": ["TE-P008", "TE-P018"],
+    "basis": "sth భాగశీర్షికను పూర్వ సమితి సిద్ధాంత పదంతో ఇచ్చి తొమ్మిది అధ్యాయ దిగుమతుల క్రమం యథాతథంగా ఉంచాం.",
+    "uncertainty": "ఈ యూనిట్ శీర్షిక, దిగుమతుల నిర్మాణం మాత్రమే; ప్రత్యేక సిద్ధాంత వాదన లేదు.",
+    "borrowing": "No English reader-visible title remains."
+  }
+}

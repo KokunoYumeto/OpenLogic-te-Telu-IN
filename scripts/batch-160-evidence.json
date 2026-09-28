@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "160",
+  "unit_id": "OLP-0511",
+  "unit_order": 511,
+  "source_path": "content/intuitionistic-logic/tableaux/tableaux.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5],
+  "previous_segments": 7697,
+  "previous_terms": 200,
+  "expected_corrections": 468,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద టాబ్లో అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ మోడల్ తర్క టాబ్లో/పూర్వసూచిక/ప్రతినమూనా పదాలు, స్థానిక తర్క/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; ముసాయిదా స్థితి, నాలుగు క్రియాశీల దిగుమతులు, రెండు వ్యాఖ్యానిత దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలిపాం.",
+  "evidence_limit": "TE-P018/024/025/026 సాధారణ తర్క/నిరూపణ/టాబ్లో పదాలకు మాత్రమే సాక్షులు. అంతఃప్రజ్ఞావాద పూర్వసూచిక నియమాల సంపూర్ణతను మూల అధ్యాయం తానే ఇంకా అవసరమని చెబుతుంది.",
+  "term_decision": {
+    "term_id": "TE-T201",
+    "source_term": "intuitionistic prefixed tableaux / draft chapter / countermodels from unsuccessful closure search",
+    "telugu": "అంతఃప్రజ్ఞావాద పూర్వసూచికలతో కూడిన టాబ్లోలు / ముసాయిదా అధ్యాయం / సంవృత అన్వేషణ విఫలం నుంచి ప్రతినమూనాలు",
+    "status": "native_general_logic_proof_tableau_register_attested_prefixed_tableau_cross_chapter_controlled_draft_status_retained",
+    "passages": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "పూర్వ మోడల్ తర్కంలోని పూర్వసూచికలతో కూడిన టాబ్లోలు రూపం నిలిపి, మూల ముసాయిదా గమనిక, ఉదాహరణ/సంపూర్ణత/ప్రతినమూనా చర్చల లేమి, నాలుగు క్రియాశీల, రెండు వ్యాఖ్యానిత దిగుమతులు నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు ప్రత్యేక అంతఃప్రజ్ఞావాద టాబ్లో నియమాలకు ప్రత్యక్ష ప్రమాణాలు కావు; సంపూర్ణత అధ్యాయం ఈ మూలంలో లేదు. పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "టాబ్లో is the established explicit borrowing; protected import paths and tableau token key remain source-controlled."
+  }
+}

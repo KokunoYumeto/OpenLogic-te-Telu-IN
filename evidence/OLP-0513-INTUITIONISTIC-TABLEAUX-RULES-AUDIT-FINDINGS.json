@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTTABRULE-20260927",
+  "unit_id": "OLP-0513",
+  "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+  "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+  "findings": [
+    {
+      "finding_id": "OLTEINTTABRULE-001",
+      "source_locator": "rules.tex lines 89-103; conditional-rule prose versus rules table",
+      "classification": "conditional_true_rule_prose_conflicts_with_diagram_and_rule_label_order",
+      "source_issue": "True-conditional prose has true antecedent/false consequent instead of false antecedent/true consequent branches; both prose labels reverse the table's rule arguments.",
+      "minimal_treatment": "Align the prose with the source's correct displayed diagrams and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\TRule{\\lif}{\\False}$",
+          "$\\TRule{\\lif}{\\True}$",
+          "$\\sFmla{\\False}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!B}[\\sigma]$",
+          "$\\sFmla{\\True}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!A}[\\sigma]$"
+        ],
+        "target_only": [
+          "$\\TRule{\\False}{\\lif}$",
+          "$\\TRule{\\True}{\\lif}$",
+          "$\\sFmla{\\False}{!A}[\\sigma.{*}]$",
+          "$\\sFmla{\\False}{!A}[\\sigma]$",
+          "$\\sFmla{\\True}{!B}[\\sigma.{*}]$",
+          "$\\sFmla{\\True}{!B}[\\sigma]$"
+        ]
+      }
+    }
+  ]
+}

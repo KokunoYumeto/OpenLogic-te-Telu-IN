@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "210",
+  "unit_id": "OLP-0561",
+  "unit_order": 561,
+  "source_path": "content/set-theory/spine/stagesbasics.tex",
+  "blocks": 17,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "previous_segments": 8299,
+  "previous_terms": 250,
+  "expected_corrections": 486,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "దశల ప్రాథమిక ధర్మాల మూలం, తెలుగు లక్ష్యం, పూర్వ V-alpha/సమితి/క్రమసంఖ్య పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; సమర్థత నిర్వచనం, సంక్రమణ/సంచితత్వ ఆగమన నిరూపణ, స్వసభ్యత్వ నిషేధం, క్రమసంఖ్య-దశ అనుసంధానం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; potent ప్రత్యేక పదం మూల నిర్వచన నియంత్రితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T251",
+    "source_term": "potent set; transitive and cumulative V-alpha stages",
+    "telugu": "సమర్థమైన సమితి; సంక్రమణ, సంచిత V-alpha దశలు",
+    "status": "potency_definition_controlled_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "సమర్థతను మూల ద్విసోపాధిక సూత్రంతో కట్టి, సంక్రమణ, ఘాత సమితి, సీమా సమ్మేళనం, పూర్వ దశ సభ్యత్వం మధ్య భేదాలను నిలిపాం.",
+    "uncertainty": "potentకు స్థిర పదజాలం లేదని మూలమే చెబుతుంది; తెలుగు పదం స్థానిక నిర్వచనాధీనం.",
+    "borrowing": "V-alpha notation and axiom macro remain source-controlled."
+  }
+}

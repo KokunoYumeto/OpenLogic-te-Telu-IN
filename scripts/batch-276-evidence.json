@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "276",
+  "unit_id": "OLP-0627",
+  "unit_order": 627,
+  "source_path": "content/history/biographies/rozsa-peter.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12],
+  "previous_segments": 9266,
+  "previous_terms": 316,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P005", "TE-P011", "TE-P024"],
+  "consultation_phase": "రోజా పీటర్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ పునరావృత్త/ఆదిమ పునరావృత్త ప్రమేయ పదాలు, స్థానిక సంఖ్య-ప్రమేయ సాక్షులు పోల్చాం; ఆకెర్మాన్ ఫలితంతో తేడా, 1935/1937/1944/1945/1955 తేదీలు, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణిత-ప్రమేయ భాషా నేపథ్యం మాత్రమే; వ్యక్తి జీవిత, యుద్ధకాల, సంస్థాగత వివరాలు బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T317","source_term":"Rózsa Péter; recursive function theory; Ackermann--Péter function","telugu":"రోజా పీటర్; పునరావృత్త ప్రమేయ సిద్ధాంతం; ఆకెర్మాన్--పీటర్ ప్రమేయం","status":"primitive_recursive_negation_named_function_biography_source_controlled","passages":["TE-P003","TE-P005","TE-P011","TE-P024"],"basis":"1935 వ్యాసంలోని ఆదిమ పునరావృత్తం కాని ప్రమేయం, ఆకెర్మాన్ పూర్వ ఫలిత సరళీకరణ, ప్రత్యామ్నాయ ఆకెర్మాన్--పీటర్ పేరు వేర్వేరుగా నిలిచాయి; మూల జీవితకథ, పఠన సూచనలు కొనసాగాయి.","uncertainty":"ప్రమేయాల ప్రత్యేక చరిత్ర, వ్యక్తి జీవిత వివరాలు స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు ప్రత్యేక వ్యక్తి పేరుకు ఆధారం కావు.","borrowing":"Personal names, eponymic function name, journal/book titles and citation keys remain source-identifying."}
+}

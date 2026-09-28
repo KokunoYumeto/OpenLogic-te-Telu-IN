@@ -1,0 +1,115 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNORTR-20260928",
+  "unit_id": "OLP-0678",
+  "source_path": "content/proof-theory/normalization/translations.tex",
+  "source_sha256": "070919f142090f49cb60e3e8456cca3b2b34c369c2f22796767795a1bb6bbc67",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNORTR-001",
+      "source_locator": "translations.tex lines 13–15, cut-free source system",
+      "classification": "wrong_system_name",
+      "source_issue": "The source says Log{2i}, which is not the G2i source of the cited translation.",
+      "minimal_treatment": "Name G2i and disclose the system-name repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-002",
+      "source_locator": "translations.tex lines 24–28, first corollary",
+      "classification": "wrong_target_system",
+      "source_issue": "The G2i-to-N2i result names N2c as its target, conflicting with the referenced translation proposition.",
+      "minimal_treatment": "Name N2i and disclose the system-name repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-003",
+      "source_locator": "translations.tex lines 53–59, reverse translation",
+      "classification": "incomplete_conditional",
+      "source_issue": "The final conditional omits the predicate for the starting N2i proof; the following proposition supplies normality.",
+      "minimal_treatment": "State that the starting proof is normal and disclose the supplied condition.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-004",
+      "source_locator": "translations.tex lines 154–158, conjunction-case induction",
+      "classification": "wrong_subproof_identifier",
+      "source_issue": "The induction sentence calls the transformed proof δ' although the preceding construction calls it δ1.",
+      "minimal_treatment": "Use δ1 and disclose the label repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\delta'$"
+        ],
+        "target_only": [
+          "$\\delta_1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-005",
+      "source_locator": "translations.tex lines 160–163, conjunction-case induction result",
+      "classification": "mislabeled_g2_context",
+      "source_issue": "The asserted G2i sequent retains an N2i label and unprimed context, while the displayed G2i proof uses D,Γ1'.",
+      "minimal_treatment": "Use the unlabelled D,Γ1' antecedent and disclose the change.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$x:!D,\\Gamma_1\\Sequent!A$"
+        ],
+        "target_only": [
+          "$!D,\\Gamma_1'\\Sequent!A$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-006",
+      "source_locator": "translations.tex lines 278–285, implication-case induction results",
+      "classification": "wrong_context_indices",
+      "source_issue": "The first G2i induction result keeps Γ1 rather than Γ1', and the second uses Γ1' instead of Γ2', contrary to the displayed left-implication derivation.",
+      "minimal_treatment": "Use Γ1' and Γ2' respectively and disclose the changes.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma_1\\Sequent!D$",
+          "$!E,\\Gamma_1'\\Sequent!A$"
+        ],
+        "target_only": [
+          "$\\Gamma_1'\\Sequent!D$",
+          "$!E,\\Gamma_2'\\Sequent!A$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-007",
+      "source_locator": "translations.tex lines 291–294, right-weakening condition",
+      "classification": "incomplete_falsum_condition",
+      "source_issue": "The prose says If D and/or A≡false, while the displayed first weakening requires D≡false.",
+      "minimal_treatment": "State D≡false and disclose the missing condition.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!D$"
+        ],
+        "target_only": [
+          "$!D\\ident\\lfalse$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORTR-008",
+      "source_locator": "translations.tex lines 315–317, subformula corollary",
+      "classification": "incomplete_subformula_scope",
+      "source_issue": "For N1i the corollary mentions only the end-formula, omitting undischarged assumptions. A normal conjunction-elimination proof already supplies a counterexample; N2i end-sequents include the assumptions.",
+      "minimal_treatment": "Include the undischarged assumptions in the N1i subformula scope and explain that N2i end-sequents already contain them, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

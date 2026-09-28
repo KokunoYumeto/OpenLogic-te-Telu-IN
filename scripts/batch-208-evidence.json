@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "208",
+  "unit_id": "OLP-0559",
+  "unit_order": 559,
+  "source_path": "content/set-theory/spine/idea.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5, 6, 7],
+  "previous_segments": 8268,
+  "previous_terms": 248,
+  "expected_corrections": 485,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర V-alpha దశల నిర్వచన మూలం, తెలుగు లక్ష్యం, పూర్వ ఉత్తరవర్తి/సీమా/ఘాత సమితి పదాలు, స్థానిక సమితి/సంఖ్య/తర్క సాక్షులు ఎదురెదురు చూశాం; మూల, ఉత్తరవర్తి, సీమా మూడు సమీకరణాలు, అంతర్గత దశల వివరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; V-alpha పునరావృత్తి మూల సమీకరణ నియంత్రితం. ఉనికి/ఏకైకత్వం తదుపరి విభాగంలో నిరూపించాల్సినదని మూలమే చెబుతుంది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T249",
+    "source_term": "V-alpha stage hierarchy / transfinite recursion / internal characterization",
+    "telugu": "V-alpha దశల స్థాయిక్రమం / అతిపరిమిత పునరావృత్తి / అంతర్గత వివరణ",
+    "status": "three_equation_definition_controlled_set_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "V_empty శూన్యం, V_successor పూర్వ ఘాత సమితి, సీమా V_alpha పూర్వ దశల సమ్మేళనం అనే మూడు సమీకరణాలు, నమూనా కాక సిద్ధాంతం లోపలి నిర్వచనం అనే భేదం నిలిచాయి.",
+    "uncertainty": "అతిపరిమిత పునరావృత్తి ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; నిర్వచన చెల్లుబాటు తరువాతి సిద్ధాంతంపై ఆధారితం.",
+    "borrowing": "V-alpha and ordinal macros and equations remain source-controlled."
+  }
+}

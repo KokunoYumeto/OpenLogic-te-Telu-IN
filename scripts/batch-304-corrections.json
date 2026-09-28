@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0655",
+  "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+  "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+  "audit_id": "OLTEPTCUTINVL-20260927",
+  "audit_review_path": "evidence/OLP-0655-CUT-LARGEST-SOURCE-AUDIT.md",
+  "audit_review_sha256": "8464d877491c67649df369b21cdd13aa511a9a53a10b45fba9f891c85377a060",
+  "audit_findings_path": "evidence/OLP-0655-CUT-LARGEST-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "f749e72aa9ca908216d3a6dc0557ab6a56ab0f22e087e3ed809b88f31e523bb1",
+  "previous_corrections": 552,
+  "treatments": {
+    "OLTEPTCUTINVL-001": {"target_line": 189, "body_treatment": "సాధనలో చూపిన కట్ సంక్షేపణం విలోమయోగ్యత కాకుండా అత్యధిక-కట్ సంక్షేపణ లెమ్మాకు చెందినదని ప్రకటించాం."},
+    "OLTEPTCUTINVL-002": {"target_line": 198, "body_treatment": "చివరి సాధారణీకరణలో మూలం అత్యధిక-కట్ సంక్షేపణ ఫలితాన్ని పూర్వపు కట్ అనుమతిత్వ లెమ్మాకు ఆపాదించిన అసంగతిని ప్రకటించాం."},
+    "OLTEPTCUTINVL-003": {"target_line": 79, "body_treatment": "అణు ప్రధాన స్వీకృత సందర్భంలో Delta స్వపునరుక్తికి బదులు తదుపరి సీక్వెంట్‌కు సరిపడే Delta-primeను పెట్టి ప్రకటించాం."}
+  }
+}

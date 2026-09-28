@@ -1,0 +1,100 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: truth-lemma
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{tru}
+
+\olsection{సత్య ఉపప్రమేయం}
+
+కింది ఉపప్రమేయం కానానికల్ నమూనాలో సంతృప్తిని,
+ఏ \tetoken{సూత్రాలు}{!!{formula}s} ప్రధాన
+సమితి $\Delta$కు \tetoken{మూలకాలో}{!!{element}s}
+అనే విషయంతో అనుసంధానిస్తుంది.
+
+\begin{lem}\ollabel{lem:truth}
+  $\Delta$ ప్రధానమైతే, $\mSat{M(\Delta)}{!A}[\sigma]$
+  అయితే, అప్పుడే $\Delta(\sigma) \Proves !A$.
+\end{lem}
+
+\begin{proof}
+  $!A$పై ఆగమన పద్ధతిలో.
+  \begin{enumerate}
+    \item \indcase{!A}{\lfalse}{$\Delta(\sigma)$
+      ప్రధానం కాబట్టి అవైరుధ్యమైనది; అందువల్ల
+      $\Delta(\sigma) \Proves/ \indfrm$.
+      నిర్వచనం ప్రకారం
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+      \item \indcase{!A}{p}{$\mSat{{}}{}$
+        నిర్వచనం ప్రకారం
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        అయితే, అప్పుడే $\sigma \in V(p)$;
+        అంటే $\Delta(\sigma) \Proves \indfrm$.}
+      \item \indcase!{!A}{\lnot !B}{}
+      \item \indcase{!A}{!B \land
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        అయితే, అప్పుడే
+        $\mSat{M(\Delta)}{!B}[\sigma]$ మరియు
+        $\mSat{M(\Delta)}{!C}[\sigma]$.
+        ఆగమన పరికల్పన ప్రకారం
+        $\mSat{M(\Delta)}{!B}[\sigma]$
+        అయితే, అప్పుడే $\Delta(\sigma) \Proves
+        !B$;~$!C$కూ ఇదే. కానీ
+        $\Delta(\sigma) \Proves !B$ మరియు
+        $\Delta(\sigma) \Proves !C$
+        అయితే, అప్పుడే $\Delta(\sigma)
+        \Proves \indfrm$.}
+      \item \indcase{!A}{!B \lor
+        !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        అయితే, అప్పుడే
+        $\mSat{M(\Delta)}{!B}[\sigma]$ లేదా
+        $\mSat{M(\Delta)}{!C}[\sigma]$.
+        ఆగమన పరికల్పన ప్రకారం, ఇది
+        $\Delta(\sigma) \Proves !B$ లేదా
+        $\Delta(\sigma) \Proves !C$
+        అయినప్పుడే నిలుస్తుంది. ఇదే
+        $\Delta(\sigma) \Proves \indfrm$
+        అయినప్పుడే నిలుస్తుందని చూపాలి.
+        ఎడమ నుంచి కుడి దిశ స్పష్టం.
+        కుడి నుంచి ఎడమ దిశ
+        $\Delta(\sigma)$ ప్రధానత వల్ల వస్తుంది.}
+      \item \indcase{!A}{!B \lif !C}{ముందుగా
+        ఎడమ నుంచి కుడి దిశ ప్రతివిపర్యయం:
+        $\Delta(\sigma) \Proves/ !B
+        \lif !C$ అనుకుందాం. అప్పుడు
+        $\Delta(\sigma) \cup \{!B\} \Proves/
+        !C$ కూడా. ఏదో~$n$కు
+        $\tuple{!B, !C}$ అనేది
+        $\tuple{!B_n, !C_n}$ కాబట్టి
+        $\Delta(\sigma.n) = (\Delta(\sigma) \cup
+        \{!B\})^*$; అలాగే
+        $\Delta(\sigma.n) \Proves !B$,
+        కానీ $\Delta(\sigma.n) \Proves/
+        !C$. ఆగమన పరికల్పన ప్రకారం
+        $\mSat{M(\Delta)}{!B}[\sigma.n]$
+        మరియు $\mSat/{M(\Delta)}{!C}[\sigma.n]$.
+        $R\sigma(\sigma.n)$ కాబట్టి
+        $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+
+        ఇప్పుడు $\Delta(\sigma) \Proves !B
+        \lif !C$ అని, $R\sigma\sigma'$
+        అని అనుకుందాం. $\Delta(\sigma) \subseteq
+        \Delta(\sigma')$ కాబట్టి,
+        $\Delta(\sigma') \Proves
+        !B$ అయితే $\Delta(\sigma') \Proves
+        !C$. మరో మాటలో,
+        $R\sigma\sigma'$ అయ్యే ప్రతి
+        $\sigma'$కు $\Delta(\sigma') \Proves/
+        !B$ లేదా $\Delta(\sigma') \Proves
+        !C$. ఆగమన పరికల్పన ప్రకారం
+        $R\sigma\sigma'$ అయినప్పుడల్లా
+        $\mSat/{M(\Delta)}{!B}[\sigma']$ లేదా
+        $\mSat{M(\Delta)}{!C}[\sigma']$;
+        అంటే $\mSat{M(\Delta)}{\indfrm}[\sigma]$.}
+  \end{enumerate}
+\end{proof}
+
+\end{document}

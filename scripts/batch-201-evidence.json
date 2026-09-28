@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "201",
+  "unit_id": "OLP-0552",
+  "unit_order": 552,
+  "source_path": "content/set-theory/ordinals/vn.tex",
+  "blocks": 9,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8],
+  "previous_segments": 8171,
+  "previous_terms": 241,
+  "expected_corrections": 482,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P010"],
+  "consultation_phase": "స్థిర వాన్ న్యూమన్ క్రమసంఖ్యల మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/సుక్రమ/సహజ సంఖ్య పదాలు, స్థానిక సమితి/సంబంధ సాక్షులు ఎదురెదురు చూశాం; క్రమరకం రెండు ఆశిత సూత్రాలు, సంక్రామక సమితి నిర్వచనం, సభ్యత్వ సుక్రమం, తొలి క్రమసంఖ్యలు, ప్రతినిధి ఎంపిక భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/010 సాధారణ సమితి/సంఖ్య/సంబంధ పదాలకు మాత్రమే సాక్షులు; వాన్ న్యూమన్ క్రమసంఖ్య, సంక్రామక సమితి ప్రత్యేక అర్థాలు మూల నిర్వచన నియంత్రితం. ఆది సూత్రాల ఉనికి ఇక్కడ నిరూపించలేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T242",
+    "source_term": "von Neumann ordinal / transitive set / order type",
+    "telugu": "వాన్ న్యూమన్ క్రమసంఖ్య / సంక్రామక సమితి / క్రమరకం",
+    "status": "definition_controlled_set_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P010"],
+    "basis": "సంక్రామక సమితి ప్రతి మూలకం ఉపసమితి అనే నిర్వచనం, సభ్యత్వం ద్వారా సుక్రమితత్వం, తొలి నాలుగు క్రమసంఖ్యలు, సహజ సంఖ్యలతో కొనసాగింపు, ప్రతినిధి ఎంపిక అనే తాత్త్విక జాగ్రత్త నిలిచాయి.",
+    "uncertainty": "ప్రత్యేక క్రమసంఖ్య/క్రమరకం/సంక్రామక సమితి పదాలకు ప్రత్యక్ష స్థానిక సాక్షి లేదు; మూల నిర్వచనం అర్థాన్ని నియంత్రిస్తుంది.",
+    "borrowing": "Von Neumann name, Greek letters, membership and order-type formulas remain source-controlled."
+  }
+}

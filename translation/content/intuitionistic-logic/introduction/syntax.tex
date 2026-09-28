@@ -1,0 +1,86 @@
+% part: intuitionistic-logic
+% chapter: introduction
+% section: syntax
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{int}{syn}
+
+\olsection{అంతఃప్రజ్ఞావాద తర్కపు వాక్యనిర్మాణం}
+
+అంతఃప్రజ్ఞావాద తర్కపు వాక్యనిర్మాణం ప్రతిజ్ఞావాక్య
+తర్కానిదే. సాంప్రదాయిక ప్రతిజ్ఞావాక్య తర్కంలో
+కొన్ని సంధాయకాలను ఇతర సంధాయకాలతో నిర్వచించవచ్చు.
+ఉదాహరణకు, $!A \lif !B$ను $\lnot !A \lor !B$తో,
+లేదా $!A \lor !B$ను $\lnot(\lnot !A \land \lnot
+!B)$తో నిర్వచించవచ్చు. అందుకే సాంప్రదాయిక తర్కపు
+వివరణల్లో కొన్ని సంధాయకాలను ఆ నిర్వచనాల
+సంక్షిప్త రూపాలుగా ప్రవేశపెడతారు. అంతఃప్రజ్ఞావాద
+తర్కంలో మాత్రం రెండు మినహాయింపులు తప్ప అలా కాదు:
+$\lnot !A$ను $!A \lif \lfalse$కు సంక్షిప్త రూపంగా
+నిర్వచించవచ్చు; తరచూ అలానే నిర్వచిస్తారు. అలా
+అయితే $\lfalse$ను మాత్రం నిర్వచిత సంకేతంగా
+తీసుకోకూడదు!{} అలాగే $!A \liff !B$ను సాంప్రదాయిక
+తర్కంలోలాగే $(!A \lif !B) \land (!B \lif
+!A)$గా నిర్వచించవచ్చు.
+
+ప్రతిజ్ఞావాక్య అంతఃప్రజ్ఞావాద తర్కపు
+\tetoken{సూత్రాలను}{!!^{formula}s},
+\emph{\tetoken{ప్రతిజ్ఞావాక్య చరాలు}{!!{propositional variable}s}},
+ప్రతిజ్ఞావాక్య స్థిరాంకం~$\lfalse$ నుంచి
+\emph{తార్కిక సంధాయకాల} సహాయంతో నిర్మిస్తాం. ఇవి:
+
+\begin{enumerate}
+\item \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
+  \tetoken{ఒక అనంతంగా లెక్కించదగిన}{!!^a{denumerable}}
+  సమితి~$\PVar$: $\Obj p_0$, $\Obj p_1$, \dots
+  \item \tetoken{అసత్యం}{!!{falsity}} కోసం ప్రతిజ్ఞావాక్య స్థిరాంకం~$\lfalse$.
+\item తార్కిక సంధాయకాలు: $\land$
+  (సంయోజనం), $\lor$ (విడియోజనం), $\lif$ (సోపాధికం)
+\item విరామ సంకేతాలు: (, ), అలాగే కామా.
+\end{enumerate}
+
+\begin{defn}[సూత్రం]
+\ollabel{defn:formulas} ప్రతిజ్ఞావాక్య అంతఃప్రజ్ఞావాద
+తర్కపు \emph{\tetoken{సూత్రాల}{!!{formula}s}} సమితి~$\Frm[L_0]$ను
+ఇలా ఆగమన పద్ధతిలో నిర్వచిస్తాం:
+\begin{enumerate}
+\item $\lfalse$ ఒక అణు \tetoken{సూత్రం}{!!{formula}}.
+
+\item ప్రతి \tetoken{ప్రతిజ్ఞావాక్య చరం}{!!{propositional variable}}~$\Obj p_i$
+  ఒక అణు \tetoken{సూత్రం}{!!{formula}}.
+
+\item $!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే,
+  $(!A \land !B)$ \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+\item $!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే,
+  $(!A \lor !B)$ \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+\item $!A$, $!B$ \tetoken{సూత్రాలు}{!!{formula}s} అయితే,
+  $(!A \lif !B)$ \tetoken{ఒక సూత్రం}{!!a{formula}}.
+
+\tagitem{limitClause}{ఇవి తప్ప మరేదీ \tetoken{సూత్రం}{!!a{formula}} కాదు.}{}
+\end{enumerate}
+\end{defn}
+
+పైన ప్రవేశపెట్టిన ప్రాథమిక సంధాయకాలతో పాటు,
+కింది \emph{నిర్వచిత} సంకేతాలను కూడా వాడతాం:
+$\lnot$ (నిరాకరణ), $\liff$
+(\tetoken{ద్విసోపాధికం}{!!{biconditional}}).
+నిర్వచిత కారకాలతో నిర్మించిన సూత్రాలను ఇలా
+అర్థం చేసుకోవాలి:
+\begin{enumerate}
+\item $\lnot !A$ అనేది $!A \lif \lfalse$కు సంక్షిప్త రూపం.
+
+\item $!A \liff !B$ అనేది $(!A \lif !B) \land (!B
+  \lif !A)$కు సంక్షిప్త రూపం.
+\end{enumerate}
+
+$\lnot$ను అధికారికంగా సంక్షిప్త రూపంగా తీసుకున్నా,
+కొన్నిసార్లు అది ప్రాథమిక సంకేతమైనట్లుగా
+$\lnot$కు నిర్వచనాల్లో స్పష్టమైన నియమాలు, నిబంధనలు ఇస్తాం.
+ముఖ్యంగా అభ్యాస సమస్యలను చెప్పడానికి ఇది ఉపయోగపడుతుంది.
+
+\end{document}

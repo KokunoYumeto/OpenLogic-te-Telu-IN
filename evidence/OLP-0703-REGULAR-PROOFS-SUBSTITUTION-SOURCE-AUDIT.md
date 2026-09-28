@@ -1,0 +1,3 @@
+# OLP-0703 — regular proofs substitution source audit
+
+Four source treatments are disclosed. Two universal-left proof diagrams are mislabelled universal-right. The regularization induction must choose a highest dirty eigenvariable inference, not an arbitrary highest eigenvariable inference; its upper subproof may contain clean eigenvariable inferences, and the number of dirty inferences decreases by at least one, not necessarily exactly one. A scrambled final substitution paragraph is separated into its stated unchanged-eigenvariable and fresh-term facts. Finally, substitution of an arbitrary term for a constant is clarified as capture-avoiding, alpha-renaming bound variables when necessary. The substitution lemma's existing eigenvariable restrictions are preserved.

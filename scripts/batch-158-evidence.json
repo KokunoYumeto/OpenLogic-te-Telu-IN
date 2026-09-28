@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "158",
+  "unit_id": "OLP-0509",
+  "unit_order": 509,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/completeness-thm.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7675,
+  "previous_terms": 198,
+  "expected_corrections": 467,
+  "canon_default": ["TE-P010", "TE-P018", "TE-P024", "TE-P025"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర సంపూర్ణతా సిద్ధాంత మూలం, తెలుగు లక్ష్యం, పూర్వ కానానికల్ నమూనా/సత్య ఉపప్రమేయ/అనుగమన పదాలు, స్థానిక సంబంధ/తర్క/వ్యుత్పత్తి/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; ప్రతివిపర్యయ నమూనా నిర్మాణం, మూడు అభ్యాసాలు, మూల సత్య ఉపప్రమేయ ఖాళీ నిరాకరణ కేసు పరిమితిని తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P010/018/024/025 సాధారణ సంబంధ/తర్క/నిరూపణ పదాలకు మాత్రమే సాక్షులు. ఈ సిద్ధాంత నిరూపణ పూర్వ సత్య ఉపప్రమేయంపై ఆధారపడుతుంది; ఆ మూల ఉపప్రమేయంలో నిరాకరణ కేసు ఖాళీగా ఉండటం వల్ల పూర్తి మూల నిరూపణను ధృవీకరించలేం.",
+  "term_decision": {
+    "term_id": "TE-T199",
+    "source_term": "completeness theorem / contrapositive canonical-model counterexample / disjunction-property exercises",
+    "telugu": "సంపూర్ణతా సిద్ధాంతం / కానానికల్ నమూనా ప్రతివిపర్యయ వ్యతిరేక ఉదాహరణ / వియోజన-ధర్మ అభ్యాసాలు",
+    "status": "native_general_relation_logic_proof_register_attested_completeness_source_controlled_upstream_truth_lemma_gap_flagged",
+    "passages": ["TE-P010", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "Γ⊨A నుంచి Γ⊢A సిద్ధాంతం, లిండెన్‌బామ్ ప్రధాన విస్తరణ, కానానికల్ నమూనా మూల-లోకం, సత్య ఉపప్రమేయ వినియోగం, మూడు మూల అభ్యాసాలు నిలిచాయి.",
+    "uncertainty": "మూల సత్య ఉపప్రమేయ నిరాకరణ కేసు ఖాళీగా ఉండటంతో దాన్ని ఆధారంగా వాడే సంపూర్ణత నిరూపణ ప్రచురణ-స్థాయి పూర్తి నిరూపణగా ధృవీకరించబడలేదు. పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Canonical-model terminology and mathematical labels follow established edition usage."
+  }
+}

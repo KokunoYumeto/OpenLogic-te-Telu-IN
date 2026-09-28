@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "138",
+  "unit_id": "OLP-0489",
+  "unit_order": 489,
+  "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex",
+  "blocks": 21,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "previous_segments": 7363,
+  "previous_terms": 178,
+  "expected_corrections": 455,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర బహిరంగ ప్రకటన భాష మూలం, తెలుగు లక్ష్యం, ముందు జ్ఞానసంబంధ G/Knows/CKnows పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; సత్య ప్రకటన-సాక్ష్యం, [!B] కారకం, [!A]!B నిర్మాణం, సామాన్య జ్ఞాన ఐచ్ఛికం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. బహిరంగ ప్రకటన గతి అర్థం లేదా శాఖా పదానికి అవి ప్రత్యక్ష ధృవీకరణలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T179",
+    "source_term": "dynamic epistemic logic / informational update / public announcement operator",
+    "telugu": "గతి జ్ఞానసంబంధ తర్కం / సమాచార నవీకరణ / బహిరంగ ప్రకటన కారకం",
+    "status": "native_general_set_relation_logic_derivation_register_attested_public_announcement_syntax_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "జ్ఞాన మార్పు, సమాచార ఘటన/నవీకరణ, అందరూ కలిసి గమనించే సత్య ప్రకటన, G కర్తలు, Knows_a, [!B] కారకం, [!A]!B నిర్మాణం, ఐచ్ఛిక CKnows_G నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు dynamic epistemic logic లేదా public announcementకు ప్రత్యక్ష తెలుగు శాఖా పదం ఇవ్వవు. మూల తొలి కారకాల జాబితాలో biconditional లేకున్నా ఆగమన జాబితాలో ఉంది; మౌనంగా అదనపు కారకాన్ని చేర్చలేదు. TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+    "borrowing": "G, Knows, CKnows and bracketed announcement syntax remain source-controlled notation; the source's stale section comment is preserved metadata."
+  }
+}

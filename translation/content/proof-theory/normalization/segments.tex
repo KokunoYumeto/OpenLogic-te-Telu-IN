@@ -1,0 +1,80 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: introduction
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{seg}
+
+\olsection{ఖండాలు మరియు కట్‌లు}
+
+\tetoken{ఒక ప్రవేశ}{!!^a{introduction}} నియమం తరువాత \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం వస్తే అది \tetoken{ఒక నిరూపణ}{!!a{proof}}లో పక్కదారి; \tetoken{ఒక నిరూపణను}{!!a{proof}} సాధారణీకరించడం అంటే అటువంటి పక్కదారులను తొలగించడం. అయితే \Elim{\lor}, \Elim{\lexists} కారణంగా "మనం తొలగించాలనుకునే పక్కదారి" నిర్వచనమే కొంత క్లిష్టమవుతుంది. సమస్య ఇది: ఈ నియమాల వల్ల పక్కదారిలో \tetoken{తొలగింపు}{!!{elimination}} నియమం \tetoken{ప్రవేశ}{!!{introduction}} నియమం తరువాత \emph{వెంటనే} వస్తుందని హామీ లేదు. వాటి మధ్య \Elim{\lor} లేదా \Elim{\lexists} ఉండవచ్చు; ఉదాహరణకు,
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+నిజానికి, \Intro{\lif}, \Elim{\lif} మధ్య ఎన్ని \Elim{\lor} లేదా \Elim{\lexists} అనుమితులైనా ఉండవచ్చు; ఉదాహరణకు,
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][!C(x)]$}
+\AxiomC{}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\AxiomC{$\Discharge{!A}{x}$}
+\DeduceC{$!B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$!A \lif !B$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$!A \lif !B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$!A \lif !B$}
+\AxiomC{}
+\DeduceC{$!A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!B$}
+\DisplayProof
+\]
+ఈ ఉదాహరణలో ఒకే \Elim{\lif} ఒకటికంటే ఎక్కువ~\Intro{\lif}లను అనుసరిస్తుంది కాబట్టి, అది అనేక పక్కదారుల్లో భాగమవచ్చని తెలుస్తుంది. ఈ అవకాశాలన్నింటినీ పరిగణించడానికి, \Log{N1i}-నిరూపణలోని నిర్దిష్ట రకం \tetoken{సూత్ర}{!!{formula}} ఘటనల వరుసల ద్వారా పక్కదారులను నిర్వచిస్తాం; వాటిని \emph{ఖండాలు} అంటారు. మన ఉదాహరణలో $!A \lif !B$ ఘటనల వరుస ఇది; $\Elim{\lor}$ లేదా $\Elim{\lexists}$ యొక్క ఉప పూర్వపక్షం తరువాత దాని నిష్కర్ష వస్తుంది. ఉదాహరణలో అటువంటి రెండు ఖండాలు ఉన్నాయి; ఒక్కొక్కదానిలో $!A \lif !B$ యొక్క మూడు ఘటనలు ఉన్నాయి. అధికారిక నిర్వచనం ఇలా ఉంది.
+\sourcecorrection{OLTEPTNORSEG-001}{మూల గద్యంలోని "ఉప పూర్వపక్షం దాని నిష్కర్ష తరువాత వస్తుంది" అనే క్రమం కిందనున్న ఖండ నిర్వచనానికి వ్యతిరేకం; ఇక్కడ నిష్కర్ష ఉప పూర్వపక్షం తరువాత వస్తుందని స్పష్టంచేశాం.}
+
+\begin{defn}
+\Log{N1i} \tetoken{నిరూపణ}{!!{proof}}~$\delta$లో \emph{ఖండం} అంటే~$\delta$లో ఒకే \tetoken{సూత్రం}{!!{formula}}~$!A$ యొక్క $!A_1$, \dots, $!A_n$ అనే ఘటనల వరుస; ఇందులో
+\begin{enumerate}
+  \item $!A_1$, \Elim{\lor} లేదా \Elim{\lexists} యొక్క నిష్కర్ష కాదు;
+  \item $!A_n$, \Elim{\lor} లేదా \Elim{\lexists} యొక్క ఉప పూర్వపక్షం కాదు;
+  \item $i = 1$, \dots,~$n-1$కు, $!A_i$ అనేది \Elim{\lor} లేదా \Elim{\lexists} యొక్క ఉప పూర్వపక్షం; $!A_{i+1}$ అదే అనుమితి నిష్కర్ష.
+\end{enumerate}
+ఆ ఖండం \emph{పొడవు}~$n$.
+\sourcecorrection{OLTEPTNORSEG-002}{మూలంలోని మూడవ షరతులో $A_{i+1}$ అని ఉంది; అదే సూత్ర ఘటనల వరుసలోని తదుపరి సభ్యుడు కనుక $!A_{i+1}$గా సరిచేశాం.}
+\end{defn}
+
+ప్రతి ఖండమూ తొలగించాల్సిన పక్కదారి కాదు. అలాంటి ఖండాలను \emph{కట్‌లు} అంటారు.
+
+\begin{defn}
+\emph{కట్} అంటే~$!A_n$ \tetoken{ఒక తొలగింపు}{!!a{elimination}} అనుమితి ప్రధాన పూర్వపక్షం అయ్యే ఖండం; అదనంగా $n=1$ అయి $!A_1 = !A_n$ అనేది \tetoken{ఒక ప్రవేశ}{!!a{introduction}} అనుమితి లేదా~\FalseInt నిష్కర్ష కావాలి, లేదా~$n>1$ కావాలి.
+\end{defn}
+
+కట్ ఖండం తప్పనిసరిగా \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం నిష్కర్షతో మొదలవ్వాల్సిన పనిలేదు. అది \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం ప్రధాన పూర్వపక్షంతో ముగిస్తే చాలు. అయితే పొడవు~$1$ ఉన్న ఖండం కట్‌గా లెక్కించబడాలంటే \tetoken{ప్రవేశ}{!!{introduction}} నియమం లేదా~\FalseInt నిష్కర్ష అయి ఉండాలి.
+\sourcecorrection{OLTEPTNORSEG-003}{మూలంలోని ఈ సంక్షిప్త వాక్యం పొడవు~$1$ కట్‌కు ప్రవేశ నియమ నిష్కర్షను మాత్రమే పేర్కొంది; ముందున్న అధికారిక నిర్వచనం చేర్చిన~\FalseInt సందర్భాన్ని ఇక్కడ స్పష్టంగా చేర్చాం.}
+
+\begin{defn}
+కట్ యొక్క \emph{స్థాయి}~$\depth{!A}$. \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta$ యొక్క \emph{కట్ స్థాయి}~$\cutrank{\delta}$ అంటే~$\delta$లోని కట్‌ల స్థాయిలలో గరిష్ఠమైనది. కట్ స్థాయి~$\cutrank{\delta}$ అయితే అది~$\delta$లో \emph{గరిష్ఠ} కట్. ~$\delta$ యొక్క \emph{కట్ పొడవు} అంటే దాని గరిష్ఠ కట్‌లన్నింటి పొడవుల మొత్తం.
+\end{defn}
+
+\end{document}

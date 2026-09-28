@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTSEMNOT-20260927",
+  "unit_id": "OLP-0501",
+  "source_path": "content/intuitionistic-logic/semantics/semantic-notions.tex",
+  "source_sha256": "e181f2cc2add672ac76ae6cf3e011d3242479e1a1ff5f8e0f679eb1eda8f62fb",
+  "findings": [
+    {
+      "finding_id": "OLTEINTSEMNOT-001",
+      "source_locator": "semantic-notions.tex lines 22-39; first proposition item and its proof",
+      "classification": "proof_of_local_entailment_uses_unwarranted_global_premise",
+      "source_issue": "The proof of the local item assumes model-wide truth of Gamma and infers truth at every world instead of starting from its local premise at w.",
+      "minimal_treatment": "Apply the definition of semantic entailment directly to the local premise and disclose the removed detour.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\mSat{M}{\\Gamma}$", "$\\mSat{M}{\\Gamma}[w]$", "$\\mSat{M}{\\Gamma}[u]$", "$u\\inW$", "$\\mSat{M}{!A}[w]$"],
+        "target_only": []
+      }
+    }
+  ]
+}

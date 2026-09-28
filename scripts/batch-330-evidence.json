@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "330",
+  "unit_id": "OLP-0681",
+  "unit_order": 681,
+  "source_path": "content/proof-theory/proof-search/proof-search.tex",
+  "blocks": 7,
+  "previous_segments": 10080,
+  "previous_terms": 370,
+  "consultation_phase": "నిరూపణ అన్వేషణ అధ్యాయ శీర్షికను పక్కనున్న పరిచయంతో సమన్వయం చేసి, దిగుమతి పథాలు, క్రమాన్ని యథాతథంగా ఉంచాం.",
+  "evidence_limit": "శీర్షిక మాత్రమే భాషా అనువాదం; మిగిలినది TeX నిర్మాణం. దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T371",
+    "source_term": "Proof Search (chapter heading)",
+    "telugu": "నిరూపణ అన్వేషణ",
+    "status": "proof_search_chapter_heading_aligned",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "అధ్యాయ శీర్షిక పక్కనున్న విభాగాలతో సమానంగా ఉంది; దిగుమతి పథాలు, క్రమం మారలేదు.",
+    "uncertainty": "అన్వేషణకు నిర్వచనాత్మక తెలుగు పదాన్ని కొనసాగించాం.",
+    "borrowing": "pt/ps identifier and TeX import paths remain source-identifying."
+  },
+  "linguistic_blocks": [
+    4
+  ],
+  "expected_corrections": 620,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "324",
+  "unit_id": "OLP-0675",
+  "unit_order": 675,
+  "source_path": "content/proof-theory/normalization/permutations.tex",
+  "blocks": 18,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17],
+  "corrections_by_block": {
+    "7": ["OLTEPTNORPER-001"],
+    "15": ["OLTEPTNORPER-002"],
+    "16": ["OLTEPTNORPER-003"]
+  },
+  "previous_segments": 9970,
+  "previous_terms": 364,
+  "expected_corrections": 605,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "స్థానమార్పు పరివర్తన, కట్ పొడవు-స్థాయి, స్వతంత్ర చరరాశి నియమం, అత్యుపరి గరిష్ఠ కట్ భావాలను పక్కనున్న సాధారణీకరణ విభాగాలతో పోల్చాం; మూడు మూల అసంగతులను ప్రకటించాం.",
+  "evidence_limit": "పట్టికలో పునరుక్తి మూలంలో ఉన్నట్లే ఉంచాం; బహుళ నిరూపణ వృక్షాల దృశ్య TeX తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T365",
+    "source_term": "permutation conversion; eigenvariable condition; topmost maximal cut",
+    "telugu": "స్థానమార్పు పరివర్తన; స్వతంత్ర చరరాశి నియమం; అత్యుపరి గరిష్ఠ కట్",
+    "status": "permutations_three_disclosed_source_corrections",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "కట్ మార్గాల పొడవు, స్థానమార్చిన నిరూపణ వృక్షాలు, స్వతంత్ర చరరాశి సమస్య, అత్యుపరి కట్ అవసరం మూలానుసారం నిలిచాయి.",
+    "uncertainty": "రెండవ అభ్యాసంలోని నియమ చిహ్నాన్ని N1i వాడకంతో సమన్వయం చేశాం; పూర్తి TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "N1i, derivation labels and TeX rule identifiers remain source-identifying."
+  }
+}

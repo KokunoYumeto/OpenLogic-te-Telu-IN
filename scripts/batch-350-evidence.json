@@ -1,0 +1,83 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "350",
+  "unit_id": "OLP-0701",
+  "unit_order": 701,
+  "source_path": "content/proof-theory/sequent-calculus/invertibility.tex",
+  "blocks": 29,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "corrections_by_block": {
+    "6": [
+      "OLTEPTSEQINV-001"
+    ],
+    "9": [
+      "OLTEPTSEQINV-007"
+    ],
+    "12": [
+      "OLTEPTSEQINV-002"
+    ],
+    "15": [
+      "OLTEPTSEQINV-003"
+    ],
+    "16": [
+      "OLTEPTSEQINV-004"
+    ],
+    "25": [
+      "OLTEPTSEQINV-005"
+    ],
+    "26": [
+      "OLTEPTSEQINV-006"
+    ]
+  },
+  "previous_segments": 10339,
+  "previous_terms": 390,
+  "expected_corrections": 684,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "విలోమం, ఎత్తు, ప్రధాన సూత్రం, సందర్భం, స్వీయచర/ప్రతిస్థాపన పదాలను పూర్వ నిరూపణ విభాగాలతో పోల్చి తాజాతన షరతులు తనిఖీ చేశాం.",
+  "evidence_limit": "మూలం అభ్యాసంగా వదిలిన మిగిలిన సందర్భాలకు స్వతంత్ర పూర్తి formalization లేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T391",
+    "source_term": "invertibility; height-preserving inversion; principal formula; eigenvariable freshness; contraction admissibility",
+    "telugu": "విలోమ్యత; ఎత్తు-సంరక్షక విలోమం; ప్రధాన సూత్రం; స్వీయచర తాజాతనం; సంకోచన అనుమతించదగినత",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఎత్తు పరిమితి, ఆధారాల సంఖ్య వేరు; విలోమం తరువాత ఉపసూత్ర సంకోచన క్రమం, సాక్షి పదం నిలిపాం. అసత్య అక్షయ కుటుంబం ఆధార దశలో నిలుస్తుందని కూడా తనిఖీ చేశాం.",
+    "uncertainty": "మూలం అభ్యాసంగా వదిలిన మిగిలిన సందర్భాలకు స్వతంత్ర పూర్తి formalization లేదు; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

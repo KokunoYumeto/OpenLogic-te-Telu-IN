@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "311",
+  "unit_id": "OLP-0662",
+  "unit_order": 662,
+  "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+  "blocks": 15,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTNATGRA-001"
+    ],
+    "10": [
+      "OLTEPTNATGRA-004"
+    ],
+    "12": [
+      "OLTEPTNATGRA-002"
+    ],
+    "14": [
+      "OLTEPTNATGRA-003"
+    ]
+  },
+  "previous_segments": 9818,
+  "previous_terms": 351,
+  "expected_corrections": 576,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నిరూపణల అంటుకట్టడం, తెరిచి ఉన్న ఉపపత్తులు, విసర్జన గుర్తులు, ఐగెన్ చరరాశులు, N1/N2 సీక్వెంట్ భేదం, నాలుగు ప్రకటిత మూల సవరణలు స్థిర మూలంతో పోల్చాం.",
+  "evidence_limit": "అంటుకట్టడం, ఐగెన్ చరరాశి పదరూపాలు భావపారదర్శక ఎంపికలు; ప్రత్యక్ష నిఘంటు ఆధారం పరిమితం. మూలంలోని ఒక్క వాక్య ఆగమన సూచనను పూర్తి నిరూపణగా విస్తరించలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T352",
+    "source_term": "grafting proofs; open assumption; eigenvariable; proof height",
+    "telugu": "నిరూపణలను అంటుకట్టడం; తెరిచి ఉన్న ఉపపత్తి; ఐగెన్ చరరాశి; నిరూపణ ఎత్తు",
+    "status": "natural_deduction_grafting_four_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఉపపత్తుల స్థానంలో నిరూపణ ప్రతిస్థాపన, N1/N2 భేదం, ఐగెన్ చరరాశి షరతు, నిరూపణ ఎత్తు ఆగమన సూచన నిలిచాయి; నాలుగు స్థానిక లోపాలు సరిచేసి ప్రకటించాం.",
+    "uncertainty": "అంటుకట్టడం సాంకేతిక ప్రయోగం భావానువాదం; మూలం ఇచ్చిన సంక్షిప్త ఆగమన నిరూపణను స్వతంత్రంగా పూర్తి చేయలేదు.",
+    "borrowing": "N1c, N1i, N2c, N2i, proof-tree labels and derivation identifiers remain source-identifying."
+  }
+}

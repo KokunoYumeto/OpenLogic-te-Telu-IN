@@ -1,0 +1,5 @@
+# OLP-0658 — interpolation semantic review
+
+The target includes Craig's interpolation theorem, Maehara's generalized partition lemma and its induction cases, the `NAND` exercise, the derivation of Craig's theorem, Beth implicit/explicit definability and proof, and Robinson's joint consistency theorem and proof. Formula languages, left/right sequent partitions, connective and quantifier cases, eigenvariable restrictions, proof trees and labels were compared against the frozen source.
+
+Six source defects are disclosed adjacent to their uses: an overstrong and undefined language equality in Beth's proof (`OLTEPTCUTITP-001`), a predicate notation typo (`-002`), a too-weak shared-language hypothesis (`-003`), a reversed entailment step (`-004`), an omitted variable-term case (`-005`), and an unwarranted equality between ambient and used language symbols (`-006`). The first four and last have declared math deltas; the variable-term clarification changes prose only. The English source remains unchanged. This review is bounded source-target fidelity and structural QA, not independent formalization or rendered TeX QA.

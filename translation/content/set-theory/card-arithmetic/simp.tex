@@ -1,0 +1,105 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+\olfileid{sth}{card-arithmetic}{simp}
+
+\olsection{కూడిక, గుణకారాల సరళీకరణ}
+
+అతిపరిమిత కార్డినల్ కూడిక, గుణకారాల ఫలితాలు \emph{చాలా} సులభమని తేలుతుంది. కార్డినల్ సంఖ్యలు (కొన్ని) క్రమసంఖ్యలు, అందువల్ల సుక్రమితాలు; కాబట్టి వాటిని ఒక ప్రత్యేక పద్ధతిలో నిర్వహించవచ్చనే విషయం ఇందుకు కారణం. అయితే దీన్ని చూపడం అంత \emph{సులభం కాదు}. ముందుగా కొంచెం చతురమైన నిర్వచనం కావాలి:
+
+\begin{defn}
+క్రమసంఖ్యల యుగ్మాలపై ఒక \emph{ప్రామాణిక క్రమం} $\canonord$ను ఇలా నిర్వచిస్తాం: $\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ అప్పుడూ అప్పుడే వీటిలో ఒకటి నిజమైతే:
+\begin{enumerate}
+	\item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$; లేదా
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ మరియు $\alpha_1 < \beta_1$; లేదా
+	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$, $\alpha_1 = \beta_1$, మరియు $\alpha_2 < \beta_2$.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}
+ఏ క్రమసంఖ్య $\alpha$కైనా $\tuple{\alpha \times \alpha, \canonord}$ సుక్రమం.
+\end{lem}
+
+\begin{proof}
+$\alpha \times \alpha$పై $\canonord$ సంబంధం అనుసంధితమని స్పష్టం. ఎందుకంటే $\tuple{\alpha_1, \alpha_2}$, $\tuple{\beta_1,
+\beta_2}$లలో ఏదీ మరొకదాని కంటే $\canonord$లో చిన్నది కాదనుకుందాం. అప్పుడు $\max(\alpha_1,
+\alpha_2) = \max(\beta_1, \beta_2)$, $\alpha_1 = \beta_1$, $\alpha_2 = \beta_2$; కాబట్టి $\tuple{\alpha_1, \alpha_2} =
+\tuple{\beta_1,  \beta_2}$.
+
+సుక్రమతను చూపడానికి, ఖాళీ కాని $X \subseteq \alpha\times\alpha$ తీసుకుందాం. $\alpha$ క్రమసంఖ్య కాబట్టి $\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$లో అత్యల్ప మూలకం $\delta$ ఉంది. ఇప్పుడు $\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$లో మొదటి నిర్దేశాంకం అత్యల్పంగా లేని యుగ్మాలను తొలగిద్దాం; మిగిలినవాటిలో రెండవ నిర్దేశాంకం అత్యల్పమైన యుగ్మమే $X$లో $\canonord$-అత్యల్ప మూలకం.
+\end{proof}
+\noindent
+ఇప్పుడు ఒక చిన్న, సరళమైన పరిశీలన:
+
+\begin{prop}\ollabel{simplecardproduct}
+$\cardeq{\alpha}{\beta}$ అయితే $\cardeq{\alpha \times \alpha}{\beta
+\times \beta}$.
+\end{prop}
+
+\begin{proof}
+$f \colon \alpha \to \beta$ ద్వారా $\tuple{\gamma_1,
+\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$ను ఏర్పరిస్తే చాలు.
+\end{proof}
+\noindent
+ఇప్పుడు కీలకమైన లెమ్మాను నిరూపించడానికి ఈ విషయాలన్నిటినీ వాడుదాం:
+\begin{lem}\ollabel{alphatimesalpha}
+ఏ అనంత క్రమసంఖ్య $\alpha$కైనా $\cardeq{\alpha}{\alpha \times \alpha}$.
+\end{lem}
+
+\begin{proof}
+వైరుధ్యం కోసం, ఈ వాదన తప్పే అత్యల్ప అనంత క్రమసంఖ్య $\alpha$ అనుకుందాం. $\cardeq{\omega}{\omega\times\omega}$ అని \olref[sfr][siz][zigzag]{natsquaredenumerable} చూపుతుంది; కనుక $\omega \in \alpha$. ఇంకా, $\alpha$ కార్డినల్ సంఖ్య: కాదనుకుంటే, వైరుధ్యం కోసం, $\card{\alpha} \in \alpha$. అప్పుడు ఆగమన పరికల్పన ప్రకారం $\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$; నిర్వచనం ప్రకారం $\cardeq{\card{\alpha}}{\alpha}$; కాబట్టి \olref{simplecardproduct} ప్రకారం $\cardeq{\alpha}{\alpha\times\alpha}$.
+
+ఇప్పుడు ప్రతి $\tuple{\gamma_1, \gamma_2} \in \alpha \times \alpha$కు ఈ ఖండాన్ని తీసుకుందాం:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) &= \Setabs{\tuple{\delta_1, \delta_2} \in \alpha \times \alpha}{\tuple{\delta_1, \delta_2} \canonord \tuple{\gamma_1, \gamma_2}}
+\end{align*}
+$\gamma = \max(\gamma_1, \gamma_2)$ అనుకుంటే, $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$ అని గమనించండి. అందువల్ల $\gamma$ అనంతమైనప్పుడు:
+\begin{align*}
+	\text{Seg}(\gamma_1, \gamma_2) & 
+	\precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
+	&\approx (\gamma \ordtimes \gamma)
+	\text{, \olref[ord-arithmetic][using-addition]{ordinfinitycharacter}, \olref{simplecardproduct} ప్రకారం}\\
+	&\approx \gamma \text{, ఆగమన పరికల్పన ప్రకారం}\\
+	& \prec \alpha\text{, $\alpha$ కార్డినల్ సంఖ్య కాబట్టి}
+\end{align*}
+మిగిలిన పరిమిత సూచిక సందర్భంలో ఖండం పరిమితమే; అనంత కార్డినల్ సంఖ్యతో పోల్చినప్పుడు అవసరమైన కఠిన అసమానత అక్కడ కూడా వస్తుంది.
+\sourcecorrection{OLTESTCARDSIMP-001}{మూల నిరూపణ అనంత గరిష్ఠ నిర్దేశాంకానికి మాత్రమే ఖండ-పరిమాణాన్ని చూపి, అన్ని యుగ్మాలకు వచ్చే ముగింపును ప్రకటించింది. పరిమిత నిర్దేశాంకంలో ఖండం పరిమితమనే తప్పిపోయిన సందర్భాన్ని చేర్చాం.}
+అందువల్ల $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$, కాబట్టి $\cardle{\alpha \times \alpha}{\alpha}$. మరోవైపు $\cardle{\alpha}{\alpha \times \alpha}$ కూడా స్పష్టం; కనుక ష్రోడర్--బెర్న్‌స్టీన్ ద్వారా ఫలితం వస్తుంది.
+\end{proof}
+
+చివరికి మన సరళీకరణ ఫలితం:
+
+\begin{thm}\ollabel{cardplustimesmax}
+$\cardfont{a}, \cardfont{b}$ అనంత కార్డినల్ సంఖ్యలు అయితే:
+\[
+	\cardfont{a}
+\cardtimes \cardfont{b} = \cardfont{a} \cardplus \cardfont{b} =
+\text{max}(\cardfont{a}, \cardfont{b}).
+\]
+\end{thm}
+
+\begin{proof}
+సాధారణతకు భంగం లేకుండా $\cardfont{a} = \max(\cardfont{a},
+\cardfont{b})$ అనుకుందాం. అప్పుడు \olref{alphatimesalpha}ను వాడితే $\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
+\cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
+\cardfont{a} \cardtimes \cardfont{a}$. \end{proof}\noindent అలాగే $\cardfont{a}$ అనంతమైతే, ఒక్కొక్కటి $\leq\cardfont{a}$ పరిమాణం గల $\cardfont{a}$ సంఖ్యలో సమితుల సమ్మేళనానికి పరిమాణం $\leq\cardfont{a}$:
+
+\begin{prop}\ollabel{kappaunionkappasize}
+$\cardfont{a}$ అనంత కార్డినల్ సంఖ్య అనుకుందాం. ప్రతి క్రమసంఖ్య $\beta
+\in \cardfont{a}$కు $\card{X_\beta} \leq \cardfont{a}$ అయ్యే సమితి $X_\beta$ తీసుకుందాం. అప్పుడు $\card{\bigcup_{\beta \in \cardfont{a}} X_\beta}
+\leq \cardfont{a}$.
+\end{prop}
+
+\begin{proof}
+ప్రతి $\beta \in \cardfont{a}$కు $f_\beta \colon
+X_\beta \to \cardfont{a}$ అనే \tetoken{ఇంజెక్షన్‌ను}{!!a{injection}} ఎంచుకుందాం.\footnote{వీటిని ఎలా ``ఎంచుకున్నాం''? \olref[sth][choice][countablechoice]{sec} చూడండి.} ఇప్పుడు $g \colon
+\bigcup_{\beta \in \cardfont{a}} X_\beta \to \cardfont{a} \times
+\cardfont{a}$ అనే \tetoken{ఇంజెక్షన్‌ను}{!!a{injection}} $g(v) = \tuple{\beta, f_\beta(v)}$గా నిర్వచిద్దాం; ఇక్కడ $v \in
+X_\beta$, అలాగే ఏ $\gamma \in \beta$కూ $v \notin X_\gamma$. ఇప్పుడు \olref{cardplustimesmax} ప్రకారం $\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq \cardfont{a} \times
+\cardfont{a} \approx \cardfont{a}$.
+\end{proof}
+
+\end{document}

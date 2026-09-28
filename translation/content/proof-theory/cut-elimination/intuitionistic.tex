@@ -1,0 +1,67 @@
+$!A \ident (!B \lif !C)$ అయితే $\pi$ ఇలా ముగుస్తుంది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Pi \fCenter \Lambda$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\Cut{}తో ముగిసే \tetoken{నిరూపణ}{!!{proof}} ఇది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, !B \lif !C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$!B \lif !C, \Pi \fCenter \Lambda, !B$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\DisplayProof
+\]
+దీనికి~$\pi$కన్నా తక్కువ కట్ \tetoken{ఎత్తు}{!!{height}} ఉంది. ఆగమన పరికల్పన వల్ల $\Gamma, \Pi \fCenter \Delta, \Lambda, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1''$ వస్తుంది. \Cut{}తో ముగిసే \tetoken{నిరూపణ}{!!{proof}} ఇది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$!B, \Gamma \fCenter \Delta, !C$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$!C, \Pi \fCenter \Lambda$
+\RightLabel{\Cut}
+\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\sourcecorrection{OLTEPTCUTAUX-001}{ఈ నిరూపణ వృక్షంలో మూలం మొదటి పూర్వాంగాన్ని $B!$గా తారుమారు చేసింది; ముందు, తరువాతి సీక్వెంట్‌లకు అనుగుణంగా $!B$గా సరిచేశాం.}
+దీని కట్ స్థాయి, కట్ \tetoken{ఎత్తు}{!!{height}} రెండూ~$\pi$ కట్ స్థాయి, \tetoken{ఎత్తు}{!!{height}}లకన్నా తక్కువ. కాబట్టి ఆగమన పరికల్పన వల్ల $!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
+\Lambda$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}}~$\pi_2'''$ వస్తుందని మూలం చెబుతుంది. ఇప్పుడు \Cut{}తో ముగిసే ఈ \tetoken{నిరూపణ}{!!{proof}}కు ఆగమన పరికల్పన వర్తింపజేయండి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
+\Lambda$
+\RightLabel{\Cut}
+\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+(దీని కట్ స్థాయి $< \cutrank{\pi}$) అని మూలం ఉద్దేశించిన చోట $\Gamma,
+\Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Lambda, \Lambda, \Lambda$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుందని చెబుతుంది. \sourcecorrection{OLTEPTCUTAUX-002}{మూలంలోని నిర్వచించని $\cutr{\pi}$ స్థానంలో ఈ అధ్యాయంలో వాడిన $\cutrank{\pi}$ను పెట్టాం.}
+\sourcecorrection{OLTEPTCUTAUX-003}{ఈ సహాయక తునకలో చివరి రెండు కట్ వృక్షాల ముగింపులు, వాటి తరువాతి గద్యంలోని సందర్భ ప్రతుల సంఖ్యలు సాధారణ \Cut{} నియమంతో ఒకదానికొకటి సరిపోవు. మూల వృక్షాలను అలాగే నిలిపి, ఈ లోపాన్ని ప్రకటించాం; ఇక్కడ పూర్తిస్థాయి నిరూపణ పునర్నిర్మాణం చేయలేదు.}
+\olref[seq][inv]{prop:G3c-cont-adm} వర్తింపజేసి $\Gamma, \Pi \fCenter \Delta, \Lambda$ యొక్క \tetoken{నిరూపణ}{!!{proof}} $\pi'$ను పొందుతాం.

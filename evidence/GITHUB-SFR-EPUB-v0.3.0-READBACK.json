@@ -1,0 +1,78 @@
+{
+  "schema": "openlogic-te-github-release-readback/1",
+  "date": "2026-09-12",
+  "status": "COMPLETE_PASS",
+  "release": {
+    "tag": "v0.3.0-sfr-epub",
+    "target_commit": "972e4371e92ce70a494d51364f6bfd7b82cab701",
+    "url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.3.0-sfr-epub",
+    "published_at": "2026-09-12T14:34:34Z",
+    "draft": false,
+    "prerelease": false
+  },
+  "method": "Anonymous GitHub REST inventory followed by complete unauthenticated HTTPS download and local SHA-256 comparison for every release asset.",
+  "summary": {
+    "assets": 8,
+    "uploaded": 8,
+    "byte_identical": 8,
+    "failures": 0
+  },
+  "assets": [
+    {
+      "filename": "openlogic-te-Telu-IN-sets-v0.1.0.pdf",
+      "bytes": 160275,
+      "sha256": "4272102d0e7ef34f819d582304a19442ece75ed9b34a07fd677461f37cbaf719",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/openlogic-te-Telu-IN-sets-v0.1.0.pdf",
+      "exact": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sets-source-v0.1.0.zip",
+      "bytes": 415750,
+      "sha256": "26277e219d037a0353b13e2f9a63568a5a9bec5e23bc04bc779c6b368fb00080",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/openlogic-te-Telu-IN-sets-source-v0.1.0.zip",
+      "exact": true
+    },
+    {
+      "filename": "release-manifest.json",
+      "bytes": 645,
+      "sha256": "6ca267b5d436027647b820b1c1ffc16420f6fd864079d925c12bab5a93bf12c5",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/release-manifest.json",
+      "exact": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sets-html-v0.2.0.zip",
+      "bytes": 285502,
+      "sha256": "4dd32d2710c5c92f2c9d2a005abf30cd23a824c33055036c4d60e5793d05eb08",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/openlogic-te-Telu-IN-sets-html-v0.2.0.zip",
+      "exact": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-source-checkpoint-v0.2.0.zip",
+      "bytes": 873558,
+      "sha256": "f7039920e077a5b090fd047c3a3151a4a360a17db2c48d0baf20d8d8f3511b67",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/openlogic-te-Telu-IN-source-checkpoint-v0.2.0.zip",
+      "exact": true
+    },
+    {
+      "filename": "release-manifest-v0.2.0.json",
+      "bytes": 2956,
+      "sha256": "fca52a9ae37cc009d5e2a3178c03841393da08cfbe5c39613b52ad4450c5569a",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/release-manifest-v0.2.0.json",
+      "exact": true
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+      "bytes": 354646,
+      "sha256": "14558fd925098e97e4657c6df39639364af25b51d4c0c5e2736817156d1732ed",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/openlogic-te-Telu-IN-sfr-v0.3.0.epub",
+      "exact": true
+    },
+    {
+      "filename": "release-manifest-v0.3.0.json",
+      "bytes": 3979,
+      "sha256": "3bcfade2b9edc24f9ab77315a41258c45c9174ee0cc4273b03813a0257ffdf9d",
+      "download_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v0.3.0-sfr-epub/release-manifest-v0.3.0.json",
+      "exact": true
+    }
+  ]
+}

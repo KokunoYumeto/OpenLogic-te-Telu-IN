@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYRED-20260928",
+  "unit_id": "OLP-0691",
+  "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+  "source_sha256": "2235ecd6b10d70a165d30bcf4a2251fed13f8f75e896726caf210cbc97406215",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYRED-001",
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex lines 44–53, aligned block 7",
+      "classification": "pair_macro_missing_second_argument",
+      "source_issue": "The pair command groups N1,N2 as a single argument although it takes two.",
+      "minimal_treatment": "Use separate arguments N1 and N2.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\proj{i}{\\pair{N_1,N_2}}\\redoneN_i\\]"
+        ],
+        "target_only": [
+          "\\[\\proj{i}{\\pair{N_1}{N_2}}\\redoneN_i\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYRED-002",
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex lines 55–63, aligned block 8",
+      "classification": "injection_macro_signature_mismatch",
+      "source_issue": "The prose uses a three-mandatory-argument injection unlike the frozen local constructor and typing rules.",
+      "minimal_treatment": "Use the optional type annotation plus index and term.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\inj{i}{!A}{N}$"
+        ],
+        "target_only": [
+          "$\\inj[!A]{i}{N}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYRED-003",
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex lines 65–99, aligned block 9",
+      "classification": "injection_other_summand_annotation_mismatch",
+      "source_issue": "The injection annotation uses its own branch type Ai; local typing rules require the other summand type.",
+      "minimal_treatment": "Use A_(3-i), preserving the branch selection and substitution. This gather expression was inspected directly; the existing parser reports no delta for it.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYRED-004",
+      "source_locator": "content/proof-theory/propositions-as-types/reduction.tex lines 183–190, aligned block 12",
+      "classification": "reduction_sequence_repeated_index",
+      "source_issue": "The sequence repeats M2 as the next reduct.",
+      "minimal_treatment": "Write the third term M3.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$M=M_1\\redoneM_2\\redoneM_2\\redone\\dots\\redoneM_k=M'$"
+        ],
+        "target_only": [
+          "$M=M_1\\redoneM_2\\redoneM_3\\redone\\dots\\redoneM_k=M'$"
+        ]
+      }
+    }
+  ]
+}

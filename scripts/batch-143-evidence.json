@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "143",
+  "unit_id": "OLP-0494",
+  "unit_order": 494,
+  "source_path": "content/intuitionistic-logic/introduction/syntax.tex",
+  "blocks": 18,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+  "previous_segments": 7441,
+  "previous_terms": 183,
+  "expected_corrections": 456,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద వాక్యనిర్మాణ మూలం, తెలుగు లక్ష్యం, పూర్వ ప్రతిజ్ఞావాక్య సంధాయక పదాలు, స్థానిక తర్క/సత్యమూల్య/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; మూడు ప్రాథమిక సంధాయకాలు, నిరాకరణ/ద్విసోపాధిక నిర్వచితత్వం, ఆగమన సూత్ర నిర్మాణం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/024 సాధారణ ప్రతిజ్ఞావాక్య తర్కం, సత్యమూల్యాలు, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు; అంతఃప్రజ్ఞావాదంలో సంధాయకాల నిర్వచన సాధ్యతకు మూల నిర్వచనమే ఆధారం.",
+  "term_decision": {
+    "term_id": "TE-T184",
+    "source_term": "intuitionistic syntax / primitive versus defined connectives / negation as implication to falsity",
+    "telugu": "అంతఃప్రజ్ఞావాద వాక్యనిర్మాణం / ప్రాథమిక, నిర్వచిత సంధాయకాలు / అసత్యానికి అన్వయంగా నిరాకరణ",
+    "status": "native_general_propositional_logic_truth_derivation_register_attested_intuitionistic_syntax_source_controlled",
+    "passages": ["TE-P018", "TE-P019", "TE-P024"],
+    "basis": "ప్రాథమిక ∧/∨/→, అసత్య స్థిరాంకం, ఆగమన సూత్ర నిర్మాణం, నిరాకరణ A→⊥, ద్విసోపాధిక రెండు అన్వయాల సంయోగం, అభ్యాసార్థం నిర్వచిత ¬కు ప్రత్యక్ష నియమాల వినియోగం నిలిచాయి.",
+    "uncertainty": "స్థానిక సాక్షులు intuitionistic definabilityకి ప్రత్యక్ష ప్రమాణం కావు. పూర్వ సాధారణ సంధాయక తెలుగు రూపాలు కొనసాగించాం; స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ ఇంకా లేవు.",
+    "borrowing": "PVar, Frm, logical macros and protected !! identifiers retain source-controlled spelling."
+  }
+}

@@ -1,0 +1,3 @@
+# OLP-0716 — second order language source audit
+
+Read all nine aligned blocks. Distinguishes object, relation, and function variables; quantification over higher-type variables; countably infinite variables at every arity; and identity versus non-logical vocabulary. The final unrestricted claim that second-order syntax without non-logical symbols says anything a first-order language can say requires using free relation/function variables under a corresponding assignment. Target adds this bounded interpretive condition and warns that binding those variables is not the same as holding an interpretation fixed. Source's unusual denumerable token suffix is retained for structural parity.

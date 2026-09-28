@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0698",
+  "source_path": "content/proof-theory/sequent-calculus/admissible-derivable.tex",
+  "source_sha256": "b23007a09bbf7b4b8390943539aab59ee00277b3af8450b5d07142eaf9d1af10",
+  "audit_id": "OLTEPTSEQADM-20260928",
+  "audit_review_path": "evidence/OLP-0698-ADMISSIBLE-DERIVABLE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "52b700d366fb831f7769b2343936f54eb90c69e0d211ecf8bd3a0631a6c8062f",
+  "audit_findings_path": "evidence/OLP-0698-ADMISSIBLE-DERIVABLE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "e5b0cb1d1f078ddc0bf21d9e0f3984de606cc90d13a12a8c076257b601397735",
+  "previous_corrections": 679,
+  "treatments": {
+    "OLTEPTSEQADM-001": {
+      "target_line": 51,
+      "body_treatment": "Insert the multiset comma before Gamma."
+    },
+    "OLTEPTSEQADM-002": {
+      "target_line": 99,
+      "body_treatment": "Put A iff B in the antecedent of that rule conclusion."
+    },
+    "OLTEPTSEQADM-003": {
+      "target_line": 111,
+      "body_treatment": "Render the logical object as the end-sequent and disclose the source wording while preserving the protected token."
+    },
+    "OLTEPTSEQADM-004": {
+      "target_line": 176,
+      "body_treatment": "Include falsity-left axioms in the weakening induction base; adding a right formula preserves that axiom family."
+    }
+  }
+}

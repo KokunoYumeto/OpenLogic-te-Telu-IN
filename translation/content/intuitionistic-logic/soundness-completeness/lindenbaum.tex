@@ -1,0 +1,212 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: lindenbaum
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{lin}
+
+\olsection{లిండెన్‌బామ్ ఉపప్రమేయం}
+
+అంతఃప్రజ్ఞావాద తర్కపు సంపూర్ణతా సిద్ధాంతాన్ని
+$\Gamma \Proves/ !A$ అని అనుకుని,
+$\mSat{M}{\Gamma}$ మరియు~$\mSat/{M}{!A}$
+అయ్యే నమూనాను నిర్మించడం ద్వారా నిరూపిస్తాం.
+
+సాంప్రదాయిక తర్కంలో \tetoken{వ్యుత్పాద్యత}{!!{derivability}}
+సంబంధాన్ని అవైరుధ్య భావనకు తగ్గించవచ్చు:
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ ఒక
+\tetoken{సూత్రాల}{!!{formula}s} సమితి నుంచి
+\tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}
+అయితే, అప్పుడే ఆ సమితికి~$!A$ నిరాకరణను
+కలిపినది వైరుధ్యమైనది. అంతఃప్రజ్ఞావాద తర్కంలో
+ఇది సాధ్యం కాదు. ఇందులో $\lnot!A$
+వైరుధ్యమైనదైతే, $\Proves \lnot\lnot !A$
+అని మాత్రమే వస్తుంది. $\lnot\lnot!A \lif !A$
+సాధారణంగా అంతఃప్రజ్ఞావాద తర్కంలో నిలవదు
+కాబట్టి~$\Proves
+!A$ అని తేల్చలేం.
+
+అందువల్ల నమూనా~$\mModel{M}$ను నిర్మించేటప్పుడు
+\tetoken{సూత్రం}{!!{formula}}~$!A$ యొక్క
+\tetoken{అవ్యుత్పాద్యతను}{!!{derivability}}
+గమనిస్తూ ఉండాలి. అందుకే సాంప్రదాయిక
+పద్ధతిలోలాగా నమూనా~$\mModel{M}$ నిర్మాణానికి
+సంపూర్ణ సమితి $\Gamma^* \supseteq \Gamma$ను
+ఉపయోగించలేం: ప్రతి సంపూర్ణ
+సమితి $\Gamma^*$లో $\Gamma^* \Proves !A \lor \lnot !A$.
+
+సంపూర్ణ సమితి~$\Gamma^*$కు బదులు, సూత్రాల
+ప్రధాన సమితి అనే భావనను వాడుతాం:
+
+\begin{defn}\ollabel{defn:prime}
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Gamma$
+  \emph{ప్రధానం} అయితే, అప్పుడే
+  \begin{enumerate}
+  \item\ollabel{defn:prime1} $\Gamma$ అవైరుధ్యమైనది;
+    అంటే $\Gamma \Proves/ \lfalse$;
+  \item\ollabel{defn:prime2} $\Gamma \Proves !A$
+    అయితే $!A \in \Gamma$; మరియు
+  \item\ollabel{defn:prime3} $!A \lor !B \in \Gamma$
+    అయితే $!A \in
+    \Gamma$ లేదా $!B \in \Gamma$.
+  \end{enumerate}
+\end{defn}
+
+\begin{lem}[లిండెన్‌బామ్ ఉపప్రమేయం]
+  \ollabel{lem:lindenbaum} $\Gamma \Proves/ !A$
+  అయితే, $\Gamma^* \supseteq \Gamma$,
+  $\Gamma^*$ ప్రధానం, $\Gamma^* \Proves/ !A$
+అయ్యే విస్తరణ ఉంది.
+\end{lem}
+
+\begin{proof}
+  $!B \lor !C$ రూపంలోని అన్ని
+  \tetoken{సూత్రాల}{!!{formula}s}ను
+  $!B_1 \lor !C_1$, $!B_2 \lor !C_2$, \dots,
+  అని వరుసపెడదాం. \tetoken{సూత్రాల}{!!{formula}s}
+  సమితుల పెరుగుతున్న క్రమం~$\Gamma_n$ను
+  నిర్వచిస్తాం. ప్రతి $\Gamma_{n+1}$,
+  $\Gamma_n$కు ఒక కొత్త \tetoken{సూత్రం}{!!{formula}}
+  చేర్చినదిగా ఉంటుంది. $\Gamma^*$ అనేది
+  అన్ని~$\Gamma_n$ల సమ్మేళనం. కొత్త
+  \tetoken{సూత్రాలను}{!!{formula}s} $\Gamma^*$
+  ప్రధానంగా ఉండి, ఇంకా $\Gamma^* \Proves/ !A$
+  నిలిచేలా ఎంచుకుంటాం. అంటే ప్రతి దశలో కింది
+  షరతులు గల తొలి వియోజనం~$!B_i \lor !C_i$ను
+  కనుగొనాలి:
+  \begin{enumerate}
+  \item\ollabel{gamma-1} $\Gamma_n \Proves !B_i \lor !C_i$
+  \item\ollabel{gamma-2} $!B_i \notin \Gamma_n$ మరియు
+    $!C_i \notin \Gamma_n$
+  \end{enumerate}
+  $\Gamma_n \cup \{!B_i\} \Proves/ !A$ అయితే
+  $!B_i$ను, లేకపోతే $!C_i$ను $\Gamma_n$కు
+  చేర్చుతాం. ఇది పనిచేస్తుందని చూపాలి.
+  ప్రస్తుతానికి \olref{gamma-1},
+  \olref{gamma-2} రెండూ నెరవేర్చే అతి చిన్న
+  $i$ను $i(n)$గా నిర్వచిద్దాం.
+
+  $\Gamma_0 = \Gamma$ అని, అలాగే
+  \[
+  \Gamma_{n+1} = \begin{cases}
+    \Gamma_n \cup \{!B_{i(n)}\} &
+    \text{$\Gamma_n \cup \{!B_{i(n)}\} \Proves/ !A$ అయితే} \\
+    \Gamma_n \cup \{!C_{i(n)}\} & \text{లేకపోతే}
+    \end{cases}
+  \]
+  అని నిర్వచిద్దాం. $i(n)$ నిర్వచితం కాకపోతే,
+  అంటే $\Gamma_n \Proves !B \lor !C$ అయినప్పుడల్లా
+  $!B \in \Gamma_n$ లేదా $!C \in \Gamma_n$
+  అయితే, $\Gamma_{n+1}
+  = \Gamma_n$గా తీసుకుంటాం. ఇప్పుడు
+  $\Gamma^* = \bigcup_{n=0}^\infty \Gamma_n$.
+
+  ముందుగా అన్ని $n$లకు $\Gamma_n \Proves/ !A$
+  అని చూపుతాం. $n$పై ఆగమన పద్ధతిలో సాగుదాం.
+  $n = 0$కు ఇది సిద్ధాంత పరికల్పన
+  $\Gamma \Proves/ !A$ వల్ల నిలుస్తుంది.
+  $n>0$ అయితే $\Gamma_n \Proves/ !A$ నుంచి
+  $\Gamma_{n+1} \Proves/ !A$ అని చూపాలి.
+  $i(n)$ నిర్వచితం కాకపోతే $\Gamma_{n+1} =
+  \Gamma_n$; నిరూపించాల్సిందేమీ లేదు.
+  కాబట్టి $i(n)$ నిర్వచితమని అనుకుందాం.
+  సరళత కోసం $i =
+  i(n)$ అని వ్రాద్దాం.
+
+  వాదన ప్రతివిపర్యయాన్ని నిరూపిస్తాం.
+  $\Gamma_{n+1}
+  \Proves !A$ అనుకుందాం. నిర్మాణం ప్రకారం
+  $\Gamma_n \cup \{!B_i\} \Proves/ !A$
+  అయితే $\Gamma_{n+1} = \Gamma_n \cup
+  \{!B_i\}$; లేకపోతే $\Gamma_{n+1} =
+  \Gamma_n \cup \{!C_i\}$. మొదటి కేసు
+  అసాధ్యం, ఎందుకంటే అప్పుడు
+  $\Gamma_{n+1} \Proves/ !A$. అందువల్ల
+  $\Gamma_n \cup
+  \{!B_i\} \Proves !A$ మరియు
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}$.
+  $i(n)$ నిర్వచనం వల్ల $\Gamma _n \Proves
+  !B_i \lor !C_i$. మనకు $\Gamma_n \cup
+  \{!B_i\} \Proves !A$ కూడా ఉంది;
+  $\Gamma_{n+1} = \Gamma_n \cup \{!C_i\}
+  \Proves !A$ కూడా ఉంది. కాబట్టి
+  కోరినట్లుగా $\Gamma_n
+  \Proves !A$.
+
+  $\Gamma^* \Proves !A$ అయితే, $\Gamma'
+  \subseteq \Gamma^*$ మరియు $\Gamma'
+  \Proves !A$ అయ్యే ఏదో పరిమిత
+  ఉపసమితి ఉంటుంది. ప్రతి $!D \in
+  \Gamma'$ ఏదో~$i$కు $\Gamma_i$లో ఉండాలి.
+  ఆ ఉపసమితి ఖాళీ కానప్పుడు ఈ సూచికల్లో
+  అతి పెద్దదాన్ని $n$గా తీసుకుందాం;
+  ఖాళీ అయితే మొదటి దశ సూచికనే తీసుకుందాం.
+  \sourcecorrection{OLTEINTLIN-001}{మూలం పరిమిత $\Gamma'$ ఖాళీగా ఉండే అవకాశాన్ని పరిగణించకుండా దాని సభ్యుల సూచికల్లో గరిష్ఠాన్ని తీసుకుంది; ఖాళీ సందర్భంలో మొదటి దశను తీసుకునేలా స్పష్టం చేశాం.}
+  $i \le n$ అయితే $\Gamma_i \subseteq
+  \Gamma_n$ కాబట్టి $\Gamma'
+  \subseteq \Gamma_n$. అయితే
+  $\Gamma_n \Proves !A$ వస్తుంది;
+  ఇది పైన నిరూపించిన $\Gamma_n \Proves/ !A$కు
+  విరుద్ధం.
+
+  చివరగా $\Gamma^*$ ప్రధానమని, అంటే
+  \olref{defn:prime1}, \olref{defn:prime2},
+  \olref{defn:prime3} షరతులను
+  \olref{defn:prime}లో చూపినట్లుగా
+  నెరవేర్చుతుందని చూపుతాం.
+
+  మొదట $\Gamma^* \Proves/ !A$ కాబట్టి
+  $\Gamma^*$ అవైరుధ్యమైనది; అందువల్ల
+  \olref{defn:prime1} నిలుస్తుంది.
+
+  ఇప్పుడు $\Gamma^* \Proves !B \lor !C$
+  అయితే $!B
+  \in \Gamma^*$ లేదా $!C \in \Gamma^*$
+  అని చూపుతాం. దీనివల్ల \olref{defn:prime3}
+  నిలుస్తుంది; ఎందుకంటే $!B \lor !C \in
+  \Gamma^*$ అయితే $\Gamma^* \Proves !B
+  \lor !C$ కూడా. $\Gamma^* \Proves
+  !B \lor !C$, కానీ $!B \notin \Gamma^*$,
+  $!C \notin \Gamma^*$ అని అనుకుందాం.
+  $\Gamma^* \Proves !B \lor !C$ కాబట్టి
+  ఏదో~$n$కు $\Gamma_n \Proves !B \lor !C$.
+  అన్ని వియోజనాల వరుసలో $!B \lor
+  !C$ అనేది, ఉదాహరణకు, $!B_j \lor !C_j$గా
+  ఉంటుంది. $!B_j \lor !C_j$ అనేది $i(n)$ నిర్వచనంలోని
+  షరతులు నెరవేర్చుతుంది: $\Gamma_n
+  \Proves !B_j
+  \lor !C_j$, కాగా $!B_j \notin \Gamma_n$,
+  $!C_j \notin \Gamma_n$. ఆ సూచిక కంటే ముందు
+  ఉన్న సూచికలు పరిమిత సంఖ్యలోనే ఉన్నాయి;
+  వాటిలో ఏ $!B_i \lor !C_i$ తొలి అర్హ
+  వియోజనంగా ఎంపికైనా, దాని $!B_i$ లేదా
+  $!C_i$ వియోజ్యాన్ని చేర్చిన
+  తరువాత అది మళ్లీ అర్హం కాదు. కాబట్టి
+  కొంత దశ~$m$లో $j = i(m)$ అవుతుంది.
+  \sourcecorrection{OLTEINTLIN-002}{మూలం ప్రతి దశలో మొత్తం అర్హ వియోజనాల సంఖ్య తగ్గుతుందని పేర్కొంది; కొత్త వ్యుత్పాద్యతల వల్ల అది నిర్ధారణ కాదు. స్థిర $j$కి ముందు పరిమిత సూచికల్లో ప్రతిదీ ఒక్కసారే ఎంపికవుతుందనే సరైన కారణాన్ని వాడాం.}
+  కానీ అప్పుడు $!B \in \Gamma_{m+1}$
+  లేదా $!C \in \Gamma_{m+1}$; ఇది
+  $!B \notin \Gamma^*$,
+  $!C \notin \Gamma^*$ అనే పరికల్పనకు
+  విరుద్ధం.
+
+  ఇప్పుడు $\Gamma^* \Proves !B$ అనుకుందాం.
+  అప్పుడు $\Gamma^* \Proves !B \lor
+  !B$. $\Gamma^* \Proves !B \lor !B$
+  అయితే $!B \in \Gamma^*$ అని ఇప్పుడే
+  నిరూపించాం. కాబట్టి $\Gamma^*$
+  \olref{defn:prime2}ను
+  \olref{defn:prime}లో చెప్పినట్లుగా నెరవేర్చుతుంది.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves/ \bot$ అయితే $\Gamma$
+సాంప్రదాయిక తర్కంలో అవైరుధ్యమైనదని, అంటే
+ఆ~$\Gamma$లోని అన్ని సూత్రాలను సత్యం చేసే
+విలువకేటాయింపు ఉందని చూపండి.
+\end{prob}
+
+\end{document}

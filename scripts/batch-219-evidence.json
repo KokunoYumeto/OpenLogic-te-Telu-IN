@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "219",
+  "unit_id": "OLP-0570",
+  "unit_order": 570,
+  "source_path": "content/set-theory/replacement/absinf.tex",
+  "blocks": 15,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "previous_segments": 8413,
+  "previous_terms": 259,
+  "expected_corrections": 488,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "సంపూర్ణ అనంతత్వం మూలం, తెలుగు లక్ష్యం, పూర్వ దశ/సుక్రమ/స్థాయి/ప్రతిస్థాపన పదాలు, స్థానిక సమితి/క్రమ/తర్క సాక్షులు ఎదురెదురు చూశాం; అనంత దశ సూత్రం, క్రమసంఖ్య ప్రాతినిధ్య పరిమితి, సహాంత్యత నిషేధం, వేరుచేయడం ద్వారా ప్రతిస్థాపన సమర్థన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; సంపూర్ణ అనంతత్వం, సహాంత్యత ప్రత్యేక భావనలు మూల స్థానిక వివరణ నియంత్రితం. ఔపచారికీకరణ సమస్యను మూల ఫుట్‌నోట్ ప్రకారం నిలిపాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T260",
+    "source_term": "absolute infinity / non-cofinality of any set with the hierarchy",
+    "telugu": "సంపూర్ణ అనంతత్వం / స్థాయిక్రమానికి ఏ సమితీ సహాంత్యంకాకపోవడం",
+    "status": "informal_principles_source_defined_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ప్రతి సుక్రమాన్ని దాటడం, ప్రతి సమితి దశ-బింబాన్ని దాటే దశ ఉండడం మధ్య బల భేదాన్ని, తరువాత వేరుచేయడం ద్వారా ప్రతిస్థాపన వాదనను నిలిపాం.",
+    "uncertainty": "cofinalకు సహాంత్యమైనది అనే పదం ఇక్కడి స్థానిక నిర్వచనాధీనం; Zలో దశల ఔపచారిక నిర్వచన సమస్య మూలంలాగే తెరిచి ఉంది.",
+    "borrowing": "Stage-principle macros, ZF/Z/LT macros and citations remain source-controlled."
+  }
+}

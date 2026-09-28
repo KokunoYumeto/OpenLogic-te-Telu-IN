@@ -1,0 +1,62 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "346",
+  "unit_id": "OLP-0697",
+  "unit_order": 697,
+  "source_path": "content/proof-theory/propositions-as-types/types.tex",
+  "blocks": 17,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTPTYTYP-005"
+    ],
+    "9": [
+      "OLTEPTPTYTYP-001",
+      "OLTEPTPTYTYP-002"
+    ],
+    "10": [
+      "OLTEPTPTYTYP-003"
+    ],
+    "12": [
+      "OLTEPTPTYTYP-004"
+    ]
+  },
+  "previous_segments": 10266,
+  "previous_terms": 386,
+  "expected_corrections": 655,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సందర్భం, రక కేటాయింపు, లబ్ధ/వేరు సమ్మేళనం, నిరూపణ పదాల అనురూపతను పూర్వ విభాగాలు, సంప్రదించిన సమితి/నిరూపణ గద్యంతో పోల్చాం.",
+  "evidence_limit": "రకశాస్త్ర పదాలు నిర్వచనాత్మక విస్తరణ; పూర్తి mechanized metatheory లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T387",
+    "source_term": "type; context; uniqueness of type; well-typed term; product, sum and empty type",
+    "telugu": "రకం; సందర్భం; రక అనన్యత; సరిగ్గా రకీకరించిన పదం; లబ్ధ, యోగ, ఖాళీ రకాలు",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "రకం ఉండటం, ఉన్న రకం అనన్యంగా ఉండటం వేరు చేశాం; బంధక తాజాతనం, ఏకవిలువ సందర్భం స్పష్టం.",
+    "uncertainty": "రకశాస్త్ర పదాలు నిర్వచనాత్మక విస్తరణ; పూర్తి mechanized metatheory లేదా TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "340",
+  "unit_id": "OLP-0691",
+  "unit_order": 691,
+  "source_path": "content/proof-theory/propositions-as-types/reduction.tex",
+  "blocks": 14,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "corrections_by_block": {
+    "7": [
+      "OLTEPTPTYRED-001"
+    ],
+    "8": [
+      "OLTEPTPTYRED-002"
+    ],
+    "9": [
+      "OLTEPTPTYRED-003"
+    ],
+    "12": [
+      "OLTEPTPTYRED-004"
+    ]
+  },
+  "previous_segments": 10206,
+  "previous_terms": 380,
+  "expected_corrections": 647,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "మళ్లింపు-కట్, బీటా తగ్గింపు, ప్రతిస్థాపన, ఉపనిరూపణ పరివర్తనలను పూర్వ లాంబ్డా/సహజ నిగమన పదజాలంతో పోల్చాం.",
+  "evidence_limit": "ప్రత్యేక తగ్గింపు పదాలకు నిర్వచనాత్మక విస్తరణ; కొన్ని gather సూత్రాలు parserలో లేవు, నేర పోలిక చేశాం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T381",
+    "source_term": "reduction; cut; redex; reductum; beta reduction; permutation conversion; normal form",
+    "telugu": "తగ్గింపు; కట్; రెడెక్స్; సంకోచన ఫలితం; బీటా తగ్గింపు; క్రమమార్పు పరివర్తన; సాధారణ రూపం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నిగమన మళ్లింపు తొలగింపుకు నిరూపణ-పద సంకోచనం అనురూపంగా నిలిపాం; యోగ/లబ్ధ రకాల పదాలు పూర్వంగా ఉన్నాయి.",
+    "uncertainty": "ప్రత్యేక తగ్గింపు పదాలకు నిర్వచనాత్మక విస్తరణ; కొన్ని gather సూత్రాలు parserలో లేవు, నేర పోలిక చేశాం; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

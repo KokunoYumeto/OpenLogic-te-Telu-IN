@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "267",
+  "unit_id": "OLP-0618",
+  "unit_order": 618,
+  "source_path": "content/methods/induction/structural-induction.tex",
+  "blocks": 15,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14],
+  "previous_segments": 9142,
+  "previous_terms": 307,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P024"],
+  "consultation_phase": "నిర్మాణాత్మక ఆగమన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఆగమనాత్మక నిర్వచన/పద పదాలు, స్థానిక గణిత సాక్షులు పోల్చాం; ప్రారంభ వస్తువులు-నిర్మాణ క్రియ, సమాన బ్రాకెట్ లెక్క, నిజ ప్రారంభ భాగాల ఐదు సందర్భాలు తనిఖీ చేశాం.",
+  "evidence_limit": "నిర్మాణాత్మక ఆగమన ప్రత్యేక ఉదాహరణ, ప్రారంభ భాగాల ఐదు సందర్భాల నిరూపణ మూల పాఠ్య ఆధారితం; స్థానిక సాక్షి సాధారణ ఆగమన/తర్క పదాలకే తోడు. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T308","source_term":"structural induction; proper initial segment","telugu":"నిర్మాణాత్మక ఆగమనం; నిజ ప్రారంభ భాగం","status":"initial_objects_constructor_step_proper_prefix_cases_source_controlled","passages":["TE-P003","TE-P004","TE-P024"],"basis":"ప్రారంభ వస్తువులు, ప్రతి నిర్మాణ క్రియ ఆర్గ్యుమెంట్ల నుంచి ఫలితానికి లక్షణ బదిలీ, నిజ ప్రారంభ భాగానికి కచ్చితంగా చిన్న పొడవు, బ్రాకెట్ లెక్కల కేసులు వేరుగా నిలిచాయి.","uncertainty":"నిర్మాణాత్మక ఆగమనం ప్రత్యేక రూపానికి ప్రత్యక్ష స్థానిక సాక్షి లేదు; సాధారణ ఆగమన పదం, మూల నిర్మాణ వాదన నియంత్రించాయి.","borrowing":"P, o, bracket strings and natural-number symbols remain unchanged."}
+}

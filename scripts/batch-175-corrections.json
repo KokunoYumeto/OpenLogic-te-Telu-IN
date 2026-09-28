@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0526",
+  "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+  "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+  "audit_id": "OLTECNTANT-20260927",
+  "audit_review_path": "evidence/OLP-0526-ANTECEDENT-STRENGTHENING-SOURCE-AUDIT.md",
+  "audit_review_sha256": "01d4e2c6b903eba9e99b8922bf3d7196622fef2c64d17484f8fb218864f10597",
+  "audit_findings_path": "evidence/OLP-0526-ANTECEDENT-STRENGTHENING-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "cf316488b86420996e5dba40cf22e48d3733d9a6457cce18be45bff01e34e6f2",
+  "previous_corrections": 476,
+  "treatments": {
+    "OLTECNTANT-001": {"target_line": 46, "body_treatment": "పూర్వపక్ష చర్యను ‘మండించడం’ అని చెప్పిన మూడు మూల గద్య స్థానాలను ఉదాహరణకు సరిపోయే ‘గీయడం’గా మార్చి పక్కనే ప్రకటించాం."}
+  }
+}

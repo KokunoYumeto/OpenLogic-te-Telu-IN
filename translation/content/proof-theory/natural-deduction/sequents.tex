@@ -1,0 +1,117 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: sequents
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{seq}
+
+\olsection{సీక్వెంట్‌లతో సహజ నిగమనం: \Log{N2c},~\Log{N2i}}
+
+\Log{N1c} లేదా \Log{N1i}లోని \tetoken{ఒక నిరూపణ}{!!^a{proof}}~$\delta$, దాని చివరి-\tetoken{సూత్రం}{!!{formula}}~$!A$ తెరిచి ఉన్న ఉపపత్తుల నుంచి అనుగమిస్తుందని చూపుతుంది. $\delta$లో~$!B^x$ తెరిచి ఉన్న ఉపపత్తిగా కనిపించే \tetoken{సూత్రాల}{!!{formula}s}~$!B$ సమితిని~$\Gamma$ అంటే, దీన్ని $\delta \Proves \Gamma
+\Sequent !A$గా రాయవచ్చు. దీనిని బట్టి సీక్వెంట్‌లకు కూడా సహజ నిగమనం పద్ధతిని రూపొందించవచ్చు. అటువంటి పద్ధతిలో ప్రతి సీక్వెంట్, కుడివైపు ఉన్న \tetoken{సూత్రం}{!!{formula}} ఏ తెరిచి ఉన్న ఉపపత్తులపై ఆధారపడుతుందో—అంటే ఆ సీక్వెంట్‌తో ముగిసే ఉప-\tetoken{నిరూపణలో}{!!{proof}} ఏవి తెరిచి ఉన్నాయో—తెలుపుతుంది. ఇది సీక్వెంట్‌లతో సహజ నిగమనం, లేదా "సీక్వెంట్-శైలి" సహజ నిగమనం; ఫలిత పద్ధతులను \Log{N2c},~\Log{N2i} అంటాం.
+\sourcecorrection{OLTEPTNATSEQ-001}{ఈ పేరాలో మూలం G1c/G1i అని పేర్కొంది; చర్చిస్తున్న సూత్ర-వృక్ష సహజ నిగమనం వ్యవస్థలు N1c/N1i. వాటి పేర్లకు సరిచేశాం.}
+
+\Log{N1}, \Log{N2}ల మధ్య అనురూపతను దగ్గర చేయడానికి, ఎడమవైపు సమితులు~$\Gamma$లో గుర్తులు కలిగిన \tetoken{సూత్రాలు}{!!{formula}s}~$x:!B$ ఉంటాయని తీసుకుందాం. \Log{N1}లోని నియమాలు పూర్వపక్షాలలోని \tetoken{సూత్రాలపైనే}{!!{formula}s}, అంటే తక్షణ ఉప-\tetoken{నిరూపణల}{!!{proof}s} చివరి-\tetoken{సూత్రాలపైనే}{!!{formula}s} పనిచేస్తాయి. అలాగే \Log{N2} నియమాలు సీక్వెంట్ ఫలితభాగంపైనే పనిచేస్తాయి. అందువల్ల సీక్వెంట్‌ల ఎడమవైపు ఉన్న గుర్తులతో కూడిన సూత్రాలను కేవలం సందర్భం అనవచ్చు.
+
+ఉపపత్తుల బదులుగా, \Log{N2} నిరూపణల అత్యుపరి సీక్వెంట్‌లు ఈ రూపపు ఆక్సియమ్‌లు:
+\[x:!A \Sequent !A.\]
+నియమాలు \Log{N1} నియమాలకు ఖచ్చితంగా అనురూపంగా ఉంటాయి; అవి \olref{tab:N2}లో ఉన్నాయి.
+
+\subfile{rules-N2}
+
+\Log{N1c}, \Log{N1i}లలో ఉన్నట్లే, \Intro{\lif}, \Intro{\lnot}, \Elim{\lor}, \Elim{\lexists} నియమాలు ఉపపత్తులను విసర్జించవచ్చు, కానీ తప్పనిసరిగా విసర్జించవలసిన అవసరం లేదు. అందువల్ల అనురూప \Log{N2c},~\Log{N2i} నియమాల సరైన ప్రయోగాలలో సంబంధిత సందర్భ \tetoken{సూత్రాలు}{!!{formula}s} $!A$, $!B$,~$!A(a)$ తగిన పూర్వపక్ష సందర్భంలో లేకపోయినా అనుమతిస్తాం.
+
+\begin{prop}
+$\delta$ అనేది~$!A$కు గల \Log{N1c} లేదా \Log{N1i} \tetoken{నిరూపణ}{!!a{proof}} అయితే,~$\Gamma \Sequent !A$కు గల \Log{N2c} (లేదా \Log{N2i}) \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta'$ ఉంటుంది. ఇక్కడ~$\Gamma$ అనేది~$\delta$లో $!B^x$ తెరిచి ఉన్న ఉపపత్తి అయ్యే ప్రతి~$x:!B$ సమితి.
+\end{prop}
+
+\begin{proof}
+  $n=\pheight{\delta}$పై ఆగమనంతో నిరూపిద్దాం. $n=0$ అయితే~$\delta$ ఒక్క తెరిచి ఉన్న ఉపపత్తి~$!A^x$. అప్పుడు $\Gamma = \{x:!A\}$, $\Gamma
+  \Sequent !A$ అనేది \Log{N2c} లేదా~\Log{N2i} ఆక్సియమ్.
+
+  $n>0$ అయితే~$\delta$లో చివరి నిగమనం ఆధారంగా సందర్భాలను వేరు చేద్దాం. ఇక్కడ ఒక్క సందర్భాన్నే చర్చిస్తాం; మిగిలినవాటిని సాధనలుగా వదులుతున్నాం.
+
+  చివరి నిగమనం $\Intro{\lif}$ అనుకుందాం. అప్పుడు $\delta$ ముగింపు ఇలా ఉంటుంది:
+  \[
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  ఆగమన ఉపపత్తి ప్రకారం~\Log{N2c} (లేదా \Log{N2i})లో $\Gamma' \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1'$ ఉంటుంది; ఇక్కడ~$\Gamma'$ అనేవి~$\delta_1$లో తెరిచి ఉన్న గుర్తులతో కూడిన ఉపపత్తులు. $!B^x$ అనేది~$\delta_1$లో తెరిచి ఉన్న ఉపపత్తి అయితే, అది \Intro{\lif} వద్ద విసర్జించబడుతుంది;~$\delta$లో తెరిచి మిగిలే ఉపపత్తులు $\Gamma =
+  \Gamma' \setminus \{x:!B\}$. మరో మాటలో, $\delta_1'$ అనేది~$x:!B, \Gamma \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}; $\delta'$ను ఇలా తీసుకోవచ్చు:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLTEPTNATSEQ-002}{ఈ N2 వృక్ష పూర్వపక్షంలో మూలం $x:B$ అని ముద్రించింది; అదే పేరాలోని సందర్భం, N2 నియమానికి అనుగుణంగా $x:!B$గా సరిచేశాం.}
+  $!B^x$ అనేది~$\delta_1$లో తెరిచి ఉన్న ఉపపత్తి కాకపోతే, \Intro{\lif} ఏ ఉపపత్తినీ విసర్జించదు;~$\delta$, $\delta_1$ల తెరిచి ఉన్న ఉపపత్తులు ఒకటే. \Log{N2c},~\Log{N2i}లలోని \Intro{\lif} పూర్వపక్షంలో సందర్భ సూత్రం~$x:!B$ తప్పనిసరి కాదు; కాబట్టి $\delta'$ను ఇలా తీసుకోవచ్చు:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+
+  $\delta$ మరొక నియమంతో ముగిసే సందర్భాలూ ఇలాంటివే.
+\end{proof}
+
+\begin{prop}
+$\delta$ అనేది $\Gamma
+\Sequent !A$కు గల \Log{N2c} లేదా \Log{N2i} \tetoken{నిరూపణ}{!!a{proof}} అయితే, \Log{N1c} (లేదా \Log{N1i})లో చివరి-\tetoken{సూత్రం}{!!{formula}}~$!A$గానూ, ప్రతి $x:!B \in \Gamma$కు తెరిచి ఉన్న ఉపపత్తి $!B^x$గానూ ఉండే \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta'$ ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+  మళ్లీ~$\delta$ యొక్క \tetoken{ఎత్తు}{!!{height}}~$n$పై ఆగమనంతో నిరూపిద్దాం. $n=0$ అయితే~$\delta$ అనేది $x:!A \Sequent !A$ అనే ఆక్సియమ్. \tetoken{నిరూపణ}{!!{proof}}~$\delta'$ అనేది ఉపపత్తి~$!A^x$.
+
+  $n>0$ అయితే~$\delta$లో చివరి నిగమనం ఆధారంగా సందర్భాలను వేరు చేస్తాం. ఉదాహరణకు, ఆ నిగమనం~$\Intro{\lif}$ అయితే~$\delta$ ముగింపు ఇలా ఉంటుంది:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:!B, \Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \quad\text{ లేదా }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter !C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter !B \lif !C$
+  \DisplayProof
+  \]
+  ఆగమన ఉపపత్తి ప్రకారం \Log{N1c} (లేదా \Log{N1i})లో~$!C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1'$ ఉంటుంది. మొదటి సందర్భంలో~$!B^x$ అనేది~$\delta_1'$లో తెరిచి ఉన్న ఉపపత్తి; రెండో సందర్భంలో కాదు. అందువల్ల \tetoken{నిరూపణ}{!!{proof}}~$\delta'$ను వరుసగా ఇలా తీసుకోవచ్చు:
+  \[
+  \bottomAlignProof
+  \AxiomC{$\Discharge{!B}{x}$}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \quad\text{ లేదా }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$!C$}
+  \RightLabel{\Intro{\lif}}
+  \UnaryInfC{$!B \lif !C$}
+  \DisplayProof
+  \]
+  \sourcecorrection{OLTEPTNATSEQ-003}{విలోమ అనువాదంలో ఆగమన ఉపపత్తి ఇచ్చేది N1 ఉపనిరూపణ $\delta_1'$. మూలం తెరిచి ఉన్న ఉపపత్తిని తుది $\delta'$కు ఆపాదించి, రెండు వృక్షాల్లోనూ N2 ఉపనిరూపణ $\delta_1$ గుర్తును ఉపయోగించింది; వాటిని $\delta_1'$కు సరిచేశాం.}
+\end{proof}
+
+\end{document}

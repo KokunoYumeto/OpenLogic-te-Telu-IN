@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0688",
+  "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+  "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+  "audit_id": "OLTEPTPTYTER-20260928",
+  "audit_review_path": "evidence/OLP-0688-PROOF-TERMS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "2a61777b3b394a26439fc737d8b7549058974d12a4956325284a78a4802c6b8a",
+  "audit_findings_path": "evidence/OLP-0688-PROOF-TERMS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "8327e8d562180ddd09dd122df09ccaa715383b9b92e1357c715a6399b8d048c7",
+  "previous_corrections": 640,
+  "treatments": {
+    "OLTEPTPTYTER-001": {
+      "target_line": 35,
+      "body_treatment": "Use the declared second premise M in the constructor."
+    },
+    "OLTEPTPTYTER-002": {
+      "target_line": 49,
+      "body_treatment": "Supply the existing premise term N as its argument."
+    },
+    "OLTEPTPTYTER-003": {
+      "target_line": 69,
+      "body_treatment": "Use the declared proof term N."
+    }
+  }
+}

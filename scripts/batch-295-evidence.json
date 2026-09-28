@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "295",
+  "unit_id": "OLP-0646",
+  "unit_order": 646,
+  "source_path": "content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex",
+  "blocks": 21,
+  "linguistic_blocks": [4],
+  "previous_segments": 9541,
+  "previous_terms": 335,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "వాక్యనిర్మాణం-అర్థవిచారం అధ్యాయ స్థిర మూలం, తెలుగు శీర్షిక, పూర్వ అధ్యాయ పదాలు పోల్చాం; పదిహేను ఉపవిభాగాల దిగుమతి క్రమం, హుక్‌ను యథాతథంగా తనిఖీ చేశాం.",
+  "evidence_limit": "ఈ మూలం అధ్యాయ శీర్షిక, దిగుమతులు మాత్రమే; దిగుమతి విభాగాల పాఠ్య సమీక్ష వేరు. TeX ఏకీకరణ దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T336","source_term":"Syntax and Semantics chapter","telugu":"వాక్యనిర్మాణం మరియు అర్థవిచారం","status":"chapter_title_localized_import_order_preserved","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"అధ్యాయ శీర్షిక తెలుగులోకి మార్చి అన్ని పదిహేను దిగుమతులు, అధ్యాయ ID, ముగింపు హుక్ మార్పులేకుండా నిలిపాం.","uncertainty":"దిగుమతి విభాగాల సంగతులు ఈ ఫైలు మాత్రమే చూపవు; వాటి QA వేరుగా ఉంది లేదా కొనసాగుతుంది.","borrowing":"Chapter/import IDs remain source-identifying."}
+}

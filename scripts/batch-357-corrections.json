@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0708",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3i.tex",
+  "source_sha256": "3b754ac3aadeb92362d6eeb398cfa914e2a757e079d5305f3994f938e0ff6933",
+  "audit_id": "OLTEPTSEQG3I-20260928",
+  "audit_review_path": "evidence/OLP-0708-G3I-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "472efaa44af3d11c20a24eaaa32895934d7ac6a10af9f0ea17dcb8184c980b7f",
+  "audit_findings_path": "evidence/OLP-0708-G3I-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "568d3d0bfbf29a525556ee597ce0f0b53d9abc9bfe40d8b7ab0d529b6575379a",
+  "previous_corrections": 687,
+  "treatments": {
+    "OLTEPTSEQG3I-001": {
+      "target_line": 80,
+      "body_treatment": "Use the indexed right-disjunction schema with one premise summand Ai and conclusion A1 or A2, for i=1,2."
+    },
+    "OLTEPTSEQG3I-002": {
+      "target_line": 81,
+      "body_treatment": "Insert the multiset separator."
+    },
+    "OLTEPTSEQG3I-003": {
+      "target_line": 82,
+      "body_treatment": "Align this G1m/G1i side reference with the preceding G1i table: remove right weakening and the actual falsity base axiom."
+    },
+    "OLTEPTSEQG3I-004": {
+      "target_line": 83,
+      "body_treatment": "Give this table the distinct tab:G3i label."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0533",
+  "source_path": "content/set-theory/story/predicativity.tex",
+  "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+  "audit_id": "OLTESTPRED-20260927",
+  "audit_review_path": "evidence/OLP-0533-PREDICATIVITY-SOURCE-AUDIT.md",
+  "audit_review_sha256": "7de21d1a52da0119d3dfde687b00a56eb92db8e3c2e90ac3a2fb28fdd750f57b",
+  "audit_findings_path": "evidence/OLP-0533-PREDICATIVITY-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4765787f5b0114bb5178f392e11347e99e2761f6924b03d0dfe1130cca1af946",
+  "previous_corrections": 479,
+  "treatments": {
+    "OLTESTPRED-001": {"target_line": 16, "body_treatment": "రసెల్ సమితి $x \\notin x$ నిర్వచనానికి విరుద్ధమైన మూల ద్వి-నిరాకరణ తొలగించి, స్వీయ మూలకం కాని సమితులనే పక్కనే ప్రకటించాం."},
+    "OLTESTPRED-002": {"target_line": 71, "body_treatment": "స్వవర్గావలంబిత నిర్వచనాల తిరస్కరణకు అనుగుణంగా దుష్టవలయ సూత్రాన్ని అంగీకరించే అనుసంధానంగా మార్చి పక్కనే ప్రకటించాం."}
+  }
+}

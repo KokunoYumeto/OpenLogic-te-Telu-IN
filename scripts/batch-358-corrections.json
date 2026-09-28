@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0709",
+  "source_path": "content/proof-theory/sequent-calculus/rules-LK.tex",
+  "source_sha256": "04fc54bec445b78a7c47a7c9db8a8fbb38feb33fc693a90bd530238d118cd485",
+  "audit_id": "OLTEPTSEQLK-20260928",
+  "audit_review_path": "evidence/OLP-0709-LK-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "303d881d8790583d75cbb63f31bb6fa6fdd173b10da17f2e09d648cbbd73c291",
+  "audit_findings_path": "evidence/OLP-0709-LK-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "c1c3c5d9651060c593ae8b6ccfe44796b36e605cfab873aabe77590f57dc9012",
+  "previous_corrections": 691,
+  "treatments": {
+    "OLTEPTSEQLK-001": {
+      "target_line": 124,
+      "body_treatment": "Give the sequence-based table its own tab:LK label."
+    }
+  }
+}

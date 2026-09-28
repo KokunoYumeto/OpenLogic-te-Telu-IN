@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0658",
+  "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+  "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+  "audit_id": "OLTEPTCUTITP-20260927",
+  "audit_review_path": "evidence/OLP-0658-INTERPOLATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "1793739b99139a67060e6266bc1ae6afb53cf11f9a4b9f4f7b8afcf7394afb8e",
+  "audit_findings_path": "evidence/OLP-0658-INTERPOLATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "bb0f94d047510c6ee87feff835062ac901c7a920d61b3b9e2c8972b4bf0aeab1",
+  "previous_corrections": 559,
+  "treatments": {
+    "OLTEPTCUTITP-001": {"target_line": 406, "body_treatment": "బెత్ నిరూపణలో నిర్వచించని L_1/L_2 సమానత బదులు మహేరా లెమ్మా ఇచ్చే ఉపసమితి పరిమితిని ప్రకటించాం."},
+    "OLTEPTCUTITP-002": {"target_line": 412, "body_treatment": "బెత్ ముగింపులో !R బదులు విధేయ సంకేతం Rను పెట్టి ప్రకటించాం."},
+    "OLTEPTCUTITP-003": {"target_line": 417, "body_treatment": "సంపూర్ణ సిద్ధాంతానికి పూర్తి ఉమ్మడి భాష అవసరమని చేర్చి మూలపు బలహీన ఉపసమితి షరతును ప్రకటించాం."},
+    "OLTEPTCUTITP-004": {"target_line": 423, "body_treatment": "విస్తరణ నుంచి ఆధార సిద్ధాంతానికి తిరుగు అనుగమనం బదులు సంపూర్ణత ప్రత్యామ్నాయాలతో సరైన వైరుధ్య క్రమాన్ని ఇచ్చి ప్రకటించాం."},
+    "OLTEPTCUTITP-005": {"target_line": 292, "body_treatment": "ప్రమేయ సంకేతాలు లేనప్పటికీ చరరాశి పదం సాధ్యమని, భాషా చిహ్న సమస్య మాత్రం స్థిరసంకేతానికి మాత్రమేనని ప్రకటించాం."},
+    "OLTEPTCUTITP-006": {"target_line": 390, "body_treatment": "అంబియెంట్ భాష L-primeను నిర్వచించి, వాడిన సంకేతాల L(Gamma-prime)తో నిరాధార సమానత తొలగించి ప్రకటించాం."}
+  }
+}

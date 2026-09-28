@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "334",
+  "unit_id": "OLP-0685",
+  "unit_order": 685,
+  "source_path": "content/proof-theory/proof-theory.tex",
+  "blocks": 8,
+  "linguistic_blocks": [4, 5],
+  "previous_segments": 10130,
+  "previous_terms": 374,
+  "expected_corrections": 627,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిరూపణ సిద్ధాంతం భాగ శీర్షిక, మూల సంపాదకీయ పరిమితి వ్యాఖ్యను పక్కనున్న అధ్యాయాలతో పోల్చి దిగుమతి క్రమం నిలిపాం.",
+  "evidence_limit": "అసంపూర్ణం/ప్రయోగాత్మకమనే వ్యాఖ్య మూల సంచిక గురించి; ప్రస్తుత తెలుగు సంచిక విడుదల స్థితిగా స్వతంత్ర ధృవీకరణ కాదు. దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T375",
+    "source_term": "Proof Theory (part heading); source editorial qualification",
+    "telugu": "నిరూపణ సిద్ధాంతం; మూల సంపాదకీయ పరిమితి వ్యాఖ్య",
+    "status": "proof_theory_part_heading_editorial_translated",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "భాగ శీర్షిక, అసంపూర్ణ/ప్రయోగాత్మక మూల వ్యాఖ్య నిలిచాయి; దిగుమతి పథాలు, భాగ ముగింపు హుక్ మారలేదు.",
+    "uncertainty": "మూల ప్రధాన PDF స్థితి వ్యాఖ్యను చారిత్రక మూల సందర్భంలోనే చదవాలి.",
+    "borrowing": "pt and TeX import paths remain source-identifying."
+  }
+}

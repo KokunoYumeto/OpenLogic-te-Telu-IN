@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "220",
+  "unit_id": "OLP-0571",
+  "unit_order": 571,
+  "source_path": "content/set-theory/replacement/ref.tex",
+  "blocks": 7,
+  "linguistic_blocks": [3, 4, 5, 6],
+  "previous_segments": 8428,
+  "previous_terms": 260,
+  "expected_corrections": 488,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "ప్రతిబింబన పరిచయపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ పరిమితీకరణ/దశ/సూత్ర పదాలు, స్థానిక సమితి/క్రమ/తర్క సాక్షులు ఎదురెదురు చూశాం; ప్రతిబింబన పథక సూత్రం, ప్రారంభ ఖండ వివరణ, Zపై ప్రతిస్థాపన సమానార్థకత్వం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; ప్రతిబింబన పథకం మూల సూత్ర నియంత్రితం. పూర్తి నిరూపణ తరువాతి విభాగంలో; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T261",
+    "source_term": "Reflection Schema / initial segment relativization",
+    "telugu": "ప్రతిబింబన పథకం / ఆరంభ ఖండ పరిమితీకరణ",
+    "status": "schema_formula_source_controlled_logic_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ప్రతి alpha తరువాత beta దశలో పరిమితీకరించిన సూత్రం, మొత్తం విశ్వ సూత్రంతో ద్విసోపాధికంగా సరిపోవడం, Zపై ప్రతిస్థాపన సమానార్థకత్వం నిలిచాయి.",
+    "uncertainty": "ప్రతిబింబన ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; నిరూపణ తరువాతి విభాగాధీనం.",
+    "borrowing": "Reflection formula, stage macros and citations remain source-controlled."
+  }
+}

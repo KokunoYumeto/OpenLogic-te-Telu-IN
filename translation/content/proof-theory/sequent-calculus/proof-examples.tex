@@ -1,0 +1,291 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: proof-examples
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{ex}
+
+\olsection{నిరూపణల ఉదాహరణలు}
+
+సీక్వెంట్లకు \tetoken{నిరూపణలు}{!!{proof}s} ఇవ్వడానికి సాధారణంగా చివరి సీక్వెంట్ నుంచి పైకి పనిచేయడం సౌకర్యమైనది. అందులో \tetoken{ఒక సూత్రాన్ని}{!!a{formula}} క్రియాశీల \tetoken{సూత్రంగా}{!!{formula}} ఎంచుకుని, అనురూప నియమం ఆధారాలను దాని పైన రాస్తాం; అక్షయాలకు చేరేవరకు ఇదే పద్ధతిని పునరావృతం చేస్తాం. ఉదాహరణకు ఈ సీక్వెంట్‌ను నిరూపించాలనుకుందాం:
+\[(!C \land !D) \lif !E \Sequent !C \lif (!D \lif !E)\]
+$!C \lif (!D \lif !E)$ను పరిగణించండి: దాని రూపం $!A \lif !B$; అది సీక్వెంట్ కుడివైపు ఉంది. మొత్తం సీక్వెంట్‌ను \Log{G1c}లోని $\RightR{\lif}$ నియమంతో పోల్చితే,
+\[\Axiom$ !A, \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, !A \lif !B $
+\DisplayProof\]
+$\Gamma = \{(!C \land !D) \lif !E\}$, $\Delta =
+\emptyset$, $!A \ident !C$, $!B \ident !D \lif !E$గా తీసుకోవాలని తెలుస్తుంది. కాబట్టి నిరూపణ చివరి నిగమనం ఇలా ఉండవచ్చు:
+\[\Axiom$ !C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+$!D \lif !E$ను క్రియాశీల సూత్రంగా ఎంచుకుని ఇదే ఆలోచనను పునరావృతం చేస్తే:
+\[\Axiom$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+ఇప్పుడు $(!C \land !D) \lif !E$పై దృష్టి పెట్టి, \Log{G1c}లోని $\LeftR{\lif}$ను వాడాలి:
+\[\Axiom$ \Gamma \fCenter \Delta, !A$
+\Axiom$ !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !A \lif !B, \Gamma \fCenter \Delta$
+\DisplayProof\]
+దీనివల్ల:
+\[\Axiom$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof\]
+ఎడమపై సీక్వెంట్‌లో \tetoken{సూత్రం}{!!{formula}} $!C \land !D$ను ప్రధానంగా తీసుకుని $\RightR{\land}$ను వాడితే:
+\[
+\Axiom$!D, !C \fCenter !E, !C$
+\Axiom$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+ఇప్పటివరకు సరే. వాడిన నియమాలు \Log{G1c}, \Log{G3c} రెండింటిలోనూ ఒకటే కనుక ఇదంతా \Log{G3c}లోనూ పనిచేస్తుంది. పై సీక్వెంట్లన్నింటిలో ఒకే \tetoken{సూత్రం}{!!{formula}} ఎడమ/కుడి రెండువైపులా ఉండే \tetoken{ఒక నిరూపణ}{!!a{proof}} భాగానికి చేరాం. కానీ అవి ఇంకా అక్షయాలు కావు.
+\sourcecorrection{OLTEPTSEQEX-001}{మూల నియమ పోలికలో ఎడమ సందర్భంగా కుడి నిర్ధారణ సూత్రాన్ని ఇచ్చారు; అసలు సీక్వెంట్ పూర్వపక్షానికి అనుగుణంగా సందర్భాన్ని సరిచేశాం.}
+\sourcecorrection{OLTEPTSEQEX-002}{చివరి విస్తరించిన చిత్రంలోని ద్విఆధార షరతు నిగమనానికి మూలం కుడి నియమం గుర్తు ఇచ్చింది; అది షరతు ఎడమ నియమం.}
+
+\Log{G1c}లో పై సీక్వెంట్లకు $!A \Sequent !A$ రూపం అక్షయాల నుంచి \tetoken{నిరూపణలు}{!!{proof}s} ఇవ్వాలి. బలహీనీకరణ నియమాలతో ఇది సులభం. ఉదాహరణకు ఎడమపై సీక్వెంట్ $!D, !C \Sequent
+!E, !C$ను ఇలా \tetoken{నిరూపించవచ్చు}{!!{prove}d}:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\DisplayProof
+\]
+మొత్తంగా \Log{G1c}లో \tetoken{ఒక నిరూపణ}{!!a{proof}} ఇలా ఉంటుంది:
+\[
+\Axiom$!C \fCenter !C$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !C$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !C$
+\Axiom$!D \fCenter !D$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !D$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$!D, !C \fCenter !E, !D$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !C \fCenter !E, !C \land !D$
+\Axiom$!E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!C, !E \fCenter !E$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$!D, !C, !E \fCenter !E$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ !D, !C, (!C \land !D) \lif !E \fCenter !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$!C, (!C \land !D) \lif !E \fCenter !D \lif !E$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$(!C \land !D) \lif !E \fCenter !C \lif (!D \lif !E)$
+\DisplayProof
+\]
+ఈ నిరూపణ నిర్మాణం (ముఖ్యంగా ఎత్తు), \tetoken{సూత్రాలు}{!!{formula}s} $!C$, $!D$, $!E$ ఏమిటనే దానిపై ఆధారపడదు. పై \tetoken{నిరూపణలోని}{!!{proof}} ఆ చిహ్నాల స్థానంలో ఏ \tetoken{సూత్రాలనైనా}{!!{formula}s} ఉంచినా, ఫలితం \Log{G1c}లో \tetoken{నిరూపణగానే}{!!{proof}} ఉంటుంది. \Log{G1c}లో ఈ నిరూపణ \emph{పథకాత్మకమైనది}.
+\sourcecorrection{OLTEPTSEQEX-003}{మూల తొలి బలహీనీకరణ చిత్రంలో నిరూపణను ప్రదర్శించే ఆజ్ఞ లేదు; ఆ ప్రదర్శన ఆజ్ఞను చేర్చాం.}
+\sourcecorrection{OLTEPTSEQEX-004}{అక్షయం నుంచి ఎడమ బలహీనీకరణతో ఉత్తరపక్షం మారదు; మూల పూర్తి చిత్రంలో అది తప్పుగా మారింది. అసలు ఉత్తరపక్షాన్ని నిలిపాం.}
+
+\Log{G3c} అక్షయాల రూపం $!A, \Gamma \Sequent
+\Delta, !A$; ఇక్కడ $!A$ పరమాణువు కావాలి. కాబట్టి $!D, !C \Sequent
+!E, !C$ అనేది \Log{G3c} అక్షయంలా కనిపించినా ($\Gamma = \{!D\}$; $\Delta =
+\{!E\}$), $!C$ పరమాణువైతేనే అది \emph{నిజంగా} అక్షయం. మన నిరూపణ భాగం \Log{G3c}లో పూర్తి నిరూపణ కావాలంటే $!C$, $!D$, $!E$ పరమాణు \tetoken{సూత్రాలు}{!!{formula}s} కావాలి.
+
+కచ్చితంగా చెప్పాలంటే,
+\[\Log{G3c} \Proves (!C \land !D) \lif !E \fCenter !C \lif (!D \lif
+!E),\]
+అని ఇంకా చూపకపోయినా, ఆచరణలో ఇంతే చేయాలి (చేయగలం). ఎందుకంటే $!A$ పరమాణువు కాకపోయినా, $!A, \Gamma \Sequent \Delta, !A$ రూపంలోని ప్రతి సీక్వెంట్ \Log{G3c}లో నిరూప్యమైనది. దీన్ని~$!A$ యొక్క లోతు~$\depth{!A}$పై ఆగమనంతో చూపవచ్చు.
+\sourcecorrection{OLTEPTSEQEX-005}{మునుపటి పూర్తి చిత్రమే మొదటి వ్యవస్థలో నిరూపణను ఇచ్చింది; ఇక్కడ ఇంకా నిరూపించాల్సినది పరమాణు అక్షయాల రెండవ వ్యవస్థలోని వాదన. మూల వ్యవస్థ గుర్తును సమన్వయం చేశాం.}
+
+\begin{defn}\ollabel{defn:depth}
+\tetoken{ఒక సూత్రం}{!!a{formula}} యొక్క \emph{లోతు}~$\depth{!A}$ నిర్వచనం:
+\begin{enumerate}
+  \item $!A$ పరమాణువైతే $\depth{!A} = 0$.
+  \item $!A \ident \lnot !B$, $!A \ident \lforall[x][!B]$, లేదా $!A \ident \lexists[x][!B]$ అయితే, $\depth{!A} = \depth{!B} + 1$.
+  \item $!A \ident (!B \land !C)$, $(!B \lor !C)$, లేదా $(!B \lif
+  !C)$ అయితే, $\depth{!A} = \max(\depth{!B},\depth{!C}) + 1$.
+\end{enumerate}
+\end{defn}
+\sourcecorrection{OLTEPTSEQEX-006}{పరిమాణిత సూత్రం లోతు నియమంలో మూలం లోపలి సూత్రానికి బయట సూత్రం అక్షరాన్నే వాడి, తరువాత వేరే అక్షరం లోతును తీసుకుంది. లోపలి సూత్రాన్ని ప్రకటించిన లోతు సూత్రానికి సమన్వయం చేశాం.}
+
+ఏ పదం~$t$కైనా $\depth{A(x)} = \depth{A(t)}$ అని నిరూపించడం కష్టం కాదు. మనకు ముఖ్యమైనది: ప్రతి తార్కిక నియమంలో ప్రధాన \tetoken{సూత్రం}{!!{formula}} లోతు, క్రియాశీల \tetoken{సూత్రాల}{!!{formula}s} లోతు కంటే ఎక్కువ. ఉదాహరణకు:
+\begin{align*}
+\depth{P(x)} = \depth{P(a)} & = 0,\\
+\depth{\lforall[x][P(x)]} & = 1,\\
+\depth{(\lforall[x][P(x)] \lif P(a))} & = \max(1,0) + 1 = 2.
+\end{align*}
+దీనితో~$\depth{!A}$పై ఆగమనంతో ఫలితాలను నిరూపించవచ్చు; ఉదాహరణకు కిందిది.
+\sourcecorrection{OLTEPTSEQEX-012}{మూలం లోతు తగ్గుదల అన్ని నియమాలకూ వర్తిస్తుందని చెప్పింది. ప్రధాన/క్రియాశీల సూత్రాల ఈ వాదన తార్కిక నియమాలకు మాత్రమే; నిర్మాణ నియమాల్లో ఇలాంటి లోతు తగ్గుదల లేదు. పరిధిని స్పష్టం చేశాం.}
+
+\begin{prop}\ollabel{prop:G1c-axioms}
+ఏ~$!A$కైనా, $\Log{G1c}$లో $!A \Sequent !A$కు అక్షయాలన్నీ పరమాణువులుగా గల \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంది.
+\end{prop}
+
+\begin{proof}
+  $\depth{!A}$పై ఆగమనంతో. $\depth{!A} = 0$ అయితే $!A$ పరమాణువు; $!A \Sequent !A$ ఇప్పటికే \Log{G1c}లో కోరిన రూపం \tetoken{నిరూపణ}{!!{proof}}. $\depth{!A} > 0$ అయితే, $!A$ తక్కువ లోతు గల \tetoken{సూత్రాలతో}{!!{formula}s} నిర్మించబడింది; ఉదా., $!A \ident \lnot !B$, $!A \ident
+  (!B \land !C)$, లేదా $!A \ident \lforall[x][A(x)]$. ఆగమన పరికల్పన: $\depth{!D} < \depth{!A}$ గల ప్రతి $!D$కు, పరమాణు అక్షయాల నుంచి $\Log{G1c} \Proves !D \Sequent !D$.
+
+  $!A \ident \lnot !B$ అయితే, $\depth{!B} < \depth{!A}$; ఆగమన పరికల్పన ప్రకారం \Log{G1c}లో పరమాణు అక్షయాల నుంచి $!B \Sequent !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ ఉంది. దాన్ని $\lnot !B \Sequent \lnot !B$కు \tetoken{ఒక నిరూపణగా}{!!a{proof}} ఇలా విస్తరించవచ్చు:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\lnot}}
+  \UnaryInf$\lnot !B, !B \fCenter $
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\lnot !B \fCenter \lnot !B$
+  \DisplayProof
+\]
+
+  $!A \ident (!B \land !C)$ అయితే, $\depth{!B} < \depth{!A}$, $\depth{!C} < \depth{!A}$. ఆగమన పరికల్పన ప్రకారం \Log{G1c}లో పరమాణు అక్షయాల నుంచి $!B
+  \Sequent !B$, $!C \Sequent !C$లకు \tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1$, $\pi_2$ ఉన్నాయి. వాటిని $!B \land !C \Sequent !B \land !C$కు \tetoken{ఒక నిరూపణగా}{!!a{proof}} ఇలా విస్తరించవచ్చు:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B \fCenter !B$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C \fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C\fCenter !B$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !B$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!C \fCenter !C$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!B, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !C \fCenter !C$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!B \land !C, !B \land !C \fCenter !C$
+  \RightLabel{\RightR{\land}}
+  \BinaryInf$!B \land !C, !B \land !C \fCenter !B \land !C$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$!B \land !C \fCenter !B \land !C$
+  \DisplayProof
+  \]
+\sourcecorrection{OLTEPTSEQEX-008}{మూల సంయోగ నిరూపణలో పంచుకున్న సందర్భంలోని రెండు సంయోగ ప్రతుల్లో ఒకటిని ద్విఆధార దశలోనే తొలగించారు; తరువాత సంకోచన దశ నిర్ధారణలో సంయోగానికి బదులు ఒక్క భాగం ఉంది. ద్విఆధార దశలో రెండు ప్రతులను నిలిపి, చివరి ఎడమ సంకోచనతో సరైన సంయోగ స్వీయ సీక్వెంట్‌ను పొందాం; అదనపు చివరి కామాలను కూడా తొలగించాం.}
+
+  ఇప్పుడు $!A \ident \lforall[x][B(x)]$ అని అనుకుందాం. $\lforall[x][B(x)]$లో రాని \tetoken{ఒక స్థిరాంకం}{!!a{constant}}~$c$ను తీసుకోండి. అప్పుడు $\depth{B(c)} =
+  \depth{!B(x)} < \depth{!A}$; ఆగమన పరికల్పన ప్రకారం \Log{G1c}లో పరమాణు అక్షయాల నుంచి $!B(c)
+  \Sequent !B(c)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ ఉంది. దాన్ని $\lforall[x][B(x)] \Sequent \lforall[x][B(x)]$కు \tetoken{ఒక నిరూపణగా}{!!a{proof}} ఇలా విస్తరించవచ్చు:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+
+  మిగిలిన సందర్భాలను అభ్యాసాలుగా వదిలాం.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lor !C)$, $!A \ident (!B \lif !C)$, $!A \ident \lexists[x][B(x)]$ సందర్భాలను చేసి \olref{prop:G1c-axioms} నిరూపణను పూర్తిచేయండి.
+\end{prob}
+
+మన అవసరానికి, $!A \ident \lnot !B$ సందర్భంలో ఈ \tetoken{నిరూపణను}{!!{proof}} కూడా వాడవచ్చు:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B \fCenter !B$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter !B, \lnot !B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot !B \fCenter \lnot !B$
+\DisplayProof
+\]
+కానీ కొన్ని సీక్వెంట్ వ్యవస్థల్లో ఇది పనిచేయదు. అంతఃప్రజ్ఞావాద సీక్వెంట్ కలనశాస్త్రం \Log{G1i}, \Log{G1c} వంటిదే; అయితే ప్రతి సీక్వెంట్ కుడివైపు గరిష్ఠంగా ఒక \tetoken{సూత్రం}{!!{formula}} మాత్రమే అనుమతిస్తుంది. ఆధార నిరూపణ కూడా ఈ పరిమితిని పాటిస్తే, మొదటి \tetoken{నిరూపణ}{!!{proof}} \Log{G1i}లో \tetoken{ఒక నిరూపణ}{!!a{proof}} అవుతుంది. రెండవది కాదు: ఒక సీక్వెంట్ కుడివైపు $!B$, $\lnot !B$ రెండూ ఉన్నాయి.
+\sourcecorrection{OLTEPTSEQEX-009}{ఈ చిత్రంలో సందర్భం లేకపోయినా మూలం ఖాళీ సందర్భ షరతును ప్రత్యేకంగా పేర్కొంది. మొదటి చిత్రం అంతఃప్రజ్ఞావాద నిరూపణ కావాలంటే దాని ఆధార నిరూపణ కూడా ఒకే ఉత్తరపక్ష సూత్ర పరిమితిని పాటించాలని స్పష్టం చేశాం.}
+
+$!A \ident \lforall[x][!B(x)]$ సందర్భంలో \Log{G1c}లో కూడా నియమాలను మరో క్రమంలో వాడలేమని గమనించండి. కిందిది \tetoken{ఒక నిరూపణ}{!!a{proof}} \emph{కాదు}:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!B(c) \fCenter !B(c)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$!B(c) \fCenter \lforall[x][!B(x)]$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\lforall[x][!B(x)] \fCenter \lforall[x][!B(x)]$
+  \DisplayProof
+\]
+ఎందుకంటే $\RightR{\lforall}$ స్వీయచర షరతు ఉల్లంఘించబడింది.
+
+\begin{prop}\ollabel{prop:G3c-axioms}
+$!A, \Gamma
+\Sequent \Delta, !A$ రూపంలోని ప్రతి సీక్వెంట్ (\emph{తప్పక పరమాణువు కానక్కర్లేని} $!A$తో) \Log{G3c}లో నిరూప్యమైనది.
+\end{prop}
+
+\begin{proof}
+నిరూపణ \olref{prop:G1c-axioms} వంటిదే; కానీ ఆగమన పరికల్పనలో జాగ్రత్త అవసరం. $n =
+\depth{!A} = 0$ సందర్భం మళ్లీ సులభం. $n=0$ అయితే $!A$ పరమాణువు; $!A,
+\Gamma \Sequent \Delta, !A$ \Log{G3c} అక్షయం.
+
+ఇప్పుడు $n>0$ అని అనుకుందాం. మళ్లీ సందర్భాలను వేరు చేద్దాం. ఆగమన పరికల్పన: $\depth{!D} < n$ గల ప్రతి $!D$కు, అన్ని $\Pi$, $\Lambda$లకు $\Log{G3c} \Proves !D, \Pi \Sequent \Lambda, !D$. $!A \ident (!B \land !C)$ సందర్భం ఇదిగో. పరికల్పనను రెండుసార్లు వాడతాం: ముందుగా $!D = !B$, $\Pi = !C, \Gamma$, $\Lambda
+= \Delta$ తీసుకుని $!B, !C, \Gamma \Sequent
+\Delta, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ను పొందుతాం. తరువాత $!D = !C$, $\Pi = !B, \Gamma$, $\Lambda
+= \Delta$ తీసుకుని $!B, !C, \Gamma \Sequent
+\Delta, !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_2$ను పొందుతాం. $!B \land !C, \Gamma \Sequent
+\Delta, !B \land !C$కు \tetoken{నిరూపణ}{!!{proof}}:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !B$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$!B, !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!B \land !C, \Gamma \fCenter \Delta, !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!B \land !C, \Gamma \fCenter \Delta, !B \land !C$
+\DisplayProof
+\]
+\sourcecorrection{OLTEPTSEQEX-010}{మూల పరికల్పనలో సూత్ర గుర్తు ముందు ఉండాల్సిన ఆశ్చర్యార్థక చిహ్నాన్ని అక్షరం తరువాత రాశారు; ప్రకటించిన సూత్ర గుర్తుకు సరిచేశాం.}
+\sourcecorrection{OLTEPTSEQEX-011}{రెండవ ఆగమన ప్రయోగంలో ఎడమ సందర్భానికి మూలం కుడి సందర్భ గుర్తును వాడింది; కోరిన సీక్వెంట్, పక్కనున్న చిత్రానికి అనుగుణంగా ఎడమ సందర్భాన్ని రాశాం.}
+
+$!A \ident \lforall[x][!B(x)]$కు, $\lforall[x][!B(x)]$, $\Gamma$, $\Delta$లలో రాని \tetoken{ఒక స్థిరాంకాన్ని}{!!a{constant}} ఎంచుకోండి. $!D = !B(c)$, $\Pi = \lforall[x][!B(x)], \Gamma$, $\Lambda = \Delta$కు ఆగమన పరికల్పన వర్తింపజేయండి. అది $!B(c),
+\lforall[x][!B(x)], \Gamma \Sequent \Delta, !B(c)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1$ను ఇస్తుంది. దానినుంచి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$!B(c), \lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, !B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\lforall[x][!B(x)], \Gamma \fCenter \Delta, \lforall[x][!B(x)]$
+\DisplayProof
+\]
+$c$ను ఎంచుకున్న విధానం వల్ల $\RightR{\lforall}$ స్వీయచర షరతు తీరుతుంది.
+\end{proof}
+
+\begin{prob}
+  $!A \ident (!B \lif !C)$, $!A \ident
+  \lexists[x][B(x)]$ సందర్భాలను చేసి \olref{prop:G3c-axioms} నిరూపణను కొనసాగించండి.
+\end{prob}
+
+\end{document}

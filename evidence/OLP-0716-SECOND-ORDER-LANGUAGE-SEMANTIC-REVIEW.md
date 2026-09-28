@@ -1,0 +1,3 @@
+# OLP-0716 — second order language semantic review
+
+Reverse paraphrase preserves the primitive vocabulary, formation of terms/formulas, second-order variable families and their arities, the ordinary identity symbol, and the comparison with first-order nonlogical symbols. The end now makes explicit that a translated sentence with nonlogical predicate/function names replaced by free second-order variables is interpreted under matching assignments; a closed quantified sentence has different semantics. This local clarification is disclosed, not presented as a theorem that every first-order signature has the same closed second-order sentences. No current TeX/layout validation.

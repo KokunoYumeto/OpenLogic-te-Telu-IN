@@ -1,0 +1,53 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "312",
+  "unit_id": "OLP-0663",
+  "unit_order": 663,
+  "source_path": "content/proof-theory/natural-deduction/introduction.tex",
+  "blocks": 14,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "corrections_by_block": {
+    "8": [
+      "OLTEPTNATINT-001"
+    ],
+    "11": [
+      "OLTEPTNATINT-002"
+    ]
+  },
+  "previous_segments": 9833,
+  "previous_terms": 352,
+  "expected_corrections": 578,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సహజ నిగమనం, ప్రవేశ/తొలగింపు నియమాలు, ఉపపత్తి విసర్జన, గెంట్జెన్/యాష్కోవ్‌స్కీ భేదం, సీక్వెంట్ రూపం, రెండు మూల సవరణలను స్థిర మూలంతో పోల్చాం.",
+  "evidence_limit": "సహజ నిగమనం, విసర్జన పదరూపాలు భావపారదర్శక ఎంపికలు; ప్రత్యక్ష నిఘంటు ఆధారం పరిమితం. చారిత్రక వివరాలను స్వతంత్రంగా పరిశోధించలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T353",
+    "source_term": "natural deduction; introduction and elimination rules; discharge of assumptions",
+    "telugu": "సహజ నిగమనం; ప్రవేశ, తొలగింపు నియమాలు; ఉపపత్తుల విసర్జన",
+    "status": "natural_deduction_introduction_two_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "జంట నిగమన నియమాలు, గెంట్జెన్/యాష్కోవ్‌స్కీ వ్యవస్థల వివరణ, ఉపపత్తుల విసర్జన, N1/N2 భేదం నిలిచాయి; రెండు స్థానిక మూల లోపాలు ప్రకటితంగా సరిచేశాం.",
+    "uncertainty": "సహజ నిగమనం సాంకేతిక తెలుగు రూపం భావానువాదం; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం.",
+    "borrowing": "Gentzen, Jaśkowski and N1/N2 system labels remain source-identifying."
+  }
+}

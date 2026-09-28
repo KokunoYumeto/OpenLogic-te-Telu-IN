@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "256",
+  "unit_id": "OLP-0607",
+  "unit_order": 607,
+  "source_path": "content/methods/proofs/example-1.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13],
+  "previous_segments": 8992,
+  "previous_terms": 296,
+  "expected_corrections": 523,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P024", "TE-P025"],
+  "consultation_phase": "మొదటి సమితి-నిరూపణ ఉదాహరణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సమ్మేళనం/ఛేదన/నిరూపణ పదాలు, స్థానిక సమితి-నిరూపణ సాక్షులు పోల్చాం; పంపిణీ సమానత్వం రెండు దిశలు, మొదటి రెండు సందర్భాలు, వెనుక దిశలో రెండో వికల్పం లోపలి రెండు సందర్భాలు, చరరాశి పరిధి తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సమితి కార్యకలాపాలు, నిరూపణ సాధారణ వాడుకకు ఆధారం; ఈ ప్రత్యేక పంపిణీ నిరూపణకు స్వతంత్ర మూలం కాదు. స్థిర గణిత సూత్రాలు, సందర్భ విభజన దిశ మూల ఉదాహరణ నియంత్రించింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T297","source_term":"distributive union/intersection example; proof by nested cases","telugu":"సమ్మేళనం-ఛేదన పంపిణీ ఉదాహరణ; గూడుకట్టిన సందర్భాలవారీ నిరూపణ","status":"set_distribution_two_inclusions_and_nested_cases_source_controlled","passages":["TE-P004","TE-P008","TE-P024","TE-P025"],"basis":"A∪(B∩C)=(A∪B)∩(A∪C)కు రెండు సభ్యత్వ దిశలు, ముందరి A లేదా B∩C సందర్భాలు, వెనుక (A∪B) మరియు (A∪C) సంయోగంలో గూడుకట్టిన సందర్భాలు వేరుగా నిలిచాయి.","uncertainty":"సమితి కార్యకలాపాల పదాలకు స్థానిక ఆధారం ఉంది; గూడుకట్టిన నిరూపణ ప్రత్యేక శీర్షికకు ప్రత్యక్ష నామసాక్షి లేదు.","borrowing":"Set variables, union/intersection notation, protected element tokens and TeX proof environments remain unchanged."}
+}

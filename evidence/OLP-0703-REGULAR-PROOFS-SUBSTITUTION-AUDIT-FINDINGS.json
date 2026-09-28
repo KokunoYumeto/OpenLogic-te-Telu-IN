@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQQUA-20260928",
+  "unit_id": "OLP-0703",
+  "source_path": "content/proof-theory/sequent-calculus/quantifiers.tex",
+  "source_sha256": "a27d60734d10b75dad7ff081448ddad7036694cdb489b2a0cfa8c97d002bc480",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQQUA-001",
+      "source_locator": "content/proof-theory/sequent-calculus/quantifiers.tex lines 45–108, aligned block 10",
+      "classification": "universal_left_substitution_diagrams_labelled_right",
+      "source_issue": "Both diagrams in the universal-left case are labelled universal-right.",
+      "minimal_treatment": "Use the universal-left labels in those two diagrams.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\pi'}{t}{c}$}\\Deduce$!A(s(t),t),\\lforall[x][!A(x,t)],\\Gamma(t)\\fCenter\\Delta'(t)$\\RightLabel{\\RightR{\\lforall}}\\UnaryInf$\\lforall[x][!A(x,t)],\\Gamma(t)\\fCenter\\Delta'(t)$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi'$}\\Deduce$!A(s(c),c),\\lforall[x][!A(x,c)],\\Gamma(c)\\fCenter\\Delta'(c)$\\RightLabel{\\RightR{\\lforall}}\\UnaryInf$\\lforall[x][!A(x,c)],\\Gamma(c)\\fCenter\\Delta'(c)$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\pi'}{t}{c}$}\\Deduce$!A(s(t),t),\\lforall[x][!A(x,t)],\\Gamma(t)\\fCenter\\Delta'(t)$\\RightLabel{\\LeftR{\\lforall}}\\UnaryInf$\\lforall[x][!A(x,t)],\\Gamma(t)\\fCenter\\Delta'(t)$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi'$}\\Deduce$!A(s(c),c),\\lforall[x][!A(x,c)],\\Gamma(c)\\fCenter\\Delta'(c)$\\RightLabel{\\LeftR{\\lforall}}\\UnaryInf$\\lforall[x][!A(x,c)],\\Gamma(c)\\fCenter\\Delta'(c)$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQQUA-002",
+      "source_locator": "content/proof-theory/sequent-calculus/quantifiers.tex lines 117–155, aligned block 12",
+      "classification": "regularization_dirty_inference_selection_and_count_defects",
+      "source_issue": "An arbitrary topmost inference may be clean; a topmost dirty inference can have clean inferences above it, and renaming may clean multiple inferences.",
+      "minimal_treatment": "Choose a highest dirty inference, justify regularity by cleanliness of upper inferences, and state a decrease of at least one.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$n-1$"
+        ],
+        "target_only": [
+          "$\\len-1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQQUA-003",
+      "source_locator": "content/proof-theory/sequent-calculus/quantifiers.tex lines 45–108, aligned block 10",
+      "classification": "substitution_regularity_argument_scrambled_sentences",
+      "source_issue": "The final paragraph interleaves two sentences so the unchanged-eigenvariable argument is grammatically broken.",
+      "minimal_treatment": "Separate the unchanged eigenvariable set and the inserted-term freshness statements without changing the mathematical content.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQQUA-004",
+      "source_locator": "content/proof-theory/sequent-calculus/quantifiers.tex lines 30–38, aligned block 8",
+      "classification": "constant_substitution_capture_avoidance_implicit",
+      "source_issue": "Literal constant replacement by a term containing variables can capture them under quantifiers.",
+      "minimal_treatment": "Clarify capture-avoiding substitution with alpha-renaming of bound variables when needed.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

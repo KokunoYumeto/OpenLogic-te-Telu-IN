@@ -1,0 +1,3 @@
+# OLP-0683 — search algorithm source audit
+
+Four local defects are disclosed. Newly created formulas now receive indices strictly beyond the old maximum. The right-existential tree receives the correct right-rule label, and its prose retains the selected occurrence's index. If all eligible terms have been used, the fallback reuses the first constant in the already nonempty assigned set C, rather than c0 which need not be in C. This preserves the stated constant-set invariant and the later eigenvariable check. All other diagrams and the frozen source remain unchanged. Remaining connective and universal cases remain exercises as in the source.

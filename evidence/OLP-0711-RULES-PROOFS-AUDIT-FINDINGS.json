@@ -1,0 +1,35 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQRP-20260928",
+  "unit_id": "OLP-0711",
+  "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+  "source_sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQRP-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-proofs.tex lines 127–132, aligned block 13",
+      "classification": "ambiguous_proof_height_description",
+      "source_issue": "The prose says the maximum number of sequents between end and initial sequents; this is inconsistent or off by one under ordinary readings of 'between', while the recursive definition assigns an axiom height zero and an inference one extra.",
+      "minimal_treatment": "Describe height as the maximum number of inference steps/tree edges on an end-to-initial path, preserving the recursive definition and documenting the clarification.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQRP-002",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-proofs.tex lines 148–157, aligned block 15",
+      "classification": "incorrect_succedent_in_multiset_example",
+      "source_issue": "The source claims D,E⇒E and E,D⇒D are identical by multiset reordering, but changes the succedent.",
+      "minimal_treatment": "Replace the second succedent D by E and disclose that only antecedent order changes.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!E,!D\\Sequent!D$"
+        ],
+        "target_only": [
+          "$!E,!D\\Sequent!E$"
+        ]
+      }
+    }
+  ]
+}

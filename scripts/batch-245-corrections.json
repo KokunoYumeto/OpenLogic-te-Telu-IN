@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0596",
+  "source_path": "content/set-theory/choice/wellorderingproblem.tex",
+  "source_sha256": "9ca7bb6570d323e7caebb910c975827a9411c1bbe2b4dabd6d41f9ebe2f04fa4",
+  "audit_id": "OLTESTCHOICEWO-20260927",
+  "audit_review_path": "evidence/OLP-0596-WELL-ORDERING-CHOICE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "dbef3ef0a000e9ed8f56a4140c7d54787eae28eb07a1ca8b9bf02d7e4554e4a9",
+  "audit_findings_path": "evidence/OLP-0596-WELL-ORDERING-CHOICE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "ecd24781030514efbaf2baa5c88229c7486a6c87f22ddda8ea4e30a42cccd259",
+  "previous_corrections": 512,
+  "treatments": {
+    "OLTESTCHOICEWO-001": {"target_line": 34, "body_treatment": "ఖాళీ సమితికి సుక్రమం విడిగా ఇచ్చి, ఎంపిక పునరావృత్తికి ఖాళీ కాని సమితినే తీసుకున్నాం."},
+    "OLTESTCHOICEWO-002": {"target_line": 45, "body_treatment": "ఆపు-గుర్తును ఆపే దశ నుంచి ముందుకు మాత్రమే ఉంచి, గత ఎంపికలను పరిరక్షించే మొదటి భాగాన్నే ప్రమేయంగా వాడాం."}
+  }
+}

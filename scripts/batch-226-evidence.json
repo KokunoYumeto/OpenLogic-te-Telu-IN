@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "226",
+  "unit_id": "OLP-0577",
+  "unit_order": 577,
+  "source_path": "content/set-theory/ord-arithmetic/using-addition.tex",
+  "blocks": 20,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "corrections_by_block": {"13": ["OLTESTORDUSEADD-001"]},
+  "previous_segments": 8505,
+  "previous_terms": 266,
+  "expected_corrections": 495,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "క్రమసంఖ్య కూడిక వినియోగపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ స్థాయి/కూడిక/అనంతత్వ పదాలు, స్థానిక సంఖ్య/సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; ఆరు స్థాయి సూత్రాలు, గుణిత స్థాయి రెండు హద్దుల అభ్యాసం, క్రమసంఖ్య అనంతత్వం ఐదు సమానార్థకాలు, ఐదు అన్వయాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సంఖ్య/సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; డెడెకిండ్ అనంతత్వం ప్రత్యేక నిర్వచన నియంత్రితం. మూల రెండవ అభ్యాసంలోని సంబంధ సంకేతం OLTESTORDUSEADD-001గా చేర్చబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T267",
+    "source_term": "rank calculations using ordinal addition; Dedekind-infinite ordinal",
+    "telugu": "క్రమసంఖ్య కూడికతో స్థాయి లెక్కలు; డెడెకిండ్ అనంత క్రమసంఖ్య",
+    "status": "rank_equations_and_infinity_equivalences_source_controlled",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ఘాత/జత/సమ్మేళన/యుగ్మ/గుణిత/పెద్దసమ్మేళన స్థాయిలు, సమానత్వ-అసమానత్వ భేదం, అయిదు అనంతత్వ సమానార్థకాలు నిలిచాయి.",
+    "uncertainty": "డెడెకిండ్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల గుణిత స్థాయి అభ్యాసంలోని లోపం ప్రకటించి సవరించబడింది.",
+    "borrowing": "Rank, ordinal-addition and bijection/injection markers remain source-controlled."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "233",
+  "unit_id": "OLP-0584",
+  "unit_order": 584,
+  "source_path": "content/set-theory/cardinals/classing.tex",
+  "blocks": 31,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+  "corrections_by_block": {"9": ["OLTESTCARDCLASS-001"]},
+  "previous_segments": 8588,
+  "previous_terms": 273,
+  "expected_corrections": 499,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ రకాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ పరిమిత/డెడెకిండ్ అనంత/లెక్కించదగిన పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు పోల్చాం; మూడు సమానార్థకాలు, ఒమేగా ఏకైకత్వం, సంఘ కార్డినాలిటీ, అతి పెద్ద కార్డినల్ లేమి తనిఖీ చేశాం.",
+  "evidence_limit": "లెక్కించదగిన/కార్డినల్ ప్రత్యేక పదాలకు ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనాలు నియంత్రించాయి. మూలంలో సహజ సంఖ్య కాని సమితి గురించి తప్పు సమానార్థకం OLTESTCARDCLASS-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T274",
+    "source_term": "finite, enumerable, nonenumerable cardinal",
+    "telugu": "పరిమిత, లెక్కించదగిన, లెక్కించలేని కార్డినల్ సంఖ్య",
+    "status": "three_classification_equivalences_preserved_source_gloss_corrected",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "పరిమిత క్రమసంఖ్య/కార్డినల్ గుర్తింపు, ఒమేగా అత్యల్ప/ఏకైక లెక్కించదగిన అనంత కార్డినల్, అతి పెద్ద కార్డినల్ లేమి, మొత్తం తరగతి సమితి కానితనం నిలిచాయి.",
+    "uncertainty": "ఎన్యూమరబుల్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ టోకెన్ ఎంపిక అనుసరించబడింది.",
+    "borrowing": "The source token declarations and cardinal macros remain intact."
+  }
+}

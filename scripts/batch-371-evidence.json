@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "371",
+  "unit_id": "OLP-0722",
+  "unit_order": 722,
+  "source_path": "content/sets-functions-relations/size-of-sets/size-of-sets.tex",
+  "blocks": 17,
+  "linguistic_blocks": [
+    4,
+    5
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10594,
+  "previous_terms": 411,
+  "expected_corrections": 703,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సమితుల పదప్రయోగం, TE-P018 తార్కిక వివరణ ప్రయోగం పోల్చాం. గణనీయత/అగణనీయతకు స్థానిక అధ్యాయ నిర్వచనాలు అర్థాన్ని నియంత్రిస్తాయి; ప్రత్యక్ష సంపూర్ణ ప్రమాణం అని చెప్పలేదు.",
+  "evidence_limit": "Specialized countability terms are definition controlled; no TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T412",
+    "source_term": "size of sets; enumerability; countability; uncountability",
+    "telugu": "సమితుల పరిమాణం; గణన; గణనీయత; అగణనీయత",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పరిమాణం అనే పదం ఇక్కడ సమితుల సభ్యసంఖ్య-సంబంధిత పరిమాణానికి; గణనీయత జతపదాన్ని ప్రాథమిక/ఉన్నత రూపాల వివరణలో స్థిరంగా ఉపయోగించాం.",
+    "uncertainty": "Specialized countability terms are definition controlled; no TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0579",
+  "source_path": "content/set-theory/ord-arithmetic/exponentiation.tex",
+  "source_sha256": "965be29d6ab8e9aad3e56b319cc8ddfb3cd212e836092f061198fafb561ae6fc",
+  "audit_id": "OLTESTORDEXPO-20260927",
+  "audit_review_path": "evidence/OLP-0579-ORDINAL-EXPONENTIATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "df8c32efc8db1207db4e0133c62233bb2fbcd1616d8853eada6a59984e7f3eb1",
+  "audit_findings_path": "evidence/OLP-0579-ORDINAL-EXPONENTIATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4bffafaeb25d58714c7f0b706181cfdcdd053a0aa7da4caa5e9c4e2098fb527f",
+  "previous_corrections": 496,
+  "treatments": {
+    "OLTESTORDEXPO-001": {
+      "target_line": 15,
+      "body_treatment": "పరిమిత మద్దతు ప్రమేయపు నిర్వచన సమితి, మద్దతు, వ్యత్యాస సూచికను ఘాతంతో, విలువల సమితిని ఆధారంతో సరిపోల్చి ప్రకటించాం."
+    },
+    "OLTESTORDEXPO-002": {
+      "target_line": 36,
+      "body_treatment": "నిర్మాణాత్మక-పునరావృత్త సమానత్వ అభ్యాసాన్ని ధనాత్మక ఆధారానికి పరిమితం చేసి శూన్య ఆధార లోపాన్ని ప్రకటించాం."
+    }
+  }
+}

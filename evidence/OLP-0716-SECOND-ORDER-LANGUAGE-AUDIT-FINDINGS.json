@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESOLSYNLAN-20260928",
+  "unit_id": "OLP-0716",
+  "source_path": "content/second-order-logic/syntax-and-semantics/language-of-sol.tex",
+  "source_sha256": "49d9beabf33f0727dafafd28fb282489083c4b146bfaf1c66c01ac80dd8f7856",
+  "findings": [
+    {
+      "finding_id": "OLTESOLSYNLAN-001",
+      "source_locator": "content/second-order-logic/syntax-and-semantics/language-of-sol.tex lines 31–38, aligned block 8",
+      "classification": "unqualified_expressibility_without_nonlogical_symbols",
+      "source_issue": "The source says second-order logic can say anything said in a first-order language without a special supply of nonlogical symbols. Replacing relation/function names with second-order variables only preserves the original interpretation relative to matching assignments; binding those variables does not keep the same sentence truth conditions.",
+      "minimal_treatment": "State the assignment-dependent translation using free relation/function variables, and disclose that quantifying them would change the proposition.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

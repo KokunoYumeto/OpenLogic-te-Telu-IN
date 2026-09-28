@@ -1,0 +1,3 @@
+# OLP-0699 — interpretation rules source audit
+
+Three corrections are disclosed. The second XOR rule is a left rule but is labelled right; weakening's explanation reverses the sequent truth polarities; and the claim that every displayed implication example proof must literally end with right implication is too broad for compound formulas or redundant structural endings. The last claim is restricted to distinct atomic placeholders and the final logical rule, with extra contractions set aside. Truth tables verify both XOR rule shapes and the corrected weakening implication. No new inference rule is introduced.

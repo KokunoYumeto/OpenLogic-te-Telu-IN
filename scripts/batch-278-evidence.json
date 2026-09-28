@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "278",
+  "unit_id": "OLP-0629",
+  "unit_order": 629,
+  "source_path": "content/history/biographies/bertrand-russell.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12],
+  "previous_segments": 9291,
+  "previous_terms": 318,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P002", "TE-P003", "TE-P018", "TE-P024"],
+  "consultation_phase": "రసెల్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ తర్క/గణిత/తత్వ పదాలు, స్థానిక తర్క సాక్షులు పోల్చాం; ప్రిన్సిపియా గణిత-తర్క తగ్గింపు, రాజకీయ/యుద్ధ వ్యతిరేక కథనం, కాల సూచనలు, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు తర్క/గణిత నేపథ్యం మాత్రమే; వ్యక్తి రాజకీయ, కుటుంబ, విమాన ప్రమాద చరిత్ర బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T319","source_term":"Bertrand Russell; analytic philosophy; Principia Mathematica","telugu":"బెర్‌ట్రాండ్ రసెల్; విశ్లేషణాత్మక తత్వశాస్త్రం; Principia Mathematica","status":"logicist_program_and_biographical_claims_source_controlled","passages":["TE-P002","TE-P003","TE-P018","TE-P024"],"basis":"వైట్‌హెడ్‌తో ప్రిన్సిపియా తొలి సంపుటం, గణితాన్ని తర్కానికి తగ్గించవచ్చనే అభిప్రాయం, సాహిత్య బహుమతి, రాజకీయ ఉద్యమ కాల సూచనలు, రెండు పఠన భాగాల సూచనలు నిలిచాయి.","uncertainty":"వ్యక్తి చరిత్ర, విమాన ప్రమాద కథనం, వ్యక్తిగత సంబంధ వివరాలు ఇక్కడ స్వతంత్రంగా ధృవీకరించలేదు; స్థానిక సాక్షులు వాటికి ఆధారం కావు.","borrowing":"Principia Mathematica and On Denoting are source-identifying titles; names, citation keys and LibriVox remain identifiable."}
+}

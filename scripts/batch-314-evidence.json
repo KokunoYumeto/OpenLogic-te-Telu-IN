@@ -1,0 +1,55 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "314",
+  "unit_id": "OLP-0665",
+  "unit_order": 665,
+  "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+  "blocks": 16,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "corrections_by_block": {
+    "10": [
+      "OLTEPTNATQUA-001"
+    ],
+    "12": [
+      "OLTEPTNATQUA-002"
+    ]
+  },
+  "previous_segments": 9854,
+  "previous_terms": 354,
+  "expected_corrections": 580,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "క్రమబద్ధ నిరూపణ, ఐగెన్ చరరాశి షరతు, స్థిరాంక ప్రతిస్థాపన, నాలుగు పరిమాణీకరణిక సందర్భాలు, అశుభ్ర నిగమనాల ఆగమనాన్ని మూలంతో పోల్చాం; రెండు మూల నిరూపణ లోపాలను ప్రకటితంగా సరిచేశాం.",
+  "evidence_limit": "క్రమబద్ధం/శుభ్రమైనది పదరూపాలు భావానువాదాలు; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. సాధనలుగా వదిలిన సందర్భాలు ఇక్కడ విస్తరించలేదు; మొత్తం నిరూపణకు స్వతంత్ర formal verification లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T355",
+    "source_term": "regular proof; eigenvariable condition; clean and dirty eigenvariable inference",
+    "telugu": "క్రమబద్ధమైన నిరూపణ; ఐగెన్ చరరాశి షరతు; శుభ్రమైన, అశుభ్రమైన ఐగెన్ చరరాశి నిగమనం",
+    "status": "quantifier_regularization_two_proof_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఐగెన్ చరరాశి పరిమితి, ప్రతిస్థాపన లెమ్మా, క్రమబద్ధీకరణ ఆగమనం నిలిచాయి; రెండు మూల నిరూపణ లోపాలు పక్కనే సరిచేసి ప్రకటించాం.",
+    "uncertainty": "శుభ్రమైన/అశుభ్రమైన నిగమనం అనువాదం స్థానిక ఉపమానం; పూర్తిస్థాయి నిరూపణ ధృవీకరణ జరగలేదు.",
+    "borrowing": "N1c/N1i/N2c/N2i names, formula variables, and proof-tree labels remain source-identifying."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "193",
+  "unit_id": "OLP-0544",
+  "unit_order": 544,
+  "source_path": "content/set-theory/z/milestone.tex",
+  "blocks": 8,
+  "linguistic_blocks": [3, 4, 5, 6, 7],
+  "previous_segments": 8084,
+  "previous_terms": 233,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర సెర్మెలో మైలురాయి మూలం, తెలుగు లక్ష్యం, పూర్వ ఐదు స్వీకృతాల పేర్లు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; Z-minus స్వీకృతాల ఖచ్చిత జాబితా, పేరు, చారిత్రక ఉటంకింపు, పూర్వ భాగానికి సూచన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ స్వీకృత/సమితి పదాలకు మాత్రమే సాక్షులు; Z-minus జాబితా మూల నిర్ణయ నియంత్రితం. సెర్మెలో/Potter చారిత్రక మూలాలు స్వతంత్రంగా చూడలేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T234",
+    "source_term": "Z-minus / Zermelo set theory milestone",
+    "telugu": "Z-minus / సెర్మెలో సమితి సిద్ధాంత మైలురాయి",
+    "status": "axiom_list_source_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "Z-minus కోసం సమితుల సమానత్వం, సమ్మేళనం, జంటలు, ఘాత సమితులు, అనంతత్వం, వేరుచేయడం పథకంలోని అన్ని సందర్భాల జాబితాను మార్పులేకుండా నిలిపాం.",
+    "uncertainty": "చారిత్రక రచనల ఉటంకింపులు స్వతంత్రంగా తనిఖీ చేయలేదు; Z-minus చిహ్నం మూల నియంత్రితం.",
+    "borrowing": "Z-minus notation, Zermelo eponym and citations remain source-controlled."
+  }
+}

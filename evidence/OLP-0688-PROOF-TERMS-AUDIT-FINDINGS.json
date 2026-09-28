@@ -1,0 +1,54 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYTER-20260928",
+  "unit_id": "OLP-0688",
+  "source_path": "content/proof-theory/propositions-as-types/proof-terms.tex",
+  "source_sha256": "efeb3a9e0573794a31ef1cc56221cfb9f52c166ed73b4408118d0e9a2357aa66",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYTER-001",
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex lines 28–66, aligned block 7",
+      "classification": "conjunction_constructor_premise_case_mismatch",
+      "source_issue": "The second premise is M, but the constructor conclusion uses lowercase m.",
+      "minimal_treatment": "Use the declared second premise M in the constructor.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma_1\\fCenterN:!A$\\Axiom$\\Gamma_2\\fCenterM:!B$\\RightLabel{\\Intro{\\land}}\\BinaryInf$\\Gamma_1,\\Gamma_2\\fCenterc^\\land(N,m):!A\\land!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:!A\\land!B$\\RightLabel{\\Elim{\\land}[1]}\\UnaryInf$\\Gamma\\fCenterd^\\land_1(N):!A$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma_1\\fCenterN:!A$\\Axiom$\\Gamma_2\\fCenterM:!B$\\RightLabel{\\Intro{\\land}}\\BinaryInf$\\Gamma_1,\\Gamma_2\\fCenterc^\\land(N,M):!A\\land!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:!A\\land!B$\\RightLabel{\\Elim{\\land}[1]}\\UnaryInf$\\Gamma\\fCenterd^\\land_1(N):!A$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTER-002",
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex lines 68–85, aligned block 8",
+      "classification": "disjunction_constructor_missing_premise_argument",
+      "source_issue": "The constructor in the conclusion omits N and hence does not encode its premise proof.",
+      "minimal_treatment": "Supply the existing premise term N as its argument.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$\\Gamma\\fCenterN:!A$\\RightLabel{\\Intro{\\lor}[1]}\\UnaryInf$\\Gamma\\fCenterc^{\\lor{!B}}_1:!A\\lor!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:\\lfalse$\\RightLabel{\\FalseInt}\\UnaryInf$\\Gamma\\fCenterd^\\lfalse_{!A}(N):!A$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$\\Gamma\\fCenterN:!A$\\RightLabel{\\Intro{\\lor}[1]}\\UnaryInf$\\Gamma\\fCenterc^{\\lor{!B}}_1(N):!A\\lor!B$\\DisplayProof\\quad\\Axiom$\\Gamma\\fCenterN:\\lfalse$\\RightLabel{\\FalseInt}\\UnaryInf$\\Gamma\\fCenterd^\\lfalse_{!A}(N):!A$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYTER-003",
+      "source_locator": "content/proof-theory/propositions-as-types/proof-terms.tex lines 100–120, aligned block 11",
+      "classification": "injection_term_undeclared_placeholder",
+      "source_issue": "The inductive clause declares N but inserts unrelated !M in the injection.",
+      "minimal_treatment": "Use the declared proof term N.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\inj[!A]{i}{!M}$"
+        ],
+        "target_only": [
+          "$\\inj[!A]{i}{N}$"
+        ]
+      }
+    }
+  ]
+}

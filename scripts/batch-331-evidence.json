@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "331",
+  "unit_id": "OLP-0682",
+  "unit_order": 682,
+  "source_path": "content/proof-theory/proof-search/rules-Tc.tex",
+  "blocks": 5,
+  "previous_segments": 10087,
+  "previous_terms": 371,
+  "consultation_phase": "Tc నియమాల పట్టికలో చిహ్నిత సూత్రాలు, కొత్త స్థిరాంక షరతును ప్రథమ క్రమ టాబ్లో పదజాలంతో పోల్చి, నియమ వృక్షాలు యథాతథంగా ఉంచాం.",
+  "evidence_limit": "పట్టిక శీర్షిక, కొత్త స్థిరాంక షరతు మాత్రమే భాషా అనువాదం; నియమచిత్రాల దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T372",
+    "source_term": "Rules of Tc; new constant on a branch",
+    "telugu": "Tc నియమాలు; శాఖకు కొత్త స్థిరాంకం",
+    "status": "Tc_rules_caption_fresh_constant_preserved",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "అసత్య సార్వత్రిక, సత్య అస్తిత్వ నియమాల కొత్త స్థిరాంక షరతును ఖచ్చితంగా నిలిపాం; అన్ని నియమ వృక్షాలు మారలేదు.",
+    "uncertainty": "Tc పద్ధతి గుర్తును అనువదించలేదు; మూలంలోని forall/lforall చిహ్న వైవిధ్యాన్ని యథాతథంగా ఉంచాం.",
+    "borrowing": "Tc and proof-tree rule identifiers remain source-identifying."
+  },
+  "linguistic_blocks": [
+    4
+  ],
+  "expected_corrections": 620,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ]
+}

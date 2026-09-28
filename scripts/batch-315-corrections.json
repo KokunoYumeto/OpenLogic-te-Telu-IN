@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0666",
+  "source_path": "content/proof-theory/natural-deduction/rules-N1.tex",
+  "source_sha256": "a3109a0cde4f15f7f90482f4143b4ea73c890d36f085927499cc57396beaef02",
+  "audit_id": "OLTEPTNATN1-20260928",
+  "audit_review_path": "evidence/OLP-0666-N1-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e91fe6689b9d12d3cb6fbeb613a231e39d5dcb181b54228fb5cb276e2eb2a052",
+  "audit_findings_path": "evidence/OLP-0666-N1-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "b51b5da725a3b0508f3f03e0d246e8b3fbfc1344ff92607366990ca1c3bf8fef",
+  "previous_corrections": 580,
+  "treatments": {
+    "OLTEPTNATN1-001": {
+      "target_line": 131,
+      "body_treatment": "అస్తిత్వ తొలగింపులో ఐగెన్ స్థిరాంకం పూర్వపక్షంలో తప్పనిసరిగా ఉన్నందున షరతును ఫలితం, తెరిచి మిగిలే ఉపపత్తులపై సరిచేసి ప్రకటించాం."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0667",
+  "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+  "source_sha256": "5ab9f486ec46f049b02af8cd9da4c08ce15664b45f1fe54fdf3d0a4d7600f1fa",
+  "audit_id": "OLTEPTNATN2-20260928",
+  "audit_review_path": "evidence/OLP-0667-N2-SOURCE-AUDIT.md",
+  "audit_review_sha256": "a9edc9faf377b15f4e0f666e5f18cfb16d3f6831c57b6af5c56449415f6c3bc3",
+  "audit_findings_path": "evidence/OLP-0667-N2-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4f27a997420ef1ebab1d8d299138f68ffcea24751c18c2bbd926d83b5025050b",
+  "previous_corrections": 581,
+  "treatments": {
+    "OLTEPTNATN2-001": {
+      "target_line": 106,
+      "body_treatment": "పట్టికతో సరిపోయేలా forall/exists మాక్రోలను lforall/lexistsగా సరిచేసి ప్రకటించాం."
+    }
+  }
+}

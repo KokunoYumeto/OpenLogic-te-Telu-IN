@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0711",
+  "source_path": "content/proof-theory/sequent-calculus/rules-proofs.tex",
+  "source_sha256": "ef1231f53bdbfff4b0cab8f4a96223632447f783e6cb85ac9e774dceba28b699",
+  "audit_id": "OLTEPTSEQRP-20260928",
+  "audit_review_path": "evidence/OLP-0711-RULES-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e5b83fee7494aacbdb38c9f6dbd06294083da753720d5251899cd0ecfa33f838",
+  "audit_findings_path": "evidence/OLP-0711-RULES-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2605cc75060391bace08e7e67e81d1e7a4f7a949cc6cce305bdfbd02b2925dd9",
+  "previous_corrections": 695,
+  "treatments": {
+    "OLTEPTSEQRP-001": {
+      "target_line": 79,
+      "body_treatment": "Describe height as the maximum number of inference steps/tree edges on an end-to-initial path, preserving the recursive definition and documenting the clarification."
+    },
+    "OLTEPTSEQRP-002": {
+      "target_line": 92,
+      "body_treatment": "Replace the second succedent D by E and disclose that only antecedent order changes."
+    }
+  }
+}

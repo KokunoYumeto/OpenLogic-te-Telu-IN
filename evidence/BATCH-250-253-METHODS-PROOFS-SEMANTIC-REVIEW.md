@@ -1,0 +1,5 @@
+# OLP-0601–0604 — Methods and proofs opening semantic review
+
+The Methods part heading/editorial and Proofs chapter heading retain their import graphs and hooks. The introductory proof discussion distinguishes formal derivations from natural-language mathematical proofs, preserves the four names for proved results (proposition, theorem, lemma, corollary), and explains that hypotheses constrain the claim rather than follow from it. Its example formulas and all protected source tokens pass bounded parity. The note that source proofs were written in English is localized explicitly as original English versus this Telugu rendering, without altering the point about natural language.
+
+The starting-proofs section keeps the pedagogical sequence: write the desired conclusion as a goal, mark usable assumptions as assumptions, understand relevant definitions, then choose a setup suited to the sentence form. It does not promote the goal to an assumption. All four units pass paragraph alignment, structure, identifier/token and math QA; this is not a TeX visual or independent pedagogy review.

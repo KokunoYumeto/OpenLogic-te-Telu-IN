@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "370",
+  "unit_id": "OLP-0721",
+  "unit_order": 721,
+  "source_path": "content/sets-functions-relations/sets/proofs-about-sets.tex",
+  "blocks": 16,
+  "linguistic_blocks": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10578,
+  "previous_terms": 410,
+  "expected_corrections": 703,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P008 సభ్యత్వం/ఉపసమితి/సమ్మేళనం/ఖండనం స్థానిక సమితి పదజాలం, TE-P024/025 నిరూపణ/నియమ ప్రయోగం పోల్చాం. శోషణ అనే ప్రత్యేక పేరుకు ఈ సూత్రమే స్థానిక అర్థ నియంత్రణ.",
+  "evidence_limit": "No independent full-text proof certificate; no TeX/layout build.",
+  "term_decision": {
+    "term_id": "TE-T411",
+    "source_term": "set absorption; elementwise proof; proof by cases",
+    "telugu": "సమితుల శోషణ; మూలకాలవారీ నిరూపణ; సందర్భాలవారీ నిరూపణ",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ఉభయ ఉపసమితి దిశలను వేర్వేరుగా ఉంచి శోషణ సమానత్వాన్ని మూలకాలవారీగా వివరిస్తుంది.",
+    "uncertainty": "No independent full-text proof certificate; no TeX/layout build.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

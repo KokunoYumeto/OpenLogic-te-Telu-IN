@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "358",
+  "unit_id": "OLP-0709",
+  "unit_order": 709,
+  "source_path": "content/proof-theory/sequent-calculus/rules-LK.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTSEQLK-001"
+    ]
+  },
+  "previous_segments": 10433,
+  "previous_terms": 398,
+  "expected_corrections": 692,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "వరుస/బహుసమితి భేదం, మార్పిడి నియమాలు, పట్టిక గద్యం పూర్వ సీక్వెంట్ పదజాలంతో పోల్చాం.",
+  "evidence_limit": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T399",
+    "source_term": "LK rules; sequence context; exchange; structural rule",
+    "telugu": "LK నియమాలు; వరుస సందర్భం; స్థాన మార్పిడి; నిర్మాణ నియమం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "క్రమం గల వరుస సందర్భాలు, వాటికి ప్రత్యేక మార్పిడి నియమాలు నిలిపాం.",
+    "uncertainty": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDISO-20260927",
+  "unit_id": "OLP-0551",
+  "source_path": "content/set-theory/ordinals/iso.tex",
+  "source_sha256": "eb57a72aed6e4ff2398fe8d9c52239c79d2578df37c5e4bb891568381a41cb39",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDISO-001",
+      "source_locator": "iso.tex line 134, lemma lemordsegments proof conclusion",
+      "classification": "isomorphism_range_misnamed_domain",
+      "source_issue": "The proof says f's domain is B_{b_2} after defining f : A_{a_2} -> B_{b_2}; B_{b_2} is its range/codomain.",
+      "minimal_treatment": "Say that f's range is B_{b_2}, preserving b_1 < b_2, and disclose adjacent to the translated line.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

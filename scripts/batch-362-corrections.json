@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0713",
+  "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+  "source_sha256": "9ae0e40622effab9a067226754c58eeac00c1e21b1ac899c9e2acdebbd12d92c",
+  "audit_id": "OLTEPTSEQTR-20260928",
+  "audit_review_path": "evidence/OLP-0713-SEQUENT-TRANSLATIONS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "d6832a2cc20270e2f189248e2db059d1f85873a3e814a5ad337c840c5698d400",
+  "audit_findings_path": "evidence/OLP-0713-SEQUENT-TRANSLATIONS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "85a77ef38d724e9899141736fbaa07ed4c1b4bbcfe085cb1849a36c27a75eb35",
+  "previous_corrections": 697,
+  "treatments": {
+    "OLTEPTSEQTR-001": {
+      "target_line": 22,
+      "body_treatment": "Attribute arbitrary identity axioms to G1c and preserve the G3c provability citation, with a reader-visible disclosure."
+    },
+    "OLTEPTSEQTR-002": {
+      "target_line": 24,
+      "body_treatment": "Remove the misdirected citation; explicitly weaken the missing conjunct/disjunct then apply the G3c rule, using the already cited G3c weakening admissibility."
+    },
+    "OLTEPTSEQTR-003": {
+      "target_line": 24,
+      "body_treatment": "Supply both bounded quantifier simulations: weaken in the principal before applying the G3c rule in the forward direction; apply G1c with the retained principal in context and contract the duplicate principal in the reverse direction (blocks 10 and 12)."
+    },
+    "OLTEPTSEQTR-004": {
+      "target_line": 68,
+      "body_treatment": "Delete the duplicated comma, preserving all formulas and rule labels."
+    }
+  }
+}

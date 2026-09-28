@@ -1,0 +1,49 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYSND-20260928",
+  "unit_id": "OLP-0694",
+  "source_path": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",
+  "source_sha256": "44525323721b70654bc19c745388c1ea8196fa4a2fe82c355799018bdeb6d705",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYSND-001",
+      "source_locator": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex lines 20–36, aligned block 8",
+      "classification": "conjunction_explanation_duplicate_operand",
+      "source_issue": "The opening prose has A and A, inconsistent with its generalized A,B rule displays.",
+      "minimal_treatment": "Align the second conjunct with B in both opening expressions.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A\\land!A$",
+          "$\\Gamma\\Sequent!A\\land!A$"
+        ],
+        "target_only": [
+          "$!A\\land!B$",
+          "$\\Gamma\\Sequent!A\\land!B$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYSND-002",
+      "source_locator": "content/proof-theory/propositions-as-types/sequent-natural-deduction.tex lines 115–126, aligned block 14",
+      "classification": "malformed_negation_proof_contexts",
+      "source_issue": "The last diagram has unclosed context parentheses and a stray implication symbol; these are not formulas.",
+      "minimal_treatment": "Keep the declared B assumption in each affected context, derive falsity twice, and discharge B only at the end.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A,!B\\lif\\fCenter\\lfalse$",
+          "$(!B\\fCenter!A\\lif\\lfalse$",
+          "$(!B\\fCenter!A\\lor(!A\\lif\\lfalse)$",
+          "$(!B\\fCenter!B$",
+          "$(!B\\fCenter\\lfalse$"
+        ],
+        "target_only": [
+          "$!A,!B\\fCenter\\lfalse$",
+          "$!B\\fCenter!A\\lif\\lfalse$",
+          "$!B\\fCenter!A\\lor(!A\\lif\\lfalse)$",
+          "$!B\\fCenter!B$",
+          "$!B\\fCenter\\lfalse$"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "316",
+  "unit_id": "OLP-0667",
+  "unit_order": 667,
+  "source_path": "content/proof-theory/natural-deduction/rules-N2.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTNATN2-001"
+    ]
+  },
+  "previous_segments": 9875,
+  "previous_terms": 356,
+  "expected_corrections": 582,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "N2c/N2i సీక్వెంట్ నియమ పట్టిక, గుర్తులతో కూడిన సూత్ర సందర్భాలు, ఐగెన్ స్థిరాంకం షరతు, పరిమాణీకరణిక మాక్రో పేర్లను మూలంతో పోల్చి ప్రకటితంగా సరిచేశాం.",
+  "evidence_limit": "పట్టిక వృక్షాలు యథాతథం; తెలుగు ప్రధానంగా శీర్షికలో ఉంది. పునరుక్త ఐగెన్ షరతును మూలానుసారం నిలిపాం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T357",
+    "source_term": "N2 sequent rules; labelled formulas; eigenvariable condition",
+    "telugu": "N2 సీక్వెంట్ నియమాలు; గుర్తులతో కూడిన సూత్రాలు; ఐగెన్ చరరాశి షరతు",
+    "status": "N2_rule_table_quantifier_macro_repaired",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సీక్వెంట్ సందర్భాలు, నియమ వృక్షాలు, ఐగెన్ షరతు నిలిచాయి; రెండు అసంగత పరిమాణీకరణిక మాక్రోలను పట్టికకు అనుగుణంగా సరిచేశాం.",
+    "uncertainty": "గుర్తులతో కూడిన సూత్రాలు భావపారదర్శక పదరూపం; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం.",
+    "borrowing": "N2c/N2i, Gamma indices and rule macros remain source-identifying."
+  }
+}

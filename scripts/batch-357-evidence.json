@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "357",
+  "unit_id": "OLP-0708",
+  "unit_order": 708,
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3i.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTSEQG3I-001",
+      "OLTEPTSEQG3I-002",
+      "OLTEPTSEQG3I-003",
+      "OLTEPTSEQG3I-004"
+    ]
+  },
+  "previous_segments": 10428,
+  "previous_terms": 397,
+  "expected_corrections": 691,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "అంతఃప్రజ్ఞావాద పట్టికను పూర్వ G1i పరిమితులతో పోల్చి వియోగ నియమం, కనిష్ఠ G1 పక్క గమనికను సమన్వయం చేశాం.",
+  "evidence_limit": "నేర పట్టిక/వ్యవస్థ పరిమితి తనిఖీ మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T398",
+    "source_term": "G3i rules; intuitionistic disjunction introduction; single succedent; eigenvariable freshness",
+    "telugu": "G3i నియమాలు; అంతఃప్రజ్ఞావాద వియోగ ప్రవేశం; ఒకే ఉత్తరపక్ష సూత్రం; స్వీయచర తాజాతనం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ప్రతి వియోగ ప్రవేశ రూపం ఒక్క ఆధార సూత్రం వాడుతుంది; పక్క గమనికలో వేరే వ్యవస్థను ఉద్దేశించిన గుర్తులు నిలిపాం.",
+    "uncertainty": "నేర పట్టిక/వ్యవస్థ పరిమితి తనిఖీ మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

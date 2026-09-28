@@ -1,0 +1,26 @@
+% Part: propositional-logic
+% Chapter: propositional-logic 
+% Section: soundness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pl}{prp}{snd}
+
+\olsection{ప్రతిపాదనా తర్కం యొక్క సార్థకత}
+
+\begin{thm}[సార్థకత]
+\ollabel{thm:soundness}
+$\Gamma\Proves!A$ అయితే $\Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+వ్యుత్పత్తిపై ఆగమనంతో నిరూపిస్తాం. $!A$ ఒక స్వయంసిద్ధమైతే, $\Entails !A$; అందువల్ల మరింత బలంగా $\Gamma \Entails!A$. అలాగే $!A \in \Gamma$ అయితే $\Gamma \Entails!A$. ఆగమన దశలో, $!C$, $!C\lif!A$ల నుంచి \emph{మోడస్ పోనెన్స్} ద్వారా $!A$ను పొందామని అనుకుందాం. ఆగమన పరికల్పనగా $!C\lif !A$, $!C$లకు సిద్ధాంతం వర్తిస్తుందని కూడా అనుకుందాం. \olref[sem]{prop:semanticalfacts}లోని మూడో అంశం కావలసిన ఫలితాన్ని ఇస్తుంది.
+\end{proof}
+
+\begin{cor}
+$\Gamma$ సంతృప్తిపరచదగినదైతే, $\Gamma$ సంగతమైనది. అందువల్ల ప్రతిపాదనా తర్కం సంగతమైనది.
+\end{cor}
+
+\end{document}

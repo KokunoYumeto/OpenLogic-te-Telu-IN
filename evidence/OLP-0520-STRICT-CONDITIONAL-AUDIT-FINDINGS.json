@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTECNTSTR-20260927",
+  "unit_id": "OLP-0520",
+  "source_path": "content/counterfactuals/introduction/strict-conditional.tex",
+  "source_sha256": "f3b34ead41eeafc7b73f9abd9c8936638dc8d7244943f7d649bf3cc01254062f",
+  "findings": [
+    {
+      "finding_id": "OLTECNTSTR-001",
+      "source_locator": "strict-conditional.tex initial align display, fifth entailment comparison",
+      "classification": "material_conditional_negation_false_nonentailment",
+      "source_issue": "The display claims non-entailment from the negation of a material conditional to antecedent and negated consequent, although those formulas are equivalent.",
+      "minimal_treatment": "Use the negation of the strict conditional in this comparison and disclose the one-symbol repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\lif!B)&\\Entails/!A\\land\\lnot!B\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)!A,!A\\strictif!B&\\Entails!B!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+        ],
+        "target_only": [
+          "\\begin{align}!A\\strictif!B&\\Entails\\lnot!A\\lor!B\\\\\\lnot!A\\lor!B&\\Entails/!A\\strictif!B\\\\!B&\\Entails/!A\\strictif!B\\\\\\lnot!A&\\Entails/!A\\strictif!B\\\\\\lnot(!A\\strictif!B)&\\Entails/!A\\land\\lnot!B\\\\!A\\land\\lnot!B&\\Entails\\lnot(!A\\strictif!B)!A,!A\\strictif!B&\\Entails!B!A\\strictif!B,!A\\strictif!C&\\Entails!A\\strictif(!B\\land!C)!A\\strictif!B&\\Entails(!A\\land!C)\\strictif!B!A\\strictif!B,!B\\strictif!C&\\Entails!A\\strictif!C!A\\strictif!B&\\Entails\\lnot!B\\strictif\\lnot!A\\\\\\lnot!B\\strictif\\lnot!A&\\Entails!A\\strictif!B\\end{align}"
+        ]
+      }
+    }
+  ]
+}

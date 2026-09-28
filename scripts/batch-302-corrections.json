@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0653",
+  "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+  "source_sha256": "12f6c3e97c59d1f37b73695f126c7c03cffc6fcbd659e6a21ab95437bd15ab9d",
+  "audit_id": "OLTEMODBASENSA-20260927",
+  "audit_review_path": "evidence/OLP-0653-NONSTANDARD-ARITHMETIC-SOURCE-AUDIT.md",
+  "audit_review_sha256": "821c4a1df4ec1deac3924e79f2289143ad4293b67b9f9871e306953af941c46f",
+  "audit_findings_path": "evidence/OLP-0653-NONSTANDARD-ARITHMETIC-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "bfc3a6bac434baaa29745aeb14dd1397aa5c66c028874fe07a4e4f19aa41b7e6",
+  "previous_corrections": 548,
+  "treatments": {
+    "OLTEMODBASENSA-001": {"target_line": 40, "body_treatment": "అంకగణిత భాషకు L_N/L అని మారిన మూల సంకేత అసంగతిని ప్రకటించాం."},
+    "OLTEMODBASENSA-002": {"target_line": 76, "body_treatment": "వేర్వేరు బ్లాక్‌ల మధ్య అవసరమైన x*<y ముగింపును ఇచ్చి మూలంలోని బలహీన పునరుక్తిని ప్రకటించాం."},
+    "OLTEMODBASENSA-003": {"target_line": 78, "body_treatment": "బ్లాక్‌ల క్రమానికి x,y వేర్వేరు బ్లాక్‌లలో ఉండాలనే షరతును జోడించి ప్రకటించాం."},
+    "OLTEMODBASENSA-004": {"target_line": 86, "body_treatment": "రెండుతో భాగించు వాక్యంలో అంతర్గత ప్రతి xను ఏదో xగా సరిచేసి ప్రకటించాం."}
+  }
+}

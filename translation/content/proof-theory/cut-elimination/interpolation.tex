@@ -1,0 +1,441 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: interpolation
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{itp}
+
+\olsection{మహేరా లెమ్మా, క్రెయిగ్ అంతర్వర్తన ప్రమేయం}
+
+విలియం క్రెయిగ్ ప్రతిపాదించిన అంతర్వర్తన ప్రమేయం ఇలా చెబుతుంది: $!A
+\Entails !B$ అయితే $!A \Entails !C$, $!C \Entails !B$ అయ్యే \tetoken{ఒక వాక్యం}{!!a{sentence}}~$!C$ (\emph{మధ్యవర్తి వాక్యం}) ఉంది. ముఖ్యంగా,~$!C$లో కనిపించే \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{విధేయ సంకేతాలు}{!!{predicate}s} అన్నీ~$!A$,~$!B$ రెండింటిలోనూ కనిపించేలా మధ్యవర్తి~$!C$ను ఎంచుకోవచ్చు. (ఇక్కడ \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేవని అనుకుంటాం.) ఈ పరిమితి లేకపోతే $!A$,~$!B$లనే మధ్యవర్తులుగా సులభంగా తీసుకోవచ్చు.
+
+అంతర్వర్తన ప్రమేయం సంప్రదాయ మొదటిస్థాయి తర్కానికి వర్తిస్తుంది; దాన్ని కనుగొన్న “మొదటిస్థాయి తర్కపు చివరి ముఖ్య లక్షణం” అని కూడా పిలిచారు. నమూనా సిద్ధాంతం, స్వయంచాలక తర్కంలో దానికి ముఖ్య అన్వయాలున్నాయి. ఒక సిద్ధాంతాన్ని ఏ ప్రాథమిక భావాలతో స్వీకృతీకరించవచ్చో, ఏవాటితో చేయలేమో అధ్యయనం చేయడానికి వాడగలగడం వల్ల విజ్ఞాన తత్వశాస్త్రం దాని అసలు ప్రేరణ, అన్వయ రంగం. అంతేగాక, ఒక సిద్ధాంతం ఏ భావాన్నైనా పరోక్షంగా నిర్వచించగలిగితే ప్రత్యక్షంగానూ నిర్వచించగలదని చెప్పే బెత్ నిర్వచనీయత ప్రమేయం కూడా దీని నుంచి వస్తుంది.
+
+గణిత తర్కంలోని అనేక ఫలితాలలాగే అంతర్వర్తన ప్రమేయాన్ని నమూనా సిద్ధాంత, నిరూపణ సిద్ధాంత పద్ధతులు రెండింటితోనూ నిరూపించవచ్చు. నిరూపణ సిద్ధాంత పద్ధతుల ప్రయోజనం ఏమిటంటే, అవి మధ్యవర్తి ఉనికిని చూపడమే కాక, $!A \Entails !B$కు గల \tetoken{ఒక నిరూపణ}{!!a{proof}} నుంచి మధ్యవర్తిని లెక్కించే అల్గోరిథాన్ని ఇస్తాయి; ఉదాహరణకు $!A \Sequent !B$కు~\Log{G3c}లో ఉన్న \tetoken{ఒక నిరూపణ}{!!a{proof}} నుంచి.
+
+$\Lang L(!A)$ అనేది~$!A$లోని \tetoken{స్థిరసంకేతాలు}{!!{constant}s}, \tetoken{విధేయ సంకేతాల}{!!{predicate}s} సమితి; $\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(!A)}{!A \in
+\Gamma}$ అనుకుందాం. ఈ విభాగమంతటా \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేని \tetoken{సూత్రాలనే}{!!{formula}s} పరిశీలిస్తాం.
+
+\begin{thm}[క్రెయిగ్ అంతర్వర్తన ప్రమేయం]\ollabel{thm:interpolation}
+$!A$ యొక్క \tetoken{భాష}{!!{language}} $\Lang L(!A)$, $!B$ది $\Lang L(!B)$ అనుకుందాం. $\Log{G3c} \Proves !A \Sequent !B$ అయితే $\Lang L(!C) \subseteq \Lang
+L(!A) \cap \Lang L(!B)$ \tetoken{భాషలో}{!!{language}} గల \tetoken{ఒక సూత్రం}{!!a{formula}}~$!C$ ఉంటుంది; దానికి $\Log{G3c} \Proves !A \Sequent !C$, $\Log{G3c} \Proves !C \Sequent !B$.
+\end{thm}
+
+~\Log{G3c}లోని \tetoken{నిరూపణల}{!!{proof}s} నిర్మాణాన్ని ఉపయోగించడానికి అంతర్వర్తన ప్రమేయం సాధారణీకరణాన్ని నిరూపిద్దాం. అందుకోసం సీక్వెంట్‌ల పూర్వాంగాలు, ఉత్తరాంగాలు రెండేసి భాగాలుగా విడిపోయినట్లు ఊహించండి. $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+\maeh{\Delta_1}{\Delta_2}$ అని రాస్తే $\Gamma_1$, $\Delta_1$ మొదటి భాగానికి, $\Gamma_2$, $\Delta_2$ రెండో భాగానికి చెందినవని అర్థం. అప్పుడు కింది లెమ్మా నుంచి అంతర్వర్తన ప్రమేయం వెంటనే వస్తుంది.
+
+\begin{lem}[మహేరా లెమ్మా]\ollabel{lem:maehara} $\Log{G3c}
+\Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$ అయితే $\Lang L(!C)
+\subseteq \Lang L(\Gamma_1,
+\Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$ \tetoken{భాషలో}{!!{language}} గల \tetoken{ఒక సూత్రం}{!!a{formula}}~$!C$ ఉంటుంది; దానికి $\Log{G3c}
+\Proves \Gamma_1 \Sequent \Delta_1, !C$, $\Log{G3c} \Proves !C,
+\Gamma_2 \Sequent \Delta_2$.
+\end{lem}
+
+\begin{proof}
+  $\pi \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ అనుకుందాం. $n=\pheight{\pi}$పై ఆగమన పద్ధతిలో వాదనను నిరూపిద్దాం.
+
+  $n=0$ అయితే $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ ఒక స్వీకృతం; ఏదో అణు \tetoken{సూత్రం}{!!{formula}}~$!A$ అనేది $\Gamma_1, \Gamma_2$లోనూ $\Delta_1,
+  \Delta_2$లోనూ ఉంటుంది. $!A$ ఎడమవైపు మొదటి లేదా రెండో భాగంలో, కుడివైపు మొదటి లేదా రెండో భాగంలో ఉండడాన్ని బట్టి నాలుగు సందర్భాలు.
+  \begin{enumerate}
+    \item $!A \in \Gamma_1$, $!A \in \Delta_1$. $\Gamma_1 \Sequent \Delta_1, !C$, $!C, \Gamma_2
+    \Sequent \Delta_2$ రెండూ \tetoken{నిరూపణీయాలు}{!!{provable}} అయ్యే~$!C$ కావాలి. $!A$ ఎడమ, కుడి రెండింటిలోనూ ఉంది కనుక మొదటిది~$!C$ను ఎలా ఎంచుకున్నా స్వీకృతమే. $!C, \Gamma_2 \Sequent \Delta_2$ \tetoken{నిరూపణీయం}{!!{provable}} కావడానికి హామీ ఇచ్చే ఎంపిక $!C \ident \lfalse$.
+    \item $!A \in \Gamma_1$, $!A \in \Delta_2$. అప్పుడు $\Gamma_1
+    \Sequent \Delta_1, !A$, $!A, \Gamma_2 \Sequent \Delta_2$ రెండూ స్వీకృతాలు; అందువల్ల $!C \ident !A$ ఎంచుకోవచ్చు.
+    \item $!A \in \Gamma_2$, $!A \in \Delta_1$. అప్పుడు $!A, \Gamma_1
+    \Sequent \Delta_1$, $\Gamma_2 \Sequent \Delta_2, !A$ స్వీకృతాలు, కానీ వాటిలో~$!A$ తప్పు వైపున ఉంది. కాబట్టి $!A$ మధ్యవర్తి కాదు. అయితే $\RightR{\lnot}$, $\LeftR{\lnot}$లతో $\Gamma_1
+    \Sequent \Delta_1, \lnot!A$, $\lnot !A, \Gamma_2 \Sequent
+    \Delta_2$లను \tetoken{నిరూపించవచ్చు}{!!{prove}}.
+    \item $!A \in \Gamma_2$, $!A \in \Delta_2$. సాధన.
+  \end{enumerate}
+  $\lfalse \in \Gamma_1$ లేదా $\lfalse \in \Gamma_2$ వల్ల $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ స్వీకృతమయ్యే సందర్భాలను సాధనలుగా వదిలేస్తాం.
+
+  $n>0$ అయితే $\pi$ ఒక తార్కిక నిగమనంతో ముగుస్తుంది. ఉపయోగించిన నియమం, ప్రధాన సూత్రం చెందిన భాగం బట్టి సందర్భాలను వేరుచేయాలి. ప్రతి సందర్భంలో $\pheight{\pi_1} < n$ గల అన్ని \tetoken{నిరూపణలకు}{!!{proof}s}~$\pi_1$, ~$\pi_1$ తుది సీక్వెంట్‌ను రెండు భాగాలుగా ఎలా విభజించినా, లెమ్మా వర్తిస్తుందనే ఆగమన పరికల్పనను ఉపయోగించవచ్చు. కొన్ని నిర్దిష్ట సందర్భాలను చూద్దాం.
+  \begin{enumerate}
+    \item $\pi$ చివర్లో ప్రధాన సూత్రం~$\lnot
+    !A$ గల $\RightR{\lnot}$ ఉంది. $\lnot !A$ మొదటి భాగానిదా, రెండవ భాగానిదా అనే రెండు సందర్భాల ప్రకారం $\pi$ ఇలా ముగుస్తుంది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lnot !A}{\Delta_2}$
+    \DisplayProof
+    \]
+    లేదా
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lnot !A}$
+    \DisplayProof
+    \]
+    ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$\lnot !A$ మొదటి భాగంలో ఉన్నప్పుడు, పూర్వాపేక్షలోని చురుకైన \tetoken{సూత్రం}{!!{formula}}~$!A$ను కూడా మొదటి భాగానికే కేటాయించామని గమనించండి. ఈ ఎంపిక మన చేతిలోనే ఉంది. చురుకైన సూత్రాన్ని మరొక భాగానికి కేటాయించినా ఆగమన పరికల్పన వర్తిస్తుంది; కానీ అప్పుడు మధ్యవర్తిని కనుగొనలేము (సాధన: ప్రయత్నించండి).
+
+    మొదటి సందర్భంలో $\lnot !A$ మొదటి భాగానికి చెందుతుంది. ఆగమన పరికల్పన ప్రకారం~$\pi_1$ తుది సీక్వెంట్‌కు ఒక మధ్యవర్తి, అంటే ఈ రెండూ నెరవేరే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!C_1$ ఉంది:
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{మరియు} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{ఇవి నిరూపణీయాలు. మనకు కావలసింది ఈ క్రింది రెండూ \tetoken{నిరూపణీయాలు}{!!{provable}} అయ్యే \tetoken{ఒక సూత్రం}{!!a{formula}}~$!C$:}
+    \Gamma_1 & \Sequent \Delta_1, \lnot !A, !C &&\text{మరియు} &
+    !C, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    స్పష్టంగా $!C \ident !C_1$నే తీసుకోవచ్చు: కుడి సీక్వెంట్ \tetoken{నిరూపణీయం}{!!{provable}} అని ఆగమన పరికల్పన ఇప్పటికే చెబుతుంది; ఎడమ సీక్వెంట్ దాని నుంచి లభించిన సీక్వెంట్‌కు~$\RightR{\lnot}$ వర్తింపజేస్తే వస్తుంది. అలాగే ఆగమన పరికల్పన $\Lang L(!C_1) \subseteq \Lang L(!A, \Gamma_1,
+    \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$ అని చెబుతుంది. $\Lang L(\lnot
+    !A) = \Lang L(!A)$, $\Lang L(!C) = \Lang L(!C_1)$ కనుక $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lnot !A) \cap \Lang
+    L(\Gamma_2, \Delta_2)$.
+
+
+    రెండో సందర్భం కొంత భిన్నం: $\lnot !A$ రెండో భాగానికి చెందుతుంది. పూర్వాపేక్షలోని చురుకైన \tetoken{సూత్రాన్ని}{!!{formula}} కూడా రెండో భాగానికే కేటాయించి, ఆగమన పరికల్పనను వర్తింపజేస్తాం:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{మరియు} &
+    !C_1, !A, \Gamma_2 & \Sequent \Delta_2
+    \intertext{ఇవి నిరూపణీయాలు. వీటిలో రెండవదానికి మళ్లీ \RightR{\lnot} వర్తింపజేస్తే కింది \tetoken{నిరూపణలు}{!!{proof}s} వస్తాయి:}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{మరియు} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, \lnot !A
+    \end{align*}
+    $!C_1$ మధ్యవర్తి అయితే ఇవే మనకు కావలసిన \tetoken{నిరూపణీయ}{!!{provable}} సీక్వెంట్‌లు; మళ్లీ $!C \ident !C_1$ ఎంచుకుంటాం. పూర్వంలాగే $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2,
+    \Delta_2, \lnot !A)$.
+    \item $\pi$ చివర్లో ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$!A
+    \lif !B$ గల $\RightR{\lif}$ ఉంది. $!A \lif !B$ మొదటి లేదా రెండో భాగానికి చెందడాన్ని బట్టి మళ్లీ రెండు సందర్భాలు. \tetoken{నిరూపణ}{!!{proof}}~$\pi$ ఇలా ముగుస్తుంది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{!A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !B}{\Delta_2}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A \lif !B}{\Delta_2}$
+    \DisplayProof
+    \]
+    లేదా
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{!A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !B}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A \lif !B}$
+    \DisplayProof
+    \]
+    మళ్లీ చురుకైన \tetoken{సూత్రాలను}{!!{formula}s} పూర్వాపేక్షలో ప్రధాన \tetoken{సూత్రం}{!!{formula}} ముగింపులో ఉన్న అదే భాగానికి కేటాయించాం. మొదటి సందర్భంలో ఆగమన పరికల్పన ద్వారా వీటికి \tetoken{నిరూపణలు}{!!{proof}s} వస్తాయి:
+    \begin{align*}
+    !A, \Gamma_1 & \Sequent \Delta_1, !B, !C_1 &&\text{మరియు} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{ఎడమ సీక్వెంట్ \RightR{\lif}కు సరైన పూర్వాపేక్ష. కాబట్టి కింది సీక్వెంట్‌లు \tetoken{నిరూపణీయాలు}{!!{provable}}:}
+    \Gamma_1 & \Sequent \Delta_1, !A \lif !B, !C_1 &&\text{మరియు} & !C_1, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    అందుచేత $!C_1$ అనేది~$\pi$ తుది సీక్వెంట్‌కు కూడా మధ్యవర్తి; మళ్లీ $!C \ident !C_1$ తీసుకోవచ్చు.
+    
+    మరొక సందర్భం కూడా అదే విధంగా సాగుతుంది.
+    \item $\pi$ చివర్లో ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$!A
+    \lif !B$ గల $\LeftR{\lif}$ ఉంది. $!A \lif !B$ మొదటి భాగానికి చెందితే \tetoken{నిరూపణ}{!!{proof}}~$\pi$ ఇలా ముగుస్తుంది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, !A}{\Delta_2}$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\maeh{!B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \BinaryInf$\maeh{!A \lif !B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \DisplayProof
+    \]
+    ఆగమన పరికల్పన ఎడమ పూర్వాపేక్ష మధ్యవర్తి $!C_1$కు రెండు, రెండో పూర్వాపేక్ష మధ్యవర్తి $!C_2$కు రెండు, మొత్తం నాలుగు \tetoken{నిరూపణీయ}{!!{provable}} సీక్వెంట్‌లను ఇస్తుంది:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !A, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2 && \text{(2)}\\
+    !B, \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    (1), (3)లను బలహీనీకరించి, (1) కుడివైపు $!C_2$ను, (3) కుడివైపు $!C_1$ను చేరిస్తే, అవి~\LeftR{\lif}కు పూర్వాపేక్షలవుతాయి:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !A, !C_1, !C_2$
+    \AxiomC{}
+    \Deduce$!B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1, !C_2$
+    \DisplayProof
+    \]
+    $\RightR{\lor}$ను వర్తింపజేస్తే ఈ సీక్వెంట్ వస్తుంది:
+    \[
+    !A \lif !B, \Gamma_1 \fCenter \Delta_1, !C_1 \lor !C_2
+    \]
+    కాబట్టి ఈ సందర్భంలో $!C_1 \lor !C_2$ మధ్యవర్తి కావచ్చని సూచిస్తుంది. నిజంగానే, మిగిలిన (2),~(4)ల నుంచి అవసరమైన మరొక సీక్వెంట్‌ను \tetoken{నిరూపించవచ్చు}{!!{prove}}:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, \Gamma_2 \fCenter \Delta_2$
+    \AxiomC{}
+    \Deduce$!C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lor}}
+    \BinaryInf$!C_1 \lor !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    $!C_1 \lor !C_2$ సరైన భాషలో ఉందని తనిఖీ చేయాలి. ఆగమన పరికల్పన ప్రకారం:
+    \begin{align*}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A) \cap \Lang L(\Gamma_2, \Delta_2) &\text{మరియు}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(!B, \Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{ఎందుకంటే}
+    \Lang L(!A) & \subseteq \Lang L(!A \lif !B) &\text{మరియు}\\
+    \Lang L(!B) & \subseteq \Lang L(!A \lif !B)
+    \intertext{రెండూ లభిస్తాయి:}
+    \Lang L(!C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2) &\text{మరియు}\\
+    \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{అందువల్ల $\Lang L (!C_1 \lor !C_2) = {}$}
+    \Lang L(!C_1) \cup \Lang L(!C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, !A \lif !B) \cap \Lang L(\Gamma_2, \Delta_2),
+    \end{align*}
+    ఇదే కావలసింది.
+
+    $!A \lif !B$ రెండో భాగానికి చెందిన సందర్భం భిన్నమైనా అదే తరహాలో సాగుతుంది. ఆగమన పరికల్పన మళ్లీ నాలుగు \tetoken{నిరూపణీయ}{!!{provable}} సీక్వెంట్‌లను ఇస్తుంది:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, !C_1 &&\text{(1)} &
+    !C_1, \Gamma_2 & \Sequent \Delta_2, !A && \text{(2)}\\
+    \Gamma_1 & \Sequent \Delta_1, !C_2 &&\text{(3)} &
+    !C_2, !B, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    ఇప్పుడు (2), (4) సీక్వెంట్‌లు—కొన్ని బలహీనీకరించిన \tetoken{సూత్రాలతో}{!!{formula}s}—\LeftR{\lif}కు పూర్వాపేక్షలవుతాయి:
+    \[
+    \AxiomC{}
+    \Deduce$!C_1, !C_2, \Gamma_2 \fCenter \Delta_2, !A$
+    \AxiomC{}
+    \Deduce$!B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, !C_1, !C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    దీన్నీ $!C_1$, $!C_2$ల నుంచి నిర్మించిన ఒకే \tetoken{సూత్రం}{!!{formula}} గల సీక్వెంట్‌గా మార్చాలి; కానీ ఇప్పుడు అది పూర్వాంగంలో కావాలి (రెండో భాగం గురించి మాట్లాడుతున్నాం కనుక). $\LeftR{\land}$ వర్తింపజేస్తే సరిపోతుంది; $!C \ident
+    (!C_1 \land !C_2)$ను మధ్యవర్తిగా తీసుకుందాం. మిగిలిన (1), (3)లను ఉపయోగించి మరొక భాగానికి అనుగుణ సీక్వెంట్‌ను \tetoken{నిరూపించవచ్చు}{!!{prove}}:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_1$
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, !C_2$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1 \fCenter \Delta_1, !C_1 \land !C_2$
+    \DisplayProof
+    \]
+    పూర్వంలాగే $\Lang L(!C_1 \land !C_2) \subseteq \Lang
+    L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2, !A \lif
+    !B)$.
+
+    \item $\pi$ చివర్లో ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$\lforall[x][!A(x)]$ గల $\RightR{\lforall}$ ఉంది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+    \maeh{\Delta_1, !A(c)}{\Delta_2}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lforall[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    లేదా
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, !A(c)}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lforall[x][!A(x)]}$
+    \DisplayProof
+    \]
+    మొదటి సందర్భంలో ఆగమన పరికల్పన $\Gamma_1 \Sequent \Delta_1, !A(c), !C_1$, $!C_1, \Gamma_2
+    \Sequent \Delta_2$లకు \tetoken{నిరూపణలు}{!!{proof}s} ఇస్తుంది. మొదటిదానికి $\RightR{\lforall}$ వర్తింపజేసి $\Gamma_1 \Sequent \Delta_1, \lforall[x][!A(x)], !C_1$ పొందవచ్చు. (ఈజెన్‌చరరాశి షరతు నెరవేరుతుంది;~$\pi$ చివరి \RightR{\lforall} నియమంలోనే అది నెరవేరింది.) అందువల్ల $\Lang
+    L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lforall[x][!A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$ షరతు నెరవేరితే $!C_1$ మధ్యవర్తి. ఆగమన పరికల్పన ప్రకారం $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1,
+    \Delta_1, !A(c)) \cap \Lang L(\Gamma_2, \Delta_2)$. కాబట్టి~$c$ గురించి ప్రశ్న: $c$ అనేది~$!C_1$లో కనిపించగలదా? కాదు. $c$ అనేది $!C_1$లో కనిపిస్తే $c \in \Lang L(\Gamma_1, \Delta_1,
+    !A(c))$ (ఇది నిజమే)తో పాటు $c \in \Lang L(\Gamma_2,
+    \Delta_2)$ కూడా ఉండాలి. అప్పుడు~$\pi$లోని $\RightR{\lforall}$ నిగమనం ముగింపులో $c$ కనిపించి, ఈజెన్‌చరరాశి షరతు ఉల్లంఘిస్తుంది.
+    
+    మరొక సందర్భం కూడా సదృశమే.
+
+    \item $\pi$ చివర్లో ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$\lexists[x][!A(x)]$ గల $\RightR{\lexists}$ ఉంది. మళ్లీ రెండు సందర్భాలున్నాయి. $\lexists[x][!A(x)]$ మొదటి భాగానికి చెందిన సందర్భాన్ని పరిశీలించి, రెండోదాన్ని సాధనగా వదిలేస్తాం.
+
+    మొదటి సందర్భంలో $\pi$ ఇలా ముగుస్తుంది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)], !A(t)}{\Delta_2}$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][!A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    ఆగమన పరికల్పన $\Gamma_1 \Sequent
+    \Delta_1, \lexists[x][!A(x)], !A(t), !C_1$, $!C_1, \Gamma_2
+    \Sequent \Delta_2$లకు \tetoken{నిరూపణలు}{!!{proof}s} ఇస్తుంది. మొదటిదానికి $\RightR{\lexists}$ వర్తింపజేసి $\Gamma_1 \Sequent \Delta_1, \lexists[x][!A(x)], !C_1$ పొందవచ్చు. కాబట్టి $\Lang L(!C_1) \subseteq \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$ నెరవేరితే $!C_1$ మళ్లీ మధ్యవర్తి. ఇక్కడ ఆగమన పరికల్పన $\Lang L(!C_1)
+    \subseteq \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)], !A(t))
+    \cap \Lang L(\Gamma_2, \Delta_2)$ను ఇస్తుంది. \tetoken{ప్రమేయ సంకేతాలు}{!!{function}s} లేవని అనుకున్నాం గుర్తుంచుకోండి. అందువల్ల పదం~$t$ చరరాశి లేదా \tetoken{ఒక స్థిరసంకేతం}{!!a{constant}} కావచ్చు. చరరాశి భాషా సంకేతాల సమితిలో చేరదు. పరిశీలించాల్సిన స్థిరసంకేత సందర్భంలో $t \ident b$. \sourcecorrection{OLTEPTCUTITP-005}{ప్రమేయ సంకేతాలు లేకపోయినా పదం చరరాశి కావచ్చు; మూలం స్థిరసంకేత సందర్భమే సాధ్యమని పేర్కొంది. చరరాశి అయితే అదనపు భాషా చిహ్నం రాదని వేరుచేశాం.} $b \notin \Lang L(!C_1)$ అయినా, లేదా $b \in \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)]) \cap
+    \Lang L(\Gamma_2, \Delta_2)$ అయినా సమస్య లేదు: $!C_1$నే మధ్యవర్తిగా తీసుకోవచ్చు. కానీ $b \in \Lang
+    L(!C_1)$, $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$ అయితే? మొదట~$!C_1$లోని $b$ సంభవాలన్నిటినీ \tetoken{ఒక చరరాశి}{!!a{variable}}~$y$తో భర్తీ చేస్తే $!C_1 \ident \Subst{!C_1'}{b}{y}$ అని రాయవచ్చు; ఇక్కడ~$!C_1'$లో $b$ ఉండదు. ఇంకా $b \notin
+    \Lang L(\Gamma_1, \Delta_1, \lexists[x][!A(x)])$ లేదా $b \notin
+    \Lang L(\Gamma_2, \Delta_2)$. వరుసగా $!C \ident
+    \lforall[y][!C_1'(y)]$ లేదా $!C \ident \lexists[y][!C_1'(y)]$ తీసుకోవచ్చు. మొదటి సందర్భంలో:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter \Delta_1, \lexists[x][!A(x)], !C_1'(b)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lforall[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    మరియు
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    ఎగువ సీక్వెంట్‌ల \tetoken{నిరూపణలు}{!!{proof}s} ఆగమన పరికల్పన నుంచి వస్తాయి (రెండోదానిలో పూర్వాంగానికి $\lforall[y][!C_1'(y)]$ చేర్చే బలహీనీకరణ అనుమతిత్వాన్ని వాడుతాం). మొదటి \tetoken{నిరూపణలో}{!!{proof}} \RightR{\lforall} ఈజెన్‌చరరాశి షరతు నెరవేరుతుంది, ఎందుకంటే $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][!A(x)])$; అంతేకాక~$!C_1'$లో $b$ ఉండకుండా నిర్వచించాం.
+    
+    రెండో సందర్భంలో (ఆగమన పరికల్పనతో పాటు~$\lexists[y][!C_1'(y)]$ ద్వారా బలహీనీకరణ అనుమతిత్వాన్ని ఉపయోగించి) ఇవి లభిస్తాయి:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], !A(b), \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)], !C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][!A(x)], \lexists[y][!C_1'(y)]$
+    \DisplayProof
+    \]
+    మరియు
+    \[
+    \AxiomC{}
+    \Deduce$!C_1'(b), \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lexists}}
+    \UnaryInf$\lexists[y][!C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    రెండో \tetoken{నిరూపణలో}{!!{proof}} \LeftR{\lexists} ఈజెన్‌చరరాశి షరతు నెరవేరుతుంది, ఎందుకంటే $b \notin \Lang L(\Gamma_2,
+    \Delta_2)$; అలాగే~$!C_1'$లో $b$ ఉండకుండా నిర్వచించాం.
+  \end{enumerate}
+  మిగిలిన సందర్భాలు సదృశం; వాటిని సాధనలుగా వదిలేస్తాం.
+\end{proof}
+
+\begin{prob}
+$\lnand$ అనే సంయోజకానికి ఈ నియమాలు ఉన్నాయనుకుందాం:
+\[
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$\Gamma \fCenter \Delta, !B$
+\RightLabel{\LeftR{\lnand}}
+\BinaryInf$!A \lnand !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\quad
+\Axiom$!A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnand}}
+\UnaryInf$\Gamma \fCenter \Delta, !A \lnand !B$
+\DisplayProof
+\]
+$\pi$ ఈ నియమాల్లో ఒకదానితో ముగిసే \olref{lem:maehara} నిరూపణ సందర్భాలను పూర్తి చేసి, మహేరా లెమ్మా ఇంకా వర్తిస్తుందని చూపండి.
+\end{prob}
+
+మహేరా లెమ్మా స్థాపించాం కనుక దాన్ని క్రెయిగ్ అంతర్వర్తన ప్రమేయాన్ని నిరూపించడానికి ఉపయోగించవచ్చు.
+
+\begin{proof}[\olref{thm:interpolation} నిరూపణ]
+  $!A \Sequent !B$ \tetoken{నిరూపణీయం}{!!{provable}} అనుకుందాం. $\maeh{!A}{\ } \Sequent \maeh{\ }{!B}$కు \olref{lem:maehara} వర్తింపజేసి మధ్యవర్తి~$!C$ను పొందండి. అప్పుడు $\Proves !A \Sequent !C$, $\Proves !C
+  \Sequent !B$.
+\end{proof}
+
+$\Gamma$ అనేది $n$-స్థాన {విధేయం}~$R$ కలిగిన \tetoken{ఒక భాష}{!!a{language}}~$\Lang L$లోని ఒక సిద్ధాంతం (\tetoken{వాక్యాల}{!!{sentence}s} సమితి) అనుకుందాం. $\Gamma$~$R$ను \emph{పరోక్షంగా నిర్వచిస్తుంది} అంటే:
+\begin{align*}
+\Gamma, \Gamma'
+& \Entails \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff
+R'(x_1, \dots, x_n))]],
+\intertext{ఇక్కడ $\Gamma'$ అనేది $\Gamma$లోని~$R$ అన్ని సంభవాలను $R' \notin \Lang L$తో భర్తీ చేస్తే వచ్చేది. $\Gamma$~$R$ను \emph{ప్రత్యక్షంగా నిర్వచిస్తుంది} అంటే,~$R$ లేని ఏదో~$!A(x_1, \dots, x_n)$ ఉండి}
+\Gamma &\Entails
+\lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1,
+\dots, x_n))]].
+\end{align*}
+$\Gamma$~$R$ను ప్రత్యక్షంగా నిర్వచిస్తే~$R$ను పరోక్షంగానూ నిర్వచిస్తుందని స్పష్టం. దీనికి విపర్యయం అంత స్పష్టంగా కనిపించకపోయినా నిజమే:
+
+\begin{lem}[బెత్ నిర్వచనీయత ప్రమేయం]
+  $\Gamma$~$R$ను పరోక్షంగా నిర్వచిస్తే ప్రత్యక్షంగానూ నిర్వచిస్తుంది.
+\end{lem}
+
+\begin{proof}
+  $\Gamma$~$R$ను పరోక్షంగా నిర్వచిస్తుందనుకుందాం. పైన చెప్పినట్లే $R'$, $\Gamma'$ తీసుకుని $\Lang L' = \Lang L \setminus \{R\}
+  \cup \{R'\}$ అనుకుందాం. \sourcecorrection{OLTEPTCUTITP-006}{మూలం $\Lang L(\Gamma')=\Lang L'$ అని చెప్పింది; కానీ నిర్వచించిన $\Lang L(\Gamma')$లో నిజంగా కనిపించే సంకేతాలే ఉంటాయి. సిద్ధాంతం అన్ని భాషా సంకేతాలను ఉపయోగించాలనే షరతు లేదు; ఇక్కడ అవసరమైనది $\Gamma'$ లక్ష్య భాషలో ఉండడమే.} పరికల్పన ప్రకారం:
+  \begin{align*}
+    \Gamma, \Gamma' &
+    \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n)
+    \liff R'(x_1, \dots, x_n))]]
+  \intertext{~$\Gamma$లో కనిపించని \tetoken{స్థిరసంకేతాలు}{!!{constant}s} $c_1$, \dots,~$c_n$ తీసుకోండి. విలోమయోగ్యత లెమ్మా ప్రకారం:}
+    \Gamma, \Gamma', R(c_1,\dots,c_n) & \Sequent  R'(c_1, \dots, c_n)
+  \intertext{దీనికి మహేరా లెమ్మా వర్తింపజేయండి:}
+    \maeh{\Gamma, R(c_1,\dots,c_n)}{\Gamma'} & \Sequent
+      \maeh{\ }{R'(c_1, \dots, c_n)}
+  \intertext{అప్పుడు $!A \ident !A(x_1, \dots, x_n)$ దొరుకుతుంది; దానికి:}
+    \Gamma, R(c_1,\dots,c_n) & \Sequent !A(c_1, \dots, c_n) \\
+    !A(c_1, \dots, c_n), \Gamma' & \Sequent R'(c_1, \dots, c_n)
+  \intertext{వీటికి \tetoken{నిరూపణలు}{!!{proof}s} ఉన్నాయి. మహేరా భాషా పరిమితి, తాజా స్థిరసంకేతాలను చరరాశులుగా మార్చడం వల్ల $\Lang L(!A) \subseteq \Lang L(\Gamma) \setminus \{R\}$; కాబట్టి~$!A$లో $R$ లేదు. రెండో సీక్వెంట్ \tetoken{నిరూపణ}{!!{proof}}లో ప్రతిచోటా $R'$ స్థానంలో~$R$ను పెట్టి దీనికి \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందండి:}
+    !A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
+  \end{align*}
+  \sourcecorrection{OLTEPTCUTITP-001}{మూలంలోని $\Lang L(!A)=\Lang L_1\cap\Lang L_2=\Lang L(\Gamma)\setminus\{R\}$ సమానతలో $L_1,L_2$ నిర్వచించబడలేదు; మహేరా లెమ్మా సమితి ఉపసమితి సంబంధాన్నే ఇస్తుంది. తాజా స్థిరసంకేతాలను చరాలుగా మార్చాక సరిపడే ఉపసమితి సంబంధాన్ని ఇక్కడ పేర్కొన్నాం.}
+  \RightR{\lif}, \RightR{\lforall}లను వర్తింపజేసి దీనికి \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందండి:
+  \[
+    \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff !A(x_1, \dots, x_n))]].
+  \]
+  ఇది $!A(x_1, \dots, x_n)$ అనేది~$\Gamma$లో $R$ను ప్రత్యక్షంగా నిర్వచిస్తుందని చూపుతుంది.
+  \sourcecorrection{OLTEPTCUTITP-002}{చివరి వాక్యంలో మూలం విధేయ సంకేతం $R$ను అనవసరమైన ఆశ్చర్యార్థ చిహ్నంతో $!R$గా రాసింది; నిర్వచనంలోని సంకేతం $R$గా సరిచేశాం.}
+\end{proof}
+
+అంతర్వర్తనకు సమానమైన (దానిలాగే మహేరా లెమ్మాతో నిరూపించగల) మూడో ఫలితం ఇది: రెండు అవైరుధ్య సిద్ధాంతాలు~$\Gamma_1$, $\Gamma_2$ ఉమ్మడి భాష $\Lang L(\Gamma) = \Lang L(\Gamma_1)
+\cap \Lang L(\Gamma_2)$లోని సంపూర్ణ సిద్ధాంతం $\Gamma$ను కలిగి ఉంటే, $\Gamma_1 \cup \Gamma_2$ అవైరుధ్యం.
+\sourcecorrection{OLTEPTCUTITP-003}{మూలం ఇక్కడ ఉమ్మడి భాషతో సమానతకు బదులు ఉపసమితి షరతు మాత్రమే ఇచ్చింది. కానీ వెంట వచ్చే వాదన ఉమ్మడి భాషలోని ప్రతి వాక్యానికి $\Gamma$ సంపూర్ణతను వర్తింపజేస్తుంది; దానికి పూర్తి ఉమ్మడి భాష కావాలి.}
+
+సంపూర్ణ సిద్ధాంతం అంటే దాని భాషలోని ప్రతి \tetoken{వాక్యం}{!!{sentence}}~$!A$కు $\Gamma \Proves !A$ లేదా $\Gamma \Proves \lnot !A$ ఉండే సిద్ధాంతం అని గుర్తుంచుకోండి. $\Gamma_1$,~$\Gamma_2$లు~$\Gamma$ యొక్క అవైరుధ్య విస్తరణలు కనుక $\Gamma$ అవైరుధ్యమే. ఇప్పుడు ఉమ్మడి భాష $\Lang L(\Gamma_1) \cap \Lang
+L(\Gamma_2)$లో \tetoken{ఒక వాక్యం}{!!a{sentence}}~$!A$ తీసుకుని $\Gamma_1 \Entails !A$, $\Gamma_2
+\Entails \lnot !A$ రెండూ నెరవేరే అలాంటి~$!A$ ఉందని విరుద్ధార్థం అనుకుందాం. $\Gamma$ సంపూర్ణత వల్ల $\Gamma \Entails !A$ లేదా $\Gamma \Entails \lnot !A$. రెండోది అయితే $\Gamma \subseteq \Gamma_1$ కనుక $\Gamma_1 \Entails \lnot !A$ కూడా వచ్చి $\Gamma_1$ అవైరుధ్యానికి విరుద్ధం. అందువల్ల $\Gamma \Entails !A$. $\Gamma
+\subseteq \Gamma_2$ కనుక $\Gamma_2 \Entails !A$; ఇది $\Gamma_2 \Entails \lnot !A$తో కలిపి $\Gamma_2$ అవైరుధ్యానికి విరుద్ధం.
+\sourcecorrection{OLTEPTCUTITP-004}{మూల వాదన $\Gamma_1$ నుంచి $!A$ అనుగమిస్తే $\Gamma$ నుంచి కూడా అనుగమిస్తుందని నేరుగా చెప్పింది; ఈ తిరుగు అనుగమనం సాధారణంగా చెల్లదు. సంపూర్ణతలోని రెండు ప్రత్యామ్నాయాలను పరీక్షించి, చివర్లో $\Gamma_2$ అవైరుధ్యానికి విరుద్ధతను చూపే క్రమాన్ని సరిచేశాం.}
+
+ఉమ్మడి \tetoken{భాష}{!!{language}}~$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$లో $\Gamma_1
+\Entails !A$, $\Gamma_2 \Entails \lnot !A$ అయ్యే \tetoken{వాక్యం}{!!a{sentence}}~$!A$ ఏదీ లేకపోవడమే కింది నిరూపణకు అవసరం. దాన్ని మహేరా లెమ్మాతో నిరూపణ-సిద్ధాంత పద్ధతిలో ఇస్తాం.
+
+\begin{thm}[రాబిన్సన్ సంయుక్త అవైరుధ్య ప్రమేయం]
+$\Gamma_1$, $\Gamma_2$ అవైరుధ్య సిద్ధాంతాలనుకుందాం. \tetoken{భాష}{!!{language}} $\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$లోని ఏ~$!A$కూ $\Gamma_1 \Entails !A$, $\Gamma_2 \Entails \lnot !A$ రెండూ నిజం కావనుకుందాం. అప్పుడు $\Gamma_1 \cup \Gamma_2$ అవైరుధ్యం.
+\end{thm}
+
+\begin{proof}
+  విరుద్ధంగా $\Gamma_1 \cup \Gamma_2$ వైరుధ్యమని అనుకుందాం. అప్పుడు $\Gamma_1, \Gamma_2 \Sequent \ $ సీక్వెంట్‌కు \tetoken{ఒక నిరూపణ}{!!a{proof}} ఉంటుంది. $\maeh{\Gamma_1}{\Gamma_2}
+  \Sequent \maeh{\ }{\ }$కు మహేరా లెమ్మా వర్తింపజేస్తే ఉమ్మడి \tetoken{భాష}{!!{language}}~$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$లో \tetoken{ఒక వాక్యం}{!!a{sentence}}~$!A$ దొరుకుతుంది; దానికి $\Proves \Gamma_1 \Sequent !A$, $\Proves !A, \Gamma_2 \Sequent
+  \quad$. రెండవదాని నుంచి $\Proves \Gamma_2 \Sequent \lnot !A$ వస్తుంది. కానీ అలాంటి \tetoken{వాక్యం}{!!{sentence}} ఉండదని అనుకున్నాం.
+\end{proof}
+
+పైన $\Gamma$, $\Gamma_1$, $\Gamma_2$ సిద్ధాంతాలు పరిమితమైనవని మౌనంగా అనుకున్నాం. సంహతత్వం వల్ల ఫలితాలు అపరిమిత సిద్ధాంతాలకూ వర్తిస్తాయి.
+
+\end{document}
+

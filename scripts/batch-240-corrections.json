@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0591",
+  "source_path": "content/set-theory/card-arithmetic/fix.tex",
+  "source_sha256": "cc111d7d7472b0e7ef940196977faef0f1b2867feaab0a74843e9d39077f5074",
+  "audit_id": "OLTESTCARDFIX-20260927",
+  "audit_review_path": "evidence/OLP-0591-ALEPH-BETH-FIXED-POINTS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "e77e13ac8b9f9b302b686cbacf2b2b1e25fa1a95872e97f522202d933b4174bb",
+  "audit_findings_path": "evidence/OLP-0591-ALEPH-BETH-FIXED-POINTS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2f90c412a75add434041cffd5c8ddb0295cfbc843c6b5fa485cec7e8995fb2c2",
+  "previous_corrections": 506,
+  "treatments": {
+    "OLTESTCARDFIX-001": {"target_line": 106, "body_treatment": "టౌ ప్రారంభాన్ని కార్డినల్ ఉత్తరవర్తిగా మార్చి ప్రతి సమితి కార్డినాలిటీ కంటే కఠినంగా పెద్ద బెత్-స్థిర బిందువు నిర్మించాం."},
+    "OLTESTCARDFIX-002": {"target_line": 107, "body_treatment": "W ప్రారంభాన్ని శూన్యం నుంచి టౌ(0)కు మార్చి అన్ని సూచికల్లో బెత్-స్థిర బిందు లక్ష్యాన్ని, వెడల్పు-ఎత్తు వాదనను నిలిపాం."}
+  }
+}

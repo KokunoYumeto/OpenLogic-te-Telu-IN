@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "153",
+  "unit_id": "OLP-0504",
+  "unit_order": 504,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+  "blocks": 12,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11],
+  "previous_segments": 7598,
+  "previous_terms": 193,
+  "expected_corrections": 461,
+  "canon_default": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+  "corrections_by_block": {"10": ["OLTEINTSAX-001"]},
+  "consultation_phase": "స్థిర స్వీకృతాధారిత నిర్దుష్టత మూలం, తెలుగు లక్ష్యం, పూర్వ నిర్దుష్టత/స్వీకృత/వ్యుత్పత్తి పదాలు, స్థానిక తర్క/వ్యుత్పత్తి/నిరూపణ సాక్షులు ఎదురెదురు చూశాం; పొడవుపై ఆగమనం, మూడు కారణ కేసులు, స్వావర్తన ఆధారిత MP కేసు, మూల అదనపు సత్య-వాదన లోపం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/024/025/026 సాధారణ తర్క/వ్యుత్పత్తి/నిరూపణ రిజిస్టర్లకు మాత్రమే సాక్షులు. అన్ని స్వీకృతాలు చెల్లుబాటవుతాయని మూలమే ఇంకా నిరూపించాల్సిన అనుబంధంగా చెబుతుంది; సాక్షులు దాన్ని స్థాపించవు.",
+  "term_decision": {
+    "term_id": "TE-T194",
+    "source_term": "soundness of axiomatic derivations / induction on derivation length / axiom, premise and modus ponens cases",
+    "telugu": "స్వీకృతాధారిత వ్యుత్పత్తుల నిర్దుష్టత / వ్యుత్పత్తి పొడవుపై ఆగమనం / స్వీకృత, పూర్వాపేక్ష, మోదుస్ పోనెన్స్ కేసులు",
+    "status": "native_general_proof_logic_register_attested_intuitionistic_soundness_source_controlled_one_disclosed_notation_repair",
+    "passages": ["TE-P018", "TE-P024", "TE-P025", "TE-P026"],
+    "basis": "పూర్వ నిర్దుష్టత పదం, వ్యుత్పత్తి పొడవు ఆగమనం, n=0 శూన్యసత్యం, మూడు కారణాలు, R స్వావర్తనంపై MP నిర్ణయం నిలిచాయి; ఒక స్థానిక సత్య సంకేతం అదనపు వాదనను ప్రకటించి సరిచేశాం.",
+    "uncertainty": "స్వీకృతాల అంతఃప్రజ్ఞావాద చెల్లుబాటు నిరూపణ మూల సంపాదకీయ గమనిక ప్రకారం ఇంకా అవసరం; ఇక్కడ దాన్ని నిరూపించినట్లు చెప్పలేదు. పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "MP is retained as a source macro; mathematical notation and labels are source-controlled."
+  }
+}

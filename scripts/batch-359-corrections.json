@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0710",
+  "source_path": "content/proof-theory/sequent-calculus/rules-mG3i.tex",
+  "source_sha256": "47a378e14f141af32aa2dd70a066166b587f0c649d4bfaed5921e96789af73d4",
+  "audit_id": "OLTEPTSEQMG3I-20260928",
+  "audit_review_path": "evidence/OLP-0710-MG3I-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "144babb10392400fc6c8d6c2c221a9bec8624314c7dd912f15000dfeb55088a6",
+  "audit_findings_path": "evidence/OLP-0710-MG3I-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "2311fe289dbd97149d14257ad9372d6aea1485c276dad389b3398e0f06f52bb0",
+  "previous_corrections": 692,
+  "treatments": {
+    "OLTEPTSEQMG3I-001": {
+      "target_line": 81,
+      "body_treatment": "Insert the context separator."
+    },
+    "OLTEPTSEQMG3I-002": {
+      "target_line": 82,
+      "body_treatment": "Retain the names as an attributed source remark and disclose the unresolved definition/reference; do not invent or certify a minimal-system definition."
+    },
+    "OLTEPTSEQMG3I-003": {
+      "target_line": 83,
+      "body_treatment": "Give this table its own tab:mG3i label."
+    }
+  }
+}

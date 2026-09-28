@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "325",
+  "unit_id": "OLP-0676",
+  "unit_order": 676,
+  "source_path": "content/proof-theory/normalization/reductions.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "corrections_by_block": {"8": ["OLTEPTNORRED-001"]},
+  "previous_segments": 9988,
+  "previous_terms": 365,
+  "expected_corrections": 606,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "తగ్గింపు/పక్కదారి పరివర్తన, ఉపనిరూపణ ప్రతిస్థాపన, అత్యంత కుడివైపు కట్, కొత్త కట్‌ల తక్కువ స్థాయి, అసత్యం నుంచి తొలగింపు సందర్భాన్ని మూలంతో పోల్చాం.",
+  "evidence_limit": "నిరూపణ వృక్షాలు, పట్టిక మూలానుసారంగా ఉంచాం; దృశ్య TeX తనిఖీ ఇంకా లేదు. నిరూపణలోని స్థానిక నాలుగవ ఉపనిరూపణ అసంగతి ప్రకటిత సవరణ.",
+  "term_decision": {
+    "term_id": "TE-T366",
+    "source_term": "reduction conversion; detour conversion; rightmost maximal cut",
+    "telugu": "తగ్గింపు పరివర్తన; పక్కదారి పరివర్తన; అత్యంత కుడివైపు గరిష్ఠ కట్",
+    "status": "reductions_source_reference_repaired",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "స్థానమార్పుతో భిన్నమైన తగ్గింపు పరివర్తన, ఉపనిరూపణ ప్రతిస్థాపన, కొత్త కట్‌ల స్థాయి, అసత్య ప్రవేశానికి జాగ్రత్త వంటి అంశాలు వేర్వేరుగా నిలిచాయి.",
+    "uncertainty": "సాంకేతిక పదాలకు ప్రత్యక్ష ప్రమాణిత తెలుగు నిఘంటు సాక్ష్యం పరిమితం; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "N1i, derivation labels and substitution notation remain source-identifying."
+  }
+}

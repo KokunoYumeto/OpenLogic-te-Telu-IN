@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "195",
+  "unit_id": "OLP-0546",
+  "unit_order": 546,
+  "source_path": "content/set-theory/z/arbintersections.tex",
+  "blocks": 8,
+  "linguistic_blocks": [3, 4, 5, 6, 7],
+  "previous_segments": 8103,
+  "previous_terms": 235,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర ఛేదన అనుబంధ మూలం, తెలుగు లక్ష్యం, పూర్వ ఛేదనం/సంవృతం/ధర్మసంగ్రహం పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; తరగతి-సమితి వ్యత్యాసం, S సాక్షిపై వేరుచేయడం, సంవృత ఉదాహరణ, వ్యాఖ్యానిత నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/ఛేదనం/సూత్ర పదాలకు మాత్రమే సాక్షులు; డెడెకిండ్ సంవృత ప్రత్యేక భావం మూల నిర్వచనాధీనం. మూలంలోని వ్యాఖ్యానిత నిరూపణ చివర c అనే చిన్న అక్షర దోషాన్ని అనువాద వ్యాఖ్యలోనూ నిలిపి గమనికలో ప్రకటించాం; ఇది పాఠక PDFలో ముద్రించబడదు. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T236",
+    "source_term": "closure via arbitrary intersection / separation-based bounded definition",
+    "telugu": "సర్వసామాన్య ఛేదనం ద్వారా సంవృతం / వేరుచేయడంపై ఆధారిత పరిమిత నిర్వచనం",
+    "status": "definition_controlled_set_operation_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "అపరిమిత ధర్మసంగ్రహం ఇచ్చే తరగతి సమితి కాకపోవచ్చు; phi(S) గల S లభించినప్పుడు వేరుచేయడంతో Cను నిర్వచించి అదే సభ్యత్వ ద్విసోపాధికాన్ని పొందడం, డెడెకిండ్ సంవృతానికి ran(f)∪{o} సాక్షి నిలిచాయి.",
+    "uncertainty": "వ్యాఖ్యానిత మూల నిరూపణలో c/C లిప్యంతరణ లోపం ఉంది; పాఠక పాఠ్యంపై ప్రభావం లేదు. ప్రత్యేక సంవృత పదానికి ప్రత్యక్ష సాక్షి లేదు.",
+    "borrowing": "Closure macro, labels, C/S/f/o variables and displayed formulas remain source-controlled."
+  }
+}

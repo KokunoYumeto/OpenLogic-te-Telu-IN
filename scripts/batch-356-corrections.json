@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0707",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+  "source_sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d",
+  "audit_id": "OLTEPTSEQG3C-20260928",
+  "audit_review_path": "evidence/OLP-0707-G3C-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "dee830b2f063fb001ca1a5a0d50f70e3022ce5c92458a3b36f3302bdadd8e736",
+  "audit_findings_path": "evidence/OLP-0707-G3C-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "eebed44487bd5b519bbc7b067f79e3c45ad19abd8b28b6760cb57f93f4c5ac73",
+  "previous_corrections": 686,
+  "treatments": {
+    "OLTEPTSEQG3C-001": {
+      "target_line": 80,
+      "body_treatment": "Insert the context separator."
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "362",
+  "unit_id": "OLP-0713",
+  "unit_order": 713,
+  "source_path": "content/proof-theory/sequent-calculus/translations.tex",
+  "blocks": 13,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "corrections_by_block": {
+    "9": [
+      "OLTEPTSEQTR-001"
+    ],
+    "10": [
+      "OLTEPTSEQTR-002",
+      "OLTEPTSEQTR-003"
+    ],
+    "12": [
+      "OLTEPTSEQTR-004"
+    ]
+  },
+  "previous_segments": 10467,
+  "previous_terms": 402,
+  "expected_corrections": 701,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P024 నియమం/వ్యుత్పత్తి, TE-P025 నిరూపణ ప్రయోగాలను పోల్చాం; వ్యవస్థల మధ్య అనుకరణ, నిలుపుకున్న ప్రధాన సూత్రం పదాల అర్థాన్ని స్థానిక నియమ పట్టికలు నియంత్రిస్తాయి.",
+  "evidence_limit": "Specialist compounds have local definitional support, not full direct canon attestation; structural checks do not certify all preceding admissibility proofs. No TeX/layout verification.",
+  "term_decision": {
+    "term_id": "TE-T403",
+    "source_term": "proof transformation; rule simulation; retained principal formula",
+    "telugu": "నిరూపణ రూపాంతరం; నియమ అనుకరణ; నిలుపుకున్న ప్రధాన సూత్రం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "రూపాంతరం అనేది నిరూపణను మరో వ్యవస్థ నిరూపణగా నిర్మించే ప్రక్రియ; అనుకరణ అనేది నియమానికి బదులు చెల్లుబాటయ్యే నియమ శ్రేణి. ప్రాథమిక స్థానిక పదజాలంతో నిర్వచన నియంత్రిత సంయుక్త పదాలు.",
+    "uncertainty": "Specialist compounds have local definitional support, not full direct canon attestation; structural checks do not certify all preceding admissibility proofs. No TeX/layout verification.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

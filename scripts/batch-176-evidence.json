@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "176",
+  "unit_id": "OLP-0527",
+  "unit_order": 527,
+  "source_path": "content/counterfactuals/minimal-change-semantics/transitivity.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 7883,
+  "previous_terms": 216,
+  "expected_corrections": 478,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P021"],
+  "corrections_by_block": {"10": ["OLTECNTTRA-001"]},
+  "consultation_phase": "స్థిర ప్రతివాస్తవ సంక్రామకత్వ మూలం, తెలుగు లక్ష్యం, పూర్వ భౌతిక/ప్రతివాస్తవ గొలుసు పదాలు, స్థానిక తర్క సాక్షులు ఎదురెదురు చూశాం; హూవర్ మూడు వాక్యాల వాదన, మూడు లోకాల $p,q,r$ విలువలు, రెండు అభ్యాసాలు, ఒక చిత్ర అభ్యాసం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/021 సాధారణ తర్క/సోపాధిక పదాలకు మాత్రమే సాక్షులు. చారిత్రక-రాజకీయ ఊహలను మూల పాదగమనిక పరిమితితోనే అనువదించాం; స్వతంత్ర చరిత్ర తనిఖీ లేదు. సత్య సంకేత సవరణ నమూనా విలువల ప్రత్యక్ష పోలిక ఆధారితం; స్వతంత్ర నిపుణ సమీక్ష లేదు.",
+  "term_decision": {
+    "term_id": "TE-T217",
+    "source_term": "counterfactual transitivity / chain rule / sphere counterexample",
+    "telugu": "ప్రతివాస్తవ సంక్రామకత్వం / గొలుసు నియమం / గోళ ప్రతిదృష్టాంతం",
+    "status": "definition_and_three_world_valuation_controlled_one_disclosed_satisfaction_sign_repair",
+    "passages": ["TE-P018", "TE-P019", "TE-P021"],
+    "basis": "భౌతిక సోపాధిక గొలుసు నియమం, హూవర్ వాదనలో పూర్వాపేక్షలు/ముగింపు భేదం, మూడు లోకాల గోళ ప్రతినమూనా నిలిచాయి; $q \\lif r$ అన్ని సముచిత లోకాల వద్ద సత్యమనే మూల గద్యానికి విరుద్ధమైన అసత్య సంకేతాన్ని ప్రకటించి సరిచేశాం.",
+    "uncertainty": "చారిత్రక-రాజకీయ పరికల్పనలు మూల ఉపమానం మాత్రమే; స్వతంత్ర ధృవీకరణ లేదు. సంకేత సవరణ అదే ఏజెంట్ సత్యమూల్య తనిఖీ ఆధారితం.",
+    "borrowing": "Hoover and Stalnaker/Lewis names are transliterated; p/q/r and sphere notation remain source-controlled."
+  }
+}

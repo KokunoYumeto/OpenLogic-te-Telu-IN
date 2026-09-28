@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0590",
+  "source_path": "content/set-theory/card-arithmetic/ch.tex",
+  "source_sha256": "b1bdee185ce2a21eeba54cce52ebec13154b54b77a6652820ad4f7ac61e8b212",
+  "audit_id": "OLTESTCARDCH-20260927",
+  "audit_review_path": "evidence/OLP-0590-CONTINUUM-HYPOTHESIS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "b93d6e4f76388f10185bb9139c4e71ca17d1c7dc0ca40fa09224486385b8f290",
+  "audit_findings_path": "evidence/OLP-0590-CONTINUUM-HYPOTHESIS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "efa4bd25040b07b4119d852e45a0595813be21dc9ee01ecceb61b07b460f7e9c",
+  "previous_corrections": 503,
+  "treatments": {
+    "OLTESTCARDCH-001": {"target_line": 26, "body_treatment": "పునరావృత్తి స్థిర కార్డినల్ సంఖ్య నిర్వచనాన్ని కాదు, ఆలెఫ్/బెత్ శ్రేణుల నిర్వచనాన్ని పూర్తిచేస్తుందని చెప్పాం."},
+    "OLTESTCARDCH-002": {"target_line": 55, "body_treatment": "ఒమేగా ఆధార సందర్భం, అనంత పూర్వ కార్డినల్ పరిమితి, సూచిక ఏకైకత్వ కారణం చేర్చి లోపాన్ని ప్రకటించాం."},
+    "OLTESTCARDCH-003": {"target_line": 67, "body_treatment": "GCH ఘాత సరిహద్దును అనంత ఆధారం, శూన్యం కాని చిన్న ఘాతానికి పరిమితం చేసి శూన్య మినహాయింపును ప్రకటించాం."}
+  }
+}

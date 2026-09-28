@@ -1,0 +1,96 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTITP-20260927",
+  "unit_id": "OLP-0658",
+  "source_path": "content/proof-theory/cut-elimination/interpolation.tex",
+  "source_sha256": "e2b64e1d701f79c2cb40f57cee8ace532bd2fe6f6f9ec597c0ecbc77fda9104e",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTITP-001",
+      "source_locator": "interpolation.tex lines 532–541, Beth proof language step",
+      "classification": "undefined_languages_and_overstrong_equality",
+      "source_issue": "The proof uses undefined L_1 and L_2 and asserts an equality for the interpolant language, whereas Maehara's lemma supplies an inclusion. After abstracting fresh constants, inclusion in L(Gamma) without R is the needed claim.",
+      "minimal_treatment": "State the sufficient inclusion and disclose the weakened, defined language bound.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\LangL(!A)=\\LangL_1\\cap\\LangL_2=\\LangL(\\Gamma)\\setminus\\{R\\}$"
+        ],
+        "target_only": [
+          "$\\LangL(!A)\\subseteq\\LangL(\\Gamma)\\setminus\\{R\\}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTITP-002",
+      "source_locator": "interpolation.tex line 545, final Beth proof sentence",
+      "classification": "predicate_marker_typo",
+      "source_issue": "The conclusion writes !R although the defined predicate symbol throughout the section is R.",
+      "minimal_treatment": "Use R in the target sentence and disclose the notation correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!R$"
+        ],
+        "target_only": [
+          "$R$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTITP-003",
+      "source_locator": "interpolation.tex lines 546–551, complete shared theory sufficient condition",
+      "classification": "shared_language_hypothesis_too_weak",
+      "source_issue": "The source asks only that L(Gamma) be a subset of the common language, but then applies completeness of Gamma to every sentence of the whole common language. A complete theory in a smaller language need not decide such sentences.",
+      "minimal_treatment": "Require equality with the shared language in this sufficient condition and disclose the strengthened hypothesis.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\LangL(\\Gamma)\\subseteq\\LangL(\\Gamma_1)\\cap\\LangL(\\Gamma_2)$"
+        ],
+        "target_only": [
+          "$\\LangL(\\Gamma)=\\LangL(\\Gamma_1)\\cap\\LangL(\\Gamma_2)$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTITP-004",
+      "source_locator": "interpolation.tex lines 553–571, complete-theory consistency argument",
+      "classification": "reverse_entailment_and_wrong_final_theory",
+      "source_issue": "Gamma_1 entailing A does not by itself imply Gamma entailing A. Completeness of Gamma plus consistency of Gamma_1 rules out the alternative Gamma entails not-A; Gamma_2 then entails A, contradicting its assumed entailment of not-A and consistency. The source's final non-entailment is about Gamma instead.",
+      "minimal_treatment": "Give the correct two-case completeness argument and disclose the reversed step and final-theory repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma\\Entails/\\lnot!A$",
+          "$\\Gamma_1\\Entails!A$"
+        ],
+        "target_only": [
+          "$\\Gamma_2\\Entails\\lnot!A$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTITP-005",
+      "source_locator": "interpolation.tex lines 393–402, existential-right term case",
+      "classification": "variable_term_case_omitted",
+      "source_issue": "Without function symbols, a term may be a variable as well as a constant. Only the constant case creates a new language-symbol concern.",
+      "minimal_treatment": "Mention the harmless variable case and retain the source's constant case with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTITP-006",
+      "source_locator": "interpolation.tex lines 514–518, Beth proof primed language",
+      "classification": "ambient_language_confused_with_symbols_used",
+      "source_issue": "The section defines L(Gamma') as symbols actually occurring in Gamma'. A theory in L-prime need not use every symbol of the ambient language, so L(Gamma') = L-prime is unwarranted.",
+      "minimal_treatment": "Define the ambient L-prime without asserting equality to L(Gamma') and disclose the distinction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\LangL'=\\LangL(\\Gamma')=\\LangL\\setminus\\{R\\}\\cup\\{R'\\}$"
+        ],
+        "target_only": [
+          "$\\LangL'=\\LangL\\setminus\\{R\\}\\cup\\{R'\\}$"
+        ]
+      }
+    }
+  ]
+}

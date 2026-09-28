@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0506",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/lindenbaum.tex",
+  "source_sha256": "5e3dd8b221efdfdeeba716e58f220b9c623a2ea317d4033365f6d2e1a21d34be",
+  "audit_id": "OLTEINTLIN-20260927",
+  "audit_review_path": "evidence/OLP-0506-LINDENBAUM-SOURCE-AUDIT.md",
+  "audit_review_sha256": "8ddf1ece70dc368cb0db4357ace5759d9c56b8c2f2ce5ae2d84aae07e70ad989",
+  "audit_findings_path": "evidence/OLP-0506-LINDENBAUM-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "b178155bd2ed811ec8d3f9ffcb2cbbdac6bf91a072dae71296b1afd97464b3d7",
+  "previous_corrections": 464,
+  "treatments": {
+    "OLTEINTLIN-001": {"target_line": 147, "body_treatment": "పరిమిత మద్దతు ఖాళీ అయితే సూచికల గరిష్ఠం నిర్వచితం కాకపోవడాన్ని మొదటి దశను ఎంచుకొని పక్కనే ప్రకటించి సరిచేశాం."},
+    "OLTEINTLIN-002": {"target_line": 189, "body_treatment": "మొత్తం అర్హ వియోజనాల సంఖ్య తగ్గుతుందనే అప్రమాణ వాదనకు బదులు స్థిర సూచికకు ముందున్న పరిమిత సూచికల ఒక్కసారి ఎంపిక కారణాన్ని వాడి ప్రకటించాం."}
+  }
+}

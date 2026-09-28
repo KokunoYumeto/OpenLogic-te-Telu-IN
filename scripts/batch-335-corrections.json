@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0686",
+  "source_path": "content/proof-theory/propositions-as-types/introduction.tex",
+  "source_sha256": "d1e4e979af0f251cc4e7d93d8f32e4e0b9e2e8b71e349b0deecfa78649f460c9",
+  "audit_id": "OLTEPTPTYINT-20260928",
+  "audit_review_path": "evidence/OLP-0686-PROPOSITIONS-AS-TYPES-INTRO-SOURCE-AUDIT.md",
+  "audit_review_sha256": "cc57de9644ee91d338f92b05bef139b68edf6174321481edb1946e36b968d3cf",
+  "audit_findings_path": "evidence/OLP-0686-PROPOSITIONS-AS-TYPES-INTRO-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "b59ebd9390120e2fd5378a157aa0d93536a66e955250bacb37e39f71223e379b",
+  "previous_corrections": 627,
+  "treatments": {
+    "OLTEPTPTYINT-001": {
+      "target_line": 67,
+      "body_treatment": "ప్రదర్శిత పద నిర్మాణాన్ని పక్కనున్న నిర్వచనానికి అనుగుణంగా ప్రయోగ పదంగా పేర్కొని మూల పదభేదాన్ని ప్రకటించాం."
+    }
+  }
+}

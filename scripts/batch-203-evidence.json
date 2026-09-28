@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "203",
+  "unit_id": "OLP-0554",
+  "unit_order": 554,
+  "source_path": "content/set-theory/ordinals/replacement.tex",
+  "blocks": 12,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "previous_segments": 8215,
+  "previous_terms": 243,
+  "expected_corrections": 483,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018", "TE-P027"],
+  "consultation_phase": "స్థిర ప్రతిస్థాపన మూలం, తెలుగు లక్ష్యం, పూర్వ వేరుచేయడం/పదం/ప్రమేయం పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; ఏకైక y షరతు, రెండు పథక రూపాలు, పద-చిత్ర పర్యవసానం, సమితి-ప్రమేయంతో భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018/027 సాధారణ సమితి/సూత్ర/పదం/ప్రమేయం పదాలకు మాత్రమే సాక్షులు; ప్రతిస్థాపన స్వీకృత పథకం మూల సూత్ర నియంత్రితం. Z-minusలో సమితి-ప్రమేయ చిత్రం లభ్యత స్థానిక పాదగమనిక ఆధారితం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T244",
+    "source_term": "Scheme of Replacement / functional formula / term image versus set function image",
+    "telugu": "ప్రతిస్థాపన స్వీకృత పథకం / ఏకైక చిత్రం సూత్రం / పదపు చిత్రం, సమితి-ప్రమేయ చిత్రం భేదం",
+    "status": "definition_controlled_logic_set_function_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018", "TE-P027"],
+    "basis": "ప్రతి xకు ఏకైక y ఉండే సూత్రంపై చిత్రం సమితి ఉనికి, B లేని రూపం, పద τ(x) పర్యవసానం, పదం సమితి-ప్రమేయానికి పేరుకావలసిన అవసరం లేని కీలక భేదం నిలిచాయి.",
+    "uncertainty": "సమితి సిద్ధాంత ప్రతిస్థాపన ప్రత్యేక పదానికి ప్రత్యక్ష తెలుగు సాక్షి లేదు; మూల పథకం అర్థాన్ని నియంత్రిస్తుంది.",
+    "borrowing": "Replacement formula macros, tau notation, references and Z-minus symbol remain source-controlled."
+  }
+}

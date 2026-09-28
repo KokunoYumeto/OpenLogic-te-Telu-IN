@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0560",
+  "source_path": "content/set-theory/spine/recursion.tex",
+  "source_sha256": "e9b5fe7b4ab133bc97d234aabd8dae2412e91bbeeb9c785b4a8112ba1e1a0510",
+  "audit_id": "OLTESTSPINREC-20260927",
+  "audit_review_path": "evidence/OLP-0560-TRANSFINITE-RECURSION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "f6d3651468ebad14e7048d8b46372b7da0c6620b073157ee49b6aad4f7e6fa36",
+  "audit_findings_path": "evidence/OLP-0560-TRANSFINITE-RECURSION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "5d359faca970a907dfa8de206b37cbc2034d7e525a9f4ff77b7d2e56ccf6382c",
+  "previous_corrections": 485,
+  "treatments": {
+    "OLTESTSPINREC-001": {
+      "target_line": 212,
+      "body_treatment": "సహాయక xi పదంలో శూన్య ప్రమేయానికి విలువ ఇవ్వడానికి మొదటి శాఖలో శూన్య నిర్వచన సమితి సందర్భం చేర్చి సవరణను ప్రకటించాం."
+    }
+  }
+}

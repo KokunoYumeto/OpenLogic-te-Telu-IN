@@ -1,0 +1,33 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTINVL-20260927",
+  "unit_id": "OLP-0655",
+  "source_path": "content/proof-theory/cut-elimination/ce-largest.tex",
+  "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTINVL-001",
+      "source_locator": "ce-largest.tex lines 291–303, conjunction exercise",
+      "classification": "exercise_points_to_wrong_lemma",
+      "source_issue": "The exercise asks for the conjunction case of the invertibility lemma, but its displayed CutCS inference and lower-rank replacement claim are the conjunction case of the maximal-cut reduction lemma.",
+      "minimal_treatment": "Retain the source reference and disclose the mismatch immediately after the exercise.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEPTCUTINVL-002",
+      "source_locator": "ce-largest.tex lines 310–315, lead-in to final theorem",
+      "classification": "maximal_rank_reduction_misattributed",
+      "source_issue": "The paragraph credits lem:cut-adm-G3c with replacing a maximal-rank cut by lower-rank cuts, although the lemma just established for this purpose is lem:max-cut-red-G3c.",
+      "minimal_treatment": "Retain the source reference and disclose the attribution discrepancy adjacent to the paragraph.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEPTCUTINVL-003",
+      "source_locator": "ce-largest.tex lines 122–129, atomic principal-axiom case",
+      "classification": "succedent_context_self_reference",
+      "source_issue": "The equation Delta = Delta, A is self-referential and does not support the very next sequent, which uses Delta-prime. The axiom case requires Delta = Delta-prime, A.",
+      "minimal_treatment": "Use Delta-prime in the target equation and disclose the one-symbol source repair alongside it.",
+      "expected_core_math_delta": {"source_only": ["$\\Delta=\\Delta,!A$"], "target_only": ["$\\Delta=\\Delta',!A$"]}
+    }
+  ]
+}

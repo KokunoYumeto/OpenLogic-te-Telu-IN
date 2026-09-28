@@ -1,0 +1,113 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATG2I-20260928",
+  "unit_id": "OLP-0670",
+  "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+  "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATG2I-001",
+      "source_locator": "translation-G2i.tex lines 29–33, proof's source calculus",
+      "classification": "wrong_source_calculus_name",
+      "source_issue": "The proof names G2ci although the proposition and all rule cases are about G2i with Cut.",
+      "minimal_treatment": "Use G2i consistently and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-002",
+      "source_locator": "translation-G2i.tex lines 39–48, induction hypothesis target calculus",
+      "classification": "wrong_target_calculus_name",
+      "source_issue": "The induction hypothesis is said to produce N2c proofs even though the proposition and construction target N2i.",
+      "minimal_treatment": "Use N2i and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-003",
+      "source_locator": "translation-G2i.tex lines 61–72, left-weakening diagram",
+      "classification": "wrong_weakening_side_label",
+      "source_issue": "The diagram adds A to the antecedent but labels the inference right weakening.",
+      "minimal_treatment": "Label it left weakening and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$\\Gamma\\fCenter\\Delta$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!A,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-004",
+      "source_locator": "translation-G2i.tex lines 84–99, contraction construction",
+      "classification": "wrong_derivation_object_for_relabelling",
+      "source_issue": "The source tries to replace labelled formulas in G2i derivation π1, but the labels occur in the induced N2i derivation δ1.",
+      "minimal_treatment": "Name the induced derivation δ1 and perform all replacements there; disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$",
+          "$\\pi_1$"
+        ],
+        "target_only": [
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$",
+          "$\\delta_1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-005",
+      "source_locator": "translation-G2i.tex lines 101–107, implication-right construction",
+      "classification": "reversed_construction_direction",
+      "source_issue": "The source says to take δ1 as δ plus implication introduction, reversing the inductive construction.",
+      "minimal_treatment": "Apply implication introduction to δ1 to obtain δ; disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-006",
+      "source_locator": "translation-G2i.tex lines 118–144, implication-left construction",
+      "classification": "wrong_derivation_for_relabelling_and_missing_context",
+      "source_issue": "The source relabels π1 rather than the induced N2i derivation δ1 and the auxiliary implication-elimination tree omits Γ1′ from its conclusion context.",
+      "minimal_treatment": "Relabel δ1 and include Γ1′ in the auxiliary tree conclusion; disclose both local repairs.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\pi_1$",
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B\\fCenter!B$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\delta_1$",
+          "\\[\\Axiom$x:!A\\lif!B\\fCenter!A\\lif!B$\\AxiomC{}\\RightLabel{$\\delta_1$}\\Deduce$\\Gamma_1'\\fCenter!A$\\RightLabel{\\Elim{\\lif}}\\BinaryInf$x:!A\\lif!B,\\Gamma_1'\\fCenter!B$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATG2I-007",
+      "source_locator": "translation-G2i.tex lines 148–159, conjunction-right construction",
+      "classification": "wrong_second_conjunct_and_relabel_target",
+      "source_issue": "The second inductive derivation is described as proving A instead of B, and discharge labels are renamed in G2i π2 rather than N2i δ2.",
+      "minimal_treatment": "Use B for the second conclusion and relabel δ2; disclose the repairs.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma_2'\\Sequent!A$",
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\Gamma_2'\\Sequent!B$",
+          "$\\delta_2$"
+        ]
+      }
+    }
+  ]
+}

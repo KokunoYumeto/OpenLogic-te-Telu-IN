@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "227",
+  "unit_id": "OLP-0578",
+  "unit_order": 578,
+  "source_path": "content/set-theory/ord-arithmetic/multiplication.tex",
+  "blocks": 19,
+  "linguistic_blocks": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+  "corrections_by_block": {"10": ["OLTESTORDMULT-001"]},
+  "previous_segments": 8525,
+  "previous_terms": 267,
+  "expected_corrections": 496,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "క్రమసంఖ్య గుణకార స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ విచ్ఛిన్న సమ్మేళనం/విలోమ నిఘంటు క్రమం/కూడిక పదాలు, స్థానిక సంఖ్య/క్రమ/సమితి సాక్షులు ఎదురెదురు చూశాం; కార్టీషియన్ క్రమరకం, శూన్య/ఉత్తరవర్తి/సీమా సమీకరణాలు, సహచర్య/వితరణ ధర్మాలు, అక్రమమార్పిడి ఉదాహరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సంఖ్య/క్రమ/సమితి/తర్క పదాలకు మాత్రమే సాక్షులు; క్రమసంఖ్య గుణకార ప్రత్యేక నిర్వచనం మూల సూత్ర నియంత్రితం. మూల సీమా శాఖ శూన్య ఎడమ గుణక లోపం OLTESTORDMULT-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T268",
+    "source_term": "ordinal multiplication; reverse lexicographic product; left distributivity",
+    "telugu": "క్రమసంఖ్య గుణకారం; విలోమ నిఘంటు గుణితం; ఎడమ వితరణ ధర్మం",
+    "status": "ordinal_product_definition_controlled_number_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ప్రతి beta మూలకం స్థానంలో alpha ప్రతితో క్రమరకం, పునరావృత్త సమీకరణాలు, ఐదు ధర్మాలు, 2×omega/omega×2 భేదం నిలిచాయి.",
+    "uncertainty": "వితరణ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల సమీకరణ నియంత్రణ. సీమా సమీకరణం శూన్య ఎడమ గుణకానికి మినహాయింపుగా సవరించబడింది.",
+    "borrowing": "Ordinal-product and order relation macros remain source-controlled."
+  }
+}

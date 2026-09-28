@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "258",
+  "unit_id": "OLP-0609",
+  "unit_order": 609,
+  "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+  "blocks": 22,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,14,15,16,17,18,19,20,21],
+  "corrections_by_block": {"9": ["OLTEMTHPRFCON-001"], "14": ["OLTEMTHPRFCON-002"]},
+  "previous_segments": 9015,
+  "previous_terms": 298,
+  "expected_corrections": 526,
+  "canon_default": ["TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "వైరుధ్య నిరూపణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ద్వినిషేధం/బహిష్కృత మధ్యమ/ఉపసమితి పదాలు, స్థానిక తర్క-నిరూపణ సాక్షులు పోల్చాం; ప్రతికూల నిష్కర్షకు సానుకూల తాత్కాలిక పరికల్పన, సానుకూల నిష్కర్షకు సాంప్రదాయిక ద్వినిషేధ నిర్మూలన, మూడు సమితి ఉదాహరణల్లో వైరుధ్య స్థానం తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ తర్క, నిరూపణ వాడుకకు ఆధారం; సాంప్రదాయిక/అంతఃప్రజ్ఞావాద పరిమితి మూల-తర్క విషయంపై నిర్ధారించబడింది. రెండు మూల సవరణలు ప్రకటించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T299","source_term":"proof by contradiction; indirect proof; classical double-negation elimination","telugu":"వైరుధ్యం ద్వారా నిరూపణ; పరోక్ష నిరూపణ; సాంప్రదాయిక ద్వినిషేధ నిర్మూలన","status":"negative_refutation_positive_classical_indirect_proof_and_set_examples_source_controlled_two_disclosures","passages":["TE-P004","TE-P018","TE-P024","TE-P025"],"basis":"ప్రతికూల వాదనకు దాని సానుకూల విరుద్ధాన్ని తీసుకోవడం, సానుకూల వాదనకు ¬p నుంచి వైరుధ్యం చేసి ¬¬p పొందిన తరువాత సాంప్రదాయికంగా pకు చేరడం, సమితి ఉదాహరణల్లో స్థిర పరికల్పనలు-తాత్కాలిక పరికల్పన భేదం నిలిచాయి.","uncertainty":"ద్వినిషేధ నిర్మూలన సాధారణ చెల్లుబాటుకు సాంప్రదాయిక పరిధి అవసరం; ప్రత్యేక తెలుగు పదానికి ప్రత్యక్ష స్థానిక సాక్షి పరిమితం.","borrowing":"p, q, A, B, C and TeX logical/set notation remain source-controlled; protected element tokens preserved."}
+}

@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESIZEOFSETSCHAPTER-20260928",
+  "unit_id": "OLP-0722",
+  "source_path": "content/sets-functions-relations/size-of-sets/size-of-sets.tex",
+  "source_sha256": "1b755d63c0edd2bf25f5f07187bf39da92895ff846a16a59d579227124ef116b",
+  "findings": []
+}

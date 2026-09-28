@@ -1,0 +1,71 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTTOP-20260927",
+  "unit_id": "OLP-0656",
+  "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+  "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTTOP-001",
+      "source_locator": "ce-topmost.tex lines 98–110, alternative Case A",
+      "classification": "wrong_premise_proof_named",
+      "source_issue": "When the right cut premise is the axiom and A occurs in Delta, the proof ending in Gamma ⇒ Delta-prime,A,A is the left premise pi_1, not pi_2.",
+      "minimal_treatment": "Use pi_1 in the target and disclose the corrected premise label.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\pi_2$"
+        ],
+        "target_only": [
+          "$\\pi_1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTTOP-002",
+      "source_locator": "ce-topmost.tex line 437, disjunction principal case",
+      "classification": "undefined_cut_rank_macro",
+      "source_issue": "The source uses cutr although the section defined cutrank for this measure; no cutr macro declaration was found in the frozen source.",
+      "minimal_treatment": "Use cutrank in the target inequality and disclose the macro correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$<\\cutr{\\pi}$"
+        ],
+        "target_only": [
+          "$<\\cutrank{\\pi}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTTOP-003",
+      "source_locator": "ce-topmost.tex lines 594–618, final implication example",
+      "classification": "cut_conclusion_retains_cut_formula",
+      "source_issue": "The lower displayed CutCS cuts on B, so its conclusion must omit B. The source diagram keeps B in the lower conclusion.",
+      "minimal_treatment": "Remove B from that conclusion in the target diagram and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2'$}\\Deduce$\\Gamma\\fCenter\\Delta,!B$\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_1''$}\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2'$}\\Deduce$\\Gamma\\fCenter\\Delta,!B$\\AxiomC{}\\RightLabel{$\\pi_1'$}\\Deduce$!B,\\Gamma\\fCenter\\Delta,!C$\\AxiomC{}\\RightLabel{$\\pi_2''$}\\Deduce$!C,\\Gamma\\fCenter\\Delta$\\RightLabel{\\CutCS}\\BinaryInf$!B,\\Gamma\\fCenter\\Delta$\\RightSubproofLabel{$\\pi_1''$}\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTTOP-004",
+      "source_locator": "ce-topmost.tex lines 323 and 352, two-premise Case D",
+      "classification": "delta_context_duplicated_in_proof_trees",
+      "source_issue": "The two displayed sequents use Delta while adjoining explicit copies of B∧C; the surrounding derivation and premises require Delta-prime so the contexts line up without an extra B∧C.",
+      "minimal_treatment": "Use Delta-prime at the two diagram positions and disclose both local repairs.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma\\fCenter\\Delta,!B\\land!C,!C,!A$\\AxiomC{}\\RightLabel{$\\pi_4'$}\\Deduce$!A,\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_5$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!B$\\AxiomC{}\\RightLabel{$\\pi_6$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma\\fCenter\\Delta,!B\\land!C,!B\\land!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1''$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C,!A$\\AxiomC{}\\RightLabel{$\\pi_4'$}\\Deduce$!A,\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\CutCS}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\DisplayProof\\]",
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_5$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!B$\\AxiomC{}\\RightLabel{$\\pi_6$}\\Deduce$\\Gamma\\fCenter\\Delta',!B\\land!C,!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma\\fCenter\\Delta',!B\\land!C,!B\\land!C$\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

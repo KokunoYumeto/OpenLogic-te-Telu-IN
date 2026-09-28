@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0562",
+  "source_path": "content/set-theory/spine/foundation.tex",
+  "source_sha256": "18d5d41a2becf13c6d5221d1c3504ea8300d96d85572c8848ed22bfc7ea321a5",
+  "audit_id": "OLTESTSPINFOUND-20260927",
+  "audit_review_path": "evidence/OLP-0562-FOUNDATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "76b5a568541f6fdbec2284e436b81e0012caadd881cc16ba7769ae60762eac56",
+  "audit_findings_path": "evidence/OLP-0562-FOUNDATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "e136fb7154476ac87d19027a6ce367e4c1bd7b23f91a5d3ababc6dc05886cfa0",
+  "previous_corrections": 486,
+  "treatments": {
+    "OLTESTSPINFOUND-001": {
+      "target_line": 66,
+      "body_treatment": "నిర్వచించని చిన్న b స్థానంలో ముందే ఎంచుకున్న B సమితి సభ్యులపై సుప్రీమాన్ని తీసుకున్నాం."
+    }
+  }
+}

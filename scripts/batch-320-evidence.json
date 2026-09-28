@@ -1,0 +1,51 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "320",
+  "unit_id": "OLP-0671",
+  "unit_order": 671,
+  "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+  "blocks": 10,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "corrections_by_block": {
+    "6": [
+      "OLTEPTNATN2I-001"
+    ],
+    "9": [
+      "OLTEPTNATN2I-002",
+      "OLTEPTNATN2I-003",
+      "OLTEPTNATN2I-004"
+    ]
+  },
+  "previous_segments": 9931,
+  "previous_terms": 360,
+  "expected_corrections": 601,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "N2 నుంచి G2కి గుర్తుల తొలగింపు, ఖాళీ ఫలితభాగం, అన్వయ ప్రవేశ/తొలగింపు, సాంప్రదాయిక అసత్య నియమం సందర్భాలను స్థిర మూలంతో పోల్చాం; నాలుగు లోపాలు పక్కనే ప్రకటించాం.",
+  "evidence_limit": "బహుసమితి పదం భావానువాదం; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. మూలం పేర్కొన్న సందర్భాలకే వాదన పరిమితం; ఇతర నియమాలకు స్వతంత్ర నిరూపణ లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T361",
+    "source_term": "N2-to-G2 translation; label erasure; empty succedent; classical absurdity",
+    "telugu": "N2 నుంచి G2కి అనువాదం; గుర్తుల తొలగింపు; ఖాళీ ఫలితభాగం; సాంప్రదాయిక అసత్య నియమం",
+    "status": "N2_G2_translation_four_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "గుర్తు గల సందర్భం నుంచి బహుసమితికి మార్పు, ఖాళీ ఫలితభాగ ప్రత్యేక సందర్భాలు, అన్వయ/FalseCl నిర్మాణాలు నిలిచాయి; నాలుగు మూల లోపాలు ప్రకటితంగా సరిచేశాం.",
+    "uncertainty": "ఖాళీ ఫలితభాగ ప్రత్యేక సందర్భాల్లో చేర్చిన కట్ దశలు తార్కికంగా తనిఖీ చేసినవి; మొత్తం నిరూపణ formal ధృవీకరణ కాలేదు.",
+    "borrowing": "N2/G2, Cut and FalseCl calculus identifiers remain source-identifying."
+  }
+}

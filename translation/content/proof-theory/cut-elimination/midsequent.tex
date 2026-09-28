@@ -1,0 +1,149 @@
+% Part: proof-theory
+% Chapter: cut-elimination
+% Section: midsequent
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{cut}{mid}
+
+\olsection{మధ్యసీక్వెంట్ ప్రమేయం, హెర్బ్రాండ్ ప్రమేయం}
+
+కట్ తొలగింపు ప్రమేయం నుంచి వచ్చే ముఖ్య ఫలితం మధ్యసీక్వెంట్ ప్రమేయం. $\Gamma \Sequent \Delta$కు గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$లోని ప్రతి \tetoken{సూత్రం}{!!{formula}} ప్రీనెక్స్ రూపంలో ఉంటే, $S \ident \Pi \Sequent
+\Lambda$ సీక్వెంట్ (దీనిని \emph{మధ్యసీక్వెంట్} అంటారు) గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$ ఉంటుంది;~$\pi'$లో $S$ పైన ఉన్న నిగమనాలన్నీ ప్రతిపాదనా నిగమనాలు,~$S$ కింద ఉన్నవన్నీ పరిమాణీకరణిక నిగమనాలు. (\tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ \emph{ప్రీనెక్స్} (లేదా \emph{ప్రీనెక్స్ రూపం})లో ఉండాలంటే అది
+\[\mathsf{Q}_1x_1\dots\mathsf{Q}_nx_n\,!B(x_1,\dots,x_n)\] రూపంలో ఉండాలి; ప్రతి $\mathsf{Q}_i$ అనేది $\lforall$ లేదా~$\lexists$.) మధ్యసీక్వెంట్ ప్రమేయం నుంచి హెర్బ్రాండ్ ప్రమేయం వస్తుంది. దాని సాధారణ రూపాన్ని వర్ణించడం కొంచెం కష్టం; విస్తృతంగా చూస్తే: మొదటిస్థాయి తర్కంలోని ప్రతి \tetoken{నిరూపణీయ}{!!{provable}} \tetoken{వాక్యం}{!!{sentence}}~$!A$కు, దాని నుంచి~$!A$ను \tetoken{నిరూపించగల}{!!{prove}} ప్రతిపాదనా సర్వసత్యం~$!A'$ ఉంటుంది. $!B$ పరిమాణీకరణిక రహితమైనప్పుడు $\lexists[x][!B(x)]$ రూపపు \tetoken{వాక్యాల}{!!{sentence}s} కోసం రూపం ఇది:
+
+\begin{thm}[హెర్బ్రాండ్ ప్రమేయం]
+$!B(x)$ పరిమాణీకరణిక రహితమై, $\Proves
+\lexists[x][!B(x)]$ అనుకుందాం. అప్పుడు $\Proves !B(t_1) \lor \dots \lor !B(t_n)$ అయ్యే పదాలు~$t_1$, \dots, $t_n$ ఉన్నాయి.
+\end{thm}
+
+\tetoken{సూత్రం}{!!{formula}}~$!B(t_1) \lor \dots \lor !B(t_n)$ను $\lexists[x][!B(x)]$ యొక్క \emph{హెర్బ్రాండ్ వియోజనం} అంటారు. $!B$ పరిమాణీకరణిక రహితం కనుక ఈ వియోజనమూ అలాగే ఉంటుంది. అది \tetoken{నిరూపణీయం}{!!{provable}} అయితే కట్-రహిత నిరూపణతో, అందువల్ల ప్రతిపాదనా నిగమనాలనే ఉపయోగించే \tetoken{ఒక నిరూపణ}{!!a{proof}}తో \tetoken{నిరూపణీయం}{!!{provable}}. కాబట్టి అది సర్వసత్యం.
+
+హెర్బ్రాండ్ ప్రమేయంలోని కఠిన భాగం ప్రతి \tetoken{నిరూపణీయ}{!!{provable}} \tetoken{సూత్రం}{!!{formula}}~$\lexists[x][!B(x)]$కు హెర్బ్రాండ్ వియోజనం ఉందని చూపడం. విపర్యయం—$\lexists[x][!B(x)]$కు హెర్బ్రాండ్ వియోజనం ఉంటే అది నిరూపణీయం—సులభం. నిజానికి హెర్బ్రాండ్ వియోజనం $\lexists[x][!B(x)]$ను అనుగమింపజేస్తుంది. ఉదాహరణకు $n=2$ సందర్భంలో~$\Log{G3c}$లో \tetoken{ఒక నిరూపణ}{!!a{proof}} ఇది:
+\[
+\Axiom$!B(t_1) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\Axiom$!B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_1), !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)], !B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$!B(t_1) \lor !B(t_2) \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+
+$\Sequent
+\lexists[x][!B(x)]$ యొక్క \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi$ నుంచి హెర్బ్రాండ్ వియోజనాన్ని తీసుకోవాలంటే, కట్-రహిత \tetoken{నిరూపణ}{!!{proof}}~$\pi$లోని అన్ని $\RightR{\lexists}$ నిగమనాలు చివర్లో ఉండే సందర్భాన్ని పరిశీలించండి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$ \fCenter \lexists[x][!B(x)], !B(t_1), \dots, !B(t_n)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \fCenter \lexists[x][!B(x)], !B(t_2), \dots, !B(t_n)$
+\RightLabel{$(n-1) \times \RightR{\lexists}$}
+\Deduce$ \fCenter \lexists[x][!B(x)]$
+\DisplayProof
+\]
+$\lexists[x][!B(x)]$ చురుకుగా ఉన్న~$\pi$లోని $\RightR{\lexists}$ నిగమనాలన్నీ ఇవే అయితే,~$\pi_1$లో ఇతర పరిమాణీకరణిక నిగమనాలేవీ ఉండవు. ఎందుకంటే $!B(x)$లో వేరే పరిమాణీకరణికాలు లేవు; తుది సీక్వెంట్ ఎడమవైపు \tetoken{సూత్రాలు}{!!{formula}s} లేవు. అంటే $ \fCenter \lexists[x][!B(x)], !B(t_1),
+\dots, !B(t_n)$ అనేది~$\pi$ మధ్యసీక్వెంట్. అంతేకాక, మధ్యసీక్వెంట్ పైన పరిమాణీకరణిక నిగమనాలేవీ లేవు కనుక దాని పైన ఉన్న అన్ని సీక్వెంట్‌లలో $\lexists[x][!B(x)]$ ఉంటుంది; అది చురుకైనదీ కాదు, ప్రధానమైనదీ కాదు. కాబట్టి దాన్ని \tetoken{నిరూపణ}{!!{proof}}~$\pi_1$ నుంచి తొలగించవచ్చు. అప్పుడు~$\fCenter !B(t_1), \dots, !B(t_n)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}, దానికి $n-1$ సార్లు $\RightR{\lor}$ వర్తింపజేసి హెర్బ్రాండ్ వియోజనం~$\Sequent !B(t_1) \lor \dots \lor !B(t_n)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందుతాం.
+\sourcecorrection{OLTEPTCUTMID-001}{ఇక్కడ మూలం $\\pi_1'$ను పేర్కొంది; చిత్రంలో నిర్వచించిన ఉపనిరూపణ మాత్రం $\\pi_1$. అందుకు అనుగుణంగా సూచనను సరిచేశాం.}
+
+సమస్య ఏమిటంటే, $\Sequent \lexists[x][!B(x)]$కు గల కట్-రహిత \tetoken{నిరూపణ}{!!{proof}}లోనైనా అన్ని \RightR{\lexists} నిగమనాలు చివర్లో ఒకే వరుసగా ఉంటాయని అనుకోలేం. వాటి మధ్య ఏదో $!B(t_i)$ ప్రధాన సూత్రంగా ఉండే నిగమనాలు రావచ్చు. అందుకే మధ్యసీక్వెంట్ ప్రమేయం అవసరం.
+
+\begin{thm}[మధ్యసీక్వెంట్ ప్రమేయం]\ollabel{thm:midsequent} $\Gamma \Sequent \Delta$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}}~$\pi$ ఉండి, $\Gamma$, $\Delta$లలోని అన్ని \tetoken{సూత్రాలు}{!!{formula}s} ప్రీనెక్స్ రూపంలో ఉంటే, $\Pi \Sequent \Lambda$ సీక్వెంట్‌ను కలిగిన \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$ ఉంటుంది; దాని కింద ఉన్న నిగమనాలన్నీ పరిమాణీకరణిక నిగమనాలు, పైన ఉన్నవన్నీ ప్రతిపాదనా నిగమనాలు.
+\end{thm}
+
+\begin{proof}
+  ~$\pi$లోని ఒక పరిమాణీకరణిక నిగమనం \emph{క్రమం} అంటే దాని కింద ఉన్న ప్రతిపాదనా నిగమనాల సంఖ్యగా నిర్వచించండి;~$\pi$ క్రమం~$o(\pi)$ అంటే దాని పరిమాణీకరణిక నిగమనాల క్రమాల మొత్తం. $o(\pi) = 0$ అయితే ఏ పరిమాణీకరణిక నిగమనం కిందా ప్రతిపాదనా నిగమనం లేదు; పని అయింది. పరిమాణీకరణిక నిగమనాలేవీ లేకపోతే తుది సీక్వెంట్‌నే మధ్యసీక్వెంట్‌గా తీసుకోవచ్చు. ఉంటే వాటన్నిటికీ ఒక్కో పూర్వాపేక్షే ఉంటుంది కనుక ఒక్క అత్యున్నత పరిమాణీకరణిక నిగమనం ఉంటుంది; దాని పూర్వాపేక్షే మధ్యసీక్వెంట్.
+  \sourcecorrection{OLTEPTCUTMID-002}{క్రమం సున్నా అయినప్పుడు పరిమాణీకరణిక నిగమనాలేవీ లేకపోవచ్చు. మూలం ఆ సందర్భాన్ని వేరుచేయకుండా అత్యున్నత పరిమాణీకరణిక నిగమనం తప్పనిసరిగా ఉందని చెప్పింది; శూన్య సందర్భాన్ని చేర్చాం.}
+
+  $o(\pi) > 0$ అయితే క్రమం $>0$ గల అత్యంత దిగువ పరిమాణీకరణిక నిగమనాన్ని ఎంచుకోండి. దాని క్రమం $>0$ కనుక దాని కింద ప్రతిపాదనా నిగమనం ఉండాలి. అది అత్యంత దిగువనిది కనుక దాని ముగింపు మరో పరిమాణీకరణిక నిగమనానికి పూర్వాపేక్ష కాలేదు; లేకుంటే ఆ రెండో, దిగువ నిగమనానికి కూడా కింద ప్రతిపాదనా నిగమనం ఉంటుంది. ఏ పరిమాణీకరణిక నిగమనం, దాని కింద ఏ ప్రతిపాదనా నిగమనం ఉన్నాయో బట్టి (అనేక!) సందర్భాలను వేరుచేద్దాం. తుది సీక్వెంట్‌లో ప్రీనెక్స్ సూత్రాలే ఉన్నాయి కనుక పరిమాణీకరణిక నిగమనం ప్రధాన సూత్రం తరువాతి ప్రతిపాదనా నిగమనంలో చురుకైనది కాలేదు. అలా అయితే ఆ ప్రతిపాదనా నిగమనం ప్రధాన సూత్రంలో ప్రతిపాదనా సంయోజకం పరిధిలో పరిమాణీకరణికం ఉంటుంది. ఉప-\tetoken{సూత్ర}{!!{formula}} లక్షణం ప్రకారం అది తుది సీక్వెంట్‌లోని \tetoken{ఒక సూత్రం}{!!a{formula}} ఉప-\tetoken{సూత్రం}{!!{formula}} కావాలి. అందువల్ల పరిమాణీకరణిక నిగమనం ప్రధాన \tetoken{సూత్రం}{!!{formula}} దిగువ ప్రతిపాదనా నిగమనం సందర్భంలోని \tetoken{ఒక మూలకం}{!!a{element}}.
+
+  రెండు ఉదాహరణలు చూద్దాం:
+
+మొదట $\LeftR{\lif}$ కుడి పూర్వాపేక్షలో ముగిసే $\RightR{\lforall}$ ఉందనుకుందాం. అప్పుడు~$\pi$లోని సంబంధిత ఉప-\tetoken{నిరూపణ}{!!{proof}} ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$తో ముగుస్తుంది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)]$
+\DisplayProof
+\]
+$\pi$ క్రమబద్ధమైనదని అనుకోవచ్చు; కాబట్టి ఈజెన్‌చరరాశి~$c$ అనేది~$\pi_3$ వెలుపల కనిపించదు; ముఖ్యంగా $!B
+\lif !C$లోనూ~$\pi_2$లోనూ కనిపించదు. ఇప్పుడు నిరూపణ~$\pi_1'$ను పరిశీలించండి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c), !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$!C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], !A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$!B \lif !C, \Gamma' \fCenter \Delta', \lforall[x][!A(x)], \lforall[x][!A(x)]$
+\DisplayProof
+\]
+ఇక్కడ~$\pi_2$కు కుడివైపు~$!A(c)$ చేర్చి బలహీనీకరించడం ద్వారా $\pi_2'$ పొందుతాం. (ఇది నిగమనాలేవీ, ప్రత్యేకంగా క్రమాన్ని మార్చగల పరిమాణీకరణిక నిగమనాలేవీ, జోడించదు. $!A(c)$లోని స్థిరసంకేతాలు~$\pi_2$లో ఈజెన్‌చరరాశులుగా వాడబడలేదు కనుక~$\pi_2$ ఈజెన్‌చరరాశి షరతులనూ ఇది ఉల్లంఘించదు.) $c$ అనేది~$!B \lif !C$లో కనిపించదు కనుక \RightR{\lforall} ఈజెన్‌చరరాశి షరతు ఇంకా నెరవేరుతుంది.
+
+సంకోచన అనుమతిత్వాన్ని ఉపయోగించి $!B \lif !C, \Gamma' \fCenter \Delta',
+\lforall[x][!A(x)]$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1''$ పొందుతాం. $\lforall[x][!A(x)]$పై $\RightR{\Contraction}$ అనుమతిత్వ నిరూపణ, అందులో ఉపయోగించిన $\RightR{\lforall}$ విలోమయోగ్యత నిరూపణ ఏ నిగమనం క్రమాన్నీ మార్చలేదు; అత్యధికంగా నిగమనాలను తొలగించాయి. కాబట్టి~$\pi_1''$లో~$\pi_1$కన్నా ఎక్కువ పరిమాణీకరణిక నిగమనాలు లేవు;~$\pi_1''$లోని ప్రతి పరిమాణీకరణిక నిగమనానికి దానికి అనుగుణ~$\pi_1$ నిగమనం కింద ఉన్నన్ని ప్రతిపాదనా నిగమనాలే ఉంటాయి—చివరి \RightR{\lforall} తప్ప. దాని కింద~$\pi$లో \LeftR{\lif} ఉండేది;~$\pi_1''$లో దాన్ని పైకి మార్చాం. $\pi$లో $\pi_1$ స్థానంలో $\pi_1''$ను పెట్టండి. అప్పుడు ఫలిత \tetoken{నిరూపణ}{!!{proof}} క్రమం తక్కువ; కనీసం $\RightR{\lforall}$ నిగమనం క్రమం (కనీసం)~$1$ తగ్గింది. ఇప్పుడు ఆగమన పరికల్పన వర్తించండి.
+
+పరిమాణీకరణిక నిగమనం \RightR{\lexists} అయిన సందర్భాలు ఇంకా సులభం: సంకోచనం అవసరం లేదు, ఈజెన్‌చరరాశి షరతు గురించి ఆందోళన లేదు. ఉదాహరణకు, $\RightR{\lexists}$ తరువాత $\RightR{\land}$ (ఈసారి ఎడమ పూర్వాపేక్షగా) ఉందనుకుందాం. సంబంధిత ఉప-\tetoken{నిరూపణ}{!!{proof}} $\pi_1$ ఇది:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+\sourcecorrection{OLTEPTCUTMID-003}{ఈ వృక్షం మధ్య సీక్వెంట్‌లో మూలం సందర్భం $\Gamma'$ ముందు అనవసరమైన $!$ చేర్చింది; ఇతర సీక్వెంట్‌లకు అనుగుణంగా తొలగించాం.}
+$\pi$లో $\pi_1$ స్థానంలో $\pi_1'$ను పెట్టండి:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !A(t), !B \land !C$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][!A(x)], !B \land !C$
+\DisplayProof
+\]
+ఇక్కడ~$\pi_3$కు కుడివైపు~$!A(t)$ చేర్చి బలహీనీకరించడం ద్వారా $\pi_3'$ పొందుతాం. ఈ బలహీనీకరణ~$\pi_3$లోని ప్రతి సీక్వెంట్ కుడివైపు~$!A(t)$ను చేర్చడమే; కాబట్టి ఏ పరిమాణీకరణిక నిగమనం క్రమాన్నీ మార్చదు. \RightR{\land}తో స్థానమార్చిన \RightR{\lexists} నిగమనం క్రమం~$1$ తగ్గడం తప్ప,~$\pi'$లో పరిమాణీకరణిక నిగమనాల క్రమాలు~$\pi$లో ఉన్నట్లే. ఆగమన పరికల్పన వర్తిస్తుంది.
+\end{proof}
+
+\begin{prob}
+\olref{thm:midsequent} నిరూపణలో \LeftR{\lexists} అనేది~\RightR{\lif} పూర్వాపేక్షలో ముగిసే సందర్భాన్ని, \LeftR{\lforall} అనేది~\LeftR{\lor} ఎడమ పూర్వాపేక్షలో ముగిసే సందర్భాన్ని వివరించండి.
+\end{prob}
+
+\begin{proof}[హెర్బ్రాండ్ ప్రమేయం నిరూపణ]
+$\pi$ అనేది $\Sequent \lexists[x][!A(x)]$తో ముగుస్తుందనుకుందాం. \olref{thm:midsequent} ప్రకారం $\pi$ను మధ్యసీక్వెంట్~$S$ గల \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi'$గా మార్చవచ్చు. ఆ సీక్వెంట్ రూపం \[\Sequent
+\lexists[x][!A(x)], !A(t_1), \dots, !A(t_n).\] $S$ పైనున్న నిగమనాలన్నీ ప్రతిపాదనావి కనుక $\lexists[x][!A(x)]$ వాటిలో దేనిలోనూ ప్రధాన సూత్రం కాలేదు. అది అణు సూత్రం కాదు కనుక~$S$ పైన స్వీకృతంలోనూ ప్రధాన సూత్రం కాలేదు. $\lexists[x][!A(x)]$ అనేది $!A(t_1)$ యొక్క నిజ ఉపసూత్రం కాలేదు ($!A(x)$ పరిమాణీకరణిక రహితమని గుర్తుంచుకోండి); కాబట్టి~$S$ పైన అది చురుకైనదీ కాలేదు. అందువల్ల~$S$తో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}} నుంచి $\lexists[x][!A(x)]$ను తొలగిస్తే $\Sequent !A(t_1), \dots, !A(t_n)$కు సరైన \tetoken{నిరూపణ}{!!{proof}} మిగులుతుంది. దాని నుంచి $n-1$ $\RightR{\lor}$ నిగమనాలతో $\Sequent !A(t_1) \lor \dots \lor !A(t_n)$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందవచ్చు.
+\end{proof}
+
+% \begin{prob}
+% Find a Herbrand disjunction of $\lexists[x][\lforall[y][(!A(x) \lif
+% !A(y))]]$ by finding a cut-free !!{proof} of $\Sequent
+% \lexists[x][\lforall[y][(!A(x) \lif !A(y))]]$ and applying the
+% transformation in \olref{thm:midsequent} to find a midsequent (if
+% necessary).
+% \end{prob}
+
+\end{document}

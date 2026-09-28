@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "287",
+  "unit_id": "OLP-0638",
+  "unit_order": 638,
+  "source_path": "content/history/set-theory/cantor-plane.tex",
+  "blocks": 13,
+  "linguistic_blocks": [3,4,5,7,8,9,10,11,12],
+  "corrections_by_block": {"7": ["OLTEHISSETCANP-001"], "8": ["OLTEHISSETCANP-002"]},
+  "previous_segments": 9396,
+  "previous_terms": 327,
+  "expected_corrections": 538,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P008", "TE-P010", "TE-P011", "TE-P016"],
+  "consultation_phase": "రేఖ-తలం కాంటర్ వాదన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ అంతఃక్షేపణ/అధిక్షేపణ/సమసంఖ్యాకత పదాలు, స్థానిక సమితి సాక్షులు పోల్చాం; ద్వియాంశ రూప ఎంపిక, అంతఃక్షేపణ, తప్పు బింబం-బయటి ఉదాహరణ, ష్రోడర్--బెర్న్‌స్టైన్ ముగింపు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు సాధారణ సమితి నేపథ్యం మాత్రమే; కాంటర్--డెడెకిండ్ చారిత్రక లేఖ/ప్రచురణ కాలక్రమం స్వతంత్రంగా ధృవీకరించలేదు. రెండు మూల-గణిత లోపాలను పక్కనే ప్రకటించాం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T328","source_term":"binary digit interleaving; injection; surjection; Schröder–Bernstein","telugu":"ద్వియాంశ అంకెల అల్లిక; అంతఃక్షేపణ; అధిక్షేపణ; ష్రోడర్--బెర్న్‌స్టైన్","status":"endpoint_convention_and_missing_value_repaired_source_controlled","passages":["TE-P003","TE-P004","TE-P006","TE-P008","TE-P010","TE-P011","TE-P016"],"basis":"కాంటర్ ద్వియాంశ అంకెల అల్లిక, రెండు దిశల అంతఃక్షేపణలు, ష్రోడర్--బెర్న్‌స్టైన్ ముగింపు నిలిచాయి; మొత్తం పటానికి రూప ఎంపిక, నిజమైన అధిక్షేపణేతర సాక్షి పక్కనే ప్రకటించాం.","uncertainty":"చారిత్రక లేఖ/కాలక్రమం మూల పాఠ్య నియంత్రణలోనే ఉన్నాయి; గణిత లోపాలకు auditలో ప్రత్యక్ష తర్కం ఉంది.","borrowing":"Cantor, Dedekind, Schröder–Bernstein names and reference keys remain source-identifying."}
+}

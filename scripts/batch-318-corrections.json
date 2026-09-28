@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0669",
+  "source_path": "content/proof-theory/natural-deduction/sequents.tex",
+  "source_sha256": "838a883ad78be2c58a1c21cd84ac9dca8469872ad5ec0ed8ad01e3e8e82b2d54",
+  "audit_id": "OLTEPTNATSEQ-20260928",
+  "audit_review_path": "evidence/OLP-0669-SEQUENTS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "5dab7d3c83e908d0fe21110864a8a92ed4dca85577eb91a1adebca99461a5c5c",
+  "audit_findings_path": "evidence/OLP-0669-SEQUENTS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "19c325e63388de363ebe6f58bb9f6f53750901ab4bb97d5d60061d83a0c31c6a",
+  "previous_corrections": 587,
+  "treatments": {
+    "OLTEPTNATSEQ-001": {
+      "target_line": 15,
+      "body_treatment": "సూత్ర-వృక్ష సహజ నిగమనానికి G1 పేర్ల బదులు N1c/N1i పేర్లు చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATSEQ-002": {
+      "target_line": 56,
+      "body_treatment": "N2 వృక్షంలో x:B స్థానంలో x:!B సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATSEQ-003": {
+      "target_line": 114,
+      "body_treatment": "ఆగమన N1 ఉపనిరూపణను δ1-primeగా గుర్తించి, తుది నిరూపణతో కలపకుండా సరిచేసి ప్రకటించాం."
+    }
+  }
+}

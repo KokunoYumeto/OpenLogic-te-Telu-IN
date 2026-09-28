@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0683",
+  "source_path": "content/proof-theory/proof-search/search-algorithm.tex",
+  "source_sha256": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+  "audit_id": "OLTEPTPSSAL-20260928",
+  "audit_review_path": "evidence/OLP-0683-SEARCH-ALGORITHM-SOURCE-AUDIT.md",
+  "audit_review_sha256": "4680ebd93ae06428846c66b3a584e902ea653e1d9bf83d56d26f414abfc766fa",
+  "audit_findings_path": "evidence/OLP-0683-SEARCH-ALGORITHM-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "72ff5afb301e0ae8cbc645adc2a87e111622950d80740432ec484c46b5986d42",
+  "previous_corrections": 620,
+  "treatments": {
+    "OLTEPTPSSAL-001": {
+      "target_line": 32,
+      "body_treatment": "కొత్త సూచికలు పాత గరిష్ఠ సూచికను మించేవిగా k నిర్వచనాన్ని ప్రకటితంగా సరిచేశాం."
+    },
+    "OLTEPTPSSAL-002": {
+      "target_line": 73,
+      "body_treatment": "కుడి అస్తిత్వ నియమ వృక్షంలో నియమ పేరు సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTPSSAL-003": {
+      "target_line": 74,
+      "body_treatment": "గద్యంలో తగ్గించే అస్తిత్వ సూత్ర ఘటనకు తప్పిన సూచికను చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTPSSAL-004": {
+      "target_line": 75,
+      "body_treatment": "పదాలు అయిపోయినప్పుడు కేటాయించిన ఖాళీ కాని సమితిలోని స్థిరాంకాన్నే మళ్లీ వాడి స్థిరాంక సమితి షరతును నిలిపాం; సవరణ ప్రకటించాం."
+    }
+  }
+}

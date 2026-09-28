@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "224",
+  "unit_id": "OLP-0575",
+  "unit_order": 575,
+  "source_path": "content/set-theory/ord-arithmetic/introduction.tex",
+  "blocks": 6,
+  "linguistic_blocks": [3, 4, 5],
+  "previous_segments": 8473,
+  "previous_terms": 264,
+  "expected_corrections": 492,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008"],
+  "consultation_phase": "క్రమసంఖ్య అంకగణిత పరిచయపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/స్థాయిక్రమ పదాలు, స్థానిక సమితి/సంఖ్య సాక్షులు ఎదురెదురు చూశాం; వెన్నెముక ఉపమానం, omega ఉదాహరణలు, రెండు నిర్వచన మార్గాల సూచన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008 సాధారణ సంఖ్య/క్రమ/సమితి పదాలకు మాత్రమే సాక్షులు; అంకగణిత నిర్వచనలు తరువాతి విభాగ నియంత్రితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T265",
+    "source_term": "ordinal arithmetic; ordinal spine of the hierarchy",
+    "telugu": "క్రమసంఖ్య అంకగణితం; స్థాయిక్రమపు క్రమసంఖ్య వెన్నెముక",
+    "status": "chapter_introduction_prior_ordinal_register_consistent",
+    "passages": ["TE-P004", "TE-P005", "TE-P008"],
+    "basis": "క్రమసంఖ్యల స్థాయిక్రమ పాత్రకు తోడు అంకగణిత పాత్ర, omega కూడికల అనౌపచారిక సూచన, రెండు మార్గాల రాబోయే వివరణ నిలిచాయి.",
+    "uncertainty": "రెండు మార్గాల సమానతను పరిచయం నిరూపించదు; తరువాతి విభాగాల ఆధీనం.",
+    "borrowing": "Omega expressions and cross-references remain source-controlled."
+  }
+}

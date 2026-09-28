@@ -1,0 +1,3 @@
+# OLP-0588 Cardinal simplification semantic review
+
+Compared the frozen source and Telugu target by paragraph. The canonical well-order of ordinal pairs retains all three comparison clauses; the minimal-counterexample proof, infinite-cardinal square, sum/product maximum theorem, and union-size bound retain their hypotheses and formulas. The source skips finite maximum coordinates when bounding canonical-order initial segments; the target adds and discloses that case as OLTESTCARDSIMP-001. The two injection token markers and the choice-dependence footnote are preserved. Strict correction-aware structural QA passed 18/18 blocks. TE-T278 records terminology. Full TeX visual compilation remains pending.

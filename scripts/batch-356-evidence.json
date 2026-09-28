@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "356",
+  "unit_id": "OLP-0707",
+  "unit_order": 707,
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTSEQG3C-001"
+    ]
+  },
+  "previous_segments": 10423,
+  "previous_terms": 396,
+  "expected_corrections": 687,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "పట్టిక అక్షయ కుటుంబాలు, పంచుకున్న సందర్భం, స్వీయచర తాజాతనం పూర్వ సీక్వెంట్ నిరూపణ గద్యంతో పోల్చాం.",
+  "evidence_limit": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T397",
+    "source_term": "G3c rules; atomic identity axiom; falsity-left axiom; retained principal formula",
+    "telugu": "G3c నియమాలు; పరమాణు స్వీయ అక్షయం; అసత్య ఎడమ అక్షయం; నిలిచే ప్రధాన సూత్రం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పరమాణు స్వీయ అక్షయం, అసత్య ఎడమ అక్షయం వేర్వేరుగా నిలిపాం.",
+    "uncertainty": "నేర పట్టిక పోలిక, నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

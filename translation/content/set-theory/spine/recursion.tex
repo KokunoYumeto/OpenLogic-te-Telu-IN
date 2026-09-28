@@ -1,0 +1,250 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{spine}{recursion}
+\olsection{అతిపరిమిత పునరావృత్తి సిద్ధాంతం (దాని రూపాలు)}
+
+అయితే ముందుగా
+\olref[valpha]{defValphas}
+విజయవంతమైన నిర్వచనమని
+నిర్ధారించాలి. మరింత
+సాధారణంగా, అతిపరిమిత
+పునరావృత్తి ద్వారా
+నిర్వచనం ఇచ్చే ఏ
+ప్రయత్నమైనా ఫలిస్తుందని
+నిరూపించాలి. ఈ
+విభాగం లక్ష్యం అదే.
+
+\emph{హెచ్చరిక: ఇది
+కష్టమైన విషయం}.
+అయితే ప్రధాన సందేశం
+చాలా సరళం: అతిపరిమిత
+ఆగమనం, ప్రతిస్థాపన
+కలిసి అతిపరిమిత
+పునరావృత్తి (పలు
+రూపాలు) చెల్లుబాటును
+నిర్ధారిస్తాయి.\footnote{గుర్తుంచుకోండి:
+వేరుగా స్పష్టంగా
+చెప్పనంతవరకు, అన్ని
+సూత్రాలు, పదాల్లో
+పరామితులు ఉండవచ్చు.}
+
+\begin{defn}
+	$\tau(x)$ ఒక పదం,
+	$f$ ఒక ప్రమేయం,
+	$\alpha$ ఒక క్రమసంఖ్య
+	అనుకుందాం.
+	$\dom{f} = \alpha$
+	మరియు
+	$(\forall \beta \in \alpha)f(\beta) = \tau(\funrestrictionto{f}{\beta})$
+	రెండూ అయితేనే
+	$f$ను $\tau$కు
+	\emph{$\alpha$-ఉజ్జాయింపు}
+	అంటాం.
+\end{defn}
+
+\begin{lem}[పరిమిత పునరావృత్తి]\ollabel{transrecursionfun}
+ఏ పదం $\tau(x)$,
+ఏ క్రమసంఖ్య $\alpha$కైనా,
+$\tau$కు ఏకైక
+$\alpha$-ఉజ్జాయింపు
+ఉంటుంది.
+\end{lem}
+\begin{proof}
+ఏ $\gamma \leq \alpha$కైనా
+ఏకైక $\gamma$-ఉజ్జాయింపు
+ఉంటుందని చూపుతాం.
+
+మొదట ఏకైకత్వాన్ని
+స్థాపిద్దాం. $g$, $h$
+వరుసగా $\gamma$-,
+$\delta$-ఉజ్జాయింపులు
+అనుకుందాం. వాటి
+ఆర్గ్యుమెంట్లపై అతిపరిమిత
+ఆగమనం ద్వారా,
+ఏ $\beta \in \dom{g} \cap \dom{h} =
+\gamma \cap \delta = \min(\gamma, \delta)$కైనా
+$g(\beta) = h(\beta)$.
+అందువల్ల మన ఉజ్జాయింపులు
+(ఉన్నట్లయితే) ఏకైకాలు;
+అన్ని సామాన్య విలువలపై
+ఒకేలా ఉంటాయి.
+
+ఇప్పుడు ఉనికిని
+స్థాపించడానికి
+$\delta \leq \alpha$
+క్రమసంఖ్యలపై సరళ
+అతిపరిమిత ఆగమనాన్ని
+(\olref[ordinals][opps]{simpletransrecursion})
+వాడతాం.
+
+శూన్య ప్రమేయం స్పష్టంగా
+$\emptyset$-ఉజ్జాయింపు.
+
+$g$ ఒక
+$\gamma$-ఉజ్జాయింపు
+అయితే,
+$g \cup
+\{\tuple{\gamma, \tau(g)}\}$
+ఒక $\ordsucc{\gamma}$-ఉజ్జాయింపు.
+
+$\gamma$ సీమా క్రమసంఖ్య,
+ప్రతి $\delta < \gamma$కు
+$g_\delta$ ఒక
+$\delta$-ఉజ్జాయింపు
+అయితే, $g = \bigcup_{\delta \in \gamma} g_\delta$
+అనుకుందాం. వివిధ
+$g_\delta$లు అన్ని
+సామాన్య విలువలపై
+ఒకేలా ఉంటాయి
+కాబట్టి ఇది ప్రమేయం.
+ఇంకా $\delta \in \gamma$
+అయితే $g(\delta) = g_{\ordsucc{\delta}}(\delta) =
+\tau(\funrestrictionto{g_{\ordsucc{\delta}}}{\delta}) =
+\tau(\funrestrictionto{g}{\delta})$.
+
+దీనితో అతిపరిమిత
+ఆగమన నిరూపణ పూర్తయింది.
+\end{proof}
+
+ప్రమేయానికి బదులు
+\emph{పదాన్ని} నిర్వచించడానికి
+అనుమతిస్తే, ముందరి
+ఫలితంలోని $\alpha$
+హద్దును తొలగించవచ్చు.
+తదుపరి ఫలితం ప్రకటన,
+నిరూపణలో $\sigma$
+పదం అయితే
+$\funrestrictionto{\sigma}{\alpha} = \Setabs{\tuple{\beta,
+\sigma(\beta)}}{\beta \in \alpha}$
+అనుకుందాం.
+
+\begin{thm}[సాధారణ పునరావృత్తి]\ollabel{transrecursionschema}
+ఏ పదం $\tau(x)$కైనా,
+ప్రతి క్రమసంఖ్య~$\alpha$కు
+$\sigma(\alpha) = \tau(\funrestrictionto{\sigma}{\alpha})$
+అయ్యే పదం $\sigma(x)$ను
+స్పష్టంగా నిర్వచించవచ్చు.
+\end{thm}
+
+\begin{proof}
+ప్రతి $\alpha$కూ
+\olref{transrecursionfun}
+ప్రకారం $\tau$కు
+ఏకైక $\alpha$-ఉజ్జాయింపు
+$f_\alpha$ ఉంటుంది.
+$\sigma(\alpha)$ను
+$f_{\ordsucc{\alpha}}(\alpha)$గా
+నిర్వచిద్దాం. ఇప్పుడు:
+	\begin{align*}
+		\sigma(\alpha) &= 
+		f_{\ordsucc{\alpha}}(\alpha) \\&= 
+		\tau(\funrestrictionto{f_{\ordsucc{\alpha}}}{\alpha}) \\&= 
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\alpha}}(\beta)}}{\beta \in \alpha}) \\&= 
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\beta}}(\beta)}}{\beta \in \alpha})\\&=
+		\tau(\funrestrictionto{\sigma}{\alpha})
+	\end{align*}
+ఎందుకంటే
+\olref{transrecursionfun}లోని
+విధంగా, అన్ని
+$\beta < \alpha$లకు
+$f_{\ordsucc{\beta}}(\beta) = f_{\ordsucc{\alpha}}(\beta)$.
+\end{proof}
+\noindent
+\olref{transrecursionschema}
+ఒక \emph{పథకం}
+అని గమనించండి.
+ముఖ్యంగా, $\sigma$
+ఒక ప్రమేయాన్ని,
+అంటే ఒక రకమైన
+\emph{సమితిని},
+నిర్వచిస్తుందని
+ఆశించలేం. అలా
+అయితే $\dom{\sigma}$
+అన్ని క్రమసంఖ్యల
+సమితి కావాలి; ఇది
+బురాలి-ఫోర్టీ వైరుధ్యానికి
+(\olref[ordinals][basic]{buraliforti})
+విరుద్ధం.
+
+అయినా \olref{transrecursionschema}
+మన $V_\alpha$ల
+నిర్వచనాన్ని సమర్థిస్తుందని
+ఇంకా చూపాలి.
+అది వెంటనే స్పష్టం
+కాకపోవచ్చు; కానీ
+అతిపరిమిత పునరావృత్తి
+చివరి, సరళ రూపంతో
+స్పష్టమవుతుంది.
+
+\begin{thm}[సరళ పునరావృత్తి]\ollabel{simplerecursionschema}
+ఏ పదాలు $\tau(x)$,
+$\theta(x)$, ఏ సమితి
+$A$కైనా, ఈ కింది
+షరతులు గల పదం
+$\sigma(x)$ను స్పష్టంగా
+నిర్వచించవచ్చు:
+\begin{align*}
+	\sigma(\emptyset) &= A\\
+	\sigma(\ordsucc{\alpha}) &= \tau(\sigma(\alpha)) &&
+		\alpha\text{ ఏ క్రమసంఖ్య అయినా}\\
+	\sigma(\alpha) &= \theta(\ran{\funrestrictionto{\sigma}{\alpha}})&&
+	\alpha\text{ సీమా క్రమసంఖ్య అయినప్పుడు}
+\end{align*}
+\end{thm}
+
+\begin{proof}
+మొదట $\xi(x)$
+పదాన్ని ఇలా
+నిర్వచిద్దాం:
+%t $\xi(x) = A$ అనేది $x$ క్రమసంఖ్య నిర్వచన సమితిగల ప్రమేయం కాకపోతే;
+%లేకపోతే ఇలా:
+\[
+	\xi(x) = 
+	\begin{cases}
+			A &\text{ఒకవేళ $x$ నిర్వచన సమితి క్రమసంఖ్యగల ప్రమేయం కాకపోతే}\\
+			&\hspace{1em}\text{లేదా నిర్వచన సమితి శూన్యమైతే; లేకపోతే:}\\
+			\tau(x(\alpha)) & \text{ఒకవేళ $\dom{x} = \ordsucc{\alpha}$}\\
+			\theta(\ran{x}) & \text{ఒకవేళ $\dom{x}$ సీమా క్రమసంఖ్య అయితే}
+	\end{cases}
+\]
+\sourcecorrection{OLTESTSPINREC-001}{మూల విభజిత నిర్వచనంలో శూన్య నిర్వచన సమితిగల ప్రమేయానికి ఏ శాఖా వర్తించదు, అయినా తరువాతి నిరూపణ దాని విలువను వాడుతుంది. మొదటి శాఖలో ఆ సందర్భాన్ని చేర్చాం.}
+\olref{transrecursionschema}
+ప్రకారం ప్రతి క్రమసంఖ్య
+$\alpha$కు
+$\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha})$
+అయ్యే పదం $\sigma(x)$
+ఉంటుంది; ఇంకా
+$\funrestrictionto{\sigma}{\alpha}$,
+నిర్వచన సమితి
+$\alpha$ అయిన
+ప్రమేయం. $\sigma$కు
+కావలసిన ధర్మాలు
+ఉన్నాయని సరళ అతిపరిమిత
+ఆగమనంతో
+(\olref[ordinals][opps]{simpletransrecursion})
+చూపుతాం.
+
+మొదట
+$\sigma(\emptyset) = \xi(\emptyset) = A$.
+
+తరువాత
+$\sigma(\ordsucc{\alpha}) = \xi(\funrestrictionto{\sigma}{\ordsucc{\alpha}}) = \tau(\funrestrictionto{\sigma}{\ordsucc{\alpha}}(\alpha)) = \tau(\sigma(\alpha))$.
+
+చివరిగా $\alpha$
+సీమా క్రమసంఖ్య అయితే,
+$\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha}) = \theta(\ran{\funrestrictionto{\sigma}{\alpha}})$.
+\end{proof}
+\noindent
+ఇప్పుడు \olref[valpha]{defValphas}ను
+సమర్థించడానికి
+$A
+= \emptyset$, $\tau(x) = \Pow{x}$,
+$\theta(x) = \bigcup x$
+అని తీసుకుంటే చాలు.
+ఎట్టకేలకు $V_\alpha$ల
+నిర్వచనం సమర్థించబడింది!{}
+
+
+\end{document}

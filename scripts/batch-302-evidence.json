@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "302",
+  "unit_id": "OLP-0653",
+  "unit_order": 653,
+  "source_path": "content/model-theory/basics/nonstandard-arithmetic.tex",
+  "blocks": 18,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+  "corrections_by_block": {"9": ["OLTEMODBASENSA-001"], "13": ["OLTEMODBASENSA-002", "OLTEMODBASENSA-003", "OLTEMODBASENSA-004"]},
+  "previous_segments": 9644,
+  "previous_terms": 342,
+  "expected_corrections": 552,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "అప్రమాణ అంకగణిత నమూనా స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ నిర్మాణ/సమరూపత/సాంద్ర క్రమం/బ్లాక్ పదాలు, స్థానిక సమితి-తర్క సాక్షులు పోల్చాం; సంహతత్వ నిర్మాణం, ప్రమాణ భాగం, Z-శృంఖలాలు, కరణీయ క్రమం, చివరి రెండు సాధనలు తనిఖీ చేశాం.",
+  "evidence_limit": "నాలుగు మూల-లోపాలు పక్కనే ప్రకటించాం; పూర్తిస్థాయి నమూనా-సిద్ధాంత నిరూపణ స్వతంత్రంగా పునర్నిర్మించలేదు. ముఖ్యంగా చివరి సాధన సూచనలు మూలం ప్రకారమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T343","source_term":"nonstandard model of true arithmetic; standard part; equivalence block; Z-chain; dense block order","telugu":"సత్య అంకగణితపు అప్రమాణ నమూనా; ప్రమాణ భాగం; తుల్యతా బ్లాక్; Z-శృంఖల; సాంద్ర బ్లాక్ క్రమం","status":"nonstandard_arithmetic_blocks_four_source_defects_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"సంహతత్వం ద్వారా గణనీయ అప్రమాణ నమూనా, ప్రమాణ భాగం, పరిమిత-దూర బ్లాక్‌లు, కరణీయ క్రమం, reduct సమరూపత నిలిచాయి; భాష సంకేతం, ఉత్తరవర్తి దశ, వేర్వేరు బ్లాక్ షరతు, భాగింపు పరిమాణీకరణికం సరిచేసి ప్రకటించాం.","uncertainty":"చివరి బ్లాక్ సాంద్రత/స్వయంసమరూపత సూచనలు, వాట్ సిద్ధాంత ఉటంకింపు మూల నియంత్రణలోనే ఉన్నాయి; స్వతంత్రంగా పూర్తిగా తనిఖీ చేయలేదు.","borrowing":"L_N, N/M, Z-chain, Vaught and theorem-reference symbols remain source-identifying."}
+}

@@ -1,0 +1,104 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{his}{set}{hilbertcurve}
+
+\olsection{అనుబంధం: హిల్బర్ట్ స్థలాన్ని నింపే వక్రరేఖలు}
+
+\olref[pathology]{sec} అధ్యాయంలో, రేఖలోనూ చతురస్రంలోనూ బిందువుల సంఖ్య సరిగ్గా సమానమని కాంటర్ నిరూపణ (\olref[his][set][cantorplane]{thm:cantorplane}), స్థలాన్ని నింపే \emph{వక్రరేఖ} కూడా ఉండవచ్చా అని పియానోను ప్రశ్నించేలా చేసిందని చెప్పాం. 1890లో ఆయన సానుకూల సమాధానం కనుగొన్నారు. ఈ విభాగంలో హిల్బర్ట్ స్థలాన్ని నింపే వక్రరేఖను (చిన్న మార్పుతో) ఎలా నిర్మించవచ్చో కొంత అనౌపచారికంగా వివరిస్తాం.\footnote{మరింత కచ్చితమైన వివరణకు \cite{Rose2010} చూడండి. ఈ మార్పు క్రింది వక్రరేఖలకు ఎరుపు భాగాలను చేర్చడమే. దీనివల్ల వక్రరేఖ అవిచ్ఛిన్నమని తనిఖీ చేయడం కొంచెం తేలికవుతుంది.}
+
+$h_1$, $h_2$, $h_3$, \dots\@ ప్రమేయాల క్రమానికి పరిమితిగా $h$ అనే ప్రమేయాన్ని నిర్వచించాలి. ముందుగా నిర్మాణాన్ని వివరిస్తాం. తరువాత అది స్థలాన్ని నింపుతుందని, ఆపై అది వక్రరేఖ అని చూపే వాదనను పరిశీలిస్తాం.
+
+$h$ విలువల సమితి ప్రమాణ చతురస్రం $\unitsquare$గా తీసుకుందాం. $h$కు మొదటి ఉజ్జాయింపు, అంటే $h_1$, ఇదిగో:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 40pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (20pt, 0)--(20pt, 20pt);
+	\draw[oldiagcolorC, thick] (60pt, 0)--(60pt, 20pt);		
+	\begin{scope}[xshift=20pt, yshift=20pt]
+	\draw [black, thick, l-system={Hilbert curve, step=40pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+వివరణ కోసం చతురస్రంపై $2 \times 2$ గడుల జాలం వేశాం. వక్రరేఖ ఎడమ దిగువ పావులో మొదలై, ఎడమ ఎగువ పావుకు, తరువాత కుడి ఎగువ పావుకు, చివరగా కుడి దిగువ పావుకు వెళ్తుందని ఊహించవచ్చు. నిర్మాణంలోని రెండో దశ, అంటే $h_2$, ఇదిగో:
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 20pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[oldiagcolorC, thick] (0pt, 10pt)--(10pt, 10pt);
+	\draw[oldiagcolorC, thick] (70pt, 10pt)--(80pt, 10pt);
+	\draw[thick, oldiagcolorE] (10pt, 30pt)--(10pt, 50pt);
+	\draw[thick, oldiagcolorE] (30pt, 50pt)--(50pt, 50pt);
+	\draw[thick, oldiagcolorE] (70pt, 50pt)--(70pt, 30pt); \begin{scope}[xshift=10pt, yshift=30pt]
+	\draw [thick, rotate=270,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=10pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=50pt, yshift=50pt]
+	\draw [thick, black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=70pt, yshift=10pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=20pt, angle=90, axiom=L, order=1}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+వేర్వేరు రంగులు $h_2$ నిర్మాణాన్ని వివరించడంలో తోడ్పడతాయి. ముందుగా $h_1$లోని \tetoken{ఎరుపు}{!!{colorC}} కాని భాగపు చిన్న ప్రతులను చతురస్రం ఎడమ దిగువ, ఎడమ ఎగువ, కుడి ఎగువ, కుడి దిగువ పావుల్లో ఉంచుతాం (నలుపులో గీశాం). తరువాత ఈ నాలుగు చిత్రాలను (\tetoken{ఆకుపచ్చ}{!!{colorE}} రేఖలతో) కలుపుతాం. చివరగా చిత్రాన్ని చతురస్రం అంచుతో (\tetoken{ఎరుపు}{!!{colorC}} రేఖలతో) కలుపుతాం.
+
+ఇప్పుడు $h_3$ చూద్దాం. $h_1$లోని ఎరుపు కాని భాగం నాలుగు చిన్న, అనుసంధానిత ప్రతులతో $h_2$ ఏర్పడినట్లే, $h_2$లోని ఎరుపు కాని భాగం నాలుగు చిన్న ప్రతులతో $h_3$ ఏర్పడుతుంది (నలుపులో గీశాం). వాటిని తరువాత (\tetoken{ఆకుపచ్చ}{!!{colorE}} రేఖలతో) కలిపి, చివరగా చతురస్రం అంచుతో (\tetoken{ఎరుపు}{!!{colorC}} రేఖలతో) కలుపుతాం.
+\begin{center}
+	\begin{tikzpicture}
+	\draw[gray] (0pt, 0pt) rectangle (80pt, 80pt);
+	\draw[step = 10pt, gray, very thin] (0pt, 0pt) grid (80pt, 80pt);
+	\draw[thick, oldiagcolorC](5pt, 0pt)--(5pt, 5pt);
+	\draw[thick, oldiagcolorC] (75pt, 0pt)--(75pt, 5pt);
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt);
+	\draw[thick, oldiagcolorE] (5pt, 35pt)--(5pt, 45pt);
+	\draw[thick, oldiagcolorE] (35pt, 45pt)--(45pt, 45pt);
+	\draw[thick, oldiagcolorE] (75pt, 45pt)--(75pt, 35pt); \begin{scope}[xshift=5pt, yshift=35pt]
+	\draw [rotate=270, thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=5pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=45pt, yshift=45pt]
+	\draw [thick, black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\begin{scope}[xshift=75pt, yshift=5pt]
+	\draw [thick, rotate=90,black, l-system={Hilbert curve, step=10pt, angle=90, axiom=L, order=2}]  lindenmayer system;
+	\end{scope}
+	\end{tikzpicture}
+\end{center}
+ఇలా $h_n$ నుంచి $h_{n+1}$ను నిర్వచించే సాధారణ నమూనా కనిపిస్తుంది. చివరగా వరుస ప్రమేయాలు $h_1$, $h_2$, \dots\@ యొక్క బిందువువారీ పరిమితిని తీసుకొని $h$ వక్రరేఖను \emph{స్వయంగా} నిర్వచిస్తాం. అంటే ప్రతి $x \in \unitline$కు:
+\begin{align*}
+	h(x) &= \lim_{n \rightarrow \infty} h_n(x)
+\end{align*}
+\sourcecorrection{OLTEHISSETHILB-001}{మూలం ఇక్కడ $x$ను చతురస్రంలో తీసుకుంది; కానీ $h_n$, $h$ వక్రరేఖల ప్రవేశ సమితి ప్రమాణ రేఖఖండం. అందుకే $x$ను $\unitline$లో తీసుకున్నాం. ఈ బిందువువారీ పరిమితి ఉందని మాత్రం చిత్రాలు మాత్రమే నిరూపించవు.}
+ఇప్పుడు ఈ వక్రరేఖ స్థలాన్ని నింపుతుందనే మూల వాదనను చూద్దాం. $h_n$ను గీసేటప్పుడు $\unitsquare$పై $2^n \times 2^n$ గడుల జాలం వేస్తాం. పైథాగరస్ సిద్ధాంతం ప్రకారం ప్రతి గడి కర్ణం పొడవు:
+\[
+\sqrt{\left(\nicefrac{1}{2^{n}}\right)^2+\left(\nicefrac{1}{2^{n}}\right)^2} = 2^{(\frac{1}{2}-n)}
+\]
+మరియు $h_n$ ప్రతి గడి గుండా వెళ్తుందని కనిపిస్తుంది. కాబట్టి $\unitsquare$లోని ప్రతి బిందువుకు, $h_n$పై దానికి $2^{(\frac{1}{2}-n)}$ కంటే ఎక్కువ దూరం లేని ఏదో బిందువు ఉంటుంది. ఇప్పుడు $h$ను $h_1$, $h_2$, $h_3$, \dots\@ ప్రమేయాల పరిమితిగా నిర్వచించాం. మూల వాదన ప్రకారం, $h$ నుంచి ఏ బిందువుకైనా గరిష్ఠ దూరాన్ని ఇలా పొందుతాం:
+\[
+\lim_{n \rightarrow \infty} 2^{(\frac{1}{2}-n)} = 0.
+\]
+అంటే $\unitsquare$లోని ప్రతి బిందువు $h$ నుంచి $0$ దూరంలో ఉంటుంది. మరో మాటలో చెప్పాలంటే $\unitsquare$లోని ప్రతి బిందువూ వక్రరేఖ \emph{మీదనే} ఉంటుంది. అందువల్ల $h$ స్థలాన్ని నింపుతుంది!{}
+\sourcecorrection{OLTEHISSETHILB-002}{ప్రతి $h_n$ చిత్రం చతురస్రంలో దట్టమవుతుందన్న గడి-దూర అంచనా ఒక్కటే, బిందువువారీ పరిమితి $h$ చిత్రం చతురస్రాన్ని నింపుతుందని నిరూపించదు. ఆ దూర అంచనాను పరిమితికి మార్చడానికి పరామితీకరణల అనుకూలత/సమచ్ఛిన్న అభిసరణ వంటి అదనపు వాదన అవసరం. మూలపు ఈ దశను నిరూపణ ఖాళీగా గుర్తించాలి.}
+
+$h$ నిజంగా ఒక \emph{వక్రరేఖ} అని చూపడం మిగిలింది. ఇందుకు ఆ భావనను నిర్వచించాలి. ఆధునిక నిర్వచనం 1887లో జోర్డాన్ ఇచ్చిన నిర్వచనంపై ఆధారపడింది (అంటే మొదటి స్థలపూరక వక్రరేఖ రాకకు కొన్ని సంవత్సరాల ముందే):
+
+\begin{defn}
+వక్రరేఖ అంటే $\unitline$ నుంచి $\Real^2$కు అవిచ్ఛిన్న పటం.
+\end{defn}
+
+ఇది కొంత సహజమైన నిర్వచనం: మన అంతఃప్రజ్ఞలో వక్రరేఖ అనేది ప్రామాణిక రేఖను తలం $\Real^2$లోకి పంపే ``సున్నితమైన'' పటం. మన ప్రమేయం $h$, $\unitline$ నుంచి $\Real^2$కు పటమే. కనుక $h$ అవిచ్ఛిన్నమని చూపాలి. \olref[limits]{sec}లో $\epsilon$/$\delta$ సంకేతాలలో అవిచ్ఛిన్నతను నిర్వచించాం. మూల పాఠ్యం సాధారణ మాటల్లో ఇలా కోరుతుంది: \emph{$\unitsquare$లో ఒక బిందువు $p$ను, ఎంత చిన్నదైనా కావలసిన కచ్చితత్వం $\epsilon$ను ఎంచుకుంటే, $\unitline$లో ఒక తెరిచిన భాగాన్ని కనుగొనగలం; ఆ భాగంలోని ఏ $x$కైనా $h(x)$, $p$కు $\epsilon$ దూరంలో ఉంటుంది.}
+\sourcecorrection{OLTEHISSETHILB-003}{మూలం చెప్పిన ``ప్రతి లక్ష్యబిందువు దగ్గరికి ఏదో ప్రవేశ విరామం చేరుతుంది'' అనే లక్షణం, ప్రతి నిర్ణీత ప్రవేశబిందువు దగ్గర $h$ అవిచ్ఛిన్నమని చెప్పే $\epsilon$--$\delta$ నిర్వచనం కాదు. కింద ఇచ్చిన గడి వాదన ఆ నిర్వచనాన్ని నిరూపించదు; నిర్దిష్ట పరామితీకరణల సమచ్ఛిన్న అభిసరణను చూపితే అవిచ్ఛిన్నతను నిరూపించవచ్చు.}
+
+అందువల్ల $p$, $\epsilon$లను ఎంచుకున్నారని అనుకోండి. ఇది $\unitsquare$పై $p$ కేంద్రంగా $\epsilon$ వ్యాసార్థంతో వృత్తం గీసినట్లే. (వృత్తం కొంత భాగం $\unitsquare$ అంచు బయటకు వెళ్లినా పర్వాలేదు.) $h_n$ను వివరించినప్పుడు $\unitsquare$పై $2^n \times 2^n$ గడుల జాలం వేశామని గుర్తుంచుకోండి. $\epsilon$ ఎంత చిన్నదైనా, $\unitsquare$పై $2^n \times 2^n$ జాలంలోని ఒక గడి పూర్తిగా $p$ కేంద్రంగా $\epsilon$ వ్యాసార్థంతో ఉన్న వృత్తం లోపల ఉండేలా ఏదో $n$ ఉంటుందని స్పష్టమే.
+
+ఆ $n$ తీసుకుని, $h_n$ పూర్తిగా సంబంధిత గడిలోకి పంపే $\unitline$లోని అతిపెద్ద తెరిచిన భాగం $I$ అనుకుందాం. ($h_n$ $2^n\times 2^n$ జాలంలోని ప్రతి గడి గుండా వెళ్తుందని ముందే చెప్పాం కాబట్టి, మూల పాఠ్యం ప్రకారం అటువంటి $(a,b)$ ఉంటుంది.) ఇప్పుడు $x \in I$ అయినప్పుడల్లా $h(x)$ అదే గడిలో ఉందని చూపితే చాలు. దీని కోసం ఏ $m > n$కైనా $h_m(x)$ అదే గడిలో ఉందని చూపితే చాలు. మూల వాదన ప్రకారం ఇది స్పష్టమే: $m > n$కు $h_m$ ఏమి చేస్తుందో చూస్తే, ప్రమాణ విరామంలోని సరిగ్గా ``అదే భాగం'' అదే గడిలోకి పంపబడుతుంది; కేవలం ఆ ప్రాంతంలో మరింత సాగిన, వంకరలు తిరిగిన రూపంలో పంపబడుతుంది.
+\sourcecorrection{OLTEHISSETHILB-004}{ఈ చివరి గడి-విరామ వాదన ముందే ప్రకటించిన లక్ష్యబిందు-సమీపతనే ఉద్దేశిస్తుంది; అవిచ్ఛిన్నతకు కావలసిన ప్రతి ప్రవేశబిందువు చుట్టూ ప్రతిబింబం చిన్నదవుతుందనే పరిమాణాన్ని స్థాపించదు. అంతేకాక $h_n$ల పరామితీకరణ, విరామాల అనుకూలత మరియు పరిమితి ఉనికి మూలంలో నిర్దిష్టంగా ఇవ్వబడలేదు. కాబట్టి దీనిని పూర్తి అవిచ్ఛిన్నత నిరూపణగా తీసుకోరాదు.}
+
+\end{document}

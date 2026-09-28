@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "363",
+  "unit_id": "OLP-0714",
+  "unit_order": 714,
+  "source_path": "content/propositional-logic/syntax-and-semantics/completeness.tex",
+  "blocks": 18,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10480,
+  "previous_terms": 403,
+  "expected_corrections": 701,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "TE-P018 తార్కిక వాక్యాల భాషను, TE-P024/025 నిరూపణ-సిద్ధాంత ప్రయోగాలను పోల్చాం. గరిష్ఠ సంగతత, సంహతత సంయుక్త పదాలకు స్థానిక నిర్వచనాలు అర్థాన్ని నిర్ధారిస్తాయి; ప్రత్యక్ష పూర్తి పదబంధ ప్రమాణం అని చెప్పలేదు.",
+  "evidence_limit": "Specialized compounds are definition controlled; no claim of direct canon attestation for every technical expression. No TeX/layout verification.",
+  "term_decision": {
+    "term_id": "TE-T404",
+    "source_term": "maximally consistent; truth lemma; completeness; compactness",
+    "telugu": "గరిష్ఠ సంగత సమితి; సత్య ఉపసిద్ధాంతం; సంపూర్ణత; సంహతత",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "సంగతత/సంతృప్తి మధ్య తేడా ప్రతి సిద్ధాంతంలో నిలుపబడింది; సంహతతను పరిమిత ఉపసమితుల ప్రమాణం ద్వారా నియంత్రించాం.",
+    "uncertainty": "Specialized compounds are definition controlled; no claim of direct canon attestation for every technical expression. No TeX/layout verification.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

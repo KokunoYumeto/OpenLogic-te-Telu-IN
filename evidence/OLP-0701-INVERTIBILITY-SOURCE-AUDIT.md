@@ -1,0 +1,5 @@
+# OLP-0701 — invertibility source audit
+
+Seven bounded repairs are disclosed. The definition conflates premise count with proof-height bound; the non-principal conjunction example's narrative incorrectly retains the conjunction instead of its two components; quantifier substitution needs internal eigenvariable renaming away from the substituted constant; the quantifier inversion example must retain all stated freshness conditions, not only absence from the succedent; a universal-right contraction diagram is mislabelled existential-right; and the existential contraction conclusion drops the witness argument t in two places. The substitution-regular lemma's source explicitly excludes eigenvariables from the inserted term, confirming the renaming clarification. The source leaves remaining inversion/contraction cases as exercises; those remain exercises.
+
+The frozen G3c rule table also has falsity-left axioms. Their induction bases are now explicitly included: decomposition preserves contextual falsity, and contraction retains at least one occurrence. This repairs the omitted base family without changing formulas or theorem scope.

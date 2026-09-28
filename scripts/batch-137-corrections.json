@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0488",
+  "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+  "source_sha256": "3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d",
+  "audit_id": "OLTEAMLELBIS-20260927",
+  "audit_review_path": "evidence/OLP-0488-BISIMULATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "27216cc162f49bcdbeac1b811b4b4763e0ee45f360637121e991d359b5fd16d3",
+  "audit_findings_path": "evidence/OLP-0488-BISIMULATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "18be0be10730402ee1d80ee23624ceb5ba6e446363fca7f151b19685e514826c",
+  "previous_corrections": 454,
+  "treatments": {
+    "OLTEAMLELBIS-001": {
+      "target_line": 50,
+      "body_treatment": "ద్విసమానుకరణ ముందుకు/వెనక్కి నిబంధనల్లో నిర్వచించని A కర్త సమితిని ముందుగా నిర్వచించిన Gగా రెండు చోట్ల మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

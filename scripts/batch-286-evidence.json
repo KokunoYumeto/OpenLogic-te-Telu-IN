@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "286",
+  "unit_id": "OLP-0637",
+  "unit_order": 637,
+  "source_path": "content/history/set-theory/mythology.tex",
+  "blocks": 10,
+  "linguistic_blocks": [4,5,6,7,8,9],
+  "previous_segments": 9386,
+  "previous_terms": 326,
+  "expected_corrections": 536,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P008"],
+  "consultation_phase": "చరిత్ర-పురాణ విమర్శ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కాంటర్/పియానో/హిల్బర్ట్ అంతఃప్రజ్ఞ పదాలు, స్థానిక గణిత సాక్షులు పోల్చాం; కాంటర్ ఫ్రెంచ్ మాటకు లేఖ సందర్భం, చిత్రాలను హిల్బర్ట్ ఉపయోగించిన వ్యత్యాసం, సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు గణిత భాషా నేపథ్యం మాత్రమే; చారిత్రక లేఖ/ఉటంకింపుల అసలు మూలాలను స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T327","source_term":"mathematical mythology; geometric intuition; out-of-context Cantor quotation","telugu":"గణిత పురాణ నిర్మాణం; జ్యామితీయ అంతఃప్రజ్ఞ; సందర్భం నుంచి వేరుచేసిన కాంటర్ ఉటంకింపు","status":"historical_interpretation_qualified_diagram_use_retained","passages":["TE-P003","TE-P004","TE-P006","TE-P008"],"basis":"కాంటర్ అనూహ్య ఫలితం, నిరూపణ తనిఖీ అభ్యర్థన మధ్య భేదం; పియానో చిత్రం లేకుండా, హిల్బర్ట్ చిత్రం సహాయంతో ప్రచురించారనే కథన భేదం; చివరి అతిశయ ప్రచార హెచ్చరిక నిలిచాయి.","uncertainty":"గూవేయా ఉటంకింపు, హిల్బర్ట్ ఉద్దేశం మూల పాఠ్యం/సూచనల ఆధారితం; బాహ్య అసలు పత్రాలు ఇక్కడ స్వతంత్రంగా చూడలేదు.","borrowing":"French quotation, named authors and citation keys remain source-identifying."}
+}

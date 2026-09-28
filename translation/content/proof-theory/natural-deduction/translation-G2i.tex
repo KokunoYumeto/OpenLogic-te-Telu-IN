@@ -1,0 +1,157 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: translation-G2i
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{tgi}
+
+\olsection{\Log{G2i} నుంచి \Log{N2i}కి అనువాదం}
+
+\Log{G2i}లో సీక్వెంట్‌ల పూర్వపక్షాలు \tetoken{సూత్రాల}{!!{formula}s} బహుసమితులు~$\Gamma$; \Log{N2i}లో సీక్వెంట్‌ల పూర్వపక్షాలు ఒక్కో గుర్తు ఒక్కసారి మాత్రమే కనిపించే గుర్తులతో కూడిన సూత్రాల సమితులు~$\Gamma'$. ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు,~$\Gamma'$లోని $x : !A$ రూపపు \tetoken{మూలకాల}{!!{element}s} సంఖ్య~$\Gamma$లో~$!A$ యొక్క బహుళత్వానికి (అంటే~$!A$ ప్రతుల సంఖ్యకు) మించకపోతే, గుర్తులతో కూడిన \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Gamma'$ బహుసమితి~$\Gamma$కు \emph{అనురూపం} అని అందాం.
+
+\begin{prop}\ollabel{prop:G2i-to-N2i}
+$\Log{G2i} + \Cut \Proves \Gamma \Sequent \Delta$ అయితే, $\Log{N2i}
+\Proves \Gamma' \Sequent !C$. ఇక్కడ~$\Delta$ ఖాళీ అయితే $!C \ident \lfalse$; లేకపోతే $\Delta = \{!A\}$, మరియు~$\Gamma'$ అనేది~$\Gamma$కు అనురూపం.
+\end{prop}
+
+\begin{proof}
+  $\pi$ అనేది \Log{G2i}లో $\Gamma \Sequent \Delta$కు గల \tetoken{నిరూపణ}{!!a{proof}} అయితే,~$\Gamma$కు అనురూపమైన~$\Gamma'$,~\Log{N2i}లో~$\Gamma' \Sequent !C$కు గల \tetoken{నిరూపణ}{!!a{proof}}~$\delta$ ఉన్నాయని చూపుదాం. దీన్ని $n = \pheight{\pi}$పై ఆగమనంతో నిరూపిద్దాం.
+  \sourcecorrection{OLTEPTNATG2I-001}{ఈ నిరూపణ మొదటి వాక్యంలో మూలం G2ci అని పేర్కొంది; ప్రతిపాదన, తదుపరి కేసులు G2i + Cut గురించి. ఆ వ్యవస్థ పేరును G2iగా సరిచేశాం.}
+
+  $n = 0$ అయితే~$\pi$ ఒక ఆక్సియమ్. అది $\lfalse \Sequent
+  \quad$ ఆక్సియమ్ అయితే~$\delta$ అనేది $x:\lfalse \Sequent \lfalse$ ఆక్సియమ్; అంటే $\Gamma' = \{x:\lfalse\}$, $!C \ident \lfalse$. $\pi$ అనేది $!A \Sequent !A$ రూపపు ఆక్సియమ్ అయితే~$\delta$ అనేది $x: !A \Sequent !A$.
+
+  $n>0$ అయితే~$\pi$ చివరలో నియమం~$R$ ఉంటుంది. ఆగమన ఉపపత్తి ప్రకారం ఆ నియమపు పూర్వపక్షాలకు అనురూప సీక్వెంట్‌ల \tetoken{నిరూపణలు}{!!{proof}s}~\Log{N2i}లో ఉన్నాయి. వాటిలోని అన్ని విసర్జన గుర్తులూ వేర్వేరని, ఒక గుర్తు~$x$ విసర్జించబడితే దాన్ని విసర్జించే నిగమనం పైన మాత్రమే కనిపిస్తుందని అనుకోవచ్చు (అవసరమైతే గుర్తులకు కొత్త పేర్లు పెట్టడం ద్వారా). ఆ \tetoken{నిరూపణలను}{!!{proof}s} కలిపి తగిన $\Gamma' \Sequent !C$కు నిరూపణలు ఎలా పొందాలో చూపుదాం. $R$ ఆధారంగా సందర్భాలను వేరు చేద్దాం.
+  \sourcecorrection{OLTEPTNATG2I-002}{ఆగమన ఉపపత్తి ద్వారా లభించేది N2i నిరూపణలే; ఈ వాక్యంలో మూలం N2c అని పేర్కొంది. వ్యవస్థ పేరును N2iగా సరిచేశాం.}
+
+  \begin{enumerate}
+    \item $R$ అనేది \RightR{\Weakening} అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter !A$
+    \DisplayProof
+    \]
+    $\pi_1$కు ఆగమన ఉపపత్తిని వర్తింపజేస్తే~$\Gamma' \Sequent \lfalse$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుంది. దానికి $\FalseInt$ను వర్తింపజేసి $\Gamma' \Sequent !A$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందుతాం.
+    \item $R$ అనేది \LeftR{\Weakening} అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    $\pi_1$కు ఆగమన ఉపపత్తిని వర్తింపజేస్తే~$\Gamma' \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుంది. దానినే~$\delta$గా తీసుకుంటాం. $\Gamma'$ అనేది~$\Gamma$కు అనురూపమైతే,~$!A,
+    \Gamma$కూ అనురూపమే:~$\Gamma'$లోని $x : !A$ల సంఖ్య~$\Gamma$లోని~$!A$ ప్రతుల సంఖ్యకు మించదు; కాబట్టి $\Gamma \cup \{!A\}$లోని $!A$ ప్రతుల సంఖ్యకూ మించదు.
+    \sourcecorrection{OLTEPTNATG2I-003}{ఎడమ బలహీనీకరణ వృక్షానికి మూలం కుడి బలహీనీకరణ గుర్తు పెట్టింది. పూర్వపక్షం నుంచి ఫలితంలో ఎడమవైపు $!A$ చేరుతుంది; గుర్తును \LeftR{\Weakening}గా సరిచేశాం.}
+    \item $R$ అనేది \LeftR{\Contraction} అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, !A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$!A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    $\pi_1$కు ఆగమన ఉపపత్తిని వర్తింపజేస్తే~$\Pi, \Gamma' \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1$ వస్తుంది; ఇక్కడ $\Pi \subseteq \{x : !A,
+    y:!A\}$. $\Pi = \{x : !A, y:!A\}$ అయితే~$\delta_1$లోని గుర్తు గల అన్ని \tetoken{సూత్రాలు}{!!{formula}s}~$y:!A$ను $x:!A$తో ప్రతిస్థాపించండి. $x$ అనేది~$\delta_1$ చివరి సీక్వెంట్ సందర్భంలో ఉంది కనుక~$\delta_1$లో ఏ నిగమనం కూడా~$x:!B$ రూపపు \tetoken{సూత్రాన్ని}{!!a{formula}} విసర్జించదని అనుకోవచ్చు; అంటే~$\delta_1$లో ఏ సీక్వెంట్ ఎడమవైపున్న $x:!B$ కూడా క్రియాశీలం కాదు. అందువల్ల ఫలితమూ~\Log{N2i}లో \tetoken{ఒక నిరూపణ}{!!a{proof}}గానే ఉంటుంది.
+    \sourcecorrection{OLTEPTNATG2I-004}{సంకోచనం సందర్భంలో మూలం గుర్తులతో కూడిన సూత్రాలను G2i ఉపనిరూపణ $\pi_1$లో మార్చమంది; ఆ గుర్తులు ఉన్నది ఆగమనంతో వచ్చిన N2i నిరూపణ $\delta_1$లో. ప్రతిస్థాపన స్థానాన్ని సరిచేశాం.}
+    \item $R$ అనేది $\RightR{\lif}$ అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter !B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter !A \lif !B$
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి ప్రకారం~$x:
+    !A, \Gamma' \Sequent !B$కు లేదా $\Gamma' \Sequent !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1$ ఉంటుంది;~$\Gamma'$ అనేది~$\Gamma$కు అనురూపం. $\delta_1$కు \Intro{\lif}ను వర్తింపజేసి~$\delta$ను పొందవచ్చు.
+    \sourcecorrection{OLTEPTNATG2I-005}{ఈ సందర్భంలో మూలం $\delta_1$ను $\delta$తో పాటు ప్రవేశ నియమం నుంచి పొందాలని చెప్పింది; నిర్మాణ దిశ విరుద్ధం. ఆగమన నిరూపణ $\delta_1$పై నియమం వర్తింపజేసి తుది $\delta$ పొందేలా సరిచేశాం.}
+    \item $R$ అనేది \LeftR{\lif} అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!B, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$!A \lif !B, \Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి నుంచి $\Gamma_1'
+    \Sequent !A$కు \tetoken{నిరూపణలు}{!!{proof}s}~$\delta_1$, అలాగే $x: !B, \Gamma_2' \Sequent !C$కు లేదా $\Gamma_2' \Sequent !C$కు~$\delta_2$ లభిస్తాయి. $\delta_2$ రెండో రూపంలో ఉంటే,~$\delta_2$నే~$\delta$గా తీసుకోవచ్చు. లేకపోతే~$\delta_1$లోని అన్ని సూత్ర గుర్తులకూ విసర్జన గుర్తులకూ కొత్త పేర్లు పెట్టి,~$\delta_1$,~$\delta_2$లలో ఒకే గుర్తు లేకుండా చేయవచ్చు. అప్పుడు $\Gamma_1' \cup
+    \Gamma_2'$ అనేది $\Gamma_1 \cup \Gamma_2$కు అనురూపం. $x:!B$ అనేది~$\delta_2$ చివరి సీక్వెంట్‌లో ఉంది కనుక~$\delta_2$లో~$x$ విసర్జన గుర్తు గల ఏ నిగమనంలోనూ $x:!B$ క్రియాశీలం కాదు. $\delta_2$లోని ప్రతి $x:!B \Sequent !B$ ఆక్సియమ్ స్థానంలో \tetoken{నిరూపణ}{!!{proof}}~$\delta_3$ను ఉంచండి:
+    \[
+    \Axiom$x: !A \lif !B \fCenter !A \lif !B$
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \Deduce$\Gamma_1' \fCenter !A$
+    \RightLabel{\Elim{\lif}}
+    \BinaryInf$x: !A \lif !B, \Gamma_1' \fCenter !B$
+    \DisplayProof
+    \]
+    అలాగే~$\delta_2$లోని ప్రతి $x:!B$ స్థానంలో $x:!A \lif !B$ను ఉంచండి. ఫలితమైన $\Subst{\delta_2}{\delta_3}{x:!B}$ అనేది $x:!A \lif !B, \Gamma_1', \Gamma_2' \Sequent !C$కు గల \tetoken{ఒక నిరూపణ}{!!a{proof}}.
+    \sourcecorrection{OLTEPTNATG2I-006}{ఎడమ అన్వయ నియమం సందర్భంలో మూలం గుర్తుల పునర్నామకరణాన్ని G2i నిరూపణ $\pi_1$కు ఆపాదించింది; అది N2i నిరూపణ $\delta_1$లో చేయాలి. అలాగే $\delta_3$ వృక్ష ఫలిత సందర్భంలో $\Gamma_1'$ను మూలం వదిలింది; రెండింటినీ సరిచేశాం.}
+    \item $R$ అనేది \RightR{\land} అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma_2 \fCenter !B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter !A \land !B$
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి నుంచి $\Gamma_1'
+    \Sequent !A$కు నిరూపణ~$\delta_1$, $\Gamma_2' \Sequent !B$కు~$\delta_2$ లభిస్తాయి. $\delta_2$లోని అన్ని సూత్ర గుర్తులకూ విసర్జన గుర్తులకూ కొత్త పేర్లు పెట్టి~$\delta_1$,~$\delta_2$లలో ఒకే గుర్తు లేకుండా చేయవచ్చు. అప్పుడు $\Gamma_1' \cup \Gamma_2'$ అనేది $\Gamma_1 \cup
+    \Gamma_2$కు అనురూపం. $\delta_1$,~$\delta_2$ల చివరి సీక్వెంట్‌లకు $\Intro{\land}$ను వర్తింపజేసి \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta$ పొందుతాం.
+    \sourcecorrection{OLTEPTNATG2I-007}{సంయోగ కుడి నియమంలో రెండో ఆగమన నిరూపణ ఫలితాన్ని మూలం $!A$గా రెండుసార్లు రాసింది; రెండో పూర్వపక్షానికి అనుగుణంగా $!B$గా, గుర్తుల పునర్నామకరణం చేయాల్సింది N2i నిరూపణ $\delta_2$లోనని సరిచేశాం.}
+    \item $R$ అనేది $\LeftR{\land}$ అయితే~$\pi$ ముగింపు, ఉదాహరణకు, ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$!A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$!A \land !B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి ప్రకారం~$x:
+    !A, \Gamma' \Sequent !C$కు లేదా $\Gamma' \Sequent !C$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\delta_1$ ఉంది;~$\Gamma'$ అనేది~$\Gamma$కు అనురూపం. రెండో సందర్భంలో~$\delta$గా~$\delta_1$ను తీసుకోవచ్చు. మొదటి సందర్భంలో~$x:!A$ చివరి సీక్వెంట్‌లో ఉంది కనుక~$\delta_1$లో~$x$ విసర్జన గుర్తు గల ఏ నిగమనంలోనూ $x:!A$ క్రియాశీలం కాదు. ప్రతి $x:!A
+    \Sequent !A$ ఆక్సియమ్ స్థానంలో \tetoken{నిరూపణ}{!!{proof}}~$\delta_2$ను ఉంచండి:
+    \[
+    \Axiom$x: !A \land !B \fCenter !A \land !B$
+    \RightLabel{\Elim{\land}}
+    \UnaryInf$x: !A \land !B \fCenter !A$
+    \DisplayProof
+    \]
+    అలాగే ప్రతి $x:!A$ స్థానంలో $x:!A \land !B$ను ఉంచండి; అంటే $\Subst{\delta_1}{\delta_2}{x:!A}$ను పరిగణించండి. ఇది $x:!A
+    \land !B, \Gamma' \Sequent !C$కు గల \tetoken{ఒక నిరూపణ}{!!a{proof}}.
+    \item $R$ అనేది \Cut అయితే~$\pi$ ముగింపు ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter !A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$!A, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి నుంచి $\Gamma_1'
+    \Sequent !A$కు నిరూపణ~$\delta_1$, $x:!A, \Gamma_2' \Sequent !C$కు లేదా $\Gamma_2' \Sequent !C$కు~$\delta_2$ లభిస్తాయి. రెండో సందర్భంలో~$\delta$ను~$\delta_2$గా తీసుకోండి. లేకపోతే~$\delta_2$లోని ప్రతి $x:!A \Sequent !A$ ఆక్సియమ్ స్థానంలో~$\delta_1$ను ఉంచితే, $\Gamma_1',
+    \Gamma_2' \Sequent !C$కు గల \tetoken{నిరూపణ}{!!{proof}}~$\Subst{\delta_2}{\delta_1}{x:!A}$గా~$\delta$ లభిస్తుంది.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

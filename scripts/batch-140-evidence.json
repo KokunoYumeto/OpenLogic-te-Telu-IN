@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "140",
+  "unit_id": "OLP-0491",
+  "unit_order": 491,
+  "source_path": "content/intuitionistic-logic/intuitionistic-logic.tex",
+  "blocks": 10,
+  "linguistic_blocks": [4],
+  "previous_segments": 7404,
+  "previous_terms": 180,
+  "expected_corrections": 456,
+  "canon_default": ["TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర అంతఃప్రజ్ఞావాద భాగ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ TE-T052 రూపం, స్థానిక సాధారణ తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; నాలుగు అధ్యాయ దిగుమతులు, భాగం హుక్ నిలిపాం.",
+  "evidence_limit": "TE-P018/024 సాధారణ తర్క, వ్యుత్పత్తి పేజీలే; అంతఃప్రజ్ఞావాద శాఖా పదానికి ప్రత్యక్ష సాక్ష్యాలు కావు. శీర్షిక పూర్వ అనువాద నిర్ణయంతో ఏకరూపం.",
+  "term_decision": {
+    "term_id": "TE-T181",
+    "source_term": "Intuitionistic Logic part / introduction, semantics, soundness-completeness, tableaux imports",
+    "telugu": "అంతఃప్రజ్ఞావాద తర్కం భాగం / పరిచయం, అర్థవిజ్ఞానం, నిర్దుష్టత-సంపూర్ణత, టాబ్లో దిగుమతులు",
+    "status": "native_general_logic_derivation_register_attested_intuitionistic_part_title_prior_edition_controlled",
+    "passages": ["TE-P018", "TE-P024"],
+    "basis": "TE-T052లోని అంతఃప్రజ్ఞావాద తర్కం రూపం కొనసాగించాం; నాలుగు దిగుమతులు, భాగం గుర్తింపు, భాగం ముగింపు హుక్ మారలేదు.",
+    "uncertainty": "స్థానిక సాక్షులు intuitionistic తాత్విక శాఖా పదానికి ప్రత్యక్ష ప్రమాణం ఇవ్వవు; స్వతంత్ర నిపుణ సమీక్ష, పూర్తి TeX నిర్మాణ తనిఖీ ఇంకా లేవు.",
+    "borrowing": "Import paths and part ID remain source-controlled structural notation."
+  }
+}

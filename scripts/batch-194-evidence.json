@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "194",
+  "unit_id": "OLP-0545",
+  "unit_order": 545,
+  "source_path": "content/set-theory/z/nat.tex",
+  "blocks": 11,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10],
+  "previous_segments": 8092,
+  "previous_terms": 234,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P034"],
+  "consultation_phase": "స్థిర సహజ సంఖ్యల ఎంపిక మూలం, తెలుగు లక్ష్యం, పూర్వ సహజ/కరణీయ/క్రమయుగ్మ పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు ఎదురెదురు చూశాం; సెర్మెలో-వాన్ న్యూమన్ వారస ఎంపికలు, రెండు 2 సమితులు, అంకగణిత సమానత్వం, బెనసెరాఫ్ ఏకైకత ప్రశ్న తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/034 సాధారణ సమితి/సంఖ్య/క్రమయుగ్మ పదాలకు మాత్రమే సాక్షులు; ప్రతినిధి ఎంపిక మూల ఉదాహరణ నియంత్రితం. వాన్ న్యూమన్, సెర్మెలో, బెనసెరాఫ్ మూల రచనలు స్వతంత్రంగా చూడలేదు. తొలి మూడు వ్యాఖ్య పంక్తులు పాఠక PDFలో కనిపించవు.",
+  "term_decision": {
+    "term_id": "TE-T235",
+    "source_term": "selection of natural-number set representatives / Zermelo versus von Neumann",
+    "telugu": "సహజ సంఖ్యల సమితి-ప్రతినిధుల ఎంపిక / సెర్మెలో, వాన్ న్యూమన్ పద్ధతులు",
+    "status": "example_controlled_natural_number_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P034"],
+    "basis": "సంఖ్యలను సమితులుగా పరిగణించడం అస్తిత్వ వాదన కాదనీ, సెర్మెలో వారస x↦{x}, వాన్ న్యూమన్ వారస x↦x∪{x}, వాటి 2 ప్రతినిధులు, అనుకరణ ఏకైకత లేమి వేర్వేరుగా నిలిచాయి.",
+    "uncertainty": "ప్రత్యేక ప్రతినిధి ఎంపికకు స్వతంత్ర తెలుగు సాక్షి లేదు; మూల రచనలు స్వతంత్రంగా ధృవీకరించలేదు.",
+    "borrowing": "Historical names, citation keys and set encodings remain source-controlled."
+  }
+}

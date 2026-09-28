@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTCUTMID-20260927",
+  "unit_id": "OLP-0661",
+  "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+  "source_sha256": "e070f69fe844339b3b9b3a4e53468aaf331a24b2596eb36a28f909fa3387aa99",
+  "findings": [
+    {
+      "finding_id": "OLTEPTCUTMID-001",
+      "source_locator": "midsequent.tex lines 71–79, first Herbrand extraction",
+      "classification": "undefined_subproof_prime",
+      "source_issue": "The text says there are no other quantifier inferences in pi_1-prime, but the preceding displayed proof defines pi_1 without a prime.",
+      "minimal_treatment": "Refer to pi_1 and disclose the label correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\pi_1'$"
+        ],
+        "target_only": [
+          "$\\pi_1$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTMID-002",
+      "source_locator": "midsequent.tex lines 105–109, zero-order induction case",
+      "classification": "quantifier_free_case_omitted",
+      "source_issue": "Order zero does not guarantee there is any quantifier inference. The source immediately says there is a single topmost one, overlooking proofs with none.",
+      "minimal_treatment": "Handle the no-quantifier case by taking the end sequent as midsequent and disclose the addition.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTCUTMID-003",
+      "source_locator": "midsequent.tex line 194, existential-right permutation tree",
+      "classification": "stray_formula_marker_on_context",
+      "source_issue": "The context Gamma-prime is preceded by a stray ! in one tree sequent, unlike the adjacent premises and conclusion.",
+      "minimal_treatment": "Remove the stray ! and disclose the diagram repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$!\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!A(t),!B$\\RightLabel{\\RightR{\\lexists}}\\UnaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B$\\AxiomC{}\\RightLabel{$\\pi_3$}\\Deduce$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$\\Gamma'\\fCenter\\Delta',\\lexists[x][!A(x)],!B\\land!C$\\DisplayProof\\]"
+        ]
+      }
+    }
+  ]
+}

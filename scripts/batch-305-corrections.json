@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0656",
+  "source_path": "content/proof-theory/cut-elimination/ce-topmost.tex",
+  "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+  "audit_id": "OLTEPTCUTTOP-20260927",
+  "audit_review_path": "evidence/OLP-0656-CUT-TOPMOST-SOURCE-AUDIT.md",
+  "audit_review_sha256": "2970e1cad4bbb054a3c1cb6ce44909e55abed9a922d6ba38885d7dd7adb871a3",
+  "audit_findings_path": "evidence/OLP-0656-CUT-TOPMOST-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "1f4aebfc3d3bbeb7873fdf01fcd2cbabf28ea05485f28106b7303e7212e7f4fb",
+  "previous_corrections": 555,
+  "treatments": {
+    "OLTEPTCUTTOP-001": {"target_line": 60, "body_treatment": "రెండవ స్వీకృత సందర్భంలో ద్విగుణిత ఉత్తరాంగాన్ని ఇచ్చేది ఎడమ నిరూపణ pi_1 అని సరిచేసి ప్రకటించాం."},
+    "OLTEPTCUTTOP-002": {"target_line": 315, "body_treatment": "నిర్వచించని cutr స్థానంలో ముందే నిర్వచించిన cutrankను పెట్టి ప్రకటించాం."},
+    "OLTEPTCUTTOP-003": {"target_line": 465, "body_treatment": "దిగువ కట్ ముగింపు పూర్వాంగం నుంచి కట్ సూత్రం Bను తొలగించి ప్రకటించాం."},
+    "OLTEPTCUTTOP-004": {"target_line": 240, "body_treatment": "D సందర్భంలోని రెండు నిరూపణ వృక్షాల్లో అదనపు సంయోజన ప్రతులు రాకుండా Delta-prime సందర్భాన్ని సరిచేసి ప్రకటించాం."}
+  }
+}

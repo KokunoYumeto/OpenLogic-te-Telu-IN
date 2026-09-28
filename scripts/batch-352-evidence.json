@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "352",
+  "unit_id": "OLP-0703",
+  "unit_order": 703,
+  "source_path": "content/proof-theory/sequent-calculus/quantifiers.tex",
+  "blocks": 14,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "corrections_by_block": {
+    "8": [
+      "OLTEPTSEQQUA-004"
+    ],
+    "10": [
+      "OLTEPTSEQQUA-001",
+      "OLTEPTSEQQUA-003"
+    ],
+    "12": [
+      "OLTEPTSEQQUA-002"
+    ]
+  },
+  "previous_segments": 10394,
+  "previous_terms": 392,
+  "expected_corrections": 682,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నియమితత, స్వీయచర తాజాతనం, ప్రతిస్థాపన, ఆగమన గద్యం పూర్వ నిరూపణ/లాంబ్డా విభాగాలతో సమన్వయం చేశాం.",
+  "evidence_limit": "మూలం వదిలిన routine సందర్భాలకు పూర్తి స్వతంత్ర formalization లేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T393",
+    "source_term": "regular proof; eigenvariable condition; capture-avoiding substitution; clean and dirty inference",
+    "telugu": "నియమిత నిరూపణ; స్వీయచర షరతు; బంధనంలో చిక్కని ప్రతిస్థాపన; శుభ్ర, అశుభ్ర నిగమనం",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "స్వీయచర పునర్వినియోగం, బద్ధ చర బంధనంలో చిక్కడం వేరు; తాజా పేరుతో మార్పు నిరూపణ నిర్మాణాన్ని నిలుపుతుంది.",
+    "uncertainty": "మూలం వదిలిన routine సందర్భాలకు పూర్తి స్వతంత్ర formalization లేదు; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

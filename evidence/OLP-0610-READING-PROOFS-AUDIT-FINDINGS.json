@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEMTHPRFREA-20260927",
+  "unit_id": "OLP-0610",
+  "source_path": "content/methods/proofs/reading-proofs.tex",
+  "source_sha256": "e5146120b8fd42d544e1e6e51fdcad7fd3a0c721a54ae320692c4fd4277fec33",
+  "findings": [
+    {
+      "finding_id": "OLTEMTHPRFREA-001",
+      "source_locator": "reading-proofs.tex lines 84–87, expanded absorption proof part (b)",
+      "classification": "duplicate_forward_inclusion_in_two_way_equality_proof",
+      "source_issue": "The explicit list of two obligations repeats the forward inclusion for (b), although the following explanation and actual proof establish the reverse inclusion.",
+      "minimal_treatment": "Replace the duplicate (b) by the reverse inclusion and disclose the repair.",
+      "expected_core_math_delta": {"source_only": ["$A\\cap(A\\cupB)\\subseteqA$"], "target_only": ["$A\\subseteqA\\cap(A\\cupB)$"]}
+    },
+    {
+      "finding_id": "OLTEMTHPRFREA-002",
+      "source_locator": "reading-proofs.tex line 96, final explanatory bracket",
+      "classification": "extra_closing_parenthesis_in_union_membership",
+      "source_issue": "The final reference to membership in the union includes a closing parenthesis not present in the expression.",
+      "minimal_treatment": "Remove the unmatched parenthesis and disclose.",
+      "expected_core_math_delta": {"source_only": ["$z\\inA\\cupB)$"], "target_only": ["$z\\inA\\cupB$"]}
+    }
+  ]
+}

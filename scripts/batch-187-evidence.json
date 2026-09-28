@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "187",
+  "unit_id": "OLP-0538",
+  "unit_order": 538,
+  "source_path": "content/set-theory/z/story.tex",
+  "blocks": 6,
+  "linguistic_blocks": [3, 4, 5],
+  "previous_segments": 7997,
+  "previous_terms": 227,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర దశల కథ మూలం, తెలుగు లక్ష్యం, పూర్వ సంచిత-దశలవారీ పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; మూడు దశ సూత్రాలు, సుక్రమతపై పాదగమనిక, సెర్మెలో స్వీకృతాల ఉద్దేశం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; మూడు దశ సిద్ధాంతాలు మూల నిర్వచన నియంత్రితం. Scott/Button సూచనలు స్వతంత్ర తనిఖీ లేకుండా నిలిచాయి. మూలంలోని ‘We simply monikers’ వ్యాకరణ లోపం ఉద్దేశిత అర్థంతో తెలుగులో ఇచ్చాం.",
+  "term_decision": {
+    "term_id": "TE-T228",
+    "source_term": "stage hierarchy / ordering / accumulation principles",
+    "telugu": "దశ ఉనికి / దశల క్రమం / దశలో సేకరణ సూత్రాలు",
+    "status": "definition_controlled_general_set_and_order_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "ప్రతి సమితి ఒక దశలో ఏర్పడడం, దశల ముందుతనం, దశ Sకు ముందరి ఏ సమితుల సమాహారమైనా Sలో సమితి కావడం అనే మూడు మూల అంశాలను, సుక్రమత బలమైన ఊహ అనే పరిమితితో నిలిపాం.",
+    "uncertainty": "సుక్రమతపై Scott పద్ధతి మూల సూచన స్వతంత్రంగా చూడలేదు; దశ సూత్రాల ప్రత్యేక తెలుగు రూపాలకు ప్రత్యక్ష సాక్షి లేదు.",
+    "borrowing": "Stage macro names, cross-references and citations remain source-controlled."
+  }
+}

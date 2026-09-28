@@ -1,0 +1,111 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{qua}
+
+\olsection{నియమిత నిరూపణలు, ప్రతిస్థాపన}
+
+\LeftR{\lexists}, \RightR{\lforall} నియమాలకు వర్తించే “స్వీయచర షరతుల” వల్ల పరిమాణక నియమాల్లో కొన్ని చిక్కులు వస్తాయి. ఈ నిగమనాల్లోని \tetoken{స్థిరాంకం}{!!{constant}}~$a$ను మళ్లీ వాడకుండా చూసుకుంటే వాటిలో చాలావరకు పరిష్కరించవచ్చు. కింది నిర్వచనాన్ని ప్రవేశపెడదాం.
+
+\begin{defn}
+\Log{G1c} లేదా \Log{G3c}లో \tetoken{ఒక నిరూపణ}{!!^a{proof}}~$\pi$ \emph{నియమితమైనది} అనాలంటే:
+\begin{enumerate}
+  \item స్వీయచరం~$a$ను ఒకటి కంటే ఎక్కువ \LeftR{\lexists} లేదా \RightR{\lforall} నిగమనాలకు స్వీయచరంగా వాడకూడదు;
+  \item $a$ ఒక \LeftR{\lexists} లేదా \RightR{\lforall} నిగమనానికి స్వీయచరమైతే, $\pi$లో ఆ నిగమనం పైన మాత్రమే అది రావాలి.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular}
+$\pi$ నియమితమై, $\Gamma \Sequent \Delta$తో ముగిసి, $c$ అనేది~$\pi$లో స్వీయచరంగా వాడని \tetoken{ఒక స్థిరాంకం}{!!a{constant}} అయి, $t$ అనేది~$\pi$ స్వీయచరాలను కలిగి లేని పదమైతే, $\pi$లో ప్రతి~$c$ ఉనికి స్థానంలో~$t$ను ఉంచిన ఫలితం $\Subst{\pi}{t}{c}$ నియమిత \tetoken{నిరూపణ}{!!{proof}}. అవసరమైతే ముందుగా బద్ధ చరాలకు పేర్లు మార్చి, చేర్చే పదంలోని స్వేచ్ఛా చరాలు బంధనంలో చిక్కకుండా ప్రతిస్థాపన చేస్తాం. $\Subst{\pi}{t}{c}$ చివరి సీక్వెంట్ $\Subst{\Gamma}{t}{c}
+\Sequent \Subst{\Delta}{t}{c}$; ఇక్కడ $\Subst{\Gamma}{t}{c} =
+\Setabs{!A(t)}{!A(c) \in \Gamma}$.
+\end{lem}
+\sourcecorrection{OLTEPTSEQQUA-004}{స్థిరాంకం స్థానంలో చరాలు గల పదాన్ని ఉంచినప్పుడు పరిమాణక బంధనంలో అవి చిక్కవచ్చు. అవసరమైతే బద్ధ చరాల పేర్లు మార్చి, బంధనంలో చిక్కని ప్రతిస్థాపన అనే ప్రామాణిక అర్థాన్ని స్పష్టం చేశాం.}
+
+\begin{proof}
+  $\pheight{\pi}$పై ఆగమనంతో. $\pheight{\pi} = 0$ అయితే అది అక్షయం మాత్రమే. అప్పుడు $\Subst{\pi}{t}{c}$ కూడా అక్షయమే; అందులోని ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A(c)$ అనేది $!A(t)$గా మారుతుంది.
+
+  $\pheight{\pi} > 0$ అయితే, $\pi$ చివరి నిగమనాన్ని బట్టి సందర్భాలను వేరు చేస్తాం. నిర్మాణ నియమాల (\Log{G1c}లో), ప్రతిపాదన సంధానకాల తార్కిక నియమాల సందర్భాలు సులభమైనవి; అభ్యాసాలుగా వదిలాం. $\pi$ పరిమాణక నిగమనంతో ముగిసే సందర్భాలను పరిగణిద్దాం.
+  \begin{enumerate}
+    \item చివరి నియమం $\RightR{\lforall}$ అయితే, $\pi$ రూపం:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$\Gamma(c) \fCenter \Delta'(c), !A(a,c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(c) \fCenter \Delta'(c), \lforall[x][!A(x,c)]$
+    \DisplayProof
+    \]
+    ఆగమన పరికల్పన ప్రకారం $\Subst{\pi'}{t}{c}$ అనేది $\Gamma(t) \fCenter \Delta'(t), !A(a,t)$కు నియమిత \tetoken{నిరూపణ}{!!{proof}}. $a$ అనేది~$\pi$ స్వీయచరం కనుక $a$ అనేది~$t$లో రాదు. అందువల్ల $\Subst{\pi}{t}{c}$ చివరి నిగమనం,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$\Gamma(t) \fCenter \Delta'(t), !A(a,t)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma(t) \fCenter \Delta'(t), \lforall[x][!A(x,t)]$
+    \DisplayProof
+    \]
+    సరైనది: నిర్ధారణలో~$a$ లేదు.
+    \item \Log{G3c}లో చివరి నియమం $\LeftR{\lforall}$ అయితే, $\pi$ రూపం:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi'$}
+    \Deduce$!A(s(c),c), \lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,c)], \Gamma(c) \fCenter \Delta'(c)$
+    \DisplayProof
+    \]
+    ఆగమన పరికల్పన ప్రకారం $\Subst{\pi'}{t}{c}$ అనేది $!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter
+    \Delta'(t)$కు నియమిత \tetoken{నిరూపణ}{!!{proof}}. $\Subst{\pi}{t}{c}$ చివరి నిగమనం,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi'}{t}{c}$}
+    \Deduce$!A(s(t),t), \lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][!A(x,t)], \Gamma(t) \fCenter \Delta'(t)$
+    \DisplayProof
+    \]
+    సరైనది. \Log{G1c}లో \LeftR{\lforall} సందర్భం ఇలాంటిదే; కొద్దిగా తక్కువ చిక్కుతో ఉంటుంది.
+    \item చివరి నియమం \RightR{\lexists} లేదా \LeftR{\lexists}: అభ్యాసం.
+  \end{enumerate}
+  ప్రతి సందర్భంలో ఒక నియమిత \tetoken{నిరూపణ}{!!{proof}} చివర (రెండు ఆధారాల నియమంలో రెండు నియమిత \tetoken{నిరూపణల}{!!{proof}s} చివర్లలో) ఒక సీక్వెంట్‌ను చేర్చాం. కొత్త సీక్వెంట్, $\pi$ చివరి సీక్వెంట్ నుంచి భిన్నమైనది ఒక్క విషయంలోనే: $c$ స్థానంలో పదం~$t$ ఉంది. అంతేకాక $\pi$, $\Subst{\pi}{t}{c}$ల స్వీయచరాలు ఒకటే. $t$లో~$\pi$ స్వీయచరాలు లేవని అనుకున్నాం కనుక, కొత్త చివరి సీక్వెంట్‌లో $\Subst{\pi}{t}{c}$ స్వీయచరం రాదు. కాబట్టి $\Subst{\pi}{t}{c}$ నియమితమైనది.
+\end{proof}
+\sourcecorrection{OLTEPTSEQQUA-001}{సార్వత్రిక ఎడమ నియమం సందర్భంలోని రెండు చిత్రాలకు మూలం సార్వత్రిక కుడి నియమం గుర్తు ఇచ్చింది; ఎడమ నియమానికి సమన్వయం చేశాం.}
+\sourcecorrection{OLTEPTSEQQUA-003}{మూల చివరి గద్యంలో స్వీయచరాల సమానత్వం, చేర్చే పదం తాజాతనం చెప్పే రెండు వాక్యాలు కలిసిపోయాయి; ప్రకటించిన షరతులనే వేర్వేరు సరైన వాక్యాలుగా పునర్వ్యవస్థీకరించాం.}
+
+\begin{prop}
+$\pi$ అనేది \Log{G1c} లేదా \Log{G3c}లో \tetoken{ఒక నిరూపణ}{!!a{proof}} అయితే, అదే నిర్మాణం (ముఖ్యంగా అదే \tetoken{ఎత్తు}{!!{height}}) గల నియమిత \tetoken{నిరూపణ}{!!{proof}}~$\pi'$ ఉంటుంది; అది $\pi$ నుంచి స్వీయచరాల పేర్ల మార్పులో మాత్రమే భిన్నం.
+\end{prop}
+
+\begin{proof}
+ఈ నిరూపణ కోసం మాత్రమే, $\pi$ స్వీయచర నిగమనాన్ని \emph{శుభ్రమైనది} అందాం: దాని స్వీయచరం మరో నిగమనానికి స్వీయచరం కాకూడదు; ఆ నిగమనం తక్షణ ఉప-\tetoken{నిరూపణలో}{!!{proof}} తప్ప $\pi$లో మరెక్కడా రాకూడదు. లేకపోతే \emph{అశుభ్రమైనది} అందాం. $\pi$లో అశుభ్ర స్వీయచర నిగమనాల సంఖ్య $n$ అనుకుందాం. $n$పై ఆగమనంతో $\pi$ను కోరిన నియమిత \tetoken{నిరూపణ}{!!{proof}}~$\pi'$గా మార్చవచ్చని చూపుతాం. $n=0$ అయితే, $\pi$ స్వీయచర నిగమనాలన్నీ శుభ్రమైనవి; $\pi$ నియమితమైనది; చేయాల్సిందేమీ లేదు. లేకపోతే, దాని పైన మరో అశుభ్ర స్వీయచర నిగమనం లేని అత్యంత పై అశుభ్ర నిగమనాన్ని ఎంచుకోండి; ఉదాహరణకు \RightR{\lforall}. దానితో ముగిసే $\pi$ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$ రూపం:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma \fCenter \Delta, !A(c)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+$c$ స్వీయచరం కనుక అది~$\Gamma$, $\Delta$, $\lforall[x][!A(x)]$లలో రాదు. $\pi_2$ నిరూపణలో స్వీయచర నిగమనాలు ఉన్నా, ఎంపిక ప్రకారం అవన్నీ శుభ్రమైనవి; కాబట్టి అది నియమితమైనది. $\pi$లో రాని \tetoken{ఒక స్థిరాంకం}{!!a{constant}} $a$ను తీసుకోండి. \olref{lem:subst-regular} ప్రకారం $\Subst{\pi_2}{a}{c}$ అనేది $\Gamma \fCenter \Delta,
+!A(a)$కు నియమిత నిరూపణ; దానికి~$\RightR{\lforall}$ను వర్తింపజేయవచ్చు. $\pi$లో $\pi_1$ స్థానంలో ఈ నిరూపణ $\pi_1'$ను ఉంచితే,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\pi_2}{a}{c}$}
+    \Deduce$\Gamma \fCenter \Delta, !A(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+    \DisplayProof
+    \]
+ఒక అశుభ్ర స్వీయచర నిగమనం శుభ్రమైనదిగా మారింది; తేడా స్వీయచరం $c$ స్థానంలో~$a$ను ఉంచడమే. ఫలిత నిరూపణలో అశుభ్ర స్వీయచర నిగమనాల సంఖ్య $\le n-1$; ఆగమన పరికల్పన నుంచి ఫలితం వస్తుంది.
+\end{proof}
+\sourcecorrection{OLTEPTSEQQUA-002}{మూలం అత్యంత పై స్వీయచర నిగమనాన్ని ఎంచుకోమని చెప్పినా అది శుభ్రమైనదై ఉండవచ్చు. అత్యంత పై అశుభ్ర నిగమనాన్ని ఎంచుకోవాలి; దాని ఉపనిరూపణలో శుభ్ర స్వీయచర నిగమనాలు ఉండవచ్చు. ఒక పేరును మార్చితే మరికొన్ని నిగమనాలూ శుభ్రమవవచ్చు కనుక సంఖ్య సరిగ్గా ఒకటి తగ్గాలని కాక, కనీసం ఒకటి తగ్గుతుందని రాశాం.}
+
+ఇప్పుడే నిరూపించిన ప్రతిపాదనను ప్రతిసారీ ప్రత్యేకంగా ప్రస్తావించము; కానీ పరిశీలించే \tetoken{నిరూపణలన్నీ}{!!{proof}s} నియమితమైనవిగా తీసుకుంటాం. అవి అలా లేకపోతే, స్వీయచరాల పేర్లు మార్చి ఎప్పుడూ నియమితమైనవిగా చేయవచ్చు.
+
+\end{document}

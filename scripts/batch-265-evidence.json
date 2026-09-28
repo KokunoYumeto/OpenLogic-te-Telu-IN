@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "265",
+  "unit_id": "OLP-0616",
+  "unit_order": 616,
+  "source_path": "content/methods/induction/strong-induction.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5,6,7,8,9],
+  "corrections_by_block": {"6": ["OLTEMTHINDSTR-001"], "8": ["OLTEMTHINDSTR-002"]},
+  "previous_segments": 9114,
+  "previous_terms": 305,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P024"],
+  "consultation_phase": "బలమైన ఆగమన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఆగమన/ఖాళీ పరిధి పరిమాణీకరణ పదాలు, స్థానిక తర్క-నిరూపణ సాక్షులు పోల్చాం; పూర్వ సంఖ్య రూపానికి ధన సూచిక పరిమితి, అన్ని చిన్న సందర్భాల పూర్వపక్షం, ఖాళీ శూన్య ఆధారం, P(l) సూచిక తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు ఆగమన సాధారణ వాడుకకు ఆధారం; బలమైన ఆగమన ప్రత్యేక సూత్రం మూల గణితం ఆధారితం. రెండు మూల స్పష్టీకరణలు ప్రకటించాం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T306","source_term":"strong induction; all-smaller-cases hypothesis; vacuous base","telugu":"బలమైన ఆగమనం; అన్ని చిన్న సందర్భాల పరికల్పన; ఖాళీ పరిధి ఆధారం","status":"all_predecessors_step_zero_vacuity_source_controlled_two_disclosures","passages":["TE-P003","TE-P004","TE-P024"],"basis":"P(k) కోసం అన్ని l<k సందర్భాలను తీసుకోవడం, k=0 వద్ద ఖాళీ పరిధి పూర్వపక్షం సత్యం కావడం, విడి ఆధారం అవసరం లేకపోవడం, సాధారణ పూర్వసంఖ్య రూపం ధన సూచికలకు మాత్రమే అర్థం కావడం నిలిచాయి.","uncertainty":"బలమైన ఆగమనం, ఖాళీ పరిధి ప్రత్యేక పదాలకు ప్రత్యక్ష స్థానిక సాక్షి లేదు; మూల సూత్రం అర్థాన్ని నియంత్రించింది.","borrowing":"P, k, l, natural-number notation and quantifier macros remain unchanged."}
+}

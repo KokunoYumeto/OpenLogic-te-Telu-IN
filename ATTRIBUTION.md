@@ -6,14 +6,16 @@
   https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0 .
   CC BY 4.0; full license/disclaimer in LICENSE.md and upstream/LICENSE.md.
   The source README is retained verbatim. This is an unofficial adaptation.
-- Editable source units retain their paths and original source comment
-  identities. The published chapter source package includes exactly its
-  seven original and seven translated units, not a claim of a full edition.
-- The three unmodified TikZ diagrams are upstream/assets/diagrams/union.tikz,
-  intersection.tikz and difference.tikz. No separate license/copyright notice
-  is present in those files; the repository's CC BY 4.0 notice applies.
+- Editable Telugu source units retain all 722 frozen source paths and their
+  original comment identities. The current public v0.4.0 reader release is
+  bounded to 276 units; local full-corpus source coverage is not a claim that
+  a complete reader has passed release QA or been published.
+- Preserved upstream TikZ sources remain under `upstream/assets/diagrams/`
+  and within the frozen content tree. Their reader SVG derivatives are
+  adaptations of those sources; no separate notice is present in the diagram
+  files, so the source repository's CC BY 4.0 notice applies.
 - Telugu translation, localized title/about material, grammatical token
-  realization, chapter reader and task-authored build/package scripts are
+  realization, integrated reader and task-authored build/package scripts are
   machine-generated/agent-authored changes. CC BY 4.0 applies to these
   contributions to the extent copyright applies. No human review or source
   author endorsement is claimed.
@@ -31,6 +33,7 @@
 
 The source license's warranty disclaimer remains applicable. Provisional
 technical nomenclature and mathematical-source caveats are documented in
-evidence. Current repository coverage is 204 drafted units of 722, while only
-the seven-unit Sets chapter is released as a verified PDF and semantic reader
-at this checkpoint.
+evidence. Local editable coverage is 722 of 722 units; the latest accepted
+public reader release remains the bounded 276-unit v0.4.0 PDF/EPUB, with the
+deployed semantic HTML reader bounded to 23 units. The full reader and its
+release remain under QA.

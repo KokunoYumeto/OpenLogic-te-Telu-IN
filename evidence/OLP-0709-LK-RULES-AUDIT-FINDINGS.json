@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQLK-20260928",
+  "unit_id": "OLP-0709",
+  "source_path": "content/proof-theory/sequent-calculus/rules-LK.tex",
+  "source_sha256": "04fc54bec445b78a7c47a7c9db8a8fbb38feb33fc693a90bd530238d118cd485",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQLK-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-LK.tex lines 9–126, aligned block 4",
+      "classification": "sequence_rule_table_duplicate_G1c_label",
+      "source_issue": "The LK table reuses tab:G1c despite the independent G1c table.",
+      "minimal_treatment": "Give the sequence-based table its own tab:LK label.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\ollabel{tab:G1c}"
+        ],
+        "target_only": [
+          "\\ollabel{tab:LK}"
+        ]
+      }
+    }
+  ]
+}

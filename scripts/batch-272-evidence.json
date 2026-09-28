@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "272",
+  "unit_id": "OLP-0623",
+  "unit_order": 623,
+  "source_path": "content/history/biographies/alonzo-church.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5,6,7,8,9,10],
+  "previous_segments": 9217,
+  "previous_terms": 312,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P005", "TE-P011", "TE-P018", "TE-P024"],
+  "consultation_phase": "చర్చ్ జీవిత చరిత్ర స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ లాంబ్డా కలనశాస్త్రం/ట్యూరింగ్ యంత్రం/అనిర్ణయనీయత పదాలు, స్థానిక గణిత-తర్క సాక్షులు పోల్చాం; జీవిత తేదీలు, సిద్ధాంతప్రతిపాదన-సిద్ధాంతం భేదం, పఠన సూచనలు తనిఖీ చేశాం.",
+  "evidence_limit": "స్థానిక సాక్షులు తర్క/ప్రమేయ నేపథ్యం మాత్రమే; వ్యక్తి జీవిత వివరాలు, మూల వ్యాసాల చారిత్రక వివరణ బాహ్యంగా స్వతంత్రంగా ధృవీకరించలేదు. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T313","source_term":"Alonzo Church; Church--Turing Thesis; Church's Theorem","telugu":"అలోంజో చర్చ్; చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన; చర్చ్ సిద్ధాంతం","status":"thesis_vs_undecidability_theorem_distinguished_biography_source_controlled","passages":["TE-P003","TE-P005","TE-P011","TE-P018","TE-P024"],"basis":"లాంబ్డా కలనశాస్త్రం-ట్యూరింగ్ యంత్రం తుల్యత, ప్రభావక గణన సిద్ధాంతప్రతిపాదన, ప్రథమ శ్రేణి చెల్లుబాటు అనిర్ణయనీయత సిద్ధాంతం వేరుగా నిలిచాయి; తేదీలు, పఠన సూచనలు మారలేదు.","uncertainty":"జీవిత చరిత్ర వాస్తవాలు, పఠన భాగంలోని నిర్ణయ సమస్య/సిద్ధాంతప్రతిపాదన కుండలీకరణ బాహ్యంగా ధృవీకరించలేదు; మూల రూపం నిలిచింది.","borrowing":"Lambda, Turing and Church are source eponyms; citation keys and Journal of Symbolic Logic title remain source-identifying text."}
+}

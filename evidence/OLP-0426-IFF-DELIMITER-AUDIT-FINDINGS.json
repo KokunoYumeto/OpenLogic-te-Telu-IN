@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTENMLFRDST-20260928",
+  "unit_id": "OLP-0426",
+  "source_path": "content/normal-modal-logic/frame-definability/second-order-definability.tex",
+  "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+  "findings": [
+    {
+      "finding_id": "OLTENMLFRDST-002",
+      "source_locator": "content/normal-modal-logic/frame-definability/second-order-definability.tex lines 39-40, aligned block 7",
+      "classification": "math_delimiter_outside_tagged_equivalence_case_argument",
+      "source_issue": "The prvIff branch closes its indcase argument before the closing math delimiter, unlike the adjacent branches, so the TeX grouping is malformed.",
+      "minimal_treatment": "Move the closing math delimiter inside the third indcase argument without changing the formula; disclose the frozen-source repair in the target.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\ST_x(\\indfrm)=(\\ST_x(!B)\\liff\\ST_x(!C))}$"],
+        "target_only": ["$\\ST_x(\\indfrm)=(\\ST_x(!B)\\liff\\ST_x(!C))$"]
+      }
+    }
+  ]
+}

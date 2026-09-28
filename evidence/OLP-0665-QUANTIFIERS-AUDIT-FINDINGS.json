@@ -1,0 +1,41 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATQUA-20260927",
+  "unit_id": "OLP-0665",
+  "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+  "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATQUA-001",
+      "source_locator": "quantifiers.tex lines 111–125, existential-elimination substitution case",
+      "classification": "wrong_substituted_conclusions_and_repeated_universal_tree",
+      "source_issue": "The induction-hypothesis conclusions still contain c or unmodified C after substituting t for c, and the displayed final inference is a copied universal-introduction tree unrelated to the existential-elimination case.",
+      "minimal_treatment": "Use substituted conclusions and the two-premise existential-elimination proof tree, with an adjacent disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!C$",
+          "$!C$",
+          "$\\lexists[x][!A(x,c)]$",
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\delta'}{t}{c}$}\\DeduceC{$!A(a,t)$}\\RightLabel{\\Intro{\\lforall}}\\UnaryInfC{$\\lforall[x][!A(x,t)]$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "$\\Subst{!C}{t}{c}$",
+          "$\\Subst{!C}{t}{c}$",
+          "$\\lexists[x][!A(x,t)]$",
+          "\\[\\AxiomC{}\\RightLabel{$\\Subst{\\delta_1'}{t}{c}$}\\DeduceC{$\\lexists[x][!A(x,t)]$}\\AxiomC{$\\Discharge{!A(a,t)}{x}$}\\RightLabel{$\\Subst{\\delta_2'}{t}{c}$}\\DeduceC{$\\Subst{!C}{t}{c}$}\\DischargeRule{\\Elim{\\lexists}}{x}\\BinaryInfC{$\\Subst{!C}{t}{c}$}\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATQUA-002",
+      "source_locator": "quantifiers.tex lines 141–158 and 181–184, regularization induction",
+      "classification": "dirty_inference_selection_missing",
+      "source_issue": "Selecting merely a highest eigenvariable inference need not reduce the count of dirty inferences, and its immediate subproof need not contain no eigenvariable inferences. Select a highest dirty inference so all eigenvariable inferences in its subproof are clean and the subproof is regular.",
+      "minimal_treatment": "Specify a highest dirty inference and the correct regularity reason, aligning the exercise wording; disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

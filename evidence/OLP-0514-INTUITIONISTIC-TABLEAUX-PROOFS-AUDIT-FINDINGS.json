@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTTABPRF-20260927",
+  "unit_id": "OLP-0514",
+  "source_path": "content/intuitionistic-logic/tableaux/proofs.tex",
+  "source_sha256": "9745506f871e091339606542e34049c03d2baffd71bd7de389c0d69468846e73",
+  "findings": [
+    {
+      "finding_id": "OLTEINTTABPRF-001",
+      "source_locator": "proofs.tex lines 32 and 34; false-conjunction rule-source indices",
+      "classification": "tableau_rule_justification_points_to_wrong_line",
+      "source_issue": "Both false-conjunction branches cite line 4, which contains a false conditional, instead of line 7, which contains their false conjunction premise.",
+      "minimal_treatment": "Change both branch justification indices to 7 and disclose the repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

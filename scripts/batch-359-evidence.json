@@ -1,0 +1,47 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "359",
+  "unit_id": "OLP-0710",
+  "unit_order": 710,
+  "source_path": "content/proof-theory/sequent-calculus/rules-mG3i.tex",
+  "blocks": 5,
+  "linguistic_blocks": [
+    4
+  ],
+  "corrections_by_block": {
+    "4": [
+      "OLTEPTSEQMG3I-001",
+      "OLTEPTSEQMG3I-002",
+      "OLTEPTSEQMG3I-003"
+    ]
+  },
+  "proof_gap_ids": [
+    "OLTEPTSEQMG3I-002"
+  ],
+  "previous_segments": 10438,
+  "previous_terms": 399,
+  "expected_corrections": 695,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "బహుళ/ఒక్క ఉత్తరపక్ష సూత్ర పరిమితులను పూర్వ పట్టికలతో పోల్చి నిర్వచించని పక్క వ్యవస్థ పేర్లను ప్రత్యేకంగా ప్రకటించాం.",
+  "evidence_limit": "మూల పక్క వ్యవస్థ పేర్లకు పూర్తి నిర్వచనం నిర్ధారించలేదు; నేర పట్టిక/నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T400",
+    "source_term": "multi-conclusion intuitionistic calculus; restricted right rules; source system-reference gap",
+    "telugu": "బహుళ-నిర్ధారణల అంతఃప్రజ్ఞావాద కలనశాస్త్రం; పరిమిత కుడి నియమాలు; మూల వ్యవస్థ-సూచన ఖాళీ",
+    "status": "multi_conclusion_rules_local_repairs_source_system_definition_gap_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పట్టిక ప్రధాన వ్యవస్థ నియమాలు నిలిపాం; నిర్వచించని కనిష్ఠ రూపాన్ని సరిచేసిన సిద్ధాంతంగా ప్రకటించలేదు.",
+    "uncertainty": "మూల పక్క వ్యవస్థ పేర్లకు పూర్తి నిర్వచనం నిర్ధారించలేదు; నేర పట్టిక/నిర్మాణ QA మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

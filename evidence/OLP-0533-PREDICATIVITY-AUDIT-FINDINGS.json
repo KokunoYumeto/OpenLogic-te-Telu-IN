@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTPRED-20260927",
+  "unit_id": "OLP-0533",
+  "source_path": "content/set-theory/story/predicativity.tex",
+  "source_sha256": "c5cedcd2a3116e12338c7eb16e4704c2b9bb1eb6c93d9754585dbe8ba45912aa",
+  "findings": [
+    {
+      "finding_id": "OLTESTPRED-001",
+      "source_locator": "predicativity.tex opening paragraph, expansion of the Russell-set predicate",
+      "classification": "russell_membership_condition_double_negated_in_prose",
+      "source_issue": "The prose's 'not non-self-membered' reverses the displayed x∉x condition.",
+      "minimal_treatment": "State that the putative set contains exactly the non-self-membered sets and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTESTPRED-002",
+      "source_locator": "predicativity.tex transition after Whitehead-Russell quotation and before Predicative Comprehension",
+      "classification": "vicious_circle_principle_acceptance_reversed",
+      "source_issue": "The source says to follow the cited rejection of impredicative definitions by rejecting the vicious-circle principle, instead of accepting it.",
+      "minimal_treatment": "Make the transition accept the vicious-circle principle and disclose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

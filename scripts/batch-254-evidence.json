@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "254",
+  "unit_id": "OLP-0605",
+  "unit_order": 605,
+  "source_path": "content/methods/proofs/using-definitions.tex",
+  "blocks": 17,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16],
+  "previous_segments": 8929,
+  "previous_terms": 294,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P024"],
+  "consultation_phase": "నిర్వచన వినియోగ విభాగ మూలం, తెలుగు లక్ష్యం, పూర్వ సమితి సమానత్వం/సమ్మేళనం/నిరూపణ పదాలు, స్థానిక సమితి-నిరూపణ సాక్షులు పోల్చాం; నిర్వచ్య-నిర్వచక భేదం, స్థానభర్తీ, రెండు దిశల సభ్యత్వం, సమ్మేళనాన్ని పూర్తిగా విప్పడం, చివరి సమస్య తనిఖీ చేశాం.",
+  "evidence_limit": "నిర్వచ్యపదం, నిర్వచక భాగం సాంకేతిక రూపాలకు ప్రత్యక్ష స్థానిక నామసాక్షి లేదు; వెంటనే ఇచ్చిన మూల నిర్వచనాలు అర్థాన్ని నియంత్రిస్తాయి. సమితి సభ్యత్వం, సమ్మేళనానికి స్థానిక ఆధారం ఉంది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T295","source_term":"definiendum; definiens; unpacking definitions","telugu":"నిర్వచ్యపదం; నిర్వచక భాగం; నిర్వచనాలను విప్పడం","status":"definition_parts_and_placeholder_substitution_source_controlled_set_example_preserved","passages":["TE-P004","TE-P008","TE-P024"],"basis":"నిర్వచించే సంక్షిప్త పదం, దాని పూర్తి షరతు వేరు చేసి, సమితుల సమానత్వ నిర్వచనంలో A/B స్థానభర్తీలను సమ్మేళనాలుగా సరిగ్గా మార్చి, రెండు దిశల సభ్యత్వాన్ని విప్పాం.","uncertainty":"నిర్వచ్యపదం, నిర్వచక భాగం ప్రత్యేక నామాలకు ప్రత్యక్ష సాక్షి లేదు; మూల వివరణ అర్థాన్ని నిర్ధారిస్తుంది.","borrowing":"Latin termini definiendum/definiens are parenthetical technical glosses; mathematical variables, set notation and protected source tokens remain unchanged."}
+}

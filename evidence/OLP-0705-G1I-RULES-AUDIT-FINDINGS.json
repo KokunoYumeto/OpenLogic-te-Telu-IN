@@ -1,0 +1,43 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQG1I-20260928",
+  "unit_id": "OLP-0705",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G1i.tex",
+  "source_sha256": "b16548e594dc5a0a414c919e26078d474488c3186487c7cbdce170fb23035b7b",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQG1I-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G1i.tex lines 9–115, aligned block 4",
+      "classification": "intuitionistic_table_duplicate_classical_label",
+      "source_issue": "The G1i table reuses the G1c label.",
+      "minimal_treatment": "Give the G1i table its own tab:G1i label.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\ollabel{tab:G1c}"
+        ],
+        "target_only": [
+          "\\ollabel{tab:G1i}"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQG1I-002",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G1i.tex lines 9–115, aligned block 4",
+      "classification": "minimal_variant_falsity_axiom_shape_clarification",
+      "source_issue": "The caption refers to context-bearing falsity axioms although the displayed G1i base axiom has no side contexts.",
+      "minimal_treatment": "Name the actual displayed falsity base axiom while retaining removal of right weakening.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\lfalse,\\Gamma\\Sequent\\Delta$"
+        ],
+        "target_only": [
+          "$\\lfalse\\Sequent\\quad$"
+        ]
+      }
+    }
+  ]
+}

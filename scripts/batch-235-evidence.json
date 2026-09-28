@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "235",
+  "unit_id": "OLP-0586",
+  "unit_order": 586,
+  "source_path": "content/set-theory/card-arithmetic/card-arithmetic.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4],
+  "previous_segments": 8631,
+  "previous_terms": 275,
+  "expected_corrections": 499,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ అంకగణిత అధ్యాయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కార్డినల్/అంకగణిత పదాలు, సంఖ్య సాక్షులు పోల్చి శీర్షిక, ఐదు దిగుమతులు తనిఖీ చేశాం.",
+  "evidence_limit": "శీర్షికకు సాధారణ సంఖ్య పదసాక్షులే; ప్రత్యేక కార్డినల్ పదం మూల అధ్యాయ నియంత్రితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T276",
+    "source_term": "Cardinal Arithmetic",
+    "telugu": "కార్డినల్ అంకగణితం",
+    "status": "chapter_heading_translated_import_graph_preserved",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "శీర్షిక, ఐదు దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలిచాయి.",
+    "uncertainty": "కార్డినల్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; పూర్వ అధ్యాయంలో వాడినదే కొనసాగింది.",
+    "borrowing": "Cardinal is an explicit mathematical borrowing."
+  }
+}

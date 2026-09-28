@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0528",
+  "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+  "source_sha256": "bf3efbdee2ef7ffb044355a15128b37a9632a2c2a3fe3337d38c42644ab9a2bc",
+  "audit_id": "OLTECNTCPO-20260927",
+  "audit_review_path": "evidence/OLP-0528-COUNTERFACTUAL-CONTRAPOSITION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "a7937668e5864920467dc83cf47b0895907b58333ed775053b142db1b69c7008",
+  "audit_findings_path": "evidence/OLP-0528-COUNTERFACTUAL-CONTRAPOSITION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "a396fe1970fc0624e039a341003fdaafe7bea3fed1d91587f4dbf97964fc9084",
+  "previous_corrections": 478,
+  "treatments": {
+    "OLTECNTCPO-001": {"target_line": 51, "body_treatment": "గోళ నమూనా నిర్వచనానికి అనుగుణంగా మూడు గోళాల జాబితాను ప్రపంచ-ప్రతి ప్రమేయం $O$ బదులు సంబంధిత లోకపు $O_w$ విలువగా వ్రాసి ప్రకటించాం."}
+  }
+}

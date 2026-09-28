@@ -1,0 +1,28 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYTN3-20260928",
+  "unit_id": "OLP-0693",
+  "source_path": "content/proof-theory/propositions-as-types/rules-tN3.tex",
+  "source_sha256": "948804549f0622cc616399743fa6fc6680b1b061763d292d7c5e2106fd583656",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYTN3-001",
+      "source_locator": "content/proof-theory/propositions-as-types/rules-tN3.tex lines 9–71, aligned block 4",
+      "classification": "duplicate_alternate_rule_table_label",
+      "source_issue": "The tN3 rule table reuses tab:tN2ip, causing collision with the preceding tN2 table.",
+      "minimal_treatment": "Give the tN3 table its own tab:tN3ip label and align the types-section reference.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      },
+      "expected_protected_identifier_delta": {
+        "source_only": [
+          "\\ollabel{tab:tN2ip}"
+        ],
+        "target_only": [
+          "\\ollabel{tab:tN3ip}"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "186",
+  "unit_id": "OLP-0537",
+  "unit_order": 537,
+  "source_path": "content/set-theory/z/z.tex",
+  "blocks": 7,
+  "linguistic_blocks": [1, 4],
+  "previous_segments": 7990,
+  "previous_terms": 226,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008"],
+  "consultation_phase": "స్థిర అధ్యాయ డ్రైవరు, తెలుగు లక్ష్యం, పూర్వ సమితి/దశ పదాలు, స్థానిక సమితి సాక్షులు ఎదురెదురు చూశాం; అధ్యాయ శీర్షిక, తొమ్మిది దిగుమతులు, అధ్యాయ ముగింపు హుక్ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008 సమితి సాధారణ పదానికి మాత్రమే సాక్షులు; Z సంకేతం, దిగుమతి పథాలు మూల నిర్మాణ ఆధీనంలో ఉన్నాయి. దిగుమతి అధ్యాయాల సమగ్ర దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T227",
+    "source_term": "Steps towards Z (chapter driver)",
+    "telugu": "Z వైపు అడుగులు",
+    "status": "chapter_heading_source_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008"],
+    "basis": "Z చిహ్నం, తొమ్మిది దిగుమతులు, అధ్యాయ హుక్ మారకుండా శీర్షికను తెలుగులో ఇచ్చాం.",
+    "uncertainty": "శీర్షికకు ప్రత్యేక తెలుగు సాక్షి లేదు; మొత్తం అధ్యాయం దృశ్య తనిఖీ పెండింగ్.",
+    "borrowing": "Z mathematical symbol and import paths remain source-controlled."
+  }
+}

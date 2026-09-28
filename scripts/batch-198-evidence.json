@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "198",
+  "unit_id": "OLP-0549",
+  "unit_order": 549,
+  "source_path": "content/set-theory/ordinals/idea.tex",
+  "blocks": 7,
+  "linguistic_blocks": [3, 4, 5, 6],
+  "previous_segments": 8126,
+  "previous_terms": 238,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008"],
+  "consultation_phase": "స్థిర క్రమసంఖ్య భావన మూలం, తెలుగు లక్ష్యం, పూర్వ సహజ/సరి/బేసి/క్రమ పదాలు, స్థానిక సంఖ్య/సమితి సాక్షులు ఎదురెదురు చూశాం; మూడు TikZ చిత్రాలు, omega, omega+1, omega+omega క్రమ-రకాల వివరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008 సాధారణ సంఖ్య/క్రమ పదాలకు మాత్రమే సాక్షులు; క్రమరకం నిర్వచన ఉదాహరణ నియంత్రితం. చిత్ర ఆదేశాలు నిలిచినా దృశ్యంగా రేండర్ చేసి చూడలేదు.",
+  "term_decision": {
+    "term_id": "TE-T239",
+    "source_term": "omega-sequence / omega+1 and omega+omega orderings",
+    "telugu": "ఒమెగా-అనుక్రమం / ఒమెగా+1, ఒమెగా+ఒమెగా క్రమాలు",
+    "status": "diagram_and_example_controlled_general_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008"],
+    "basis": "సాధారణ సహజ క్రమం, 0ను చివరికి మార్చిన చివరి మూలకమున్న క్రమం, ముందుగా సరి తరువాత బేసి సంఖ్యల క్రమం అనే మూడు చిత్రాలు, omega/omega+1/omega+omega గుర్తింపులు నిలిచాయి.",
+    "uncertainty": "చిత్రాల దృశ్య తనిఖీ జరగలేదు; omega అనుక్రమం ప్రత్యేక తెలుగు పదానికి ప్రత్యక్ష సాక్షి లేదు.",
+    "borrowing": "Omega notation and all TikZ diagram commands remain source-controlled."
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPTYNOR-20260928",
+  "unit_id": "OLP-0687",
+  "source_path": "content/proof-theory/propositions-as-types/normalization.tex",
+  "source_sha256": "56c9430670f6e37d7ceb3781c63f2ffd1258f7533dbf4bf9e4c99278b43e67be",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPTYNOR-001",
+      "source_locator": "normalization.tex lines 20–45, aligned block 7",
+      "classification": "disjunction_rank_type_mismatch",
+      "source_issue": "The rank formula uses A,B although the disjunction summands are A1,A2.",
+      "minimal_treatment": "Use the explicitly declared summand types.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\begin{align*}\\cutrank{(\\lambd[\\typeof{x}{!A}][\\typeof{N}{!B}])Q}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ande{i}{\\andi{\\typeof{M}{!A}}{\\typeof{N}{!B}}}}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}{\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}}&=\\len{!A}+\\len{!B}+1\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}\\cutrank{(\\lambd[\\typeof{x}{!A}][\\typeof{N}{!B}])Q}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ande{i}{\\andi{\\typeof{M}{!A}}{\\typeof{N}{!B}}}}&=\\len{!A}+\\len{!B}+1\\\\\\cutrank{\\ore{\\ori{i}{!A_{i}}{\\typeof{M}{!A_i}}}{\\typeof{x_1}{!A_1}}{\\typeof{N_1}{!C}}{\\typeof{x_2}{!A_2}}{\\typeof{N_2}{!C}}}&=\\len{!A_1}+\\len{!A_2}+1\\end{align*}"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-002",
+      "source_locator": "normalization.tex lines 20–45, aligned block 7",
+      "classification": "undefined_empty_maximum",
+      "source_issue": "The formula takes max of an empty redex set although normal terms are assigned rank zero.",
+      "minimal_treatment": "Adjoin zero to the set whose maximum is taken.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\maxrank{M}=\\max\\{\\cutrank{N}|NM\\}\\]"
+        ],
+        "target_only": [
+          "\\[\\maxrank{M}=\\max(\\{0\\}\\cup\\{\\cutrank{N}|NM\\})\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-003",
+      "source_locator": "normalization.tex lines 47–90, aligned block 8",
+      "classification": "substitution_major_term_index_mismatch",
+      "source_issue": "Disjunction elimination has major term i instead of the substituted variable x.",
+      "minimal_treatment": "Use x in the major-term position.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\ore{i}{x_1}{P_1}{x_2}{P_2}$"
+        ],
+        "target_only": [
+          "$\\ore{x}{x_1}{P_1}{x_2}{P_2}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-004",
+      "source_locator": "normalization.tex lines 47–90, aligned block 8",
+      "classification": "stray_math_delimiter",
+      "source_issue": "A closing parenthesis has no corresponding opening parenthesis in the rank equality.",
+      "minimal_treatment": "Remove only the stray parenthesis.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\cutrank{\\Subst{M}{N}{x}}=\\len{!A})$"
+        ],
+        "target_only": [
+          "$\\cutrank{\\Subst{M}{N}{x}}=\\len{!A}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-005",
+      "source_locator": "normalization.tex lines 47–90, aligned block 8",
+      "classification": "undefined_variable_cut_rank",
+      "source_issue": "The proof assigns cutrank(x) to a variable, although cut rank is defined only for redexes.",
+      "minimal_treatment": "Describe the rank as the length of the substituted variable type.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\cutrank{x}$"
+        ],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-006",
+      "source_locator": "normalization.tex lines 98–125, aligned block 10",
+      "classification": "omitted_inserted_term_redexes",
+      "source_issue": "The proof overlooks redexes copied from the inserted terms Q and N during substitution.",
+      "minimal_treatment": "Include both proper source subterms; the stated strict rank assumption covers them.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": [
+          "$Q$",
+          "$N$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-007",
+      "source_locator": "normalization.tex lines 147–158, aligned block 14",
+      "classification": "unresolved_source_global_rank_induction_gap",
+      "source_issue": "Local rank decrease need not decrease whole-term maximum rank: contraction may create a higher-rank enclosing redex.",
+      "minimal_treatment": "Retain the source argument for inspection and explicitly disclose the gap; do not certify normalization or the separately asserted strong normalization.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-008",
+      "source_locator": "normalization.tex lines 206–223, aligned block 20",
+      "classification": "projection_result_component_mismatch",
+      "source_issue": "The first projection of the pair with first component O1' is said to reduce to O2.",
+      "minimal_treatment": "Use O1' as the common result.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$O_2$"
+        ],
+        "target_only": [
+          "$O_1'$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-009",
+      "source_locator": "normalization.tex lines 206–223, aligned block 20",
+      "classification": "unresolved_source_local_confluence_case_gaps",
+      "source_issue": "The proof covers disjoint redexes and only one nested projection case; other nested beta/case/substitution cases are omitted.",
+      "minimal_treatment": "Keep the source example and explicitly disclose that a complete weak Church–Rosser proof has not been supplied.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-010",
+      "source_locator": "normalization.tex lines 181–196, aligned block 17",
+      "classification": "strong_normalization_closure_relation_mismatch",
+      "source_issue": "Strong normalization is attributed to the reflexive-transitive closure, which admits indefinitely repeated identity steps.",
+      "minimal_treatment": "Apply strong normalization to the one-step relation in the prose, Newman statement and proof; retain multistep confluence.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\red$",
+          "$\\red$",
+          "$\\red$"
+        ],
+        "target_only": [
+          "$\\redone$",
+          "$\\redone$",
+          "$\\redone$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-011",
+      "source_locator": "normalization.tex lines 230–240, aligned block 22",
+      "classification": "first_reduct_sequence_equality_mismatch",
+      "source_issue": "The sequences equate N with their first reducts, contradicting the ensuing distinct-first-reduct argument.",
+      "minimal_treatment": "Write the initial one-step arrows.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\begin{align*}N&=N_1'\\redoneN_2'\\redone\\dots\\redoneN_k'=N'\\\\N&=N_1''\\redoneN_2''\\redone\\dots\\redoneN_l''=N''\\end{align*}"
+        ],
+        "target_only": [
+          "\\begin{align*}N&\\redoneN_1'\\redoneN_2'\\redone\\dots\\redoneN_k'=N'\\\\N&\\redoneN_1''\\redoneN_2''\\redone\\dots\\redoneN_l''=N''\\end{align*}"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPTYNOR-012",
+      "source_locator": "normalization.tex lines 242–252, aligned block 23",
+      "classification": "common_descendant_not_known_normal",
+      "source_issue": "The source compares a common descendant with two normal forms without first normalizing it.",
+      "minimal_treatment": "Reduce the common descendant to N* under the stated termination assumption, then compare normal forms.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$N'''\\neqN'$",
+          "$N'''\\neqN''$"
+        ],
+        "target_only": [
+          "$N'''\\redN^\\ast$",
+          "$N^\\ast$",
+          "$N^\\ast\\neqN'$",
+          "$N^\\ast\\neqN''$"
+        ]
+      }
+    }
+  ]
+}

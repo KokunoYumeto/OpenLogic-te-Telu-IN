@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTSPINRANK-20260927",
+  "unit_id": "OLP-0564",
+  "source_path": "content/set-theory/spine/rank.tex",
+  "source_sha256": "fa9b9faa09478d4d5d6e510c52a2d5752fa72985db8efaff4a432a0e24d81dd0",
+  "findings": [
+    {
+      "finding_id": "OLTESTSPINRANK-001",
+      "source_locator": "rank.tex line 35, converse proof of valphalowerrank",
+      "classification": "proof_conclusion_contradicts_its_premise",
+      "source_issue": "The proof assumes x is in V_alpha, then says induction shows x is not in V_alpha, rather than excluding rank(x)=alpha.",
+      "minimal_treatment": "Conclude rank(x) != alpha, allowing rank(x) <= alpha to give rank(x) in alpha, and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$x\\notinV_\\alpha$"],
+        "target_only": ["$\\setrank{x}\\neq\\alpha$"]
+      }
+    }
+  ]
+}

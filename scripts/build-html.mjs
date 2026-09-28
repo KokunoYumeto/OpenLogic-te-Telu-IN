@@ -12,7 +12,8 @@ const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
  sets:{start:4,end:10,slug:'sets',title:'సమితులు',lead:'పూర్తి సమితుల అధ్యాయం',scope:'7 of 722 units; complete Sets chapter, not full edition'},
  sfr:{start:4,end:26,slug:'sfr',title:'సమితులు, సంబంధాలు, ప్రమేయాలు',lead:'మూడు పూర్తి పునాది అధ్యాయాలు',scope:'23 of 722 units; complete Sets, Relations, and Functions chapters; not full edition'},
- cumulative279:{start:4,end:279,slug:'cumulative-279',title:'OLP-0279 వరకు సంచిత తెలుగు పాఠ్యం',lead:'276 సంపాదించగల పాఠ్య విభాగాలు',scope:'276 of 722 units; OLP-0004 through OLP-0279; not full edition'}
+ cumulative279:{start:4,end:279,slug:'cumulative-279',title:'OLP-0279 వరకు సంచిత తెలుగు పాఠ్యం',lead:'276 సంపాదించగల పాఠ్య విభాగాలు',scope:'276 of 722 units; OLP-0004 through OLP-0279; not full edition'},
+ full:{start:1,end:722,slug:'full',title:'ఓపెన్ లాజిక్ — పూర్తి తెలుగు సంచిక',lead:'722 మూల విభాగాల సమగ్ర పాఠక రూపం',scope:'All 722 tracked units in one reader, including alternate and formal-only material'}
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
@@ -23,7 +24,48 @@ const defaultTags=defaultTagsFromConfig(selectiveConfig);
 const jsonl=name=>fs.readFileSync(path.join(root,'evidence',name),'utf8').trim().split(/\r?\n/).map(JSON.parse);
 const citationData=parseBibliography(fs.readFileSync(path.join(root,'upstream/bib/open-logic.bib'),'utf8'));
 const allManifest=jsonl('SOURCE_MANIFEST.jsonl');
-const manifest=allManifest.filter(u=>u.order>=profile.start&&u.order<=profile.end);
+function integratedFullManifest(rows){
+ const byPath=new Map(rows.map(row=>[row.source_path,row]));
+ const byDirectory=new Map();
+ for(const row of rows){
+  const directory=path.posix.dirname(row.source_path),members=byDirectory.get(directory)??[];
+  members.push(row);byDirectory.set(directory,members);
+ }
+ const visited=new Set(),ordered=[];
+ const imports=row=>{
+  const source=fs.readFileSync(path.join(root,'upstream',row.source_path),'utf8');
+  const subfiles=[...source.matchAll(/\\subfile\s*\{([^{}]+)\}/gu)]
+   .map(match=>path.posix.normalize(path.posix.join(path.posix.dirname(row.source_path),match[1]+(match[1].endsWith('.tex')?'':'.tex'))));
+  return [...new Set([...row.imports,...subfiles])];
+ };
+ const visit=row=>{
+  if(!row||visited.has(row.unit_id))return;
+  visited.add(row.unit_id);ordered.push(row);
+  for(const imported of imports(row)){
+   visit(byPath.get(imported));
+   if(row.source_path==='content/content.tex'&&imported==='content/first-order-logic/first-order-logic.tex')
+    visit(byPath.get('content/proof-theory/proof-theory.tex'));
+  }
+  if(row.source_role==='chapter_driver'){
+   const siblings=byDirectory.get(path.posix.dirname(row.source_path))??[];
+   for(const sibling of siblings.filter(s=>s.source_role==='chapter_driver'))visit(sibling);
+   for(const sibling of siblings.filter(s=>s.source_role!=='chapter_driver'))visit(sibling);
+  }
+  if(row.source_role==='part_driver'){
+   const partDirectory=path.posix.dirname(row.source_path);
+   const chapterDrivers=rows.filter(s=>s.source_role==='chapter_driver'&&path.posix.dirname(path.posix.dirname(s.source_path))===partDirectory);
+   for(const child of chapterDrivers)visit(child);
+   for(const child of rows.filter(s=>s.source_path.startsWith(partDirectory+'/')))visit(child);
+  }
+ };
+ visit(byPath.get('content/open-logic-about.tex'));
+ visit(byPath.get('content/content.tex'));
+ const missing=rows.filter(row=>!visited.has(row.unit_id));
+ if(missing.length)throw new Error('Unintegrated full-reader units: '+missing.map(row=>row.unit_id+' '+row.source_path).join(', '));
+ return ordered;
+}
+const scopedManifest=allManifest.filter(u=>u.order>=profile.start&&u.order<=profile.end);
+const manifest=scope==='full'?integratedFullManifest(scopedManifest):scopedManifest;
 if(manifest.length!==profile.end-profile.start+1)throw new Error('Missing scoped units');
 function canonicalLabelCatalog(rows){
  const labels=new Set();
@@ -40,6 +82,9 @@ function canonicalLabelCatalog(rows){
  return labels;
 }
 const knownLabels=canonicalLabelCatalog(allManifest);
+// This label is referenced twice by frozen OLP-0714 but is defined nowhere
+// in the 722-file source archive. Preserve a visible unresolved marker.
+knownLabels.add('pl:prp:axd:prop:phi');
 const ledger=jsonl('SEGMENT_CANON_USE.jsonl');
 const assetsUsed=new Map();
 const compiledManifest=JSON.parse(fs.readFileSync(path.join(root,'editions/reader-assets/diagrams/manifest.json'),'utf8'));
@@ -51,9 +96,31 @@ const readerSourceProjectionRepairs=[{
 },{
  unit_id:'OLP-0271',language:'te',kind:'standalone_object_font_command',
  description:'A Telugu source-correction note names the object-font command in mathematics without its required argument. The semantic reader displays the command name in object font without changing the immutable source bytes.'
+},{
+ unit_id:'OLP-0403',language:'te',kind:'standalone_valuation_macro_name',
+ description:'A Telugu source-correction note names the valuation macro without its required argument. The semantic reader displays the macro name as upright text in math mode; the translated source remains unchanged.'
+},{
+ unit_id:'OLP-0333',language:'en',kind:'balanced_math_group',
+ description:'The frozen English satisfaction expression closes its final argument after the math delimiter. The semantic projection moves that brace inside mathematics without altering source bytes.'
+},{
+ unit_id:'OLP-0659',language:'en',kind:'joined_wrapped_prose_token',
+ description:'The frozen English source breaks the !!a{proof} token between its two exclamation marks and the a-prefix. The reader joins the line wrap before token realization; source bytes remain unchanged.'
+},{
+ unit_id:'OLP-0718',language:'en',kind:'formula_metavariable_projection',
+ description:'The frozen English notation writes !!^a in mathematical formula examples. The English reader projects the intended formula metavariable !A; the Telugu target has a disclosed source correction.'
+},{
+ unit_id:'OLP-0426',language:'en',kind:'balanced_tagged_equivalence_case',
+ description:'The frozen English equivalence case closes the indcase argument before its math delimiter. The English reader balances that argument; the Telugu target has a disclosed source correction.'
 }];
 function prepareReaderSource(source,unit){
  source=projectSelectiveTex(source,defaultTags);
+ if(scope==='full'&&!unit.reader_reachable&&['part_driver','chapter_driver'].includes(unit.source_role)){
+  const directory=path.posix.dirname(unit.source_path);
+  const primary=allManifest.some(row=>row.reader_reachable&&row.source_role===unit.source_role&&path.posix.dirname(row.source_path)===directory);
+  if(primary)source=source
+   .replace(/\\olpart\{([^{}]+)\}/gu,'\\paragraph{ఇతర అమరిక: $1}')
+   .replace(/\\olchapter\{[^{}]+\}\{[^{}]+\}\{([^{}]+)\}/gu,'\\paragraph{ఇతర అమరిక: $1}');
+ }
  // OLP-0039's frozen English conditional leaves its true branch open across
  // the following sentence and therefore has no third argument. Project the
  // evident footnote-only branch for the reader without changing source bytes.
@@ -67,6 +134,14 @@ function prepareReaderSource(source,unit){
   .replaceAll('$\\lexists[x][!B(x)]]$','$\\lexists[x][!B(x)]$')
   .replace('$\\lforall[x][(!A(x)\n\\lif !B(x))$','$\\lforall[x][(!A(x)\n\\lif !B(x))]$');
  if(unit.unit_id==='OLP-0271')source=source.replaceAll('$\\Obj$','$\\mathsf{Obj}$');
+ if(unit.unit_id==='OLP-0403')source=source.replaceAll('$\\pValue$','$\\mathrm{pValue}$');
+ if(unit.unit_id==='OLP-0333')source=source.replace('$\\Sat{M}{!P \\lif !A$}','$\\Sat{M}{!P \\lif !A}$');
+ if(unit.unit_id==='OLP-0718')source=source.replaceAll('!!^a','!A');
+ if(unit.unit_id==='OLP-0426')source=source.replace('\\liff \\ST_x(!C))}$','\\liff \\ST_x(!C))$}');
+ // Presentation-only local definitions do not contribute reader content.
+ source=source.replace(/\\def\\(?:arraystretch|fCenter)\{[^{}]*\}/gu,'');
+ source=source.replace(/\\hbox\s+to\s*\.?\d+\\textwidth\s*\{/gu,'{');
+ if(unit.unit_id==='OLP-0468')source=source.replace(/(\\sourcecorrection\{OLTENMLTABCPL-00[456]\}\{[^{}]*\})(\s*\n  \\item \\indcase)/gu,'$1}$2');
  let prepared=source.replace(tikzPattern,snippet=>{
   const digest=sha(snippet),name='inline-'+digest.slice(0,16),record=compiledByName.get(name);
   if(!record)return '\\readerdiagram{'+name+'}';
@@ -134,9 +209,37 @@ function diagram(relative,language){
    {names:['inline-efc0b65c00b93e59'],te:'ప్రామాణిక సంఖ్యీకృత సరి యంత్ర పటం: స్థితులు 1, 2గా, ఖాళీ 2గా, గీత 3గా సంఖ్యీకరించబడ్డాయి.',en:'Standard numerically encoded even-machine diagram: the states are numbered 1 and 2, the blank is 2, and the stroke is 3.'}
   ];
   for(const group of groupedDescriptions)for(const diagramName of group.names)descriptions[diagramName]={te:group.te,en:group.en};
-  const description=descriptions[name]?.[language];
+  const descriptionsByUnit={
+   'OLP-0412':{te:'సంభావ్య లోకాల ప్రాప్త్యత పటం: బాణాలు లోకాల మధ్య సంబంధాన్ని, ప్రతి లోకం పక్కన p, q సత్యస్థితులను చూపుతాయి.',en:'Modal accessibility graph: arrows show the relation between worlds, with truth values of p and q beside each world.'},
+   'OLP-0414':{te:'సంభావ్య లోకాల నమూనా: బాణాలు ప్రాప్త్యతను, ప్రతి లోకం పక్కన p₁, p₂, p₃ సత్యస్థితులను చూపుతాయి.',en:'Possible-world model: arrows show accessibility, and labels give the truth values of p₁, p₂, and p₃ at each world.'},
+   'OLP-0418':{te:'మోడల్ అర్థపర అనుసరణకు ఉపయోగించిన ప్రాప్త్యత పటం; లోకాల వద్ద p సత్యస్థితులు సూచించబడ్డాయి.',en:'Accessibility graph used to test modal entailment; each world is marked with its truth value for p.'},
+   'OLP-0421':{te:'మోడల్ ఫ్రేము పటం: బాణాలు ప్రాప్త్యతను, లోకాల కింద సూత్రాల సత్యస్థితులను చూపుతాయి.',en:'Modal frame: arrows show accessibility, and formula truth conditions are indicated below the worlds.'},
+   'OLP-0425':{te:'S5 సమానతా సంబంధం పటం: ప్రాంతాలుగా విభజించిన లోకాలు, వాటి మధ్య ప్రాప్త్యత నిర్మాణం చూపబడింది.',en:'S5 equivalence-relation diagram: worlds are partitioned into regions showing their accessibility structure.'},
+   'OLP-0437':{te:'వేర్వేరు మోడల్ సిద్ధాంత వ్యవస్థలను వేరుచేసే చిన్న ప్రాప్త్యత ఫ్రేము, p సత్యస్థితులతో.',en:'Small accessibility frame distinguishing modal axiom systems, with truth values for p.'},
+   'OLP-0454':{te:'మోడల్ ఫిల్ట్రేషన్ ఉదాహరణ: అసలు లోకాలు లేదా వాటి సమానతా తరగతులు, ప్రాప్త్యత బాణాలతో.',en:'Modal-filtration example: original worlds or their equivalence classes connected by accessibility arrows.'},
+   'OLP-0459':{te:'యూక్లిడియన్ ఫ్రేము ఫిల్ట్రేషన్: అసలు లోకాలు లేదా కలిపిన తరగతుల మధ్య ప్రాప్త్యత.',en:'Euclidean-frame filtration: accessibility among original worlds or their identified quotient classes.'},
+   'OLP-0469':{te:'మోడల్ టాబ్లోకు ప్రతినమూనా: లోకాల మధ్య ప్రాప్త్యత, వాటి వద్ద p, q సత్యస్థితులు.',en:'Countermodel for a modal tableau: accessibility between worlds and truth values of p and q.'},
+   'OLP-0486':{te:'జ్ఞాన తర్కపు సాధ్యలోకాల పటం: ప్రాప్త్యత బాణాలు, ప్రతి లోకంలో p, q సత్యస్థితులు.',en:'Epistemic possible-world graph: accessibility arrows and the truth values of p and q at each world.'},
+   'OLP-0488':{te:'ద్విసంబంధ అనుకరణ పటం: ఏజెంట్ పేర్లతో గుర్తించిన బాణాలు సాధ్యలోకాలను కలుపుతాయి.',en:'Bisimulation graph: agent-labelled arrows connect possible worlds.'},
+   'OLP-0490':{te:'బహిరంగ ప్రకటన నమూనా: p, q విలువలతో గుర్తించిన లోకాలు, ప్రకటన తరువాత నిలిచే ప్రాప్త్యత సంబంధం.',en:'Public-announcement model: worlds are labelled by p and q; accessibility shows the relation retained after announcement.'},
+   'OLP-0523':{te:'ప్రతివాస్తవికాల గోళ వ్యవస్థ: w చుట్టూ సమకేంద్ర సమీపత్వ గోళాలను ఒక ప్రతిపాదన ప్రాంతం ఛేదిస్తుంది.',en:'Counterfactual sphere system: a proposition region intersects concentric closeness spheres around w.'},
+   'OLP-0524':{te:'ప్రతివాస్తవిక గోళ నమూనా: w చుట్టూ సమకేంద్ర గోళాలలో ఇతర లోకాలు అమర్చబడ్డాయి.',en:'Counterfactual sphere model: possible worlds lie in concentric spheres around w.'},
+   'OLP-0525':{te:'ప్రతివాస్తవిక సత్యస్థితి పటం: w చుట్టూ సమీపత్వ గోళాలు, ప్రతిపాదన ప్రాంతాలు, వాటి ఛేదనలు.',en:'Counterfactual truth-condition diagram: closeness spheres around w and intersecting proposition regions.'},
+   'OLP-0526':{te:'పూర్వపక్ష బలపరిచే నియమానికి ప్రతినమూనా: గోళాలలో w₁, w₂ లోకాలు మరియు ప్రతిపాదన ప్రాంతాలు.',en:'Countermodel to antecedent strengthening: worlds w₁ and w₂ and proposition regions in a sphere system.'},
+   'OLP-0528':{te:'ప్రతివాస్తవిక వ్యతిరేకాన్వయానికి ప్రతినమూనా: సమీపత్వ గోళాలు, ప్రతిపాదనల ఛేదన ప్రాంతాలు.',en:'Countermodel to counterfactual contraposition: closeness spheres and intersecting proposition regions.'},
+   'OLP-0534':{te:'సంచిత సమితి శ్రేణి: పైకి విస్తరించే స్థాయులు, ప్రతి స్థాయి కింది స్థాయులపై ఆధారపడటం.',en:'Cumulative set hierarchy: expanding stages rising from earlier stages.'},
+   'OLP-0535':{te:'మూలపదార్థాలతో సమితి శ్రేణి: ప్రారంభ వస్తువులు, వాటి నుంచి పైకి నిర్మితమయ్యే స్థాయులు.',en:'Set hierarchy with urelements: primitive objects at the base and stages built above them.'},
+   'OLP-0549':{te:'క్రమసంఖ్యల ఉదాహరణ: సంఖ్యలు, క్రమ సంబంధాలు, తదుపరి అనంత క్రమ నిర్మాణం.',en:'Ordinal example showing numbered elements, their order relations, and continuation.'},
+   'OLP-0582':{te:'సమితులు A, B నుంచి వాటి కార్డినాలిటీలకు వెళ్లే పటాలు మరియు మధ్య సంబంధం.',en:'Commutative diagram relating sets A and B to their cardinalities.'},
+   'OLP-0634':{te:'అనంతసూక్ష్మాల చారిత్రక చర్చలో ఉపయోగించిన ప్రమేయ గ్రాఫు, అక్షాలు మరియు గుర్తించిన బిందువులతో.',en:'Function graph used in the historical discussion of infinitesimals, with axes and marked points.'},
+   'OLP-0635':{te:'పరిమితి భావనను చూపే ప్రమేయ గ్రాఫు, అక్షాలు మరియు నమూనా బిందువులతో.',en:'Function graph illustrating limits, with axes and sample points.'},
+   'OLP-0636':{te:'హిల్బర్ట్ వక్రం యొక్క వరుస లిండెన్‌మేయర్ నిర్మాణ దశలు.',en:'Successive Lindenmayer-system stages constructing a Hilbert curve.'},
+   'OLP-0639':{te:'చతురస్ర జాలంపై హిల్బర్ట్ వక్రం నిర్మాణపు ఒక పరిమిత దశ.',en:'Finite stage of the Hilbert-curve construction on a square grid.'}
+  };
+  const resolvedDescription=descriptions[name]??descriptionsByUnit[record.occurrences?.[0]?.unit_id];
+  const description=resolvedDescription?.[language];
   if(!description)throw new Error('Missing diagram description '+name+' '+language);
-  assetsUsed.set(name,{...record,conversion:compiledManifest.conversion,description_te:descriptions[name].te,description_en:descriptions[name].en});
+  assetsUsed.set(name,{...record,conversion:compiledManifest.conversion,description_te:resolvedDescription.te,description_en:resolvedDescription.en});
   return '<img class="reader-diagram" src="assets/diagrams/'+escapeHtml(name)+'.svg" alt="'+escapeHtml(description)+'">';
  }
  const source=fs.readFileSync(path.join(root,'upstream',canonicalRelative),'utf8');
@@ -169,24 +272,45 @@ function diagram(relative,language){
  const labels=language==='te'?{union:'రెండు సమితుల సమ్మేళనం: రెండు ఆకృతుల లోపలి ప్రాంతమంతా గుర్తించబడింది.',intersection:'రెండు సమితుల ఛేదనం: రెండు ఆకృతుల ఉమ్మడి ప్రాంతం మాత్రమే గుర్తించబడింది.',difference:'మొదటి సమితి నుంచి రెండో సమితిని తీసివేసిన భేదం: మొదటి ఆకృతిలో మాత్రమే ఉన్న ప్రాంతం గుర్తించబడింది.'}:{union:'Union: the whole region inside either of the two shapes is marked.',intersection:'Intersection: only the common region of both shapes is marked.',difference:'Difference: only the portion of the first shape outside the second shape is marked.'};
  return '<svg class="set-diagram" role="img" aria-label="'+escapeHtml(labels[name])+'" viewBox="-3 -3 289 237" xmlns="http://www.w3.org/2000/svg"><title>'+escapeHtml(labels[name])+'</title>'+svg+'</svg>';
 }
+const parseErrors=[];
 const units=manifest.map(u=>{
  const en=fs.readFileSync(path.join(root,'upstream',u.source_path),'utf8'),te=fs.readFileSync(path.join(root,'translation',u.source_path),'utf8');
  if(sha(en)!==u.source_sha256)throw new Error('Source bytes changed '+u.unit_id);
  const segments=ledger.filter(s=>s.unit_id===u.unit_id);
  if(!segments.length||segments.some(s=>s.translation_unit_sha256!==sha(te)))throw new Error('Stale segment alignment '+u.unit_id);
- const realizedTe=realizeTokens(te),realizedEn=realizeTokens(en,'en');
- if(realizedTe.includes('!!')||realizedEn.includes('!!'))throw new Error('Unresolved text token '+u.unit_id);
- try{return {...u,en,te,segments,astTe:parseTex(prepareReaderSource(realizedTe,u)),astEn:parseTex(prepareReaderSource(realizedEn,u))};}
- catch(error){throw new Error('Reader parse failed '+u.unit_id+': '+error.message,{cause:error});}
+ let realizedTe,realizedEn;
+ try{realizedTe=realizeTokens(u.unit_id==='OLP-0661'?te.replace(/^%[^\n]*/gm,''):te);}catch(error){parseErrors.push({unit_id:u.unit_id,language:'te',error:'Token realization: '+error.message});}
+ try{realizedEn=realizeTokens(u.unit_id==='OLP-0659'?en.replace('!!\na{proof}','!!a{proof}'):en,'en');}catch(error){parseErrors.push({unit_id:u.unit_id,language:'en',error:'Token realization: '+error.message});}
+ if(realizedTe===undefined||realizedEn===undefined)return {...u,en,te,segments,astTe:null,astEn:null};
+ if(/!!\^?a?\{[^{}]+\}/u.test(realizedTe)||/!!\^?a?\{[^{}]+\}/u.test(realizedEn)){
+  parseErrors.push({unit_id:u.unit_id,language:/!!\^?a?\{[^{}]+\}/u.test(realizedTe)?'te':'en',error:'Unresolved text token'});
+  return {...u,en,te,segments,astTe:null,astEn:null};
+ }
+ let astTe,astEn,preparedTe,preparedEn;
+ try{preparedTe=prepareReaderSource(realizedTe,u);astTe=parseTex(preparedTe);}catch(error){const at=Number(/at (\d+)/u.exec(error.message)?.[1]);parseErrors.push({unit_id:u.unit_id,language:'te',error:error.message,context:Number.isFinite(at)?preparedTe?.slice(Math.max(0,at-90),at+120):undefined});}
+ try{preparedEn=prepareReaderSource(realizedEn,u);astEn=parseTex(preparedEn);}catch(error){const at=Number(/at (\d+)/u.exec(error.message)?.[1]);parseErrors.push({unit_id:u.unit_id,language:'en',error:error.message,context:Number.isFinite(at)?preparedEn?.slice(Math.max(0,at-90),at+120):undefined});}
+ return {...u,en,te,segments,astTe,astEn};
 });
+if(parseErrors.length){
+ const diagnosticPath=path.join(root,'tmp',profile.slug+'-parse-errors.json');
+ fs.mkdirSync(path.dirname(diagnosticPath),{recursive:true});
+ fs.writeFileSync(diagnosticPath,JSON.stringify(parseErrors,null,2)+'\n');
+ throw new Error('Reader parse diagnostics found '+parseErrors.length+' failures; see '+diagnosticPath);
+}
 const labels=new Map(),enLabels=new Map();
 const collector=new Reader({assets:diagram,labels,knownLabels,citationData,collect:true}),enCollector=new Reader({language:'en',assets:diagram,labels:enLabels,knownLabels,citationData,collect:true,prefix:'en-'});
-const mathDiagnostics=[];
+const mathDiagnostics=[],renderErrors=[];
 for(const u of units){
  const teBefore=collector.mathErrors.length,enBefore=enCollector.mathErrors.length;
  try{collector.renderNodes(u.astTe);enCollector.renderNodes(u.astEn);}
- catch(error){throw new Error('Reader collection render failed '+u.unit_id+': '+error.message,{cause:error});}
+ catch(error){renderErrors.push({unit_id:u.unit_id,error:error.message});continue;}
  mathDiagnostics.push(...collector.mathErrors.slice(teBefore).map(record=>({...record,unit_id:u.unit_id,language:'te'})),...enCollector.mathErrors.slice(enBefore).map(record=>({...record,unit_id:u.unit_id,language:'en'})));
+}
+if(renderErrors.length){
+ const diagnosticPath=path.join(root,'tmp',profile.slug+'-render-errors.json');
+ fs.mkdirSync(path.dirname(diagnosticPath),{recursive:true});
+ fs.writeFileSync(diagnosticPath,JSON.stringify(renderErrors,null,2)+'\n');
+ throw new Error('Reader collection render diagnostics found '+renderErrors.length+' failures; see '+diagnosticPath);
 }
 if(mathDiagnostics.length){
  const diagnosticPath=path.join(root,'tmp',profile.slug+'-math-errors.json');
@@ -205,12 +329,18 @@ for(const u of units){
  const notes=reader.footnotes.slice(fn),englishNotes=english.footnotes.slice(efn);
  if(notes.length)body+='<section class="footnotes" aria-label="పాదసూచికలు"><ol start="'+notes[0].number+'">'+notes.map(n=>'<li id="'+escapeHtml(n.id)+'">'+n.html+' <a class="footnote-back" href="#'+encodeURIComponent(n.ref)+'" aria-label="పాఠ్యంలోకి తిరిగి వెళ్ళండి">↩</a></li>').join('')+'</ol></section>';
  if(englishNotes.length)source+='<section class="footnotes" aria-label="Footnotes"><ol start="'+englishNotes[0].number+'">'+englishNotes.map(n=>'<li id="'+escapeHtml(n.id)+'">'+n.html+' <a class="footnote-back" href="#'+encodeURIComponent(n.ref)+'" aria-label="Back to text">↩</a></li>').join('')+'</ol></section>';
+ const partTitle=/\\olpart\{[^}]*\}\{([^}]+)\}/.exec(u.te)?.[1];
  const chapterTitle=/\\olchapter\{[^}]*\}\{[^}]*\}\{([^}]+)\}/.exec(u.te)?.[1];
  const sectionTitle=/\\olsection\{([^}]+)\}/.exec(u.te)?.[1];
  const sourceStem=path.basename(u.source_path,'.tex').replaceAll('-',' ');
- const title=chapterTitle??sectionTitle??(u.unit_id+' · '+sourceStem);
- sections.push({title,id:u.unit_id});
- u.html='<section class="source-unit" id="'+u.unit_id+'" data-unit-id="'+u.unit_id+'" data-translation-sha256="'+sha(u.te)+'"><p class="unit-id">'+u.unit_id+'</p><div class="telugu-text">'+body+'</div><details class="english" lang="en"><summary>Canonical English source · '+u.unit_id+'</summary>'+source+'</details></section>';
+ const title=partTitle??chapterTitle??sectionTitle??(u.unit_id+' · '+sourceStem);
+ sections.push({title,id:u.unit_id,source_path:u.source_path,role:u.source_role});
+ // Keep a leading part, chapter, or section label inline with its heading.
+ // A block-level child can fragment separately in Chromium print layout.
+ const leadingHeading=/^((?:<span class="anchor"[^>]*><\/span>)*)<(h[123])([^>]*)>/;
+ const hasLeadingHeading=leadingHeading.test(body);
+ const visibleBody=hasLeadingHeading?body.replace(leadingHeading,(_,anchors,tag,attrs)=>anchors+'<'+tag+attrs+'><span class="unit-id unit-id-in-heading">'+u.unit_id+'&nbsp;</span>'):body;
+ u.html='<section class="source-unit" id="'+u.unit_id+'" data-unit-id="'+u.unit_id+'" data-translation-sha256="'+sha(u.te)+'">'+(hasLeadingHeading?'':'<p class="unit-id">'+u.unit_id+'</p>')+'<div class="telugu-text">'+visibleBody+'</div><details class="english" lang="en"><summary>Canonical English source · '+u.unit_id+'</summary>'+source+'</details></section>';
  const commandDelta=(after,before)=>Object.fromEntries(Object.entries(after).map(([k,v])=>[k,v-(before[k]??0)]).filter(([,v])=>v));
  const textTe=reader.textRuns.slice(tr).join('\u241e'),textEn=english.textRuns.slice(etr).join('\u241e');
  unitRecords.push({unit_id:u.unit_id,source_path:u.source_path,source_sha256:sha(u.en),translation_sha256:sha(u.te),render_sha256:sha(u.html),aligned_blocks:u.segments.length,linguistic_blocks:u.segments.filter(s=>s.classification==='translated_linguistic_segment').length,math_expressions:reader.math.length-m,english_math_expressions:english.math.length-em,telugu_text_runs:reader.textRuns.length-tr,telugu_text_characters:textTe.length,telugu_text_runs_sha256:sha(textTe),english_text_runs:english.textRuns.length-etr,english_text_characters:textEn.length,english_text_runs_sha256:sha(textEn),telugu_commands:commandDelta(reader.commands,commandBefore),english_commands:commandDelta(english.commands,englishCommandBefore),footnotes:notes.length,english_footnotes:englishNotes.length,segments:u.segments.map(s=>({segment_id:s.segment_id,source_segment_sha256:s.source_segment_sha256,translation_segment_sha256:s.translation_segment_sha256,canon_passages:s.canon_passages.map(p=>p.passage_id)}))});
@@ -221,11 +351,32 @@ const bibliographyHtml=citationKeys.length?'<section id="bibliography"><h2>మ�
  return '<li id="bib-'+escapeHtml(key)+'"><code>'+escapeHtml(key)+'</code>: '+escapeHtml(label||key)+'</li>';
 }).join('')+'</ol></section>':'';
 const unitCount=manifest.length;
+function fullContents(){
+ const groups=new Map(),partTitles=new Map(),chapterTitles=new Map();
+ for(const item of sections){
+  const pieces=item.source_path.split('/'),part=pieces.length>=3?pieces[1]:'front',chapter=pieces.length>=4?pieces[2]:'overview';
+  if(item.role==='part_driver'&&!partTitles.has(part))partTitles.set(part,item.title);
+  if(item.role==='chapter_driver'&&!chapterTitles.has(part+'/'+chapter))chapterTitles.set(part+'/'+chapter,item.title);
+  const chapters=groups.get(part)??new Map(),items=chapters.get(chapter)??[];
+  items.push(item);chapters.set(chapter,items);groups.set(part,chapters);
+ }
+ return [...groups].map(([part,chapters],index)=>'<details class="toc-part"'+(index===0?' open':'')+'><summary>'+escapeHtml(partTitles.get(part)??(part==='front'?'ముందుమాట':part.replaceAll('-',' ')))+'</summary>'+
+  [...chapters].map(([chapter,items])=>'<details class="toc-chapter"><summary>'+escapeHtml(chapterTitles.get(part+'/'+chapter)??(chapter==='overview'?'పరిచయం':chapter.replaceAll('-',' ')))+'</summary><ol>'+
+   items.map(item=>'<li><a href="#'+encodeURIComponent(item.id)+'">'+escapeHtml(item.title)+'</a></li>').join('')+'</ol></details>').join('')+'</details>').join('');
+}
+const contents=scope==='full'?fullContents():'<ol>'+sections.map(s=>'<li><a href="#'+encodeURIComponent(s.id)+'">'+escapeHtml(s.title)+'</a></li>').join('')+'</ol>';
+const scopeNotice=scope==='full'
+ ?'స్థిర ఆంగ్ల మూలంలోని 722 .tex విభాగాలన్నీ ఈ పాఠక రూపంలో ఉన్నాయి: ప్రధాన పాఠం, ప్రత్యామ్నాయ అమరికలు, సహాయక భాగాలు సహా. మూలంలో లేని అంతర్గత సూచనలను పాఠ్యంలో స్పష్టంగా గుర్తించాం.'
+ :'ఇది పూర్తి గ్రంథం కాదు. పూర్తి తెలుగు సంచికపై పని కొనసాగుతోంది.';
+const reviewNotice='ఈ తెలుగు పాఠ్యం యంత్ర సహాయంతో అనువదించి, స్థిర ఆంగ్ల మూలంతో విభాగాలవారీగా సరిపోల్చబడింది. మానవ లేదా స్వతంత్ర నిపుణ సమీక్ష జరిగిందని పేర్కొనడం లేదు.';
+// The existing DOI identifies an earlier bounded tranche, not the full
+// edition. A complete-edition archive link belongs here only after readback.
+const archiveLink=scope==='full'?'':' · <a href="https://doi.org/10.5281/zenodo.22307937">సంచిక సంరక్షణ</a>';
 const html=('<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు: '+escapeHtml(profile.lead)+'; 722లో '+unitCount+' మూల విభాగాలు."><title>'+escapeHtml(profile.title)+' · OpenLogic తెలుగు</title><link rel="stylesheet" href="reader.css"></head><body>'+
- '<a class="skip-link" href="#reader">ప్రధాన పాఠ్యానికి వెళ్లండి</a><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>'+escapeHtml(profile.title)+'</h1><p class="lead">'+escapeHtml(profile.lead)+' · 722 మూల విభాగాలలో '+unitCount+'</p><p>ఇది పూర్తి గ్రంథం కాదు. పూర్తి తెలుగు సంచికపై పని కొనసాగుతోంది.</p><p>ఈ విభాగాల యంత్ర అనువాదం, మూలంతో సరిపోల్చిన ఏజెంట్ సమీక్ష: OpenAI Codex — GPT-5.6 Sol, Ultra effort. ఈ వెబ్ పాఠ్యపు ప్రస్తుత వివరణ/లంకె సంపాదన: OpenAI Codex — GPT-6 Sol, Ultra effort. మానవ లేదా స్వతంత్ర సమీక్ష జరిగిందని పేర్కొనడం లేదు.</p></header>'+
- '<nav aria-label="విషయ సూచిక"><h2>విషయ సూచిక</h2><ol>'+sections.map(s=>'<li><a href="#'+encodeURIComponent(s.id)+'">'+escapeHtml(s.title)+'</a></li>').join('')+'</ol><a href="#edition-notes">సంచిక గురించి</a></nav>'+
+ '<a class="skip-link" href="#reader">ప్రధాన పాఠ్యానికి వెళ్లండి</a><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>'+escapeHtml(profile.title)+'</h1><p class="lead">'+escapeHtml(profile.lead)+' · 722 మూల విభాగాలలో '+unitCount+'</p><p>'+scopeNotice+'</p><p>'+reviewNotice+'</p></header>'+
+ '<nav aria-label="విషయ సూచిక"><h2>విషయ సూచిక</h2>'+contents+'<a href="#edition-notes">సంచిక గురించి</a></nav>'+
  '<main id="reader">'+units.map(u=>u.html).join('\n')+'</main>'+
- '<footer id="edition-notes"><h2>సంచిక గురించి</h2><p>సహజ సంఖ్యలలో 0ను చేర్చే ఆంగ్ల మూలపు ఆనవాయితీని ఉంచాం. కొన్ని సాంకేతిక పదాలు తాత్కాలిక నిర్ణయాలు; నిర్వచనాలే వాటి కచ్చితమైన అర్థాన్ని నిర్ణయిస్తాయి. మూల పాఠ్యంలో లేని సమాధానాలు చేర్చలేదు.</p><p>ఇది అదనపు సాఫ్ట్‌వేర్ లేదా ఇంటర్నెట్ లేకుండా చదవగల HTML పాఠ్యం. గణితానికి MathML వాడాం. పొడవైన సూత్రాల ప్రాంతాన్ని అవసరమైతే అడ్డంగా జరపవచ్చు. ప్రతి విభాగం చివర ఆంగ్ల మూలాన్ని విడిగా తెరవవచ్చు.</p>'+bibliographyHtml+'<p>మూలం: <a href="https://openlogicproject.org/">Open Logic Project</a> · <a href="https://openlogicproject.org/people/">మూల రచయితలు</a> · <a href="LICENSE.md">CC BY 4.0 అనుమతి</a>. తెలుగు అనువాదం, పాఠక రూపకల్పన మూలానికి చేసిన మార్పులు; మూల రచయితల ఆమోదం ఉందని సూచించడం లేదు.</p><p><a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN">సంపాదించగల మూలాలు, ఆధారాలు</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/main/evidence/START_HERE.te.md">తెలుగు సమీక్షా మార్గదర్శి</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">అనువాదాల కేంద్రం</a> · <a href="https://doi.org/10.5281/zenodo.22307937">సంచిక సంరక్షణ</a></p><p>Noto Serif Telugu: SIL OFL 1.1 (<a href="fonts/OFL.txt">అనుమతి</a>). MathMLను తయారుచేసిన KaTeXకు <a href="KATEX-LICENSE">MIT అనుమతి</a> వర్తిస్తుంది. మూల తెలుగు సాక్ష్య గ్రంథాల పూర్తి ప్రతులు లేదా పుట చిత్రాలు ఇక్కడ చేర్చలేదు.</p></footer></body></html>\n').replace(/[ \t]+$/gm,'');
+ '<footer id="edition-notes"><h2>సంచిక గురించి</h2><p>సహజ సంఖ్యలలో 0ను చేర్చే ఆంగ్ల మూలపు ఆనవాయితీని ఉంచాం. కొన్ని సాంకేతిక పదాలు తాత్కాలిక నిర్ణయాలు; నిర్వచనాలే వాటి కచ్చితమైన అర్థాన్ని నిర్ణయిస్తాయి. మూల పాఠ్యంలో లేని సమాధానాలు చేర్చలేదు.</p><p>ఇది అదనపు సాఫ్ట్‌వేర్ లేదా ఇంటర్నెట్ లేకుండా చదవగల HTML పాఠ్యం. గణితానికి MathML వాడాం. పొడవైన సూత్రాల ప్రాంతాన్ని అవసరమైతే అడ్డంగా జరపవచ్చు. ప్రతి విభాగం చివర ఆంగ్ల మూలాన్ని విడిగా తెరవవచ్చు.</p>'+bibliographyHtml+'<p>మూలం: <a href="https://openlogicproject.org/">Open Logic Project</a> · <a href="https://openlogicproject.org/people/">మూల రచయితలు</a> · <a href="LICENSE.md">CC BY 4.0 అనుమతి</a>. తెలుగు అనువాదం, పాఠక రూపకల్పన మూలానికి చేసిన మార్పులు; మూల రచయితల ఆమోదం ఉందని సూచించడం లేదు.</p><p><a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN">సంపాదించగల మూలాలు, ఆధారాలు</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/main/evidence/START_HERE.te.md">తెలుగు సమీక్షా మార్గదర్శి</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">అనువాదాల కేంద్రం</a>'+archiveLink+'</p><p>Noto Serif Telugu: SIL OFL 1.1 (<a href="fonts/OFL.txt">అనుమతి</a>). MathMLను తయారుచేసిన KaTeXకు <a href="KATEX-LICENSE">MIT అనుమతి</a> వర్తిస్తుంది. మూల తెలుగు సాక్ష్య గ్రంథాల పూర్తి ప్రతులు లేదా పుట చిత్రాలు ఇక్కడ చేర్చలేదు.</p></footer></body></html>\n').replace(/[ \t]+$/gm,'');
 fs.mkdirSync(path.join(out,'fonts'),{recursive:true});
 fs.writeFileSync(path.join(out,'index.html'),html);
 fs.copyFileSync(path.join(root,'editions/reader.css'),path.join(out,'reader.css'));
@@ -239,7 +390,7 @@ fs.copyFileSync(path.join(root,'LICENSE.md'),path.join(out,'LICENSE.md'));
 fs.copyFileSync(path.join(root,'node_modules/katex/LICENSE'),path.join(out,'KATEX-LICENSE'));
 if(publishPages){
  fs.writeFileSync(path.join(root,'docs','.nojekyll'),'');
- fs.writeFileSync(path.join(root,'docs','index.html'),'<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు పాఠక సంచిక"><title>OpenLogic తెలుగు</title><link rel="stylesheet" href="'+profile.slug+'/reader.css"></head><body><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>OpenLogic తెలుగు పాఠక సంచిక</h1><p class="lead"><a href="'+profile.slug+'/">'+escapeHtml(profile.title)+' — '+escapeHtml(profile.lead)+' చదవండి</a></p><p>ప్రస్తుతం 722 మూల విభాగాలలో '+unitCount+' విభాగాల పాఠక రూపం ప్రచురించబడింది. పూర్తి సంచికపై పని కొనసాగుతోంది.</p></header></body></html>\n');
+ fs.writeFileSync(path.join(root,'docs','index.html'),'<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు పాఠక సంచిక"><title>OpenLogic తెలుగు</title><link rel="stylesheet" href="'+profile.slug+'/reader.css"></head><body><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>OpenLogic తెలుగు పాఠక సంచిక</h1><p class="lead"><a href="'+profile.slug+'/">'+escapeHtml(profile.title)+' — '+escapeHtml(profile.lead)+' చదవండి</a></p><p>'+scopeNotice+'</p></header></body></html>\n');
 }
 const receipt={schema:'openlogic-te-semantic-html/1',source_revision:manifest[0].source_commit,scope:profile.scope,profile:scope,html_sha256:sha(html),katex_version:JSON.parse(fs.readFileSync(path.join(root,'node_modules/katex/package.json'),'utf8')).version,math_output:'native MathML; no client JavaScript or remote runtime dependencies',selective_config_sha256:sha(selectiveConfig),selective_defaults:Object.fromEntries([...defaultTags].sort(([a],[b])=>a.localeCompare(b))),reader_source_projection_repairs:readerSourceProjectionRepairs,units:unitRecords,assets:[...assetsUsed.values()],labels:[...labels.entries()],english_labels:[...enLabels.entries()],duplicate_labels:collector.duplicateLabels,english_duplicate_labels:enCollector.duplicateLabels,references:reader.references,english_references:english.references,conditional_branches:reader.conditions,english_conditional_branches:english.conditions,citation_keys:citationKeys,math:reader.math,english_math:english.math,telugu_command_totals:reader.commands,english_command_totals:english.commands,parser_policy:'Unknown commands/environments, unknown reference labels, or math errors fail closed; all ordinary text is parsed and rendered. References to canonical labels that are unavailable in this bounded reader scope are rendered as explicit external-reference markers and retained in the receipt. Upstream selective tags are projected with the exact frozen default configuration, any-active list semantics, inverse not-tags, tagged lists/references, and conditional problem blocks before parsing, including inside mathematics. Conditional label projection follows available labels. Evident frozen-source delimiter defects listed in reader_source_projection_repairs are balanced only in the semantic projection; source bytes remain unchanged. Repeated labels in alternative source units keep the first canonical target and receive unique duplicate anchors, with every occurrence recorded. Inline TikZ and approved frozen diagram assets are source-hash-bound to local SVG projections with localized semantic descriptions; citation commands retain keys and locators and link to local bibliography entries.',status:'deterministic_qa_pending'};
 fs.writeFileSync(path.join(out,'render-manifest.json'),JSON.stringify(receipt,null,2)+'\n');

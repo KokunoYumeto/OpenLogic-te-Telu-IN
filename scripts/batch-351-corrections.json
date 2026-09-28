@@ -1,0 +1,58 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0702",
+  "source_path": "content/proof-theory/sequent-calculus/proof-examples.tex",
+  "source_sha256": "c19f22b1b416d0cfbc56182056961ac353bee13b6f662e915c3b2699edc36ce8",
+  "audit_id": "OLTEPTSEQEX-20260928",
+  "audit_review_path": "evidence/OLP-0702-PROOF-EXAMPLES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "b628aeb8ff609bc1cd1c0ebe968d7bef1c888f9064f1318430124a829871de75",
+  "audit_findings_path": "evidence/OLP-0702-PROOF-EXAMPLES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "133af83e2b37224e4bc211546e7ce87de5755762c7cfcfead2a50aed53b9f9ce",
+  "previous_corrections": 667,
+  "treatments": {
+    "OLTEPTSEQEX-001": {
+      "target_line": 65,
+      "body_treatment": "Use the actual antecedent (C and D) implies E as Gamma."
+    },
+    "OLTEPTSEQEX-002": {
+      "target_line": 66,
+      "body_treatment": "Use the left-implication label."
+    },
+    "OLTEPTSEQEX-003": {
+      "target_line": 106,
+      "body_treatment": "Add the display command inside its existing display."
+    },
+    "OLTEPTSEQEX-004": {
+      "target_line": 107,
+      "body_treatment": "Keep E in the succedent of that weakening inference."
+    },
+    "OLTEPTSEQEX-005": {
+      "target_line": 118,
+      "body_treatment": "Name G3c in the not-yet-established claim."
+    },
+    "OLTEPTSEQEX-006": {
+      "target_line": 129,
+      "body_treatment": "Use the inner formula B in both quantified forms to agree with the recurrence."
+    },
+    "OLTEPTSEQEX-008": {
+      "target_line": 187,
+      "body_treatment": "Retain the common duplicated antecedent through right conjunction, then contract only on the left and retain the conjunction succedent; remove trailing commas."
+    },
+    "OLTEPTSEQEX-009": {
+      "target_line": 222,
+      "body_treatment": "State the needed premise-proof restriction instead of the irrelevant empty-context formula."
+    },
+    "OLTEPTSEQEX-010": {
+      "target_line": 268,
+      "body_treatment": "Use !D."
+    },
+    "OLTEPTSEQEX-011": {
+      "target_line": 269,
+      "body_treatment": "Use B,Gamma for the second antecedent context."
+    },
+    "OLTEPTSEQEX-012": {
+      "target_line": 138,
+      "body_treatment": "Explicitly restrict that depth observation to logical rules."
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# OLP-0589 Cardinal exponentiation semantic review
+
+Compared the frozen source and Telugu target by paragraph. The two exponent laws, both bounding propositions, and their cardinal hypotheses remain. The first proof maps a disjoint-sum function to a pair of restrictions; the second maps a nested function to one on the actual Cartesian product before passing to cardinal product; the finite-exponent proposition is restricted to nonzero exponent. Each source defect is disclosed as OLTESTCARDEXPO-001/002/003 with exact core-math deltas where applicable. Both bijection token markers and all references are retained. Strict correction-aware structural QA passed 16/16 blocks. TE-T279 records terminology. Full TeX visual compilation remains pending.

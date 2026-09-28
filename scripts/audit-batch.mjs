@@ -6,6 +6,7 @@ const state = path.join(root,'evidence');
 fs.mkdirSync(path.join(root,'build'),{recursive:true});
 const first = Number(process.argv[2] ?? 4), last = Number(process.argv[3] ?? 10);
 const batch = process.argv[4] ?? '001';
+const diagnostic = process.argv.includes('--diagnostic');
 if(!Number.isInteger(first)||!Number.isInteger(last)||first<1||last>722||!/^\d{3}$/.test(batch))throw new Error('Invalid bounded batch');
 const manifest = fs.readFileSync(path.join(state,'SOURCE_MANIFEST.jsonl'),'utf8').trim().split(/\r?\n/).map(JSON.parse);
 const correctionsPath=path.join(state,'SOURCE_CORRECTIONS.jsonl');
@@ -14,6 +15,14 @@ const sha = x=>crypto.createHash('sha256').update(x).digest('hex');
 const matches = (s,re)=>[...s.matchAll(re)].map(m=>m[0]);
 const counts = a=>Object.fromEntries([...new Set(a)].sort().map(x=>[x,a.filter(y=>y===x).length]));
 const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const stripTeXComments=s=>s.split('\n').map(line=>{
+ for(let i=0;i<line.length;i++)if(line[i]==='%'){
+  let backslashes=0;
+  for(let j=i-1;j>=0&&line[j]==='\\';j--)backslashes++;
+  if(backslashes%2===0)return line.slice(0,i);
+ }
+ return line;
+}).join('\n');
 const maskTextClauses=s=>{
  let out='',i=0;const nested=[];
  while(i<s.length){
@@ -65,7 +74,7 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  const t=fs.readFileSync(target,'utf8');
  const stripped=stripCorrections(t);
  const declared=corrections.filter(c=>c.unit_id===unit.unit_id);
- if(!same([...stripped.ids].sort(),declared.map(c=>c.finding_id).sort()))throw new Error('Source correction ID mismatch '+unit.unit_id);
+ if(!diagnostic&&!same([...stripped.ids].sort(),declared.map(c=>c.finding_id).sort()))throw new Error('Source correction ID mismatch '+unit.unit_id);
  const sb=blocks(s),tb=blocks(t);
  const ids= /\\(?:olfileid|ollabel|olref|oliflabeldef|olimport|olasset|label|ref|cite\w*)\s*(?:\[[^\]]*\])*\s*\{[^{}]*\}(?:\{[^{}]*\})*/g;
  const structural=/\\(?:begin|end)\{[^{}]*\}/g;
@@ -83,7 +92,10 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
   const sharedRelation=/^\$([A-Za-z](?:_[A-Za-z0-9{}]+)?),([A-Za-z](?:_[A-Za-z0-9{}]+)?)(\\in|\\notin|<=|>=|<|>|=)(.+)\$$/.exec(atom);
   return sharedRelation?[`$${sharedRelation[1]}$`,`$${sharedRelation[2]}${sharedRelation[3]}${sharedRelation[4]}$`]:[atom];
  };
- const math = text=>{const {masked,nested}=maskTextClauses(text);return [
+ // Preserve the frozen legacy math-delta attestations through OLP-0576.
+ // New units ignore TeX comments so an unmatched dollar in a comment cannot
+ // absorb live translated prose into a spurious math atom.
+ const math = text=>{const {masked,nested}=maskTextClauses(unit.order<=576?text:stripTeXComments(text));return [
   ...matches(masked,mathRe).map(normalizeMath),
   ...nested.flatMap(group=>[...new Set(group.flatMap(normalizeNested))])
  ];};
@@ -103,7 +115,7 @@ for (const unit of manifest.filter(u=>u.order>=first&&u.order<=last)) {
  record.protected_identifier_parity=record.protected_identifier_exact_match||(declared.length>0&&record.protected_identifier_declared_source_correction_match);
  output.push(record);
 }
-fs.writeFileSync(path.join(root,'build','BATCH-'+batch+'-STRUCTURAL-QA.json'),JSON.stringify({schema:'telugu-openlogic-batch-qa/1',generated_utc:new Date().toISOString(),note:'Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.',units:output},null,2)+'\n');
+fs.writeFileSync(path.join(root,'build','BATCH-'+batch+'-STRUCTURAL-QA.json'),JSON.stringify({schema:'telugu-openlogic-batch-qa/1',generated_utc:new Date().toISOString(),note:'Diagnostic, not semantic proof or release acceptance. All mismatches require adjudication. Legacy math deltas through OLP-0576 retain their frozen parser; later units mask TeX comments. Text/intertext/mbox prose is masked; nested inline math is compared per clause independently of language-specific word order.',units:output},null,2)+'\n');
 for(const r of output) console.log(JSON.stringify({unit:r.unit_id,blocks:[r.source_blocks,r.target_blocks],structure:r.structure_match,tokens:r.token_parity,identifiers:r.protected_identifier_parity,math:r.math_multiset_match}));
 for(const r of output.filter(x=>!x.paragraph_alignment)) console.log(JSON.stringify({unit:r.unit_id,blocks:r.blocks}));
-if(output.length!==last-first+1||output.some(r=>!r.paragraph_alignment||!r.structure_match||!r.token_parity||!r.protected_identifier_parity||!r.math_multiset_match||r.unicode_replacement_char||r.unpaired_surrogate))throw new Error('Structural QA failed');
+if(!diagnostic&&(output.length!==last-first+1||output.some(r=>!r.paragraph_alignment||!r.structure_match||!r.token_parity||!r.protected_identifier_parity||!r.math_multiset_match||r.unicode_replacement_char||r.unpaired_surrogate)))throw new Error('Structural QA failed');

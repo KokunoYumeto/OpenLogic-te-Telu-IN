@@ -1,0 +1,118 @@
+% Part: proof-theory
+% Chapter: sequent-calculus
+% Section: rules-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{seq}{rp}
+
+\olsection{నియమాలు మరియు \tetoken{నిరూపణలు}{\usetoken{P}{proof}}}
+
+కొన్ని నిర్వచనాలను ఇచ్చి, ఉపయోగించబోయే పదజాలాన్ని నిర్ధారించడంతో ప్రారంభిద్దాం.
+
+ఉదాహరణకు, $!A$,~$!B$ ఉన్న సీక్వెంట్ల నుంచి $!A \land !B$ ఉన్న సీక్వెంట్లను \tetoken{నిరూపించడానికి}{!!{proving}} అనుమతించే \Log{G3c}లోని ఈ రెండు నియమాలను చూడండి:
+\[
+\Axiom$ !A, !B, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ !A \land !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$\Gamma \fCenter \Delta, !A$
+\Axiom$ \Gamma \fCenter \Delta, !B$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, !A \land !B $
+\DisplayProof
+\]
+గీత పైనున్న సీక్వెంట్లను \emph{పూర్వపక్షాలు} అనీ, గీత కిందున్న సీక్వెంట్‌ను \emph{నిష్కర్ష} అనీ అంటారు. ప్రతి నియమంలో $\Gamma$, $\Delta$లోని \tetoken{సూత్రాలను}{!!{formula}s} \emph{సందర్భం} లేదా \emph{పార్శ్వ \tetoken{సూత్రాలు}{!!{formula}s}} అంటారు. నిష్కర్షలో సందర్భానికి చెందని \tetoken{సూత్రాన్ని}{!!{formula}} \emph{ప్రధాన} \tetoken{సూత్రం}{!!{formula}} అంటారు; పూర్వపక్షాల్లో సందర్భానికి చెందని \tetoken{సూత్రాలను}{!!{formula}s} \emph{క్రియాశీల} (లేదా \emph{సహాయక}) \tetoken{సూత్రాలు}{!!{formula}s} అంటారు.
+
+పరిమాణక నియమాలు కొంత సంక్లిష్టమైనవి. ఉదాహరణకు, $\lforall$కు సంబంధించిన \Log{G1c} నియమాలు:
+\[\Axiom$ !A(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][!A(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\qquad
+\Axiom$ \Gamma \fCenter \Delta, !A(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][!A(x)]$
+\DisplayProof
+\]
+\LeftR{\lforall} నియమంలో క్రియాశీల \tetoken{సూత్రం}{!!{formula}}~$!A(t)$; ఇక్కడ $t$ ఒక సంవృత పదం, అంటే చరాలు లేని పదం. నిష్కర్షలోని ప్రధాన \tetoken{సూత్రం}{!!{formula}} $\lforall[x][!A]$గానూ, పూర్వపక్షంలోని క్రియాశీల \tetoken{సూత్రం}{!!{formula}}~$\Subst{!A}{t}{x}$గానూ ఉండేలా ఒక \tetoken{సూత్రం}{!!{formula}}~$!A$, ఒక చరం~$x$, ఒక సంవృత పదం~$t$ ఉంటే ఈ అనుమానం సరైనది---అంటే \LeftR{\lforall} నియమ నమూనాకు సరిపోతుంది. \RightR{\lforall} నియమం కూడా ఇలాగే పనిచేస్తుంది; అయితే ఏదైనా పదం~$t$కు బదులు పూర్వపక్షంలోని క్రియాశీల \tetoken{సూత్రం}{!!{formula}}~$\Subst{!A}{a}{x}$ అయి ఉండాలి, ఇక్కడ $a$ ఒక \tetoken{స్థిరాంకం}{!!a{constant}}. ఈ స్థిరాంకాన్ని \RightR{\lforall} అనుమానం యొక్క \emph{ఈగెన్‌చరం} అంటారు. కింది సీక్వెంట్‌లో~$a$ లేకపోతేనే అనుమానం సరైనది; అంటే $\Gamma$, $\Delta$,~$!A$లో $a$ రాకూడదు. దీనిని \emph{ఈగెన్‌చర నిబంధన} అంటారు.
+
+\Log{G1c}, \Log{G3c} వంటి సీక్వెంట్ వ్యవస్థల్లో ఇటువంటి నమూనా రూపంలో నిర్దేశించిన నియమాలతోపాటు, స్వయంసిద్ధాలుగా పరిగణించే కొన్ని సీక్వెంట్లు (ఇవి కూడా నమూనా రూపంలో నిర్దేశితమైనవే) ఉంటాయి. ఇటువంటి వ్యవస్థలోని \tetoken{నిరూపణలు}{!!^{proof}s} అనేవి అనుమాన నియమాలను ఉపయోగించి స్వయంసిద్ధాల నుంచి ఆగమనాత్మకంగా రూపొందించే పరిమిత సీక్వెంట్ వృక్షాలు. ప్రతి ఆకు ఒక స్వయంసిద్ధం; మిగతా ప్రతి సీక్వెంట్ దాని వెంటనే పైనున్న సీక్వెంట్ల నుంచి వ్యవస్థలోని ఒక అనుమాన నియమం ద్వారా వస్తుంది.
+
+\begin{defn}\ollabel{defn:proof}
+సీక్వెంట్ వ్యవస్థలోని \emph{\tetoken{నిరూపణలు}{!!^{proof}s}} కింది విధంగా ఆగమనాత్మకంగా నిర్వచించిన పరిమిత సీక్వెంట్ వృక్షాలు:
+\begin{enumerate}
+  \item\ollabel{defn:prf:axiom} ప్రతి స్వయంసిద్ధం ఒక \tetoken{నిరూపణ}{!!a{proof}}.
+  \item\ollabel{defn:prf:one-prem} $\pi_1$ అనేది సీక్వెంట్~$S_1$తో ముగిసే ఒక \tetoken{నిరూపణ}{!!a{proof}} అనుకుందాం. ఒక పూర్వపక్షం గల నియమం~$R$ ద్వారా~$S_1$ నుంచి వచ్చే సీక్వెంట్ $S$ అయితే,
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$S$}
+  \DisplayProof
+  \]
+  ఒక \tetoken{నిరూపణ}{!!a{proof}}.
+  \item\ollabel{defn:prf:two-prem} $\pi_1$, $\pi_2$ అనేవి సీక్వెంట్లు~$S_1$,~$S_2$తో ముగిసే \tetoken{నిరూపణలు}{!!{proof}s} అనుకుందాం. రెండు పూర్వపక్షాల నియమం~$R$ ద్వారా~$S_1$,~$S_2$ నుంచి వచ్చే సీక్వెంట్ $S$ అయితే,
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \DeduceC{$S_1$}
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \DeduceC{$S_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$S$}
+  \DisplayProof
+  \]
+  ఒక \tetoken{నిరూపణ}{!!a{proof}}.
+\end{enumerate}
+\end{defn}
+
+\Olref{defn:proof}లో \tetoken{నిరూపణలను}{!!{proof}s} సీక్వెంట్ వృక్షాలుగా నిర్వచించాం. ఈ వృక్షాలు “పైకి” పెరుగుతున్నట్లు భావిస్తాం. వృక్షంలో అన్నిటికంటే పైనున్న (ఆకు) శీర్షాలు స్వయంసిద్ధాలు; వాటిని \emph{ప్రారంభ సీక్వెంట్లు} అంటారు. అన్నిటికంటే కిందనున్న సీక్వెంట్‌ను \emph{అంత్య సీక్వెంట్} అంటారు. $\pi$ అనేది అంత్య సీక్వెంట్~$S$ గల ఒక \tetoken{నిరూపణ}{!!a{proof}} అయితే, $\pi \Proves S$ అని కూడా రాస్తాం. సీక్వెంట్~$S$కు ఒక \tetoken{నిరూపణ}{!!a{proof}} ఉంటే, $\Proves S$ అని రాస్తాం. అవసరమైతే $\Proves$ చిహ్నానికి ఎడమవైపున నిరూపణ ఉన్న వ్యవస్థను సూచిస్తాం; ఉదాహరణకు $\Log{G1c} \Proves !A, !B \Sequent !A \land !B$. ప్రారంభ సీక్వెంట్లు తప్ప, ఒక \tetoken{నిరూపణలో}{!!a{proof}} ప్రతి సీక్వెంట్ ఏదో నియమం~$R$ ద్వారా చేసే అనుమానానికి \emph{నిష్కర్ష}. ఒక \tetoken{నిరూపణలో}{!!a{proof}} సీక్వెంట్ వెంటనే పైనున్న ఒకటి లేదా రెండు సీక్వెంట్లను (అంటే ఆ శీర్షం యొక్క మాతృ శీర్షాలను) అనుమానం యొక్క \emph{పూర్వపక్షాలు} అంటారు.
+
+ఒక \tetoken{నిరూపణను}{!!a{proof}} ఆగమనాత్మకంగా నిర్మించడంలో ఉపయోగించే \tetoken{నిరూపణలను}{!!{proof}s} దాని \emph{ఉప-\tetoken{నిరూపణలు}{!!{proof}s}} అంటారు. ఒక అనుమానం యొక్క పూర్వపక్షాలతో ముగిసే ఉప-\tetoken{నిరూపణలను}{!!{proof}s} ఆ అనుమానం యొక్క \emph{తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}} అంటారు.
+
+\tetoken{నిరూపణల}{!!{proof}s} సంక్లిష్టతను సహజ సంఖ్యగా కొలవాల్సిన అవసరం తరచూ వస్తుంది. ఒక \tetoken{నిరూపణలోని}{!!a{proof}} సీక్వెంట్ల సంఖ్యను లెక్కించవచ్చు; కానీ ఒక \tetoken{నిరూపణ}{!!a{proof}} యొక్క \tetoken{ఎత్తు}{!!{height}} తరచూ మరింత ఉపయోగకరమైన కొలమానం: అంత్య సీక్వెంట్ నుంచి ఒక ప్రారంభ సీక్వెంట్ వరకు గల మార్గాల్లో అనుమాన దశల (వృక్ష అంచుల) గరిష్ఠ సంఖ్య అది. దీనికి ఆగమనాత్మక నిర్వచనం కూడా ఇవ్వవచ్చు.\sourcecorrection{OLTEPTSEQRP-001}{మూలంలోని “మధ్యనున్న సీక్వెంట్ల సంఖ్య” అనే వర్ణనకు బదులు అనుమాన దశల సంఖ్యను పేర్కొన్నాం. ఇది కింద ఇచ్చే ఆగమనాత్మక నిర్వచనానికి సరిపోతుంది; ఒకే స్వయంసిద్ధం ఉన్న నిరూపణ ఎత్తు సున్నా.}
+
+\begin{defn}
+ఒక \tetoken{నిరూపణ}{!!a{proof}}~$\pi$ యొక్క \emph{\tetoken{ఎత్తు}{!!{height}}}~$\pheight{\pi}$ను కింది విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం.
+\begin{enumerate}
+  \item $\pi$ ఒకే స్వయంసిద్ధంతో కూడి ఉంటే, $\pheight{\pi} = 0$.
+  \item $\pi$ ఒక పూర్వపక్షం గల అనుమానంతో ముగిసి, దాని తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$ అయితే, $\pheight{\pi} = \pheight{\pi_1} + 1$.
+  \item $\pi$ రెండు పూర్వపక్షాల అనుమానంతో ముగిసి, దాని తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1$,~$\pi_2$ అయితే, $\pheight{\pi} = \max(\pheight{\pi_1}, \pheight{\pi_2}) + 1$.
+\end{enumerate}
+సీక్వెంట్~$S$కు ఎత్తు $\le n$ గల ఒక \tetoken{నిరూపణ}{!!a{proof}} ఉంటే, $\Proves[n] S$ అని రాస్తాం.
+\end{defn}
+
+\begin{ex}
+\Log{G3c}లో $!C, \Gamma \Sequent \Delta, !C$ రూపంలోని ప్రతి సీక్వెంట్ ఒక స్వయంసిద్ధం; ఇక్కడ $!C$ పరమాణు సూత్రం అయి ఉండాలి. $!D$, $!E$ పరమాణు వాక్యాలని అనుకుందాం. అప్పుడు $!D, !E \Sequent !D$, $!D, !E \Sequent !E$ అనేవి $!C, \Gamma \Sequent \Delta, !C$ స్వయంసిద్ధం యొక్క దృష్టాంతాలు. ఉదాహరణకు, $!C, \Gamma \Sequent \Delta, !C$లో $!C \ident !E$, $\Gamma = \{!D\}$, $\Delta = \emptyset$ అని తీసుకుంటే సరిగ్గా $!D, !E \Sequent !E$ అనే సీక్వెంట్ వస్తుంది. (మనం బహు\emph{సమితులను} ఉపయోగిస్తున్నామని గుర్తుంచుకోండి; అందువల్ల $!D, !E \Sequent !E$, $!E, !D \Sequent !E$ ఒకే సీక్వెంట్.)\sourcecorrection{OLTEPTSEQRP-002}{మూలంలో రెండో సీక్వెంట్ కుడివైపున తప్పుగా వేరే పరమాణు సూత్రం ఉంది. ఎడమ బహుసమితిలో క్రమం మారినా కుడివైపు మారదు; అందుకే రెండింటిలోనూ అదే కుడి సూత్రాన్ని ఉంచాం.}
+
+$!D, !E \Sequent !D$ అనేది~\Log{G3c} స్వయంసిద్ధం యొక్క దృష్టాంతం కాబట్టి, అది ఒక్కటే~\Log{G3c}లో ఒక \tetoken{నిరూపణగా}{!!a{proof}} పరిగణించబడుతుంది; \olref{defn:proof}, \olref{defn:prf:axiom} ప్రకారం $!D, !E \Sequent !E$ కూడా అలాగే పరిగణించబడుతుంది. వీటిని $\pi_1$,~$\pi_2$ అనుకుందాం. \olref{defn:prf:two-prem} ప్రకారం, ఈ రెండు \tetoken{నిరూపణలను}{!!{proof}s} తీసుకుని రెండు పూర్వపక్షాల నియమం~$\RightR{\land}$ ద్వారా కొత్త నిరూపణ ($\pi_3$)ను రూపొందించవచ్చు:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\DisplayProof
+\]
+తర్వాత $\pi_3$ నుంచి ఒక పూర్వపక్షం గల నియమం~$\LeftR{\land}$ను ఉపయోగించి (\olref{defn:proof}, \olref{defn:prf:one-prem} ప్రకారం) \tetoken{నిరూపణ}{!!{proof}}~$\pi_4$ను పొందుతాం:
+\[
+\Axiom$!D, !E \fCenter !D$
+\Axiom$!D, !E \fCenter !E$
+\RightLabel{\RightR{\land}}
+\insertBetweenHyps{\hspace{5ex}}
+\BinaryInf$!D, !E  \fCenter !D \land !E $
+\LeftSubproofLabel{$\pi_3$}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$!D \land !E  \fCenter !D \land !E$
+\RightSubproofLabel{$\pi_4$}
+\DisplayProof
+\]
+$\pi_4$లోని చివరి అనుమానం యొక్క తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\pi_3$. $\RightR{\land}$ అనుమానం యొక్క తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$,~$\pi_2$. $\pi_4$ యొక్క ఉప-\tetoken{నిరూపణలు}{!!{proof}s} $\pi_1$, $\pi_2$, $\pi_3$, $\pi_4$ స్వయంగా కూడా. ఇక్కడ $\pheight{\pi_1} = \pheight{\pi_2} = 0$, $\pheight{\pi_3} = 1$, $\pheight{\pi_4} = 2$. ఏ పరమాణు $!D$,~$!E$కైనా $\Log{G3c} \Proves[4] !D \land !E \fCenter !D \land !E$ అని చూపించాం. నాలుగు అనేది చెల్లుబాటయ్యే ఎగువ అవధి; పైన నిర్మించిన నిరూపణ ఎత్తు వాస్తవానికి రెండు.
+\end{ex}
+
+\end{document}

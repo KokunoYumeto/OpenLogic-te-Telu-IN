@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "297",
+  "unit_id": "OLP-0648",
+  "unit_order": 648,
+  "source_path": "content/incompleteness/representability-in-q/c.tex",
+  "blocks": 7,
+  "linguistic_blocks": [4,5,6],
+  "previous_segments": 9586,
+  "previous_terms": 337,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "C ప్రమేయాల మూల నిర్వచనం, తెలుగు లక్ష్యం, పూర్వ ఆదిమ పునరావృత/అపరిమిత శోధన/సంయోజన పదాలు పోల్చాం; ఆరు మూల ప్రమేయాలు, రెండు సంవృత క్రియలు, మొత్తం ఫలిత పరిమితి తనిఖీ చేశాం.",
+  "evidence_limit": "ఈ విభాగం C వర్గ నిర్వచనం, ముందస్తు ఫలిత ప్రకటన మాత్రమే; పునరావృతత విలోమ నిరూపణ తరువాత వస్తుంది. TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T338","source_term":"C functions; regular unbounded search; primitive recursion","telugu":"C ప్రమేయాలు; మొత్తం ఫలితంతో అపరిమిత శోధన; ఆదిమ పునరావృతం","status":"c_function_class_definition_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"సున్నా, ఉత్తరవర్తి, కూడిక, గుణకారం, ప్రక్షేపణలు, సమానత్వ లక్షణ ప్రమేయం; సంయోజనం/అపరిమిత శోధన సంవృతం; మొత్తం ఫలిత పరిమితి నిలిచాయి.","uncertainty":"Cలోని అన్ని పునరావృత ప్రమేయాల విలోమ చేర్పు ఈ విభాగంలో ప్రకటిత లక్ష్యం మాత్రమే.","borrowing":"C, mu and characteristic-function notation remain source-identifying."}
+}

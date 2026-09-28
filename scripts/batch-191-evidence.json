@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "191",
+  "unit_id": "OLP-0542",
+  "unit_order": 542,
+  "source_path": "content/set-theory/z/powerset.tex",
+  "blocks": 13,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 8050,
+  "previous_terms": 231,
+  "expected_corrections": 481,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P034"],
+  "consultation_phase": "స్థిర ఘాత సమితి మూలం, తెలుగు లక్ష్యం, పూర్వ ఉపసమితి/కార్టీజియన్ లబ్ధ పదాలు, స్థానిక సమితి/క్రమయుగ్మ సాక్షులు ఎదురెదురు చూశాం; ఘాత సమితి సూత్రం, దశల సమర్థన, ద్విఘాత సమితి నుంచి లబ్ధ నిరూపణ, రెండు అభ్యాసాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/034 సాధారణ సమితి/ఉపసమితి/లబ్ధ పదాలకు మాత్రమే సాక్షులు; ఘాత స్వీకృత రూపం మూల సూత్ర నియంత్రితం. దశల సమర్థన అనౌపచారికం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T232",
+    "source_term": "Powerset axiom / Cartesian-product existence / equivalence classes",
+    "telugu": "ఘాత సమితుల స్వీకృతం / కార్టీజియన్ లబ్ధం ఉనికి / సమానతా వర్గాలు",
+    "status": "definition_controlled_set_product_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P034"],
+    "basis": "ఘాత సమితి నిర్వచనం, తరువాతి దశలో ఉపసమితుల సమాహారం, ద్విఘాత సమితిపై వేరుచేయడంతో కార్టీజియన్ లబ్ధం, సంబంధ/ప్రమేయ/సమానతా వర్గ అభ్యాసాలు నిలిచాయి.",
+    "uncertainty": "ఘాత సమితి ప్రత్యేక పదానికి స్వతంత్ర ప్రత్యక్ష సాక్షి లేదు; అక్షరార్థం మూల నిర్వచనంతో నియంత్రితం.",
+    "borrowing": "Powerset macro, Cartesian product notation and references remain source-controlled."
+  }
+}

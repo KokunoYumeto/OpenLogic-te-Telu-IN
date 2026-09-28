@@ -1,0 +1,397 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{basic}
+\olsection{క్రమసంఖ్యల ప్రాథమిక ధర్మాలు}
+
+తొలి కొన్ని క్రమసంఖ్యలే
+సహజ సంఖ్యలని చూశాం.
+క్రమసంఖ్యల సిద్ధాంతాన్ని
+అభివృద్ధి చేయడానికి
+ముఖ్య కారణం సహజ
+సంఖ్యలపై వర్తించే
+ఆగమన సూత్రాన్ని
+విస్తరించడం. ప్రాథమిక
+ఫలితాల క్రమం ద్వారా
+దానికి చేరుకుంటాం.
+
+\begin{lem}\ollabel{ordmemberord}
+క్రమసంఖ్యలోని ప్రతి
+\tetoken{మూలకం}{!!{element}}
+క్రమసంఖ్యే.
+\end{lem}
+
+\begin{proof}
+$\alpha$ క్రమసంఖ్య,
+$b \in \alpha$ అనుకుందాం.
+$\alpha$ సంక్రామకం
+కాబట్టి $b \subseteq \alpha$.
+అందువల్ల $\in$,
+$\alpha$ను సుక్రమితం
+చేసినట్టే $\in$, $b$నూ
+సుక్రమితం చేస్తుంది.
+
+$b$ సంక్రామకమని
+చూడడానికి $x \in c \in b$
+అనుకుందాం. $b
+\subseteq \alpha$ కాబట్టి
+$c \in \alpha$.
+మళ్లీ $\alpha$ సంక్రామకం
+కాబట్టి $c \subseteq
+\alpha$; అందువల్ల
+$x \in \alpha$.
+కాబట్టి $x, c, b \in \alpha$.
+అయితే $\in$, $\alpha$ను
+సుక్రమితం చేస్తుంది;
+కనుక \olref[sth][ordinals][wo]{wo:strictorder}
+ప్రకారం $\alpha$పై
+$\in$ సంక్రామక సంబంధం.
+అందువల్ల $x
+\in c \in b$ నుంచి
+$x \in b$ వస్తుంది.
+సాధారణీకరిస్తే,
+$c \subseteq b$.
+\end{proof}
+
+\begin{cor}\ollabel{ordissetofsmallerord}
+ఏ క్రమసంఖ్య~$\alpha$కైనా
+$\alpha = \Setabs{\beta \in \alpha}{\beta \text{ ఒక క్రమసంఖ్య}}$.
+\end{cor}
+
+\begin{proof}
+\olref{ordmemberord}
+నుంచి వెంటనే వస్తుంది.
+\end{proof}
+
+తదుపరి రెండు ప్రధాన
+ఫలితాలు,
+\olref{ordinductionschema},
+\olref{ordtrichotomy},
+స్థూలంగా చెప్పేది:
+క్రమసంఖ్యలన్నీ సభ్యత్వం
+ద్వారా సుక్రమితమైనవి.
+
+\begin{thm}[అతిపరిమిత ఆగమనం]\ollabel{ordinductionschema}
+ఏ $\phi(x)$ సూత్రానికైనా:
+\[
+	\text{ఒకవేళ }\exists \alpha \phi(\alpha)\text{ అయితే }\exists \alpha(\phi(\alpha)
+	\land  (\forall \beta \in \alpha) \lnot \phi(\beta))
+\]
+ఇక్కడ చూపిన పరిమాణకారకాలు
+క్రమసంఖ్యలకు మాత్రమే
+పరిమితమని అంతర్లీనంగా
+అనుకుంటాం.
+\end{thm}
+
+\begin{proof}
+%\olref{ordinductionschema1}.
+ఏదో క్రమసంఖ్య
+$\alpha$కు $\phi(\alpha)$
+అనుకుందాం. $ (\forall \beta
+\in \alpha) \lnot \phi(\beta)$
+అయితే నిరూపణ పూర్తయింది.
+లేకపోతే $\alpha$
+క్రమసంఖ్య కాబట్టి,
+దానిలో సూత్రం $\phi$ను
+సంతృప్తిపరిచే మూలకాలలో
+$\in$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+ఉంటుంది; అది
+\olref{ordmemberord}
+ప్రకారం క్రమసంఖ్యే.
+ఆ మూలకానికి ముందున్న
+ఏ క్రమసంఖ్యా ఆ
+సూత్రాన్ని సంతృప్తిపరచదు.
+\sourcecorrection{OLTESTORDBASIC-001}{మూలం అత్యల్ప మూలకం ``\(\phi\)'' అని మాత్రమే చెబుతుంది; ఇక్కడ \(\phi\)ను సంతృప్తిపరిచే మూలకాలలో అత్యల్పమని స్పష్టం చేశాం.}
+%	\olref{ordinductionschema2}. ఏదో క్రమసంఖ్య
+%	$\gamma$ ఉంది, దానికి $\lnot\phi(\gamma)$. అప్పుడు
+%	\olref{ordinductionschema1} ప్రకారం $\in$-కనిష్ఠ క్రమసంఖ్య
+%	$\alpha$కు $\lnot\phi(\alpha)$. కాబట్టి $(\forall \beta <
+%	\alpha) \phi(\beta)$; దీని వల్ల సోపాధికపు పూర్వభాగం
+%	అసత్యం అవుతుంది.
+\end{proof}
+\noindent
+\olref{ordinductionschema}ను
+ఈ కింది పథకంగా కూడా
+చెప్పవచ్చని గమనించండి:
+\[
+\text{ఒకవేళ }\forall \alpha((\forall \beta \in \alpha)\phi(\beta) \lif 
+\phi(\alpha))\text{ అయితే }\forall \alpha\phi(\alpha)
+\]
+దీనికి \olref{ordinductionschema}లో
+$\lnot\phi(\alpha)$ను
+తీసుకొని, ప్రాథమిక
+తార్కిక మార్పులు చేస్తే
+చాలు.
+
+\begin{thm}[త్రివిధత]\ollabel{ordtrichotomy}
+ఏ క్రమసంఖ్యలు
+$\alpha$, $\beta$కైనా
+$\alpha \in \beta \lor \alpha = \beta \lor \beta \in \alpha$.
+\end{thm}
+
+\begin{proof}
+నిరూపణ ద్వంద్వ ఆగమనం
+ద్వారా; అంటే
+\olref{ordinductionschema}ను
+రెండుసార్లు వాడతాం.
+$x \in y \lor x = y \lor y \in x$
+అయితే $x$, $y$తో
+\emph{పోల్చదగినది}
+అంటాం.
+
+ఆగమనానికి, $\alpha$లోని
+ప్రతి క్రమసంఖ్యా
+\emph{ప్రతి} క్రమసంఖ్యతో
+పోల్చదగినదని అనుకుందాం.
+మరొక ఆగమనానికి,
+$\alpha$, $\beta$లోని
+ప్రతి క్రమసంఖ్యతో
+పోల్చదగినదని అనుకుందాం.
+$\alpha$, $\beta$తో
+పోల్చదగినదని చూపుతాం.
+అప్పుడు $\beta$పై
+ఆగమనం ద్వారా $\alpha$
+ప్రతి క్రమసంఖ్యతో
+పోల్చదగినదని వస్తుంది;
+తరువాత $\alpha$పై
+ఆగమనం ద్వారా
+\emph{ప్రతి} క్రమసంఖ్యా
+\emph{ప్రతి} క్రమసంఖ్యతో
+పోల్చదగినదని వస్తుంది.
+కావలసింది ఇదే.
+$\alpha \notin \beta$,
+$\beta \notin
+\alpha$ అనుకొని
+$\alpha = \beta$
+అని చూపితే సరిపోతుంది.
+
+$\alpha \subseteq \beta$
+అని చూపడానికి,
+$\gamma \in \alpha$ను
+స్థిరపరచండి; అది
+\olref{ordmemberord}
+ప్రకారం క్రమసంఖ్య.
+కాబట్టి మొదటి ఆగమన
+పరికల్పన ప్రకారం,
+$\gamma$, $\beta$తో
+పోల్చదగినది. కానీ
+$\gamma
+= \beta$ అయినా,
+$\beta \in \gamma$
+అయినా $\beta \in \alpha$
+వస్తుంది ($\alpha$
+సంక్రామకమనే విషయాన్ని
+అవసరమైతే వాడుతూ);
+అది మన ఊహకు
+విరుద్ధం. కాబట్టి
+$\gamma \in \beta$.
+సాధారణీకరిస్తే,
+$\alpha \subseteq
+\beta$.
+
+రెండవ ఆగమన పరికల్పనతో
+అచ్చం ఇలాంటి వాదన
+$\beta \subseteq \alpha$
+అని చూపుతుంది.
+కాబట్టి $\alpha = \beta$.
+\end{proof}\noindent
+అందువల్ల కొన్నిసార్లు
+$\alpha \in \beta$ బదులు
+$\alpha <\beta$ అని
+రాస్తాం; ఎందుకంటే
+$\in$ క్రమ సంబంధంలా
+ప్రవర్తిస్తుంది. పరిచయం,
+అలాగే $\alpha \in
+\beta \lor \alpha = \beta$
+కంటే $\alpha \leq \beta$
+రాయడం సులభం కావడం
+తప్ప దీనికి లోతైన
+కారణం లేదు.\footnote{$\alpha
+\mathrel{\underline{\in}} \beta$
+అని రాయవచ్చు; కానీ
+అది పూర్తిగా సంప్రదాయేతరం.}
+
+చివరి ఫలితాలకు రెండు
+సత్వర పర్యవసానాలు
+ఇవి; మొదటిది మన
+కొత్త సంకేతలిపిని
+ఉపయోగిస్తుంది:
+
+\begin{cor}\ollabel{ordordered}
+$\exists \alpha\phi(\alpha)$
+అయితే
+$\exists \alpha(\phi(\alpha)
+\land \forall \beta(\phi(\beta) \lif \alpha \leq \beta))$.
+ఇంకా ఏ క్రమసంఖ్యలు
+$\alpha, \beta, \gamma$కైనా,
+$\alpha
+\notin \alpha$ మరియు
+$\alpha \in \beta \in \gamma \lif \alpha \in
+\gamma$ రెండూ ఉంటాయి.
+\end{cor}
+
+\begin{proof}
+\olref[wo]{wo:strictorder}
+మాదిరిగానే.
+\end{proof}
+
+\begin{prob}
+\olref[sth][ordinals][basic]{ordtrichotomy}
+నిరూపణలోని ``అచ్చం
+ఇలాంటి వాదన''ను
+పూర్తి చేయండి.
+\end{prob}
+
+\begin{cor}\ollabel{corordtransitiveord}
+$A$ క్రమసంఖ్య అప్పుడే
+మరియు అప్పుడే $A$
+క్రమసంఖ్యల సంక్రామక
+సమితి.
+\end{cor}
+
+\begin{proof}
+\emph{ఎడమ నుంచి కుడికి.}
+\olref{ordmemberord}
+ప్రకారం. \emph{కుడి నుంచి
+ఎడమకి.} $A$ క్రమసంఖ్యల
+సంక్రామక సమితి అయితే,
+\olref{ordinductionschema},
+\olref{ordtrichotomy}
+ప్రకారం $\in$, $A$ను
+సుక్రమితం చేస్తుంది.
+\end{proof}
+
+\olref{ordinductionschema},
+\olref{ordtrichotomy} ప్రకారం
+$\in$ క్రమసంఖ్యలను
+సుక్రమితం చేస్తుందని
+స్థూలంగా చెప్పాం.
+అయితే ఈ కింది ఫలితం
+వల్ల అలాంటి వాదనలతో
+\emph{చాలా జాగ్రత్తగా}
+ఉండాలి:
+
+\begin{thm}[బురాలి-ఫోర్టీ వైరుధ్యం]\ollabel{buraliforti}
+అన్ని క్రమసంఖ్యల
+సమితి లేదు.
+\end{thm}
+
+\begin{proof}
+వైరుధ్యాన్ని చూపడానికి,
+$O$ అన్ని క్రమసంఖ్యల
+సమితి అనుకుందాం.
+$\alpha \in
+\beta \in O$ అయితే,
+\olref{ordmemberord}
+ప్రకారం $\alpha$
+క్రమసంఖ్య; కాబట్టి
+$\alpha \in O$.
+అందువల్ల $O$
+సంక్రామకం; అందుచేత
+\olref{corordtransitiveord}
+ప్రకారం $O$
+క్రమసంఖ్య. అప్పుడు
+$O \in O$; ఇది
+\olref{ordordered}కు
+విరుద్ధం.
+\end{proof}
+\noindent
+ఈ ఫలితం
+\citeauthor{Burali-Forti1897}
+పేరుతో పిలవబడుతుంది.
+అయితే అన్ని క్రమసంఖ్యల
+సమితి ఉందనే ఊహలోని
+\emph{వైరుధ్యాన్ని}
+స్పష్టంగా మొదట గుర్తించింది
+కాంటర్; 1899లో
+డెడెకిండ్‌కు రాసిన
+ఉత్తరంలో. వాన్
+హేయెనూర్ట్ వివరించినట్టు:
+\begin{quote}
+  బురాలి-ఫోర్టీ స్వయంగా
+  వైరుధ్య నిరూపణ ద్వారా,
+  క్రమసంఖ్యల సహజ క్రమం
+  కేవలం పాక్షిక క్రమమే
+  అని స్థాపించబడిందని
+  భావించాడు.
+  \citep[p.~105]{Heijenoort1967}
+\end{quote}
+బురాలి-ఫోర్టీ తప్పును
+పక్కనపెట్టి, పై విషయాన్ని
+ఇలా సంక్షిప్తంగా చెప్పవచ్చు:
+క్రమసంఖ్యలు సభ్యత్వం
+ద్వారా ఒక్కొక్కటిగా
+సుక్రమితమైన సమితులు;
+అవి మొత్తంగా ఒక సమితిని
+ఏర్పరచకపోయినా,
+సమష్టిగా సభ్యత్వం
+ద్వారా సుక్రమితమైనవి.
+
+ఇక్కడ ముగింపుగా,
+\olref{ordinductionschema},
+\olref{ordtrichotomy}
+నుంచి వచ్చే క్రమసంఖ్యల
+మరిన్ని ప్రాథమిక
+ధర్మాలు ఇవి.
+
+\begin{prop}
+క్రమసంఖ్యల ఏ కఠినంగా
+దిగే అనుక్రమమైనా
+పరిమితమైనదే.
+\end{prop}
+
+\begin{proof}
+అనంతమైన కఠినంగా దిగే
+క్రమసంఖ్యల అనుక్రమం
+$\alpha_0 > \alpha_1 > \alpha_2 > \ldots$
+లో $<$-కనిష్ఠ
+మూలకం ఉండదు;
+ఇది \olref{ordinductionschema}కు
+విరుద్ధం.
+\end{proof}
+
+\begin{prop}\ollabel{ordinalsaresubsets}
+ఏ క్రమసంఖ్యలు
+$\alpha, \beta$కైనా
+$\alpha \subseteq \beta \lor \beta \subseteq \alpha$.
+\end{prop}
+
+\begin{proof}
+$\alpha \in \beta$ అయితే,
+$\beta$ సంక్రామకం
+కాబట్టి $\alpha \subseteq \beta$.
+అలాగే $\beta \in \alpha$
+అయితే $\beta \subseteq
+\alpha$. $\alpha = \beta$
+అయితే $\alpha \subseteq \beta$
+మరియు $\beta \subseteq \alpha$.
+కాబట్టి \olref{ordtrichotomy}
+ప్రకారం ఫలితం వస్తుంది.
+\end{proof}
+
+\begin{prop}\ollabel{ordisoidentity}
+ఏ క్రమసంఖ్యలు
+$\alpha, \beta$కైనా
+$\alpha = \beta$ అప్పుడే
+మరియు అప్పుడే
+$\ordeq{\alpha}{\beta}$.
+\end{prop}
+
+\begin{proof}
+క్రమసంఖ్యలు సుక్రమాలు;
+కాబట్టి త్రివిధత
+(\olref[basic]{ordtrichotomy}),
+\olref[iso]{wellordnotinitial}
+నుంచి వెంటనే వస్తుంది.
+\end{proof}
+
+\begin{prob}\ollabel{probunionordinalsordinal}
+$X$లోని ప్రతి మూలకమూ
+క్రమసంఖ్య అయితే,
+$\bigcup X$ కూడా
+క్రమసంఖ్య అని నిరూపించండి.
+\end{prob}
+
+\end{document}

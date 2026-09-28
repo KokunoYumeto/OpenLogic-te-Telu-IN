@@ -1,0 +1,8 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPROPSOUNDNESS-20260928",
+  "unit_id": "OLP-0715",
+  "source_path": "content/propositional-logic/syntax-and-semantics/soundness.tex",
+  "source_sha256": "fb8b9efb660ea25cfabb54808815759be9ec6f51b79a2a9a5ad4267bc0b02994",
+  "findings": []
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTECNTANT-20260927",
+  "unit_id": "OLP-0526",
+  "source_path": "content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex",
+  "source_sha256": "17178d12f5c6ec82fbe5143286b95f4e2cce3b97117cde0884304e39333892c8",
+  "findings": [
+    {
+      "finding_id": "OLTECNTANT-001",
+      "source_locator": "antecedent-strengthening.tex first two prose paragraphs; three occurrences of light the match as antecedent action",
+      "classification": "counterfactual_match_antecedent_action_conflated_with_consequent",
+      "source_issue": "Three prose phrases make lighting, rather than striking, the antecedent action, contrary to the quoted inference and formal model.",
+      "minimal_treatment": "Render the antecedent action as striking in all three phrases and disclose the semantic repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "200",
+  "unit_id": "OLP-0551",
+  "unit_order": 551,
+  "source_path": "content/set-theory/ordinals/iso.tex",
+  "blocks": 24,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+  "previous_segments": 8147,
+  "previous_terms": 240,
+  "expected_corrections": 482,
+  "corrections_by_block": {"20": ["OLTESTORDISO-001"]},
+  "canon_default": ["TE-P004", "TE-P008", "TE-P010", "TE-P034"],
+  "consultation_phase": "స్థిర క్రమ-సమరూపత మూలం, తెలుగు లక్ష్యం, పూర్వ సుక్రమ/ద్విగుణ ప్రమేయం/ఆరంభ ఖండ పదాలు, స్థానిక సమితి/సంబంధ/క్రమయుగ్మ సాక్షులు ఎదురెదురు చూశాం; సమరూపత నిర్వచనం, ఏకైకత్వం, సరైన ఆరంభ ఖండ అసమరూపత, పరిమిత సమరూపత, పోలిక సిద్ధాంతం మరియు మూల domain/range దోషం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/010/034 సాధారణ సమితి/సంబంధ/ద్విగుణ ప్రమేయం పదాలకు మాత్రమే సాక్షులు; సమరూపత ప్రత్యేక పదం మూల నిర్వచనం నియంత్రితం. OLTESTORDISO-001 సవరణ స్థానిక మూల నిరూపణ ఆధారితం. QA పూర్తి నిరూపణ ధృవీకరణ కాదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T241",
+    "source_term": "order-isomorphism / proper initial segment / well-order comparability",
+    "telugu": "క్రమ-సమరూపత / తనకన్నా చిన్న ఆరంభ ఖండం / సుక్రమాల పోలిక",
+    "status": "definition_and_proof_controlled_relation_bijection_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P010", "TE-P034"],
+    "basis": "క్రమాన్ని సంరక్షించే ద్విగుణ ప్రమేయం, ఆరంభ ఖండానికి పరిమితి, ఏకైక సమరూపత, సరైన ఆరంభ ఖండానికి అసమరూపత, రెండు సుక్రమాల పోలికను సూత్రాలు/నిరూపణలతో నిలిపాం; f లక్ష్య ఖండం విలువల పరిధిగా ప్రకటిత మూల లోపాన్ని సరిచేశాం.",
+    "uncertainty": "ప్రత్యేక సమరూపత/ఆరంభ ఖండ తెలుగు పదాలకు ప్రత్యక్ష సాక్షి లేదు; పూర్తి నిరూపణ స్వతంత్ర నిపుణ తనిఖీ లేదు.",
+    "borrowing": "Order symbols, source tokens, relation restriction and formulas remain source-controlled."
+  }
+}

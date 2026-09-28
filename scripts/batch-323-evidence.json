@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "323",
+  "unit_id": "OLP-0674",
+  "unit_order": 674,
+  "source_path": "content/proof-theory/normalization/normalization.tex",
+  "blocks": 7,
+  "linguistic_blocks": [
+    4
+  ],
+  "previous_segments": 9963,
+  "previous_terms": 363,
+  "expected_corrections": 602,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "సాధారణీకరణ అధ్యాయ శీర్షికను పరిచయం, ప్రమేయ విభాగాలతో పోల్చి, దిగుమతి పథాలు మరియు క్రమాన్ని యథాతథంగా ఉంచాం.",
+  "evidence_limit": "శీర్షిక మాత్రమే భాషా అనువాదం; మిగిలినవి TeX నిర్మాణం. దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T364",
+    "source_term": "Normalization (chapter heading)",
+    "telugu": "సాధారణీకరణ",
+    "status": "normalization_chapter_heading_aligned",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "మునుపటి సాధారణీకరణ విభాగాలతో సమాన శీర్షిక పదాన్ని ఉపయోగించి దిగుమతి పథాలు మార్చలేదు.",
+    "uncertainty": "పదం భావపారదర్శక ఎంపిక; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం.",
+    "borrowing": "pt/nor identifier and TeX import paths remain source-identifying."
+  }
+}

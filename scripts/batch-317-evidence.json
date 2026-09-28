@@ -1,0 +1,65 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "317",
+  "unit_id": "OLP-0668",
+  "unit_order": 668,
+  "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+  "blocks": 20,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19
+  ],
+  "corrections_by_block": {
+    "12": [
+      "OLTEPTNATRPR-001"
+    ],
+    "13": [
+      "OLTEPTNATRPR-002"
+    ],
+    "14": [
+      "OLTEPTNATRPR-003"
+    ],
+    "17": [
+      "OLTEPTNATRPR-004",
+      "OLTEPTNATRPR-005"
+    ]
+  },
+  "previous_segments": 9880,
+  "previous_terms": 357,
+  "expected_corrections": 587,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "N1 నిగమన నియమాల ముఖ్య/ఉప పూర్వపక్షాలు, విసర్జన గుర్తులు, ఐగెన్ చరరాశి, నిరూపణ ఆగమన నిర్వచనం, ఎత్తు ఉదాహరణను స్థిర మూలంతో పోల్చాం; ఐదు మూల లోపాలు పక్కనే ప్రకటించాం.",
+  "evidence_limit": "పూర్వపక్షం, విసర్జన, ఉపనిరూపణ పదాలు భావపారదర్శక రూపాలు; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. వృక్షాల క్రమం, సంకేతాలు యథాశక్తి పోల్చినా స్వతంత్ర formal proof లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T358",
+    "source_term": "major/minor premise; discharge label; open assumption; proof height",
+    "telugu": "ముఖ్య/ఉప పూర్వపక్షం; విసర్జన గుర్తు; తెరిచి ఉన్న ఉపపత్తి; నిరూపణ ఎత్తు",
+    "status": "N1_rules_proofs_five_source_repairs_disclosed",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "నియమ వృక్షాలు, ప్రధాన సూత్రం, విసర్జన ప్రక్రియ, నిరూపణ నిర్మాణం, ఎత్తు లెక్క నిలిచాయి; ఐదు స్థానిక మూల లోపాలు సరిచేసి ప్రకటించాం.",
+    "uncertainty": "పూర్వపక్షం, ఉపనిరూపణ రూపాలు సందర్భానుసార భావానువాదాలు; పూర్తిస్థాయి formal proof ధృవీకరణ జరగలేదు.",
+    "borrowing": "N1c/N1i, labelled proof-tree syntax, A/B/C and delta identifiers remain source-identifying."
+  }
+}

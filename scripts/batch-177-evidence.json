@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "177",
+  "unit_id": "OLP-0528",
+  "unit_order": 528,
+  "source_path": "content/counterfactuals/minimal-change-semantics/contraposition.tex",
+  "blocks": 9,
+  "linguistic_blocks": [5, 6, 7, 8],
+  "previous_segments": 7896,
+  "previous_terms": 217,
+  "expected_corrections": 479,
+  "canon_default": ["TE-P018", "TE-P019", "TE-P021"],
+  "corrections_by_block": {"8": ["OLTECNTCPO-001"]},
+  "consultation_phase": "స్థిర ప్రతివాస్తవ ప్రతివిపర్యయ మూలం, తెలుగు లక్ష్యం, పూర్వ భౌతిక/కఠిన ప్రతివిపర్యయ పదాలు, గోళ నమూనా నిర్వచనం, స్థానిక తర్క సాక్షులు ఎదురెదురు చూశాం; గోథె జంట వాక్యాలు, మూడు లోకాల $p,q$ విలువలు, చిత్ర/సంతృప్తి వాదన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P018/019/021 సాధారణ తర్క/సత్యమూల్య పదాలకు మాత్రమే సాక్షులు; గోథె చారిత్రక దృష్టాంతం స్వతంత్ర చరిత్ర తనిఖీ కాదు. ఒక్క లోకపు గోళ జాబితా $O_w$ కావాలనే సవరణ పూర్వ నిర్వచన తనిఖీ ఆధారితం; చిత్రం PDF render, నిపుణ సమీక్ష లేవు.",
+  "term_decision": {
+    "term_id": "TE-T218",
+    "source_term": "counterfactual contraposition / sphere counterexample",
+    "telugu": "ప్రతివాస్తవ ప్రతివిపర్యయం / గోళ ప్రతిదృష్టాంతం",
+    "status": "definition_and_three_world_model_controlled_one_disclosed_local_sphere_notation_repair",
+    "passages": ["TE-P018", "TE-P019", "TE-P021"],
+    "basis": "భౌతిక/కఠిన సోపాధిక ప్రతివిపర్యయ తుల్యత, ప్రతివాస్తవ అపర్యవసానం, గోథె మూడు లోకాల $p,q$ విలువలు, చిత్రం నిలిచాయి; $O$ ప్రమేయానికి స్థానిక గోళ జాబితా ఇచ్చిన మూల సంకేతాన్ని $O_w$గా ప్రకటించి సరిచేశాం.",
+    "uncertainty": "గోథె ఉదాహరణకు స్వతంత్ర చారిత్రక ధృవీకరణ లేదు; $O_w$ సవరణ అదే ఏజెంట్ నిర్వచన పోలిక ఆధారితం. చిత్రం దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Goethe/Kratzer names are transliterated; p/q and sphere notation remain source-controlled."
+  }
+}

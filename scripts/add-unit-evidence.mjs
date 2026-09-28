@@ -88,7 +88,12 @@ if(corrections.length<c.expected_corrections||
    corrections.slice(c.expected_corrections).some(x=>(orderById.get(x.unit_id)??0)<=c.unit_order)||
    JSON.stringify(own.map(x=>x.finding_id).sort())!==JSON.stringify(declared))
   throw new Error('Correction ledger or block map mismatch');
-writeJsonl('evidence/SOURCE_CORRECTIONS.jsonl',corrections.map(x=>x.unit_id===unit.unit_id?{...x,status:'applied_qa_pass'}:x));
+const proofGaps=new Set(c.proof_gap_ids??[]);
+if(proofGaps.size!==(c.proof_gap_ids??[]).length||
+   [...proofGaps].some(id=>!declared.includes(id)))
+  throw new Error('Bad disclosed source-proof-gap map');
+writeJsonl('evidence/SOURCE_CORRECTIONS.jsonl',corrections.map(x=>x.unit_id===unit.unit_id?
+  {...x,status:proofGaps.has(x.finding_id)?'source_proof_gap_disclosed_structural_qa_pass':'applied_qa_pass'}:x));
 writeJsonl(termsPath,terms);
 writeJsonl('evidence/SEGMENT_CANON_USE.jsonl',[...prior,...rows,...later]);
 console.log(JSON.stringify({unit:unit.unit_id,target_sha256:sha(target),segments:rows.length,

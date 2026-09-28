@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEHISSETLIM-20260927",
+  "unit_id": "OLP-0635",
+  "source_path": "content/history/set-theory/limits.tex",
+  "source_sha256": "df5d36d65e7abafe7503527229866dfc618527177e567b16ce33ec01c683783d",
+  "findings": [
+    {
+      "finding_id": "OLTEHISSETLIM-001",
+      "source_locator": "limits.tex lines 17–20, varying secant description",
+      "classification": "fixed_derivative_misdescribed_as_beta_dependent_quotient",
+      "source_issue": "At fixed c, f'(c) is the limit value, not the expression that changes as beta approaches zero. The varying object is the difference quotient.",
+      "minimal_treatment": "Identify the varying difference quotient as approaching the fixed derivative value; disclose in adjacent prose.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEHISSETLIM-002",
+      "source_locator": "limits.tex lines 34–38, epsilon-delta display",
+      "classification": "unpunctured_neighborhood_in_general_limit_definition",
+      "source_issue": "The displayed implication quantifies x=c as well, so it wrongly requires g(c)=ell (and g(c) to be defined) for an ordinary limit.",
+      "minimal_treatment": "Add 0<|x-c| to the antecedent, preserving the rest of the quantifiers and implication; disclose the change.",
+      "expected_core_math_delta": {
+        "source_only": ["\\[(\\forall\\epsilon>0)(\\exists\\delta>0)\\forallx\\left(|x-c|<\\delta\\lif|g(x)-\\ell|<\\epsilon\\right).\\]"],
+        "target_only": ["\\[(\\forall\\epsilon>0)(\\exists\\delta>0)\\forallx\\left(0<|x-c|<\\delta\\lif|g(x)-\\ell|<\\epsilon\\right).\\]"]
+      }
+    },
+    {
+      "finding_id": "OLTEHISSETLIM-003",
+      "source_locator": "limits.tex line 47, absolute-value x-axis tick loop",
+      "classification": "malformed_duplicate_axis_tick_pair",
+      "source_issue": "The source foreach list has bare -1 and 1 entries where paired x/label entries are expected, then repeats 1/1; this can leave an unlabeled negative tick and duplicate positive tick.",
+      "minimal_treatment": "Use the four intended paired ticks -2/-2, -1/-1, 1/1, 2/2 and disclose the diagram repair.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

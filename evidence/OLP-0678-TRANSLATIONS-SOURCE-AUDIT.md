@@ -1,0 +1,3 @@
+# OLP-0678 — normal-proof translations source audit
+
+Eight local inconsistencies are disclosed adjacent to the Telugu translation. They concern two wrong system names, a missing normality condition, a transformed-proof label, labelled/unlabelled context confusion in the conjunction case, two context indices in the implication case, an incomplete falsum condition, and the omission of open assumptions from the N1i subformula scope. The last omission is refuted by a normal conjunction-elimination proof. The treatments follow the adjoining propositions and displayed derivations. The frozen source and proof trees remain unchanged. This audit does not constitute an independent proof of the full normalization-to-cut-free proposition.

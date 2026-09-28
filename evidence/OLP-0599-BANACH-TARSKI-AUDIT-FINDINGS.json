@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCHOICEBANACH-20260927",
+  "unit_id": "OLP-0599",
+  "source_path": "content/set-theory/choice/banach.tex",
+  "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+  "findings": [
+    {
+      "finding_id": "OLTESTCHOICEBANACH-001",
+      "source_locator": "banach.tex lines 54–55, interval-to-real tangent example",
+      "classification": "extra_closing_parenthesis_in_tangent_map",
+      "source_issue": "The source tangent expression has one unmatched closing parenthesis.",
+      "minimal_treatment": "Remove the extra closing parenthesis and disclose.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\tan(\\pi(r-\\nicefrac{1}{2})))$"],
+        "target_only": ["$\\tan(\\pi(r-\\nicefrac{1}{2}))$"]
+      }
+    }
+  ]
+}

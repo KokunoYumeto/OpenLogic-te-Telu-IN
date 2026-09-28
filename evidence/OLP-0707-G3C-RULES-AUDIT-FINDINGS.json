@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQG3C-20260928",
+  "unit_id": "OLP-0707",
+  "source_path": "content/proof-theory/sequent-calculus/rules-G3c.tex",
+  "source_sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQG3C-001",
+      "source_locator": "content/proof-theory/sequent-calculus/rules-G3c.tex lines 9–82, aligned block 4",
+      "classification": "universal_left_premise_missing_context_separator",
+      "source_issue": "The universal-left premise lacks the comma between its retained principal formula and Gamma.",
+      "minimal_treatment": "Insert the context separator.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A(t),\\lforall[x][!A(x)]\\Gamma\\fCenter\\Delta$"
+        ],
+        "target_only": [
+          "$!A(t),\\lforall[x][!A(x)],\\Gamma\\fCenter\\Delta$"
+        ]
+      }
+    }
+  ]
+}

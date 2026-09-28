@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0671",
+  "source_path": "content/proof-theory/natural-deduction/translation-N2i.tex",
+  "source_sha256": "bcdc9e912c815aca8702cfe0346eba3a308dd2569e4dcca2950cfa0c590a0be4",
+  "audit_id": "OLTEPTNATN2I-20260928",
+  "audit_review_path": "evidence/OLP-0671-N2I-TRANSLATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "56e27471eb525fe92a792066dd5016192cdf4d155c300ac9de22be9b24f34aee",
+  "audit_findings_path": "evidence/OLP-0671-N2I-TRANSLATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "9af58e4255694399ba8d0d8dba0ed10a1481da47757977bc4b9b683c23c89e61",
+  "previous_corrections": 597,
+  "treatments": {
+    "OLTEPTNATN2I-001": {
+      "target_line": 16,
+      "body_treatment": "N2i నుంచి లక్ష్య వ్యవస్థను G2iగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATN2I-002": {
+      "target_line": 78,
+      "body_treatment": "అసత్య ఫలితానికి రెండో ఆగమన నిరూపణ Bను ఇస్తుందని, ఖాళీ ఫలితానికి ఎడమ అన్వయం, కట్ అవసరమని చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATN2I-003": {
+      "target_line": 101,
+      "body_treatment": "G2c వృక్ష పూర్వపక్షం నుంచి N2 యొక్క x గుర్తును తొలగించి ప్రకటించాం."
+    },
+    "OLTEPTNATN2I-004": {
+      "target_line": 103,
+      "body_treatment": "FalseCl అసత్య ఫలిత ప్రత్యేక సందర్భంలో ఖాళీ ఫలితభాగానికి చివరి కట్ చేర్చి ప్రకటించాం."
+    }
+  }
+}

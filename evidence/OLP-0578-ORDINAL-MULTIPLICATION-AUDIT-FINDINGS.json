@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTORDMULT-20260927",
+  "unit_id": "OLP-0578",
+  "source_path": "content/set-theory/ord-arithmetic/multiplication.tex",
+  "source_sha256": "eade2bc67a7dede697f1a89e0359c3ef4a1c52154bbcf4b1b45176f5d3742abb",
+  "findings": [
+    {
+      "finding_id": "OLTESTORDMULT-001",
+      "source_locator": "multiplication.tex lines 44–46, limit recursion clause",
+      "classification": "strict_supremum_zero_left_factor_exception_missing",
+      "source_issue": "For alpha=0, the limit clause's strict supremum of all-zero products is 1, contradicting the direct product value 0.",
+      "minimal_treatment": "Restrict the limit clause to nonzero alpha and disclose that the zero-left-factor case is separate.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": ["$\\alpha\\neq0$"]
+      }
+    }
+  ]
+}

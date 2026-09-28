@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0515",
+  "source_path": "content/intuitionistic-logic/tableaux/soundness.tex",
+  "source_sha256": "3852095c3c8edfdf76e294936602d8a0d640622642fcb0c27cf55420ef99e46c",
+  "audit_id": "OLTEINTTABSOU-20260927",
+  "audit_review_path": "evidence/OLP-0515-INTUITIONISTIC-TABLEAUX-SOUNDNESS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "144acdb8e299faa6e22dc30f9fee548c13993fe954c7278516ffd374f582e98f",
+  "audit_findings_path": "evidence/OLP-0515-INTUITIONISTIC-TABLEAUX-SOUNDNESS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "486909722e5347741dbe1ec925f6da87feb53cb81d4e0456e9cd27163eb63f45",
+  "previous_corrections": 470,
+  "treatments": {
+    "OLTEINTTABSOU-001": {"target_line": 28, "body_treatment": "ప్రతినమూనా వాక్యంలోని ముగింపు సత్య సంకేతాన్ని అసత్య సంకేతానికి మార్చి పక్కనే ప్రకటించాం."},
+    "OLTEINTTABSOU-002": {"target_line": 121, "body_treatment": "ప్రాప్య లోకానికి అర్థనిర్దేశం చేర్చి, ఏకదిశత ద్వారా వచ్చే విస్తరించిన లోకపు సత్యాన్నే వ్రాసి ప్రకటించాం."},
+    "OLTEINTTABSOU-003": {"target_line": 249, "body_treatment": "తాజా పూర్వసూచిక వద్ద శాఖకు చేరే రెండు చిహ్నిత సూత్రాలను నియమానుసారం రెండు సమితి వ్యక్తీకరణల్లోనూ సరిచేసి ప్రకటించాం."},
+    "OLTEINTTABSOU-004": {"target_line": 343, "body_treatment": "ఉపపత్తి నిరూపణ చివరి వాక్యంలో తిరిగి వచ్చిన పూర్వాపేక్ష బదులు అర్థపరమైన పర్యవసానాన్ని ముగింపుగా వ్రాసి ప్రకటించాం."}
+  }
+}

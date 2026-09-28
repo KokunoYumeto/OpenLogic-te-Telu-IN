@@ -1,0 +1,88 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ord-arithmetic}{mult}
+
+\olsection{క్రమసంఖ్య గుణకారం}
+
+ఇప్పుడు క్రమసంఖ్య గుణకారం చూద్దాం; దీనిని క్రమసంఖ్య కూడికలాగే సమీపిస్తాం. $\alpha$ను~$\beta$తో గుణించాలనుకుందాం. వెడల్పు $\alpha$, ఎత్తు $\beta$ గల దీర్ఘచతురస్ర జాలకాన్ని ఊహించండి; ప్రతి వరుసలో ముందుకు వెళ్లి, తరువాతి వరుసకు మారుతూ, మొత్తం జాలకాన్ని దాటిన ఫలితమే $\alpha$, $\beta$ల లబ్ధం. మరో మాటలో, $\beta$లోని \emph{ప్రతి} మూలకం స్థానంలో $\alpha$ ప్రతిని పెడితే $\alpha$, $\beta$ల లబ్ధం వస్తుంది.
+
+దీనిని ఔపచారికం చేయడానికి $\alpha$, $\beta$ల కార్టీషియన్ గుణితంపై విలోమ నిఘంటు క్రమాన్ని వాడితే చాలు:
+
+\begin{defn}
+ఏ క్రమసంఖ్యలు $\alpha, \beta$కైనా వాటి లబ్ధం $\alpha \ordtimes \beta = \ordtype{\alpha \times \beta, \rlexless}$.
+\end{defn}
+\noindent
+ఈ నిర్వచనం సరిగా ఏర్పడిందని మళ్లీ నిర్ధారించాలి:
+
+\begin{lem}\ollabel{ordtimeslessiswo}
+ఏ క్రమసంఖ్యలు $\alpha$, $\beta$కైనా $\tuple{\alpha \times \beta, \rlexless}$ ఒక సుక్రమం.
+\end{lem}
+
+\begin{proof}
+\olref[add]{ordsumlessiswo}లాగే.
+\end{proof}
+\noindent
+గుణకారం ఈ విధంగా ప్రవర్తిస్తుందని నిరూపించడం కూడా కష్టం కాదు:
+
+\begin{lem}\ollabel{ordtimesrecursion}
+ఏ క్రమసంఖ్యలు $\alpha, \beta$కైనా:
+\begin{align*}
+	\alpha \ordtimes 0 &= 0\\
+	\alpha \ordtimes (\beta \ordplus 1) &=
+		(\alpha \ordtimes \beta) \ordplus \alpha\\
+	\alpha  \ordtimes \beta &=
+		\supstrict_{\delta < \beta}(\alpha \ordtimes \delta) &&
+		\text{$\beta$ సీమా క్రమసంఖ్య, $\alpha\neq0$ అయినప్పుడు}.
+\end{align*}
+\sourcecorrection{OLTESTORDMULT-001}{మూల సీమా పునరావృత్త సమీకరణం $\alpha=0$కూ వర్తిస్తుందని చెబుతుంది; అప్పుడు ఎడమవైపు శూన్యం, కుడివైపు శూన్యాల కనిష్ఠ కఠిన పైహద్దు ఒకటి. ఆ శాఖకు శూన్యం కాని ఎడమ గుణకం షరతు చేర్చాం; శూన్య ఎడమ గుణకాన్ని విడిగా తీసుకోవాలి.}
+\end{lem}
+
+\begin{proof}
+అభ్యాసానికి వదిలాం.
+\end{proof}
+
+నిజానికి కూడిక సందర్భంలోలాగే, నేర నిర్వచనం బదులు ఈ పునరావృత్త సమీకరణాల ద్వారా క్రమసంఖ్య గుణకారాన్ని నిర్వచించవచ్చు; శూన్య ఎడమ గుణకం సందర్భాన్ని విడిగా నిర్దేశించాలి. అలాగే కూడికతో పోలిస్తే కొన్ని ప్రవర్తనలు సుపరిచితమే:
+
+\begin{lem}\ollabel{ordinalmultiplicationisnice}
+$\alpha, \beta, \gamma$ క్రమసంఖ్యలు అయితే:
+\begin{enumerate}
+	\item\ollabel{ordtimes1} $\alpha \neq 0$, $\beta < \gamma$ అయితే $\alpha \ordtimes \beta < \alpha \ordtimes \gamma$;
+	\item\ollabel{ordtimes2} $\alpha \neq 0$, $\alpha \ordtimes
+	\beta = \alpha\ordtimes\gamma$ అయితే $\beta = \gamma$;
+	\item\ollabel{ordtimes3} $\alpha \ordtimes (\beta \ordtimes
+	\gamma) = (\alpha \ordtimes \beta) \ordtimes \gamma$;
+	\item\ollabel{ordtimes4} $\alpha \leq \beta$ అయితే $\alpha
+	\ordtimes \gamma \leq \beta \ordtimes \gamma$;
+	\item\ollabel{ordtimes5} $\alpha \ordtimes (\beta \ordplus
+	\gamma) = (\alpha \ordtimes \beta )\ordplus (\alpha\ordtimes
+	\gamma)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+అభ్యాసానికి వదిలాం.
+\end{proof}
+
+ఇంకా ఎన్నో ఫలితాలు మీ ఇష్టం వచ్చినంత నిరూపించవచ్చు (లేదా వెతికి చూడవచ్చు). కానీ \olref[ord-arithmetic][add]{ordsumnotcommute}ను బట్టి ఇది ఆశ్చర్యకరం కాదు:
+
+\begin{prop}
+క్రమసంఖ్య గుణకారానికి క్రమమార్పిడి ధర్మం లేదు: $2 \ordtimes \omega  =
+\omega < \omega \ordtimes 2$.
+\end{prop}
+
+\begin{proof}
+$2 \ordtimes \omega = \supstrict_{n < \omega}(2\ordtimes  n) = \omega \in \supstrict_{n < \omega}(\omega \ordplus n) = \omega \ordplus \omega = \omega \ordtimes 2$.
+\end{proof}
+\noindent
+దీనికి సహజ వివరణ మళ్లీ సరళమే. $2
+\ordtimes \omega$ను లెక్కించడానికి ప్రతి సహజ సంఖ్య స్థానంలో రెండు వస్తువులను పెడతాం. సహజ సంఖ్యల్లో ``సగం'' సంఖ్యలన్నిటినీ చొప్పించినా అదే క్రమరకం వస్తుంది; అంటే $\Setabs{\nicefrac{n}{2}}{n \in \omega}$పై సహజ క్రమాన్ని పరిగణించినట్లే. అలా చూస్తే దాని క్రమరకం $\omega$ క్రమరకంతో ఒకటే అని స్పష్టం. కానీ $\omega \ordtimes 2$ను లెక్కించడానికి $\omega$ యొక్క రెండు ప్రతులను ఒకదాని తరువాత మరొకటి పెడతాం.
+
+\begin{prob}
+\olref[sth][ord-arithmetic][mult]{ordtimeslessiswo},
+\olref[sth][ord-arithmetic][mult]{ordtimesrecursion},
+\olref[sth][ord-arithmetic][mult]{ordinalmultiplicationisnice}లను నిరూపించండి.
+\end{prob}
+
+\end{document}

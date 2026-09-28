@@ -1,0 +1,372 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: permutations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{per}
+
+\olsection{స్థానమార్పు పరివర్తనలు}
+
+\Log{N1i}లో కట్‌లు \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం యొక్క ప్రధాన పూర్వపక్షంలో ముగిసే ఖండాలు. సాధారణీకరణ నిరూపణలో ఒక సందర్భంలో గరిష్ఠ కట్‌ల పొడవును, దాంతోపాటు \tetoken{నిరూపణ}{!!{proof}} యొక్క కట్ పొడవును తగ్గించాలి. పొడవు $>1$ ఉన్న కట్ అనేక రకాలుగా ముగియవచ్చు: ఆ కట్‌లోని~$!A$ యొక్క చివరి \tetoken{సూత్ర}{!!{formula}} ఘటన (\Elim{\lor} లేదా \Elim{\lexists}) యొక్క నిష్కర్షనా, అలాగే అది ఏ \tetoken{తొలగింపు}{!!{elimination}} అనుమితికి ప్రధాన పూర్వపక్షమా అన్నదానిపై ఇది ఆధారపడి ఉంటుంది.
+
+ఉదాహరణకు, సంబంధిత అనుమితులు \Elim{\lor}, \Elim{\land} అయి, $!A \ident !B \land !C$ అయితే, కింది విధంగా ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\delta_1$ ఉందనుకుందాం:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+\]
+ఈ కట్‌లోని చివరి \tetoken{సూత్ర}{!!{formula}} ఘటన~$!A_n$, \Elim{\lor} యొక్క నిష్కర్ష అయిన కింది $!B \land !C$. చివరి నుంచి రెండవ \tetoken{సూత్ర}{!!{formula}} ఘటన~$!A_{n-1}$, \Elim{\lor} యొక్క ఉప పూర్వపక్షాలలో ఒకటి.
+\sourcecorrection{OLTEPTNORPER-001}{మూల గద్యంలో కట్ సూత్రాన్ని $!B \lor !C$గా పేర్కొంది; పక్కనే ఉన్న నిరూపణ వృక్షం ప్రకారం అది $!B \land !C$.}
+
+ఈ కట్ పొడవును తగ్గించడానికి \Elim{\lor}, \Elim{\land} అనుమితుల క్రమాన్ని మార్చవచ్చు (వాటిని "స్థానమార్చవచ్చు"). అంటే,~$\delta$లోని ఉపనిరూపణ~$\delta_1$ స్థానంలో కిందిదాన్ని ఉంచుతాం:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\]
+మునుపు \Elim{\lor} కింద ఉన్న \Elim{\land} పూర్వపక్షంలో ముగిసిన కట్‌లు, ఇప్పుడు \Elim{\lor} ఉప పూర్వపక్షాల పైన ఉన్న \Elim{\land} అనుమితుల్లో ఒకదాని పూర్వపక్షంలో ముగుస్తాయి. అందువల్ల ప్రతి కట్ పొడవు~$1$ తగ్గుతుంది.
+
+అంతేకాకుండా, $\delta_2$, $\delta_3$, లేదా $\delta_4$లో పూర్తిగా ఉండే కట్ గానీ,~$\delta$లోని~$\delta_1$కు పూర్తిగా వెలుపల ఉండే కట్ గానీ మారదు: అది అవే \tetoken{సూత్రాలను}{!!{formula}s} కలిగి, అవే అనుమితుల గుండా వెళుతుంది; కాబట్టి ముఖ్యంగా~$\delta$లోని సంబంధిత కట్‌కు ఉన్న స్థాయి, పొడవే దానికీ ఉంటాయి. అందువల్ల కొత్త \tetoken{నిరూపణ}{!!{proof}} యొక్క కట్ స్థాయి పెరగలేదు; కొత్త \tetoken{నిరూపణ}{!!{proof}} యొక్క కట్ పొడవు పాత \tetoken{నిరూపణ}{!!{proof}} కట్ పొడవుకంటే తక్కువ.
+
+\begin{prob}
+స్థానమార్పు పరివర్తన తరువాత కనీసం ఒక కట్ పొడవు~$1$ తగ్గుతుంది. \Elim{\land}ను~\Elim{\lor} మీదుగా స్థానమార్చినప్పుడు నిజానికి రెండు కట్ ఖండాల పొడవు తగ్గుతుంది; కాబట్టి ఈ సందర్భంలో \tetoken{నిరూపణ}{!!{proof}} కట్ పొడవు కనీసం~$2$ తగ్గుతుంది. ఇటువంటి ఒకే స్థానమార్పుతో \tetoken{ఒక నిరూపణ}{!!a{proof}} కట్ పొడవు~$2$ కంటే ఎక్కువ తగ్గగలదా? కట్ \emph{స్థాయి} తగ్గగలదా?
+\end{prob}
+
+\tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమాన్ని \Elim{\lor} లేదా \Elim{\lexists} నియమం పైకి తరలించే ప్రక్రియను \emph{స్థానమార్పు పరివర్తన} అంటారు. కొన్ని నియమ-జంటలకు సంబంధించిన నమూనాలను \olref{tab:permutation-conversions}లో చూపించాం. (మిగిలినవి అభ్యాసాలుగా వదిలాం.)
+
+% \begin{table}
+% \begin{multline*}
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \land !C$}
+% \RightLabel{\Elim{\land}[1]}
+% \UnaryInfC{$!B$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$!B \lif !C$}
+% \AxiomC{$!B$}
+% \RightLabel{\Elim{\lif}}
+% \BinaryInfC{$!C$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!C$}
+% \DisplayProof}
+% \\
+% \shoveleft{\AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DisplayProof}\\
+% \shoveright{\longrightarrow\ 
+% \AxiomC{$!D \lor !E$}
+% \AxiomC{$\Discharge{!D}{x}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \AxiomC{$\Discharge{!E}{y}$}
+% \shortDeduce
+% \DeduceC{$\lforall[x][!B(x)]$}
+% \RightLabel{\Elim{\lforall}}
+% \UnaryInfC{$!B(t)$}
+% \DischargeRule{\Elim{\lor}}{x\,y}
+% \TrinaryInfC{$!B(t)$}
+% \DisplayProof}
+% \end{multline*}
+% \caption{Some permutation conversions for \Log{N1i}.}
+% \ollabel{tab:permutation-conversions}
+% \end{table}
+
+{\small
+\begin{longtable}{@{}l@{}}
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \land !C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$!B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$!B \lif !C$}
+\AxiomC{$!B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DisplayProof
+\quad$\longrightarrow$\\[8ex]
+\quad\AxiomC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\AxiomC{$\Discharge{!E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][!B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$!B(t)$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!B(t)$}
+\DisplayProof
+\\
+\caption{\Log{N1i}లో కొన్ని స్థానమార్పు పరివర్తనలు.}
+\ollabel{tab:permutation-conversions}
+\end{longtable}
+}
+
+\begin{prob}
+\Elim{\lor} తరువాత \Elim{\lor} లేదా \Elim{\lnot} వచ్చే సందర్భాలకు స్థానమార్పు పరివర్తనలను ఇవ్వండి.
+\end{prob}
+
+\begin{prob}
+\Elim{\lexists} తరువాత \Elim{\lexists} వచ్చే సందర్భానికి స్థానమార్పు పరివర్తనలను ఇవ్వండి. ఈ రెండవ సందర్భంలో ఏ స్వతంత్ర చరరాశి నియమమూ ఎందుకు ఉల్లంఘించబడదో వివరించండి.
+\sourcecorrection{OLTEPTNORPER-002}{మూలంలోని రెండవ నియమానికి \Elim{\exists} అని ఉంది; చుట్టుపక్కల వాడకం ప్రకారం అది \Elim{\lexists}.}
+\end{prob}
+
+స్థానమార్పు పరివర్తనను వర్తింపజేసినప్పుడు స్వతంత్ర చరరాశి నియమం ఉల్లంఘించబడదని నిర్ధారించుకోవాలి. దీనిని పరిగణించండి:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DisplayProof
+\]
+దీని స్థానంలో కిందిదాన్ని ఉంచితే,
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$!D \lor !E$}
+\AxiomC{$\Discharge{!D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\AxiomC{$\Discharge{!E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][!B(x)]$}
+\AxiomC{$\Discharge{!B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$!C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$!C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$!C$}
+\DisplayProof
+\]
+స్వతంత్ర చరరాశి~$c$, ఉదాహరణకు~$!D$లో ఉండవచ్చేమోనని సందేహం రావచ్చు. ఎందుకంటే $!D$ అనే ఊహ అసలు~$\Elim{\lexists}$ పైనే విడుదల అవుతుంది. అందువల్ల అసలు \tetoken{నిరూపణ}{!!{proof}}లో అది~\Elim{\lexists} అనుమితి ప్రధాన పూర్వపక్షం పైన ఇంకా తెరిచి ఉన్న ఊహలో కనిపించదు; అక్కడ స్వతంత్ర చరరాశి నియమం తీరుతుంది. కానీ కొత్త \tetoken{నిరూపణ}{!!{proof}}లో $!D$ అనేది~\Elim{\lexists} అనుమితుల తరువాత మాత్రమే విడుదల అవుతుంది; అప్పుడు ఆ నియమం ఉల్లంఘించబడినట్టు కనిపిస్తుంది. అయితే మన \tetoken{నిరూపణలు}{!!{proof}s} నియమబద్ధమైనవని ఊహిస్తున్నామని గుర్తుంచుకోండి: ప్రతి స్వతంత్ర చరరాశి ఒకే అనుమితికి స్వతంత్ర చరరాశి అవుతుంది; \tetoken{నిరూపణ}{!!{proof}}లో \Elim{\lexists} యొక్క ఉప పూర్వపక్షం పైన మాత్రమే కనిపిస్తుంది. ముఖ్యంగా~$c$, $\delta_3$లో గానీ~$\delta_4$లో గానీ ఉండదు.
+\sourcecorrection{OLTEPTNORPER-003}{మూలంలోని ఈ వాక్యంలో \Elim{\exists} అని ఉండగా, చిత్రంలోనూ చుట్టుపక్కల వాక్యాల్లోనూ \Elim{\lexists} ఉంది; అదే నియమ చిహ్నాన్ని ఇక్కడ వాడాం.}
+
+ఈ ఉదాహరణ మరొక విషయాన్ని చూపిస్తుంది: కొత్త \tetoken{నిరూపణ}{!!{proof}}లో~$\delta_5$ రెండు ప్రతులు ఉన్నాయి. అంటే $\delta_5$లో గరిష్ఠ కట్ ఉంటే, మనం కట్ పొడవును \emph{తగ్గించనట్టే}! అందువల్ల~$\delta_5$లో గరిష్ఠ కట్ లేదని తెలిసినప్పుడు మాత్రమే స్థానమార్పు పరివర్తనను వర్తింపజేయాలి. దీనికోసం ఎల్లప్పుడూ \emph{అత్యుపరి} గరిష్ఠ కట్‌ను ఎంచుకుంటాం; అంటే, ఆ కట్‌ను కలిగిన ఉప-\tetoken{నిరూపణ}{!!{proof}}లో (ఇక్కడ~$\delta_1$) ఆ ఉప-\tetoken{నిరూపణ}{!!{proof}} చివరి అనుమితి పైన ముగిసే మరే గరిష్ఠ కట్ ఉండకూడదు. దీనివల్ల~$\delta_5$లో (నిజానికి $\delta_2$, $\delta_3$, లేదా~$\delta_4$లో కూడా) ఇతర గరిష్ఠ కట్‌లు ఉండే అవకాశం తొలగిపోతుంది.
+
+\end{document}

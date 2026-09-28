@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "236",
+  "unit_id": "OLP-0587",
+  "unit_order": 587,
+  "source_path": "content/set-theory/card-arithmetic/opps.tex",
+  "blocks": 23,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22],
+  "previous_segments": 8638,
+  "previous_terms": 276,
+  "expected_corrections": 499,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్ ప్రాథమిక క్రియల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ విచ్ఛిన్న సమ్మేళనం/క్రమమార్పిడి/ఘాతాంక పదాలు, స్థానిక సంఖ్య/ప్రమేయ సాక్షులు పోల్చాం; మూడు నిర్వచనాలు, సహచర్య/క్రమమార్పిడి, ఘాత సమితి ద్వైజెక్షన్, రియల్ సంఖ్యల కార్డినాలిటీ నిరూపణ రూపరేఖ తనిఖీ చేశాం.",
+  "evidence_limit": "కార్డినల్ ప్రత్యేక క్రియలకు ప్రత్యక్ష పదసాక్షి లేదు; మూల సూత్రాలు, పూర్వ పద నిర్ణయాలు నియంత్రించాయి. రియల్ సంఖ్యల వాదన మూలంలో రూపరేఖ మాత్రమే; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T277",
+    "source_term": "cardinal addition, multiplication, exponentiation",
+    "telugu": "కార్డినల్ కూడిక, గుణకారం, ఘాతాంకం",
+    "status": "three_operations_and_set_function_correspondence_source_controlled",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "విచ్ఛిన్న సమ్మేళనం, కార్టీషియన్ గుణితం, ప్రమేయాల సమితి ద్వారా మూడు క్రియలు; ఘాత సమితి/లక్షణ ప్రమేయ ద్వైజెక్షన్; కార్డినల్-క్రమసంఖ్య ఘాత భేదం నిలిచాయి.",
+    "uncertainty": "ప్రత్యేక కార్డినల్ క్రియల పదాలకు ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనాలే నియంత్రణ.",
+    "borrowing": "Cardinal-operation and function-set macros remain source-controlled."
+  }
+}

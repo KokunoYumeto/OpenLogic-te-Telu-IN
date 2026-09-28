@@ -11,7 +11,8 @@ const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
  sets:{start:4,end:10,slug:'sets',label:'Sets chapter, OLP-0004..OLP-0010',expectedAssets:3,chapterTitles:[[0,'సమితులు']]},
  sfr:{start:4,end:26,slug:'sfr',label:'Sets, Relations, and Functions chapters, OLP-0004..OLP-0026',expectedAssets:11,chapterTitles:[[0,'సమితులు'],[7,'సంబంధాలు'],[16,'ప్రమేయాలు']]},
- cumulative279:{start:4,end:279,slug:'cumulative-279',label:'Cumulative reader, OLP-0004..OLP-0279',expectedAssets:null,chapterTitles:[[0,'సమితులు']]}
+ cumulative279:{start:4,end:279,slug:'cumulative-279',label:'Cumulative reader, OLP-0004..OLP-0279',expectedAssets:null,chapterTitles:[[0,'సమితులు']]},
+ full:{start:1,end:722,slug:'full',label:'Integrated full reader, all OLP-0001..OLP-0722 units',expectedAssets:null,chapterTitles:[]}
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
@@ -33,12 +34,21 @@ assert(manifest.schema==='openlogic-te-semantic-html/1','Wrong manifest schema')
 assert(manifest.source_revision==='9620cc73f9c8e0ad003c514a5d3748f29611c4c0','Wrong source revision');
 assert(sha(Buffer.from(html))===manifest.html_sha256,'HTML hash mismatch');
 assert(scope==='sets'?[undefined,'sets'].includes(manifest.profile):manifest.profile===scope,'Wrong reader profile');
-assert(manifest.units.length===expectedIds.length&&manifest.units.map(row=>row.unit_id).join(',')===expectedIds.join(','),'Wrong unit coverage/order');
+assert(manifest.units.length===expectedIds.length,'Wrong unit coverage');
+if(scope==='full'){
+ const actual=manifest.units.map(row=>row.unit_id);
+ assert(new Set(actual).size===722&&actual.toSorted().join(',')===expectedIds.toSorted().join(','),'Incomplete or duplicate full-reader unit coverage');
+ assert(actual.at(-1)==='OLP-0642','Detached units were appended after the canonical ending');
+ const index=id=>actual.indexOf(id);
+ assert(index('OLP-0685')>index('OLP-0138')&&index('OLP-0685')<index('OLP-0182'),'Proof-theory part is not integrated with the logic chapters');
+ assert(index('OLP-0666')>index('OLP-0668')&&index('OLP-0666')<index('OLP-0669'),'Natural-deduction auxiliary figure was not nested near its parent');
+}else assert(manifest.units.map(row=>row.unit_id).join(',')===expectedIds.join(','),'Wrong unit order');
 assert(manifest.units.reduce((sum,row)=>sum+row.aligned_blocks,0)===segmentLedger.length,'Wrong aligned-block coverage');
 assert(manifest.units.reduce((sum,row)=>sum+row.linguistic_blocks,0)===segmentLedger.filter(row=>row.classification==='translated_linguistic_segment').length,'Wrong linguistic-block coverage');
 assert(manifest.units.every(row=>row.telugu_text_runs>0&&row.english_text_runs>0&&row.telugu_text_characters>0&&row.english_text_characters>0),'Missing text-run coverage');
-for(const [index,unit] of manifest.units.entries()){
- const source=sourceManifest[index];
+const sourceById=new Map(sourceManifest.map(row=>[row.unit_id,row]));
+for(const unit of manifest.units){
+ const source=sourceById.get(unit.unit_id);
  assert(unit.source_path===source.source_path&&unit.source_sha256===source.source_sha256,'Source identity mismatch '+unit.unit_id);
  assert(sha(fs.readFileSync(path.join(root,'upstream',source.source_path)))===source.source_sha256,'Frozen source bytes changed '+unit.unit_id);
  assert(sha(fs.readFileSync(path.join(root,'translation',source.source_path)))===unit.translation_sha256,'Translation bytes changed '+unit.unit_id);
@@ -50,24 +60,32 @@ const englishMath=manifest.units.reduce((sum,row)=>sum+row.english_math_expressi
 assert(manifest.math.length===teluguMath&&manifest.english_math.length===englishMath,'Formula inventory mismatch');
 if(profile.expectedAssets!==null)assert(manifest.assets.length===profile.expectedAssets,'Asset inventory mismatch');
 const referenceValid=row=>row.resolved||row.known_missing;
-assert(manifest.references.length===manifest.english_references.length&&manifest.references.every(referenceValid)&&manifest.english_references.every(referenceValid),'Unknown reference');
+assert((scope==='full'||manifest.references.length===manifest.english_references.length)&&manifest.references.every(referenceValid)&&manifest.english_references.every(referenceValid),'Unknown reference');
 assert(manifest.references.filter(row=>row.known_missing).length===manifest.english_references.filter(row=>row.known_missing).length,'Out-of-scope reference mismatch');
 assert(manifest.conditional_branches.length===manifest.english_conditional_branches.length,'Conditional projection count mismatch');
 assert(manifest.conditional_branches.every(row=>['true','false'].includes(row.selected))&&manifest.english_conditional_branches.every(row=>['true','false'].includes(row.selected)),'Invalid conditional projection');
 
 assert(/^<!doctype html>\n<html lang="te-Telu-IN">/.test(html),'Missing exact Telugu document language');
 assert(count(html,/<section class="source-unit"/g)===expectedIds.length,'Wrong source-unit count');
-const toc=/<nav aria-label="విషయ సూచిక">[\s\S]*?<ol>([\s\S]*?)<\/ol>/.exec(html)?.[1]??'';
+const toc=/<nav aria-label="విషయ సూచిక">([\s\S]*?)<\/nav>/.exec(html)?.[1]??'';
 const tocRows=[...toc.matchAll(/<a href="#(OLP-\d{4})">([^<]+)<\/a>/g)].map(match=>({id:match[1],title:match[2]}));
-assert(tocRows.length===expectedIds.length&&tocRows.map(row=>row.id).join(',')===expectedIds.join(','),'Wrong HTML TOC coverage/order');
+assert(tocRows.length===expectedIds.length&&(
+ scope==='full'?tocRows.map(row=>row.id).toSorted().join(',')===expectedIds.toSorted().join(','):
+ tocRows.map(row=>row.id).join(',')===manifest.units.map(row=>row.unit_id).join(',')
+),'Wrong HTML TOC coverage/order');
+if(scope==='full')assert(count(toc,/<details class="toc-part"/g)>=19&&count(toc,/<details class="toc-chapter"/g)>=80,'Full-reader chapter navigation missing');
 for(const [index,title] of profile.chapterTitles)assert(tocRows[index]?.title===title,'Wrong chapter-driver TOC title '+expectedIds[index]);
 assert(count(html,/<details class="english" lang="en">/g)===expectedIds.length,'Wrong canonical-English disclosure count');
 assert(count(html,/<math\b/g)===teluguMath+englishMath,'Wrong rendered MathML count');
 assert(count(html,/<annotation encoding="application\/x-tex">/g)===teluguMath+englishMath,'Wrong TeX annotation count');
 assert(count(html,/<svg class="set-diagram" role="img"/g)===6,'Wrong inline SVG count');
 const compiledAssets=manifest.assets.filter(row=>row.svg_path);
-const compiledSvgInstances=compiledAssets.reduce((sum,row)=>sum+(row.kind==='inline_tikz'?row.occurrences.length:2),0);
-assert(count(html,/<img class="reader-diagram"/g)===compiledSvgInstances,'Wrong compiled SVG instance count');
+const compiledSvgInstances=count(html,/<img class="reader-diagram"/g);
+for(const record of compiledAssets){
+ const name=path.basename(record.svg_path);
+ const instances=count(html,new RegExp('<img class="reader-diagram" src="assets/diagrams/'+name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'"','g'));
+ assert(instances>0&&instances<=(record.occurrences?.length??2),'Wrong compiled SVG instance count '+name);
+}
 assert([...html.matchAll(/<img class="reader-diagram"[^>]*>/g)].every(match=>/\salt="[^"]+"/.test(match[0])),'Diagram alternative text missing');
 assert(!/<script\b|<iframe\b|<object\b|<embed\b|\son\w+\s*=|<merror\b|katex-error|diagram-pending|\ufffd|!!|\\tecase\b/i.test(html),'Forbidden/unresolved output marker');
 assert(!/@import\b|url\(\s*['"]?https?:|expression\s*\(/i.test(css),'CSS contains remote or executable dependency');

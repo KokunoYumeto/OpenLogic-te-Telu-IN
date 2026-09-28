@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0718",
+  "source_path": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex",
+  "source_sha256": "fdfbf3efe6aa648adad1e98d6567ecd7941dc41aeb1917b41548ad9568bb41a2",
+  "audit_id": "OLTESFRINDINT-20260928",
+  "audit_review_path": "evidence/OLP-0718-INDUCTION-INTRO-SOURCE-AUDIT.md",
+  "audit_review_sha256": "0a6cf3b70effb89baa4319cdcbebdcc92cc57010c5b0b99159d9e90c108a4f6a",
+  "audit_findings_path": "evidence/OLP-0718-INDUCTION-INTRO-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3ef02795ab705db33ecf1571c5cde44544fc53814f8d2a4ad28f265dac67aa2b",
+  "previous_corrections": 702,
+  "treatments": {
+    "OLTESFRINDINT-001": {
+      "target_line": 59,
+      "body_treatment": "Replace the erroneous leading 2k by k^2. Also localize the two reader-facing equation tags in the same display; disclose the combined display atom delta."
+    }
+  }
+}

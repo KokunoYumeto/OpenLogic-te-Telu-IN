@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "204",
+  "unit_id": "OLP-0555",
+  "unit_order": 555,
+  "source_path": "content/set-theory/ordinals/milestone.tex",
+  "blocks": 5,
+  "linguistic_blocks": [2, 3, 4],
+  "previous_segments": 8227,
+  "previous_terms": 244,
+  "expected_corrections": 483,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర ZF-minus మైలురాయి మూలం, తెలుగు లక్ష్యం, పూర్వ Z-minus/ప్రతిస్థాపన పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; స్వీకృతాల ఖచ్చిత జాబితా, Z-minusపై ప్రతిస్థాపన చేర్పు, ఫ్రెంకెల్/స్కోలెమ్ ఆపాదన తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి/స్వీకృత పదాలకు మాత్రమే సాక్షులు; ZF-minus జాబితా మూల నిర్ణయ నియంత్రితం. Fraenkel/Skolem చారిత్రక మూలాలు స్వతంత్రంగా చూడలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T245",
+    "source_term": "ZF-minus / Zermelo-Fraenkel set theory milestone",
+    "telugu": "ZF-minus / సెర్మెలో--ఫ్రెంకెల్ సమితి సిద్ధాంత మైలురాయి",
+    "status": "axiom_list_source_controlled_general_set_register_attested",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "Z-minusకు ప్రతిస్థాపనను చేర్చిన ZF-minus స్వీకృతాల జాబితా, ప్రతిస్థాపన సమర్థన వాయిదా, ఫ్రెంకెల్/స్కోలెమ్ భిన్న చారిత్రక పాత్రలు నిలిచాయి.",
+    "uncertainty": "చారిత్రక మూలాలు స్వతంత్రంగా ధృవీకరించలేదు; ZF-minus చిహ్నం మూల నియంత్రితం.",
+    "borrowing": "ZF-minus and Z-minus notation and historical citations remain source-controlled."
+  }
+}

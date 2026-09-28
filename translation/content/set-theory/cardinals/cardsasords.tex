@@ -1,0 +1,74 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{cardinals}{cardsasords}
+\olsection{క్రమసంఖ్యలుగా కార్డినల్ సంఖ్యలు}
+
+నిజానికి కార్డినల్ సంఖ్యల మన సిద్ధాంతం, క్రమసంఖ్యల సిద్ధాంతాన్నే (ఏ సంకోచమూ లేకుండా) ఉపయోగించుకుంటుంది. అంటే కొన్ని నిర్దిష్ట క్రమసంఖ్యలనే కార్డినల్ సంఖ్యలుగా నిర్వచిస్తాం. ముఖ్యంగా ఈ నిర్వచనం ఇస్తాం:
+
+\begin{defn}\ollabel{defcardinalasordinal}
+$A$ను సుక్రమపరచగలిగితే, $\cardeq{A}{\gamma}$ అయ్యే అత్యల్ప క్రమసంఖ్య $\gamma$యే $\card{A}$. ఏ క్రమసంఖ్య $\gamma$కైనా, $\gamma = \card{\gamma}$ అయితే, అప్పుడే $\gamma$ను \emph{కార్డినల్ సంఖ్య} అంటాం.
+\end{defn}
+
+ఇప్పుడే ``$A$ను సుక్రమపరచగలిగితే'' అన్నాం. గణితంలో దాదాపు ఎప్పటిలాగే, ఇక్కడ సాధ్యతను సూచించే మాట అస్తిత్వ వాదనకు అనౌపచారిక సంక్షిప్త రూపమే: ``$A$ను సుక్రమపరచగలం'' అంటే ``$A$ను సుక్రమపరిచే సంబంధం ఒకటి ఉంది'' అని మాత్రమే.
+
+కానీ \olref{defcardinalasordinal}లో ఒక చిక్కుంది. \emph{ప్రతి} సమితికీ పరిమాణం ఉండాలని, అంటే ప్రతి~$A$కు $\card{A}$ ఉండాలని కోరుకుంటాం. అయితే ఇప్పుడిచ్చిన నిర్వచనం ``$A$ను సుక్రమపరచ\emph{గలిగితే}...'' అనే షరతుతో మొదలవుతుంది. సుక్రమపరచలేని సమితి $A$ ఏదైనా ఉంటే, మన నిర్వచనం $\card{A}$ అనే వస్తువునే నిర్వచించదు.
+
+అందువల్ల \olref{defcardinalasordinal}ను వాడాలంటే ప్రతి సమితినీ సుక్రమపరచవచ్చని హామీ కావాలి. దురదృష్టవశాత్తూ ఆ హామీ~$\ZF$లో లేదు. కాబట్టి \olref{defcardinalasordinal}ను వాడాలనుకుంటే, ఈ విధమైన కొత్త స్వయంసిద్ధాన్ని చేర్చడం తప్ప మార్గం లేదు:
+\begin{axiom}[సుక్రమపరచడం]
+ప్రతి సమితినీ సుక్రమపరచవచ్చు.
+\end{axiom}
+సుక్రమపరచడం స్వయంసిద్ధం ఆమోదయోగ్యమా అనే విషయాన్ని \olref[choice][]{chap}లో చర్చిస్తాం. ఇప్పటి నుంచి మాత్రం దాన్ని ఉపయోగించుకుంటాం. దాని సహాయంతో \olref{defcardinalasordinal}లో నిర్వచించిన కార్డినల్ సంఖ్యలు ఉన్నాయని, అవి ఆశించినట్లు ప్రవర్తిస్తాయని నిరూపించడం సులభమే:
+
+\begin{lem}\ollabel{lem:CardinalsExist}
+ప్రతి సమితి $A$కు:
+\begin{enumerate}
+	\item\ollabel{cardaexists} $\card{A}$ ఉంది, ఏకైకం;
+	\item\ollabel{cardaapprox}  $\cardeq{\card{A}}{A}$;
+	\item\ollabel{cardaidem}  $\card{A}$ కార్డినల్ సంఖ్య, అంటే $\card{A} = \card{\card{A}}$;
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$A$ను స్థిరపరచుకుందాం. సుక్రమపరచడం ప్రకారం $\tuple{A, R}$ అనే సుక్రమం ఉంది. \olref[ordinals][ordtype]{thmOrdinalRepresentation} ప్రకారం $\tuple{A,
+R}$ ఒకే ఒక క్రమసంఖ్య $\beta$తో సమరూపం. కనుక $\cardeq{A}{\beta}$. అతిపరిమిత ఆగమనం ప్రకారం $\cardeq{A}{\gamma}$ అయ్యే ఏకైక అత్యల్ప క్రమసంఖ్య $\gamma$ ఉంది. కాబట్టి $\card{A}
+= \gamma$; దీనితో \olref{cardaexists}, \olref{cardaapprox} నిరూపితమయ్యాయి. \olref{cardaidem} కోసం, $\delta \in \gamma$ అయితే $\gamma$ను ఎన్నుకున్న విధానం వల్ల $\cardless{\delta}{A}$. సమసంఖ్యకత్వం సమానత్వ సంబంధం (\olref[sfr][siz][equ]{equinumerosityisequi}) కాబట్టి $\cardless{\delta}{\gamma}$ కూడా. అందువల్ల $\gamma =
+\card{\gamma}$.
+%So, for reductio, suppose that there is some ordinal $\delta \in \gamma$ such that $\cardeq{\gamma}{\delta}$. Then, $\cardeq{\cardeq{A}{\gamma}}{\delta}$ so that $\cardeq{A}{\delta}$ by \olref[sfr][set][equ]{equinumerosityisequi}, which contradicts the choice of $\gamma$ as the least ordinal such that $\cardeq{A}{\gamma}$.
+\end{proof}
+
+తరువాతి ఫలితం కాంటర్ సూత్రాన్నీ, మరికొన్నింటినీ నిర్ధారిస్తుంది. (కార్డినల్ సంఖ్యలకు క్రమసంఖ్యల క్రమమే వస్తుంది, అంటే $\cardfont{a} < \cardfont{b}$ అప్పుడూ అప్పుడే $\cardfont{a} \in \cardfont{b}$. దీన్ని చెప్పేటప్పుడు కార్డినల్ సంఖ్యలని తెలిసిన వస్తువులకు ఫ్రాక్టూర్ అక్షరాలు వాడతాం. ఇది సాధారణ పద్ధతి. కార్డినల్ సంఖ్యలూ క్రమసంఖ్యలే కాబట్టి గ్రీకు అక్షరాలను, ఉదాహరణకు వర్ణమాల మధ్య భాగంలోని $\kappa, \lambda$ను, వాడడం మరొక సాధారణ పద్ధతి.):
+\begin{lem}\ollabel{lem:CardinalsBehaveRight}
+ఏ సమితులు $A$, $B$కైనా:
+\begin{align*}
+	\cardeq{A}{B} &\text{ అప్పుడూ అప్పుడే } \card{A} = \card{B}\\
+	\cardle{A}{B} &\text{ అప్పుడూ అప్పుడే } \card{A} \leq \card{B}\\
+	\cardless{A}{B}&\text{ అప్పుడూ అప్పుడే } \card{A} < \card{B}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+రెండవ వాదనలో ఎడమ నుంచి కుడికి దిశను నిరూపిద్దాం (మిగిలినవీ ఇలాగే; వాటిని అభ్యాసానికి వదిలేస్తాం). ఈ రేఖాచిత్రాన్ని చూడండి:
+\begin{center}
+	\begin{tikzpicture}
+	\node (nodea) {$A$};
+	\node[right = 6em of nodea] (nodeb) {$B$};
+	\node[below = 2em of nodea] (nodecarda) {$\card{A}$};
+	\node[below = 2em of nodeb] (nodecardb) {$\card{B}$};
+	\draw[->] (nodea)--(nodeb);
+	\draw[<->] (nodea)--(nodecarda);
+	\draw[<->] (nodeb)--(nodecardb);
+	\draw[->, dashed] (nodecarda)--(nodecardb);
+\end{tikzpicture}
+\end{center}
+రెండు తలల బాణాలు \tetoken{ద్వైజెక్టివ్ ప్రమేయాలను}{!!{bijection}s} సూచిస్తాయి; వాటి అస్తిత్వానికి \olref{lem:CardinalsExist} హామీ ఇస్తుంది. $\cardle{A}{B}$ అని అనుకుంటే, $A\to B$ అనే \tetoken{ఇంజెక్టివ్ ప్రమేయం}{!!a{injection}} ఉంది. ఇప్పుడు $\card{A}$ నుంచి $A$కు, అక్కడి నుంచి $B$కు, ఆపై $\card{B}$కు బాణాల వెంట వెళ్తే, $\card{A} \to \card{B}$ అనే \tetoken{ఇంజెక్టివ్ ప్రమేయం}{!!a{injection}} (చుక్కల బాణం) పొందుతాం.
+\end{proof}\noindent \olref{lem:CardinalsBehaveRight}ను వాడి ష్రోడర్--బెర్న్‌స్టీన్ సిద్ధాంతాన్ని మళ్లీ నిరూపించవచ్చు. $\cardle{A}{B}$, $\cardle{B}{A}$ అయితే $\cardeq{A}{B}$ అన్నదే ఆ వాదన. దీన్ని \olref[sfr][siz][sb]{thm:schroder-bernstein}గా పేర్కొన్నాం; అయితే మొదటిసారి \olref[sfr][infinite][card-sb]{sec}లో కొంత శ్రమతో నిరూపించాం. ఇప్పుడు చూడండి:
+
+\begin{proof}[ష్రోడర్--బెర్న్‌స్టీన్ పునర్నిరూపణ]
+$\cardle{A}{B}$, $\cardle{B}{A}$ అయితే, \olref{lem:CardinalsBehaveRight} ప్రకారం $\card{A} \leq \card{B}$, $\card{B} \leq \card{A}$. కాబట్టి త్రివిభాగ ధర్మం, \olref{lem:CardinalsBehaveRight}ల ప్రకారం $\card{A} = \card{B}$, $\cardeq{A}{B}$.
+\end{proof}
+\noindent
+ఇది చాలా సరళమైన నిరూపణే అయినా, పరోక్షంగా ప్రతిస్థాపన (\olref[ordinals][ordtype]{thmOrdinalRepresentation} కోసం), సుక్రమపరచడం (\olref{lem:CardinalsBehaveRight}కు హామీ కోసం) రెండింటిపైనా ఆధారపడుతుంది. దీనికి విరుద్ధంగా, \olref[sfr][infinite][card-sb]{sec} నిరూపణ చాలా స్వతంత్రమైనది (నిజానికి దాన్ని~$\Zminus$లోనూ చేయవచ్చు).
+
+\end{document}

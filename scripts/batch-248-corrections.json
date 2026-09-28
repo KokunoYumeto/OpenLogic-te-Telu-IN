@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0599",
+  "source_path": "content/set-theory/choice/banach.tex",
+  "source_sha256": "51f2d8e142b4bccd21bc0aa06330ecff874360d32005b34c415955eaaa24943a",
+  "audit_id": "OLTESTCHOICEBANACH-20260927",
+  "audit_review_path": "evidence/OLP-0599-BANACH-TARSKI-SOURCE-AUDIT.md",
+  "audit_review_sha256": "bb431bd7d5b3518f2c5c8ab68f82780adac2a35b5a3648f79251309fb52274cc",
+  "audit_findings_path": "evidence/OLP-0599-BANACH-TARSKI-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "01bbfb36637b3a8df90f5c6690c43d2bd7eb9cb91b49b6a7794211570e50d7a0",
+  "previous_corrections": 516,
+  "treatments": {
+    "OLTESTCHOICEBANACH-001": {"target_line": 26, "body_treatment": "అంతరం నుంచి వాస్తవ సంఖ్యలకు టాంజెంట్ ప్రతిచిత్రణలో మూలంలోని అదనపు మూసివేత కుండలీకరణాన్ని తొలగించి ప్రకటించాం."}
+  }
+}

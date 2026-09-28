@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTND-20260927",
+  "unit_id": "OLP-0496",
+  "source_path": "content/intuitionistic-logic/introduction/natural-deduction.tex",
+  "source_sha256": "3fc69e5ddaa3c9273ab2fa9c4a9e5c7826c3044aa9945152d4f710f8cf62afd3",
+  "findings": [
+    {
+      "finding_id": "OLTEINTND-001",
+      "source_locator": "natural-deduction.tex lines 59-62; preceding conjunction introduction explanation",
+      "classification": "wrong_second_conjunct_in_bhk_pair_explanation",
+      "source_issue": "The pair N_1,N_2 is described as a construction of A_1 and A_1 despite N_2 being a construction of A_2.",
+      "minimal_treatment": "Use A_1 and A_2 for the pair's conjunction and disclose beside the sentence.",
+      "expected_core_math_delta": {
+        "source_only": ["$!A_1\\land!A_1$"],
+        "target_only": ["$!A_1\\land!A_2$"]
+      }
+    }
+  ]
+}

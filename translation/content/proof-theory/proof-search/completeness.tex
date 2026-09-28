@@ -1,0 +1,109 @@
+% Part: proof-theory
+% Chapter: proof-search
+% Section: completeness
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{ps}{cpl}
+
+\olsection{సంపూర్ణత}
+
+నిరూపణ అన్వేషణ అల్గోరిథం పొరపాటైన నిర్ణయం ఇవ్వదని ఇప్పుడు చూపుదాం: అది మధ్యలో విఫలమై ఆగినా, ఎప్పటికీ ముగియకపోయినా, ప్రారంభ సీక్వెంట్~$\Gamma \Sequent \Delta$కు \tetoken{నిరూపణ}{!!{proof}} లేదు. దీనికోసం \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$ను నిర్వచిస్తాం; ప్రతి $!A \in \Gamma$కు $\Sat{M}{!A}$, ప్రతి~$!A \in \Delta$కు $\Sat/{M}{!A}$ అయ్యేలా చేస్తాం. అంటే~$\Struct M$లో~$\Gamma$లోని అన్ని \tetoken{సూత్రాలు}{!!{formula}s} సత్యం,~$\Delta$లోని అన్ని \tetoken{సూత్రాలు}{!!{formula}s} అసత్యం; కాబట్టి $\Gamma \Sequent \Delta$ సర్వసత్యం కాదు. \Log{G3c} సబబైనది కనుక $\Gamma \Sequent \Delta$కు \tetoken{నిరూపణ}{!!{proof}} లేదు.
+\sourcecorrection{OLTEPTPSCPL-001}{మూలంలోని రెండవ పరిమాణ వాక్యంలో $! \in \Delta$ అని ఉంది; తరువాతి సంతృప్తి వాక్యం ప్రకారం అది $!A \in \Delta$.}
+
+\tetoken{సూత్రాల}{!!{formula}s} రెండు సమితులు~$\Theta, \Xi$, \tetoken{స్థిరాంకాల}{!!{constant}s} సమితి~$C$ నుంచి $\Struct{M}$ను నిర్వచిస్తాం. నిరూపణ అన్వేషణ విఫలమైనప్పుడు (మధ్యలో విఫలమై ఆగినప్పుడు లేదా ముగియనప్పుడు) దాని \emph{విఫల శాఖ} నుంచి $\Theta, \Xi$,~$C$లను పొందుతాం. విఫల శాఖ అంటే $\Pi_n \Sequent
+\Lambda_n$ సీక్వెంట్‌లు, \tetoken{స్థిరాంకాల}{!!{constant}s} సమితులు~$C_n$ కలిగిన వరుస; ఇందులో $\Pi_0 \Sequent \Lambda_0$ అనేది చివరి సీక్వెంట్~$\Gamma \Sequent
+\Delta$; $\Pi_{n+1} \Sequent \Lambda_{n+1}$ అనేది~$n+1$ దశలో $\Pi_n
+\Sequent \Lambda_n$ నుంచి ఉత్పత్తి అయ్యే, అల్గోరిథం \tetoken{ఒక నిరూపణను}{!!a{proof}} కనుగొనని పూర్వపక్షం. ప్రతి~$n$కు అటువంటి పూర్వపక్షం ఉండాలి; లేకపోతే అల్గోరిథం \tetoken{ఒక నిరూపణను}{!!a{proof}} కనుగొనేది. ~$\Pi_n
+\Sequent \Lambda_n$కు అనుబంధమైన \tetoken{స్థిరాంకాల}{!!{constant}s} సమితిని~$C_n$గా తీసుకుంటాం.
+\sourcecorrection{OLTEPTPSCPL-002}{విఫల శాఖ సీక్వెంట్ యొక్క కుడి సందర్భాన్ని మూలం చివరి వాక్యంలో $\Delta_n$గా పేర్కొంది; నిర్వచించిన గుర్తు $\Lambda_n$.}
+
+కేవలం అణు \tetoken{సూత్రాల}{!!{formula}s}తో కూడిన అత్యుపరి సీక్వెంట్ వద్ద అల్గోరిథం విఫలమై ఆగితే, ఆ సీక్వెంట్‌లో ముగిసే శాఖ విఫల శాఖ. అల్గోరిథం ఎప్పటికీ ముగియకపోతే మరింత పెద్ద వృక్షాలను ఉత్పత్తి చేస్తూనే ఉంటుంది. వాటిని ఒక అనంత వృక్షం పెరుగుతున్నట్టుగా భావించవచ్చు (అల్గోరిథం అనంత దశలు నడిచిన తరువాత ఉండే వృక్షం). ఆ వృక్షం అనంతమైనదైనా పరిమిత శాఖాభివృద్ధి కలిగి ఉంటుంది: ప్రతి నోడ్‌కు ఒకటి లేదా రెండు పిల్లలు మాత్రమే ఉంటారు—దాని వెంటనే పైనున్న సీక్వెంట్‌లు. కోనిగ్ (K\H{o}nig) లెమ్మా ప్రకారం ప్రతి అనంత, పరిమిత శాఖాభివృద్ధి గల వృక్షానికి అనంత శాఖ ఉంటుంది. అన్వేషణ అల్గోరిథం ఎప్పటికీ నడిచే సందర్భంలో ఆ అనంత శాఖ విఫల శాఖ అవుతుంది.
+
+$\Pi_n \Sequent \Lambda_n$, $C_n$ల వరుస విఫల శాఖ అయితే, $\Theta = \bigcup_n \Pi_n$, $\Xi = \bigcup_n \Lambda_n$గా (సూచికలు, \tetoken{సూత్రాల}{!!{formula}s} పునరావృత ఘటనలను తొలగించి), $C =
+\bigcup_n C_n$గా తీసుకుందాం.
+
+ఇప్పుడు~$\Struct{M}$ను నిర్వచించవచ్చు.
+\begin{enumerate}
+\item వాహకం~$\Domain{M}$ అనేది~$C$లోని స్థిరాంకాల నుంచి,~$\Gamma \Sequent \Delta$లోని \tetoken{ప్రమేయాల}{!!{function}s} నుంచి (అవి ఉంటే), \tetoken{చరరాశులు}{!!{variable}s} లేకుండా ఏర్పడగల పదాల సమితి.
+\item $c \in \Domain{M}$ అయితే, $\Assign{c}{M} = c$.
+\item $f$, $\Gamma \Sequent \Delta$లోని $m$-స్థాన \tetoken{ప్రమేయం}{!!{function}} అయి, $t_1$, \dots, $t_m \in \Domain{M}$ అయితే, $\Assign{f}{M}(t_1, \dots, t_m) =
+f(t_1, \dots, t_m)$.
+\item $R$, $\Gamma \Sequent
+\Delta$లోని $m$-స్థాన \tetoken{విధేయం}{!!{predicate}} అయితే, $\Assign{R}{M} = \Setabs{\tuple{t_1, \dots, t_m} \in
+\Domain{M}^m}{R(t_1, \dots, t_m) \in \Theta}$.
+\end{enumerate}
+$\Struct{M}$ ఒక \emph{పద నమూనా}: దాని వాహకం పదాల సమితి, \tetoken{స్థిరాంకాలు}{!!{constant}s}, \tetoken{ప్రమేయాల}{!!{function}s} అర్థనిర్ణయం $\Value{t}{M} = t$ అయ్యేలా ఉంటుంది. ~$\Theta$లోని అణు \tetoken{సూత్రాలను}{!!{formula}s} ఉపయోగించి $\Assign{R}{M}$ను నిర్వచించాం; అందువల్ల $\Sat{M}{R(t_1, \dots, t_m)}$ అవుతుంది అనడానికి అవసరమైన, చాలిన షరతు $R(t_1, \dots, t_m)
+\in \Theta$ కావడం.
+\sourcecorrection{OLTEPTPSCPL-003}{మూలం ప్రమేయం, విధేయం స్థానాల సంఖ్యను $m$గా నిర్వచించి, వాటి అర్థనిర్ణయాల్లో కొన్ని చోట్ల $n$ను వాడింది. అన్ని సంబంధిత పదాల జాబితాలు, కార్టీషియన్ ఘాతాన్ని $m$తో సమన్వయం చేశాం.}
+
+\begin{lem}\ollabel{lem:truth}
+ప్రతి $!A \in \Theta \cup \Xi$కు:
+\begin{enumerate}
+  \item $!A \in \Theta$ అయితే $\Sat{M}{!A}$.
+  \item $!A \in \Xi$ అయితే $\Sat/{M}{!A}$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+  $\depth{!A}$పై ఆగమనంతో నిరూపిద్దాం.
+
+ముందుగా~$!A$ అణు సూత్రమని అనుకుందాం; అంటే $!A \ident \lfalse$ లేదా $!A
+\ident R(t_1, \dots, t_m)$.
+
+$\Pi_n \Sequent \Lambda_n$ విఫల శాఖలో ఉంది కాబట్టి, ఏ~$\Pi_n$లోనూ $\lfalse$ ఉండదు (లేకపోతే $\Pi_n \Sequent \Lambda_n$ ఆక్సియమ్ అవుతుంది). ~$\Struct{M}$ నిర్వచనం ప్రకారం, $\Sat{M}{R(t_1, \dots, t_m)}$ అనడానికి అవసరమైన, చాలిన షరతు $R(t_1, \dots, t_m) \in
+\Theta$. ఇవి కలిపితే: $!A \in
+\Theta$ అయితే $\Sat{M}{!A}$.
+
+$!A$ అణు సూత్రమై $!A \in \Pi_n$ అయితే $!A \in \Pi_{n+1}$; $!A \in \Lambda_n$ అయితే $!A \in \Lambda_{n+1}$. (అన్వేషణ అల్గోరిథం తదుపరి సీక్వెంట్‌లను ఉత్పత్తి చేసే విధానం వల్ల ఇది వస్తుంది.) కాబట్టి $!A \in \Theta \cap \Xi$ అయితే ఏదో~$n$కు $!A \in \Pi_n \cap
+\Lambda_n$. అప్పుడు $\Pi_n \Sequent \Lambda_n$ ఆక్సియమ్ అవుతుంది; కానీ విఫల శాఖలో ఆక్సియమ్‌లు ఉండవు. అందువల్ల నిర్మాణం ప్రకారం అణు~$!A$కు $!A \notin \Theta
+\cap \Xi$; కాబట్టి $!A \in
+\Xi$ అయితే $!A \notin \Theta$. ~$\Struct{M}$ నిర్వచనం ప్రకారం దీనివల్ల $!A \in \Xi$ అయితే $\Sat/{M}{!A}$.
+
+ఆగమన దశలో,~$!A$కంటే తక్కువ \tetoken{లోతు}{!!{depth}} ఉన్న అన్ని \tetoken{సూత్రాలకు}{!!{formula}s} (1), (2) వర్తిస్తాయని అనుకుందాం. సందర్భాలను వేరు చేసి~$!A$కు (1), (2) నిరూపిద్దాం.
+
+ముందుగా గమనించండి: $\Pi_n \Sequent \Lambda_n$లో $!A^i$ ఉంటే, $i$ అనేది $\Pi_n \Sequent \Lambda_n$లో అతి చిన్న సూచిక కాకపోతే, $\Pi_{n+1} \Sequent \Lambda_{n+1}$లోనూ $!A^i$ ఉంటుంది. ప్రతి దశలో చేర్చే అత్యుపరి సీక్వెంట్‌లలో అతి చిన్న సూచిక పెరుగుతుంది కాబట్టి, చివరకు $!A^i$ ఉండి $i$ అతి చిన్న సూచిక అయ్యే $\Pi_n \Sequent \Lambda_n$ను చేరుకుంటాం. $n+1$ దశలో అల్గోరిథం~$!A^i$ను తగ్గిస్తుంది. అంటే $!A \in \Theta$ అయితే, ఏదో~$n$కు $\Pi_n = \Pi_n',
+!A^i$ అయి $i$ అతి చిన్న సూచిక అవుతుంది. $!A \in \Xi$ అయితే, ఏదో~$n$కు $\Lambda_n = \Lambda_n', !A^i$ అయి~$i$ అతి చిన్న సూచిక అవుతుంది.
+
+\begin{enumerate}
+  \item $!A \in \Theta$, $!A \ident !B \land !C$. అప్పుడు ఏదో~$n$కు $\Pi_n = \Pi_n', (!B \land !C)^i$. $\Pi_{n+1} \Sequent
+  \Lambda_{n+1}$ అనేది~\LeftR{\land}కు సంబంధించిన పూర్వపక్షం; అంటే $\Pi_{n+1} = \Pi_n', !B^k, !C^{k+1}$. అందువల్ల $!B, !C \in
+  \Theta$. ఆగమన ఉపపత్తి ప్రకారం $\Sat{M}{!B}$, $\Sat{M}{!C}$. $\Sat{M}{}$ నిర్వచనం వల్ల $\Sat{M}{!B \land !C}$.
+
+  \item $!A \in \Xi$, $!A \ident !B \land !C$. అప్పుడు ఏదో~$n$కు $\Lambda_n = \Lambda_n', !B \land !C$. $\Pi_{n+1} \Sequent
+  \Lambda_{n+1}$ అనేది నిష్కర్ష $\Pi_n \Sequent \Lambda'_n, !B \land !C$గా గల~\RightR{\land} యొక్క రెండు పూర్వపక్షాలలో ఒకటి; అంటే $\Lambda_{n+1} = \Lambda_n', !B^k$ లేదా $\Lambda_{n+1} = \Lambda_n',
+  !C^k$. అందువల్ల $!B \in \Xi$ లేదా $!C \in \Xi$. ఆగమన ఉపపత్తి ప్రకారం $\Sat/{M}{!B}$ లేదా $\Sat/{M}{!C}$. $\Sat{M}{}$ నిర్వచనం వల్ల $\Sat/{M}{!B \land !C}$.
+
+  \item $!A \ident \lnot !B$, $!A \ident !B \lor !C$, $!A \ident !B \lif !C$ సందర్భాలు ఇలాంటివే; వాటిని అభ్యాసాలుగా వదిలాం.
+
+  \item $!A \in \Theta$, $!A \ident \lexists[x][!B(x)]$. అప్పుడు ఏదో~$n$కు $\Pi_n = \Pi_n', \lexists[x][!B(x)]^i$. $\Pi_{n+1}
+  \Sequent \Lambda_{n+1}$ అనేది~\LeftR{\lexists}కు సంబంధించిన పూర్వపక్షం; అంటే ఏదో~$c$కు $\Pi_{n+1} = \Pi_n', !B(c)^k$. అందువల్ల $!B(c) \in \Theta$,~$c \in C$. ఆగమన ఉపపత్తి ప్రకారం $\Sat{M}{!B(c)}$. $\Sat{M}{}$ నిర్వచనం వల్ల $\Sat{M}{\lexists[x][!B(x)]}$.
+
+  \item $!A \in \Xi$, $!A \ident \lexists[x][!B(x)]$. అప్పుడు ఏదో~$n$కు $\Lambda_n = \Lambda_n', \lexists[x][!B(x)]^i$. $\lexists[x][!B(x)]$ను తగ్గించిన ప్రతిసారీ, $\lexists[x][!B(x)]$ పూర్వపక్ష సీక్వెంట్ కుడివైపున కొత్త సూచికతో మిగులుతుంది. కాబట్టి విఫల శాఖలో కుడివైపున $\lexists[x][!B(x)]$ కనిపిస్తే అది అనంతసార్లు తగ్గించబడుతుంది. విఫల శాఖలో ప్రతి పదం $t \in
+  \Domain{M}$ చివరకు "ఇంతకు ముందు కుడివైపున $\lexists[x][!B(x)]$ను తగ్గించడానికి వాడని,~$C_n$లోని స్థిరాంకాలను మాత్రమే కలిగిన మొదటి పదం" అవుతుంది. అందువల్ల ప్రతి $t \in \Domain{M}$కు, ఏదో~$n$ వద్ద $!B(t) \in \Lambda_n$; కాబట్టి $!B(t) \in \Xi$. ఆగమన ఉపపత్తి ప్రకారం ప్రతి $t \in
+  \Domain{M}$కు $\Sat/{M}{!B(t)}$. $\Sat{M}{}$ నిర్వచనం వల్ల $\Sat/{M}{\lexists[x][!B(x)]}$.
+
+  \item $!A \ident \lforall[x][!B(x)]$ సందర్భాలు ఇలాంటివే; వాటిని అభ్యాసాలుగా వదిలాం.
+\end{enumerate}
+\end{proof}
+
+\begin{cor}\ollabel{cor:complete} \Log{G3c} నిరూపణ అన్వేషణ అల్గోరిథం సంపూర్ణమైనది: అది మధ్యలో విఫలమై ఆగినా, ఎప్పటికీ ముగియకపోయినా, ప్రారంభ సీక్వెంట్~$\Gamma \Sequent \Delta$ సర్వసత్యం కాదు; కాబట్టి దానికి \tetoken{నిరూపణ}{!!{proof}} లేదు.
+\end{cor}
+
+\begin{proof}
+  అల్గోరిథం మధ్యలో విఫలమై ఆగినా, ఎప్పటికీ ముగియకపోయినా, $\Struct{M}$ను నిర్వచించగల విఫల శాఖ ఉంటుంది. \olref{lem:truth} ప్రకారం ప్రతి $!A \in \Gamma$కు $\Sat{M}{!A}$; ప్రతి $!A \in \Delta$కు $\Sat/{M}{!A}$. ($\Pi_0 = \Gamma$, $\Lambda_0 =
+  \Delta$ అని గుర్తుంచుకోండి; కాబట్టి $\Gamma \subseteq \Theta$, $\Delta \subseteq \Xi$.) అందువల్ల $\Gamma \Sequent \Delta$ సర్వసత్యం కాదు. ~\Log{G3c} సబబుతనం వల్ల $\Gamma \Sequent \Delta$కు \tetoken{నిరూపణ}{!!{proof}} లేదు.
+\end{proof}
+
+\begin{cor}
+\Log{G3c} సంపూర్ణమైనది: $\Gamma \Sequent \Delta$ సర్వసత్యం అయితే, $\Log{G3c} \Proves \Gamma \Sequent \Delta$.
+\end{cor}
+
+\begin{proof}
+  వ్యతిరేక ప్రతిపాదనను నిరూపిద్దాం. $\Log{G3c} \Proves/ \Gamma
+  \Sequent \Delta$ అనుకుందాం. కనుగొనడానికి \tetoken{నిరూపణ}{!!{proof}} లేదు కాబట్టి, అన్వేషణ అల్గోరిథం మధ్యలో విఫలమై ఆగాలి లేదా ఎప్పటికీ ముగియకుండా ఉండాలి. \olref{cor:complete} ప్రకారం $\Gamma \Sequent \Delta$ సర్వసత్యం కాదు.
+\end{proof}
+
+\end{document}

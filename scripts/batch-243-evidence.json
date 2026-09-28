@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "243",
+  "unit_id": "OLP-0594",
+  "unit_order": 594,
+  "source_path": "content/set-theory/choice/tarskiscott.tex",
+  "blocks": 14,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13],
+  "previous_segments": 8755,
+  "previous_terms": 283,
+  "expected_corrections": 508,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "టార్స్కీ--స్కాట్ యుక్తి స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కార్డినల్/స్థాయి/విభజన పదాలు, స్థానిక సమితి/తర్క సాక్షులు పోల్చాం; సమసంఖ్యక సమితుల అనౌపచారిక సమగ్రత విఫలం, అత్యల్ప స్థాయి ప్రతినిధులు, ZFలో విభజన, TS-కార్డినల్/క్రమసంఖ్య ప్రయోగం తనిఖీ చేశాం.",
+  "evidence_limit": "టార్స్కీ--స్కాట్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల నిర్వచనం నియంత్రించింది. ZFలో రూపాంతర నిరూపణ మూల స్థాయిలోనే ఉంది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T284","source_term":"Tarski--Scott trick; least-rank cardinality","telugu":"టార్స్కీ--స్కాట్ యుక్తి; అత్యల్ప-స్థాయి కార్డినాలిటీ","status":"least_rank_representation_without_well_ordering_source_controlled","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"సమసంఖ్యక వస్తువుల మొత్తం సమితి కాదనే స్థాయి వాదన, అత్యల్ప స్థాయి ప్రతినిధుల సమితి, విభజన ఆధారం, సుక్రమపరచడం లేని TS-కార్డినల్ నిర్మాణం నిలిచాయి.","uncertainty":"TS ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; నిర్వచన సూత్రాలు నియంత్రించాయి.","borrowing":"Tarski--Scott and ts notation remain explicit source-controlled borrowings."}
+}

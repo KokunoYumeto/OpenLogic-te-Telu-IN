@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTSND-20260927",
+  "unit_id": "OLP-0505",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-nd.tex",
+  "source_sha256": "2e1aae17af3a524802ebaa08e0a2f16f6b1014f0a06d697757a9ceddce02ab93",
+  "findings": [
+    {
+      "finding_id": "OLTEINTSND-001",
+      "source_locator": "soundness-nd.tex lines 35-44; conjunction-introduction case",
+      "classification": "conjunction_goal_uses_wrong_formula_letters",
+      "source_issue": "The stated goal is A and B, while the two premises and final satisfaction condition concern B and C.",
+      "minimal_treatment": "State the conjunction goal with B and C and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Gamma\\cup\\Delta\\Entails!A\\land!B$"],
+        "target_only": ["$\\Gamma\\cup\\Delta\\Entails!B\\land!C$"]
+      }
+    },
+    {
+      "finding_id": "OLTEINTSND-002",
+      "source_locator": "soundness-nd.tex line 82; first disjunction-elimination case",
+      "classification": "world_argument_outside_math_expression",
+      "source_issue": "The [w] world argument is outside the satisfaction math expression.",
+      "minimal_treatment": "Include [w] in the local satisfaction expression and disclose the repair.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\mSat{M}{!B}$"],
+        "target_only": ["$\\mSat{M}{!B}[w]$"]
+      }
+    },
+    {
+      "finding_id": "OLTEINTSND-003",
+      "source_locator": "soundness-nd.tex lines 83 and 85; disjunction-elimination entailments",
+      "classification": "missing_singleton_braces_in_assumption_union",
+      "source_issue": "The entailments union assumption sets directly with formulas B and C rather than singleton formula sets.",
+      "minimal_treatment": "Restore singleton sets as used in both premises and induction hypotheses, and disclose both repairs.",
+      "expected_core_math_delta": {
+        "source_only": ["$\\Delta_1\\cup!B\\Entails!D$", "$\\Delta_2\\cup!C\\Entails!D$"],
+        "target_only": ["$\\Delta_1\\cup\\{!B\\}\\Entails!D$", "$\\Delta_2\\cup\\{!C\\}\\Entails!D$"]
+      }
+    }
+  ]
+}

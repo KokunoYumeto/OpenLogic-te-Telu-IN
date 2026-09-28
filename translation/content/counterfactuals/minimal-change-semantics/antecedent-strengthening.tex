@@ -1,0 +1,102 @@
+% Part: counterfactuals
+% Chapter: minimal-change-semantics
+% Section: antecedent-strengthening
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{cnt}{min}{agg}
+
+\olsection{పూర్వపక్షాన్ని బలపరచడం}
+
+``పూర్వపక్షాన్ని బలపరచడం'' అంటే
+$!A \lif !C \Entails (!A \land !B) \lif !C$
+అనే నిగమనం. ఇది భౌతిక సోపాధికానికి
+చెల్లుతుంది; ప్రతివాస్తవాలకు మాత్రం
+చెల్లదు. నేను ఈ అగ్గిపుల్లను గీసి
+ఉంటే అది మండి ఉండేదనేది సత్యం
+అనుకుందాం. (అంటే అగ్గిపుల్లలో గానీ,
+అగ్గిపెట్టె రాపిడి ఉపరితలంలో గానీ
+లోపం లేదు; నేను పుల్లను విరగ్గొట్టను;
+వగైరా.) కానీ నేను ఈ అగ్గిపుల్లను
+బాహ్య అంతరిక్షంలో గీసి ఉంటే అది
+మండి ఉండేదనేది సత్యం కాదు.
+కాబట్టి కింది నిగమనం చెల్లదు:
+\begin{quote}
+  అగ్గిపుల్లను గీసి ఉంటే అది
+  మండి ఉండేది.
+
+  కాబట్టి అగ్గిపుల్లను బాహ్య
+  అంతరిక్షంలో గీసి ఉంటే అది
+  మండి ఉండేది.
+\end{quote}
+
+లూయిస్--స్టాల్నేకర్ సోపాధిక
+వివరణ దీనిని వివరిస్తుంది:
+నేను అగ్గిపుల్లను బాహ్య
+అంతరిక్షంలో గీసే అత్యంత సమీప
+లోకం, దాన్ని సాధారణంగా గీసే
+అత్యంత సమీప లోకంతో పోలిస్తే
+వాస్తవ లోకానికి చాలా దూరం.
+రెండో లోకంలో అగ్గిపుల్ల
+మండుతుందనేది సత్యమే అయినా,
+మొదటి లోకంలో మండదు.
+అదే సరైన ఫలితం.
+\sourcecorrection{OLTECNTANT-001}{మూల గద్యంలోని మూడు చోట్ల అగ్గిపుల్లను ‘గీయడం’ బదులు ‘మండించడం’ అని చెప్పడంతో, అగ్గిపుల్ల మండుతుందా అనే ఉత్తరపక్షంతో పూర్వపక్షం కలిసిపోయింది. ఉదాహరణ, ఉటంకించిన నిగమనాలకు అనుగుణంగా మూడింటినీ ‘గీయడం’గా సరిచేశాం.}
+
+\begin{ex}
+  గోళ అర్థవిచారంలో ఈ నిగమనం
+  చెల్లదు; అంటే $p
+  \cif r \Entails/ (p \land q) \cif r$.
+  $W = \{w, w_1, w_2\}$,
+  $O_w = \{\{w\}, \{w,
+  w_1\}, \{w, w_1, w_2\}\}$,
+  $V(p) = \{w_1, w_2\}$,
+  $V(q) = \{w_2\}$,
+  $V(r) = \{w_1\}$
+  గల నమూనా $\mModel{M}
+  = \tuple{W, O, V}$ను
+  పరిశీలించండి. $p$ సత్యమయ్యే
+  లోకాన్ని కలిగిన గోళం
+  $S = \{w, w_1\}$ ఉంది;
+  దానిలోని అన్ని లోకాల వద్ద
+  $p \lif r$ సత్యం. కాబట్టి
+  $\mSat{M}{p
+    \cif r}[w]$. అలాగే
+  $(p \land q)$ సత్యమయ్యే
+  లోకాన్ని కలిగిన గోళం
+  $S' = \{w, w_1, w_2\}$
+  ఉంది. కానీ
+  $\mSat/{M}{(p \land q) \lif r}[w_2]$;
+  అందువల్ల
+  $\mSat/{M}{(p \land q) \cif r}[w]$
+  (\olref{fig:antecedent-strengthening} చూడండి).
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[layerwidth=1.5,scale=.6]\tiny
+  \spheresystem{3}
+  \propositionintersect{-10}{3}{30}{5}
+  \begin{scope}
+    \clip plot[smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} -- (4.5,4.5) ;
+    \spherefill{2}
+  \end{scope}
+  \draw[proposition] plot[dashed,smooth,tension=1] coordinates
+          {(0,4.5) (30:.95) (4.5,-3.5)} ;
+  \proposition{30}{2}{30}{5}
+  \path (0,0) node[world] {$w$};
+  \spherepos{30}{2}{node[world] {$w_1$}}
+  \spherepos{-10}{3}{node[world] {$w_2$}}
+  \spherepos{-10}{4}{node {$q$}}
+  \spherepos{30}{4}{node {$r$}}
+  \draw (1,4.5) node[below] {$p$};
+\end{tikzpicture}
+\caption{పూర్వపక్ష బలపరచడానికి ప్రతిదృష్టాంతం}
+\ollabel{fig:antecedent-strengthening}
+\end{center}
+\end{figure}
+\end{ex}
+
+\end{document}

@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0609",
+  "source_path": "content/methods/proofs/proof-by-contradiction.tex",
+  "source_sha256": "3eda384520d99069031c01f168564f639980118e7fd145ca105e8092fbe438dd",
+  "audit_id": "OLTEMTHPRFCON-20260927",
+  "audit_review_path": "evidence/OLP-0609-CONTRADICTION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "58e3bcf51ef8e83a4d287170c9a97b7c48f6fbc27ebf7d1922512dea03bbbefc",
+  "audit_findings_path": "evidence/OLP-0609-CONTRADICTION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "6b190d7277e5e2b3beb04d67021c590b533fb799b627aa2ceedf9c2993a4569b",
+  "previous_corrections": 524,
+  "treatments": {
+    "OLTEMTHPRFCON-001": {"target_line": 45, "body_treatment": "సానుకూల pను ¬¬p నుంచి పొందే పరోక్ష నిరూపణకు సాంప్రదాయిక తర్క పరిధిని చేర్చి పక్కనే ప్రకటించాం; ప్రతికూల వాదన నిరూపణకు అనవసర పరిమితి పెట్టలేదు."},
+    "OLTEMTHPRFCON-002": {"target_line": 67, "body_treatment": "నిర్వచించని Cను లక్ష్య సమితి A∪Bతో మార్చి, సాక్షి దేనిలో లేదో సరైన గుర్తుతో ప్రకటించాం."}
+  }
+}

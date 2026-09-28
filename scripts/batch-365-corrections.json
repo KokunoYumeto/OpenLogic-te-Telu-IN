@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0716",
+  "source_path": "content/second-order-logic/syntax-and-semantics/language-of-sol.tex",
+  "source_sha256": "49d9beabf33f0727dafafd28fb282489083c4b146bfaf1c66c01ac80dd8f7856",
+  "audit_id": "OLTESOLSYNLAN-20260928",
+  "audit_review_path": "evidence/OLP-0716-SECOND-ORDER-LANGUAGE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "2da6ec22ffed4c7b7f0a59b161941cc9c098a3d131a288982212e37a240b323a",
+  "audit_findings_path": "evidence/OLP-0716-SECOND-ORDER-LANGUAGE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "9422b4a55cc7327733636d554ae3a6dbe29e23dba42c7bad93781b93fe8c2732",
+  "previous_corrections": 701,
+  "treatments": {
+    "OLTESOLSYNLAN-001": {
+      "target_line": 20,
+      "body_treatment": "State the assignment-dependent translation using free relation/function variables, and disclose that quantifying them would change the proposition."
+    }
+  }
+}

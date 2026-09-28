@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "231",
+  "unit_id": "OLP-0582",
+  "unit_order": 582,
+  "source_path": "content/set-theory/cardinals/cardsasords.tex",
+  "blocks": 14,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11,12,13],
+  "previous_segments": 8567,
+  "previous_terms": 271,
+  "expected_corrections": 498,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "కార్డినల్-క్రమసంఖ్య నిర్వచన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమరక/సమసంఖ్యక పదాలు, స్థానిక సాక్షులు ఎదురెదురు చూశాం; సుక్రమపరచడం ఆధారపడటం, మూడు ఉనికి వాదనలు, కాంటర్ సూత్ర సమానత్వాలు, ష్రోడర్--బెర్న్‌స్టీన్ పునర్నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "సంఖ్య/క్రమ/సమితి పదాలకు సాధారణ సాక్షులే ఉన్నాయి; కార్డినల్ నిర్దిష్ట నిర్వచనం మూల సూత్ర నియంత్రితం. రేఖాచిత్రం నిర్మాణంగా నిలిచింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T272",
+    "source_term": "cardinal as initial ordinal; Well-Ordering Axiom",
+    "telugu": "అత్యల్ప సమసంఖ్యక క్రమసంఖ్యగా కార్డినల్ సంఖ్య; సుక్రమపరచడం స్వయంసిద్ధం",
+    "status": "definition_and_choice_dependence_source_controlled",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "ప్రతి సుక్రమపరచదగిన సమితికి అత్యల్ప సమసంఖ్యక క్రమసంఖ్య, ఉనికి/ఏకైకత్వం, మూడు సమానత్వాలు, ఆక్షేపిత స్వయంసిద్ధ ఆధారపడటం నిలిచాయి.",
+    "uncertainty": "కార్డినల్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; గణిత నిర్వచనం మూల నియంత్రితం.",
+    "borrowing": "Fraktur and cardinal macros remain source-controlled."
+  }
+}

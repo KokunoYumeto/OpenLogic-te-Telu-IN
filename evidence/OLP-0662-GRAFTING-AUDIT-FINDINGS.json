@@ -1,0 +1,61 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNATGRA-20260927",
+  "unit_id": "OLP-0662",
+  "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+  "source_sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNATGRA-001",
+      "source_locator": "grafting.tex lines 21–35, implication detour proof tree",
+      "classification": "wrong_implication_consequent_in_proof_tree",
+      "source_issue": "The displayed implication-introduction conclusion uses B→C although its premise derives A from B and the surrounding argument requires B→A.",
+      "minimal_treatment": "Change the tree conclusion to B→A and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{$\\Discharge{!B}{x}$}\\DeduceC{$!A$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!C$}\\AxiomC{}\\DeduceC{$!B$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!A$}\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{$\\Discharge{!B}{x}$}\\DeduceC{$!A$}\\DischargeRule{\\Intro{\\lif}}{x}\\UnaryInfC{$!B\\lif!A$}\\AxiomC{}\\DeduceC{$!B$}\\RightLabel{\\Elim{\\lif}}\\BinaryInfC{$!A$}\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATGRA-002",
+      "source_locator": "grafting.tex lines 63–70, N2 grafting definition",
+      "classification": "wrong_calculus_names_for_sequent_proof",
+      "source_issue": "The second derivation is stated as a proof of a sequent, but the source calls it an N1c/N1i proof despite the definition being for N2c/N2i.",
+      "minimal_treatment": "Identify it as an N2c/N2i proof and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATGRA-003",
+      "source_locator": "grafting.tex lines 80–82, proposition proof",
+      "classification": "undefined_induction_derivation",
+      "source_issue": "The induction is said to be on the proof height of delta, which is not introduced in this proposition; delta_1 is the first derivation being grafted into.",
+      "minimal_treatment": "State induction on the proof height of delta_1 and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\pheight{\\delta}$"
+        ],
+        "target_only": [
+          "$\\pheight{\\delta_1}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNATGRA-004",
+      "source_locator": "grafting.tex lines 50–59, open assumptions after grafting",
+      "classification": "replaced_assumption_incorrectly_retained",
+      "source_issue": "The grafting replaces every undischarged B^x assumption in the first derivation, so those occurrences are not still open assumptions of the result. The source says all open assumptions of both derivations remain.",
+      "minimal_treatment": "Exclude the replaced assumptions of the first derivation and disclose the correction.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

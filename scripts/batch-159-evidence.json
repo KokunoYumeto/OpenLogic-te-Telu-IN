@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "159",
+  "unit_id": "OLP-0510",
+  "unit_order": 510,
+  "source_path": "content/intuitionistic-logic/soundness-completeness/decidability.tex",
+  "blocks": 11,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10],
+  "previous_segments": 7686,
+  "previous_terms": 199,
+  "expected_corrections": 468,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024", "TE-P027"],
+  "corrections_by_block": {"8": ["OLTEINTDEC-001"]},
+  "consultation_phase": "స్థిర నిర్ణేయత మూలం, తెలుగు లక్ష్యం, పూర్వ పరిమిత నమూనా/ఉపసూత్ర/సంబంధ పదాలు, స్థానిక సమితి/సంబంధ/తర్క/సూత్ర సాక్షులు ఎదురెదురు చూశాం; అణు సత్య-రకాల quotientలో సోపాధిక వ్యతిరేక ఉదాహరణను తనిఖీ చేసి పరిమిత ఉపసూత్ర సత్య రకాల నిర్మాణానికి మూల-లోప సవరణ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024/027 సాధారణ సమితి/సంబంధ/తర్క/సూత్ర పదాలకు మాత్రమే సాక్షులు; పరిమిత నమూనా గుణానికి ప్రత్యక్ష నిరూపణలు కావు. బాహ్య విశ్వవిద్యాలయ ఉపన్యాస గమనిక ఉపసూత్రాల కింద మూసుకున్న పరిమిత సమితి అవసరాన్ని మద్దతిస్తుంది; స్థానిక నిర్మాణ నిరూపణకు స్వతంత్ర నిపుణ సమీక్ష ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T200",
+    "source_term": "decidability / finite model property / filtration by subformula truth types",
+    "telugu": "నిర్ణేయత / పరిమిత నమూనా ధర్మం / ఉపసూత్ర సత్య రకాల ద్వారా పరిమితీకరణ",
+    "status": "native_general_set_relation_logic_formula_register_attested_finite_model_property_one_disclosed_construction_repair",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024", "TE-P027"],
+    "basis": "పరిమిత నమూనా సిద్ధాంతం, నిర్ణయ కలనం గమనిక నిలిపాం. అణు-చర సత్య రకాల quotient కొత్త ప్రాప్యతలను సృష్టించి సోపాధిక సత్యాన్ని మార్చే మూల లోపాన్ని ప్రకటించి, లక్ష్య సూత్రం ఉపసూత్రాల పరిమిత సమితి S సత్య రకాలతో సరిచేశాం; ఆగమన లక్ష్యాన్ని Sకు పరిమితం చేశాం.",
+    "uncertainty": "మూలంలోని అన్ని P-చర సూత్రాల సత్య సంరక్షణ వాదన తప్పు; సవరించిన వాదన లక్ష్య సూత్రం ఉపసూత్రాలకు మాత్రమే. సవరించిన ఆగమనాన్ని మూల అభ్యాస స్వరూపం ప్రకారం పూర్తి వివరంగా ఇవ్వలేదు; పూర్తి TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Finite filtration is rendered descriptively; P, S, model notation and protected theorem IDs remain source-controlled or explicitly disclosed repair notation."
+  }
+}

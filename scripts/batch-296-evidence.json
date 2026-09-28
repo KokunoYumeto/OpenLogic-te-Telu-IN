@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "296",
+  "unit_id": "OLP-0647",
+  "unit_order": 647,
+  "source_path": "content/incompleteness/representability-in-q/c-representable.tex",
+  "blocks": 24,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],
+  "previous_segments": 9562,
+  "previous_terms": 336,
+  "expected_corrections": 547,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "Qలో C ప్రమేయాల ప్రతినిధీకరణ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ గణనీయత/ఉత్తరవర్తి/ప్రక్షేపణ/ఆగమన పదాలు పోల్చాం; సంఖ్యా సంకేత అసమానత, మూల ప్రమేయాలు, సంయోజనం, అపరిమిత శోధన, రెండు ఉపలెమ్మాలు, బాహ్య ఆగమన భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "మూలం సంయోజన సూత్రం సంక్షిప్త TeX రూపంలో ఉంది; అలాగే చివరి లెమ్మాలో 2వ భాగానికి నిరూపణలో భాగమే ఇస్తుంది. వాటిని మూల-నియంత్రణలో నిలిపాం; పూర్తి స్వతంత్ర ఔపచారిక proof-check లేదా TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T337","source_term":"representability in Q; composition; unbounded search; computable function","telugu":"Qలో ప్రతినిధీకరణ; సంయోజనం; అపరిమిత శోధన; గణనీయ ప్రమేయం","status":"q_representability_induction_and_search_source_controlled","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"వేర్వేరు సంఖ్యా సంకేతాలు, సున్నా/ఉత్తరవర్తి/కూడిక, సంయోజన సూత్రం, కనిష్ఠ శోధన, Qలో నిరూపణలపై బాహ్య ఆగమన భేదం, కంప్యూటబిలిటీ ముగింపు నిలిచాయి.","uncertainty":"సంయోజన సూత్రం మూలంలో సంక్షిప్తంగా ముద్రితమైంది; చివరి లెమ్మా నిరూపణ భాగికమే. పూర్తి ఔపచారిక నిరూపణ ఇక్కడ స్వతంత్రంగా ఇవ్వలేదు.","borrowing":"Q/C, Gödel, Peano and Zermelo–Fraenkel names, numeral/substitution macros remain source-identifying."}
+}

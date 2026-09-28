@@ -251,24 +251,27 @@ def normalize_epub_mathml(root: etree._Element) -> dict[str, int]:
             if local not in MATHML_TOKEN_NAMES or not children:
                 continue
             child_names = tuple(etree.QName(child).localname for child in children)
-            if local == "mo" and child_names in {("mi",), ("mi", "mtext", "mtext", "mo")}:
+            if local == "mo" and child_names in {("mi",), ("mo",), ("mi", "mtext", "mtext", "mo")}:
                 token.text = "".join(token.itertext())
                 for child in children:
                     token.remove(child)
                 counts["text_operators_collapsed"] += 1
                 continue
             if (
-                local == "mo"
-                and child_names in {("mover",), ("msup",)}
-                and set(token.attrib) == {"lspace", "rspace"}
+                local in {"mo", "mi"}
+                and child_names in {("mover",), ("msup",), ("munder",), ("msub",)}
+                and set(token.attrib).issubset({"lspace", "rspace"})
             ):
-                lspace = token.attrib.pop("lspace")
-                rspace = token.attrib.pop("rspace")
+                # KaTeX also emits unspaced operator wrappers for accents in
+                # the full edition. In both cases the child is not legal in a
+                # MathML token, while mrow preserves its visual structure.
+                lspace = token.attrib.pop("lspace", None)
+                rspace = token.attrib.pop("rspace", None)
                 token.tag = f"{{{MATHML_NS}}}mrow"
-                left = etree.Element(f"{{{MATHML_NS}}}mspace", width=lspace)
-                right = etree.Element(f"{{{MATHML_NS}}}mspace", width=rspace)
-                token.insert(0, left)
-                token.append(right)
+                if lspace:
+                    token.insert(0, etree.Element(f"{{{MATHML_NS}}}mspace", width=lspace))
+                if rspace:
+                    token.append(etree.Element(f"{{{MATHML_NS}}}mspace", width=rspace))
                 counts["scripted_operators_spaced"] += 1
                 continue
             raise RuntimeError(f"unsupported MathML token wrapper: {local} -> {child_names}")

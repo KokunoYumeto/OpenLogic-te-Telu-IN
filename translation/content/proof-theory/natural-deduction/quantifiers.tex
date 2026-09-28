@@ -1,0 +1,133 @@
+% Part: proof-theory
+% Chapter: natural-deduction
+% Section: quantifiers
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nat}{qua}
+
+\olsection{క్రమబద్ధమైన \usetoken{P}{proof} మరియు ప్రతిస్థాపన}
+
+పరిమాణీకరణికాల నియమాలలో \Elim{\lexists},~\Intro{\lforall}లకు వర్తించే "ఐగెన్ చరరాశి షరతులు" కొన్ని సంక్లిష్టతలను తెస్తాయి. ఈ నిగమనాలలోని \tetoken{స్థిరాంకం}{!!{constant}}~$c$ను మళ్లీ ఉపయోగించకుండా చూసుకుంటే వాటిలో చాలా వాటిని పరిష్కరించవచ్చు. కింది నిర్వచనాన్ని తీసుకుందాం.
+
+\begin{defn}
+సహజ నిగమనం \tetoken{నిరూపణ}{!!{proof}}~$\delta$ \emph{క్రమబద్ధమైనది} కావాలంటే
+\begin{enumerate}
+  \item ఏ ఐగెన్ చరరాశీ~$a$ ఒకటి కంటే ఎక్కువ \Elim{\lexists} లేదా~\Intro{\lforall} నిగమనాలకు ఐగెన్ చరరాశిగా ఉపయోగించకూడదు; మరియు
+  \item $a$ ఒక \Elim{\lexists} లేదా~\Intro{\lforall} నిగమనానికి ఐగెన్ చరరాశి అయితే, అది వరుసగా ఉపపూర్వపక్షానికి లేదా పూర్వపక్షానికి దారితీసే తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}}లో మాత్రమే కనిపించాలి.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\ollabel{lem:subst-regular} $\delta$ క్రమబద్ధమైనదై~$!C$తో ముగుస్తుందని, $c$ అనేది~$\delta$లో ఐగెన్ చరరాశిగా ఉపయోగించని \tetoken{ఒక స్థిరాంకం}{!!a{constant}} అని, $t$ అనేది~$\delta$ యొక్క ఏ ఐగెన్ చరరాశీ లేని పదం అని అనుకుందాం. అప్పుడు~$\delta$లోని ప్రతి~$c$ను~$t$తో ప్రతిస్థాపించడం వల్ల వచ్చే $\Subst{\delta}{t}{c}$ క్రమబద్ధమైన \tetoken{నిరూపణ}{!!{proof}}. $\Subst{\delta}{t}{c}$ యొక్క చివరి-\tetoken{సూత్రం}{!!{formula}} $\Subst{!C}{t}{c}$. $!A^x$ అనేది~$\delta$లో తెరిచి ఉన్న ఉపపత్తి అయితే, $\Subst{!A}{t}{c}^x$ అనేది~$\Subst{\delta}{t}{c}$లో తెరిచి ఉన్న ఉపపత్తి.
+\end{lem}
+
+\begin{proof}
+  $\pheight{\delta}$పై ఆగమనంతో నిరూపిద్దాం. $\pheight{\delta} = 0$ అయితే, అది కేవలం~$!A^x$ అనే ఉపపత్తితో కూడి ఉంటుంది. అప్పుడు $\Subst{\delta}{t}{c}$ అనేది~$\Subst{!A}{t}{c}^x$.
+
+  $\pheight{\delta} > 0$ అయితే~$\delta$లోని చివరి నిగమనం ఆధారంగా సందర్భాలను వేరు చేద్దాం. ప్రతిపాదనా సంయోజకాల నియమాల సందర్భాలు సులభం; వాటిని సాధనలుగా వదులుతున్నాం. $\delta$ పరిమాణీకరణిక నిగమనంతో ముగిసే సందర్భాలను పరిశీలిద్దాం.
+  \begin{enumerate}
+    \item చివరి నిగమనం $\Intro{\lforall}$ అయితే, $\delta$ రూపం ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$!A(a,c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,c)]$}
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి ప్రకారం $\Subst{\delta'}{t}{c}$ అనేది $!A(a,t)$ యొక్క క్రమబద్ధమైన \tetoken{నిరూపణ}{!!{proof}}. $a$ అనేది~$\delta$ యొక్క ఐగెన్ చరరాశి కనుక~$t$లో $a$ ఉండదు. అందువల్ల $\Subst{\delta}{t}{c}$లోని చివరి నిగమనం
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$!A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x,t)]$}
+    \DisplayProof
+    \]
+    సరైనదే: $t$లో~$a$ లేకపోవడంతో ఫలితంలోనూ, తెరిచి ఉన్న ఏ ఉపపత్తిలోనూ~$a$ ఉండదు.
+    \item చివరి నిగమనం $\Elim{\lforall}$ అయితే, $\delta$ రూపం ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$\lforall[x][!A(x,c)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(c),c)$}
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి ప్రకారం $\Subst{\delta'}{t}{c}$ అనేది $\lforall[x][!A(x,t)]$ యొక్క క్రమబద్ధమైన \tetoken{నిరూపణ}{!!{proof}}. (ఫలితంలోని పదం~$s(c)$లో~$c$ ఉండవచ్చు; ఉండకపోవచ్చు.) $\Subst{\delta}{t}{c}$లోని చివరి నిగమనం
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$\lforall[x][!A(x,t)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$!A(s(t),t)$}
+    \DisplayProof
+    \]
+    సరైనదే; $!A(s(t),t) \ident \Subst{!A(s(c),c)}{t}{c}$. \Intro{\lexists} సందర్భమూ ఇలాంటిదే.
+  \item చివరి నిగమనం $\Elim{\lexists}$ అయితే, $\delta$ రూపం ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_1'$}
+    \DeduceC{$\lexists[x][!A(x,c)]$}
+    \AxiomC{$\Discharge{!A(a,c)}{x}$}
+    \RightLabel{$\delta_2'$}
+    \DeduceC{$!C$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$!C$}
+    \DisplayProof
+    \]
+    ఆగమన ఉపపత్తి ప్రకారం $\Subst{\delta_1'}{t}{c}$, $\Subst{\delta_2'}{t}{c}$ వరుసగా $\lexists[x][!A(x,t)]$కు, తెరిచి ఉన్న ఉపపత్తి~$!A(a,t)$ నుంచి $\Subst{!C}{t}{c}$కు గల క్రమబద్ధమైన \tetoken{నిరూపణలు}{!!{proof}s}. $a$ అనేది~$\delta$ యొక్క ఐగెన్ చరరాశి కనుక~$t$లో $a$ ఉండదు. అందువల్ల $\Subst{\delta}{t}{c}$లోని చివరి నిగమనం
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][!A(x,t)]$}
+    \AxiomC{$\Discharge{!A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{!C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{!C}{t}{c}$}
+    \DisplayProof
+    \]
+    సరైనదే: $\Subst{!A(x,t)}{a}{x} \ident \Subst{!A(a,c)}{t}{c}$, ఫలితం~$\Subst{!C}{t}{c}$లో గానీ తెరిచి ఉన్న ఏ ఉపపత్తిలో గానీ~$a$ ఉండదు.
+  \end{enumerate}
+  \sourcecorrection{OLTEPTNATQUA-001}{అస్తిత్వ తొలగింపు సందర్భంలో మూలం ప్రతిస్థాపన తరువాతి నిరూపణలకు పాత $c$తో కూడిన ఫలితాలను పేర్కొని, సంబంధంలేని సార్వత్రిక ప్రవేశ వృక్షాన్ని మళ్లీ ముద్రించింది. రెండు శాఖలతో కూడిన సరైన అస్తిత్వ తొలగింపు వృక్షం, ప్రతిస్థాపిత ఫలితాలను చేర్చాం.}
+\end{proof}
+
+\begin{prop}\ollabel{prop:regular}
+$\delta$ అనేది \Log{N1c} లేదా \Log{N1i}లోని \tetoken{ఒక నిరూపణ}{!!a{proof}} అయితే,~$\delta$తో అదే నిర్మాణం (ప్రత్యేకంగా అదే \tetoken{ఎత్తు}{!!{height}}) కలిగి, ఐగెన్ చరరాశుల ప్రతిస్థాపనలో మాత్రమే భిన్నంగా ఉండే క్రమబద్ధమైన \tetoken{నిరూపణ}{!!{proof}}~$\delta'$ ఉంటుంది.
+\end{prop}
+
+\begin{proof}
+ఈ నిరూపణలో మాత్రమే,~$\delta$లోని ఒక ఐగెన్ చరరాశి నిగమనానికి సంబంధించిన ఐగెన్ చరరాశి మరొక నిగమనానికి ఐగెన్ చరరాశి కాకుండా, ఆ నిగమనం యొక్క తక్షణ ఉప-\tetoken{నిరూపణ}{!!{proof}} తప్ప~$\delta$లో మరెక్కడా కనిపించకపోతే దాన్ని \emph{శుభ్రమైనది} అని; లేకపోతే \emph{అశుభ్రమైనది} అని పిలుద్దాం. $\delta$లోని అశుభ్రమైన ఐగెన్ చరరాశి నిగమనాల సంఖ్యను~$n$ అందాం. $n$పై ఆగమనంతో~$\delta$ను కావలసిన క్రమబద్ధమైన \tetoken{నిరూపణ}{!!{proof}}~$\delta'$గా మార్చవచ్చని చూపుదాం. $n=0$ అయితే~$\delta$లోని అన్ని ఐగెన్ చరరాశి నిగమనాలు శుభ్రమైనవే; కాబట్టి~$\delta$ క్రమబద్ధమైనది. ఇక చూపవలసింది లేదు. లేకపోతే, అత్యుపరి అశుభ్రమైన ఐగెన్ చరరాశి నిగమనాన్ని, ఉదాహరణకు \Intro{\lforall}ను, ఎంచుకుందాం. దానితో ముగిసే~$\delta$లోని ఉప-\tetoken{నిరూపణ}{!!{proof}}~$\delta_1$ రూపం ఇది:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$!A(c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+$c$ ఐగెన్ చరరాశి కనుక~$\lforall[x][!A(x)]$లో గానీ తెరిచి ఉన్న ఉపపత్తిలో గానీ అది ఉండదు. $\delta_2$ క్రమబద్ధమైనది: దానిలో ఏ ఐగెన్ చరరాశి నిగమనాలు ఉన్నా అవన్నీ శుభ్రమైనవే. $\delta$లో లేని \tetoken{ఒక స్థిరాంకాన్ని}{!!a{constant}}~$a$గా తీసుకుందాం. \olref{lem:subst-regular} ప్రకారం $\Subst{\delta_2}{a}{c}$ అనేది $!A(a)$ యొక్క క్రమబద్ధమైన నిరూపణ. ఐగెన్ చరరాశి షరతు ప్రకారం~$\delta_2$లోని ఏ తెరిచి ఉన్న ఉపపత్తిలోనూ~$c$ ఉండదు; అందువల్ల~$\Subst{\delta_2}{a}{c}$లోని ఏ తెరిచి ఉన్న ఉపపత్తిలోనూ~$a$ ఉండదు. కాబట్టి $\Intro{\lforall}$ను వర్తింపజేయవచ్చు. $\delta$లోని $\delta_1$ స్థానంలో నిరూపణ~$\delta_1'$ను ఉంచితే,
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_2}{a}{c}$}
+    \DeduceC{$!A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][!A(x)]$}
+    \DisplayProof
+    \]
+ఒక అశుభ్రమైన ఐగెన్ చరరాశి నిగమనం స్థానంలో శుభ్రమైనదాన్ని ఉంచినట్లే; మార్పు ఐగెన్ చరరాశి $c$ను~$a$తో ప్రతిస్థాపించడం మాత్రమే. ఫలిత నిరూపణలో అశుభ్రమైన ఐగెన్ చరరాశి నిగమనాలు $n-1$ ఉంటాయి; కాబట్టి ఆగమన ఉపపత్తి వల్ల ఫలితం వస్తుంది.
+\sourcecorrection{OLTEPTNATQUA-002}{మూలం అత్యుపరి ఐగెన్ చరరాశి నిగమనాన్ని మాత్రమే ఎంచుకుని, దాని ఉపనిరూపణలో ఐగెన్ చరరాశి నిగమనాలేవీ ఉండవని చెప్పింది. అశుభ్రమైన వాటిలో అత్యుపరి నిగమనాన్ని ఎంచుకుంటే దాని పైభాగంలోని నిగమనాలన్నీ శుభ్రమైనవి, కాబట్టి ఉపనిరూపణ క్రమబద్ధమైనది; ఆ ఎంపికను స్పష్టంచేశాం.}
+\end{proof}
+
+\begin{prob}
+\olref{prop:regular} నిరూపణలో అత్యుపరి అశుభ్రమైన ఐగెన్ చరరాశి నిగమనం~\Elim{\lexists} అయిన సందర్భాన్ని వివరించండి.
+\end{prob}
+
+ఇప్పుడే నిరూపించిన ప్రతిపాదనను నేరుగా ప్రస్తావించబోము; కానీ మనం పరిశీలించే అన్ని \tetoken{నిరూపణలు}{!!{proof}s} క్రమబద్ధమైనవని అనుకుందాం—అవి అలా లేకపోతే, ఐగెన్ చరరాశులను మార్చి ఎప్పుడైనా క్రమబద్ధంగా చేయవచ్చు.
+
+\Olref{lem:subst-regular}, \olref{prop:regular} అనేవి \Log{N2c},~\Log{N2i}లకు కూడా వర్తిస్తాయి. వాటి నిరూపణలను సాధనలుగా వదులుతున్నాం.
+
+\end{document}

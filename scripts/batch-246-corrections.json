@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0597",
+  "source_path": "content/set-theory/choice/countablechoice.tex",
+  "source_sha256": "37ed80e497f07f2c96db1a56b8573d90a6d8421e119f0bc7a2865fa2f534b994",
+  "audit_id": "OLTESTCHOICECOUNT-20260927",
+  "audit_review_path": "evidence/OLP-0597-COUNTABLE-CHOICE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "190d1f553864affb18aa6f44a3b4954304cc24fbc81a4c511054592fad6d4bd8",
+  "audit_findings_path": "evidence/OLP-0597-COUNTABLE-CHOICE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "1cdcc538d44d7c12bdb9eaa4851352ee3074c9fde2b07cd221ee0ab820b4018e",
+  "previous_corrections": 514,
+  "treatments": {
+    "OLTESTCHOICECOUNT-001": {"target_line": 18, "body_treatment": "పరిమిత కుటుంబాన్ని పునరావృత్తి లేని సభ్యుల జాబితాగా తీసుకుని చూపిన సంబంధం ప్రమేయం అయ్యే షరతును స్పష్టం చేశాం."},
+    "OLTESTCHOICECOUNT-002": {"target_line": 54, "body_treatment": "పూర్వ సమితుల సమ్మేళనంలో తప్పు స్థిర A_nను మారే A_iగా సరిచేసి పక్కనే ప్రకటించాం."}
+  }
+}

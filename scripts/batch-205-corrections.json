@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0556",
+  "source_path": "content/set-theory/ordinals/ordtype.tex",
+  "source_sha256": "9a123198cbfcd0000eb27804a39148d5ee5fb7ad41cf7cff04ad78ea320dfcd6",
+  "audit_id": "OLTESTORDTYPE-20260927",
+  "audit_review_path": "evidence/OLP-0556-ORDINAL-REPRESENTATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "712de8321e929edf7ab8f36c38535490b552bd89225ec825aa44b38e95bd1fb8",
+  "audit_findings_path": "evidence/OLP-0556-ORDINAL-REPRESENTATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "22260dfd4840c2d61250c4ff9c459df1341994887afa05701c70c8d54d375c2a",
+  "previous_corrections": 483,
+  "treatments": {
+    "OLTESTORDTYPE-001": {
+      "target_line": 137,
+      "body_treatment": "సమరూపత ప్రమేయపు లక్ష్య సమితి క్రమయుగ్మ నిర్మాణం కాక B అని ప్రకటించి సూత్రాన్ని సరిచేశాం."
+    },
+    "OLTESTORDTYPE-002": {
+      "target_line": 143,
+      "body_treatment": "నిర్వచితం కాని f(alpha)ను వాడిన మూల ద్విసోపాధిక శ్రేణికి బదులు, ఏదో ఒక B ఆరంభ ఖండంతో సమరూపత రూపంలోని రెండు దిశల సమానార్థకాన్ని ఇచ్చి ప్రకటించాం."
+    }
+  }
+}

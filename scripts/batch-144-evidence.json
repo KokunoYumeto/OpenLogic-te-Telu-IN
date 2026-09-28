@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "144",
+  "unit_id": "OLP-0495",
+  "unit_order": 495,
+  "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+  "blocks": 20,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+  "previous_segments": 7459,
+  "previous_terms": 184,
+  "expected_corrections": 458,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+  "corrections_by_block": {"13": ["OLTEINTBHK-001"], "17": ["OLTEINTBHK-002"]},
+  "consultation_phase": "స్థిర BHK అర్థనిర్దేశ మూలం, తెలుగు లక్ష్యం, పూర్వ నిర్మాణాత్మక పదాలు, స్థానిక సాధారణ నిరూపణ/సిద్ధాంతం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; సంధాయక నిర్మాణాలు, తాదాత్మ్య ఉదాహరణ, కర్రీయింగ్, బహిష్కృత మధ్యమ ద్వినిషేధం, రెండు మూల సంకేత లోపాలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003/004/018/024/025 సాధారణ నిరూపణ, సిద్ధాంతం, తర్క, వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. BHK నిర్మాణాలకు లేదా ఈ ఉదాహరణల గణిత సత్యానికి అవి ప్రత్యక్ష అధికారాలు కావు; రెండు సంకేత సవరణలు స్థానిక నిర్మాణ టైపు పోలికలపై ఆధారపడ్డాయి.",
+  "term_decision": {
+    "term_id": "TE-T185",
+    "source_term": "Brouwer–Heyting–Kolmogorov interpretation / construction / excluded-middle double negation / tagged disjunction injections",
+    "telugu": "బ్రౌవర్--హైటింగ్--కొల్మొగొరోవ్ అర్థనిర్దేశం / నిర్మాణం / బహిష్కృత మధ్యమ ద్వినిషేధం / గుర్తుతో కూడిన వియోజన శాఖలు",
+    "status": "native_general_proof_theorem_logic_derivation_register_attested_bhk_constructions_source_controlled_two_disclosed_notation_repairs",
+    "passages": ["TE-P003", "TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "నిర్మాణం, ఔపచారిక వ్యుత్పత్తి భేదం, ∧ జత, ∨ గుర్తుగల జత, → ప్రమేయకం, ⊥ నిర్మాణం లేకపోవడం, ¬ నిర్వచనం, మూడు నిర్మాణ ఉదాహరణలు, బహిష్కృత మధ్యమ ద్వినిషేధ సాక్షి నిలిచాయి. C→!C, మొదటి శాఖ M2→M1 సవరణలు పక్కనే ప్రకటించాం.",
+    "uncertainty": "మూల సంపాదకీయ గమనిక ఈ ఉదాహరణలు అయోమయంగా ఉన్నాయని స్వయంగా చెబుతుంది; పూర్తి స్వతంత్ర ఔపచారిక నిరూపణ ఇవ్వలేదు. స్థానిక సాక్షులు BHK శాఖా పదాలకు ప్రత్యక్ష ప్రమాణం కావు. TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "BHK acronym, source mathematician names, function symbols and formulas remain identifiable; నిర్మాణం follows the explicit construction/proof distinction."
+  }
+}

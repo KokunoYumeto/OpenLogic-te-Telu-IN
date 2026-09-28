@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0588",
+  "source_path": "content/set-theory/card-arithmetic/simp.tex",
+  "source_sha256": "a606bab065a11c689b655ff8053e3e77894decb42b88e70605a981c129148da0",
+  "audit_id": "OLTESTCARDSIMP-20260927",
+  "audit_review_path": "evidence/OLP-0588-CARDINAL-SIMPLIFICATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "2119bb7270bc9bcd630b259fc910a008f22cd43c005b9598ee9315d47c7452dd",
+  "audit_findings_path": "evidence/OLP-0588-CARDINAL-SIMPLIFICATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "252e60e23ce32ce9c885be51400656ee1bb929175c6bc65735d74e9d25d020bc",
+  "previous_corrections": 499,
+  "treatments": {
+    "OLTESTCARDSIMP-001": {
+      "target_line": 69,
+      "body_treatment": "ప్రామాణిక క్రమపు ఖండ పరిమాణ వాదనలో పరిమిత గరిష్ఠ నిర్దేశాంకం సందర్భాన్ని పక్కనే చేర్చి ప్రకటించాం."
+    }
+  }
+}

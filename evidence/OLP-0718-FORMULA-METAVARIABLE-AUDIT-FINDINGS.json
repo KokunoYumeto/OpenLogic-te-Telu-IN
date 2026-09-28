@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESFRINDINT-META-20260928",
+  "unit_id": "OLP-0718",
+  "source_path": "content/sets-functions-relations/inductive-defs-proofs/introduction.tex",
+  "source_sha256": "fdfbf3efe6aa648adad1e98d6567ecd7941dc41aeb1917b41548ad9568bb41a2",
+  "findings": [
+    {
+      "finding_id": "OLTESFRINDINT-002",
+      "source_locator": "lines 93-130",
+      "classification": "malformed_formula_metavariable_in_math",
+      "source_issue": "Sixteen occurrences of the incomplete !!^a token are used where a formula metavariable is required.",
+      "minimal_treatment": "Use !A consistently in the conjunction constructor and induction cases; leave !B, the constructors, and all proof claims unchanged.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!!^a$", "$!!^a$", "$!!^a$", "$!!^a$", "$!!^a$",
+          "$!!^a\\land!B$", "$!!^a\\land!B$", "$!!^a\\lif!B$",
+          "$!!^a\\liff!B$", "$!!^a\\lor!B$",
+          "$\\lexists[x]!!^a$", "$\\lforall[x]!!^a$",
+          "$\\lnot!!^a$", "$\\lnot!!^a$",
+          "$\\mathcalE_\\land(!!^a,!B)=!!^a\\land!B$"
+        ],
+        "target_only": [
+          "$!A$", "$!A$", "$!A$", "$!A$", "$!A$",
+          "$!A\\land!B$", "$!A\\land!B$", "$!A\\lif!B$",
+          "$!A\\liff!B$", "$!A\\lor!B$",
+          "$\\lexists[x]!A$", "$\\lforall[x]!A$",
+          "$\\lnot!A$", "$\\lnot!A$",
+          "$\\mathcalE_\\land(!A,!B)=!A\\land!B$"
+        ]
+      }
+    }
+  ]
+}

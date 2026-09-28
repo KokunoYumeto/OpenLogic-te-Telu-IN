@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0608",
+  "source_path": "content/methods/proofs/example-2.tex",
+  "source_sha256": "cbef120cea559b153f4e6b828d2fe7942050d3534e3bb61e642fd467f897aa80",
+  "audit_id": "OLTEMTHPRFEX2-20260927",
+  "audit_review_path": "evidence/OLP-0608-SECOND-PROOF-EXAMPLE-SOURCE-AUDIT.md",
+  "audit_review_sha256": "d5e67fb5eed64bfab0f9815e4596e38f4168f2c0c6b0689bfeda15d14754af1e",
+  "audit_findings_path": "evidence/OLP-0608-SECOND-PROOF-EXAMPLE-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "54301a308251ddf7c5b1c880daa1d3d1559bef31e54239fec9ffed638dee38c4",
+  "previous_corrections": 523,
+  "treatments": {
+    "OLTEMTHPRFEX2-001": {"target_line": 34, "body_treatment": "రెండవ ఉపసమితి వ్యక్తీకరణలో మూలం వదిలిన బయట మూసివేత కుండలీకరణాన్ని చేర్చి పక్కనే ప్రకటించాం."}
+  }
+}

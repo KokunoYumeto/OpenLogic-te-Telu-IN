@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEHISSETCANP-20260927",
+  "unit_id": "OLP-0638",
+  "source_path": "content/history/set-theory/cantor-plane.tex",
+  "source_sha256": "6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737",
+  "findings": [
+    {
+      "finding_id": "OLTEHISSETCANP-001",
+      "source_locator": "cantor-plane.tex lines 24–37, first proof",
+      "classification": "binary_expansion_choice_missing_for_function_and_injection",
+      "source_issue": "The source interleaves binary expansions without specifying one representation for each input. Dyadic numbers have two expansions, and 1 needs its all-ones fractional expansion for the displayed rule to cover the closed unit interval. Without a convention the construction is not a well-defined function and the digit-equality injection argument is incomplete.",
+      "minimal_treatment": "Choose the non-eventually-all-ones expansion below 1 and the all-ones fractional expansion for 1, then state the resulting injection proof.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEHISSETCANP-002",
+      "source_locator": "cantor-plane.tex lines 39–57, proposed non-surjectivity witness and summary",
+      "classification": "proposed_missing_value_has_preimage_under_valid_endpoint_convention",
+      "source_issue": "The source's 0.1010... missing-value claim uses 1.000... for a=1, but that is incompatible with the displayed fractional-binary definition at the endpoint. Under a valid convention covering 1, f(1,0)=0.1010..., so the proposed witness is in the image. The source also misnames the expansions as decimal in the summary.",
+      "minimal_treatment": "Retain and qualify the historical attempted argument, identify why the proposed witness fails under the explicit convention, and give a genuine omitted value by interleaving a forbidden dyadic expansion with a non-dyadic one; call the expansions binary.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

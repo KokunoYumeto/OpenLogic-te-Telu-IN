@@ -1,0 +1,222 @@
+% Part: proof-theory
+% Chapter: normalization
+% Section: translations
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{pt}{nor}{tr}
+
+\olsection{సాధారణ \Log{N2i}-\usetoken{P}{proof} మరియు \Log{G2i} మధ్య అనువాదం}
+
+\Log{N2i}లోని \tetoken{నిరూపణలను}{!!^{proof}s} \Log{G2i}లోని \tetoken{నిరూపణలుగా}{!!{proof}s} అనువదించవచ్చు; విరుద్ధ దిశలోనూ అనువదించవచ్చు. ముందుగా, కట్-రహిత \Log{G2i} \tetoken{నిరూపణలను}{!!{proof}s} అనువదిస్తే సాధారణ \Log{N2i}-\tetoken{నిరూపణలు}{!!{proof}s} వస్తాయి.
+\sourcecorrection{OLTEPTNORTR-001}{మూలంలో కట్-రహిత నిరూపణల వ్యవస్థను \Log{2i} అని పేర్కొంది; ఈ సందర్భంలో అది \Log{G2i}.}
+
+ఫలితాన్ని చెప్పడానికి~\Log{N2i}, \Log{G2i}లలోని సీక్వెంట్‌ల పూర్వపక్షాలను సులభంగా పోల్చగల పదజాలం కావాలి: గుర్తులతో కూడిన \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Gamma'$, గుర్తులు లేని \tetoken{సూత్రాల}{!!{formula}s} బహుసమితి~$\Gamma$కు \emph{అనురూపం} కావాలంటే, ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు,~$\Gamma'$లో $x : !A$ రూపంలో ఉన్న \tetoken{మూలకాల}{!!{element}s} సంఖ్య~$\Gamma$లోని~$!A$ బహుళత్వాన్ని మించకూడదు.
+
+\begin{cor}
+$\Log{G2i} \Proves \Gamma \Sequent \Delta$ అయితే, $\Gamma' \Sequent !C$కు సాధారణ \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}~$\delta$ ఉంది; ఇక్కడ గుర్తులతో కూడిన \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Gamma'$, బహుసమితి~$\Gamma$కు అనురూపం. అంటే ప్రతి \tetoken{సూత్రం}{!!{formula}}~$!A$కు,~$\Gamma'$లోని $x : !A$ రూపపు \tetoken{మూలకాల}{!!{element}s} సంఖ్య~$\Gamma$లోని~$!A$ బహుళత్వాన్ని (అంటే~$!A$ ప్రతుల సంఖ్యను) మించదు.
+\sourcecorrection{OLTEPTNORTR-002}{G2i నుంచి అనువాద ఫలితం N2i నిరూపణ గురించి; మూల ఉపఫలితంలో N2c అని ఉంది. వ్యవస్థ పేరును N2iగా సరిచేశాం.}
+\end{cor}
+
+\begin{proof}
+\olref[nat][tgi]{prop:G2i-to-N2i} నిరూపణను పరిశీలిస్తే సరిపోతుంది: \tetoken{ప్రవేశ}{!!{introduction}} నియమాలను \tetoken{నిరూపణల}{!!{proof}s} చివరన, \tetoken{తొలగింపు}{!!{elimination}} నియమాలను \tetoken{నిరూపణల}{!!{proof}s} పైభాగాన మాత్రమే చేర్చుతాం. కాబట్టి \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం పైన \tetoken{ప్రవేశ}{!!{introduction}} నియమాన్ని ఎప్పుడూ ప్రవేశపెట్టం.
+\end{proof}
+
+అయితే \olref[nat][tgi]{prop:G2i-to-N2i}లో ఇచ్చిన \Cut{} నియమ అనువాదం~$\delta$ అనే \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}లో కట్‌లను ప్రవేశపెట్టవచ్చు. \Log{G2i} \tetoken{నిరూపణ}{!!{proof}} చివర~\Cut{} ఉండి, దాని తక్షణ ఉప-\tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1$, $\pi_2$ వరుసగా $\Gamma_1
+\Sequent !A$, $!A, \Gamma_2 \Sequent \Delta_2$కు అయితే,~$\pi_1$ అనువాదం~$\delta_1$ను~$\pi_2$ అనువాదం~$\delta_2$లోని $x:!A
+\Sequent !A$ ఆక్సియమ్‌ల వద్ద అంటిస్తాం. $\delta_1$ చివర ప్రధాన \tetoken{సూత్రం}{!!{formula}}~$!A$తో కూడిన \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం ఉండి,~$\delta_2$లోని $x:!A \Sequent !A$ ఆక్సియమ్ \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం ప్రధాన పూర్వపక్షమైతే,~$\delta$లో కట్ ఏర్పడుతుంది.
+
+\Log{N2i}లోని \tetoken{నిరూపణలను}{!!{proof}s} \Log{G2i}లోని \tetoken{నిరూపణలుగా}{!!{proof}s} కూడా అనువదించవచ్చు. \olref[nat][tni]{prop:N2-to-G2} నిరూపణలో \Elim{\land}, \Elim{\lif}, \Elim{\lnot}, \Elim{\lforall} నియమాల అనువాదం వల్ల ఫలిత \Log{G2i} \tetoken{నిరూపణ}{!!{proof}}లో~\Cut{} అనుమితులు వస్తాయి. అయితే ప్రారంభ \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}} సాధారణ రూపంలో ఉంటే దీన్ని నివారించవచ్చు.
+\sourcecorrection{OLTEPTNORTR-003}{మూలంలోని చివరి వాక్యంలో షరతు అసంపూర్ణం; తదుపరి ప్రతిపాదన ప్రకారం ప్రారంభ నిరూపణ సాధారణ రూపంలో ఉన్నప్పుడే కట్‌ను నివారించగలమని స్పష్టంచేశాం.}
+
+\Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}~$\delta$లోని సీక్వెంట్ ఘటనల $S_1$, \dots,~$S_n$ జాబితాను \emph{శాఖ} అనాలంటే $S_1$ ఒక ఆక్సియమ్ కావాలి; $S_i$ ఏదైనా అనుమితి ప్రధాన పూర్వపక్షం అయినప్పుడల్లా $S_{i+1}$ దాని నిష్కర్ష కావాలి. మరోలా చెప్పాలంటే, శాఖ ఆక్సియమ్‌ల నుంచి~$\delta$లో సీక్వెంట్‌లను కిందికి అనుసరిస్తుంది, కానీ \tetoken{తొలగింపు}{!!{elimination}} నియమాల ఉప పూర్వపక్షాల వద్ద ఆగిపోతుంది. $S_n$ చివరి సీక్వెంట్ అయితే~$\delta$లోని ఆ శాఖను \emph{ప్రధాన శాఖ} అంటాం. ప్రతి \tetoken{నిరూపణ}{!!{proof}}~$\delta$కు కనీసం ఒక ప్రధాన శాఖ ఉంటుంది; ఎందుకంటే ప్రతి నియమానికి కనీసం ఒక ప్రధాన పూర్వపక్షం ఉంది (రెండు ఉన్నది \Intro{\land}కు మాత్రమే).
+
+\begin{prop}\ollabel{prop:normal-N2i-to-G2i} $\delta$ అనేది~$\Gamma \Sequent !A$కు గల సాధారణ $\Log{N2c}$ లేదా $\Log{N2i}$-\tetoken{నిరూపణ}{!!{proof}} అయితే, $\Gamma' \Sequent \Delta$కు (కట్-రహిత) $\Log{G2c}$-\tetoken{నిరూపణ}{!!{proof}} ($\Log{G2i}$-\tetoken{నిరూపణ}{!!{proof}})~$\pi$ ఉంది. ఇక్కడ~$\Gamma$ నుంచి గుర్తులు తొలగిస్తే వచ్చే \tetoken{సూత్రాల}{!!{formula}s} బహుసమితి~$\Gamma'$;~$!A$ అనేది~$\lfalse$ కాకపోతే $\Delta = \{!A\}$, అదే అయితే $\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+ఈసారి~$\Gamma \Sequent !A$కు గల \tetoken{నిరూపణ}{!!{proof}}~$\delta$లోని అనుమితుల సంఖ్యపై ఆగమనం చేద్దాం. ~$\delta$లో అనుమితి లేకపోతే అది $x:!A \Sequent !A$ ఆక్సియమ్; అప్పుడు~$\pi$ దానికి అనురూపమైన $!A \Sequent !A$ ఆక్సియమ్, లేదా $!A
+\ident \lfalse$ అయితే $\lfalse \Sequent \ $ ఆక్సియమ్.
+
+$\delta$ చివర నిగమన నియమం ఉంటే, సందర్భాలను వేరు చేద్దాం:
+\begin{enumerate}
+  \item $R$ \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం లేదా~\FalseInt అయితే, అనువాదం \olref[nat][tni]{prop:N2-to-G2} నిరూపణలోలాగే సాగుతుంది;~\Cut{} అవసరం లేదు.
+
+  $\delta$ చివరి నియమం~$R$, \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమమైతే, కింది విషయాలు గమనించండి:
+  \begin{enumerate}
+    \item $\delta$ ప్రధాన శాఖలో \tetoken{ప్రవేశ}{!!{introduction}} నియమాలేవీ ఉండవు; లేకపోతే ప్రధాన శాఖలో \tetoken{ఒక ప్రవేశ}{!!a{introduction}} నియమం లేదా~\FalseInt{} తరువాత \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం వచ్చేది; అప్పుడు~$\delta$ సాధారణ రూపంలో ఉండదు.
+    \item ~$\delta$ ప్రధాన శాఖల వెంట \tetoken{ప్రవేశ}{!!{introduction}} నియమాలు లేవు కాబట్టి, ప్రధాన శాఖ ఒక్కటే ఉంటుంది. (రెండు ప్రధాన పూర్వపక్షాలు ఉన్నది \Intro{\land}కు మాత్రమే; కాబట్టి అనేక ప్రధాన శాఖలు ఉండాలంటే అవి \Intro{\land} పూర్వపక్షాల గుండా వెళ్లాలి.)
+    \item ప్రధాన శాఖలో \Elim{\lor} లేదా \Elim{\lexists} యొక్క ప్రధాన పూర్వపక్షం ఉంటే, అటువంటి నియమం ఒక్కటే ఉంటుంది, అదీ చివరి నియమం~$R$. (లేకపోతే ప్రధాన శాఖలో ఏదో \Elim{\lor} లేదా \Elim{\lexists} నిష్కర్ష \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమానికి ప్రధాన పూర్వపక్షం అయ్యేది; స్థానమార్పు పరివర్తన వర్తింపజేయగలం కాబట్టి ఆ నిరూపణ సాధారణ రూపంలో ఉండదు.)
+  \item \Elim{\lor}, \Elim{\lexists} తప్ప ఇతర \tetoken{తొలగింపు}{!!{elimination}} నియమాలేవీ ఊహలను విడుదల చేయవు; అంటే సీక్వెంట్‌ల ఎడమ సందర్భాన్ని మార్చవు. \Elim{\lor}, \Elim{\lexists} కూడా ఉప పూర్వపక్షం పైనున్న ఊహలను మాత్రమే విడుదల చేస్తాయి; అంటే వాటి ఉప పూర్వపక్షాల ఎడమ సందర్భాన్నే మార్చుతాయి. మరోలా చెప్పాలంటే~$\delta$ ప్రధాన శాఖలోని సీక్వెంట్~$S_i$ సందర్భం~$\Gamma_1$ అయితే, $S_i$ ప్రధాన పూర్వపక్షంగా ఉండే అనుమితి నిష్కర్ష~$S_{i+1}$ సందర్భం $\Gamma_1' \supseteq \Gamma_1$.
+  \item అందువల్ల ప్రధాన శాఖలోని అత్యుపరి సీక్వెంట్~$S_1$, $x: !C \Sequent !C$ అయితే, $x:!C \in \Gamma$.
+  \end{enumerate}
+  ఇప్పుడు~$!C$ రూపాన్ని బట్టి సందర్భాలను వేరు చేద్దాం. ప్రధాన శాఖలోని ప్రతి~$S_i$, \tetoken{ఒక తొలగింపు}{!!a{elimination}} నియమం ప్రధాన పూర్వపక్షమే కాబట్టి, $x:!C \Sequent !C$కూ ఇదే వర్తిస్తుంది.
+
+  \item $!C \ident !D \land !E$. అప్పుడు~$\delta$ రూపం ఇది:
+  \[
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  ప్రధాన శాఖలో $x:!D \land !E \Sequent !D$ ఉంటుంది; ఆ శాఖ \Intro{\lif}, \Intro{\lnot} నియమాల ప్రధాన పూర్వపక్షం గుండా గానీ, \Elim{\lor}, \Elim{\lexists} ఉప పూర్వపక్షం గుండా గానీ వెళ్లదు. కాబట్టి $x:!D
+  \land !E$లోని సందర్భ \tetoken{సూత్రాలు}{!!{formula}s} ప్రధాన శాఖ వెంట మారవు. అందుచేత చివరి సీక్వెంట్ సందర్భంలో~$x:!D \land !E$ తప్పనిసరిగా ఉంటుంది. అంతేకాకుండా, \Elim{\land}లో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}} స్థానంలో $x:!D \Sequent !D$ను ఉంచి, ప్రధాన శాఖలోని ప్రతి సీక్వెంట్ సందర్భంలో $x:!D \land !E$ స్థానంలో $x:!D$ను ఉంచడం ద్వారా \tetoken{నిరూపణ}{!!{proof}}~$\delta$ను \tetoken{నిరూపణ}{!!{proof}}~$\delta_1$గా మార్చవచ్చు; అంటే,
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \land !E \fCenter !D \land !E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:!D \land !E \fCenter !D$
+  \Deduce$x:!D \land !E, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \quad\text{ into }\quad
+  \bottomAlignProof
+  \Axiom$x:!D \fCenter !D$
+  \Deduce$x:!D, \Gamma_1 \fCenter !A$
+  \DisplayProof
+  \]
+  $\delta_1$కు ఆగమన ఉపపత్తి వర్తిస్తుంది:~$\delta$లోని అనుమితుల సంఖ్య~$\delta_1$లోని సంఖ్యకంటే~$1$ ఎక్కువ.
+  \sourcecorrection{OLTEPTNORTR-004}{మూలంలోని ఈ ఆగమన వాక్యంలో $\delta'$ అని ఉంది; మార్చి పొందిన నిరూపణను ముందు $\delta_1$గా నిర్వచించారు. ఆ గుర్తునే వాడాం.}
+
+  ఆగమన ఉపపత్తి ప్రకారం, $!D, \Gamma_1' \Sequent !A$కు \Log{G2i}-\tetoken{నిరూపణ}{!!{proof}}~$\pi_1$ ఉంది. \LeftR{\land} వర్తింపజేసి \tetoken{నిరూపణ}{!!{proof}}~$\pi$ను పొందుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  $!A \ident \lfalse$ అయితే, ఉదాహరణకు \RightR{\Weakening}ను చేర్చుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLTEPTNORTR-005}{ఇక్కడ G2i నిరూపణ పూర్వపక్షంలో మూలం $x:!D, \Gamma_1$ అని గుర్తులతో రాసింది; G2i పూర్వపక్షంలో గుర్తులు ఉండవు, ప్రదర్శిత వృక్షం ప్రకారం అది $!D, \Gamma_1'$.}
+  \item $!C \ident !D \lor !E$ అయితే అది \Elim{\lor} ప్రధాన పూర్వపక్షమై ఉండాలి; ఈ అనుమితి ప్రధాన శాఖలోని చివరి అనుమితి~$R$ కావాలి. మరోలా చెప్పాలంటే~$\delta$ రూపం ఇది:
+  \[
+  \Axiom$x:!D \lor !E \fCenter !D \lor !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$y:!D, \Gamma_1 \fCenter!A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$z:!E, \Gamma_2 \fCenter !A$
+  \RightLabel{\Elim{\lor}}
+  \TrinaryInf$x:!D \lor !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  \tetoken{నిరూపణలకు}{!!{proof}s}~$\delta_1$, $\delta_2$ ఆగమన ఉపపత్తి వర్తిస్తుంది; వాటి నుంచి వరుసగా $!D, \Gamma_1' \Sequent !A$, $!E, \Gamma_2' \Sequent !A$లకు \Log{G2i}-\tetoken{నిరూపణలు}{!!{proof}s}~$\pi_1$, $\pi_2$ వస్తాయి. $\LeftR{\lor}$ వర్తింపజేసి~$\pi$ను పొందుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $\Elim{\lor}$ అనేది $y: !D$ లేదా $z: !E$ను విడుదల చేయకపోతే (అంటే అవి ఉప పూర్వపక్షాల సందర్భాల్లో లేకపోతే), లేదా~$!A$ అనేది $\lfalse$ అయితే, కొన్ని \LeftR{\Weakening}, \RightR{\Weakening}లను చేర్చాలి. ఉదాహరణకు,
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!D, \Gamma_1' \fCenter $
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+
+  \item $!C \ident !D \lif !E$. అప్పుడు~$\delta$ రూపం ఇది:
+  \[
+  \Axiom$x:!D \lif !E \fCenter !D \lif !E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter!D$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  ఇక్కడ $x:!D \lif !E,
+  \Gamma_1 \Sequent !E$ను కలిగిన ప్రధాన శాఖ \Intro{\lif}, \Intro{\lnot} ప్రధాన పూర్వపక్షాల గుండా గానీ, \Elim{\lor}, \Elim{\lexists} ఉప పూర్వపక్షాల గుండా గానీ వెళ్లదు. అందువల్ల $x:!D \lif !E, \Gamma_1$లోని సందర్భ \tetoken{సూత్రాలు}{!!{formula}s} ప్రధాన శాఖ వెంట మారవు. అందుచేత చివరి సీక్వెంట్ సందర్భంలో~$x:!D \lif !E, \Gamma_1$ తప్పనిసరిగా ఉంటుంది. అంతేకాకుండా, \Elim{\lif}లో ముగిసే ఉప-\tetoken{నిరూపణ}{!!{proof}} స్థానంలో $x:!E \Sequent !E$ను ఉంచి, ప్రధాన శాఖలోని ప్రతి సీక్వెంట్ సందర్భంలో $x:!D \lif !E,
+  \Gamma_1$ స్థానంలో $x:!E$ను ఉంచడం ద్వారా \tetoken{నిరూపణ}{!!{proof}} ఖండం~$\delta_2$ను సరైన \tetoken{నిరూపణ}{!!{proof}}~$\delta_2'$గా మార్చవచ్చు; అంటే,
+  \[
+  \bottomAlignProof
+  \Axiom$x:!D \lif !E, \Gamma_1 \fCenter !E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:!D \lif !E, \Gamma_1, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \quad\text{ into }\quad
+  \bottomAlignProof
+  \Axiom$x:!E \fCenter !E$
+  \RightLabel{$\delta_2'$}
+  \Deduce$x:!E, \Gamma_2 \fCenter !A$
+  \DisplayProof
+  \]
+  $\delta_1$, $\delta_2'$లకు ఆగమన ఉపపత్తి వర్తిస్తుంది; ఎందుకంటే~$\delta$లోని అనుమితుల సంఖ్య,~$\delta_1$,~$\delta_2$లలోని అనుమితుల సంఖ్యల మొత్తంకంటే~$1$ ఎక్కువ; ఈ అదనపు అనుమితి ప్రధాన శాఖ మొదట్లోని \Elim{\lif}. (ఆ అనుమితే~$\delta$లోని చివరి అనుమితి~$R$ కూడా అయితే,~$\delta_1$లో $0$ అనుమితులు ఉంటాయి.)
+
+  ఆగమన ఉపపత్తి ప్రకారం, $\Gamma_1' \Sequent !D$కు \Log{G2i}-\tetoken{నిరూపణ}{!!{proof}s}~$\pi_1$, $!E, \Gamma_2' \Sequent !A$కు~$\pi_2$ ఉన్నాయి. \LeftR{\lif} వర్తింపజేసి \tetoken{నిరూపణ}{!!{proof}}~$\pi$ను పొందుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  $!D \ident \lfalse$ మరియు/లేదా $!A \ident \lfalse$ అయితే, ఉదాహరణకు ఒకటి లేదా రెండు \RightR{\Weakening} నియమాలను చేర్చుతాం:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$\Gamma_1' \fCenter !D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$!E, \Gamma_2' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$!E, \Gamma_2' \fCenter !A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \DisplayProof
+  \]
+  \sourcecorrection{OLTEPTNORTR-006}{ఆగమన ఫలితాల్లో మూలం గుర్తులతో కూడిన మొదటి సందర్భాన్ని $\Gamma_1$గా, రెండవదాన్ని $\Gamma_1'$గా పేర్కొంది; \LeftR{\lif} వృక్షం ప్రకారం గుర్తులు తొలగిన సందర్భాలు వరుసగా $\Gamma_1'$, $\Gamma_2'$.}
+  \sourcecorrection{OLTEPTNORTR-007}{బలహీనీకరణ షరతులో మూలం $!D$ అని మాత్రమే రాసింది; ఈ సందర్భం $!D \ident \lfalse$ అయితే అని వృక్షం చూపిస్తుంది.}
+
+\end{enumerate}
+మిగిలిన సందర్భాలను ఇలాగే పరిష్కరించవచ్చు; వాటిని అభ్యాసాలుగా వదిలాం.
+\end{proof}
+
+\begin{cor}
+సాధారణ \Log{N1i} లేదా \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}లో వచ్చే ప్రతి \tetoken{సూత్రం}{!!{formula}}, చివరి \tetoken{సూత్రం}{!!{formula}} లేదా తెరిచి ఉన్న ఊహ సూత్రాలలో ఒకదాని ఉప-\tetoken{సూత్రం}{!!{formula}}. \Log{N2i}లో అంటే అది చివరి సీక్వెంట్‌లోని సూత్రాలలో ఒకదాని ఉపసూత్రం.
+\sourcecorrection{OLTEPTNORTR-008}{మూలం N1i నిరూపణలకు చివరి సూత్రాన్నే ఉపసూత్ర ఆధారంగా పేర్కొంది; తెరిచి ఉన్న ఊహలను కూడా చేర్చాలి. ఉదాహరణకు సంయోగం నుంచి దాని ఒక భాగాన్ని నేరుగా తీసే సాధారణ నిరూపణలో, ఊహ చివరి సూత్రపు ఉపసూత్రం కాదు. N2iలో చివరి సీక్వెంట్ పూర్వపక్షం ఆ ఊహలను ఇప్పటికే కలిగి ఉంటుంది.}
+\end{cor}
+
+\begin{proof}
+  \olref{prop:normal-N2i-to-G2i} ప్రకారం, ప్రతి సాధారణ \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}ను \Log{G2i}-\tetoken{నిరూపణ}{!!{proof}}గా అనువదించవచ్చు. నిరూపణను పరిశీలిస్తే, \Log{N2i}-\tetoken{నిరూపణ}{!!{proof}}లో వచ్చే ప్రతి \tetoken{సూత్రం}{!!{formula}} \Log{G2i}-\tetoken{నిరూపణ}{!!{proof}}లోనూ వస్తుందని తెలుస్తుంది. \Cut{} నియమం లేని \Log{G2i}కు ఉప-\tetoken{సూత్ర}{!!{formula}} లక్షణం ఉంది.
+\end{proof}
+
+\end{document}

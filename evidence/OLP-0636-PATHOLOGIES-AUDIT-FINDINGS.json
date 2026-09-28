@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEHISSETPATH-20260927",
+  "unit_id": "OLP-0636",
+  "source_path": "content/history/set-theory/pathologies.tex",
+  "source_sha256": "e48c454ab4d3058f89b6ce709da28387e9d633459425ffac9cd67b64d3de96e8",
+  "findings": [
+    {
+      "finding_id": "OLTEHISSETPATH-001",
+      "source_locator": "pathologies.tex lines 52–55, Peano curve description",
+      "classification": "smoothness_conflated_with_space_filling_continuity",
+      "source_issue": "The source asks for a smooth map of a line onto a plane and then calls Peano's space-filling curve just such an example. Peano's compact-interval-to-square map is continuous, not smooth; a continuously differentiable curve on a compact interval is Lipschitz and its planar image has area zero.",
+      "minimal_treatment": "Describe the Peano construction as a continuous map from a line segment onto a square, and disclose the smoothness/continuity distinction.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

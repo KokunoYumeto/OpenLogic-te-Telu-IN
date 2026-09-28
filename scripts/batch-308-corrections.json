@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0659",
+  "source_path": "content/proof-theory/cut-elimination/introduction.tex",
+  "source_sha256": "d8400228f30064f5458fd30c09d10772bbc2ff3d7cea23e28c93664a6e3a6a83",
+  "audit_id": "OLTEPTCUTINT-20260927",
+  "audit_review_path": "evidence/OLP-0659-CUT-INTRO-SOURCE-AUDIT.md",
+  "audit_review_sha256": "6f30d215c22f3d0ce150f9a4e0f7a6635ac16c1514d993bfa04a8f4a42e10bde",
+  "audit_findings_path": "evidence/OLP-0659-CUT-INTRO-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "57a7fe00483d644b28bc3d85d275f6d313592c1244a280c7e35c5d42ee8eaaf5",
+  "previous_corrections": 565,
+  "treatments": {
+    "OLTEPTCUTINT-001": {"target_line": 43, "body_treatment": "సందర్భం పంచుకునే కట్ చిత్ర లేబుల్‌ను CutCSగా సరిచేసి మూలపు Cut లేబుల్ అసంగతిని ప్రకటించాం."}
+  }
+}

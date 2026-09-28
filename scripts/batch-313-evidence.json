@@ -1,0 +1,37 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "313",
+  "unit_id": "OLP-0664",
+  "unit_order": 664,
+  "source_path": "content/proof-theory/natural-deduction/natural-deduction.tex",
+  "blocks": 7,
+  "linguistic_blocks": [
+    4
+  ],
+  "previous_segments": 9847,
+  "previous_terms": 353,
+  "expected_corrections": 578,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "అధ్యాయ శీర్షికలో సహజ నిగమనం పదాన్ని పూర్వ విభాగంతో పోల్చి స్థిరపరిచాం; దిగుమతి పథాలు, క్రమం యథాతథంగా ఉంచాం.",
+  "evidence_limit": "అధ్యాయ శీర్షిక మాత్రమే అనువదించబడింది; దిగుమతి పథాలు నిర్మాణాత్మక TeX. దృశ్య TeX తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T354",
+    "source_term": "Natural Deduction (chapter heading)",
+    "telugu": "సహజ నిగమనం",
+    "status": "natural_deduction_chapter_heading_aligned",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "పరిచయ విభాగంలోని సహజ నిగమనం పదాన్ని అధ్యాయ శీర్షికలోనూ సమానంగా ఉపయోగించి దిగుమతులను మార్చలేదు.",
+    "uncertainty": "శీర్షిక పదం భావపారదర్శక తాత్కాలిక ఎంపిక; ప్రత్యక్ష ప్రమాణిత నిఘంటు ఆధారం పరిమితం.",
+    "borrowing": "TeX import paths and pt/nat identifier remain source-identifying."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "142",
+  "unit_id": "OLP-0493",
+  "unit_order": 493,
+  "source_path": "content/intuitionistic-logic/introduction/constructive-reasoning.tex",
+  "blocks": 16,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+  "previous_segments": 7425,
+  "previous_terms": 182,
+  "expected_corrections": 456,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర నిర్మాణాత్మక హేతుచింతన మూలం, తెలుగు లక్ష్యం, పూర్వ OLP-0052 సారూప్య అనువాదం, స్థానిక నిరూపణ/సిద్ధాంతం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; సరి/బేసి n, రెండు అకరణీయ ఘాత నిరూపణలు, అస్తిత్వ-వికల్ప సాక్ష్య షరతులను తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003/004/018/024/025 సాధారణ హేతుచింతన, సిద్ధాంతం, నిరూపణ, తర్క, వ్యుత్పత్తి రిజిస్టర్లకే ప్రత్యక్ష సాక్ష్యాలు. అంతఃప్రజ్ఞావాద నిర్మాణాత్మక అర్థానికి లేదా రీమాన్ ఉదాహరణకు ప్రత్యక్ష ఆధారాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T183",
+    "source_term": "constructive reasoning / non-constructive proof / explicit witness / intuitionistic restriction",
+    "telugu": "నిర్మాణాత్మక హేతుచింతన / నిర్మాణాత్మకం కాని నిరూపణ / స్పష్ట సాక్షి / అంతఃప్రజ్ఞావాద పరిమితి",
+    "status": "native_general_proof_theorem_logic_derivation_register_attested_constructive_reasoning_prior_edition_controlled",
+    "passages": ["TE-P003", "TE-P004", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "OLP-0052లోని సారూప్య నిర్మాణాత్మక హేతుచింతన పదాలను కొనసాగించి, ఈ ప్రత్యేక మూలంలోని n సరి/బేసి, 2/3 షరతు, రెండు అకరణీయ ఘాత నిరూపణలు, నిర్దిష్ట x సాక్షి, A/B వికల్ప సాక్షి పరిమితిని నిలిపాం.",
+    "uncertainty": "స్థానిక సాక్షులు constructive/intuitionistic శాఖా తత్వానికి ప్రత్యక్ష ప్రమాణం కావు. మూలంలోని రీమాన్ పరికల్పన స్థితి స్వతంత్రంగా పరిశోధించలేదు; అది ఉదాహరణగా మాత్రమే అనువదించబడింది. TeX దృశ్య తనిఖీ, నిపుణ సమీక్ష ఇంకా లేవు.",
+    "borrowing": "Riemann, Brouwer and Bishop proper names retain identifiable transliterations; source formulas and numeric constants stay exact."
+  }
+}

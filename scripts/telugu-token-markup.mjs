@@ -133,7 +133,9 @@ export function wrapTeluguTokens(input) {
 
 export function renderTeluguTokens(input) {
   let previous;
-  let text = input;
+  // The frozen source has !!{prove}d: the trailing English d belongs
+  // inside the Telugu wrapper but is not part of the plural-s suffix.
+  let text = input.replace(/\\tetoken\{([^{}]+)\}\{!!\^?a?\{[^{}]+\}d\}/gu, '$1');
   do {
     previous = text;
     text = text.replace(wrapperRe, (_whole, surface) => surface);

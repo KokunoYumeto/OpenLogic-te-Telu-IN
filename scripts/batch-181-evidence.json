@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "181",
+  "unit_id": "OLP-0532",
+  "unit_order": 532,
+  "source_path": "content/set-theory/story/russells-paradox-again.tex",
+  "blocks": 13,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 7927,
+  "previous_terms": 221,
+  "expected_corrections": 479,
+  "canon_default": ["TE-P004", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర రసెల్ వైరుధ్య మూలం, పూర్వ సమితి/ధర్మసంగ్రహ అనువాదం, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; నిర్బంధరహిత ధర్మసంగ్రహం, $R$ వైరుధ్యం, స్వీయ-మూలకత్వం పథకం, తర్క-సిద్ధాంత భేదం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/008/018 సాధారణ సమితి, మూలకం, తర్క పదాలకు మాత్రమే సాక్షులు; చారిత్రక రసెల్-ఫ్రేగె వాదనకు స్వతంత్ర చరిత్ర తనిఖీ లేదు. మూల గ్రంథసూచి సూచిక యథాతథం; PDF/TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T222",
+    "source_term": "naive comprehension / Russell's paradox / non-self-membered set",
+    "telugu": "నిర్బంధరహిత ధర్మసంగ్రహం / రసెల్ వైరుధ్యం / తనలో తాను మూలకంగా లేని సమితి",
+    "status": "prior_russell_comprehension_register_reused_formula_controlled_unrestricted_principle",
+    "passages": ["TE-P004", "TE-P008", "TE-P018"],
+    "basis": "పూర్వ TE-T013 రసెల్/ధర్మసంగ్రహ పదాలను పునర్వాడి, ఏ $\\phi$కైనా సమితి ఉందనే నిర్బంధరాహిత్యం, $R\\in R$ ద్విదిశ వైరుధ్యం, మొదటిస్థాయి తర్క పథకం, సమితి సిద్ధాంతం మార్చడంవల్ల మాత్రమే పరిష్కారం రాదనే తేడా నిలిచాయి.",
+    "uncertainty": "నిర్బంధరహిత ధర్మసంగ్రహం వివరణాత్మక తలపదం; ప్రత్యేక నిఘంటు సాక్షి లేదు. చారిత్రక తేదీలు, మూలగ్రంథాన్ని వేరుగా ధృవీకరించలేదు.",
+    "borrowing": "Russell/Frege/Grundgesetze names are transliterated; source citation and mathematical notation remain source-controlled."
+  }
+}

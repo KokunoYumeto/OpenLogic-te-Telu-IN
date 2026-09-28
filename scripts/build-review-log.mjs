@@ -1089,6 +1089,1206 @@ locations['TE-T174']=[
  L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',71,74,72,77,'group knowledge','సమూహ జ్ఞానాన్ని'),
  L('content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex',77,85,79,88,'common knowledge','సామాన్య జ్ఞానాన్ని')
 ];
+locations['TE-T175']=[
+ L('content/applied-modal-logic/epistemic-logic/relational-models.tex',11,11,11,11,'Relational Models','సంబంధ నమూనాలు'),
+ L('content/applied-modal-logic/epistemic-logic/relational-models.tex',22,25,23,27,'relational model','సంబంధ నమూనా'),
+ L('content/applied-modal-logic/epistemic-logic/relational-models.tex',27,38,29,45,'$a \\in G$','$a \\in G$'),
+ L('content/applied-modal-logic/epistemic-logic/relational-models.tex',41,48,47,55,'informational states','సమాచార స్థితిని')
+];
+locations['TE-T176']=[
+ L('content/applied-modal-logic/epistemic-logic/truth-at-w.tex',11,11,11,11,'Truth at a World','ఒక లోకం వద్ద సత్యం'),
+ L('content/applied-modal-logic/epistemic-logic/truth-at-w.tex',36,38,42,45,'\\Knows_a !B','\\Knows_a !B'),
+ L('content/applied-modal-logic/epistemic-logic/truth-at-w.tex',97,108,106,119,'transitive closure','సంక్రామక సంవృతం'),
+ L('content/applied-modal-logic/epistemic-logic/truth-at-w.tex',110,113,122,125,'\\CKnows_{G\'} !A','\\CKnows_{G\'} !A')
+];
+locations['TE-T177']=[
+ L('content/applied-modal-logic/epistemic-logic/properties-accessibility.tex',11,11,11,11,'Accessibility Relations and Epistemic Principles','ప్రాప్యత సంబంధాలు, జ్ఞానసంబంధ సూత్రాలు'),
+ L('content/applied-modal-logic/epistemic-logic/properties-accessibility.tex',31,35,33,37,'Closure','మూసుకుపోవడం'),
+ L('content/applied-modal-logic/epistemic-logic/properties-accessibility.tex',36,43,38,47,'Positive Introspection','సకారాత్మక స్వపరిశీలన'),
+ L('content/applied-modal-logic/epistemic-logic/properties-accessibility.tex',42,48,44,50,'euclidean','యూక్లిడియన్')
+];
+locations['TE-T178']=[
+ L('content/applied-modal-logic/epistemic-logic/bisimulations.tex',11,11,11,11,'Bisimulations','ద్విసమానుకరణలు'),
+ L('content/applied-modal-logic/epistemic-logic/bisimulations.tex',29,46,31,51,'$a \\in A$','$a \\in G$'),
+ L('content/applied-modal-logic/epistemic-logic/bisimulations.tex',55,60,60,67,'forth','ముందుకు'),
+ L('content/applied-modal-logic/epistemic-logic/bisimulations.tex',62,67,69,74,'\\leftrightarroweq','\\leftrightarroweq')
+];
+locations['TE-T179']=[
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex',11,11,11,11,'Public Announcement Logic','బహిరంగ ప్రకటన తర్కం'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex',13,20,13,22,'Dynamic epistemic logics','గతి జ్ఞానసంబంధ తర్కాలు'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex',35,35,38,38,'public announcement operator','బహిరంగ ప్రకటన కారకం'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-lang.tex',71,71,74,75,'$[!A] !B$','$[!A] !B$')
+];
+locations['TE-T180']=[
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex',11,11,11,11,'Semantics of Public Announcement Logic','బహిరంగ ప్రకటన తర్కపు అర్థవిజ్ఞానం'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex',43,54,44,57,"$W' =","$W' ="),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex',64,67,69,75,'$[!A]B$','$[!A]!B$'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex',103,110,116,123,'common knowledge','సామాన్య జ్ఞానం'),
+ L('content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex',112,124,125,149,'$p \\land \\lnot \\Knows_b p$','$p \\land \\lnot \\Knows_b p$')
+];
+locations['TE-T181']=[
+ L('content/intuitionistic-logic/intuitionistic-logic.tex',7,7,7,7,'Intuitionistic Logic','అంతఃప్రజ్ఞావాద తర్కం')
+];
+locations['TE-T182']=[
+ L('content/intuitionistic-logic/introduction/introduction.tex',9,9,9,9,'Introduction','పరిచయం'),
+ L('content/intuitionistic-logic/introduction/introduction.tex',11,19,11,19,'\\olimport{bhk-interpretation}','\\olimport{bhk-interpretation}')
+];
+locations['TE-T183']=[
+ L('content/intuitionistic-logic/introduction/constructive-reasoning.tex',11,18,11,22,'Constructive Reasoning','నిర్మాణాత్మక హేతుచింతన'),
+ L('content/intuitionistic-logic/introduction/constructive-reasoning.tex',20,34,24,40,'if $n$ is even','$n$ సరి సంఖ్య'),
+ L('content/intuitionistic-logic/introduction/constructive-reasoning.tex',47,59,54,69,'$a = b = \\sqrt{2}$','$a = b = \\sqrt{2}$'),
+ L('content/intuitionistic-logic/introduction/constructive-reasoning.tex',62,78,71,91,'$a = \\sqrt{3}$','$a = \\sqrt{3}$'),
+ L('content/intuitionistic-logic/introduction/constructive-reasoning.tex',81,100,93,116,'!!a{derivation}','!!a{derivation}')
+];
+locations['TE-T184']=[
+ L('content/intuitionistic-logic/introduction/syntax.tex',11,11,11,11,'Syntax of Intuitionistic Logic','అంతఃప్రజ్ఞావాద తర్కపు వాక్యనిర్మాణం'),
+ L('content/intuitionistic-logic/introduction/syntax.tex',13,24,13,26,'$!A \\lif \\lfalse$','$!A \\lif \\lfalse$'),
+ L('content/intuitionistic-logic/introduction/syntax.tex',28,60,29,66,'\\Frm[L_0]','\\Frm[L_0]'),
+ L('content/intuitionistic-logic/introduction/syntax.tex',62,72,68,79,'defined','నిర్వచిత')
+];
+locations['TE-T185']=[
+ L('content/intuitionistic-logic/introduction/bhk-interpretation.tex',11,11,11,11,'The Brouwer--Heyting--Kolmogorov Interpretation','బ్రౌవర్--హైటింగ్--కొల్మొగొరోవ్ అర్థనిర్దేశం'),
+ L('content/intuitionistic-logic/introduction/bhk-interpretation.tex',18,42,17,49,'construction','నిర్మాణం'),
+ L('content/intuitionistic-logic/introduction/bhk-interpretation.tex',92,98,111,121,'$C$','$!C$'),
+ L('content/intuitionistic-logic/introduction/bhk-interpretation.tex',130,138,162,177,'\\tuple{1, M_2}','\\tuple{1, M_1}'),
+ L('content/intuitionistic-logic/introduction/bhk-interpretation.tex',140,151,178,192,'\\comp{h_1}{g}','\\comp{h_1}{g}')
+];
+locations['TE-T186']=[
+ L('content/intuitionistic-logic/introduction/natural-deduction.tex',11,16,11,19,'Natural Deduction','సహజ నిగమనం'),
+ L('content/intuitionistic-logic/introduction/natural-deduction.tex',18,38,21,49,'undischarged assumptions','ఉపసంహరించని'),
+ L('content/intuitionistic-logic/introduction/natural-deduction.tex',59,62,68,73,'$!A_1 \\land !A_1$','$!A_1 \\land !A_2$'),
+ L('content/intuitionistic-logic/introduction/natural-deduction.tex',235,247,256,271,'classical theorem','సాంప్రదాయిక')
+];
+locations['TE-T187']=[
+ L('content/intuitionistic-logic/introduction/axiomatic-derivations.tex',11,14,11,17,'Axiomatic','స్వీకృతాధారిత'),
+ L('content/intuitionistic-logic/introduction/axiomatic-derivations.tex',18,27,19,35,'finite sequence','పరిమిత క్రమం'),
+ L('content/intuitionistic-logic/introduction/axiomatic-derivations.tex',30,43,37,51,'\\PAx','\\PAx'),
+ L('content/intuitionistic-logic/introduction/axiomatic-derivations.tex',46,56,54,68,'derivable','వ్యుత్పాద్యం')
+];
+locations['TE-T188']=[
+ L('content/intuitionistic-logic/semantics/semantics.tex',8,8,8,8,'Semantics','అర్థవిజ్ఞానం'),
+ L('content/intuitionistic-logic/semantics/semantics.tex',10,15,10,17,'only Kripke and topological semantics','క్రిప్కె అర్థవిజ్ఞానం, స్థలవిజ్ఞాన అర్థవిజ్ఞానం'),
+ L('content/intuitionistic-logic/semantics/semantics.tex',17,22,19,24,'\\OLEndChapterHook','\\OLEndChapterHook')
+];
+locations['TE-T189']=[
+ L('content/intuitionistic-logic/semantics/introduction.tex',21,26,24,31,'partial order','పాక్షిక క్రమం'),
+ L('content/intuitionistic-logic/semantics/introduction.tex',28,34,33,42,'monotonic','ఏకదిశగా పెరుగుతుంది'),
+ L('content/intuitionistic-logic/semantics/introduction.tex',45,51,59,68,'conditional','సోపాధికానికి'),
+ L('content/intuitionistic-logic/semantics/introduction.tex',67,71,91,98,'topological semantics','స్థలవిజ్ఞాన అర్థవిజ్ఞానం')
+];
+locations['TE-T190']=[
+ L('content/intuitionistic-logic/semantics/relational-models.tex',20,31,22,39,'relational model','సంబంధ నమూనా'),
+ L('content/intuitionistic-logic/semantics/relational-models.tex',26,29,31,37,'monotone','ఏకదిశగా పెరుగుతుంది'),
+ L('content/intuitionistic-logic/semantics/relational-models.tex',33,51,41,63,'\\mSat/{M}{!A}[w]','\\mSat/{M}{!A}[w]')
+];
+locations['TE-T191']=[
+ L('content/intuitionistic-logic/semantics/semantic-notions.tex',13,20,13,26,'true in the model','నమూనా~$\\mModel{M} = \\tuple{W,R,V}$లో'),
+ L('content/intuitionistic-logic/semantics/semantic-notions.tex',31,38,37,45,'Suppose $\\mSat{M}{\\Gamma}$.','$\\mSat{M}{\\Gamma}[w]$ అనుకుందాం'),
+ L('content/intuitionistic-logic/semantics/semantic-notions.tex',42,50,48,58,'restriction','పరిమితి')
+];
+locations['TE-T192']=[
+ L('content/intuitionistic-logic/semantics/topological-semantics.tex',16,30,16,38,'open sets','వివృత సమితులు'),
+ L('content/intuitionistic-logic/semantics/topological-semantics.tex',43,58,55,73,'\\Interior{V}','\\Interior{V}'),
+ L('content/intuitionistic-logic/semantics/topological-semantics.tex',88,93,116,125,'greatest open set','అతి పెద్ద వివృత')
+];
+locations['TE-T193']=[
+ L('content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex',8,8,8,8,'Soundness and Completeness','నిర్దుష్టత, సంపూర్ణత'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex',10,16,10,18,'provability','వ్యుత్పాద్యతకు'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-completeness.tex',18,28,20,30,'\\olimport{decidability}','\\olimport{decidability}')
+];
+locations['TE-T194']=[
+ L('content/intuitionistic-logic/soundness-completeness/soundness-axd.tex',11,11,11,11,'Soundness of Axiomatic','స్వీకృతాధారిత'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-axd.tex',13,17,13,18,'all axioms are','అన్ని స్వీకృతాలు'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-axd.tex',40,42,46,50,'\\mSat{M}{\\Gamma}{!A_n}[w]','\\mSat{M}{!A_n}[w]'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-axd.tex',43,55,51,70,'reflexive','స్వావర్తనం')
+];
+locations['TE-T195']=[
+ L('content/intuitionistic-logic/soundness-completeness/soundness-nd.tex',11,11,11,11,'Soundness of Natural Deduction','సహజ నిగమనం నిర్దుష్టత'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-nd.tex',33,44,36,58,'\\Gamma \\cup \\Delta \\Entails !A \\land !B','\\Gamma \\cup \\Delta \\Entails !B \\land !C'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-nd.tex',78,86,113,129,'\\mSat{M}{!B}$[w]','\\mSat{M}{!B}[w]'),
+ L('content/intuitionistic-logic/soundness-completeness/soundness-nd.tex',95,100,142,149,'prop:true-monotonic','prop:true-monotonic')
+];
+locations['TE-T196']=[
+ L('content/intuitionistic-logic/soundness-completeness/lindenbaum.tex',11,11,11,11,"Lindenbaum's Lemma",'లిండెన్‌బామ్ ఉపప్రమేయం'),
+ L('content/intuitionistic-logic/soundness-completeness/lindenbaum.tex',34,42,44,55,'prime','ప్రధానం'),
+ L('content/intuitionistic-logic/soundness-completeness/lindenbaum.tex',99,104,139,153,'largest','అతి పెద్దదాన్ని'),
+ L('content/intuitionistic-logic/soundness-completeness/lindenbaum.tex',120,126,178,189,'at least one fewer','పరిమిత సంఖ్యలోనే')
+];
+locations['TE-T197']=[
+ L('content/intuitionistic-logic/soundness-completeness/canonical-model.tex',11,11,11,11,'The Canonical Model','కానానికల్ నమూనా'),
+ L('content/intuitionistic-logic/soundness-completeness/canonical-model.tex',13,24,13,29,'finite sequences','పరిమిత క్రమాలు'),
+ L('content/intuitionistic-logic/soundness-completeness/canonical-model.tex',47,56,63,78,'initial segment','ప్రారంభ భాగం'),
+ L('content/intuitionistic-logic/soundness-completeness/canonical-model.tex',59,63,80,91,'by induction','ఆగమన పద్ధతిలో')
+];
+locations['TE-T198']=[
+ L('content/intuitionistic-logic/soundness-completeness/truth-lemma.tex',11,11,11,11,'The Truth Lemma','సత్య ఉపప్రమేయం'),
+ L('content/intuitionistic-logic/soundness-completeness/truth-lemma.tex',16,19,18,21,'prime','ప్రధానమైతే'),
+ L('content/intuitionistic-logic/soundness-completeness/truth-lemma.tex',30,30,36,36,'\\indcase!{!A}{\\lnot !B}{}','\\indcase!{!A}{\\lnot !B}{}'),
+ L('content/intuitionistic-logic/soundness-completeness/truth-lemma.tex',56,57,79,80,'R\\sigma(\\sigma.n)','R\\sigma(\\sigma.n)')
+];
+locations['TE-T199']=[
+ L('content/intuitionistic-logic/soundness-completeness/completeness-thm.tex',11,11,11,11,'The Completeness Theorem','సంపూర్ణతా సిద్ధాంతం'),
+ L('content/intuitionistic-logic/soundness-completeness/completeness-thm.tex',13,15,13,15,'\\Gamma \\Entails !A','\\Gamma \\Entails !A'),
+ L('content/intuitionistic-logic/soundness-completeness/completeness-thm.tex',17,29,17,37,'lem:truth','lem:truth'),
+ L('content/intuitionistic-logic/soundness-completeness/completeness-thm.tex',37,45,47,55,'\\Proves !A \\lor !B','\\Proves !A \\lor !B')
+];
+locations['TE-T200']=[
+ L('content/intuitionistic-logic/soundness-completeness/decidability.tex',11,11,11,11,'Decidability','నిర్ణేయత'),
+ L('content/intuitionistic-logic/soundness-completeness/decidability.tex',19,21,22,25,'finite model','పరిమిత నమూనా'),
+ L('content/intuitionistic-logic/soundness-completeness/decidability.tex',23,29,27,42,'[w] = \\Setabs{p \\in P}{w \\in V(p)}','[w] = \\Setabs{!B \\in S}{\\mSat{M}{!B}[w]}'),
+ L('content/intuitionistic-logic/soundness-completeness/decidability.tex',31,36,44,54,'for all !!{formula}s','అన్ని')
+];
+locations['TE-T201']=[
+ L('content/intuitionistic-logic/tableaux/tableaux.tex',8,8,8,8,'Intuitionistic','అంతఃప్రజ్ఞావాద'),
+ L('content/intuitionistic-logic/tableaux/tableaux.tex',10,14,10,17,'prefixed tableaux','పూర్వసూచికలతో'),
+ L('content/intuitionistic-logic/tableaux/tableaux.tex',11,13,11,16,'countermodels','ప్రతినమూనాలను'),
+ L('content/intuitionistic-logic/tableaux/tableaux.tex',16,23,19,26,'%\\olimport{countermodels}','%\\olimport{countermodels}')
+];
+locations['TE-T202']=[
+ L('content/intuitionistic-logic/tableaux/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/intuitionistic-logic/tableaux/introduction.tex',13,19,13,23,'signed','చిహ్నిత'),
+ L('content/intuitionistic-logic/tableaux/introduction.tex',40,48,64,79,'\\sigma \\in','\\sigma \\in'),
+ L('content/intuitionistic-logic/tableaux/introduction.tex',59,68,100,111,'\\sigma.*','\\sigma.*')
+];
+locations['TE-T203']=[
+ L('content/intuitionistic-logic/tableaux/rules.tex',11,11,11,11,'Rules for Intuitionistic Logic','అంతఃప్రజ్ఞావాద తర్క నియమాలు'),
+ L('content/intuitionistic-logic/tableaux/rules.tex',22,55,29,62,'tab:prop-rules','tab:prop-rules'),
+ L('content/intuitionistic-logic/tableaux/rules.tex',89,98,111,133,'\\TRule{\\lif}{\\True}','\\TRule{\\True}{\\lif}'),
+ L('content/intuitionistic-logic/tableaux/rules.tex',100,103,134,142,'\\TRule{\\lif}{\\False}','\\TRule{\\False}{\\lif}'),
+ L('content/intuitionistic-logic/tableaux/rules.tex',110,143,148,181,'tab:rules-lif-lnot','tab:rules-lif-lnot')
+];
+locations['TE-T204']=[
+ L('content/intuitionistic-logic/tableaux/proofs.tex',11,11,11,11,'for Intuitionistic Logic','అంతఃప్రజ్ఞావాద తర్కానికి'),
+ L('content/intuitionistic-logic/tableaux/proofs.tex',14,16,14,17,'closed tableau','సంవృత టాబ్లోను'),
+ L('content/intuitionistic-logic/tableaux/proofs.tex',29,36,30,44,'\\TRule{\\False}{\\land}[4]','\\TRule{\\False}{\\land}[7]'),
+ L('content/intuitionistic-logic/tableaux/proofs.tex',47,55,49,58,'Find closed','కనుగొనండి')
+];
+locations['TE-T205']=[
+ L('content/intuitionistic-logic/tableaux/soundness.tex',11,11,11,11,'Soundness for Intuitionistic','అంతఃప్రజ్ఞావాద'),
+ L('content/intuitionistic-logic/tableaux/soundness.tex',36,41,54,61,'interpretation of','అర్థనిర్దేశం'),
+ L('content/intuitionistic-logic/tableaux/soundness.tex',85,87,127,130,'Soundness','నిర్దుష్టత'),
+ L('content/intuitionistic-logic/tableaux/soundness.tex',91,96,133,146,'satisfiable','సంతృప్తిపరచదగిన')
+];
+locations['TE-T206']=[
+ L('content/counterfactuals/counterfactuals.tex',7,7,7,7,'Counter\\-factuals','ప్రతివాస్తవ సోపాధికాలు')
+];
+locations['TE-T207']=[
+ L('content/counterfactuals/introduction/introduction.tex',8,8,8,8,'Introduction','పరిచయం')
+];
+locations['TE-T208']=[
+ L('content/counterfactuals/introduction/material-conditional.tex',11,11,11,11,'Material Conditional','భౌతిక సోపాధికం'),
+ L('content/counterfactuals/introduction/material-conditional.tex',21,23,24,28,'truth-functional','సత్యమూల్యాధారితం'),
+ L('content/counterfactuals/introduction/material-conditional.tex',38,44,49,59,'antecedent','పూర్వపక్షం')
+];
+locations['TE-T209']=[
+ L('content/counterfactuals/introduction/paradoxes-material.tex',11,11,11,11,'Paradoxes of the Material Conditional','భౌతిక సోపాధికం యొక్క వైరుధ్యాభాసాలు'),
+ L('content/counterfactuals/introduction/paradoxes-material.tex',23,25,30,34,'entailment','తార్కిక పర్యవసానం'),
+ L('content/counterfactuals/introduction/paradoxes-material.tex',52,56,75,84,'indicative','సూచనాత్మక')
+];
+locations['TE-T210']=[
+ L('content/counterfactuals/introduction/strict-conditional.tex',11,11,11,11,'Strict Conditional','కఠిన సోపాధికం'),
+ L('content/counterfactuals/introduction/strict-conditional.tex',13,17,13,20,'strict conditional','కఠిన సోపాధికం'),
+ L('content/counterfactuals/introduction/strict-conditional.tex',78,84,92,100,'necessarily','అనివార్యంగా')
+];
+locations['TE-T211']=[
+ L('content/counterfactuals/introduction/counterfactuals.tex',17,22,18,30,'counterfactual','ప్రతివాస్తవ'),
+ L('content/counterfactuals/introduction/counterfactuals.tex',24,29,32,42,"If Oswald didn't kill Kennedy",'ఓస్వాల్డ్ కెన్నెడీని చంపకపోతే'),
+ L('content/counterfactuals/introduction/counterfactuals.tex',52,56,79,88,'causal','కారణాత్మక'),
+ L('content/counterfactuals/introduction/counterfactuals.tex',68,70,107,113,'closest','సమీపంగా')
+];
+locations['TE-T212']=[
+ L('content/counterfactuals/minimal-change-semantics/minimal-change-semantics.tex',8,8,8,8,'Minimal Change Semantics','కనిష్ఠ మార్పు అర్థవిచారం')
+];
+locations['TE-T213']=[
+ L('content/counterfactuals/minimal-change-semantics/introduction.tex',15,20,19,26,'minimally different','కనిష్ఠంగా'),
+ L('content/counterfactuals/minimal-change-semantics/introduction.tex',33,38,49,61,'\\boxright','\\boxright'),
+ L('content/counterfactuals/minimal-change-semantics/introduction.tex',46,51,75,86,'nested spheres','గోళాల'),
+ L('content/counterfactuals/minimal-change-semantics/introduction.tex',63,66,99,108,'closest','సమీప')
+];
+locations['TE-T214']=[
+ L('content/counterfactuals/minimal-change-semantics/sphere-models.tex',11,11,11,11,'Sphere Models','గోళ నమూనాలు'),
+ L('content/counterfactuals/minimal-change-semantics/sphere-models.tex',20,29,25,44,'sphere model','గోళ నమూనా'),
+ L('content/counterfactuals/minimal-change-semantics/sphere-models.tex',60,61,88,89,'Diagram of a sphere model','గోళ నమూనా చిత్రం'),
+ L('content/counterfactuals/minimal-change-semantics/sphere-models.tex',95,103,146,166,'admitting','కలిగిన')
+];
+locations['TE-T215']=[
+ L('content/counterfactuals/minimal-change-semantics/true-false.tex',11,11,11,11,'Truth and Falsity','సత్యం, అసత్యం'),
+ L('content/counterfactuals/minimal-change-semantics/true-false.tex',26,27,29,30,'Non-vacuously true','శూన్యసత్యం కాని'),
+ L('content/counterfactuals/minimal-change-semantics/true-false.tex',44,45,49,50,'Vacuously true','శూన్యసత్య'),
+ L('content/counterfactuals/minimal-change-semantics/true-false.tex',63,64,74,75,'False counterfactual, false opposite','అసత్య ప్రతివాస్తవం; వ్యతిరేకమూ అసత్యం'),
+ L('content/counterfactuals/minimal-change-semantics/true-false.tex',109,110,132,133,'Contingent counterfactual','స్థితిని బట్టి సత్యం మారే')
+];
+locations['TE-T216']=[
+ L('content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex',11,14,11,15,'Antecedent Strengthening','పూర్వపక్షాన్ని బలపరచడం'),
+ L('content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex',18,24,20,33,'outer space','బాహ్య అంతరిక్షంలో'),
+ L('content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex',34,43,49,72,'sphere semantics','గోళ అర్థవిచారంలో'),
+ L('content/counterfactuals/minimal-change-semantics/antecedent-strengthening.tex',64,65,96,97,'Counterexample to antecedent strengthening','పూర్వపక్ష బలపరచడానికి ప్రతిదృష్టాంతం')
+];
+locations['TE-T217']=[
+ L('content/counterfactuals/minimal-change-semantics/transitivity.tex',11,14,11,15,'Transitivity','సంక్రామకత్వం'),
+ L('content/counterfactuals/minimal-change-semantics/transitivity.tex',18,24,20,29,'Hoover','హూవర్'),
+ L('content/counterfactuals/minimal-change-semantics/transitivity.tex',53,63,79,114,'sphere semantics','గోళ అర్థవిచారంలో')
+];
+locations['TE-T218']=[
+ L('content/counterfactuals/minimal-change-semantics/contraposition.tex',11,15,11,16,'Contraposition','ప్రతివిపర్యయం'),
+ L('content/counterfactuals/minimal-change-semantics/contraposition.tex',17,23,18,32,'Goethe','గోథె'),
+ L('content/counterfactuals/minimal-change-semantics/contraposition.tex',26,34,35,59,'sphere semantics','గోళ అర్థవిచారంలో'),
+ L('content/counterfactuals/minimal-change-semantics/contraposition.tex',53,54,78,79,'Counterexample to contraposition','ప్రతివిపర్యయానికి ప్రతిదృష్టాంతం')
+];
+locations['TE-T219']=[
+ L('content/set-theory/set-theory.tex',7,7,7,7,'Set Theory','సమితి సిద్ధాంతం')
+];
+locations['TE-T220']=[
+ L('content/set-theory/story/story.tex',7,7,7,7,'The Iterative Conception','దశలవారీ భావన')
+];
+locations['TE-T221']=[
+ L('content/set-theory/story/extensionality.tex',6,6,6,6,'Extensionality','సమితుల సమానత్వ సూత్రం'),
+ L('content/set-theory/story/extensionality.tex',8,13,8,17,'individuated','గుర్తింపు'),
+ L('content/set-theory/story/extensionality.tex',20,24,22,29,'Axiom of Extensionality','సమితుల సమానత్వ స్వీకృతం')
+];
+locations['TE-T222']=[
+ L('content/set-theory/story/russells-paradox-again.tex',6,6,6,6,"Russell's Paradox",'రసెల్ వైరుధ్యం'),
+ L('content/set-theory/story/russells-paradox-again.tex',14,14,17,19,'Comprehension','ధర్మసంగ్రహం'),
+ L('content/set-theory/story/russells-paradox-again.tex',19,22,31,41,"Russell's Paradox",'రసెల్ వైరుధ్యం'),
+ L('content/set-theory/story/russells-paradox-again.tex',38,45,74,93,'non-self-membered','తమలో తాము మూలకాలుగా')
+];
+locations['TE-T223']=[
+ L('content/set-theory/story/predicativity.tex',7,7,7,7,'Predicative and Impredicative','స్వవర్గానవలంబిత, స్వవర్గావలంబిత'),
+ L('content/set-theory/story/predicativity.tex',15,17,22,28,'impredicative','స్వవర్గావలంబిత'),
+ L('content/set-theory/story/predicativity.tex',34,40,55,71,'vicious-circle','దుష్టవలయ'),
+ L('content/set-theory/story/predicativity.tex',44,47,74,82,'Predicative Comprehension','స్వవర్గానవలంబిత ధర్మసంగ్రహం'),
+ L('content/set-theory/story/predicativity.tex',70,77,128,146,'Ramsey','రామ్సే'),
+ L('content/set-theory/story/predicativity.tex',102,107,193,211,'cumulative-iterative','సంచిత-దశలవారీ')
+];
+locations['TE-T224']=[
+ L('content/set-theory/story/cumulative-approach.tex',6,6,6,6,'Cumulative-Iterative Approach','సంచిత-దశలవారీ పద్ధతి'),
+ L('content/set-theory/story/cumulative-approach.tex',11,15,11,23,'stages','దశలలో'),
+ L('content/set-theory/story/cumulative-approach.tex',23,36,34,71,'stage $0$','దశ $0$'),
+ L('content/set-theory/story/cumulative-approach.tex',68,83,112,145,'Russell set','రసెల్')
+];
+locations['TE-T225']=[
+ L('content/set-theory/story/urelements.tex',6,6,6,6,'Urelements or Not?','సమితి కాని మూలకాలు ఉండాలా?'),
+ L('content/set-theory/story/urelements.tex',9,10,10,14,'urelements','సమితి కాని మూలకాల'),
+ L('content/set-theory/story/urelements.tex',13,18,17,43,'non-sets','సమితులు కాని'),
+ L('content/set-theory/story/urelements.tex',43,55,64,93,'applicable','అన్వయించగలిగేలా'),
+ L('content/set-theory/story/urelements.tex',69,72,117,125,'applicability','అన్వయయోగ్యత')
+];
+locations['TE-T226']=[
+ L('content/set-theory/story/grundgesetze.tex',7,7,7,7,'Basic Law V','ప్రాథమిక నియమం V'),
+ L('content/set-theory/story/grundgesetze.tex',17,19,24,27,'extension of a concept','భావన'),
+ L('content/set-theory/story/grundgesetze.tex',20,23,29,35,'value-range','విలువల'),
+ L('content/set-theory/story/grundgesetze.tex',31,34,55,57,'Basic Law V','ప్రాథమిక')
+];
+locations['TE-T227']=[
+ L('content/set-theory/z/z.tex',8,8,8,8,'Steps towards','వైపు అడుగులు')
+];
+locations['TE-T228']=[
+ L('content/set-theory/z/story.tex',13,13,16,16,'Every set is formed','ప్రతి సమితీ'),
+ L('content/set-theory/z/story.tex',14,20,17,30,'well-ordered','సుక్రమితంగా'),
+ L('content/set-theory/z/story.tex',21,25,31,38,'For any stage','ఏ దశ')
+];
+locations['TE-T229']=[
+ L('content/set-theory/z/separation.tex',6,6,6,6,'Separation','వేరుచేయడం'),
+ L('content/set-theory/z/separation.tex',10,13,12,14,'Scheme of Separation','వేరుచేయడం స్వీకృత పథకం'),
+ L('content/set-theory/z/separation.tex',49,53,85,88,'universal','విశ్వవ్యాప్త'),
+ L('content/set-theory/z/separation.tex',93,97,158,166,'arbitrary intersections','సర్వసామాన్య ఛేదనలు')
+];
+locations['TE-T230']=[
+ L('content/set-theory/z/union.tex',6,6,6,6,'Union','సమ్మేళనం'),
+ L('content/set-theory/z/union.tex',12,16,15,21,'Union','సమ్మేళనం')
+];
+locations['TE-T231']=[
+ L('content/set-theory/z/pairs.tex',6,6,6,6,'Pairs','జంటలు'),
+ L('content/set-theory/z/pairs.tex',19,22,34,45,'no last stage','చివరి దశ లేదు'),
+ L('content/set-theory/z/pairs.tex',31,38,67,76,'tuples','క్రమయుగ్మ')
+];
+locations['TE-T232']=[
+ L('content/set-theory/z/powerset.tex',6,6,6,6,'Powersets','ఘాత సమితులు'),
+ L('content/set-theory/z/powerset.tex',10,14,11,17,'Powersets','ఘాత సమితులు'),
+ L('content/set-theory/z/powerset.tex',28,29,42,47,'Cartesian product','కార్టీజియన్ లబ్ధం'),
+ L('content/set-theory/z/powerset.tex',57,60,95,103,'equivalence classes','సమానతా వర్గాల')
+];
+locations['TE-T233']=[
+ L('content/set-theory/z/infinity-again.tex',6,6,6,6,'Infinity','అనంతత్వం'),
+ L('content/set-theory/z/infinity-again.tex',47,51,78,83,'Infinity','అనంతత్వ స్వీకృతం'),
+ L('content/set-theory/z/infinity-again.tex',70,72,124,126,'Dedekind infinite','డెడెకిండ్'),
+ L('content/set-theory/z/infinity-again.tex',104,109,189,199,'infinite stage','అనంత దశ')
+];
+locations['TE-T234']=[
+ L('content/set-theory/z/milestone.tex',6,6,6,6,'Milestone','మైలురాయి'),
+ L('content/set-theory/z/milestone.tex',12,14,18,26,'Extensionality','సమితుల సమానత్వ సూత్రం'),
+ L('content/set-theory/z/milestone.tex',16,20,29,38,'Zermelo','సెర్మెలో')
+];
+locations['TE-T235']=[
+ L('content/set-theory/z/nat.tex',6,6,6,6,'Selecting our Natural Numbers','మన సహజ సంఖ్యల ఎంపిక'),
+ L('content/set-theory/z/nat.tex',14,16,15,23,'metaphysical claim','తాత్త్వికంగా'),
+ L('content/set-theory/z/nat.tex',29,37,46,65,'Zermelo','సెర్మెలో'),
+ L('content/set-theory/z/nat.tex',47,55,87,91,'Benacerraf','Benacerraf1965')
+];
+locations['TE-T236']=[
+ L('content/set-theory/z/arbintersections.tex',6,6,6,6,'Closure, Comprehension, and Intersection','సంవృతత, ధర్మసంగ్రహం, ఛేదనం'),
+ L('content/set-theory/z/arbintersections.tex',32,43,53,70,'Separation','వేరుచేయడం'),
+ L('content/set-theory/z/arbintersections.tex',51,62,85,108,'closureofunder','closureofunder')
+];
+locations['TE-T237']=[
+ L('content/set-theory/ordinals/ordinals.tex',7,7,7,7,'Ordinals','క్రమసంఖ్యలు')
+];
+locations['TE-T238']=[
+ L('content/set-theory/ordinals/introduction.tex',13,20,13,31,'infinite-th stage','అనంతవ దశ'),
+ L('content/set-theory/ordinals/introduction.tex',23,27,38,48,'transfinite ordinal','అతిపరిమిత')
+];
+locations['TE-T239']=[
+ L('content/set-theory/ordinals/idea.tex',6,6,6,6,'Ordinal','క్రమసంఖ్య'),
+ L('content/set-theory/ordinals/idea.tex',19,22,21,25,'sequence','అనుక్రమం'),
+ L('content/set-theory/ordinals/idea.tex',38,39,52,56,'omega+1','omega+1'),
+ L('content/set-theory/ordinals/idea.tex',61,62,82,84,'\\omega+\\omega','\\omega+\\omega')
+];
+locations['TE-T240']=[
+ L('content/set-theory/ordinals/wo.tex',6,6,6,6,'Well-Orderings','సుక్రమాలు'),
+ L('content/set-theory/ordinals/wo.tex',11,18,10,23,'well-orders','సుక్రమితం'),
+ L('content/set-theory/ordinals/wo.tex',32,36,43,52,'least member','అత్యల్ప'),
+ L('content/set-theory/ordinals/wo.tex',47,52,86,96,'formula','సూత్రానికైనా')
+];
+locations['TE-T241']=[
+ L('content/set-theory/ordinals/iso.tex',6,6,6,6,'Order-Isomorphisms','క్రమ-సమరూపతలు'),
+ L('content/set-theory/ordinals/iso.tex',13,17,18,31,'order-isomorphic','క్రమ-సమరూపమైనవి'),
+ L('content/set-theory/ordinals/iso.tex',63,66,118,127,'initial segment','ఆరంభ ఖండం'),
+ L('content/set-theory/ordinals/iso.tex',138,141,252,261,'initial segment','ఆరంభ ఖండంతో')
+];
+locations['TE-T242']=[
+ L('content/set-theory/ordinals/vn.tex',6,6,6,6,'Von Neumann','వాన్ న్యూమన్'),
+ L('content/set-theory/ordinals/vn.tex',9,13,10,20,'order','క్రమరకాలు'),
+ L('content/set-theory/ordinals/vn.tex',26,30,43,50,'transitive','సంక్రామకం'),
+ L('content/set-theory/ordinals/vn.tex',45,49,74,86,'natural numbers','సహజ సంఖ్యలను')
+];
+locations['TE-T243']=[
+ L('content/set-theory/ordinals/basic.tex',6,6,6,6,'Basic Properties','ప్రాథమిక ధర్మాలు'),
+ L('content/set-theory/ordinals/basic.tex',43,49,75,84,'Transfinite Induction','అతిపరిమిత ఆగమనం'),
+ L('content/set-theory/ordinals/basic.tex',74,77,128,134,'Trichotomy','త్రివిధత'),
+ L('content/set-theory/ordinals/basic.tex',146,148,276,280,'Burali-Forti Paradox','బురాలి-ఫోర్టీ వైరుధ్యం')
+];
+locations['TE-T244']=[
+ L('content/set-theory/ordinals/replacement.tex',6,6,6,6,'Replacement','ప్రతిస్థాపన'),
+ L('content/set-theory/ordinals/replacement.tex',20,26,33,45,'Scheme of Replacement','ప్రతిస్థాపన స్వీకృత పథకం'),
+ L('content/set-theory/ordinals/replacement.tex',43,47,85,95,'term','పదం'),
+ L('content/set-theory/ordinals/replacement.tex',61,68,120,138,'function','ప్రమేయానికి')
+];
+locations['TE-T245']=[
+ L('content/set-theory/ordinals/milestone.tex',5,5,5,5,'milestone','మైలురాయి'),
+ L('content/set-theory/ordinals/milestone.tex',13,17,21,34,'ZFminus','ZFminus'),
+ L('content/set-theory/ordinals/milestone.tex',20,24,36,49,'Zermelo--Fraenkel','సెర్మెలో--ఫ్రెంకెల్')
+];
+locations['TE-T246']=[
+ L('content/set-theory/ordinals/ordtype.tex',6,6,6,6,'Ordinals as Order-Types','క్రమరకాలుగా క్రమసంఖ్యలు'),
+ L('content/set-theory/ordinals/ordtype.tex',10,12,15,19,'Every well-ordering','ప్రతి సుక్రమమూ'),
+ L('content/set-theory/ordinals/ordtype.tex',48,53,102,111,'order type','క్రమరకం'),
+ L('content/set-theory/ordinals/ordtype.tex',56,63,116,127,'ordtypesworklikeyouwant','ordtypesworklikeyouwant')
+];
+locations['TE-T247']=[
+ L('content/set-theory/ordinals/opps.tex',6,6,6,6,'Successor and Limit Ordinals','ఉత్తరవర్తి, సీమా క్రమసంఖ్యలు'),
+ L('content/set-theory/ordinals/opps.tex',11,18,14,31,'limit','సీమా'),
+ L('content/set-theory/ordinals/opps.tex',43,53,67,79,'Simple Transfinite Induction','సరళ అతిపరిమిత ఆగమనం'),
+ L('content/set-theory/ordinals/opps.tex',70,77,110,132,'least strict upper bound','కనిష్ఠ కఠిన పై')
+];
+locations['TE-T248']=[
+ L('content/set-theory/spine/spine.tex',8,8,8,8,'Stages and Ranks','దశలు, స్థాయిలు')
+];
+locations['TE-T249']=[
+ L('content/set-theory/spine/idea.tex',7,7,7,7,'Defining the Stages','దశలను'),
+ L('content/set-theory/spine/idea.tex',26,29,35,40,'transfinite recursion','అతిపరిమిత పునరావృత్తి'),
+ L('content/set-theory/spine/idea.tex',37,41,62,70,'internal','అంతర్గత')
+];
+locations['TE-T250']=[
+ L('content/set-theory/spine/recursion.tex',6,6,6,6,'Transfinite Recursion','అతిపరిమిత పునరావృత్తి'),
+ L('content/set-theory/spine/recursion.tex',18,20,33,49,'approximation','ఉజ్జాయింపు'),
+ L('content/set-theory/spine/recursion.tex',88,98,180,195,'Simple Recursion','సరళ పునరావృత్తి')
+];
+locations['TE-T251']=[
+ L('content/set-theory/spine/stagesbasics.tex',6,6,6,6,'Basic Properties of Stages','దశల ప్రాథమిక ధర్మాలు'),
+ L('content/set-theory/spine/stagesbasics.tex',8,11,8,11,'potent','సమర్థమైనది'),
+ L('content/set-theory/spine/stagesbasics.tex',83,87,55,55,'cumulative','సంచితమైనది')
+];
+locations['TE-T252']=[
+ L('content/set-theory/spine/foundation.tex',7,7,7,7,'Foundation','పునాది'),
+ L('content/set-theory/spine/foundation.tex',26,26,16,16,'Regularity','నియమితత్వం'),
+ L('content/set-theory/spine/foundation.tex',45,45,33,33,'transitive closure','సంక్రమణ ఆవరణ')
+];
+locations['TE-T253']=[
+ L('content/set-theory/spine/zf.tex',6,6,6,6,'Milestone','మైలురాయి'),
+ L('content/set-theory/spine/zf.tex',14,16,11,11,'Foundation','పునాది'),
+ L('content/set-theory/spine/zf.tex',18,19,13,13,'Replacement','ప్రతిస్థాపన')
+];
+locations['TE-T254']=[
+ L('content/set-theory/spine/rank.tex',6,6,6,6,'Rank','స్థాయి'),
+ L('content/set-theory/spine/rank.tex',9,11,8,8,'rank','స్థాయి'),
+ L('content/set-theory/spine/rank.tex',53,53,48,48,'Induction Scheme','ఆగమన పథకం')
+];
+locations['TE-T255']=[
+ L('content/set-theory/replacement/replacement.tex',8,8,8,8,'Replacement','ప్రతిస్థాపన')
+];
+locations['TE-T256']=[
+ L('content/set-theory/replacement/introduction.tex',8,11,8,8,'Replacement','ప్రతిస్థాపన'),
+ L('content/set-theory/replacement/introduction.tex',16,16,12,12,'extrinsic','బాహ్య'),
+ L('content/set-theory/replacement/introduction.tex',16,16,12,12,'intrinsic','అంతర్గత')
+];
+locations['TE-T257']=[
+ L('content/set-theory/replacement/strength.tex',6,6,6,6,'Strength of Replacement','ప్రతిస్థాపన బలం'),
+ L('content/set-theory/replacement/strength.tex',13,13,10,10,'relativization','పరిధికి పరిమితం చేయడం'),
+ L('content/set-theory/replacement/strength.tex',45,45,24,24,'very tall','చాలా ఎత్తుగా')
+];
+locations['TE-T258']=[
+ L('content/set-theory/replacement/extrinsic.tex',6,6,6,6,'Extrinsic Considerations','బాహ్య పరిశీలనలు'),
+ L('content/set-theory/replacement/extrinsic.tex',39,39,19,19,'Level Theory','స్థర సిద్ధాంతం'),
+ L('content/set-theory/replacement/extrinsic.tex',39,39,19,19,'rank','స్థాయి'),
+ L('content/set-theory/replacement/extrinsic.tex',89,90,34,34,'intrinsic','అంతర్గత')
+];
+locations['TE-T259']=[
+ L('content/set-theory/replacement/limofsize.tex',6,6,6,6,'Limitation-of-size','పరిమాణ పరిమితి'),
+ L('content/set-theory/replacement/limofsize.tex',11,12,10,10,'not too many','మరీ ఎక్కువగా లేకపోతే')
+];
+locations['TE-T260']=[
+ L('content/set-theory/replacement/absinf.tex',6,6,6,6,'Absolute Infinity','సంపూర్ణ అనంతత్వం'),
+ L('content/set-theory/replacement/absinf.tex',66,66,26,26,'cofinal','సహాంత్యమైనది')
+];
+locations['TE-T261']=[
+ L('content/set-theory/replacement/ref.tex',6,6,6,6,'Reflection','ప్రతిబింబనం'),
+ L('content/set-theory/replacement/ref.tex',11,11,11,11,'Reflection Schema','ప్రతిబింబన పథకం'),
+ L('content/set-theory/replacement/ref.tex',22,22,19,19,'initial segments','ఆరంభ ఖండాల్లో')
+];
+locations['TE-T262']=[
+ L('content/set-theory/replacement/refproofs.tex',15,15,10,10,'overlining','పైగీత'),
+ L('content/set-theory/replacement/refproofs.tex',103,103,74,74,'Weak-Reflection','బలహీన ప్రతిబింబనం'),
+ L('content/set-theory/replacement/refproofs.tex',126,126,90,90,'absolute','నిరపేక్షాలు')
+];
+locations['TE-T263']=[
+ L('content/set-theory/replacement/finiteaxiomatizability.tex',6,6,6,6,'Finite axiomatizability','పరిమిత స్వయంసిద్ధీకరణ'),
+ L('content/set-theory/replacement/finiteaxiomatizability.tex',9,9,9,9,'finitely axiomatizable','పరిమిత సంఖ్యలో స్వయంసిద్ధ సూత్రాలతో'),
+ L('content/set-theory/replacement/finiteaxiomatizability.tex',20,20,20,20,'transitive model','సంక్రమణ నమూనా')
+];
+locations['TE-T264']=[
+ L('content/set-theory/ord-arithmetic/ord-arithmetic.tex',8,8,8,8,'Ordinal Arithmetic','క్రమసంఖ్య అంకగణితం')
+];
+locations['TE-T265']=[
+ L('content/set-theory/ord-arithmetic/introduction.tex',9,10,8,8,'spine','వెన్నెముక'),
+ L('content/set-theory/ord-arithmetic/introduction.tex',12,12,8,8,'ordinal arithmetic','క్రమసంఖ్య అంకగణితం')
+];
+locations['TE-T266']=[
+ L('content/set-theory/ord-arithmetic/addition.tex',6,6,6,6,'Ordinal Addition','క్రమసంఖ్య కూడిక'),
+ L('content/set-theory/ord-arithmetic/addition.tex',26,27,14,15,'disjoint sum','విచ్ఛిన్న సమ్మేళనం'),
+ L('content/set-theory/ord-arithmetic/addition.tex',41,42,29,29,'reverse lexicographic','విలోమ నిఘంటు క్రమం'),
+ L('content/set-theory/ord-arithmetic/addition.tex',185,186,147,148,'not','క్రమమార్పిడి ధర్మం లేదు')
+];
+locations['TE-T267']=[
+ L('content/set-theory/ord-arithmetic/using-addition.tex',6,6,6,6,'Using Ordinal Addition','క్రమసంఖ్య కూడిక వినియోగం'),
+ L('content/set-theory/ord-arithmetic/using-addition.tex',77,77,62,62,'equinumerous','సమసంఖ్యకాలు'),
+ L('content/set-theory/ord-arithmetic/using-addition.tex',78,78,63,63,'Dedekind infinite','డెడెకిండ్ అనంతం')
+];
+locations['TE-T268']=[
+ L('content/set-theory/ord-arithmetic/multiplication.tex',7,7,7,7,'Ordinal Multiplication','క్రమసంఖ్య గుణకారం'),
+ L('content/set-theory/ord-arithmetic/multiplication.tex',18,19,11,11,'reverse lexicographic','విలోమ నిఘంటు క్రమాన్ని')
+];
+locations['TE-T269']=[
+ L('content/set-theory/ord-arithmetic/exponentiation.tex',6,6,6,6,'Ordinal Exponentiation','క్రమసంఖ్య ఘాతాంకం'),
+ L('content/set-theory/ord-arithmetic/exponentiation.tex',11,11,10,10,'synthetic definitions','నిర్మాణాత్మక నిర్వచనాలు'),
+ L('content/set-theory/ord-arithmetic/exponentiation.tex',32,32,20,20,'transfinite','అతిపరిమిత పునరావృత్తి')
+];
+locations['TE-T270']=[
+ L('content/set-theory/cardinals/cardinals.tex',8,8,8,8,'Cardinals','కార్డినల్ సంఖ్యలు')
+];
+locations['TE-T271']=[
+ L('content/set-theory/cardinals/cp.tex',6,6,6,6,"Cantor's Principle",'కాంటర్ సూత్రం'),
+ L('content/set-theory/cardinals/cp.tex',33,34,18,18,'cardinality','కార్డినాలిటీని'),
+ L('content/set-theory/cardinals/cp.tex',36,36,20,20,'iff','అప్పుడూ అప్పుడే')
+];
+locations['TE-T272']=[
+ L('content/set-theory/cardinals/cardsasords.tex',6,6,6,6,'Cardinals as Ordinals','క్రమసంఖ్యలుగా కార్డినల్ సంఖ్యలు'),
+ L('content/set-theory/cardinals/cardsasords.tex',36,38,19,21,'Well-Ordering','సుక్రమపరచడం')
+];
+locations['TE-T273']=[
+ L('content/set-theory/cardinals/milestone.tex',6,6,6,6,'A Milestone','ఒక మైలురాయి'),
+ L('content/set-theory/cardinals/milestone.tex',11,17,10,12,'Well-Ordering','సుక్రమపరచడం')
+];
+locations['TE-T274']=[
+ L('content/set-theory/cardinals/classing.tex',8,10,8,8,'enumerable','లెక్కించదగిన'),
+ L('content/set-theory/cardinals/classing.tex',99,101,69,69,'nonenumerable','లెక్కించలేని')
+];
+locations['TE-T275']=[
+ L('content/set-theory/cardinals/hp.tex',6,6,6,6,"Hume's Principle",'హ్యూమ్ సూత్రం'),
+ L('content/set-theory/cardinals/hp.tex',64,69,33,33,'impredicatively','స్వవర్గావలంబితంగా')
+];
+locations['TE-T276']=[
+ L('content/set-theory/card-arithmetic/card-arithmetic.tex',8,8,8,8,'Cardinal Arithmetic','కార్డినల్ అంకగణితం')
+];
+locations['TE-T277']=[
+ L('content/set-theory/card-arithmetic/opps.tex',6,6,6,6,'Defining the Basic Operations','ప్రాథమిక క్రియల నిర్వచనం'),
+ L('content/set-theory/card-arithmetic/opps.tex',8,8,8,8,'cardinal arithmetic','కార్డినల్ అంకగణితాన్ని'),
+ L('content/set-theory/card-arithmetic/opps.tex',48,48,30,30,'commutative and associative','క్రమమార్పిడి, సహచర్య ధర్మాలు')
+];
+locations['TE-T278']=[
+ L('content/set-theory/card-arithmetic/simp.tex',6,6,6,6,'Simplifying Addition and Multiplication','కూడిక, గుణకారాల సరళీకరణ'),
+ L('content/set-theory/card-arithmetic/simp.tex',15,16,11,11,'canonical ordering','ప్రామాణిక క్రమం')
+];
+locations['TE-T279']=[
+ L('content/set-theory/card-arithmetic/expotough.tex',6,6,6,6,'Cardinal Exponentiation','కార్డినల్ ఘాతాంకంలో'),
+ L('content/set-theory/card-arithmetic/expotough.tex',40,42,28,29,'bijection','ద్వైజెక్షన్')
+];
+locations['TE-T280']=[
+ L('content/set-theory/card-arithmetic/ch.tex',7,7,7,7,'Continuum Hypothesis','సాతత్య పరికల్పన'),
+ L('content/set-theory/card-arithmetic/ch.tex',90,90,61,61,'Generalized Continuum Hypothesis','సాధారణీకృత సాతత్య పరికల్పన')
+];
+locations['TE-T281']=[
+ L('content/set-theory/card-arithmetic/fix.tex',6,6,6,6,'Fixed Points','స్థిర బిందువులు'),
+ L('content/set-theory/card-arithmetic/fix.tex',136,136,91,91,'wide as it is tall','వెడల్పు దాని ఎత్తుతో సమానం')
+];
+locations['TE-T282']=[
+ L('content/set-theory/choice/choice.tex',8,8,8,8,'Choice','ఎంపిక')
+];
+locations['TE-T283']=[
+ L('content/set-theory/choice/introduction.tex',11,13,9,9,'Axiom of Well-Ordering','సుక్రమపరచడం స్వయంసిద్ధం'),
+ L('content/set-theory/choice/introduction.tex',12,13,9,9,'Axiom of','ఎంపిక స్వయంసిద్ధం')
+];
+locations['TE-T284']=[
+ L('content/set-theory/choice/tarskiscott.tex',6,6,6,6,'Tarski--Scott Trick','టార్స్కీ--స్కాట్ యుక్తి'),
+ L('content/set-theory/choice/tarskiscott.tex',35,38,20,22,'least possible rank','అత్యల్ప స్థాయి')
+];
+locations['TE-T285']=[
+ L('content/set-theory/choice/hartogs.tex',6,6,6,6,"Hartogs' Lemma",'హార్టోగ్స్ లెమ్మా'),
+ L('content/set-theory/choice/hartogs.tex',77,83,59,59,'incomparable','పోల్చలేం')
+];
+locations['TE-T286']=[
+ L('content/set-theory/choice/wellorderingproblem.tex',6,6,6,6,'Well-Ordering Problem','సుక్రమపరచడం సమస్య'),
+ L('content/set-theory/choice/wellorderingproblem.tex',25,25,15,15,'choice function','ఎంపిక ప్రమేయం'),
+ L('content/set-theory/choice/wellorderingproblem.tex',39,39,27,27,'Well-Ordering and Choice','సుక్రమపరచడం, ఎంపిక')
+];
+locations['TE-T287']=[
+ L('content/set-theory/choice/countablechoice.tex',6,6,6,6,'Countable Choice','లెక్కించదగిన ఎంపిక'),
+ L('content/set-theory/choice/countablechoice.tex',88,89,66,66,'countable union','లెక్కించదగిన సమితుల లెక్కించదగిన సమ్మేళనం')
+];
+locations['TE-T288']=[
+ L('content/set-theory/choice/justifications.tex',6,6,6,6,'Intrinsic Considerations','అంతర్గత సమర్థనపై పరిశీలనలు'),
+ L('content/set-theory/choice/justifications.tex',32,32,20,20,'choice set','ఎంపిక సమితి')
+];
+locations['TE-T289']=[
+ L('content/set-theory/choice/banach.tex',6,6,6,6,'Banach--Tarski Paradox','బనాక్--టార్స్కీ వైరుధ్యాభాసం'),
+ L('content/set-theory/choice/banach.tex',65,65,34,34,'measurable','కొలవదగినవి')
+];
+locations['TE-T290']=[
+ L('content/set-theory/choice/vitali.tex',6,6,6,6,"Vitali's Paradox",'విటాలి వైరుధ్యాభాసం'),
+ L('content/set-theory/choice/vitali.tex',35,37,16,17,'rational','పరిమేయ')
+];
+locations['TE-T291']=[
+ L('content/methods/methods.tex',7,7,7,7,'Methods','పద్ధతులు'),
+ L('content/methods/methods.tex',10,12,10,12,'proof methods','నిరూపణ పద్ధతులను')
+];
+locations['TE-T292']=[
+ L('content/methods/proofs/proofs.tex',8,8,8,8,'Proofs','నిరూపణలు')
+];
+locations['TE-T293']=[
+ L('content/methods/proofs/introduction.tex',13,16,13,13,'derivation','వ్యుత్పత్తి'),
+ L('content/methods/proofs/introduction.tex',43,55,19,19,'A lemma','ఉపప్రమేయం'),
+ L('content/methods/proofs/introduction.tex',57,67,21,21,'hypotheses','పరికల్పనలు')
+];
+locations['TE-T294']=[
+ L('content/methods/proofs/starting-proofs.tex',11,11,11,11,'Starting a Proof','నిరూపణను ప్రారంభించడం'),
+ L('content/methods/proofs/starting-proofs.tex',21,25,17,17,'assumptions','పరికల్పనలు')
+];
+locations['TE-T295']=[
+ L('content/methods/proofs/using-definitions.tex',17,20,13,13,'definiendum','నిర్వచ్యపదం'),
+ L('content/methods/proofs/using-definitions.tex',70,80,34,37,'unpacking the definition','నిర్వచనాన్ని విప్పితే')
+];
+locations['TE-T296']=[
+ L('content/methods/proofs/inference-patterns.tex',11,11,11,11,'Inference Patterns','నిగమన నమూనాలు'),
+ L('content/methods/proofs/inference-patterns.tex',96,96,38,38,'Conditional Proof','సోపాధిక నిరూపణ'),
+ L('content/methods/proofs/inference-patterns.tex',166,166,66,66,'Proof by Cases','సందర్భాలవారీ నిరూపణ'),
+ L('content/methods/proofs/inference-patterns.tex',230,230,96,96,'Proving an Existence Claim','అస్తిత్వ వాదనను నిరూపించడం')
+];
+locations['TE-T297']=[
+ L('content/methods/proofs/example-1.tex',11,11,11,11,'An Example','ఒక ఉదాహరణ'),
+ L('content/methods/proofs/example-1.tex',18,19,16,17,'For any sets','ఏ సమితులు')
+];
+locations['TE-T298']=[
+ L('content/methods/proofs/example-2.tex',11,11,11,11,'Another Example','మరో ఉదాహరణ'),
+ L('content/methods/proofs/example-2.tex',86,91,53,55,'excluded middle','బహిష్కృత మధ్యమ సూత్రం')
+];
+locations['TE-T299']=[
+ L('content/methods/proofs/proof-by-contradiction.tex',11,11,11,11,'Proof by Contradiction','వైరుధ్యం ద్వారా నిరూపణ'),
+ L('content/methods/proofs/proof-by-contradiction.tex',81,86,44,45,'Every positive claim','ప్రతి సానుకూల వాదన')
+];
+locations['TE-T300']=[
+ L('content/methods/proofs/reading-proofs.tex',10,10,10,10,'Reading Proofs','నిరూపణలను చదవడం'),
+ L('content/methods/proofs/reading-proofs.tex',21,21,14,14,'Absorption','శోషణ')
+];
+locations['TE-T301']=[
+ L('content/methods/proofs/cant-do-it.tex',11,11,11,11,"I Can't Do It",'నా వల్ల కావడం లేదు'),
+ L('content/methods/proofs/cant-do-it.tex',21,22,17,17,'Start as far in advance as possible','సాధ్యమైనంత ముందుగానే మొదలుపెట్టండి')
+];
+locations['TE-T302']=[
+ L('content/methods/proofs/resources.tex',11,11,11,11,'Other Resources','ఇతర వనరులు'),
+ L('content/methods/proofs/resources.tex',34,34,17,17,'Motivational Videos','ప్రేరణనిచ్చే వీడియోలు')
+];
+locations['TE-T303']=[
+ L('content/methods/induction/induction.tex',8,8,8,8,'Induction','ఆగమనం')
+];
+locations['TE-T304']=[
+ L('content/methods/induction/introduction.tex',23,24,15,15,'Mathematical','గణిత'),
+ L('content/methods/induction/introduction.tex',47,48,24,24,'Structural induction','నిర్మాణాత్మక ఆగమనం')
+];
+locations['TE-T305']=[
+ L('content/methods/induction/induction-on-N.tex',11,11,11,11,'Induction on','ఆగమనం'),
+ L('content/methods/induction/induction-on-N.tex',60,61,31,31,'induction basis','ఆగమన ఆధారం'),
+ L('content/methods/induction/induction-on-N.tex',71,72,39,39,'inductive hypothesis','ఆగమన పరికల్పన')
+];
+locations['TE-T306']=[
+ L('content/methods/induction/strong-induction.tex',11,11,11,11,'Strong Induction','బలమైన ఆగమనం'),
+ L('content/methods/induction/strong-induction.tex',21,27,16,17,'all numbers smaller','చిన్న అన్ని సంఖ్యలకూ')
+];
+locations['TE-T307']=[
+ L('content/methods/induction/inductive-definitions.tex',11,11,11,11,'Inductive Definitions','ఆగమనాత్మక నిర్వచనాలు'),
+ L('content/methods/induction/inductive-definitions.tex',41,42,18,19,'Nice terms','చక్కని పదాలు'),
+ L('content/methods/induction/inductive-definitions.tex',141,141,76,76,'supernice terms','అత్యంత చక్కని పదాల')
+];
+locations['TE-T308']=[
+ L('content/methods/induction/structural-induction.tex',11,11,11,11,'Structural Induction','నిర్మాణాత్మక ఆగమనం'),
+ L('content/methods/induction/structural-induction.tex',68,71,44,44,'proper initial','నిజ ప్రారంభ భాగం')
+];
+locations['TE-T309']=[
+ L('content/methods/induction/relations.tex',16,18,13,13,'subterm','ఉపపదం'),
+ L('content/methods/induction/relations.tex',55,55,34,34,'bracketless terms','బ్రాకెట్లు లేని పదాలను'),
+ L('content/methods/induction/relations.tex',84,85,59,59,'unique readability','ఏకైక పఠనీయత'),
+ L('content/methods/induction/relations.tex',115,115,75,75,'depth','లోతు')
+];
+locations['TE-T310']=[
+ L('content/history/history.tex',7,7,7,7,'History','చరిత్ర')
+];
+locations['TE-T311']=[
+ L('content/history/biographies/biographies.tex',8,8,8,8,'Biographies','జీవిత చరిత్రలు')
+];
+locations['TE-T312']=[
+ L('content/history/biographies/georg-cantor.tex',11,11,11,11,'Georg Cantor','గెయోర్గ్ కాంటర్'),
+ L('content/history/biographies/georg-cantor.tex',22,23,17,17,'set theory','సమితి సిద్ధాంతం'),
+ L('content/history/biographies/georg-cantor.tex',29,29,19,19,'transfinite numbers','అతిపరిమిత సంఖ్యల')
+];
+locations['TE-T313']=[
+ L('content/history/biographies/alonzo-church.tex',11,11,11,11,'Alonzo Church','అలోంజో చర్చ్'),
+ L('content/history/biographies/alonzo-church.tex',32,32,17,17,'Church--Turing Thesis','చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదన'),
+ L('content/history/biographies/alonzo-church.tex',35,35,17,17,"Church's Theorem",'చర్చ్ సిద్ధాంతం')
+];
+locations['TE-T314']=[
+ L('content/history/biographies/gerhard-gentzen.tex',11,11,11,11,'Gerhard Gentzen','గెర్హార్డ్ గెంట్సెన్'),
+ L('content/history/biographies/gerhard-gentzen.tex',16,17,15,15,'natural deduction','సహజ నిగమనం'),
+ L('content/history/biographies/gerhard-gentzen.tex',16,17,15,15,'sequent calculus','సీక్వెంట్ కలనశాస్త్ర'),
+ L('content/history/biographies/gerhard-gentzen.tex',34,34,18,18,'consistency','అవిరోధత్వం')
+];
+locations['TE-T315']=[
+ L('content/history/biographies/kurt-goedel.tex',11,11,11,11,'Kurt G','కుర్ట్ గ్యోడెల్'),
+ L('content/history/biographies/kurt-goedel.tex',32,33,17,17,'completeness theorem','సంపూర్ణత సిద్ధాంతాన్ని'),
+ L('content/history/biographies/kurt-goedel.tex',34,35,17,17,'incompleteness theorems','అసంపూర్ణత సిద్ధాంతాలు')
+];
+locations['TE-T316']=[
+ L('content/history/biographies/emmy-noether.tex',11,11,11,11,'Emmy Noether','ఎమ్మీ నోయెథర్'),
+ L('content/history/biographies/emmy-noether.tex',42,42,19,19,'ascending chain condition','ఆరోహణ శ్రేణి షరతు'),
+ L('content/history/biographies/emmy-noether.tex',49,51,20,20,'descending chain condition','అవరోహణ శ్రేణి షరతు'),
+ L('content/history/biographies/emmy-noether.tex',55,55,20,20,'Noetherian induction','నోయెథరియన్ ఆగమనం')
+];
+locations['TE-T317']=[
+ L('content/history/biographies/rozsa-peter.tex',11,11,11,11,'P','రోజా పీటర్'),
+ L('content/history/biographies/rozsa-peter.tex',17,18,15,15,'recursion theory','పునరావృత్త సిద్ధాంతం'),
+ L('content/history/biographies/rozsa-peter.tex',45,45,20,20,'not primitive recursive','ఆదిమ పునరావృత్తం కాదని'),
+ L('content/history/biographies/rozsa-peter.tex',48,48,20,20,'Ackermann--P','ఆకెర్మాన్--పీటర్ ప్రమేయం')
+];
+locations['TE-T318']=[
+ L('content/history/biographies/julia-robinson.tex',10,10,10,10,'Julia Robinson','జూలియా రాబిన్సన్'),
+ L('content/history/biographies/julia-robinson.tex',16,16,14,14,"Hilbert's tenth problem",'హిల్బర్ట్ పదవ సమస్య'),
+ L('content/history/biographies/julia-robinson.tex',56,56,20,20,'Diophantine problems','డయోఫాంటైన్ సమస్యలు'),
+ L('content/history/biographies/julia-robinson.tex',67,67,20,20,'MRDP theorem','ఎంఆర్‌డీపీ సిద్ధాంతం')
+];
+locations['TE-T319']=[
+ L('content/history/biographies/bertrand-russell.tex',11,11,11,11,'Bertrand Russell','బెర్‌ట్రాండ్ రసెల్'),
+ L('content/history/biographies/bertrand-russell.tex',15,16,15,15,'analytic','విశ్లేషణాత్మక తత్వశాస్త్ర'),
+ L('content/history/biographies/bertrand-russell.tex',34,35,19,19,'Principia Mathematica','Principia Mathematica')
+];
+locations['TE-T320']=[
+ L('content/history/biographies/alfred-tarski.tex',11,11,11,11,'Alfred Tarski','ఆల్ఫ్రెడ్ టార్స్కీ'),
+ L('content/history/biographies/alfred-tarski.tex',34,34,19,19,'logical consequence','తార్కిక అనుగమనం'),
+ L('content/history/biographies/alfred-tarski.tex',34,34,19,19,'logical truth','తార్కిక సత్యం')
+];
+locations['TE-T321']=[
+ L('content/history/biographies/alan-turing.tex',11,11,11,11,'Alan Turing','అలన్ ట్యూరింగ్'),
+ L('content/history/biographies/alan-turing.tex',25,25,17,17,'Turing machine','ట్యూరింగ్ యంత్రం'),
+ L('content/history/biographies/alan-turing.tex',36,37,19,19,'Enigma','ఎనిగ్మా'),
+ L('content/history/biographies/alan-turing.tex',41,42,19,19,'Colossus','కొలోసస్')
+];
+locations['TE-T322']=[
+ L('content/history/biographies/ernst-zermelo.tex',11,11,11,11,'Ernst Zermelo','ఎర్న్‌స్ట్ సెర్మెలో'),
+ L('content/history/biographies/ernst-zermelo.tex',21,22,15,15,'axiom of','ఎంపిక స్వయంసిద్ధాన్ని'),
+ L('content/history/biographies/ernst-zermelo.tex',22,22,15,15,'axiomatization','స్వయంసిద్ధీకరించడం')
+];
+locations['TE-T323']=[
+ L('content/history/set-theory/set-theory.tex',8,8,8,8,'History and Mythology of Set Theory','సమితి సిద్ధాంతపు చరిత్ర మరియు పురాణాలు'),
+ L('content/history/set-theory/set-theory.tex',11,12,11,11,'historical prelude','చారిత్రక ఉపోద్ఘాతం')
+];
+locations['TE-T324']=[
+ L('content/history/set-theory/infinitesimals.tex',6,6,6,6,'Infinitesimals','అనంతసూక్ష్మాలు'),
+ L('content/history/set-theory/infinitesimals.tex',10,11,8,8,'differentiation','అవకలనం'),
+ L('content/history/set-theory/infinitesimals.tex',51,53,35,36,'derivative','వ్యుత్పన్నానికి')
+];
+locations['TE-T325']=[
+ L('content/history/set-theory/limits.tex',11,11,11,11,'Limits','పరిమితుల'),
+ L('content/history/set-theory/limits.tex',73,73,54,54,'differentiable','అవకలనీయమైనది'),
+ L('content/history/set-theory/limits.tex',83,85,56,56,'continuous','అవిచ్ఛిన్నం')
+];
+locations['TE-T326']=[
+ L('content/history/set-theory/pathologies.tex',6,6,6,6,'Pathologies','విచిత్ర నిర్మాణాలు'),
+ L('content/history/set-theory/pathologies.tex',11,11,10,10,'continuous everywhere','ప్రతిచోటా అవిచ్ఛిన్నం'),
+ L('content/history/set-theory/pathologies.tex',53,55,20,20,'curve which fills space','స్థలాన్ని నింపే వక్రరేఖ')
+];
+locations['TE-T327']=[
+ L('content/history/set-theory/mythology.tex',7,7,7,7,'Myth','పురాణమే'),
+ L('content/history/set-theory/mythology.tex',13,13,9,9,'geometric intuition','జ్యామితీయ అంతఃప్రజ్ఞ'),
+ L('content/history/set-theory/mythology.tex',17,17,12,12,'out of context','సందర్భం నుంచి')
+];
+locations['TE-T328']=[
+ L('content/history/set-theory/cantor-plane.tex',6,6,6,6,'Cantor on the Line and the Plane','రేఖ, తలంపై కాంటర్'),
+ L('content/history/set-theory/cantor-plane.tex',24,36,17,27,'injection','అంతఃక్షేపణ'),
+ L('content/history/set-theory/cantor-plane.tex',53,57,40,40,'surjection','అధిక్షేపణ'),
+ L('content/history/set-theory/cantor-plane.tex',62,69,44,47,'Schr','ష్రోడర్--బెర్న్‌స్టైన్')
+];
+locations['TE-T329']=[
+ L('content/history/set-theory/hilbert-curve.tex',7,7,7,7,'Space-filling Curves','స్థలాన్ని నింపే వక్రరేఖలు'),
+ L('content/history/set-theory/hilbert-curve.tex',83,89,74,78,'point-by-point limit','బిందువువారీ పరిమితి'),
+ L('content/history/set-theory/hilbert-curve.tex',90,105,79,88,'grid-location','గడి'),
+ L('content/history/set-theory/hilbert-curve.tex',109,121,90,96,'continuous','అవిచ్ఛిన్న')
+];
+locations['TE-T330']=[
+ L('content/reference/reference.tex',7,7,7,7,'Reference','సూచిక'),
+ L('content/reference/reference.tex',10,12,10,11,'various lists','వివిధ వర్ణమాలలు')
+];
+locations['TE-T331']=[
+ L('content/reference/greek-alphabet/greek-alphabet.tex',8,8,8,8,'Greek Alphabet','గ్రీకు వర్ణమాల'),
+ L('content/reference/greek-alphabet/greek-alphabet.tex',12,12,12,12,'Alpha','ఆల్ఫా'),
+ L('content/reference/greek-alphabet/greek-alphabet.tex',35,35,35,35,'Omega','ఒమేగా')
+];
+locations['TE-T332']=[
+ L('content/reference/fraktur-alphabet/fraktur-alphabet.tex',8,8,8,8,'Fraktur Alphabet','ఫ్రాక్టూర్ వర్ణమాల')
+];
+locations['TE-T333']=[
+ L('content/first-order-logic/axiomatic-deduction/provability.tex',16,16,16,16,'Properties of','ధర్మాలు'),
+ L('content/first-order-logic/axiomatic-deduction/provability.tex',18,18,18,18,'Monotonicity','ఏకదిశత్వం'),
+ L('content/first-order-logic/axiomatic-deduction/provability.tex',187,190,173,175,'Weak Generalization','బలహీన సామాన్యీకరణ'),
+ L('content/first-order-logic/axiomatic-deduction/provability.tex',234,237,198,201,'Change of Bound Variable','బంధిత చరరాశి మార్పు'),
+ L('content/first-order-logic/axiomatic-deduction/provability.tex',262,267,215,218,'Strong Generalization','బలమైన సామాన్యీకరణ')
+];
+locations['TE-T334']=[
+ L('content/first-order-logic/completeness/maximally-consistent-sets.tex',14,14,14,14,'Maximally Consistent Sets','గరిష్ఠ అవైరుధ్య సమితులు'),
+ L('content/first-order-logic/completeness/maximally-consistent-sets.tex',16,23,16,23,'Maximally consistent set','గరిష్ఠ అవైరుధ్య సమితి'),
+ L('content/first-order-logic/completeness/maximally-consistent-sets.tex',38,47,35,38,'completeness proof','సంపూర్ణత నిరూపణలో'),
+ L('content/first-order-logic/completeness/maximally-consistent-sets.tex',54,70,40,56,'maximally consistent','గరిష్ఠ అవైరుధ్యమైనది')
+];
+locations['TE-T335']=[
+ L('content/first-order-logic/syntax-and-semantics/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/first-order-logic/syntax-and-semantics/introduction.tex',13,30,13,13,'syntax and semantics','వాక్యనిర్మాణం, అర్థవిచారాన్ని'),
+ L('content/first-order-logic/syntax-and-semantics/introduction.tex',33,53,15,15,'satisfaction','సంతృప్తి'),
+ L('content/first-order-logic/syntax-and-semantics/introduction.tex',55,65,17,17,'validity, entailment','చెల్లుబాటు, అనుగమనం')
+];
+locations['TE-T336']=[
+ L('content/first-order-logic/syntax-and-semantics/syntax-and-semantics.tex',8,8,8,8,'Syntax and Semantics','వాక్యనిర్మాణం మరియు అర్థవిచారం')
+];
+locations['TE-T337']=[
+ L('content/incompleteness/representability-in-q/c-representable.tex',10,10,10,10,'Representable','ప్రతినిధీకరించవచ్చు'),
+ L('content/incompleteness/representability-in-q/c-representable.tex',79,90,53,64,'composition','సంయోజనం'),
+ L('content/incompleteness/representability-in-q/c-representable.tex',94,103,66,74,'unbounded search','అపరిమిత శోధన'),
+ L('content/incompleteness/representability-in-q/c-representable.tex',172,187,126,126,'computable functions','గణనీయ ప్రమేయాల')
+];
+locations['TE-T338']=[
+ L('content/incompleteness/representability-in-q/c.tex',10,10,10,10,'Functions','ప్రమేయాలు'),
+ L('content/incompleteness/representability-in-q/c.tex',24,26,24,26,'unbounded search','అపరిమిత శోధన'),
+ L('content/incompleteness/representability-in-q/c.tex',30,36,26,28,'primitive recursion','ఆదిమ పునరావృతాన్ని')
+];
+locations['TE-T339']=[
+ L('content/intuitionistic-logic/semantics/propositions.tex',11,11,11,11,'Propositions','ప్రతిపాదనలు'),
+ L('content/intuitionistic-logic/semantics/propositions.tex',13,16,13,13,'relational model','సంబంధ నమూనా'),
+ L('content/intuitionistic-logic/semantics/propositions.tex',18,35,16,33,'inductively','ఆగమనాత్మకంగా')
+];
+locations['TE-T340']=[
+ L('content/lambda-calculus/lambda-definability/lists.tex',10,10,10,10,'Lists','జాబితాలు'),
+ L('content/lambda-calculus/lambda-definability/lists.tex',12,21,12,16,'accumulator','సంచయక'),
+ L('content/lambda-calculus/lambda-definability/lists.tex',23,27,18,20,'right fold','కుడివైపు మడత'),
+ L('content/lambda-calculus/lambda-definability/lists.tex',30,43,22,30,'Sum','Sum')
+];
+locations['TE-T341']=[
+ L('content/lambda-calculus/syntax/conversion.tex',10,10,10,10,'Conversion and Reduction','సమానరూప మార్పు మరియు సంక్షేపణం'),
+ L('content/lambda-calculus/syntax/conversion.tex',16,20,13,14,'conversion','సమానరూప మార్పు')
+];
+locations['TE-T342']=[
+ L('content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex',11,11,11,11,'Proof-Theoretic Notions','నిరూపణ-సిద్ధాంత భావనలు'),
+ L('content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex',81,85,82,86,'Monotonicity','ఏకదిశత'),
+ L('content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex',140,149,141,150,'Compactness','సంహతత్వం')
+];
+locations['TE-T343']=[
+ L('content/model-theory/basics/nonstandard-arithmetic.tex',10,10,10,10,'Non-standard Models','అప్రమాణ నమూనాలు'),
+ L('content/model-theory/basics/nonstandard-arithmetic.tex',17,24,15,19,'standard model','ప్రమాణ నమూనా'),
+ L('content/model-theory/basics/nonstandard-arithmetic.tex',92,97,57,57,'standard part','ప్రమాణ భాగం'),
+ L('content/model-theory/basics/nonstandard-arithmetic.tex',110,128,65,76,'block','బ్లాక్'),
+ L('content/model-theory/basics/nonstandard-arithmetic.tex',152,168,89,98,'dense','సాంద్రమైనది')
+];
+locations['TE-T344']=[
+ L('content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex',11,11,11,11,'Normal Modal Logics','సాధారణ మోడల్ తర్కాలు'),
+ L('content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex',20,27,16,26,'uniform substitution','ఏకరీతి ప్రతిస్థాపన'),
+ L('content/normal-modal-logic/syntax-and-semantics/normal-modal-logics.tex',40,49,34,43,'necessitation','అనివార్యతీకరణ')
+];
+locations['TE-T345']=[
+ L('content/proof-theory/cut-elimination/ce-largest.tex',11,11,11,11,'Removing Largest Cuts','అత్యధిక స్థాయి కట్‌ల తొలగింపు'),
+ L('content/proof-theory/cut-elimination/ce-largest.tex',20,21,16,16,'cut rank','కట్ స్థాయి'),
+ L('content/proof-theory/cut-elimination/ce-largest.tex',97,101,56,57,'rank','స్థాయి'),
+ L('content/proof-theory/cut-elimination/ce-largest.tex',225,246,139,145,'marked occurrences','గుర్తించిన')
+];
+locations['TE-T346']=[
+ L('content/proof-theory/cut-elimination/ce-topmost.tex',11,11,11,11,'Removing Topmost Cuts','అత్యున్నత కట్‌ల తొలగింపు'),
+ L('content/proof-theory/cut-elimination/ce-topmost.tex',26,28,26,26,'cut height','కట్ ఎత్తు'),
+ L('content/proof-theory/cut-elimination/ce-topmost.tex',26,28,26,26,'cut rank','కట్ స్థాయి'),
+ L('content/proof-theory/cut-elimination/ce-topmost.tex',173,180,100,100,'permuting a cut','కట్‌ను పైకి స్థానమార్చడం')
+];
+locations['TE-T347']=[
+ L('content/proof-theory/cut-elimination/cut-elimination.tex',8,8,8,8,'Cut Elimination','కట్ తొలగింపు')
+];
+locations['TE-T348']=[
+ L('content/proof-theory/cut-elimination/interpolation.tex',11,11,11,11,"Maehara's Lemma",'మహేరా లెమ్మా'),
+ L('content/proof-theory/cut-elimination/interpolation.tex',14,18,14,14,'interpolant','మధ్యవర్తి వాక్యం'),
+ L('content/proof-theory/cut-elimination/interpolation.tex',496,503,372,379,'implicitly defines','పరోక్షంగా నిర్వచిస్తుంది'),
+ L('content/proof-theory/cut-elimination/interpolation.tex',572,575,428,431,'Joint Consistency','సంయుక్త అవైరుధ్య')
+];
+locations['TE-T349']=[
+ L('content/proof-theory/cut-elimination/introduction.tex',11,11,11,11,'Introduction','పరిచయం'),
+ L('content/proof-theory/cut-elimination/introduction.tex',31,32,23,23,'admissible rule','అనుమతిత నియమమా'),
+ L('content/proof-theory/cut-elimination/introduction.tex',94,94,35,35,'context-sharing cut','సందర్భాన్ని పంచుకునే కట్')
+];
+locations['TE-T350']=[
+ L('content/proof-theory/cut-elimination/intuitionistic.tex',1,1,1,1,'If','అయితే'),
+ L('content/proof-theory/cut-elimination/intuitionistic.tex',35,38,38,40,'cut','కట్')
+];
+locations['TE-T351']=[
+ L('content/proof-theory/cut-elimination/midsequent.tex',11,11,11,11,'Midsequent Theorem','మధ్యసీక్వెంట్ ప్రమేయం'),
+ L('content/proof-theory/cut-elimination/midsequent.tex',14,23,13,15,'prenex','ప్రీనెక్స్'),
+ L('content/proof-theory/cut-elimination/midsequent.tex',36,39,22,22,'Herbrand disjunction','హెర్బ్రాండ్ వియోజనం')
+];
+locations['TE-T352']=[
+ L('content/proof-theory/natural-deduction/grafting.tex',11,11,11,11,'Grafting','అంటుకట్టడం'),
+ L('content/proof-theory/natural-deduction/grafting.tex',38,40,30,30,'grafting','అంటుకట్టడం'),
+ L('content/proof-theory/natural-deduction/grafting.tex',43,45,33,33,'open assumption','తెరిచి ఉన్న ఉపపత్తి'),
+ L('content/proof-theory/natural-deduction/grafting.tex',50,59,36,37,'eigenvariable','ఐగెన్ చరరాశి')
+];
+locations['TE-T353']=[
+ L('content/proof-theory/natural-deduction/introduction.tex',13,20,13,13,'Natural deduction','సహజ నిగమనం'),
+ L('content/proof-theory/natural-deduction/introduction.tex',13,20,13,13,'introduction','ప్రవేశ'),
+ L('content/proof-theory/natural-deduction/introduction.tex',31,43,17,18,'discharge','విసర్జన')
+];
+locations['TE-T354']=[
+ L('content/proof-theory/natural-deduction/natural-deduction.tex',8,8,8,8,'Natural Deduction','సహజ నిగమనం')
+];
+locations['TE-T355']=[
+ L('content/proof-theory/natural-deduction/quantifiers.tex',11,11,11,11,'Regular','క్రమబద్ధమైన'),
+ L('content/proof-theory/natural-deduction/quantifiers.tex',13,16,13,13,'eigenvariable conditions','ఐగెన్ చరరాశి షరతులు'),
+ L('content/proof-theory/natural-deduction/quantifiers.tex',136,145,103,103,'clean','శుభ్రమైనది')
+];
+locations['TE-T356']=[
+ L('content/proof-theory/natural-deduction/rules-N1.tex',128,132,128,131,'Rules of','నియమాలు'),
+ L('content/proof-theory/natural-deduction/rules-N1.tex',128,132,128,131,'must not occur','ఉండకూడదు')
+];
+locations['TE-T357']=[
+ L('content/proof-theory/natural-deduction/rules-N2.tex',102,108,102,106,'Rules of','నియమాలు'),
+ L('content/proof-theory/natural-deduction/rules-N2.tex',102,108,102,106,'labelled','గుర్తులు కలిగిన')
+];
+locations['TE-T358']=[
+ L('content/proof-theory/natural-deduction/rules-proofs.tex',34,40,33,33,'major','ముఖ్య'),
+ L('content/proof-theory/natural-deduction/rules-proofs.tex',59,62,38,38,'discharge label','విసర్జన గుర్తు'),
+ L('content/proof-theory/natural-deduction/rules-proofs.tex',207,209,135,135,'height','ఎత్తు')
+];
+locations['TE-T359']=[
+ L('content/proof-theory/natural-deduction/sequents.tex',19,22,13,14,'sequent style','సీక్వెంట్-శైలి'),
+ L('content/proof-theory/natural-deduction/sequents.tex',25,30,17,17,'succedent','ఫలితభాగం'),
+ L('content/proof-theory/natural-deduction/sequents.tex',25,30,17,17,'context','సందర్భం')
+];
+locations['TE-T360']=[
+ L('content/proof-theory/natural-deduction/translation-G2i.tex',11,11,11,11,'Translating from','అనువాదం'),
+ L('content/proof-theory/natural-deduction/translation-G2i.tex',13,20,13,13,'multisets','బహుసమితులు'),
+ L('content/proof-theory/natural-deduction/translation-G2i.tex',16,20,13,13,'corresponds to','అనురూపం')
+];
+locations['TE-T361']=[
+ L('content/proof-theory/natural-deduction/translation-N2i.tex',11,11,11,11,'Translating from','అనువాదం'),
+ L('content/proof-theory/natural-deduction/translation-N2i.tex',13,18,13,16,'multiset','బహుసమితి'),
+ L('content/proof-theory/natural-deduction/translation-N2i.tex',13,18,13,16,'emptyset','emptyset')
+];
+locations['TE-T362']=[
+ L('content/proof-theory/normalization/introduction.tex',38,43,30,30,'normalization','సాధారణీకరణ'),
+ L('content/proof-theory/normalization/introduction.tex',38,43,30,30,'normal','సాధారణ'),
+ L('content/proof-theory/normalization/introduction.tex',55,57,32,32,'sub-!!{formula} property','ఉప-')
+];
+locations['TE-T363']=[
+ L('content/proof-theory/normalization/normalization-thm.tex',11,11,11,11,'Normalization Theorem','సాధారణీకరణ ప్రమేయం'),
+ L('content/proof-theory/normalization/normalization-thm.tex',13,18,13,13,'permutation','స్థానమార్పు'),
+ L('content/proof-theory/normalization/normalization-thm.tex',25,28,19,19,'cut rank and length','కట్ స్థాయి, కట్ పొడవు')
+];
+locations['TE-T364']=[
+ L('content/proof-theory/normalization/normalization.tex',8,8,8,8,'Normalization','సాధారణీకరణ')
+];
+locations['TE-T365']=[
+ L('content/proof-theory/normalization/permutations.tex',11,11,11,11,'Permutation Conversions','స్థానమార్పు పరివర్తనలు'),
+ L('content/proof-theory/normalization/permutations.tex',354,356,322,322,'eigenvariable condition','స్వతంత్ర చరరాశి నియమం'),
+ L('content/proof-theory/normalization/permutations.tex',417,421,370,370,'topmost','అత్యుపరి')
+];
+locations['TE-T366']=[
+ L('content/proof-theory/normalization/reductions.tex',11,11,11,11,'Reduction Conversions','తగ్గింపు పరివర్తనలు'),
+ L('content/proof-theory/normalization/reductions.tex',80,82,45,45,'rightmost','అత్యంత కుడివైపు'),
+ L('content/proof-theory/normalization/reductions.tex',109,111,49,49,'detour conversion','పక్కదారి పరివర్తన')
+];
+locations['TE-T367']=[
+ L('content/proof-theory/normalization/segments.tex',11,11,11,11,'Segments and Cuts','ఖండాలు మరియు కట్‌లు'),
+ L('content/proof-theory/normalization/segments.tex',72,74,57,57,'segment','ఖండం'),
+ L('content/proof-theory/normalization/segments.tex',88,90,70,70,'cut','కట్'),
+ L('content/proof-theory/normalization/segments.tex',100,104,77,77,'cut length','కట్ పొడవు')
+];
+locations['TE-T368']=[
+ L('content/proof-theory/normalization/translations.tex',11,11,11,11,'Translating Between Normal','సాధారణ'),
+ L('content/proof-theory/normalization/translations.tex',17,23,16,16,'corresponds to','అనురూపం'),
+ L('content/proof-theory/normalization/translations.tex',61,65,34,34,'branch','శాఖ'),
+ L('content/proof-theory/normalization/translations.tex',66,69,34,34,'main branch','ప్రధాన శాఖ')
+];
+locations['TE-T369']=[
+ L('content/proof-theory/proof-search/completeness.tex',11,11,11,11,'Completeness','సంపూర్ణత'),
+ L('content/proof-theory/proof-search/completeness.tex',23,27,16,20,'failure branch','విఫల శాఖ'),
+ L('content/proof-theory/proof-search/completeness.tex',66,71,38,39,'term model','పద నమూనా')
+];
+locations['TE-T370']=[
+ L('content/proof-theory/proof-search/introduction.tex',19,22,13,13,'proof search','నిరూపణ అన్వేషణ'),
+ L('content/proof-theory/proof-search/introduction.tex',40,43,17,17,'backwards','వెనుకకు'),
+ L('content/proof-theory/proof-search/introduction.tex',50,53,19,19,'proof search algorithm','నిరూపణ అన్వేషణ అల్గోరిథం'),
+ L('content/proof-theory/proof-search/introduction.tex',73,75,26,26,'backtrack','వెనక్కి')
+];
+locations['TE-T371']=[
+ L('content/proof-theory/proof-search/proof-search.tex',8,8,8,8,'Proof Search','నిరూపణ అన్వేషణ')
+];
+locations['TE-T372']=[
+ L('content/proof-theory/proof-search/rules-Tc.tex',79,81,79,79,'Rules of','నియమాలు'),
+ L('content/proof-theory/proof-search/rules-Tc.tex',80,81,79,79,'must be new to the branch','శాఖకు కొత్తది')
+];
+locations['TE-T373']=[
+ L('content/proof-theory/proof-search/search-algorithm.tex',11,11,11,11,'Search Algorithm','అన్వేషణ అల్గోరిథం'),
+ L('content/proof-theory/proof-search/search-algorithm.tex',20,24,16,16,'fairness','సముచిత అవకాశ నిబంధన'),
+ L('content/proof-theory/proof-search/search-algorithm.tex',36,38,20,20,'maximal index','గరిష్ఠ సూచిక')
+];
+locations['TE-T374']=[
+ L('content/proof-theory/proof-search/tableaux.tex',11,11,11,11,'Tableaux','టాబ్లోలు'),
+ L('content/proof-theory/proof-search/tableaux.tex',19,20,13,13,'semantic','అర్థవిచార'),
+ L('content/proof-theory/proof-search/tableaux.tex',22,23,15,16,'signed','చిహ్నిత'),
+ L('content/proof-theory/proof-search/tableaux.tex',44,46,25,27,'closed','మూసుకుంది')
+];
+locations['TE-T375']=[
+ L('content/proof-theory/proof-theory.tex',7,7,7,7,'Proof Theory','నిరూపణ సిద్ధాంతం'),
+ L('content/proof-theory/proof-theory.tex',10,12,10,10,'incomplete and experimental','అసంపూర్ణమైనది, ప్రయోగాత్మకమైనది')
+];
+locations['TE-T376']=[
+ L('content/proof-theory/propositions-as-types/introduction.tex',44,46,16,16,'typed','రకాలతో కూడిన'),
+ L('content/proof-theory/propositions-as-types/introduction.tex',75,76,32,32,'composition','ప్రయోగ'),
+ L('content/proof-theory/propositions-as-types/introduction.tex',116,119,71,71,'Curry--Howard','కర్రీ--హోవర్డ్'),
+ L('content/proof-theory/propositions-as-types/introduction.tex',131,131,82,82,'product type','లబ్ధ రకం'),
+ L('content/proof-theory/propositions-as-types/introduction.tex',132,132,83,83,'sum type','యోగ రకం')
+];
+locations['TE-T377']=[
+ L('content/proof-theory/propositions-as-types/normalization.tex',11,11,11,11,'Normalization','సాధారణీకరణ'),
+ L('content/proof-theory/propositions-as-types/normalization.tex',176,176,125,125,'strong normalization','బలమైన సాధారణీకరణ'),
+ L('content/proof-theory/propositions-as-types/normalization.tex',201,201,134,134,'Weak Church-Rosser','బలహీన చర్చ్--రోసర్'),
+ L('content/proof-theory/propositions-as-types/normalization.tex',225,225,145,145,"Newman","న్యూమన్")
+];
+locations["TE-T378"]=[
+ L("content/proof-theory/propositions-as-types/proof-terms.tex",11,11,11,11,"Proof Terms","నిరూపణ పదాలు"),
+ L("content/proof-theory/propositions-as-types/proof-terms.tex",32,32,15,15,"constructors","నిర్మాతలు"),
+ L("content/proof-theory/propositions-as-types/proof-terms.tex",92,92,54,54,"typed lambda calculus","రకాలతో కూడిన లాంబ్డా"),
+ L("content/proof-theory/propositions-as-types/proof-terms.tex",127,127,71,71,"correct} proof terms","సరైన")
+];
+locations["TE-T379"]=[
+ L("content/proof-theory/propositions-as-types/proofs-to-terms.tex",11,11,11,11,"Converting","నిరూపణ పదాలుగా మార్చడం"),
+ L("content/proof-theory/propositions-as-types/proofs-to-terms.tex",18,18,14,14,"witnesses","సాక్ష్యం ఇస్తుంది"),
+ L("content/proof-theory/propositions-as-types/proofs-to-terms.tex",29,29,21,21,"height","ఎత్తుపై"),
+ L("content/proof-theory/propositions-as-types/proofs-to-terms.tex",73,73,55,55,"abstraction","అమూర్తీకరణ")
+];
+locations["TE-T380"]=[
+ L("content/proof-theory/propositions-as-types/propositions-as-types.tex",8,8,8,8,"Propositions as Types","రకాలుగా ప్రతిపాదనలు"),
+ L("content/proof-theory/propositions-as-types/propositions-as-types.tex",11,11,11,11,"very experimental","అత్యంత ప్రయోగాత్మకమైన")
+];
+locations["TE-T381"]=[
+ L("content/proof-theory/propositions-as-types/reduction.tex",11,11,11,11,"Reduction","తగ్గింపు"),
+ L("content/proof-theory/propositions-as-types/reduction.tex",59,59,43,43,"reductum","సంకోచన ఫలితం"),
+ L("content/proof-theory/propositions-as-types/reduction.tex",133,133,110,110,"permutation conversions","క్రమమార్పు పరివర్తన"),
+ L("content/proof-theory/propositions-as-types/reduction.tex",195,195,162,162,"normal form","సాధారణ రూపం")
+];
+locations["TE-T382"]=[
+ L("content/proof-theory/propositions-as-types/rules-tN2.tex",11,11,11,11,"Axioms:","అక్షయాలు:"),
+ L("content/proof-theory/propositions-as-types/rules-tN2.tex",13,13,13,13,"Inference Rules:","నిగమన నియమాలు:"),
+ L("content/proof-theory/propositions-as-types/rules-tN2.tex",67,67,67,67,"Rules of the propositional","ప్రతిపాదనాత్మక")
+];
+locations["TE-T383"]=[
+ L("content/proof-theory/propositions-as-types/rules-tN3.tex",11,11,11,11,"Axioms:","అక్షయాలు:"),
+ L("content/proof-theory/propositions-as-types/rules-tN3.tex",13,13,13,13,"Inference Rules:","నిగమన నియమాలు:"),
+ L("content/proof-theory/propositions-as-types/rules-tN3.tex",67,67,67,67,"Rules of the propositional","ప్రతిపాదనాత్మక")
+];
+locations["TE-T384"]=[
+ L("content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",11,11,11,11,"Sequent Natural Deduction","సీక్వెంట్ సహజ నిగమనం"),
+ L("content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",14,14,13,13,"undischarged","విడుదల చేయని"),
+ L("content/proof-theory/propositions-as-types/sequent-natural-deduction.tex",111,111,97,97,"notational variant","సంకేతాత్మక ప్రత్యామ్నాయంగా")
+];
+locations["TE-T385"]=[
+ L("content/proof-theory/propositions-as-types/terms-to-proofs.tex",11,11,11,11,"Recovering","పునర్నిర్మించడం"),
+ L("content/proof-theory/propositions-as-types/terms-to-proofs.tex",15,15,13,13,"context","సందర్భానికి"),
+ L("content/proof-theory/propositions-as-types/terms-to-proofs.tex",34,34,27,27,"antecedent","పూర్వపక్షం"),
+ L("content/proof-theory/propositions-as-types/terms-to-proofs.tex",79,79,58,58,"recovered the proof fully","నిరూపణను పూర్తిగా పునర్నిర్మించాం")
+];
+locations["TE-T386"]=[
+ L("content/proof-theory/propositions-as-types/type-preservation.tex",11,11,11,11,"Type Preservation","రక సంరక్షణ"),
+ L("content/proof-theory/propositions-as-types/type-preservation.tex",107,107,74,74,"progress","పురోగతి"),
+ L("content/proof-theory/propositions-as-types/type-preservation.tex",110,110,76,76,"gets stuck","ముందుకు సాగలేని స్థితి")
+];
+locations["TE-T387"]=[
+ L("content/proof-theory/propositions-as-types/types.tex",11,11,11,11,"Types","రకాలు"),
+ L("content/proof-theory/propositions-as-types/types.tex",20,20,16,16,"context}","సందర్భం}"),
+ L("content/proof-theory/propositions-as-types/types.tex",51,51,42,42,"exactly one type","ఆ రకం అనన్యమైనది"),
+ L("content/proof-theory/propositions-as-types/types.tex",68,68,55,55,"empty type","ఖాళీ రకాలతో")
+];
+locations["TE-T388"]=[
+ L("content/proof-theory/sequent-calculus/admissible-derivable.tex",11,11,11,11,"Admissible and Derivable Rules","అనుమతించదగిన, వ్యుత్పాదించదగిన నియమాలు"),
+ L("content/proof-theory/sequent-calculus/admissible-derivable.tex",22,22,16,16,"admissible}","అనుమతించదగినది}"),
+ L("content/proof-theory/sequent-calculus/admissible-derivable.tex",70,70,65,65,"derivable}","వ్యుత్పాదించదగినది}"),
+ L("content/proof-theory/sequent-calculus/admissible-derivable.tex",185,185,131,131,"height}-preserving admissible","ఎత్తును"),
+ L("content/proof-theory/sequent-calculus/admissible-derivable.tex",82,82,65,65,"schematic","పథకాత్మక")
+];
+locations["TE-T389"]=[
+ L("content/proof-theory/sequent-calculus/interpretation-rules.tex",11,11,11,11,"Interpretation of Rules","నియమాల అర్థవ్యాఖ్యానం"),
+ L("content/proof-theory/sequent-calculus/interpretation-rules.tex",16,16,14,14,"truth","సత్య"),
+ L("content/proof-theory/sequent-calculus/interpretation-rules.tex",37,37,19,19,"exclusive or","విశిష్ట వియోగం"),
+ L("content/proof-theory/sequent-calculus/interpretation-rules.tex",133,133,75,75,"context sharing","సందర్భాన్ని పంచుకునే")
+];
+locations["TE-T390"]=[
+ L("content/proof-theory/sequent-calculus/introduction.tex",11,11,11,11,"Introduction","పరిచయం"),
+ L("content/proof-theory/sequent-calculus/introduction.tex",21,21,15,15,"multiset","బహుసమితి"),
+ L("content/proof-theory/sequent-calculus/introduction.tex",44,44,25,25,"antecedent}","పూర్వపక్షం}"),
+ L("content/proof-theory/sequent-calculus/introduction.tex",45,45,25,25,"succedent}","ఉత్తరపక్షం}"),
+ L("content/proof-theory/sequent-calculus/introduction.tex",61,61,30,30,"multiplicity","బాహుళ్యం"),
+ L("content/proof-theory/sequent-calculus/introduction.tex",113,113,44,44,"cut-elimination","కట్-తొలగింపు")
+];
+locations["TE-T391"]=[
+ L("content/proof-theory/sequent-calculus/invertibility.tex",11,11,11,11,"Invertibility of Rules","నియమాల విలోమ్యత"),
+ L("content/proof-theory/sequent-calculus/invertibility.tex",23,23,23,23,"invertible}","విలోమ్యమైనది}"),
+ L("content/proof-theory/sequent-calculus/invertibility.tex",170,170,133,133,"eigenvariable condition","స్వీయచర షరతు"),
+ L("content/proof-theory/sequent-calculus/invertibility.tex",218,218,169,169,"contraction rules","సంకోచన నియమాలు")
+];
+locations["TE-T392"]=[
+ L("content/proof-theory/sequent-calculus/proof-examples.tex",11,11,11,11,"Examples of Proofs","నిరూపణల ఉదాహరణలు"),
+ L("content/proof-theory/sequent-calculus/proof-examples.tex",122,122,105,105,"schematic","పథకాత్మకమైనది"),
+ L("content/proof-theory/sequent-calculus/proof-examples.tex",138,138,121,121,"depth}","లోతు}"),
+ L("content/proof-theory/sequent-calculus/proof-examples.tex",184,184,224,224,"not}","కాదు}"),
+ L("content/proof-theory/sequent-calculus/proof-examples.tex",282,282,235,235,"eigenvariable condition","స్వీయచర షరతు")
+];
+locations["TE-T393"]=[
+ L("content/proof-theory/sequent-calculus/quantifiers.tex",11,11,11,11,"Regular Proofs and Substitution","నియమిత నిరూపణలు, ప్రతిస్థాపన"),
+ L("content/proof-theory/sequent-calculus/quantifiers.tex",20,20,16,16,"regular}","నియమితమైనది}"),
+ L("content/proof-theory/sequent-calculus/quantifiers.tex",119,119,86,86,"clean}","శుభ్రమైనది}"),
+ L("content/proof-theory/sequent-calculus/quantifiers.tex",121,121,86,86,"dirty}","అశుభ్రమైనది}")
+];
+locations["TE-T394"]=[
+ L("content/proof-theory/sequent-calculus/rules-G1c.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1c.tex",14,14,14,14,"Structural Rules","నిర్మాణ నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1c.tex",35,35,35,35,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1c.tex",111,111,14,14,"Rules of","నియమాలు")
+];
+locations["TE-T395"]=[
+ L("content/proof-theory/sequent-calculus/rules-G1i.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1i.tex",14,14,14,14,"Structural Rules","నిర్మాణ నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1i.tex",31,31,31,31,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G1i.tex",107,107,14,14,"Rules of","నియమాలు")
+];
+locations["TE-T396"]=[
+ L("content/proof-theory/sequent-calculus/rules-G2c.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G2c.tex",14,14,14,14,"Structural Rules","నిర్మాణ నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G2c.tex",35,35,35,35,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G2c.tex",111,111,14,14,"Rules of","నియమాలు")
+];
+locations["TE-T397"]=[
+ L("content/proof-theory/sequent-calculus/rules-G3c.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G3c.tex",14,14,14,14,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G3c.tex",77,77,14,14,"Rules of","నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G3c.tex",80,80,77,77,"atomic","పరమాణువు")
+];
+locations["TE-T398"]=[
+ L("content/proof-theory/sequent-calculus/rules-G3i.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G3i.tex",14,14,14,14,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-G3i.tex",77,77,77,77,"intuitionistic logic","అంతఃప్రజ్ఞావాద తర్కానికి"),
+ L("content/proof-theory/sequent-calculus/rules-G3i.tex",81,81,77,77,"atomic","పరమాణువు")
+];
+locations["TE-T399"]=[
+ L("content/proof-theory/sequent-calculus/rules-LK.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-LK.tex",14,14,14,14,"Structural Rules","నిర్మాణ నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-LK.tex",45,45,45,45,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-LK.tex",124,124,121,121,"sequences","వరుసలు")
+];
+locations["TE-T400"]=[
+ L("content/proof-theory/sequent-calculus/rules-mG3i.tex",11,11,11,11,"Axioms","అక్షయాలు"),
+ L("content/proof-theory/sequent-calculus/rules-mG3i.tex",14,14,14,14,"Logical Rules","తార్కిక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-mG3i.tex",77,77,77,77,"multi-conclusion","బహుళ-నిర్ధారణల"),
+ L("content/proof-theory/sequent-calculus/rules-mG3i.tex",81,81,77,77,"mG1m","మూల పక్క గమనిక")
+];
+locations["TE-T401"]=[
+ L("content/proof-theory/sequent-calculus/rules-proofs.tex",11,11,11,11,"\\olsection{Rules","\\olsection{నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-proofs.tex",38,38,30,30,"The quantifier rules","పరిమాణక నియమాలు"),
+ L("content/proof-theory/sequent-calculus/rules-proofs.tex",127,127,79,79,"It is often necessary","\\tetoken{నిరూపణల}")
+];
+locations["TE-T402"]=[
+ L("content/proof-theory/sequent-calculus/sequent-calculus.tex",8,8,8,8,"The Sequent Calculus","సీక్వెంట్ కలనశాస్త్రం")
+];
+locations["TE-T403"]=[
+ L("content/proof-theory/sequent-calculus/translations.tex",13,13,13,13,"We mentioned that both","శాస్త్రీయ తర్కానికి"),
+ L("content/proof-theory/sequent-calculus/translations.tex",38,38,24,24,"  If $n>0$","$n>0$ అయితే"),
+ L("content/proof-theory/sequent-calculus/translations.tex",56,56,32,32,"  We again proceed","మళ్లీ")
+];
+locations["TE-T404"]=[
+ L("content/propositional-logic/syntax-and-semantics/completeness.tex",11,11,11,11,"Completeness of Propositional Logic","ప్రతిపాదనా తర్కం యొక్క సంపూర్ణత"),
+ L("content/propositional-logic/syntax-and-semantics/completeness.tex",15,15,15,15,"A set $\\Gamma$","సమితి $\\Gamma$"),
+ L("content/propositional-logic/syntax-and-semantics/completeness.tex",105,105,78,78,"Compactness Theorem","సంహతత సిద్ధాంతం")
+];
+locations["TE-T405"]=[
+ L("content/propositional-logic/syntax-and-semantics/soundness.tex",11,11,11,11,"Soundness of Propositional Logic","ప్రతిపాదనా తర్కం యొక్క సార్థకత"),
+ L("content/propositional-logic/syntax-and-semantics/soundness.tex",20,20,19,19,"By induction on theorems","వ్యుత్పత్తిపై ఆగమనంతో")
+];
+locations["TE-T406"]=[
+ L("content/second-order-logic/syntax-and-semantics/language-of-sol.tex",11,11,11,11,"The Language of Second-Order Logic","ద్వితీయ క్రమ తర్కం యొక్క భాష"),
+ L("content/second-order-logic/syntax-and-semantics/language-of-sol.tex",13,13,13,13,"Like in first-order logic","ప్రథమ క్రమ తర్కంలో మాదిరిగానే"),
+ L("content/second-order-logic/syntax-and-semantics/language-of-sol.tex",31,31,20,20,"In first-order logic, the","ప్రథమ క్రమ తర్కంలో సాధారణంగా")
+];
+locations["TE-T407"]=[
+ L("content/sets-functions-relations/functions/isomorphic-functions.tex",11,11,10,10,"Isomorphism","సమరూపత"),
+ L("content/sets-functions-relations/functions/isomorphic-functions.tex",14,14,13,13,"An \\emph{isomorphism}","\\emph{సమరూపణం}"),
+ L("content/sets-functions-relations/functions/isomorphic-functions.tex",36,36,13,13,"Consider the following two sets $X","$X=\\{1,2,3\\}$")
+];
+locations["TE-T408"]=[
+ L("content/sets-functions-relations/inductive-defs-proofs/introduction.tex",14,14,14,14,"Induction is a commonly-used","ఆగమనం అనేది"),
+ L("content/sets-functions-relations/inductive-defs-proofs/introduction.tex",47,47,32,32,"The property of","“సరి సంఖ్య కావడం”"),
+ L("content/sets-functions-relations/inductive-defs-proofs/introduction.tex",63,63,41,41,"The sum of the first","సున్నా నుంచి $n$"),
+ L("content/sets-functions-relations/inductive-defs-proofs/introduction.tex",88,88,63,63,"For !!{formula}s","\\tetoken{సూత్రాల}")
+];
+locations["TE-T409"]=[
+ L("content/sets-functions-relations/relations/relations.tex",8,8,8,8,"{Relations}","{సంబంధాలు}")
+];
+locations["TE-T410"]=[
+ L("content/sets-functions-relations/sets-functions-relations.tex",7,7,7,7,"{Sets, Relations, Functions}","{సమితులు, సంబంధాలు, ప్రమేయాలు}"),
+ L("content/sets-functions-relations/sets-functions-relations.tex",10,10,10,10,"This file includes","ఈ ఫైలు")
+];
+locations["TE-T411"]=[
+ L("content/sets-functions-relations/sets/proofs-about-sets.tex",10,10,10,10,"Proofs about Sets","సమితుల గురించి నిరూపణలు"),
+ L("content/sets-functions-relations/sets/proofs-about-sets.tex",18,18,17,17,"Sets and the notations","ఇప్పటివరకు పరిచయం"),
+ L("content/sets-functions-relations/sets/proofs-about-sets.tex",80,80,34,34,"[Absorption]","[శోషణ]")
+];
+locations["TE-T412"]=[
+ L("content/sets-functions-relations/size-of-sets/size-of-sets.tex",8,8,8,8,"The Size of Sets","సమితుల పరిమాణం"),
+ L("content/sets-functions-relations/size-of-sets/size-of-sets.tex",11,11,11,11,"This chapter discusses","ఈ అధ్యాయం")
+];
 const alternatives={
  'TE-T002':['మూలకం (chosen)','సభ్యము (documented synonym)'],
  'TE-T003':['సమితుల సమానత్వ సూత్రం (chosen descriptive label)','Extensionality (retained only as the explicit parenthetical source label)','విస్తరణతత్వ సూత్రం (not adopted because it is unattested and less transparent)'],
@@ -1249,6 +2449,209 @@ alternatives['TE-T171']=['T-C-V సాధ్య చరిత్రలు, శే
 alternatives['TE-T172']=['జ్ఞానసంబంధ తర్క శీర్షిక, మూల రచయితల గమనిక, ఎనిమిది దిగుమతులు నిలిపి తప్పు భాగం హుక్‌ను ప్రకటిత అధ్యాయ హుక్‌గా సరిచేయడం (ఎంపిక)','భాగం హుక్‌ను అధ్యాయంలో అలాగే ఉంచడం (తిరస్కరణ)','స్థానిక సాధారణ తర్క పేజీ TeX హుక్‌కు ప్రత్యక్ష సాక్ష్యం అని చెప్పడం (తిరస్కరణ)'];
 alternatives['TE-T173']=['జ్ఞానసంబంధ/విశ్వాససంబంధ భేదం, పూర్వ ప్రాప్యత సంబంధ పదం, నాలుగు ఉదాహరణలు, బహు-కర్త పరిమితి నిలపడం (ఎంపిక)','epistemic, doxastic రెండింటినీ ఒకే జ్ఞాన పదంగా అనువదించడం (తిరస్కరణ)','ప్రాప్యత సంబంధాన్ని కాల సంబంధంగా చూపడం (తిరస్కరణ)','మూల చారిత్రక పేరును నిశ్శబ్దంగా సరిచేయడం (తిరస్కరణ)'];
 alternatives['TE-T174']=['Knows వ్యక్తి జ్ఞానం, EKnows సమూహ సంయోగం, CKnows అంతులేని పరస్పరజ్ఞానం భేదం నిలపడం (ఎంపిక)','సమూహ జ్ఞానం, సామాన్య జ్ఞానం ఒకటేనని చూపడం (తిరస్కరణ)','C కర్తకు అదనపు సత్య షరతు కల్పించడం (తిరస్కరణ)','మూల !! టోకెన్లను తీసివేయడం (తిరస్కరణ)'];
+alternatives['TE-T175']=['W/R/V నమూనాలో ప్రతి కర్తకు వేరు ప్రాప్యత సంబంధం, సమాచార అనుకూలతను వ్యాఖ్యానంగా నిలపడం (ఎంపిక)','బహు-కర్తలో ఒక్క సంబంధమే ఉందని చెప్పడం (తిరస్కరణ)','సమాచార అనుకూలతను కొత్త అధికారిక స్వీకృతంగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T176']=['Knows సత్యానికి అన్ని ప్రాప్య లోకాలు, ఉత్తరవర్తి లేక శూన్యసత్యం, స్వావర్తన ఎంపిక, R_G ద్వారా CKnows సత్యం నిలపడం (ఎంపిక)','mSat/ అసత్య సంకేతాన్ని టైపోగా మార్చడం (తిరస్కరణ)','మూల R^0=R సూచికను నిశ్శబ్దంగా మార్చడం (తిరస్కరణ)','S5 తప్పనిసరి అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T177']=['K/T/4/5 పట్టిక జతలు, యూక్లిడియన్ పూర్వ పదం, తెలిసిన షరతువాక్యం విక్టోరియా ఉదాహరణ నిలపడం (ఎంపిక)','జ్ఞాన మూసుకుపోవడాన్ని అందరూ అంగీకరిస్తారని చెప్పడం (తిరస్కరణ)','స్వపరిశీలన రెండు రకాల్ని కలపడం (తిరస్కరణ)','యూక్లిడియన్ పూర్వ పదానికి భిన్న రూపం ప్రవేశపెట్టడం (తిరస్కరణ)'];
+alternatives['TE-T178']=['అణు ఏకీభావం, ముందుకు/వెనక్కి షరతులు, సూత్ర సత్య సంరక్షణ, చిత్రాన్ని నిలిపి A కర్త-సమితి తప్పును Gగా ప్రకటించి మార్చడం (ఎంపిక)','నిర్వచించని Aను కర్త సమితిగా ఉంచడం (తిరస్కరణ)','సూత్రాలన్నింటికీ కొత్త నిరూపణ కల్పించడం (తిరస్కరణ)','చిత్ర ద్విసమానుకరణను ఒకటి-ఒకటిగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T179']=['గతి జ్ఞాన మార్పు, అందరూ గమనించే సత్య ప్రకటన, [!B] కారకం, [!A]!B నిర్మాణం, ఐచ్ఛిక CKnows నిలపడం (ఎంపిక)','సత్యం కాని ప్రకటన కూడా ప్రజలందరికీ సత్యంగా కనిపించిందని చెప్పడం (తిరస్కరణ)','మూల తొలి జాబితాలో లేని ద్విసోపాధిక కారకాన్ని మౌనంగా చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T180']=['నవీకరణలో W-prime/R-prime/V-prime పరిమితులు, ప్రకటన శూన్యసత్యం, b కొత్త జ్ఞానం, p సామాన్య జ్ఞానం, p∧¬Knows_b p అసత్యమయ్యే ఉదాహరణ నిలిపి ఒక్క సంకేత లోపం ప్రకటించి సరిచేయడం (ఎంపిక)','ప్రకటన ఎల్లప్పుడూ దాని విషయాన్ని సామాన్య జ్ఞానంగా చేస్తుందని చెప్పడం (తిరస్కరణ)','మూల [!A]B సంకేత లోపాన్ని మౌనంగా వదలడం (తిరస్కరణ)','ప్రకటనలో చరాల విలువలను మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T181']=['పూర్వ TE-T052 అంతఃప్రజ్ఞావాద తర్క రూపం, నాలుగు దిగుమతులు, భాగం హుక్ నిలపడం (ఎంపిక)','ప్రత్యేక కారణం లేకుండా మరో శాఖా శీర్షిక పెట్టడం (తిరస్కరణ)','దిగుమతి పథాలను స్థానికీకరించడం (తిరస్కరణ)'];
+alternatives['TE-T182']=['పరిచయం అధ్యాయ శీర్షిక, ఐదు దిగుమతులు, అధ్యాయ ముగింపు హుక్ నిలపడం (ఎంపిక)','BHK దిగుమతిని వదలడం (తిరస్కరణ)','భాగం ముగింపు హుక్‌గా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T183']=['సాంప్రదాయిక పరిమితి, n సరి/బేసి మరియు 2/3 షరతులు, రెండు అకరణీయ ఘాత నిరూపణలు, నిర్మాణాత్మక సాక్షి అర్థం నిలపడం (ఎంపిక)','పూర్వ సారూప్య విభాగంలోని ప్రధాన/సంయుక్త 7/9 ఉదాహరణను ఇక్కడికి మార్చడం (తిరస్కరణ)','మొదటి నిరూపణ స్పష్ట జతను ఇస్తుందని చెప్పడం (తిరస్కరణ)','నిర్మాణాత్మక/తాత్త్విక భేదం కలపడం (తిరస్కరణ)'];
+alternatives['TE-T184']=['ప్రాథమిక ∧/∨/→, అసత్య స్థిరాంకం, నిర్వచిత ¬/↔, సూత్ర ఆగమన నిర్వచనం నిలపడం (ఎంపిక)','అసత్య స్థిరాంకాన్ని కూడా నిర్వచిత సంకేతంగా చేయడం (తిరస్కరణ)','సాంప్రదాయిక సమానతలన్నీ అంతఃప్రజ్ఞావాదంలోనూ ఉన్నాయని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T185']=['నిర్మాణం-వ్యుత్పత్తి భేదం, BHK సంధాయక కేసులు, గుర్తుగల వియోజనం, ద్వినిషేధ నిర్మాణాలు నిలిపి C/!C, M2/M1 మూల లోపాలు ప్రకటించి సరిచేయడం (ఎంపిక)','నిర్మాణాన్ని ఔపచారిక వ్యుత్పత్తితో కలపడం (తిరస్కరణ)','అన్ని ఉదాహరణలు సరళమని మూల సంపాదకీయ హెచ్చరిక తొలగించడం (తిరస్కరణ)','h1 ఇన్‌పుట్ M1కు బదులు M2 జతను ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T186']=['FalseCl లేని సహజ నిగమనం, ఉపసంహరించని పరికల్పనల ప్రమేయకార్థం, అన్ని నియమ వృక్షాలు, సాంప్రదాయిక చేర్పు నిలిపి A1∧A1 మూల లోపం ప్రకటించి సరిచేయడం (ఎంపిక)','సాంప్రదాయిక వైరుధ్య నియమాన్ని జోడించడం (తిరస్కరణ)','నిరాకరణను మూల నిర్వచిత స్థితి నుంచి ప్రాథమికం చేయడం (తిరస్కరణ)','నిరూపణ వృక్షాలను గద్యంగా మాత్రమే మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T187']=['మూడు రకాల క్రమ-పంక్తి కారణాలు, తొమ్మిది స్వీకృత పథకాలు, Γ వ్యుత్పాద్యత, ఖాళీ సమితి సిద్ధాంతం, ఒకదిశ సాంప్రదాయిక చేర్పు నిలపడం (ఎంపిక)','సాంప్రదాయిక వ్యుత్పాద్యత నుంచి అంతఃప్రజ్ఞావాద వ్యుత్పాద్యతను కూడా ప్రకటించడం (తిరస్కరణ)','స్వీకృత పథకాలను అనువాదార్థం మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T188']=['నాలుగు దిగుమతులు, అధ్యాయ ముగింపు హుక్, క్రిప్కె/స్థలవిజ్ఞాన పరిమితి, ఉదాహరణల లేమి నిలపడం (ఎంపిక)','అధ్యాయం సంపూర్ణమని ప్రకటించడం (తిరస్కరణ)','దిగుమతుల పథాలు స్థానికీకరించడం (తిరస్కరణ)'];
+alternatives['TE-T189']=['పాక్షిక క్రమం, జ్ఞాన ఏకదిశ పెరుగుదల, భవిష్యత్ స్థితుల్లో సోపాధికం/నిరాకరణ, బహిష్కృత మధ్యమ వైఫల్యం, వివృత సమితుల ప్రత్యామ్నాయం నిలపడం (ఎంపిక)','సోపాధికాన్ని స్థానిక సాంప్రదాయిక సత్య షరతుగా మార్చడం (తిరస్కరణ)','నిరాకరణకు భవిష్యత్ స్థితి షరతు తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T190']=['పాక్షిక క్రమ నమూనా, ఏకదిశ విలువకేటాయింపు, అన్ని లోక-సత్య నిబంధనలు, ప్రతికూల సత్య సంకేతం, అభ్యాసాలు నిలపడం (ఎంపిక)','\\mSat/ను దోషంగా భావించి మార్చడం (తిరస్కరణ)','సోపాధికానికి స్థానిక మాత్రపు సత్య నిర్వచనం పెట్టడం (తిరస్కరణ)'];
+alternatives['TE-T191']=['నమూనా అంతట సత్యం, స్థానిక అనుగమనం, ప్రపంచ పరిమితి, తుద అనుగమన నిరూపణ నిలిపి మొదటి నిరూపణలో స్థానిక పరికల్పన సరిచేయడం (ఎంపిక)','మొదటి అంశంలో మూల అన్యాయ సమగ్ర పరికల్పనను ఉంచడం (తిరస్కరణ)','నమూనాలో సత్యం, లోకంలో సత్యం ఒకటిగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T192']=['వివృత సమితి మూడు స్వీకృతాలు, అంతర్భాగం, ఐదు సూత్ర-సమితి నిబంధనలు, అతి పెద్ద వివృత సోపాధికం నిలపడం (ఎంపిక)','మూల subset/subseteq సంకేతాలను వ్యాఖ్యాత్మకంగా మార్చడం (తిరస్కరణ)','సోపాధికాన్ని సాధారణ సమితి వ్యత్యాసంగానే నిర్ధారించడం (తిరస్కరణ)'];
+alternatives['TE-T193']=['పూర్వ నిర్దుష్టత/సంపూర్ణత పదాలు, ఏడు దిగుమతులు, పరిచయం మరియు వ్యుత్పాద్యత నిరూపణల లేమి నిలపడం (ఎంపిక)','అసంపూర్ణ సంపాదకీయ గమనికను తొలగించడం (తిరస్కరణ)','దిగుమతి పథాలు మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T194']=['వ్యుత్పత్తి పొడవుపై ఆగమనం, స్వీకృత/పూర్వాపేక్ష/MP కేసులు, స్వావర్తన-ఆధారిత ముగింపు నిలిపి అదనపు సత్య వాదన సంకేతాన్ని ప్రకటించి సరిచేయడం (ఎంపిక)','స్వీకృత చెల్లుబాటు ఇప్పటికే ఇక్కడ నిరూపితమని చెప్పడం (తిరస్కరణ)','తప్పు మూడవ సత్య వాదనను యథాతథం ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T195']=['నియమాల కేసులపై ఆగమనం, ఉపసంహరించని పరికల్పనలు, భవిష్యత్ లోక-సత్యం, నిరాకరణ అభ్యాసాలు నిలిపి మూడు మూల లోపాలు ప్రకటించి సరిచేయడం (ఎంపిక)','సంయోగ కేసులో A∧B అనే తప్పు లక్ష్యం ఉంచడం (తిరస్కరణ)','వియోజన కేసులో మూలకాన్ని నేరుగా సమితితో సమ్మేళనం చేయడం (తిరస్కరణ)','మూల అభ్యాసంగా వదిలిన నిరాకరణ నిరూపణలు కల్పించడం (తిరస్కరణ)'];
+alternatives['TE-T196']=['ప్రధాన సమితి మూడు షరతులు, అవ్యుత్పాద్యతను నిలిపే Γ_n నిర్మాణం, పరిమిత మద్దతు, వరుస ఎంపిక నిలిపి రెండు మూల నిరూపణ ఖాళీలు ప్రకటించి సరిచేయడం (ఎంపిక)','ఖాళీ పరిమిత ఉపసమితికి గరిష్ఠ సూచిక ఉందని అనుకోవడం (తిరస్కరణ)','మొత్తం అర్హ వియోజనాల సంఖ్య ప్రతిదశలో తగ్గుతుందని చెప్పడం (తిరస్కరణ)','ప్రధానాన్ని సంపూర్ణ సమితితో కలపడం (తిరస్కరణ)'];
+alternatives['TE-T197']=['పూర్వ మోడల్ తర్క కానానికల్ నమూనా పదం, ప్రకృతిసంఖ్యల పరిమిత క్రమాలు, ప్రారంభ భాగ R, Δ(σ) విస్తరణ, V ఏకదిశ పెరుగుదల నిలిపి ఆగమన పరామితి ప్రకటించి సరిచేయడం (ఎంపిక)','canonicalను అంకగణిత standardతో కలిపి ప్రామాణిక నమూనా అనడం (తిరస్కరణ)','మూల క్రమం σపైనే ఆగమనం అంటూనే ఉండడం (తిరస్కరణ)'];
+alternatives['TE-T198']=['కానానికల్ నమూనా సత్యం iff ప్రధాన సమితి వ్యుత్పాద్యత, అసత్య/అణు/సంయోగ/వియోజన/సోపాధిక కేసులు, మూల ఖాళీ నిరాకరణ కేసు నిలపడం (ఎంపిక)','మూలంలో లేని నిరాకరణ నిరూపణను అనుమానంగా చేర్చడం (తిరస్కరణ)','ఖాళీ కేసు ఉన్నా ఉపప్రమేయం పూర్తిగా నిరూపితమైందని ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T199']=['లిండెన్‌బామ్ ప్రధాన విస్తరణ, శూన్య క్రమ లోకం, సత్య ఉపప్రమేయం ఆధారిత ప్రతివిపర్యయం, మూడు అభ్యాసాలు నిలిపి ఉపప్రమేయ ఖాళీ కేసును సమీక్ష పరిమితిగా ప్రకటించడం (ఎంపిక)','అనిరూపిత నిరాకరణ కేసు ఉన్నా పూర్తి నిరూపణ ధృవీకృతమని చెప్పడం (తిరస్కరణ)','మూడు అభ్యాసాలకు కొత్త పరిష్కారాలు చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T200']=['పరిమిత నమూనా సిద్ధాంతం, నిర్ణయ కలనం, ఉపసూత్ర సత్య రకాల సవరించిన quotient, పరిమిత Sకు ఆగమన అభ్యాసం నిలిపి మూల అణు-రక నిర్మాణ లోపం ప్రకటించి సరిచేయడం (ఎంపిక)','అణు-చర రకాలే అన్ని సోపాధిక సూత్రాల సత్యాన్ని నిలుపుతాయని చెప్పడం (తిరస్కరణ)','పరిమిత ఉపసూత్రాల బదులు Pపై అన్ని సూత్రాలకు ఆగమనం ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T201']=['పూర్వ మోడల్ తర్క పూర్వసూచిక టాబ్లో పదం, మూల ముసాయిదా స్థితి, నాలుగు క్రియాశీల/రెండు వ్యాఖ్యానిత దిగుమతులు, చాప్టర్ హుక్ నిలపడం (ఎంపిక)','సంపూర్ణత విభాగం సిద్ధంగా ఉందని రెండు వ్యాఖ్యానిత దిగుమతులు సక్రియం చేయడం (తిరస్కరణ)','ప్రతినమూనా చర్చ ఇంకా అవసరమనే గమనిక తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T202']=['చిహ్నిత సూత్రం, సంవృత శాఖ/టాబ్లో, ధన పూర్ణసంఖ్యల పూర్వసూచికలు, σ.n మరియు σ.* ప్రాప్యత నిలపడం (ఎంపిక)','పూర్వసూచికను సాధారణ చిహ్నంతో కలపడం (తిరస్కరణ)','శూన్య క్రమాన్నీ పూర్వసూచికగా అనుమతించడం (తిరస్కరణ)','మూల మోడల్ టాబ్లోల ప్రస్తావనను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T203']=['రెండు నియమ పట్టికలన్నీ, సత్య స్థిరత్వ సంవృత షరతు, వాడిన/కొత్త పూర్వసూచిక భేదం నిలిపి సోపాధిక సత్య గద్యాన్ని పట్టికకు సరిపోల్చి ప్రకటించడం (ఎంపిక)','గద్యంలోని T A/F B శాఖలను పట్టిక F A/T Bకు విరుద్ధంగా ఉంచడం (తిరస్కరణ)','గద్య నియమ సంకేత వాదనల తారుమారు ఉంచడం (తిరస్కరణ)','పట్టిక వృక్షాలను మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T204']=['సంవృత వృక్షపు సూత్రాలు, పూర్వసూచికలు, శాఖలు, సంవృత చిహ్నాలు, నాలుగు అభ్యాసాలు నిలిపి రెండు అసత్య సంయోగ కారణ సూచికలను ఏడో పంక్తికి ప్రకటించి సరిచేయడం (ఎంపిక)','నాలుగో పంక్తి అసత్య సోపాధికం నుంచే సంయోగ శాఖలు వచ్చాయని ఉంచడం (తిరస్కరణ)','ఉదాహరణ వృక్షాన్ని గద్యంగా మాత్రమే మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T205']=['పూర్వసూచిక అర్థనిర్దేశం, శాఖ సంతృప్తి, నిర్దుష్టత నిరూపణ, నాలుగు ప్రకటిత మూల సవరణలు నిలపడం (ఎంపిక)','మూల ప్రతినమూనా/నియమ/ఉపపత్తి తప్పులను మౌనంగా పునరుత్పత్తి చేయడం (తిరస్కరణ)','అభ్యాసాల స్థానంలో మూలంలో లేని పూర్తి నిరూపణలు చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T206']=['ప్రతివాస్తవ సోపాధికాలు (ఎంపిక; ప్రత్యేక భావం తరువాతి విభాగ నిర్వచనంతో నియంత్రితం)','వాస్తవవిరుద్ధ షరతువాక్యాలు (సంభావ్య వివరణాత్మక రూపం; అన్ని సందర్భాలు గత అసత్య పూర్వాంగానికి పరిమితం కావు)','counterfactuals అనే ఆంగ్ల శీర్షికను వదలడం (తిరస్కరణ)'];
+alternatives['TE-T207']=['పరిచయం (ఎంపిక; స్థిర అధ్యాయ శీర్షిక)','ఆంగ్ల Introduction అలాగే ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T208']=['భౌతిక సోపాధికం / సత్యమూల్యాధారితం / పూర్వపక్షం-ఉత్తరపక్షం (ఎంపిక; సత్యనిర్వచనంతో నియంత్రితం)','ఆంగ్ల material conditional, truth-functionalలను పాఠక పదాలుగానే ఉంచడం (తిరస్కరణ)','భౌతికం అనే పదానికి భౌతికశాస్త్ర భావం ఇవ్వడం (తిరస్కరణ)'];
+alternatives['TE-T209']=['సంయోజకం-తార్కిక పర్యవసానం భేదం, లూయిస్ సూత్రాలు, చంద్రుడు ఉదాహరణ, సూచనాత్మక వాక్య సర్వసత్యం నిలపడం (ఎంపిక)','$\\lif$ను ఎక్కడైనా అర్థపర పర్యవసానంగానే చదవడం (తిరస్కరణ)','చంద్రుడు ఉదాహరణను గణిత సూత్రాలకు పర్యవసాన నిరూపణగా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T210']=['కఠిన సోపాధికం, పెట్టె-భౌతిక నిర్వచనం, S5 అభ్యాసాలు, అనివార్య/అనివార్యం కాని సత్య భేదం నిలిపి ఒక తప్పు సూత్రాన్ని ప్రకటించి సరిచేయడం (ఎంపిక)','కఠిన సోపాధికాన్ని భౌతిక సోపాధికంతో కలపడం (తిరస్కరణ)','భౌతిక నిరాకరణ నుంచే పూర్వపక్ష-నిరాకృత ఉత్తరపక్షం పర్యవసించదని మూల తప్పును ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T211']=['ప్రతివాస్తవ/సూచనాత్మక వాక్యజంటలో కాలరూప భేదం, అగ్గిపుల్ల కారణ ఉదాహరణ, సమీప సాధ్యలోక అర్థవిచారం నిలపడం (ఎంపిక)','రెండు ఓస్వాల్డ్ వాక్యాలకు ఒకే కాలరూపం ఇవ్వడం (తిరస్కరణ)','సమీప సాధ్యలోక విశ్లేషణను భౌతిక సోపాధిక సత్యపట్టికతో కలపడం (తిరస్కరణ)'];
+alternatives['TE-T212']=['కనిష్ఠ మార్పు అర్థవిచారం (ఎంపిక; పరిచయ విభాగ నిర్వచనంతో నియంత్రితం)','ఆంగ్ల Minimal Change Semanticsను పాఠక శీర్షికగా ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T213']=['సమీప సాధ్యలోకాలు, గోళాల చిత్రపు అంతర్గత/బాహ్య దూర భేదం, $\\cif$ సంతృప్తి షరతు నిలపడం (ఎంపిక)','అత్యంత సమీప ఒకే లోకం తప్పనిసరి అని వాదించడం (తిరస్కరణ)','చిత్రాన్ని మార్చి TeX ఆకృతిని కోల్పోవడం (తిరస్కరణ)'];
+alternatives['TE-T214']=['కేంద్రిత/అంతర్నిహిత గోళ వ్యవస్థ, చిత్రం, రెండు సంతృప్తి శాఖలు నిలిపి చిన్న పూర్వపక్ష రహిత గోళాలపై మూల అతివ్యాప్తిని ప్రకటించి పరిమితం చేయడం (ఎంపిక)','చిన్న గోళాలన్నీ పూర్వపక్షాన్ని కలిగినవేనని అనుకోవడం (తిరస్కరణ)','అనంత అవరోహి గోళాలకు తప్పనిసరిగా కనిష్ఠ సాక్షి ఉందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T215']=['శూన్యసత్యం/శూన్యసత్యం కాని సత్యం, రెండు వ్యతిరేకాల అసత్య భేదం, $u$-సత్యం/$v$-అసత్యం స్థితి, ఐదు చిత్ర శీర్షికలు నిలపడం (ఎంపిక)','పూర్వపక్ష-లోకమే లేకున్నా ప్రతివాస్తవం అసత్యమని చెప్పడం (తిరస్కరణ)','కఠిన సోపాధికంలా ప్రతివాస్తవం అనివార్య సత్యం/అసత్యమే అని అనుకోవడం (తిరస్కరణ)'];
+alternatives['TE-T216']=['పూర్వపక్ష బలపరచడం సూత్రం, అంతరిక్ష అగ్గిపుల్ల నిగమనం, మూడు లోకాల గోళ ప్రతినమూనా నిలిపి మూడు మూల పూర్వపక్ష చర్యలను ప్రకటించి సరిచేయడం (ఎంపిక)','అగ్గిపుల్ల మండించడమే పూర్వపక్షమని మూల గద్య తప్పును ఉంచడం (తిరస్కరణ)','భౌతిక సోపాధికానికి కూడా పూర్వపక్ష బలపరచడం చెల్లదని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T217']=['గొలుసు నియమం, హూవర్ వేర్వేరు సమీప లోకాల వాదన, మూడు లోకాల ప్రతినమూనా నిలిపి $q \\lif r$ సత్య సంకేతాన్ని ప్రకటించి సరిచేయడం (ఎంపిక)','రెండో పూర్వాపేక్షలో $q \\lif r$ అసత్యమని మూల సంకేత లోపాన్ని ఉంచడం (తిరస్కరణ)','చారిత్రక-రాజకీయ పరికల్పనలను స్వతంత్ర ధృవీకృత వాస్తవాలుగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T218']=['ప్రతివిపర్యయ అపర్యవసానం, గోథె జంట వాక్యాలు, మూడు లోకాల గోళ నమూనా నిలిపి స్థానిక గోళ జాబితాను $O_w$గా ప్రకటించి సరిచేయడం (ఎంపిక)','ప్రపంచం నుంచి గోళ వ్యవస్థకు పంపే $O$ ప్రమేయాన్నే గోళాల జాబితాగా ఉంచడం (తిరస్కరణ)','అన్ని ఇతర లోకాల గోళ వ్యవస్థలను మూలంలో లేకుండా ఊహించడం (తిరస్కరణ)'];
+alternatives['TE-T219']=['సమితి సిద్ధాంతం (ఎంపిక; పూర్వ స్థానిక సమితి పదం)','ఆంగ్ల Set Theory శీర్షికను ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T220']=['దశలవారీ భావన (ఎంపిక; సంచిత నిర్మాణ అధ్యాయ సందర్భం)','పునరావృత భావన (సాధ్యమైన ప్రత్యామ్నాయం; కేవలం అదే చర్య మళ్లీ చేయడమనే సంకుచిత భావం వచ్చే ప్రమాదం)','ఆంగ్ల Iterative Conceptionను శీర్షికగా ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T221']=['సమితుల సమానత్వ సూత్రం (Extensionality) అనే పూర్వ TE-T003 వివరణాత్మక శీర్షికను పునర్వాడి ద్విసోపాధిక నిర్వచనం నిలపడం (ఎంపిక)','ప్రత్యక్ష సాక్షి లేని కొత్త తెలుగు తలపదాన్ని సాక్షాత్తు కానానికల్‌గా చెప్పడం (తిరస్కరణ)','కుండలీకృత ఆంగ్ల మూలపదాన్ని లేకుండా చేయడం (తిరస్కరణ)'];
+alternatives['TE-T222']=['నిర్బంధరహిత ధర్మసంగ్రహం అని ఏ సూత్రానికైనా సమితి అన్న భావం స్పష్టం చేసి, పూర్వ రసెల్ పదం, మొదటిస్థాయి పథకం నిలపడం (ఎంపిక)','అమాయక ధర్మసంగ్రహం మాత్రమే చెప్పి నిర్బంధరాహిత్యాన్ని దాచడం (తిరస్కరణ)','వైరుధ్యాన్ని కేవలం సమితి సిద్ధాంతపు స్వీకృతం మార్చితే తొలగిపోతుందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T223']=['స్వవర్గావలంబిత/అనవలంబిత అనే నిర్వచన నియంత్రిత సమాసాలు, దుష్టవలయ సూత్రం, ప్రైమ్-రకాలు, రామ్సే వాదన నిలిపి రెండు మూల గద్య తిరుగులను ప్రకటించి సరిచేయడం (ఎంపిక)','ప్రెడికేటివ్/ఇంప్రెడికేటివ్ ఆంగ్ల పదాలనే వివరణ లేకుండా వాడడం (తిరస్కరణ)','స్వవర్గావలంబిత నిర్వచనాలన్నీ తప్పక వైరుధ్యపూరితమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T224']=['సంచిత-దశలవారీ సమితి భావన, 0--3 దశల లెక్కలు, $R_S$ పరిమితి, వ్యాఖ్యానిత ప్రత్యామ్నాయ గద్యాన్ని వ్యాఖ్యలుగానే నిలపడం (ఎంపిక)','దశల ఉనికిని మూల పాదగమనిక లేకుండానే నిరూపితమని చెప్పడం (తిరస్కరణ)','వ్యాఖ్యానిత గద్యాన్ని పాఠక పాఠ్యంలో మౌనంగా చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T225']=['సమితి కాని మూలకాలు అనే నిర్వచన-నియంత్రిత పారదర్శక రూపం, ఆవు/పంది ఉదాహరణలు, అన్వయయోగ్యత మరియు శుద్ధ-సమితి పునాదివాద భేదం నిలపడం (ఎంపిక)','మూల నిర్వచనం లేకుండా కేవలం urelement అప్పుపదం వాడడం (తిరస్కరణ)','ఆవులు, పందులు సమితులు కావని మూలంలో లేని సమగ్ర సిద్ధాంతాన్ని చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T226']=['భావన విస్తారం, విలువల వ్యాప్తి, ప్రాథమిక నియమం V రూపాలను మూల సూత్రాలు/పాదగమనికతో నియంత్రించి నిలపడం (ఎంపిక)','రెండవ-క్రమ పరిమాణకారకాన్ని ప్రథమ-క్రమంగా చూపడం (తిరస్కరణ)','ఫ్రేగె వ్యవస్థలో అమాయక ధర్మసంగ్రహం నేరుగా స్వీకృతమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T227']=['Z సంకేతాన్ని నిలిపి అధ్యాయ శీర్షికను తెలుగులో ఇవ్వడం (ఎంపిక)','దిగుమతి పథాలను స్థానికీకరించడం (తిరస్కరణ)','అధ్యాయ ముగింపు హుక్ తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T228']=['మూడు దశ సూత్రాలను క్రమంగా నిలిపి సుక్రమత బలమైన మౌన ఊహ అనే జాగ్రత్తను స్పష్టం చేయడం (ఎంపిక)','సుక్రమత ముందే నిరూపితమని చెప్పడం (తిరస్కరణ)','స్థానిక సూత్ర పేర్లను ప్రామాణిక సాహిత్య పేర్లుగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T229']=['వేరుచేయడం స్వీకృత పథకం, మూల సమితి A పరిమితి, ఖాళీ కాని కుటుంబ ఛేదనం, స్వీయ-సభ్యత్వ దశ వివరణలో తరువాతి తొలి దశ అనే కచ్చిత రూపం (ఎంపిక)','అమాయక ధర్మసంగ్రహం, పరిమిత వేరుచేయడాన్ని కలపడం (తిరస్కరణ)','ఖాళీ కుటుంబ ఛేదనం కూడా సమితి అవుతుందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T230']=['పూర్వ TE-T009 సమ్మేళనం/ఛేదనం రూపాలతో సర్వసామాన్య సమ్మేళన సూత్రాన్ని నిలపడం (ఎంపిక)','సమ్మేళనాన్ని ద్విసమితుల సందర్భానికే కుదించడం (తిరస్కరణ)','మూలకాల సభ్యుల దశ క్రమాన్ని కలపడం (తిరస్కరణ)'];
+alternatives['TE-T231']=['జంటల స్వీకృతం, చివరి దశ లేదు అనే అదనపు అంగీకారం, మూడు పర్యవసానాలు, వ్యాఖ్యానిత నిరూపణ స్థితి నిలపడం (ఎంపిక)','చివరి దశ లేదు అనేది పూర్వ కథలో ఇప్పటికే స్పష్టమని చెప్పడం (తిరస్కరణ)','వ్యాఖ్యానిత నిరూపణను మౌనంగా పాఠక పాఠ్యంలో చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T232']=['ఘాత సమితుల స్వీకృతం, తరువాతి దశ సమర్థన, ద్విఘాత సమితి నుంచి కార్టీజియన్ లబ్ధం, రెండు అభ్యాసాలు నిలపడం (ఎంపిక)','ప్రతి ఉపసమితి ఉనికిని వేరుచేయడం లేకుండానే స్వీకృతం ఒక్కటే ఇస్తుందని చెప్పడం (తిరస్కరణ)','ద్విఘాత సమితిని ఒకే ఘాత సమితిగా కుదించడం (తిరస్కరణ)'];
+alternatives['TE-T233']=['అనంతంగా అనేక సమితులు, అనంత సమితి తేడా, డెడెకిండ్ బీజగణితం, రెండు నిరూపణ సందర్భాలు, అదనపు అనంత దశ ఊహ నిలపడం (ఎంపిక)','వారస నిర్మాణంతోనే అనంత సమితి స్వయంగా లభిస్తుందని చెప్పడం (తిరస్కరణ)','అనంత దశ దశలవారీ భావన నుంచే అనివార్యమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T234']=['Z-minus సంకేతం, ఆరు స్వీకృత-రకాలు, సెర్మెలో చారిత్రక ఆపాదన, పూర్వ భాగానికి పునఃపరిశీలన నిలపడం (ఎంపిక)','వేరుచేయడం పథకం ఒక్క స్వీకృతమేనని చెప్పడం (తిరస్కరణ)','మూలంలోని minus సూచనకు ఇప్పుడే అదనపు స్వీకృత పేరు చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T235']=['సహజ సంఖ్యల ప్రతినిధులు ఎంపిక మాత్రమే, సెర్మెలో/వాన్ న్యూమన్ రెండు వారసాలు, రెండు 2 రూపాలు, ఏకైకత లేమి నిలపడం (ఎంపిక)','సహజ సంఖ్యలు తాత్త్వికంగా ఒక నిర్దిష్ట సమితి రూపమేనని ప్రకటించడం (తిరస్కరణ)','కరణీయ సంఖ్యలను అకరణీయ సంఖ్యలుగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T236']=['తరగతి-సమితి జాగ్రత్త, phi(S) సాక్షి, పరిమిత వేరుచేయడం, డెడెకిండ్ సంవృతం నిలపడం; వ్యాఖ్యానిత c/C మూల లోపాన్ని నాన్-రెండరింగ్ స్థితితో ప్రకటించడం (ఎంపిక)','అపరిమిత ధర్మసంగ్రహ సమితి ఉందని ఊహించడం (తిరస్కరణ)','మూల వ్యాఖ్యను పాఠక నిరూపణగా ప్రచురించడం (తిరస్కరణ)'];
+alternatives['TE-T237']=['క్రమసంఖ్యలు అనే అధ్యాయ శీర్షికను మూల పది దిగుమతులతో నిలపడం (ఎంపిక)','అధ్యాయంలో ఇంకా నిర్వచించని క్రమసంఖ్యల సాంకేతిక అర్థాన్ని ఈ శీర్షికలోనే ప్రకటించడం (తిరస్కరణ)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T238']=['మొదటి అనంత దశ తరువాత కొనసాగింపు, సహజ సంఖ్యలన్నింటి తరువాతి అతిపరిమిత క్రమసంఖ్య భావన, తరువాతి నిర్వచన లక్ష్యం నిలపడం (ఎంపిక)','అనంత దశనే చివరి దశగా చూపడం (తిరస్కరణ)','అతిపరిమిత క్రమసంఖ్యను సహజ సంఖ్యతో కలపడం (తిరస్కరణ)'];
+alternatives['TE-T239']=['మూడు చిత్రాలూ, omega/omega+1/omega+omega క్రమభేదాలూ నిలిపి అనుక్రమం పదం వాడడం (ఎంపిక)','0ను చివరికి మార్చిన తరువాత కూడా చివరి మూలకం లేదని చెప్పడం (తిరస్కరణ)','సరి-బేసి క్రమాన్ని సాధారణ సహజ క్రమంగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T240']=['సంపర్కితత్వం, కనిష్ఠ/అత్యల్ప భేదం, కఠిన క్రమధర్మాలు, సుక్రమ ఆగమన విపర్యయ నిరూపణ నిలపడం (ఎంపిక)','కనిష్ఠాన్ని నిర్వచన దశలోనే అత్యల్పంతో సమానమని ఊహించడం (తిరస్కరణ)','సూత్రాల్లో పరామితులను నిషేధించడం (తిరస్కరణ)'];
+alternatives['TE-T241']=['నిర్వచన-నియంత్రిత క్రమ-సమరూపత, తనకన్నా చిన్న ఆరంభ ఖండం, సమరూపత ఏకైకత్వం/పోలిక నిరూపణలు, f పరిధి మూల లోపం ప్రకటించి సరిచేయడం (ఎంపిక)','properను క్రమం గల ఖండంగా తప్పుగా అనువదించడం (తిరస్కరణ)','f నిర్వచన సమితి B_b2 అని మూల లోపాన్ని నిలపడం (తిరస్కరణ)'];
+alternatives['TE-T242']=['క్రమరకం రెండు ఆశిత సూత్రాలు, సంక్రామక/సభ్యత్వ-సుక్రమ నిర్వచనం, తొలి క్రమసంఖ్యలు, ప్రతినిధి ఎంపిక జాగ్రత్త నిలపడం (ఎంపిక)','క్రమరకపు ఆశిత సూత్రాలను ఇక్కడే నిరూపిత సిద్ధాంతాలుగా చెప్పడం (తిరస్కరణ)','సహజ సంఖ్యల సమితి ప్రతినిధినే తాత్త్విక ఏకైక సంఖ్యగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T243']=['అతిపరిమిత ఆగమనం, త్రివిధత, బురాలి-ఫోర్టీ వైరుధ్యం, అవరోహణ/ఉపసమితి ఫలితాలు నిలిపి phi-సంతృప్తి అత్యల్ప సాక్షి లోపాన్ని ప్రకటించి సరిచేయడం (ఎంపిక)','సూత్రం phiనే క్రమసంఖ్య మూలకంగా చూపడం (తిరస్కరణ)','అన్ని క్రమసంఖ్యలు ఒక సమితి అని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T244']=['ప్రతిస్థాపన పథకంలో ప్రతి xకు ఏకైక y, పద-చిత్ర పర్యవసానం, సమితి-ప్రమేయ చిత్రం భేదం నిలపడం (ఎంపిక)','సూత్రం ఏకైకత షరతును తొలగించడం (తిరస్కరణ)','ప్రతిస్థాపన Z-minusలోనే వ్యుత్పన్నమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T245']=['ZF-minusను Z-minusతో పాటు ప్రతిస్థాపనగా నిర్వచించి ఫ్రెంకెల్/స్కోలెమ్ ఆపాదనల తేడా నిలపడం (ఎంపిక)','ప్రతిస్థాపన సమర్థన ఇప్పటికే పూర్తయిందని చెప్పడం (తిరస్కరణ)','తొలి కచ్చిత రూపకల్పనను ఫ్రెంకెల్‌కే ఆపాదించడం (తిరస్కరణ)'];
+alternatives['TE-T246']=['ప్రతిస్థాపనతో ఏకైక క్రమసంఖ్య ప్రతినిధి, క్రమరక నిర్వచనం, సమానత్వ/సభ్యత్వ లక్షణాలు నిలిపి రెండు మూల సూత్ర లోపాలను ప్రకటించి సరిచేయడం (ఎంపిక)','క్రమయుగ్మ నిర్మాణాన్ని ప్రమేయపు లక్ష్య సమితిగా వదలడం (తిరస్కరణ)','నిర్వచితం కాని f(alpha)పై ద్విసోపాధికాన్ని నిరూపితంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T247']=['ఉత్తరవర్తి, సీమా అనే వేరు క్రమసంఖ్య రూపాలు, మూడు-సందర్భాల ఆగమనం, కనిష్ఠ కఠిన పై హద్దు నిలపడం (ఎంపిక)','సీమాను పరిమితమైన సంఖ్యగా అర్థమయ్యే పదంతో కలపడం (తిరస్కరణ)','కఠిన, కఠినంకాని పై హద్దులను కలపడం (తిరస్కరణ)'];
+alternatives['TE-T248']=['దశలు, స్థాయిలు శీర్షికను ఆరు మూల దిగుమతులతో నిలపడం (ఎంపిక)','స్థాయి, దశను నిర్వచనం ముందే ఒకటిగా ప్రకటించడం (తిరస్కరణ)','దిగుమతి పథాలు అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T249']=['V-alpha మూడు పునరావృత్త సమీకరణాలు, నమూనా/అంతర్గత నిర్వచన భేదం నిలపడం (ఎంపిక)','సీమా దశలో ముందరి దశల ఛేదనం పెట్టడం (తిరస్కరణ)','ఉనికి నిరూపణ ఈ నిర్వచనంతోనే పూర్తయిందని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T250']=['పరిమిత/సాధారణ/సరళ అతిపరిమిత పునరావృత్తి, ఉజ్జాయింపు నిర్వచన భేదాలు నిలపడం (ఎంపిక)','పద పథకాన్ని సమితి ప్రమేయంగా చూపడం (తిరస్కరణ)','శూన్య ప్రమేయానికి మూల విభజన లోపాన్ని చెప్పకుండా వదలడం (తిరస్కరణ)'];
+alternatives['TE-T251']=['సమర్థమైనది అనే పదాన్ని మూల ద్విసోపాధిక నిర్వచనంతో కట్టడం (ఎంపిక)','potentను నిర్దిష్టంగా ప్రామాణిక తెలుగు పదమని చెప్పడం (తిరస్కరణ)','సంక్రమణను సంచితత్వంతో కలపడం (తిరస్కరణ)'];
+alternatives['TE-T252']=['పునాది, నియమితత్వం స్వయంసిద్ధ సూత్రాలను వేరు చేసి సంక్రమణ ఆవరణను పునరావృత్తితో నిర్వచించడం (ఎంపిక)','రెండు సూత్రాలు ఒకే వాక్యమని చూపడం (తిరస్కరణ)','మూల b/B చిహ్న లోపాన్ని మౌనంగా వదలడం (తిరస్కరణ)'];
+alternatives['TE-T253']=['Z/ZF సిద్ధాంతాల చేర్పుల నిర్వచనాలు, Z-minus/ZF-minus సాపేక్ష భేదం నిలపడం (ఎంపిక)','Z-minusలో నియమితత్వం పునాదికి సమానమని ప్రకటించడం (తిరస్కరణ)','V-alpha నిర్వచనానికి ప్రతిస్థాపన అవసరాన్ని వదలడం (తిరస్కరణ)'];
+alternatives['TE-T254']=['స్థాయిని కనిష్ఠ దశతో నిర్వచించి సభ్యత్వ ఆగమనం, సుప్రీమం సంబంధం నిలపడం (ఎంపిక)','స్థాయిని దశల సంఖ్యగానే నిర్వచించడం (తిరస్కరణ)','మూల వైరుధ్య ముగింపును ప్రకటించకుండా అనుసరించడం (తిరస్కరణ)'];
+alternatives['TE-T255']=['ప్రతిస్థాపన అధ్యాయ శీర్షికను పూర్వ పదంతో ఏకరూపంగా నిలపడం (ఎంపిక)','దిగుమతి పథాలను స్థానికీకరించడం (తిరస్కరణ)','అధ్యాయ డ్రైవర్‌లో ఉపవిభాగ నిరూపణలు చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T256']=['బాహ్య సమర్థనను ఫలితాలతో, అంతర్గత సమర్థనను భావనలతో కట్టడం (ఎంపిక)','రెండు సమర్థనలను ఒకటిగా కలపడం (తిరస్కరణ)','ప్రతిస్థాపన బలం వ్యాఖ్యను తగ్గించడం (తిరస్కరణ)'];
+alternatives['TE-T257']=['పరిధి పరిమితిని Mకు రెండు పరిమాణకారకాల కట్టుతో నిర్వచించి స్థాయిక్రమ ఎత్తు వాదన నిలపడం (ఎంపిక)','నమూనా సమితిని మొత్తం విశ్వంగా చెప్పడం (తిరస్కరణ)','సరి/బేసి సుక్రమాన్ని సాధారణ సంఖ్యాక్రమంగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T258']=['LT స్థరానికి, rank స్థాయికి వేరు పదాలు ఉంచి బాహ్య సమర్థనపై రెండు అభ్యంతరాలు నిలపడం (ఎంపిక)','LT, Zrను ZFతో సమబలంగా చూపడం (తిరస్కరణ)','సుసంగతతపై సందేహాన్ని అసంగతి నిరూపణగా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T259']=['పరిమాణ పరిమితి సూత్రాన్ని మరీ ఎక్కువ కాని వస్తువుల సమితి రూపంలో, దశ భావనతో ఉద్రిక్తతతో ఉంచడం (ఎంపిక)','రస్సెల్ సమితి పెద్దదిగా ఉండటం నిరూపితమని చెప్పడం (తిరస్కరణ)','పగ్ ఉపమానాన్ని వదలడం (తిరస్కరణ)'];
+alternatives['TE-T260']=['సంపూర్ణ అనంతత్వం, సహాంత్యత నిషేధం భేదాన్ని నిలిపి సాంకేతిక అడ్డంకి ప్రకటించడం (ఎంపిక)','సుక్రమ ప్రాతినిధ్యం ప్రతిస్థాపనకు సమానమని చెప్పడం (తిరస్కరణ)','Zలో దశ నిర్వచన సమస్యను మూసివేయడం (తిరస్కరణ)'];
+alternatives['TE-T261']=['ప్రతిబింబన పథక ద్విసోపాధిక సూత్రం, ఆరంభ ఖండ పరిమితీకరణను నిలపడం (ఎంపిక)','పథకాన్ని ఒక్క సూత్రంగా చెప్పడం (తిరస్కరణ)','సమర్థన ప్రయత్నాన్ని నిరూపిత నిర్ణయంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T262']=['బలహీన ప్రతిబింబనం, నిరపేక్షత, పైగీత సంకేతాలను వాటి స్థానిక నిరూపణ పాత్రలతో నిలపడం (ఎంపిక)','0/1 యుక్తిని ఒక్క సూత్ర ప్రతిబింబనగా తగ్గించడం (తిరస్కరణ)','మూల మూడు సూత్ర లోపాలను ప్రకటించకుండా అనుసరించడం (తిరస్కరణ)'];
+alternatives['TE-T263']=['పరిమిత స్వయంసిద్ధీకరణకు ZFలోపల/గురించి నిరూపణ భేదం, సంక్రమణ నమూనా వాదన నిలపడం (ఎంపిక)','T అసంగత ఫలితాన్ని ZF స్వయంగా అసంగతమని చదవడం (తిరస్కరణ)','మూల తప్పు పరిమితీకరణ పైసూచికను వదలడం (తిరస్కరణ)'];
+alternatives['TE-T264']=['క్రమసంఖ్య అంకగణితం శీర్షికతో ఐదు దిగుమతులు నిలపడం (ఎంపిక)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)','డ్రైవరులో కొత్త సిద్ధాంతాలు రాయడం (తిరస్కరణ)'];
+alternatives['TE-T265']=['వెన్నెముక ఉపమానం, క్రమసంఖ్య అంకగణిత కొత్త పాత్ర వేరు చేయడం (ఎంపిక)','omega కూడికలను ఇప్పటికే ఔపచారికంగా నిర్వచించామని చెప్పడం (తిరస్కరణ)','రెండు మార్గాల్లో ఒకటినే ముందుగా స్వీకరించడం (తిరస్కరణ)'];
+alternatives['TE-T266']=['విచ్ఛిన్న సమ్మేళనం, విలోమ నిఘంటు క్రమం ద్వారా కూడిక నిర్మాణం, పునరావృత్త మార్గం భేదం నిలపడం (ఎంపిక)','క్రమసంఖ్య కూడికను కమ్యూటేటివ్‌గా చెప్పడం (తిరస్కరణ)','మూల రెండు తప్పు సమ్మేళనాలను ప్రకటించకుండా ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T267']=['ఆరు స్థాయి లెక్కల సమానత్వ/అసమానత్వ భేదం, ఐదు అనంతత్వ సమానార్థకాలు నిలపడం (ఎంపిక)','గుణిత స్థాయి అసమానత్వాన్ని ఎల్లప్పుడూ సమానత్వంగా మార్చడం (తిరస్కరణ)','రెండవ అభ్యాస సంబంధ లోపాన్ని మౌనంగా వదలడం (తిరస్కరణ)'];
+alternatives['TE-T268']=['కార్టీషియన్ గుణితపు విలోమ నిఘంటు క్రమరకంగా గుణకారాన్ని, శూన్య మినహాయింపును నిలపడం (ఎంపిక)','శూన్య ఎడమ గుణకానికి తప్పు కఠిన సుప్రీమాన్ని వర్తింపజేయడం (తిరస్కరణ)','గుణకారాన్ని క్రమమార్పిడి ధర్మంతో చూపడం (తిరస్కరణ)'];
+alternatives['TE-T269']=['ధనాత్మక ఆధార పరిమిత మద్దతు ప్రమేయ నిర్మాణం, అన్ని ఆధారాల పునరావృత్తి నిర్వచనం వేరు ఉంచడం (ఎంపిక)','ఘాత/ఆధార ప్రమేయ రకాలను తిరగరాయడం (తిరస్కరణ)','శూన్య ఆధారంలోని నిర్మాణాత్మక/పునరావృత్తి తేడాను దాచడం (తిరస్కరణ)'];
+alternatives['TE-T270']=['కార్డినల్ సంఖ్యలు అనే వివరణాత్మక శీర్షిక (ఎంపిక)','క్రమసంఖ్యలు అని కలపడం (తిరస్కరణ)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T271']=['కార్డినాలిటీ సమానత్వాన్ని ద్వైజెక్షన్ సమసంఖ్యకత్వంతో అప్పుడూ అప్పుడే అనుసంధానించడం (ఎంపిక)','క్రమ-సమరూపతనే పరిమాణ సమానత్వంగా తీసుకోవడం (తిరస్కరణ)','హ్యూమ్ సూత్రాన్ని కాంటర్ సూత్రంతో మాటలేకుండా సమానీకరించడం (తిరస్కరణ)'];
+alternatives['TE-T272']=['అత్యల్ప సమసంఖ్యక క్రమసంఖ్య నిర్వచనాన్ని సుక్రమపరచదగిన సమితులకు షరతుగా ఉంచడం (ఎంపిక)','ZFలోనే ప్రతి సమితి కార్డినాలిటీ ఉందని చెప్పడం (తిరస్కరణ)','చిత్రంలోని ఇంజెక్షన్‌ను ద్వైజెక్షన్‌గా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T273']=['ZFCను ZFతో సుక్రమపరచడం చేర్పుగా, ఎంపిక సమానత్వం ZF పరిధిలోనే చెప్పడం (ఎంపిక)','ఎంపికను ఇప్పటికే చేర్చిన వేరే స్వయంసిద్ధంగా జాబితా చేయడం (తిరస్కరణ)','విభజన/ప్రతిస్థాపన పథకాలను ఒకే ఉదాహరణగా తగ్గించడం (తిరస్కరణ)'];
+alternatives['TE-T274']=['లెక్కించదగిన/లెక్కించలేని భేదాన్ని ఒమేగా కార్డినాలిటీ సరిహద్దుతో నిలపడం (ఎంపిక)','లెక్కించదగిన అన్ని క్రమసంఖ్యలనే కార్డినల్ సంఖ్యలుగా చెప్పడం (తిరస్కరణ)','సహజ సంఖ్య కాని ప్రతి సమితిని అనంతమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T275']=['పూర్వ స్వవర్గానవలంబిత/స్వవర్గావలంబిత పదాలతో సమితి-విధేయ రకభేదం నిలపడం (ఎంపిక)','హ్యూమ్ సూత్రాన్ని కాంటర్ సూత్రంతో రకభేదం లేకుండా కలపడం (తిరస్కరణ)','మౌలిక నియమం Vకు ఉన్న అసంగతతను హ్యూమ్ సూత్రానికీ ఆపాదించడం (తిరస్కరణ)'];
+alternatives['TE-T276']=['పూర్వ కార్డినల్, అంకగణిత పదాలతో శీర్షికను ఇవ్వడం (ఎంపిక)','క్రమసంఖ్య అంకగణితంగా మార్చడం (తిరస్కరణ)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T277']=['విచ్ఛిన్న సమ్మేళనం/కార్టీషియన్ గుణితం/ప్రమేయాల సమితి ఆధారంగా మూడు కార్డినల్ క్రియలను వేరు చూపడం (ఎంపిక)','కార్డినల్ క్రియలను క్రమసంఖ్య క్రియలతో సమానీకరించడం (తిరస్కరణ)','రియల్ సంఖ్యల నిరూపణ రూపరేఖను పూర్తి నిరూపణగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T278']=['యుగ్మాల గరిష్ఠ-మొదటి-రెండవ నిర్దేశాంక క్రమం, అనంత గరిష్ఠ కార్డినల్ ఫలితం నిలపడం (ఎంపిక)','క్రమాన్ని సాధారణ నిఘంటు క్రమంగా మార్చడం (తిరస్కరణ)','పరిమిత సూచిక ఖండ కేసును దాచడం (తిరస్కరణ)'];
+alternatives['TE-T279']=['ప్రమేయ విభజనను క్రమయుగ్మంగా, పునర్వ్యవస్థీకరణను నిజమైన కార్టీషియన్ గుణితంపై నిర్వచించి ఘాత నియమాలు నిలపడం (ఎంపిక)','ప్రమేయాల గుణితాన్ని యుగ్మంగా భావించడం (తిరస్కరణ)','శూన్య ఘాతానికి ఆధారమే ఫలితమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T280']=['CH/GCHను వేరు పరికల్పనలుగా, ZFC స్వతంత్రతను సత్య-అనిర్ణీతతతో కలపకుండా చూపడం (ఎంపిక)','స్వతంత్రత నుంచి సత్యవిలువ అనిర్ణీతమని వెంటనే చెప్పడం (తిరస్కరణ)','పరిమిత కార్డినల్ సంఖ్యలకు ఆలెఫ్ సూచికలు ఇవ్వడం (తిరస్కరణ)'];
+alternatives['TE-T281']=['ఆలెఫ్/బెత్ స్థిర బిందువులను ఎత్తు-వెడల్పు సమానత్వంతో, కఠినంగా పెరిగే టౌ/W నిర్మాణంతో నిలపడం (ఎంపిక)','టౌ ప్రారంభంలోనే స్థిర బిందువు ఉంటే కూడా కఠిన పెరుగుదల ఉందని చెప్పడం (తిరస్కరణ)','శూన్యాన్ని బెత్-స్థిర బిందువుగా లెక్కించడం (తిరస్కరణ)'];
+alternatives['TE-T282']=['ఎంపిక శీర్షిక, ఎనిమిది దిగుమతులు నిలపడం (ఎంపిక)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)','శీర్షికను సుక్రమపరచడంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T283']=['సుక్రమపరచడం/ఎంపిక సమానత్వంతో వినియోగం, సమర్థన రెండు ప్రశ్నలు నిలపడం (ఎంపిక)','స్వయంసిద్ధాల సమానత్వాన్ని కారణం లేకుండా ఒకే వాక్యంగా తగ్గించడం (తిరస్కరణ)','తాత్త్విక ఆమోదయోగ్యత ప్రశ్నను తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T284']=['అత్యల్ప స్థాయి ప్రతినిధుల సమితితో సుక్రమపరచడం లేని TS-కార్డినల్ నిర్మాణం నిలపడం (ఎంపిక)','అన్ని సమసంఖ్యక సమితుల సమగ్రతను సమితిగా స్వీకరించడం (తిరస్కరణ)','TS-కార్డినల్ నిర్వచనానికి ఎంపిక అవసరమని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T285']=['ZF హార్టోగ్స్ క్రమసంఖ్య, ప్రతి జత కార్డినాలిటీ పోలికతో సుక్రమపరచడం సమానత్వం నిలపడం (ఎంపిక)','సుక్రమపరచడం లేకుండానే అన్ని పరిమాణాలు పోల్చదగినవని చెప్పడం (తిరస్కరణ)','మూల గూడుకట్టిన సమసంఖ్యకత్వ సూత్రాన్ని అలాగే ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T286']=['ఖాళీ కాని సమితి నుంచి ఎంపిక ప్రమేయం, రెండు దిశల సమానత్వం, ఆపే ముందరి ఇంజెక్టివ్ గణన నిలపడం (ఎంపిక)','ఖాళీ సమితిపై నిర్వచితం కాని మొదటి ఎంపికను వర్తింపజేయడం (తిరస్కరణ)','ఆపు దశలో గత ఎంపికలను చెరిపివేయడం (తిరస్కరణ)'];
+alternatives['TE-T287']=['పరిమిత ఎంపిక, లెక్కించదగిన ఎంపిక, పూర్తి ఎంపిక బలభేదం మరియు రెండు గోప్య వినియోగాలు నిలపడం (ఎంపిక)','లెక్కించదగిన సమ్మేళన ఫలితం ఎంపిక లేకుండానే వస్తుందని చెప్పడం (తిరస్కరణ)','పూర్వ సమ్మేళన సూచిక తప్పును ప్రకటించకుండా వదలడం (తిరస్కరణ)'];
+alternatives['TE-T288']=['దశ-అంగీకారం, విచ్ఛిన్న కుటుంబ ఎంపిక సమితి ద్వారా అంతర్గత సమర్థన ప్రయత్నం అని చూపడం (ఎంపిక)','సమర్థన ప్రయత్నాన్ని ZF సిద్ధాంత నిరూపణగా చూపడం (తిరస్కరణ)','ఎంపిక సమితిని ఎంపిక ప్రమేయం నుంచి పూర్తిగా వేరు భావనగా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T289']=['ఘన గోళ విభజన, కొలవలేని ముక్కలు, భౌతిక పదార్థ-గణిత సిద్ధాంత భేదం నిలపడం (ఎంపిక)','గోళ ఉపరితలం ఘనపరిమాణమని చెప్పడం (తిరస్కరణ)','ముక్కలన్నిటికీ వేర్వేరు ఘనపరిమాణాలు కేటాయించడం (తిరస్కరణ)'];
+alternatives['TE-T290']=['పరిమేయ పూర్తి-చుట్టు భ్రమణ సమూహం, ఎంపిక ప్రతినిధులు, లెక్కించదగిన విభజన, కొలత వైరుధ్యం నిలపడం (ఎంపిక)','పరిమేయ రేడియన్ విలువలనే సమూహంగా వాడడం (తిరస్కరణ)','స్థిరబిందు అపవాదాన్ని పరిష్కరించకుండానే గోళ నిరూపణ పూర్తి అయిందనడం (తిరస్కరణ)'];
+alternatives['TE-T291']=['పద్ధతులు అనే పాఠక భాగ శీర్షిక, నిరూపణ పద్ధతుల సంపాదక పరిచయం నిలపడం (ఎంపిక)','దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T292']=['నిరూపణలు అనే అధ్యాయ శీర్షిక, పది విభాగ దిగుమతుల క్రమం నిలపడం (ఎంపిక)','శీర్షిక మాత్రమే ఉన్నందుకు దిగుమతులను తీసివేయడం (తిరస్కరణ)'];
+alternatives['TE-T293']=['నియమవ్యుత్పత్తి వ్యవస్థను సహజభాష నిరూపణ నుంచి వేరు చేసి, ఫలితాల నాలుగు పేర్ల పాత్రలు నిలపడం (ఎంపిక)','అన్ని నిరూపణలను వ్యుత్పత్తులుగా పిలవడం (తిరస్కరణ)','పరికల్పనను నిరూపించాల్సిన నిష్కర్షగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T294']=['నిరూపణ లక్ష్యం, అనుమతించిన పరికల్పన, వర్తించే నిర్వచనాలు వేరుగా చూపడం (ఎంపిక)','లక్ష్యాన్నే నిరూపణ ప్రారంభ పరికల్పనగా వాడడం (తిరస్కరణ)'];
+alternatives['TE-T295']=['నిర్వచ్యపదం/నిర్వచక భాగం అని సంక్షిప్త పేరు-పూర్తి షరతు భేదం, సమితి సమానత్వ స్థానభర్తీ నిలపడం (ఎంపిక)','నిర్వచనంలోని A/Bలను ప్రతిపాదనలోని A/Bలతో యథాతథంగా కలపడం (తిరస్కరణ)','రెండు దిశల సభ్యత్వంలో ఒక దిశ వదలడం (తిరస్కరణ)'];
+alternatives['TE-T296']=['సోపాధిక దిశ, సందర్భాలవారీ వాదన, ఏదైనా వస్తువు మరియు తాజా అస్తిత్వ సాక్షి పేరును వేరుగా నిలపడం (ఎంపిక)','p only if qను q→pగా తిప్పడం (తిరస్కరణ)','వేర్వేరు అస్తిత్వ సాక్షులకు ఒకే xను పెట్టే చివరి తప్పును నిజ నిరూపణగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T297']=['పంపిణీ సమానత్వం రెండు దిశలు, వెనుక దిశలో గూడుకట్టిన సందర్భాలు నిలపడం (ఎంపిక)','మొదటి సభ్యత్వ దిశతోనే సమానత్వం పూర్తయిందనడం (తిరస్కరణ)','(A∪B)∩(A∪C) నుంచి A లేదా B లేదా C మాత్రమే అని తేల్చడం (తిరస్కరణ)'];
+alternatives['TE-T298']=['భేద సమితి ద్వారా రెండు ఉపసమితి దిశలు, వెనుక దిశలో బహిష్కృత మధ్యమ విభజన నిలపడం (ఎంపిక)','A⊆C నుంచి A=C అని తేల్చడం (తిరస్కరణ)','మూల రెండవ ఉపసమితి కుండలీకరణ లోపాన్ని అలాగే వదలడం (తిరస్కరణ)'];
+alternatives['TE-T299']=['ప్రతికూల నిరూపణ, సాంప్రదాయిక సానుకూల పరోక్ష నిరూపణ వేరుచేసి తాత్కాలిక పరికల్పన నుంచి వైరుధ్యం చూపడం (ఎంపిక)','ద్వినిషేధ నిర్మూలనను అన్ని తర్కాలలో చెల్లుతుందని చెప్పడం (తిరస్కరణ)','నిర్వచించని Cను ఉపసమితి వ్యతిరేక ఉదాహరణలో ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T300']=['సంక్షిప్త నిరూపణ వెనుక సమానత్వపు రెండు ఉపసమితి దిశలు, గోప్య నిర్వచన దశలను స్పష్టంగా నిలపడం (ఎంపిక)','మూల విస్తరణలో (b) ముందరి దిశనే మళ్లీ చూపడం (తిరస్కరణ)','చివరి అదనపు కుండలీకరణాన్ని వదలడం (తిరస్కరణ)'];
+alternatives['TE-T301']=['ఉత్సాహపరిచే స్వరంతో ముందస్తు పని, సహకారం, సహాయం, విరామం, తిరిగి సాధన నిలపడం (ఎంపిక)','తోటి విద్యార్థి సమాధానం కాపీ చేయమని సూచించడం (తిరస్కరణ)','విఫలతను తెలివిలేమితో కలపడం (తిరస్కరణ)'];
+alternatives['TE-T302']=['శీర్షికలు తెలుగులో, బాహ్య పుస్తక పేర్లు/ఉటంకింపులు/చిరునామాలు యథాతథంగా నిలపడం (ఎంపిక)','బాహ్య పుస్తకాల అసలు శీర్షికలను మార్పిడి చేసి శోధనయోగ్యత కోల్పోవడం (తిరస్కరణ)','లింకులు ఇప్పటికీ పనిచేస్తున్నాయని ధృవీకరణ లేకుండా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T303']=['ఆగమనం అధ్యాయ శీర్షిక, ఐదు విభాగ దిగుమతులు నిలపడం (ఎంపిక)','దిగుమతి మార్గాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T304']=['పరిశీలనాత్మక సరళ ఆగమనం, శూన్య ఆధారం-అనువర్తి దశ గణిత నిరూపణ, నిర్మాణాత్మక విస్తరణ వేరుచేయడం (ఎంపిక)','ఎమరాల్డ్ పరిశీలనను గణిత ఆగమన నిరూపణగా చెప్పడం (తిరస్కరణ)','ఆధార దశను ఒకటిగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T305']=['శూన్య ఆధారం, అనువర్తి దశ, పాచికల శూన్య కేసు విడి ధృవీకరణ, వరుస మొత్తాల గణన నిలపడం (ఎంపిక)','ఒక పాచిక ఆధారంతోనే శూన్య పాచికల సిద్ధాంతమూ వచ్చిందనడం (తిరస్కరణ)','సాధారణ దశలో nను k బదులు ప్రతిస్థాపించడం (తిరస్కరణ)'];
+alternatives['TE-T306']=['అన్ని చిన్న సందర్భాల పూర్వపక్షం, శూన్య ఖాళీ పరిధి, ధన సూచికల పూర్వసంఖ్య వాదన నిలపడం (ఎంపిక)','శూన్యానికి సహజ పూర్వసంఖ్య ఉందనడం (తిరస్కరణ)','ఖాళీ పరిధిలో P(0)ని సాధారణ P(l) పూర్వపక్షంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T307']=['చక్కని పదం, అత్యంత చక్కని పదం అనే ఉదాహరణ పేర్లను భేదించి, నిర్మాణ నియమాలు మరియు బ్రాకెట్ అసమానత నిలపడం (ఎంపిక)','మూడవ మూసివేత నియమాన్ని మర్చిపోవడం (తిరస్కరణ)','ఉపపదాల పొడవులు ప్రస్తుత పదం కంటే చిన్నవి అని చూపకుండా ఆగమనం వాడడం (తిరస్కరణ)'];
+alternatives['TE-T308']=['ప్రారంభ వస్తువులు, నిర్మాణ క్రియ దశ, కచ్చితంగా చిన్న నిజ ప్రారంభ భాగం, ఐదు బ్రాకెట్ కేసులు నిలపడం (ఎంపిక)','పూర్తి పదాన్నే నిజ ప్రారంభ భాగంగా లెక్కించడం (తిరస్కరణ)','సమాన బ్రాకెట్ లెక్క లేకుండా చివరి కేసులను తేల్చడం (తిరస్కరణ)'];
+alternatives['TE-T309']=['ఉపపదం, బ్రాకెట్లు లేని పదం, ఏకైక పఠనీయత, లోతు ప్రమేయం వేర్వేరుగా నిలిపి రెండు పఠనాల విరోధాన్ని చూపడం (ఎంపిక)','బ్రాకెట్లు లేని పదాల్లో కూడా ఉపపద/లోతు నిర్వచనాలు ఏకైకమని చెప్పడం (తిరస్కరణ)','3 మరియు 2 అనే విరుద్ధ లోతు విలువలను ఒకటిగా సవరించడం (తిరస్కరణ)'];
+alternatives['TE-T310']=['చరిత్ర అని భాగ శీర్షికను తెలుగులోకి మార్చి రెండు దిగుమతులను నిలపడం (ఎంపిక)','భాగ కోడ్ లేదా దిగుమతి మార్గాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T311']=['జీవిత చరిత్రలు అని అధ్యాయ శీర్షికను తెలుగులోకి మార్చి పదకొండు దిగుమతులను నిలపడం (ఎంపిక)','పేర్ల ఆధారిత దిగుమతి మార్గాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T312']=['గెయోర్గ్ కాంటర్ పేరు/ఉచ్చారణ, సమితి సిద్ధాంతం, అతిపరిమిత సంఖ్యల పూర్వ పదాలను నిలిపి మూల జీవిత చరిత్రను అనువదించడం (ఎంపిక)','అసత్య ఓడ కథను నిజ చారిత్రక వివరంగా చెప్పడం (తిరస్కరణ)','అతిపరిమితకు కొత్త అసంగత పదం వాడడం (తిరస్కరణ)'];
+alternatives['TE-T313']=['చర్చ్--ట్యూరింగ్ సిద్ధాంతప్రతిపాదనను చర్చ్ అనిర్ణయనీయత సిద్ధాంతం నుంచి వేరు చేసి, పూర్వ గణన పదాలు వాడడం (ఎంపిక)','రెండింటినీ ఒక నిరూపిత సిద్ధాంతంగా కలపడం (తిరస్కరణ)','నిర్ణయ సమస్య అనిర్ణయనీయతను కేవలం కష్టతనంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T314']=['సహజ నిగమనం, సీక్వెంట్ కలనం, అవిరోధత్వం పూర్వ పదజాలాన్ని కొనసాగించి, రాజకీయ విధేయతపై మూల అనిశ్చితిని నిలపడం (ఎంపిక)','మూలం చెప్పని ఖచ్చిత నాజీ ఉద్దేశాన్ని ఆపాదించడం (తిరస్కరణ)','నిగమన వ్యవస్థల పేర్లను ఒకటిగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T315']=['1929 ప్రథమ శ్రేణి సంపూర్ణత సిద్ధాంతాన్ని 1931 రెండు అసంపూర్ణత సిద్ధాంతాల నుంచి వేరు చేసి చారిత్రక కథనాన్ని నిలపడం (ఎంపిక)','సంపూర్ణత, అసంపూర్ణత సిద్ధాంతాలను ఒకే ఫలితంగా చెప్పడం (తిరస్కరణ)','మూల వైద్య కథనాన్ని స్వతంత్ర నిర్ధారణగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T316']=['ఆరోహణ శ్రేణి షరతు, అవరోహణ శ్రేణి షరతు దిశలను వేరు చేసి సుస్థాపిత క్రమపు ఆగమనాన్ని నిలపడం (ఎంపిక)','ఐడియళ్ల ఆరోహణ ఉదాహరణను అవరోహణగా తిప్పడం (తిరస్కరణ)','రెండు షరతులను సమానార్థకాలుగా చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T317']=['పీటర్ ఆదిమ పునరావృత్తం కాని ప్రమేయం, ఆకెర్మాన్ సరళీకరణ, ఆకెర్మాన్--పీటర్ పేరు వేర్వేరుగా నిలపడం (ఎంపిక)','ప్రమేయం ఆదిమ పునరావృత్తమేనని తిప్పడం (తిరస్కరణ)','ఆకెర్మాన్ పూర్వ ఫలితాన్ని పీటర్‌కు పూర్తిగా ఆపాదించడం (తిరస్కరణ)'];
+alternatives['TE-T318']=['పరిమేయ సిద్ధాంత నిర్ణయ సమస్యను పూర్ణసంఖ్య డయోఫాంటైన్ సమస్య నుంచి వేరు చేసి, జె.ఆర్. పరికల్పన-ఎంఆర్‌డీపీ ఫలిత క్రమాన్ని నిలపడం (ఎంపిక)','పరిమేయ సంఖ్యల నిర్ణయ సిద్ధాంతాన్నే హిల్బర్ట్ పదవ సమస్యగా చూపడం (తిరస్కరణ)','ఘాతీయ డయోఫాంటైన్ ఫలితం ఒక్కటే పూర్తి పదవ సమస్యను పరిష్కరించిందనడం (తిరస్కరణ)'];
+alternatives['TE-T319']=['విశ్లేషణాత్మక తత్వశాస్త్రం, ప్రిన్సిపియా గణిత-తర్క తగ్గింపు అభిప్రాయం, మూల జీవిత-రాజకీయ వాదనలు విడిగా నిలపడం (ఎంపిక)','గణితాన్ని తర్కానికి తగ్గించడం నిరూపిత సత్యంగా స్వరం మార్చడం (తిరస్కరణ)','బాహ్య రచన శీర్షికలను అనువదించి శోధనయోగ్యత కోల్పోవడం (తిరస్కరణ)'];
+alternatives['TE-T320']=['తార్కిక అనుగమనం, తార్కిక సత్యం పూర్వ పదాలు కొనసాగించి, బీ గ్రేడ్ కథను ఏ గ్రేడ్ రికార్డుతో స్పష్టంగా భేదించడం (ఎంపిక)','అనుభవ కథనే నిర్ధారిత విద్యా రికార్డుగా చూపడం (తిరస్కరణ)','అనుగమనం, సత్యం రెండింటినీ ఒకే భావంగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T321']=['ట్యూరింగ్ యంత్రం-చర్చ్ ఫలిత ప్రాధాన్యం, ఎనిగ్మా/బాంబ్-లోరెన్జ్/కొలోసస్ భేదం, ఆత్మహత్య సంభావ్యతను మూల మేరకు నిలపడం (ఎంపిక)','ఆత్మహత్యను నిర్ధారిత వాస్తవంగా చెప్పడం (తిరస్కరణ)','రెండు గూఢలిపి యంత్రాలను ఒకటిగా కలపడం (తిరస్కరణ)'];
+alternatives['TE-T322']=['సెర్మెలో అని తాజా సమితి అధ్యాయ రూపం ఎంచుకొని, 1904 ఎంపిక స్వయంసిద్ధం-1908 స్వయంసిద్ధీకరణ భేదం నిలపడం (ఎంపిక)','పూర్వ జెర్మెలో/సెర్మెలో భేదాన్ని ధృవీకరిత ఏకరూపంగా చూపడం (తిరస్కరణ)','రెండు చారిత్రక ఘట్టాలను ఒకే సంవత్సరానికి మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T323']=['అధ్యాయ శీర్షిక, టిమ్ బటన్ చారిత్రక ఉపోద్ఘాత క్రెడిట్ అనువదించి ఆరు దిగుమతులు నిలపడం (ఎంపిక)','సంపాదకీయ మూల క్రెడిట్‌ను తొలగించడం (తిరస్కరణ)','దిగుమతి మార్గాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T324']=['అనంతసూక్ష్మం/అవకలనం/వ్యుత్పన్నం వేరు చేసి, మూడు త్రిభుజాల పాదం-వాలు సంబంధం, శూన్య భాగహారం సందిగ్ధం నిలపడం (ఎంపిక)','చిన్న ధన beta ఉజ్జాయింపునే ఖచ్చిత వాలుగా చెప్పడం (తిరస్కరణ)','రంగు టోకెన్లను తొలగించి చిత్ర సూచన కోల్పోవడం (తిరస్కరణ)'];
+alternatives['TE-T325']=['రంధ్రిత పరిసర పరిమితి, |x| రెండు వైపుల వాలు భేదం, అవకలనీయత/అవిచ్ఛిన్నత వేరు చేసి మూడు మూల లోపాలు ప్రకటించడం (ఎంపిక)','కేంద్ర బిందువు విలువను సాధారణ పరిమితికి తప్పనిసరిగా కోరడం (తిరస్కరణ)','స్థిర వ్యుత్పన్నమే బీటాతో మారుతుందనడం (తిరస్కరణ)'];
+alternatives['TE-T326']=['స్థలాన్ని నింపే పియానో పటానికి అవిచ్ఛిన్నత, సున్నితత్వం కానిదని స్పష్టం చేసి కాంటర్/హిల్బర్ట్ చరిత్ర నిలపడం (ఎంపిక)','సున్నితమైన వక్రరేఖ చతురస్రాన్ని నింపగలదని మూల పొరపాటును పునరుక్తి చేయడం (తిరస్కరణ)','ఆరు చిత్ర దశలను వదలడం (తిరస్కరణ)'];
+alternatives['TE-T327']=['కాంటర్ మాటకు లేఖ సందర్భం, హిల్బర్ట్ చిత్రాలతో అంతఃప్రజ్ఞ ఉపయోగం, అతిశయ ప్రచారం హెచ్చరిక నిలపడం (ఎంపిక)','కాంటర్ తన ఫలితాన్ని నమ్మలేదని ఖచ్చితంగా ప్రకటించడం (తిరస్కరణ)','ప్రచురిత నిరూపణల్లో చిత్రాలేవీ లేవని చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T328']=['ద్వియాంశ రూప ఎంపికతో మొత్తం-సమితి అంతఃక్షేపణను, నిజమైన అధిక్షేపణేతర ఉదాహరణను ప్రకటించడం (ఎంపిక)','మూలంలోని 0.1010... విలువ బింబం బయట ఉందని పునరుక్తి చేయడం (తిరస్కరణ)','1.000... రూపంతో అసంపూర్ణ పటాన్ని అలాగే ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T329']=['హిల్బర్ట్ అనౌపచారిక నిర్మాణాన్ని చిత్రాలతో నిలిపి, నాలుగు మూల-నిరూపణ ఖాళీలను ప్రకటించడం (ఎంపిక)','బిందువువారీ అభిసరణ నుంచే స్థలపూరకత, అవిచ్ఛిన్నత నిరూపితమని ప్రకటించడం (తిరస్కరణ)','మూల చిత్రాలు/గడి వాదనను పూర్తిగా తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T330']=['సూచిక భాగ శీర్షిక, అనుబంధ జాబితాల సంపాదకీయ పరిచయం (ఎంపిక)','Reference అనే ఆంగ్ల శీర్షికనే ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T331']=['గ్రీకు అక్షరాల పేర్లకు తెలుగు లిప్యంతరీకరణ, గణిత చిహ్నాలకు మూలరూపం (ఎంపిక)','ఆంగ్ల పేర్లను మార్పులేకుండా ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T332']=['ఫ్రాక్టూర్ వర్ణమాల అనే తెలుగు శీర్షిక, చిహ్న పట్టిక యథాతథం (ఎంపిక)','చిహ్నాల లాటిన్/ఫ్రాక్టూర్ జతలను తెలుగులోకి మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T333']=['నిరూపణీయత/సామాన్యీకరణ మూల దశలను నిలిపి ఐదు గుర్తించిన తప్పులను పక్కనే ప్రకటించడం (ఎంపిక)','తప్పు ప్రదర్శిత సూత్రాలను నిజమైన నిరూపణలుగా ప్రకటించడం (తిరస్కరణ)','ట్యాగు శాఖలు, సాధనలను తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T334']=['గరిష్ఠ అవైరుధ్య సమితి నిర్వచనం, సభ్యత్వ మూసివేత లక్షణాలను మూల ట్యాగులతో నిలపడం (ఎంపిక)','గరిష్ఠ సమితి విస్తరణను ఈ విభాగంలోనే పూర్తిగా నిరూపించామని చెప్పడం (తిరస్కరణ)','ట్యాగు ఆధార నిరూపణ శాఖలను తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T335']=['వాక్యనిర్మాణం, అర్థవిచారం, సంతృప్తి, అనుగమనం పదాలను పూర్వ విభాగాలకు అనుగుణంగా ఉంచడం (ఎంపిక)','semantic validity, entailmentలను రెండింటినీ ఒక్క చెల్లుబాటు పదంగా కుదించడం (తిరస్కరణ)'];
+alternatives['TE-T336']=['తెలుగు అధ్యాయ శీర్షికతో అన్ని దిగుమతుల మూల క్రమం నిలపడం (ఎంపిక)','దిగుమతి పేర్లను స్థానికీకరించి TeX పథాలు విరగొట్టడం (తిరస్కరణ)'];
+alternatives['TE-T337']=['Qలో ప్రతినిధీకరణ, బాహ్య ఆగమన, సంయోజన/అపరిమిత శోధన సూత్రాలు మూలరూపంలో నిలపడం (ఎంపిక)','మూలపు భాగిక లెమ్మా నిరూపణను సంపూర్ణమని ప్రకటించడం (తిరస్కరణ)','ప్రదర్శిత సూత్రాలను వివరణ లేక తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T338']=['C వర్గ మూల ప్రమేయాలు, సంవృత క్రియలు, మొత్తం ఫలిత పరిమితి నిలపడం (ఎంపిక)','regular అనే పరిమితిని తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T339']=['ప్రతిపాదనను సత్యమయ్యే లోకాల సమితిగా, ఆరు ఆగమన కేసులతో ఉంచడం (ఎంపిక)','సాధనగా ఉన్న సత్య తుల్యతకు కల్పిత నిరూపణ జోడించడం (తిరస్కరణ)'];
+alternatives['TE-T340']=['జాబితాను కుడివైపు మడత/సంచయకం రూపంలో వివరిస్తూ Sum/Len పదాలు నిలపడం (ఎంపిక)','Len సాధన సమాధానాన్ని మూలంలో లేనప్పటికీ చేర్చడం (తిరస్కరణ)'];
+alternatives['TE-T341']=['మూల తునకలోని alpha-మార్పు పరిచయం అనువదించి లేని నియమాన్ని ప్రకటించడం (ఎంపిక)','వాగ్దానం చేసిన నియమాన్ని మూలంలో ఉన్నట్లు కల్పించడం (తిరస్కరణ)'];
+alternatives['TE-T342']=['సమాంతర మొదటిస్థాయి సీక్వెంట్ అనువాదాన్ని సమాన మూల పాఠ్యానికి పునర్వినియోగించి భాగ ID మార్చడం (ఎంపిక)','సమాన పాఠ్యాన్ని కొత్త అసంగత పదాలతో మళ్లీ అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T343']=['అప్రమాణ నమూనా బ్లాక్ నిర్మాణాన్ని నిలిపి నాలుగు మూల లోపాలను పక్కనే సరిచేసి ప్రకటించడం (ఎంపిక)','ప్రతి xతో భాగింపు అసత్య వాక్యాన్ని అలాగే అంగీకరించడం (తిరస్కరణ)','ఒకే బ్లాక్‌లోని x<yనూ బ్లాక్‌ల కఠిన క్రమంగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T344']=['మోడల్ తర్కానికి ఏకరీతి ప్రతిస్థాపన, సాధారణతకు K/Dual/అనివార్యతీకరణను విడిగా ఉంచడం (ఎంపిక)','సాధారణతను కేవలం K స్వీకృతానికి తగ్గించడం (తిరస్కరణ)'];
+alternatives['TE-T345']=['అత్యధిక స్థాయి కట్ సంక్షేపణం, CutCS విలోమయోగ్యత, గుర్తించిన సంభవాల విధానాన్ని మూల వృక్షాలతో నిలపడం (ఎంపిక)','కట్-స్థాయి వాదనను కేవలం అత్యున్నత కట్ తొలగింపుగా కుదించడం (తిరస్కరణ)','మూడు మూల లోపాలను నిశ్శబ్దంగా దాటవేయడం (తిరస్కరణ)'];
+alternatives['TE-T346']=['అత్యున్నత కట్, కట్ ఎత్తు/స్థాయి, స్థానమార్పు, సంక్షేపణం వేర్వేరు భావాలుగా ఉంచడం (ఎంపిక)','కట్ ఎత్తు, స్థాయిలను ఒకే కొలమానంగా కుదించడం (తిరస్కరణ)','నిరూపణ వృక్షాల్లోని నాలుగు మూల లోపాలను ప్రకటించకుండా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T347']=['కట్ తొలగింపు తెలుగు అధ్యాయ శీర్షికతో దిగుమతుల మూల క్రమం నిలపడం (ఎంపిక)','దిగుమతి TeX పేర్లను తెలుగులోకి మార్చి పథాలు విరగొట్టడం (తిరస్కరణ)'];
+alternatives['TE-T348']=['అంతర్వర్తన ప్రమేయం, మధ్యవర్తి సూత్రం అనే భావపారదర్శక రూపాలు; చిహ్న పరిమితి స్పష్టంగా చెప్పడం (తాత్కాలిక ఎంపిక)','interpolantను అర్థవివరణ లేక కేవలం లిప్యంతరం చేయడం (తిరస్కరణ)','బెత్/రాబిన్సన్ మూల వాదనలోని ఆరు లోపాలను మౌనంగా వదిలేయడం (తిరస్కరణ)'];
+alternatives['TE-T349']=['కట్ తొలగింపు, అనుమతిత నియమం, సందర్భం పంచుకునే కట్ భేదాలు నిలపడం (ఎంపిక)','Cut, CutCSలను ఒకే చిత్ర లేబుల్‌గా వాడడం (తిరస్కరణ)','నిర్మాణాత్మక అన్వయాన్ని కేవలం ఉనికి వాదనగా కుదించడం (తిరస్కరణ)'];
+alternatives['TE-T350']=['సహాయక తునకను పూర్తి అనువదించి రెండు ఖచ్చిత సంకేతాలను సరిచేసి, మిగిలిన నిరూపణ అసంగతిని ప్రకటించడం (ఎంపిక)','అసంగత వృక్షాన్ని నిర్ధారిత ప్రమేయ నిరూపణగా చెప్పడం (తిరస్కరణ)','తునకను formal-only అని అనువాదం నుంచి వదిలేయడం (తిరస్కరణ)'];
+alternatives['TE-T351']=['మధ్యసీక్వెంట్, ప్రీనెక్స్, హెర్బ్రాండ్ వియోజనం పదాలను భావవివరణతో నిలపడం (ఎంపిక)','పరిమాణీకరణిక నిగమనాల క్రమాన్ని నిరూపణ ఎత్తుతో కలపడం (తిరస్కరణ)','మూడు మూల లోపాలను మౌనంగా సరిచేసినట్టు చూపడం (తిరస్కరణ)'];
+alternatives['TE-T352']=['నిరూపణలను అంటుకట్టడం, తెరిచి ఉన్న ఉపపత్తి, ఐగెన్ చరరాశి భేదాలు నిలపడం (ఎంపిక)','ప్రతిస్థాపిత ఉపపత్తి ఫలితంలోనూ తెరిచి ఉంటుందని చెప్పడం (తిరస్కరణ)','నాలుగు మూల లోపాలను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T353']=['సహజ నిగమనం, ప్రవేశ/తొలగింపు నియమాలు, ఉపపత్తి విసర్జనను వేర్వేరుగా నిలపడం (ఎంపిక)','ఉపపత్తి విసర్జనను సూత్ర తొలగింపుతో కలపడం (తిరస్కరణ)','మూలంలోని రెండు వ్యత్యాసాలను మౌనంగా సరిచేయడం (తిరస్కరణ)'];
+alternatives['TE-T354']=['పరిచయ విభాగంతో సమానంగా సహజ నిగమనం శీర్షిక ఉంచడం (ఎంపిక)','అధ్యాయ దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T355']=['క్రమబద్ధమైన నిరూపణ, ఐగెన్ చరరాశి షరతు, శుభ్రమైన/అశుభ్రమైన నిగమనం భేదాలు నిలపడం (ఎంపిక)','అస్తిత్వ తొలగింపు వృక్షం స్థానంలో మూలంలోని పునరావృత సార్వత్రిక వృక్షాన్ని వదిలేయడం (తిరస్కరణ)','అత్యుపరి నిగమనం శుభ్రమైనా ఆగమనం తగ్గుతుందని భావించడం (తిరస్కరణ)'];
+alternatives['TE-T356']=['N1 పట్టిక వృక్షాలు నిలిపి అస్తిత్వ ఐగెన్ స్థిరాంకం షరతును ఫలితం, తెరిచి మిగిలే ఉపపత్తులపై చెప్పడం (ఎంపిక)','పూర్వపక్షంలోనే ఐగెన్ స్థిరాంకం లేదనే అసాధ్య మూల వాక్యాన్ని నిలపడం (తిరస్కరణ)'];
+alternatives['TE-T357']=['N2 పట్టికలో గుర్తులతో కూడిన సందర్భాలను నిలిపి పరిమాణీకరణిక మాక్రోలను ఏకరీతిగా చేయడం (ఎంపిక)','ఒకే శీర్షికలో forall, lforall రకాలను కలిపి ఉంచడం (తిరస్కరణ)'];
+alternatives['TE-T358']=['ముఖ్య/ఉప పూర్వపక్షం, విసర్జన గుర్తు, తెరిచి ఉన్న ఉపపత్తి, నిరూపణ ఎత్తు భేదాలు నిలపడం (ఎంపిక)','ఉపపత్తుల విసర్జనను అన్ని సమాన రూపాలపై తప్పనిసరి చేయడం (తిరస్కరణ)','ఐదు మూల లోపాలను మౌనంగా సరిచేయడం (తిరస్కరణ)'];
+alternatives['TE-T359']=['సీక్వెంట్-శైలి, సందర్భం, ఫలితభాగం, గుర్తు గల ఉపపత్తి భేదాలు నిలపడం (ఎంపిక)','N1/N2 ద్విదిశ మార్పిడిలో ఉపనిరూపణ గుర్తులను కలపడం (తిరస్కరణ)','మూడు మూల లోపాలను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T360']=['బహుసమితి అనురూపతను బహుళత్వ పరిమితితో, N2i గుర్తులతో కూడిన సందర్భాలుగా చూపడం (ఎంపిక)','G2i సందర్భాన్ని సాధారణ సమితిగా కుదించడం (తిరస్కరణ)','ఏడు మూల లోపాలను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T361']=['గుర్తుల తొలగింపు, ఖాళీ ఫలితభాగం, సాంప్రదాయిక అసత్య నియమం ప్రత్యేక సందర్భాలను వేర్వేరుగా నిలపడం (ఎంపిక)','అసత్య ఫలితాన్ని ఖాళీ ఫలితభాగంగా స్వయంచాలకంగా పరిగణించడం (తిరస్కరణ)','నాలుగు మూల లోపాలను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T362']=['సాధారణీకరణ, సాధారణ నిరూపణ, పక్కదారి, ఉపసూత్ర లక్షణం వేర్వేరు పదాలుగా నిలపడం (ఎంపిక)','పక్కదారిని ఏ నిరూపణలోనైనా తప్పనిసరి భాగంగా చూడడం (తిరస్కరణ)','చిత్రంలోని ఉపనిరూపణ గుర్తులను మౌనంగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T363']=['కట్ స్థాయి/పొడవు ఆగమనం, స్థానమార్పు/తగ్గింపు పరివర్తనలను వేర్వేరుగా ఉంచడం (ఎంపిక)','ఏ క్రమమైనా ఫలితాన్ని ఇస్తుందనే అదనపు వాదనను ఈ సంక్షిప్త ఆగమనంలోనే పూర్తిగా నిరూపించినట్లు చెప్పడం (తిరస్కరణ)'];
+alternatives['TE-T364']=['మునుపటి విభాగాలతో సమానంగా సాధారణీకరణ శీర్షిక ఉంచడం (ఎంపిక)','TeX దిగుమతి పథాలను అనువదించడం (తిరస్కరణ)'];
+alternatives['TE-T365']=['స్థానమార్పు పరివర్తన, స్వతంత్ర చరరాశి నియమం, అత్యుపరి గరిష్ఠ కట్ అనే వేర్వేరు భావాలను స్పష్టంగా ఉంచడం (ఎంపిక)','మూలంలోని తప్పు సంయోజకాన్ని లేదా నియమచిహ్నాన్ని మౌనంగా అనుసరించడం (తిరస్కరణ)'];
+alternatives['TE-T366']=['తగ్గింపు పరివర్తనను పక్కదారి పరివర్తనకు ప్రధాన పేరుగా, రెండవదాన్ని ప్రత్యామ్నాయ పేరుగా ఉంచడం (ఎంపిక)','స్థానమార్పు పరివర్తనతో ఈ దశను కలిపేయడం (తిరస్కరణ)'];
+alternatives['TE-T367']=['ఖండం, కట్, కట్ స్థాయి, కట్ పొడవు వేర్వేరు నిర్వచనాలుగా ఉంచడం (ఎంపిక)','పొడవు ఒకటైన అన్ని ఖండాలనూ ప్రవేశ నియమంతో మాత్రమే కట్‌గా వర్ణించడం (తిరస్కరణ)'];
+alternatives['TE-T368']=['శాఖ, ప్రధాన శాఖ, సందర్భ అనురూపతలను నిర్వచనాల ద్వారా స్పష్టంగా వేరు చేయడం (ఎంపిక)','తెరిచి ఉన్న ఊహలను ఉపసూత్ర లక్షణ పరిధి నుంచి తొలగించడం (తిరస్కరణ)'];
+alternatives['TE-T369']=['విఫల శాఖ, పద నమూనా, నిరూపణ అన్వేషణ సంపూర్ణతను నిర్వచిత సాంకేతిక పదాలుగా వేరు చేయడం (ఎంపిక)','ముగియని అన్వేషణలో విఫల శాఖను కేవలం పరిమిత శాఖగా భావించడం (తిరస్కరణ)'];
+alternatives['TE-T370']=['నిరూపణ అన్వేషణ, వెనుకకు నియమ వర్తింపు, వెనక్కి వచ్చి మళ్లీ ఎంపిక అనే వివరణాత్మక పదాలు (ఎంపిక)','నిరూపణ తనిఖీనే నిరూపణ కనుగొనడంగా చూపడం (తిరస్కరణ)'];
+alternatives['TE-T371']=['మునుపటి విభాగంతో సమానంగా నిరూపణ అన్వేషణ శీర్షిక (ఎంపిక)','దిగుమతి పథాలను భాషా పదాలుగా మార్చడం (తిరస్కరణ)'];
+alternatives['TE-T372']=['కొత్త స్థిరాంకం షరతును పైనున్న శాఖలో కనిపించకపోవడంగా స్పష్టీకరించడం (ఎంపిక)','స్థిరాంకం మొత్తం భాషలో ఎన్నడూ వాడకూడదని బలపరచడం (తిరస్కరణ)'];
+alternatives['TE-T373']=['fairnessను ప్రతి సూత్రానికి అవసరమైనన్ని తగ్గింపు అవకాశాలు వచ్చే నిబంధనగా వర్ణించడం (ఎంపిక)','కొత్త సూత్రానికి పాత గరిష్ఠ సూచికను మళ్లీ కేటాయించడం (తిరస్కరణ)','పునర్వినియోగ పదం కేటాయించిన స్థిరాంక సమితి వెలుపల ఉండవచ్చని అనుకోవడం (తిరస్కరణ)'];
+alternatives['TE-T374']=['చిహ్నిత టాబ్లో, అర్థవిచార టాబ్లో, మూసుకున్న శాఖ, సత్య వృక్షం వేర్వేరు భావాలుగా ఉంచడం (ఎంపిక)','సత్యంగా చిహ్నితమైన అసత్య సూత్రం ఉన్న శాఖను తెరిచి ఉన్న నమూనా శాఖగా చూడడం (తిరస్కరణ)'];
+alternatives['TE-T375']=['నిరూపణ సిద్ధాంతం శీర్షికను, మూల సంపాదకీయ పరిమితిని నిలపడం (ఎంపిక)','మూల PDF స్థితిని ప్రస్తుత తెలుగు విడుదల స్థితిగా ప్రకటించడం (తిరస్కరణ)'];
+alternatives['TE-T376']=['రకం, ప్రయోగం, లబ్ధ/యోగ రకాలు అనే నిర్వచనాత్మక పదాలు (ఎంపిక)','ప్రయోగ పదాన్ని ప్రమేయాల సమ్మేళన పదంగా పిలవడం (తిరస్కరణ)'];
+alternatives['TE-T377']=['సాధారణీకరణ, బలమైన సాధారణీకరణ, సంగమ లక్షణాలను వేరు చేయడం (ఎంపిక)','మూల అసంపూర్ణ వాదనలను పూర్తి నిరూపణలుగా ప్రకటించడం (తిరస్కరణ)'];
 const lines=(kind,loc)=>{
  const base=path.join(root,kind==='source'?'upstream':'translation',loc.path);
  const all=fs.readFileSync(base,'utf8').split(/\r?\n/),start=loc[kind+'_start'],end=loc[kind+'_end'];
@@ -1264,7 +2667,42 @@ const detailedLocation=loc=>{
  if(!segment)throw new Error('No aligned segment for '+loc.path+':'+loc.source_start);
  return {unit_id:segment.unit_id,section_path:loc.path.replace(/^content\//,'').replace(/\.tex$/,''),source_file:loc.path,target_file:`translation/${loc.path}`,segment_id:segment.segment_id,source_locator:`${loc.path}:${segment.source_start_line}${segment.source_end_line===segment.source_start_line?'':'-'+segment.source_end_line}`,target_locator:`translation/${loc.path}:${segment.target_start_line}${segment.target_end_line===segment.target_start_line?'':'-'+segment.target_end_line}`,source_unit_sha256:segment.source_unit_sha256,translation_unit_sha256:segment.translation_unit_sha256,source_segment_sha256:segment.source_segment_sha256,translation_segment_sha256:segment.translation_segment_sha256,final_printed_page:null,pagination_status:'pending_coherent_reader_pagination'};
 };
-const phase='Evidence reconstruction through 2026-09-27 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T174 record the Batch 025--Batch 133 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
+alternatives["TE-T378"]=["నిరూపణ పదం; నిర్మాణ చిహ్నం/నిర్మాత; విచ్ఛేదకం; విడుదల గుర్తు; సరైన నిరూపణ పదం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T379"]=["నిరూపణ-పద మార్పిడి; సందర్భంలో సాక్ష్యం ఇవ్వడం; నిరూపణ ఎత్తు; లాంబ్డా అమూర్తీకరణ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T380"]=["రకాలుగా ప్రతిపాదనలు; ప్రయోగాత్మక ముసాయిదా; క్రమమార్పు, సరళీకరణ పరివర్తనలు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T381"]=["తగ్గింపు; కట్; రెడెక్స్; సంకోచన ఫలితం; బీటా తగ్గింపు; క్రమమార్పు పరివర్తన; సాధారణ రూపం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T382"]=["పదాలతో గుర్తించిన సహజ నిగమన నియమాలు; అక్షయం; సందర్భాల సమ్మేళనం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T383"]=["రక కేటాయింపు నియమాలు; ఒకే సందర్భం; అక్షయ సభ్యత్వ షరతు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T384"]=["సీక్వెంట్ సహజ నిగమనం; విడుదల చేయని ఊహలు; సందర్భాల సమ్మేళనం; ఊహ విడుదల (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T385"]=["నిరూపణ పునర్నిర్మాణం; స్వేచ్ఛా చర సందర్భం; పూర్వపక్షం; ప్రక్షేపణ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T386"]=["రక సంరక్షణ; పురోగతి; సరిగ్గా రకీకరించిన పదం; ముందుకు సాగలేని గణన స్థితి (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T387"]=["రకం; సందర్భం; రక అనన్యత; సరిగ్గా రకీకరించిన పదం; లబ్ధ, యోగ, ఖాళీ రకాలు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T388"]=["అనుమతించదగిన నియమం; వ్యుత్పాదించదగిన నియమం; పథకాత్మక నిరూపణ; ఎత్తు-సంరక్షక అనుమతించదగినత; బలహీనీకరణ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T389"]=["నియమాల అర్థవ్యాఖ్యానం; సత్య షరతు; ప్రధాన సూత్రం; సందర్భాన్ని పంచుకోవడం; నిర్మాణ నియమాలు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T390"]=["సీక్వెంట్ కలనశాస్త్రం; బహుసమితి; బాహుళ్యం; పూర్వపక్షం; ఉత్తరపక్షం; కట్-తొలగింపు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T391"]=["విలోమ్యత; ఎత్తు-సంరక్షక విలోమం; ప్రధాన సూత్రం; స్వీయచర తాజాతనం; సంకోచన అనుమతించదగినత (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T392"]=["వెనుక దిశలో నిరూపణ అన్వేషణ; పథకాత్మక నిరూపణ; సూత్ర లోతు; పరమాణు స్వీయ సీక్వెంట్; స్వీయచర షరతు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T393"]=["నియమిత నిరూపణ; స్వీయచర షరతు; బంధనంలో చిక్కని ప్రతిస్థాపన; శుభ్ర, అశుభ్ర నిగమనం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T394"]=["సాంప్రదాయ G1c నియమాలు; నిర్మాణ నియమాలు; స్వీయచర షరతు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T395"]=["అంతఃప్రజ్ఞావాద సీక్వెంట్ నియమాలు; ఒకే ఉత్తరపక్ష సూత్రం; కనిష్ఠ రూపం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T396"]=["స్వతంత్ర సందర్భాల G2c నియమాలు; బహుసమితి సమ్మేళనం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T397"]=["G3c నియమాలు; పరమాణు స్వీయ అక్షయం; అసత్య ఎడమ అక్షయం; నిలిచే ప్రధాన సూత్రం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T398"]=["G3i నియమాలు; అంతఃప్రజ్ఞావాద వియోగ ప్రవేశం; ఒకే ఉత్తరపక్ష సూత్రం; స్వీయచర తాజాతనం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T399"]=["LK నియమాలు; వరుస సందర్భం; స్థాన మార్పిడి; నిర్మాణ నియమం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T400"]=["బహుళ-నిర్ధారణల అంతఃప్రజ్ఞావాద కలనశాస్త్రం; పరిమిత కుడి నియమాలు; మూల వ్యవస్థ-సూచన ఖాళీ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T401"]=["పూర్వపక్షం; నిష్కర్ష; సందర్భం; పార్శ్వ సూత్రం; ప్రధాన సూత్రం; క్రియాశీల సూత్రం; ఈగెన్‌చరం; నిరూపణ ఎత్తు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T402"]=["సీక్వెంట్ కలనశాస్త్రం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T403"]=["నిరూపణ రూపాంతరం; నియమ అనుకరణ; నిలుపుకున్న ప్రధాన సూత్రం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T404"]=["గరిష్ఠ సంగత సమితి; సత్య ఉపసిద్ధాంతం; సంపూర్ణత; సంహతత (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T405"]=["సార్థకత; మోడస్ పోనెన్స్; అర్థాత్మక నిగమనం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T406"]=["ద్వితీయ క్రమ సంబంధ చరం; ద్వితీయ క్రమ ప్రమేయ చరం; విలువ కేటాయింపు ఆధారిత వ్యక్తీకరణ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T407"]=["సమరూపణం; నిర్మాణాన్ని నిలుపుకునే ద్వైక్యం; ఉత్తరవర్తి సంబంధం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T408"]=["ఆగమనం; ప్రమేయం కింద సంవృతత; ప్రమేయం కింద లక్షణం నిలుపుదల; ఆధార దశ; ఆగమన దశ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T409"]=["సంబంధాలు (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T410"]=["సమితులు; సంబంధాలు; ప్రమేయాలు; అమాయక సమితి సిద్ధాంతం (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T411"]=["సమితుల శోషణ; మూలకాలవారీ నిరూపణ; సందర్భాలవారీ నిరూపణ (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+alternatives["TE-T412"]=["సమితుల పరిమాణం; గణన; గణనీయత; అగణనీయత (definition-controlled choice)","Leaving reader-visible explanatory prose untranslated (rejected)"];
+const phase='Evidence reconstruction through 2026-09-28 from the current primary TERM_DECISIONS, aligned segment ledger, canonical-passage records and exact source/target bytes; earlier records are not represented as contemporaneous pre-draft notes, while TE-T064--TE-T412 record the Batch 025--Batch 371 consultations performed during reconciliation. The 2026-09-25 classification repair restores reader-visible headings and token statements to linguistic segments using recorded same-unit canon consultations.';
 const notChecked=['No human Telugu logician, mathematician or copy editor has reviewed this choice yet.','No independent Telugu logic dictionary or comprehensive AP/Telangana higher-education terminology standard was checked unless it appears among the listed passage records.'];
 const termRecords=terms.map(d=>{
  if(!locations[d.term_id])throw new Error('Missing review locations '+d.term_id);
@@ -1275,6 +2713,71 @@ const termRecords=terms.map(d=>{
  return {review_id:'REV-'+d.term_id,record_type:'terminology_or_sense_decision',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',term_id:d.term_id,source_term:d.source_term,chosen_wording:d.telugu,chosen_sense:d.scope??'The precise extension is fixed by the adjacent OpenLogic definition and formulas.',evidence_status:d.status,confidence,review_priority:/high/i.test(uncertainty)?'high':'standard',expert_review_status:'provisional_pending_optional_specialist_review_no_hold',implementation_locations:locations[d.term_id].map(detailedLocation),actual_authorities_checked:checked,not_checked_or_not_found:notChecked,rationale,alternatives_considered_or_recorded:alternatives[d.term_id]??['No separate alternative was recorded in the primary decision; retain the current reversible wording unless a specialist supplies a source-grounded replacement.'],uncertainty,rationale_phase:phase,precise_review_questions:[`Please double-check whether “${d.telugu}” is idiomatic and technically standard for “${d.source_term}” in Telugu logic/mathematics across Andhra Pradesh and Telangana.`,`If not, what exact replacement should be used while leaving the displayed definition, formulas and source scope unchanged?`],translation_hold:false};
 });
 const correctionQuestions={
+"OLTESFRINDINT-001":"Is the disclosure precise: Replace the erroneous leading 2k by k^2. Also localize the two reader-facing equation tags in the same display; disclose the combined display atom delta.",
+"OLTESFRINDINT-002":"Does replacing every mathematical !!^a artifact by !A consistently preserve the intended induction template and its pairing with !B?",
+"OLTENMLFRDST-002":"Does moving the closing math delimiter inside the tagged biconditional case restore TeX grouping without changing the standard-translation identity?",
+"OLTESOLSYNLAN-001":"Is the disclosure precise: State the assignment-dependent translation using free relation/function variables, and disclose that quantifying them would change the proposition.",
+ "OLTEPTSEQTR-001":"Is the disclosure precise: Attribute arbitrary identity axioms to G1c and preserve the G3c provability citation, with a reader-visible disclosure.",
+ "OLTEPTSEQTR-002":"Is the disclosure precise: Remove the misdirected citation; explicitly weaken the missing conjunct/disjunct then apply the G3c rule, using the already cited G3c weakening admissibility.",
+ "OLTEPTSEQTR-003":"Is the disclosure precise: Supply both bounded quantifier simulations: weaken in the principal before applying the G3c rule in the forward direction; apply G1c with the retained principal in context and contract the duplicate principal in the reverse direction (blocks 10 and 12).",
+ "OLTEPTSEQTR-004":"Is the disclosure precise: Delete the duplicated comma, preserving all formulas and rule labels.",
+ "OLTEPTSEQRP-001":"Is the disclosure precise: Describe height as the maximum number of inference steps/tree edges on an end-to-initial path, preserving the recursive definition and documenting the clarification.",
+ "OLTEPTSEQRP-002":"Is the disclosure precise: Replace the second succedent D by E and disclose that only antecedent order changes.",
+ "OLTEPTSEQMG3I-001":"Is the disclosure precise: Insert the context separator.",
+ "OLTEPTSEQMG3I-002":"Is the disclosure precise: Retain the names as an attributed source remark and disclose the unresolved definition/reference; do not invent or certify a minimal-system definition.",
+ "OLTEPTSEQMG3I-003":"Is the disclosure precise: Give this table its own tab:mG3i label.",
+ "OLTEPTSEQLK-001":"Is the disclosure precise: Give the sequence-based table its own tab:LK label.",
+ "OLTEPTSEQG3I-001":"Is the disclosure precise: Use the indexed right-disjunction schema with one premise summand Ai and conclusion A1 or A2, for i=1,2.",
+ "OLTEPTSEQG3I-002":"Is the disclosure precise: Insert the multiset separator.",
+ "OLTEPTSEQG3I-003":"Is the disclosure precise: Align this G1m/G1i side reference with the preceding G1i table: remove right weakening and the actual falsity base axiom.",
+ "OLTEPTSEQG3I-004":"Is the disclosure precise: Give this table the distinct tab:G3i label.",
+ "OLTEPTSEQG3C-001":"Is the disclosure precise: Insert the context separator.",
+ "OLTEPTSEQG1I-001":"Is the disclosure precise: Give the G1i table its own tab:G1i label.",
+ "OLTEPTSEQG1I-002":"Is the disclosure precise: Name the actual displayed falsity base axiom while retaining removal of right weakening.",
+ "OLTEPTSEQADM-004":"Does the weakening induction explicitly preserve the falsity-left axiom family as well as atomic identity axioms?",
+ "OLTEPTSEQINV-007":"Do the inversion and contraction bases explicitly retain the falsity-left axiom family, including a remaining falsity occurrence after contraction?",
+ "OLTEPTSEQQUA-001":"Is the disclosure precise: Use the universal-left labels in those two diagrams.",
+ "OLTEPTSEQQUA-002":"Is the disclosure precise: Choose a highest dirty inference, justify regularity by cleanliness of upper inferences, and state a decrease of at least one.",
+ "OLTEPTSEQQUA-003":"Is the disclosure precise: Separate the unchanged eigenvariable set and the inserted-term freshness statements without changing the mathematical content.",
+ "OLTEPTSEQQUA-004":"Is the disclosure precise: Clarify capture-avoiding substitution with alpha-renaming of bound variables when needed.",
+ "OLTEPTSEQEX-001":"Is the disclosure precise: Use the actual antecedent (C and D) implies E as Gamma.",
+ "OLTEPTSEQEX-002":"Is the disclosure precise: Use the left-implication label.",
+ "OLTEPTSEQEX-003":"Is the disclosure precise: Add the display command inside its existing display.",
+ "OLTEPTSEQEX-004":"Is the disclosure precise: Keep E in the succedent of that weakening inference.",
+ "OLTEPTSEQEX-005":"Is the disclosure precise: Name G3c in the not-yet-established claim.",
+ "OLTEPTSEQEX-006":"Is the disclosure precise: Use the inner formula B in both quantified forms to agree with the recurrence.",
+ "OLTEPTSEQEX-008":"Is the disclosure precise: Retain the common duplicated antecedent through right conjunction, then contract only on the left and retain the conjunction succedent; remove trailing commas.",
+ "OLTEPTSEQEX-009":"Is the disclosure precise: State the needed premise-proof restriction instead of the irrelevant empty-context formula.",
+ "OLTEPTSEQEX-010":"Is the disclosure precise: Use !D.",
+ "OLTEPTSEQEX-011":"Is the disclosure precise: Use B,Gamma for the second antecedent context.",
+ "OLTEPTSEQEX-012":"Is the disclosure precise: Explicitly restrict that depth observation to logical rules.",
+ "OLTEPTSEQINV-001":"Is the disclosure precise: Keep n as premise count and use a separate height bound h.",
+ "OLTEPTSEQINV-002":"Is the disclosure precise: Replace those two narrative conjunction occurrences by separate A,B antecedent entries.",
+ "OLTEPTSEQINV-003":"Is the disclosure precise: Rename internal eigenvariables away from the inserted constant before substitution, here and in the later universal contraction example.",
+ "OLTEPTSEQINV-004":"Is the disclosure precise: Retain every freshness condition of the lemma while applying the induction.",
+ "OLTEPTSEQINV-005":"Is the disclosure precise: Use the universal-right label.",
+ "OLTEPTSEQINV-006":"Is the disclosure precise: Restore B(t) in both places.",
+ "OLTEPTSEQIRL-001":"Is the disclosure precise: Use true on the right or false on the left.",
+ "OLTEPTSEQIRL-002":"Is the disclosure precise: Use the left XOR rule label.",
+ "OLTEPTSEQIRL-003":"Is the disclosure precise: Restrict the necessity argument to distinct atomic placeholders and the last logical inference, setting aside redundant structural endings; keep the displayed construction unchanged.",
+ "OLTEPTSEQADM-001":"Is the disclosure precise: Insert the multiset comma before Gamma.",
+ "OLTEPTSEQADM-002":"Is the disclosure precise: Put A iff B in the antecedent of that rule conclusion.",
+ "OLTEPTSEQADM-003":"Is the disclosure precise: Render the logical object as the end-sequent and disclose the source wording while preserving the protected token.",
+ "OLTEPTPTYTYP-001":"Is the disclosure precise: Use the declared term N.",
+ "OLTEPTPTYTYP-002":"Is the disclosure precise: Use x,y in the case constructor to match the branch contexts.",
+ "OLTEPTPTYTYP-003":"Is the disclosure precise: State uniqueness conditional on existence of a type, and qualify the introductory reconstruction claim for correct proof terms.",
+ "OLTEPTPTYTYP-004":"Is the disclosure precise: Refer to the distinct tab:tN3ip label repaired in the actual typing table.",
+ "OLTEPTPTYTYP-005":"Is the disclosure precise: Clarify that contexts are single-valued assignments and alpha-rename binders to fresh names before extending them, while still allowing extra unused variables.",
+ "OLTEPTPTYSND-001":"Is the disclosure precise: Align the second conjunct with B in both opening expressions.",
+ "OLTEPTPTYSND-002":"Is the disclosure precise: Keep the declared B assumption in each affected context, derive falsity twice, and discharge B only at the end.",
+ "OLTEPTPTYTN3-001":"Is the disclosure precise: Give the tN3 table its own tab:tN3ip label and align the types-section reference.",
+ "OLTEPTPTYRED-001":"Is the disclosure precise: Use separate arguments N1 and N2.",
+ "OLTEPTPTYRED-002":"Is the disclosure precise: Use the optional type annotation plus index and term.",
+ "OLTEPTPTYRED-003":"Is the disclosure precise: Use A_(3-i), preserving the branch selection and substitution. This gather expression was inspected directly; the existing parser reports no delta for it.",
+ "OLTEPTPTYRED-004":"Is the disclosure precise: Write the third term M3.",
+ "OLTEPTPTYTER-001":"Is the disclosure precise: Use the declared second premise M in the constructor.",
+ "OLTEPTPTYTER-002":"Is the disclosure precise: Supply the existing premise term N as its argument.",
+ "OLTEPTPTYTER-003":"Is the disclosure precise: Use the declared proof term N.",
  'OLFUN-001':'Does the Telugu correction state the exact condition “A nonempty or B empty” and make the empty-domain counterexample immediately clear?',
  'OLFUN-002':'Is “nonnegative (principal) square root” rendered unambiguously while preserving the separate positive-integer statement?',
  'OLFUN-003':'Is the alpha-equivalent n-to-x normalization disclosed clearly without suggesting a mathematical change?',
@@ -1632,6 +3135,192 @@ const correctionQuestions={
  ,'OLTEAMLTLDRV-001':'Does this olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?'
  ,'OLTEAMLTLSEM-001':'Does the temporal formation clause use the Ftemp macro already introduced in the operator list and used in the future truth clause?'
  ,'OLTEAMLELDRV-001':'Does this epistemic olchapter driver now invoke the chapter-end hook rather than the part-end hook, matching the separate macro roles and chapter-driver pattern?'
+ ,'OLTEAMLELBIS-001':'Do both forth and back clauses quantify agents over the language-defined set G, rather than the otherwise undefined A, without changing the bisimulation conditions?'
+ ,'OLTEAMLELPALSEM-001':'Does the vacuity paragraph now use the same marked operand !B as the announcement formation and truth clauses, without changing its conditional semantics?'
+ ,'OLTEINTBHK-001':'Does the currying example consistently produce constructions of the target meta-formula !C, including the one corrected codomain mention?'
+ ,'OLTEINTBHK-002':'Does the first tagged disjunction injection h_1 pair tag 1 with its own input M_1, while h_2 still pairs tag 2 with M_2?'
+ ,'OLTEINTND-001':'Does the conjunction-elimination explanation now use A_1 and A_2, matching the pair N_1,N_2 and preceding introduction explanation, without changing any rule tree?'
+ ,'OLTEINTSEMNOT-001':'Does the first proposition proof use the local hypothesis at w rather than an unjustified model-wide hypothesis, while preserving the second item and restriction argument?'
+ ,'OLTEINTSAX-001':'Does the premise-membership case now use the defined local truth expression for A_n at w, without the source extra Gamma argument, while retaining the three-case induction?'
+ ,'OLTEINTSND-001':'Does the conjunction-introduction case state B and C as its goal, matching both premises and its concluding satisfaction clause?'
+ ,'OLTEINTSND-002':'Does the first disjunction-elimination case place [w] inside the local satisfaction expression?'
+ ,'OLTEINTSND-003':'Do both disjunction-elimination entailments use singleton formula sets in their assumption unions, as the premises and induction hypotheses do?'
+ ,'OLTEINTLIN-001':'Does the finite-support step handle an empty supporting subset by choosing the initial stage, while retaining the contradiction with nonderivability?'
+ ,'OLTEINTLIN-002':'Does the enumeration argument use the finite prefix before a fixed index instead of claiming the total number of eligible disjunctions decreases?'
+ ,'OLTEINTCAN-001':'Does the valuation-monotonicity argument keep the starting sequence fixed and induct on the length of its appended finite segment?'
+ ,'OLTEINTDEC-001':'Does the finite quotient use truth of the target formula’s finite subformulas, not atomic valuations alone, and restrict the truth-preservation exercise to that finite set?'
+ ,'OLTEINTTABRULE-001':'Does the true-conditional prose now match the displayed false-antecedent/true-consequent branches and do both prose rule labels use the diagram’s argument order?'
+ ,'OLTEINTTABPRF-001':'Do the two false-conjunction branches cite the seventh tableau line containing their premise, rather than the fourth false-conditional line?'
+ ,'OLTEINTTABSOU-001':'Does the countermodel make every premise true and the conclusion false at the same world?'
+ ,'OLTEINTTABSOU-002':'Does the closure proof interpret the descendant prefix and apply monotonicity at that descendant?'
+ ,'OLTEINTTABSOU-003':'Do both false-conditional branch sets contain the true antecedent and false consequent at the fresh prefix?'
+ ,'OLTEINTTABSOU-004':'Does the corollary conclude semantic entailment rather than repeat the derivability premise?'
+ ,'OLTECNTSTR-001':'Does the fifth non-entailment compare the negation of a strict conditional, rather than the negation of a material conditional that actually entails the displayed consequent?'
+ ,'OLTECNTSPH-001':'Is the non-vacuous satisfaction condition passed only to smaller spheres that still contain an antecedent-true world, and is an innermost such sphere asserted only when it exists?'
+ ,'OLTECNTANT-001':'Do all three corrected prose phrases make striking, not lighting, the match the antecedent action, matching the quoted inference and three-world model?'
+ ,'OLTECNTTRA-001':'Does the stated valuation make q→r true throughout the q-admitting sphere, and does the target satisfaction macro now carry the positive sign?'
+ ,'OLTECNTCPO-001':'Is the listed sphere family explicitly the local system O_w, given that O is defined as a function on worlds, without claiming unprovided values at other worlds?'
+ ,'OLTESTPRED-001':'Does the prose expansion of the Russell-set predicate describe sets that are not self-membered, matching x∉x rather than its double negation?'
+ ,'OLTESTPRED-002':'Does following the cited authors mean accepting the vicious-circle principle and therefore introducing predicative comprehension?'
+ ,'OLTESTORDISO-001':'Does the isomorphism f : A_{a_2} -> B_{b_2} have B_{b_2} as its range rather than its domain, making b_1 < b_2 follow from b_1 = f(a_1)?'
+ ,'OLTESTORDBASIC-001':'Does the corrected least-witness proof choose the membership-least member satisfying phi within the witness ordinal, ensuring no earlier ordinal satisfies phi?'
+ ,'OLTESTORDTYPE-001':'Does the order-isomorphism underlying function map the ordinal beta into the set B, rather than into the ordered-pair structure <B, lessdot>?'
+ ,'OLTESTORDTYPE-002':'Does the existential initial-segment equivalence avoid f(alpha) when alpha is outside beta and establish both directions using restriction and ordinal uniqueness?'
+ ,'OLTESTSPINREC-001':'Does the auxiliary xi term assign A to the empty function, which has ordinal domain zero, so the subsequent recursion base case is defined?'
+ ,'OLTESTSPINFOUND-001':'Does the supremum in the transitive-set lemma range over the selected set B, rather than the unintroduced lowercase b?'
+ ,'OLTESTSPINRANK-001':'Does the converse stage/rank proof exclude rank(x)=alpha, instead of contradicting its premise that x is in V_alpha?'
+ ,'OLTESTREPLREFP-001':'Is the auxiliary witness-stage implication a balanced formula after removing the source’s extra closing parenthesis?'
+ ,'OLTESTREPLREFP-002':'Does the omega-indexed union defining S range over S_m, matching its bound index and the following witness argument?'
+ ,'OLTESTREPLREFP-003':'Is the existential predicate in the Replacement theorem’s set-builder expression properly closed, matching the proof’s final equality?'
+ ,'OLTESTREPLFINITE-001':'Is N-is-transitive relativized to the surrounding transitive model M, making the next ambient transitivity step valid?'
+ ,'OLTESTORDADD-001':'Does the successor-isomorphism codomain use ordinary union of the already tagged alpha and singleton components, as required by the disjoint-sum definition?'
+ ,'OLTESTORDADD-002':'Does the zero-addition calculation eliminate the empty product 0 times {1}, rather than replacing it with the nonempty singleton {0}?'
+ ,'OLTESTORDUSEADD-001':'Does the second product-rank exercise explicitly request equality at the lemma’s upper bound, filling its missing relation sign?'
+ ,'OLTESTORDMULT-001':'Is the strict-supremum limit clause restricted to nonzero left factors, with zero left multiplication handled separately?'
+ ,'OLTESTORDEXPO-001':'Do the finite-support functions map exponent beta to base alpha, with support and last-difference indices drawn from beta, so their order type matches alpha^beta?'
+ ,'OLTESTORDEXPO-002':'Is the synthetic/recursive equivalence exercise restricted to positive base, with the zero-base mismatch disclosed rather than hidden?'
+ ,'OLTESTCARDCLASS-001':'Does the gloss of card(A) notin omega say that A is not finite, rather than incorrectly saying that A is not a natural number?'
+ ,'OLTESTCARDSIMP-001':'Does the segment-size argument explicitly handle the omitted finite maximum-coordinate case before concluding the bound for every pair?'
+ ,'OLTESTCARDEXPO-001':'Does the disjoint-sum restriction map produce an ordered pair of functions, as required by the Cartesian-product codomain?'
+ ,'OLTESTCARDEXPO-002':'Is the direct curried-function bijection stated over the Cartesian product domain, with cardinal-product equality applied only afterward?'
+ ,'OLTESTCARDEXPO-003':'Is the infinite-base finite-exponent proposition restricted to nonzero exponents, excluding the false exponent-zero case?'
+ ,'OLTESTCARDCH-001':'Does the transfinite recursion paragraph identify the aleph and beth sequences, rather than a fixed cardinal, as recursively defined?'
+ ,'OLTESTCARDCH-002':'Does the aleph-index proof handle the omega base, restrict indexed predecessors to infinite cardinals, and explain uniqueness?'
+ ,'OLTESTCARDCH-003':'Is the GCH exponent bound qualified to infinite base and nonzero smaller exponent, excluding the zero-exponent counterexample?'
+ ,'OLTESTCARDFIX-001':'Does tau begin above the input cardinal, so the claimed strict inequality still holds when the input cardinal is already a beth fixed point?'
+ ,'OLTESTCARDFIX-002':'Does W begin at a beth fixed point and preserve fixed-point status through successor and limit stages, so the all-index width-height claim holds?'
+ ,'OLTESTCHOICEHART-001':'Does the transitivity proof take the well-ordered domain B as a subset of A, rather than of its relation R?'
+ ,'OLTESTCHOICEHART-002':'Is the transported well-order defined using two actual indices in the domain of f, rather than f(alpha) at an excluded endpoint?'
+ ,'OLTESTCHOICEHART-003':'Do the order-isomorphism functions have A and B as their underlying codomain sets, while preserving the order-isomorphism property?'
+ ,'OLTESTCHOICEHART-004':'Are the disjoint-sum and Cartesian-product comparisons with the larger set stated separately rather than as a nested cardinal-comparison argument?'
+ ,'OLTESTCHOICEWO-001':'Is the empty set handled separately before evaluating f(A), which is undefined for the empty set under the given choice-function domain?'
+ ,'OLTESTCHOICEWO-002':'Does the stop marker begin at or after the first completed stage, leaving the pre-stop choice enumeration intact for the injectivity and bijection argument?'
+ ,'OLTESTCHOICECOUNT-001':'Is the finite family listed without repetition before the chosen ordered pairs are called a function?'
+ ,'OLTESTCHOICECOUNT-002':'Does the cardinal bound use the union of prior varying A_i, rather than a repeated A_n under a dummy index?'
+ ,'OLTESTCHOICEBANACH-001':'Does the interval-to-real tangent example have balanced parentheses after removing the extra closing parenthesis in the source?'
+ ,'OLTESTCHOICEVITALI-001':'Are the chosen rotation angles rational multiples of a full turn, giving a group under composition, rather than rational radian values?'
+ ,'OLTESTCHOICEVITALI-002':'Does the inverse construction treat the zero rotation separately from the formula whose value would be the excluded full-turn endpoint?'
+ ,'OLTESTCHOICEVITALI-003':'Does the partition proof index its first part over the defined rotation subset rather than undefined R_1?'
+ ,'OLTESTCHOICEVITALI-004':'Is the paradoxical free-group claim restricted to rank at least two, and is the missing fixed-point treatment on the sphere clearly disclosed rather than presented as proved?'
+ ,'OLTESTCHOICEVITALI-005':'Do both measure-proof rotation quantifiers range over the rotation group rather than over the set of representative points?'
+ ,'OLTEMTHPRFPAT-001':'Does the nonemptiness equivalence concern the set A rather than the arbitrary member x, while leaving the final deliberately invalid proof clearly invalid?'
+ ,'OLTEMTHPRFEX2-001':'Is the second inclusion expression balanced after closing the outer union parenthesis, without changing the intended two-inclusion equivalence?'
+ ,'OLTEMTHPRFCON-001':'Does the Telugu text explicitly restrict deriving positive p from not-not-p to classical logic, without restricting the valid proof of a negated conclusion?'
+ ,'OLTEMTHPRFCON-002':'Does the negated-subset counterexample use nonmembership in A union B rather than an undefined C?'
+ ,'OLTEMTHPRFREA-001':'Does the expanded absorption proof list the reverse inclusion as obligation (b), matching the later proof rather than repeating obligation (a)?'
+ ,'OLTEMTHPRFREA-002':'Is the final union-membership expression balanced after removing the extra closing parenthesis?'
+ ,'OLTEMTHINDN-001':'Does the successor-step explanation substitute one for the quantified step variable k rather than for n?'
+ ,'OLTEMTHINDN-002':'Does the dice theorem now cover zero dice separately while retaining the one-die base and positive successor argument?'
+ ,'OLTEMTHINDSTR-001':'Is the predecessor-index rephrasing restricted to positive natural numbers, since zero has no predecessor?'
+ ,'OLTEMTHINDSTR-002':'Does the empty-domain base instantiate the actual P(l) strong-induction premise, while correctly noting the source P(0) sentence is also vacuously true?'
+ ,'OLTEHISSETLIM-001':'Does the passage identify the beta-dependent difference quotient, not the fixed derivative value, as approaching the gradient?'
+ ,'OLTEHISSETLIM-002':'Does the epsilon-delta implication exclude x=c while retaining the source quantifier order and strict epsilon bound?'
+ ,'OLTEHISSETLIM-003':'Does the absolute-value graph label exactly the four intended x-axis ticks without an unpaired or duplicated entry?'
+ ,'OLTEHISSETPATH-001':'Is Peano’s map described as a continuous surjection from a line segment onto a square, without claiming a smooth curve can fill positive planar area?'
+ ,'OLTEHISSETCANP-001':'Does the binary-expansion convention define a total interleaving map on the closed square and justify injectivity, including at 1?'
+ ,'OLTEHISSETCANP-002':'Is the source’s 0.1010... witness rejected under that convention and replaced by a genuinely omitted value while preserving the historical argument?'
+ ,'OLTEHISSETHILB-001':'Is the parameter x in the unit line rather than the square, with convergence still acknowledged as unproved by the sketch?'
+ ,'OLTEHISSETHILB-002':'Does the target clearly distinguish the dense approximating images from a proved surjective pointwise limit?'
+ ,'OLTEHISSETHILB-003':'Is the source’s target-neighborhood condition identified as different from continuity at each input parameter?'
+ ,'OLTEHISSETHILB-004':'Does the final grid argument remain labeled an incomplete continuity proof pending specified parametrizations and convergence?'
+ ,'OLTEFOLAXDPRV-001':'Is the second listed proposition distinguished from the opposite implication actually derived in its source proof?'
+ ,'OLTEFOLAXDPRV-002':'Is the conjunction-elimination display’s incorrect disjunction conclusion disclosed without changing its protected formula?'
+ ,'OLTEFOLAXDPRV-003':'Is the undefined Gamma_1 in the modus-ponens conclusion explained as a finite-support slip?'
+ ,'OLTEFOLAXDPRV-004':'Is the weak-generalization axiom case understood as referring to each A_i rather than only final A?'
+ ,'OLTEFOLAXDPRV-005':'Is the free-for lemma’s opening substitution mismatch with its stated target formula disclosed?'
+ ,'OLTELAMSYNCONV-001':'Is the source fragment’s promised but absent formal alpha-conversion rule disclosed without inventing the missing material?'
+ ,'OLTEMODBASENSA-001':'Is the source’s L_N/L notation switch identified without silently redefining the arithmetic language?'
+ ,'OLTEMODBASENSA-002':'Does the separated-block argument conclude x*<y rather than merely repeat x<y?'
+ ,'OLTEMODBASENSA-003':'Is distinct-block membership required before comparing blocks strictly?'
+ ,'OLTEMODBASENSA-004':'Does the parity sentence say for every y there exists an x, matching division by two and the subsequent proof?'
+ ,'OLTEPTCUTINVL-001':'Is the conjunction exercise identified as maximal-rank cut reduction rather than invertibility?'
+ ,'OLTEPTCUTINVL-002':'Is the final maximal-rank reduction attributed to the local maximal-cut lemma rather than the earlier cut-admissibility lemma?'
+ ,'OLTEPTCUTINVL-003':'Does the atomic principal-axiom case use Delta-prime in its succedent decomposition, matching the next sequent?'
+ ,'OLTEPTCUTTOP-001':'Does the alternative axiom case name the left premise proof pi_1 for the doubled succedent?'
+ ,'OLTEPTCUTTOP-002':'Does the disjunction case use the defined cutrank macro instead of the undefined cutr?'
+ ,'OLTEPTCUTTOP-003':'Does the lower cut in the final implication tree remove B from its conclusion?'
+ ,'OLTEPTCUTTOP-004':'Do both Case D trees use Delta-prime where an explicit B-and-C copy is appended?'
+ ,'OLTEPTCUTITP-001':'Does the Beth proof use Maehara’s language inclusion rather than an undefined equality of L_1 and L_2?'
+ ,'OLTEPTCUTITP-002':'Does the Beth conclusion name predicate R, not the source typo !R?'
+ ,'OLTEPTCUTITP-003':'Is the complete common theory assumed in the whole shared language, as the next argument requires?'
+ ,'OLTEPTCUTITP-004':'Does the joint-consistency argument use completeness and consistency instead of reversing entailment from an extension to its base?'
+ ,'OLTEPTCUTITP-005':'Is the variable-term case separated from the constant-symbol case without function symbols?'
+ ,'OLTEPTCUTITP-006':'Is the primed ambient language distinguished from the symbols actually occurring in the primed theory?'
+ ,'OLTEPTCUTINT-001':'Is the context-sharing cut diagram labeled CutCS rather than Cut?'
+ ,'OLTEPTCUTAUX-001':'Is the reversed B! in the auxiliary implication cut tree corrected to !B?'
+ ,'OLTEPTCUTAUX-002':'Is the undefined cutr rank macro replaced by cutrank and disclosed?'
+ ,'OLTEPTCUTAUX-003':'Are the unresolved final Cut-tree context inconsistencies disclosed without claiming a verified derivation?'
+ ,'OLTEPTCUTMID-001':'Does the Herbrand extraction refer to the displayed pi_1 rather than an undefined pi_1-prime?'
+ ,'OLTEPTCUTMID-002':'Does the zero-order proof handle the possibility of no quantifier inferences?'
+ ,'OLTEPTCUTMID-003':'Is the stray marker before Gamma-prime removed from the existential permutation tree?'
+ ,'OLTEPTNATGRA-001':'Does the implication-introduction tree conclude B-to-A rather than B-to-C?'
+ ,'OLTEPTNATGRA-002':'Is the sequent derivation correctly identified as N2c/N2i rather than N1c/N1i?'
+ ,'OLTEPTNATGRA-003':'Is induction on the height of delta_1 rather than an undefined delta?'
+ ,'OLTEPTNATGRA-004':'Are replaced open assumptions excluded from the grafted derivation’s remaining open assumptions?'
+ ,'OLTEPTNATINT-001':'Does the Jaśkowski box begin with assumption A and end with consequent B?'
+ ,'OLTEPTNATINT-002':'Does implication introduction conclude Gamma entails A-to-B?'
+ ,'OLTEPTNATQUA-001':'Does the existential-elimination substitution case show both substituted premises and its correct two-branch inference?'
+ ,'OLTEPTNATQUA-002':'Does the regularization induction choose a highest dirty inference whose upper subproof is regular?'
+ ,'OLTEPTNATN1-001':'Does the existential eigenconstant restriction avoid forbidding its required occurrence in the minor premise?'
+ ,'OLTEPTNATN2-001':'Do the caption’s quantifier rule macros match the N2 table and its later wording?'
+ ,'OLTEPTNATRPR-001':'Are N1 derivations consistently characterized as formula trees built from assumptions?'
+ ,'OLTEPTNATRPR-002':'Does the third premise of the generic three-premise tree end in A_3?'
+ ,'OLTEPTNATRPR-003':'Does the reference to tab:N1 correctly name N1c/N1i rules?'
+ ,'OLTEPTNATRPR-004':'Is the discharge label attached to the whole conjunction assumption in every example diagram?'
+ ,'OLTEPTNATRPR-005':'Are the immediate subproof and example heights stated consistently with the derivations?'
+ ,'OLTEPTNATSEQ-001':'Are the opening natural-deduction formula-tree systems named N1c/N1i rather than G1c/G1i?'
+ ,'OLTEPTNATSEQ-002':'Is the missing formula marker restored in the N2 implication-introduction tree?'
+ ,'OLTEPTNATSEQ-003':'Does the reverse translation identify the N1 inductive subproof as delta_1-prime in prose and diagrams?'
+ ,'OLTEPTNATG2I-001':'Does the proof use G2i as the source calculus, consistent with the proposition?'
+ ,'OLTEPTNATG2I-002':'Does the induction hypothesis produce N2i rather than N2c derivations?'
+ ,'OLTEPTNATG2I-003':'Is the left-weakening inference correctly labelled on the diagram?'
+ ,'OLTEPTNATG2I-004':'Are labelled formulas renamed in the induced N2i derivation rather than the G2i source proof?'
+ ,'OLTEPTNATG2I-005':'Is implication introduction applied to the inductive derivation to obtain the final derivation?'
+ ,'OLTEPTNATG2I-006':'Does implication-left relabel the induced derivation and retain its context in the auxiliary tree?'
+ ,'OLTEPTNATG2I-007':'Does conjunction-right use B for its second premise and relabel the induced N2i derivation?'
+ ,'OLTEPTNATN2I-001':'Does the proposition target G2i rather than repeat N2i?'
+ ,'OLTEPTNATN2I-002':'Does implication elimination with a false conclusion derive an empty succedent from the actual second-premise result?'
+ ,'OLTEPTNATN2I-003':'Is the N2 label removed from the G2c proof-tree premise?'
+ ,'OLTEPTNATN2I-004':'Does classical absurdity with a false conclusion reach the required empty succedent?'
+ ,'OLTEPTNORINT-001':'Are delta_1 and delta_2 consistently assigned to the A proof and the B-from-A subproof?'
+ ,'OLTEPTNORPER-001':'Does the first cut formula agree with the displayed conjunction-elimination derivation?'
+ ,'OLTEPTNORPER-002':'Is the second exercise consistently phrased with the N1i existential-elimination rule?'
+ ,'OLTEPTNORPER-003':'Does the eigenvariable explanation use the same existential-elimination rule as its displayed derivation?'
+ ,'OLTEPTNORRED-001':'Is the unexplained fourth subproof removed only from the unchanged-cut list while the actual derivation remains intact?'
+ ,'OLTEPTNORSEG-001':'Does the conclusion follow the minor premise in the segment explanation, consistent with the formal definition?'
+ ,'OLTEPTNORSEG-002':'Is the next formula occurrence marked with the same exclamation notation as the rest of the sequence?'
+ ,'OLTEPTNORSEG-003':'Does the one-occurrence cut summary include the falsum-elimination alternative from the formal definition?'
+ ,'OLTEPTNORTR-001':'Is the cut-free source system consistently named G2i?'
+ ,'OLTEPTNORTR-002':'Is the first corollary consistently targeted at N2i?'
+ ,'OLTEPTNORTR-003':'Is normality stated as the condition for avoiding cuts in the reverse translation?'
+ ,'OLTEPTNORTR-004':'Does the transformed conjunction-case proof use the declared delta_1 label?'
+ ,'OLTEPTNORTR-005':'Does the conjunction-case G2i induction result remove labels and use the primed context?'
+ ,'OLTEPTNORTR-006':'Do the implication-case G2i results use Gamma_1 prime and Gamma_2 prime respectively?'
+ ,'OLTEPTNORTR-007':'Is the falsum condition for the first right weakening complete?'
+ ,'OLTEPTNORTR-008':'Does the N1i subformula scope include open assumptions, as the N2i end-sequent does?'
+ ,'OLTEPTPSCPL-001':'Is the missing formula letter restored in the countermodel condition for the succedent?'
+ ,'OLTEPTPSCPL-002':'Does the failure-branch constant set refer to the defined Lambda_n succedent?'
+ ,'OLTEPTPSCPL-003':'Do all m-place term-model lists and domain powers use the same arity m?'
+ ,'OLTEPTPSSAL-001':'Does fresh index allocation keep every new index strictly above the previous maximum?'
+ ,'OLTEPTPSSAL-002':'Is the right-existential reduction tree labelled with the right rule?'
+ ,'OLTEPTPSSAL-003':'Does the prose retain the selected existential occurrence index?'
+ ,'OLTEPTPSSAL-004':'Does the exhausted-term fallback stay within the nonempty assigned constant set?'
+ ,'OLTEPTPSTAB-001':'Are both initial succedent formulas signed false?'
+ ,'OLTEPTPSTAB-002':'Does true falsum close a branch and translate to the falsum axiom?'
+ ,'OLTEPTPSTAB-003':'Is finite open-branch saturation distinguished from checking off reusable quantifiers?'
+ ,'OLTEPTPTYINT-001':'Is the displayed M1 M2 typing rule clearly described as application rather than function composition?'
+ ,'OLTEPTPTYNOR-001':"Is the disclosed treatment precise: Use the explicitly declared summand types."
+ ,'OLTEPTPTYNOR-002':"Is the disclosed treatment precise: Adjoin zero to the set whose maximum is taken."
+ ,'OLTEPTPTYNOR-003':"Is the disclosed treatment precise: Use x in the major-term position."
+ ,'OLTEPTPTYNOR-004':"Is the disclosed treatment precise: Remove only the stray parenthesis."
+ ,'OLTEPTPTYNOR-005':"Is the disclosed treatment precise: Describe the rank as the length of the substituted variable type."
+ ,'OLTEPTPTYNOR-006':"Is the disclosed treatment precise: Include both proper source subterms; the stated strict rank assumption covers them."
+ ,'OLTEPTPTYNOR-007':"Is the disclosed treatment precise: Retain the source argument for inspection and explicitly disclose the gap; do not certify normalization or the separately asserted strong normalization."
+ ,'OLTEPTPTYNOR-008':"Is the disclosed treatment precise: Use O1' as the common result."
+ ,'OLTEPTPTYNOR-009':"Is the disclosed treatment precise: Keep the source example and explicitly disclose that a complete weak Church–Rosser proof has not been supplied."
+ ,'OLTEPTPTYNOR-010':"Is the disclosed treatment precise: Apply strong normalization to the one-step relation in the prose, Newman statement and proof; retain multistep confluence."
+ ,'OLTEPTPTYNOR-011':"Is the disclosed treatment precise: Write the initial one-step arrows."
+ ,'OLTEPTPTYNOR-012':"Is the disclosed treatment precise: Reduce the common descendant to N* under the stated termination assumption, then compare normal forms."
 };
 const correctionRecords=corrections.map(c=>{
  const segments=ledger.filter(s=>s.unit_id===c.unit_id&&s.source_corrections?.includes(c.finding_id));
@@ -1656,7 +3345,7 @@ const correctionRecords=corrections.map(c=>{
  const rawQuestion=correctionQuestions[c.finding_id]??`whether the Telugu disclosure for ${c.finding_id} is mathematically precise and idiomatic.`;
  const question=/^Please double-check/i.test(rawQuestion)?rawQuestion:`Please double-check: ${rawQuestion}`;
  const qualified=c.qualification?.disposition==='rejected_false_positive';
- const unresolvedProof=['OLTELAMALP-005','OLTELAMALP-006','OLTELAMCRPB-003','OLTELAMCRB-001','OLTELAMCRB-003','OLTELAMCRPBE-002','OLTELAMCRPBE-003','OLTELAMCRPBE-004','OLTELAMCRPBE-005','OLTELAMCRBE-001','OLTELAMCRBE-002','OLTELAMCRBE-003','OLTELAMCRBE-004'].includes(c.finding_id);
+ const unresolvedProof=['OLTELAMALP-005','OLTELAMALP-006','OLTELAMCRPB-003','OLTELAMCRB-001','OLTELAMCRB-003','OLTELAMCRPBE-002','OLTELAMCRPBE-003','OLTELAMCRPBE-004','OLTELAMCRPBE-005','OLTELAMCRBE-001','OLTELAMCRBE-002','OLTELAMCRBE-003','OLTELAMCRBE-004','OLTESTCHOICEVITALI-004','OLTEPTPTYNOR-007','OLTEPTPTYNOR-009','OLTEPTSEQMG3I-002'].includes(c.finding_id);
  return {review_id:'REV-'+c.finding_id,record_type:'source_correction_decision',scope_completion:completion,language:'Telugu',script:'Telu',locale:'te-Telu-IN',finding_id:c.finding_id,classification:c.classification,...(c.qualification?{qualification:c.qualification}:{}),confidence:unresolvedProof?'source_proof_gap_disclosed_not_repaired':'high_mathematical_repair_moderate_disclosure_wording',review_priority:unresolvedProof?'high':'medium',expert_review_status:unresolvedProof?'source_proof_gap_disclosed_structural_qa_passed_full_proof_pending_no_translation_hold':qualified?'historical_error_classification_rejected_equivalent_notation_qa_passed_disclosure_wording_open_for_optional_review_no_hold':'mathematical_correction_qa_passed_disclosure_wording_open_for_optional_review_no_hold',implementation_locations:locations,actual_authorities_checked:[{audit_id:c.audit_id,audit_review_sha256:c.audit_review_sha256,audit_findings_sha256:c.audit_findings_sha256},...(qualified?[{qualification_review_sha256:c.qualification.consolidation_review_sha256,disposition:c.qualification.disposition,review_path:c.qualification.review_path}]:[]),{source_revision:'9620cc73f9c8e0ad003c514a5d3748f29611c4c0',source_path:c.source_path,source_sha256:c.source_sha256}],not_checked_or_not_found:[unresolvedProof?'మూల సిద్ధాంతానికి పూర్తి స్వతంత్ర నిరూపణ ఇంకా నమోదు కాలేదు; నిర్మాణాత్మక QA నిరూపణను ధృవీకరించదు.':qualified?'No independent human subject expert has reviewed the Telugu qualification wording yet; the equivalent notation and false-positive disposition were checked by the consolidation review and correction-aware structural QA.':'No independent human subject expert has reviewed the Telugu disclosure wording yet; the mathematical treatment was checked by the recorded source audit and correction-aware structural QA.'],rationale:c.body_treatment,alternatives_considered_or_recorded:unresolvedProof?['మూల నిరూపణలోని అన్యాయ దశను నిరూపితంగా ప్రకటించడం (తిరస్కరణ)','మూల దశను పరిశీలన కోసం ఉంచి ఖాళీని పక్కనే ప్రకటించడం (ఎంపిక)','బలపరిచిన ఆగమన పరికల్పనతో పూర్తి నిరూపణను తరువాతి సమీక్షలో ఇవ్వడం (ఇంకా చేయలేదు)']:qualified?['Retain the valid nested cardinality construction verbatim (viable, but the explicit pair is clearer in the target).','Present the two equivalent explicit comparisons and disclose the rejected historical classification (chosen).']:['Translate the defective source claim verbatim (rejected because it would knowingly reproduce the defect).','Apply the recorded minimal mathematical repair and disclose it adjacent to the translated claim (chosen).'],uncertainty:unresolvedProof?'మూల వాదనలో నిరూపణ ఖాళీ నిర్ధారితమైనది; పూర్తి సిద్ధాంత నిరూపణ ఇంకా లేదు.':qualified?'Low for mathematical equivalence and the rejected-false-positive disposition; optional review remains useful for the clarity of its Telugu qualification.':'Low for the recorded mathematical repair; optional review remains useful for the clarity of its Telugu disclosure.',rationale_phase:unresolvedProof?'మూల పాఠ్యాన్ని నేరుగా పరిశీలించి నిరూపణ ఖాళీని అనువాదంలో ప్రకటించాం; నిర్మాణాత్మక QA సూత్రాల సంరక్షణను మాత్రమే పరీక్షించింది.':qualified?'Historical audit record retained and qualified by the 2026-09-19 consolidation review, followed by correction-aware batch QA.':'Contemporaneous application of the recorded source audit, followed by correction-aware batch QA.',precise_review_questions:[question],translation_hold:false,status:c.status};
 });
 const records=[...termRecords,...correctionRecords];

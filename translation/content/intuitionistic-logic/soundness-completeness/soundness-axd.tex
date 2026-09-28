@@ -1,0 +1,74 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: soundness-axd
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{sax}
+
+\olsection{స్వీకృతాధారిత \usetoken{వ్యుత్పత్తుల}{derivation} నిర్దుష్టత}
+
+\begin{editorial}
+  నిర్దుష్టత నిరూపణ అన్ని స్వీకృతాలు అంతఃప్రజ్ఞావాద
+  తర్కంలో చెల్లుబాటవుతాయనే వాస్తవంపై ఆధారపడుతుంది;
+  దీన్ని ఇంకా నిరూపించాలి, ఉదాహరణకు అర్థవిజ్ఞాన
+  అధ్యాయంలో.
+\end{editorial}
+
+\begin{thm}[నిర్దుష్టత]
+  \ollabel{thm:soundness}
+  $\Gamma \Proves !A$ అయితే, $ \Gamma \Entails !A$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves !A$ అయితే $\Gamma \Entails !A$
+  అని నిరూపిస్తాం. $\Gamma$ నుంచి~$!A$ యొక్క
+  \tetoken{వ్యుత్పత్తిలోని}{!!{derivation}} \tetoken{సూత్రాల}{!!{formula}s}
+  సంఖ్య~$n$పై ఆగమన పద్ధతిలో నిరూపణ సాగుతుంది.
+  $!A_1$, \dots, $!A_n = !A$ అనేది~$\Gamma$ నుంచి
+  \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} అయితే $\Gamma
+  \Entails !A_n$ అని చూపుతాం. $!A_1$, \dots, $!A_n$
+  ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}} అయితే, ఏ $k<n$కైనా
+  $!A_1$, \dots, $!A_k$ కూడా వ్యుత్పత్తేనని గమనించండి.
+
+  పొడవు~$0$ గల \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}
+  లేవు; కాబట్టి $n=0$కు వాదన శూన్యసత్యంగా నిలుస్తుంది.
+  పొడవు~$<n$ గల అన్ని \tetoken{వ్యుత్పత్తులకు}{!!{derivation}s}
+  వాదన నిలుస్తుందనుకుందాం. $!A_n$కు ఇచ్చిన
+  కారణాన్ని బట్టి కేసులను వేరు చేస్తాం.
+
+  \begin{enumerate}
+  \item $!A_n$ ఒక స్వీకృతం. అన్ని స్వీకృతాలు
+    చెల్లుబాటవుతాయి; కాబట్టి ఏ~$\Gamma$కైనా
+    $\Gamma \Entails !A_n$.
+  \item $!A_n \in \Gamma$. అప్పుడు ఏ
+    $\mModel{M}$, $w$లకు అయినా $\mSat{M}{\Gamma}[w]$
+    అయితే స్పష్టంగా $\mSat{M}{!A_n}[w]$;
+    అంటే $\Gamma \Entails !A$.
+    \sourcecorrection{OLTEINTSAX-001}{మూలంలో ఈ దశలో లోక-సత్య సంకేతానికి అదనపు $\{\Gamma\}$ వాదన జతైంది; నిర్వచిత రెండు వాదనల $\mSat{M}{!A_n}[w]$ రూపానికి సరిచేశాం.}
+  \item $!A_i$, $!A_j \ident !A_i \lif !A_n$ నుంచి
+    \MP{} ద్వారా $!A_n$ వస్తుంది. $!A_1$, \dots,
+    $!A_i$ మరియు $!A_1$, \dots, $!A_j$
+    అనేవి~$\Gamma$ నుంచి \tetoken{వ్యుత్పత్తులు}{!!{derivation}s}.
+    అందువల్ల ఆగమన పరికల్పన ప్రకారం $\Gamma
+    \Entails !A_i$, $\Gamma \Entails !A_i \lif !A_n$.
+
+    $\mSat{M}{\Gamma}[w]$ అనుకుందాం.
+    $\mSat{M}{\Gamma}[w]$, అలాగే
+    $\Gamma \Entails !A_i \lif !A_n$ కలిపి
+    $\mSat{M}{!A_i \lif
+      !A_n}[w]$ ఇస్తాయి. నిర్వచనం ప్రకారం
+    $Rww'$ అయ్యే ప్రతి $w'$ వద్ద
+    $\mSat{M}{!A_i}[w']$ అయితే $\mSat{M}{!A_n}[w']$.
+    $R$ స్వావర్తనం కాబట్టి, $Rww'$ అయ్యే
+    $w'$లలో $w$ కూడా ఉంది; అంటే
+    $\mSat{M}{!A_i}[w]$ అయితే $\mSat{M}{!A_n}[w]$.
+    $\Gamma \Entails !A_i$ కాబట్టి
+    $\mSat{M}{!A_i}[w]$. కనుక కోరినట్లుగా
+    $\mSat{M}{!A_n}[w]$.
+  \end{enumerate}
+\end{proof}
+
+\end{document}

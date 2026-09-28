@@ -1,0 +1,45 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "321",
+  "unit_id": "OLP-0672",
+  "unit_order": 672,
+  "source_path": "content/proof-theory/normalization/introduction.tex",
+  "blocks": 9,
+  "linguistic_blocks": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "corrections_by_block": {
+    "6": [
+      "OLTEPTNORINT-001"
+    ]
+  },
+  "previous_segments": 9941,
+  "previous_terms": 361,
+  "expected_corrections": 602,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "ప్రవేశ-తొలగింపు పక్కదారి, సాధారణీకరణ, సాధారణ నిరూపణ, ఉపసూత్ర లక్షణాన్ని మూలంతో పోల్చాం; ఉపనిరూపణ గుర్తుల స్థానిక లోపాన్ని ప్రకటించాం.",
+  "evidence_limit": "సాధారణీకరణ పదం భావపారదర్శక ఎంపిక; ప్రత్యక్ష ప్రమాణిత పదసూచి పరిమితం. కట్-తొలగింపు పోలిక మూలానుసారం; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T362",
+    "source_term": "normalization; normal proof; detour; subformula property",
+    "telugu": "సాధారణీకరణ; సాధారణ నిరూపణ; పక్కదారి; ఉపసూత్ర లక్షణం",
+    "status": "normalization_intro_derivation_labels_repaired",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "ప్రవేశ వెంట తొలగింపు పక్కదారి, సాధారణీకరణ భావం, కట్ తొలగింపుతో పోలిక, ఉపసూత్ర లక్షణం నిలిచాయి; గుర్తు అసంగతి ప్రకటితంగా సరిచేశాం.",
+    "uncertainty": "సాధారణీకరణ సాంకేతిక అర్థం పరిసర నిర్వచనంతో స్థిరం; నిఘంటు సాక్ష్యం పరిమితం.",
+    "borrowing": "N1c/N1i and derivation labels remain source-identifying."
+  }
+}

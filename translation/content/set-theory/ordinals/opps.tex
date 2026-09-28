@@ -1,0 +1,183 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{opps}
+\olsection{ఉత్తరవర్తి, సీమా క్రమసంఖ్యలు}
+
+తదుపరి కొన్ని అధ్యాయాల్లో
+క్రమసంఖ్యలను విస్తృతంగా
+వాడతాం. అందువల్ల కొన్ని
+సరళమైన భావాలను
+పరిచయం చేయడం ఉపయోగకరం.
+
+\begin{defn}
+ఏ క్రమసంఖ్య $\alpha$కైనా,
+దాని \emph{ఉత్తరవర్తి}
+$\ordsucc{\alpha}
+=\alpha \cup \{\alpha\}$.
+ఏదో క్రమసంఖ్య~$\beta$కు
+$\ordsucc{\beta} = \alpha$
+అయితే $\alpha$ను
+\emph{ఉత్తరవర్తి}
+క్రమసంఖ్య అంటాం.
+$\alpha$ను \emph{సీమా}
+క్రమసంఖ్య అంటాం
+అప్పుడే మరియు అప్పుడే
+$\alpha$ శూన్యం కాక,
+ఉత్తరవర్తి క్రమసంఖ్యా
+కాకపోతే.
+\end{defn}
+\noindent
+ఇది \emph{ఉత్తరవర్తి}
+అనే సరైన భావమని
+ఈ ఫలితం చూపుతుంది:
+
+\begin{prop}
+ఏ క్రమసంఖ్య $\alpha$కైనా:
+\begin{enumerate}
+	\item $\alpha \in \ordsucc{\alpha}$;
+	\item $\ordsucc{\alpha}$ ఒక క్రమసంఖ్య;
+	\item $\alpha \in \beta \in
+	\ordsucc{\alpha}$ అయ్యే క్రమసంఖ్య $\beta$ లేదు.
+	\end{enumerate}
+\end{prop}
+
+\begin{proof}
+స్పష్టంగా,
+$\alpha \in \alpha \cup \{\alpha\} = \ordsucc{\alpha}$.
+అలాగే $\ordsucc{\alpha}$
+క్రమసంఖ్యల సంక్రామక
+సమితి; కాబట్టి
+\olref[basic]{corordtransitiveord}
+ప్రకారం అది క్రమసంఖ్య.
+$\alpha \in \beta \in \ordsucc{\alpha}$
+అనేది అసాధ్యం;
+ఎందుకంటే అప్పుడు
+$\beta \in \alpha$
+లేదా $\beta = \alpha$;
+ఇది \olref[basic]{ordordered}కు
+విరుద్ధం.
+\end{proof}
+\noindent
+దీనితో అతిపరిమిత
+ఆగమన నిరూపణకు
+మరొక రూపం లభిస్తుంది:
+
+\begin{thm}[సరళ అతిపరిమిత ఆగమనం]\ollabel{simpletransrecursion}
+$\phi(x)$ ఈ షరతులను
+పూర్తి చేసే సూత్రం
+అనుకుందాం:
+\begin{enumerate}
+	\item $\phi(\emptyset)$; మరియు
+	\item ఏ క్రమసంఖ్య $\alpha$కైనా, $\phi(\alpha)$ అయితే
+	$\phi(\ordsucc{\alpha})$; మరియు
+	\item $\alpha$ సీమా క్రమసంఖ్య అయి, $(\forall \beta \in
+	\alpha)\phi(\beta)$ అయితే, $\phi(\alpha)$.
+\end{enumerate}
+అప్పుడు $\forall \alpha \phi(\alpha)$.
+\end{thm}
+
+\begin{proof}
+విపర్యయాన్ని నిరూపిస్తాం.
+కాబట్టి $\lnot\phi$
+అయ్యే ఏదో క్రమసంఖ్య
+ఉందనుకుందాం; అలాంటి
+అత్యల్ప క్రమసంఖ్యను
+$\gamma$ అనుకుందాం.
+అప్పుడు $\gamma = \emptyset$
+లేదా ఏదో $\alpha$కు
+$\gamma = \ordsucc{\alpha}$,
+అక్కడ $\phi(\alpha)$;
+లేదా $\gamma$ సీమా
+క్రమసంఖ్య, అలాగే
+$(\forall
+\beta \in \gamma)\phi(\beta)$.
+ఈ మూడు సందర్భాలూ
+సంబంధిత పరికల్పనలకు
+విరుద్ధం.
+\end{proof}
+\noindent
+చివరిగా, తరువాత
+ఉపయోగపడే మరో సంకేతం:
+
+\begin{defn}\ollabel{defsupstrict}
+$X$ క్రమసంఖ్యల
+సమితి అయితే,
+$\supstrict(X) = \bigcup_{\alpha
+\in X} \ordsucc{\alpha}$.
+\end{defn}
+\noindent
+ఇక్కడ ``lsub'' అంటే
+``కనిష్ఠ కఠిన పై
+హద్దు''.\footnote{కొన్ని
+పుస్తకాలు దీనికి
+``$\text{sup}(X)$''
+అనే సంకేతాన్ని వాడతాయి.
+కానీ ఇతర పుస్తకాలు
+కనిష్ఠ \emph{కఠినంకాని}
+పై హద్దుకు, అంటే కేవలం
+$\bigcup X$కు, అదే
+``$\text{sup}(X)$''ను
+వాడతాయి. $X$కు
+గరిష్ఠ మూలకం $\alpha$
+ఉంటే, ఈ రెండు
+భావాలు విడిపోతాయి:
+కనిష్ఠ \emph{కఠిన}
+పై హద్దు
+$\ordsucc{\alpha}$;
+కనిష్ఠ \emph{కఠినంకాని}
+పై హద్దు కేవలం
+$\alpha$.} ఈ కింది
+ఫలితం దానిని
+వివరిస్తుంది:
+
+\begin{prop}
+$X$ క్రమసంఖ్యల
+సమితి అయితే,
+$\supstrict(X)$, $X$లోని
+ప్రతి క్రమసంఖ్యకన్నా
+ఎక్కువగా ఉండే
+అత్యల్ప క్రమసంఖ్య.
+\end{prop}
+
+\begin{proof}
+$Y = \Setabs{\ordsucc{\alpha}}{\alpha \in X}$
+అనుకుందాం; అప్పుడు
+$\supstrict(X) = \bigcup Y$.
+క్రమసంఖ్యలు సంక్రామకాలు,
+ప్రతి క్రమసంఖ్యలోని
+మూలకమూ క్రమసంఖ్యే
+కాబట్టి, $\supstrict(X)$
+క్రమసంఖ్యల సంక్రామక
+సమితి. అందువల్ల
+\olref[basic]{corordtransitiveord}
+ప్రకారం అది
+క్రమసంఖ్య.
+
+$\alpha \in X$ అయితే,
+$\ordsucc{\alpha} \in Y$;
+కాబట్టి $\ordsucc{\alpha}
+\subseteq \bigcup Y = \supstrict(X)$;
+అందువల్ల $\alpha \in
+\supstrict(X)$. కాబట్టి
+$\supstrict(X)$, $X$లోని
+ప్రతి క్రమసంఖ్యకన్నా
+కఠినంగా ఎక్కువ.
+
+తిరిగి, $\alpha \in \supstrict(X)$
+అయితే ఏదో $\beta \in X$కు
+$\alpha \in
+\ordsucc{\beta} \in Y$;
+అందువల్ల $\alpha \leq
+\beta \in X$. కాబట్టి
+ఈ కుటుంబానికి ఉన్న ఏ కఠిన
+పై హద్దూ ఈ సమితిలోని
+ప్రతి మూలకంకన్నా
+ఎక్కువగా ఉంటుంది;
+$\supstrict(X)$, $X$
+యొక్క \emph{కనిష్ఠ}
+కఠిన పై హద్దు.
+\end{proof}
+
+\end{document}

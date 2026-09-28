@@ -1,0 +1,170 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTSEQEX-20260928",
+  "unit_id": "OLP-0702",
+  "source_path": "content/proof-theory/sequent-calculus/proof-examples.tex",
+  "source_sha256": "c19f22b1b416d0cfbc56182056961ac353bee13b6f662e915c3b2699edc36ce8",
+  "findings": [
+    {
+      "finding_id": "OLTEPTSEQEX-001",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 13–77, aligned block 6",
+      "classification": "rule_matching_wrong_antecedent_context",
+      "source_issue": "Gamma is assigned the succedent implication rather than the actual antecedent implication.",
+      "minimal_treatment": "Use the actual antecedent (C and D) implies E as Gamma.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Gamma=\\{!C\\lif(!D\\lif!E)\\}$"
+        ],
+        "target_only": [
+          "$\\Gamma=\\{(!C\\land!D)\\lif!E\\}$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-002",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 13–77, aligned block 6",
+      "classification": "left_implication_inference_labelled_right",
+      "source_issue": "The expanded two-premise implication-left inference is labelled right.",
+      "minimal_treatment": "Use the left-implication label.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!D,!C\\fCenter!E,!C$\\Axiom$!D,!C\\fCenter!E,!D$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!D,!C\\fCenter!E,!C\\land!D$\\Axiom$!D,!C,!E\\fCenter!E$\\RightLabel{\\RightR{\\lif}}\\BinaryInf$!D,!C,(!C\\land!D)\\lif!E\\fCenter!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$!C,(!C\\land!D)\\lif!E\\fCenter!D\\lif!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E)$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!D,!C\\fCenter!E,!C$\\Axiom$!D,!C\\fCenter!E,!D$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!D,!C\\fCenter!E,!C\\land!D$\\Axiom$!D,!C,!E\\fCenter!E$\\RightLabel{\\LeftR{\\lif}}\\BinaryInf$!D,!C,(!C\\land!D)\\lif!E\\fCenter!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$!C,(!C\\land!D)\\lif!E\\fCenter!D\\lif!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E)$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-003",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 79–122, aligned block 7",
+      "classification": "proof_display_command_missing",
+      "source_issue": "The first weakening example omits DisplayProof.",
+      "minimal_treatment": "Add the display command inside its existing display.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!C\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!C$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!C$\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!C\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!C$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!C$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-004",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 79–122, aligned block 7",
+      "classification": "left_weakening_changes_succedent",
+      "source_issue": "The E identity axiom is followed by a left weakening that incorrectly changes its right E to C.",
+      "minimal_treatment": "Keep E in the succedent of that weakening inference.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Axiom$!C\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!C$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!C$\\Axiom$!D\\fCenter!D$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!D$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!D$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!D,!C\\fCenter!E,!C\\land!D$\\Axiom$!E\\fCenter!E$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!C,!E\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C,!E\\fCenter!E$\\RightLabel{\\LeftR{\\lif}}\\BinaryInf$!D,!C,(!C\\land!D)\\lif!E\\fCenter!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$!C,(!C\\land!D)\\lif!E\\fCenter!D\\lif!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E)$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\Axiom$!C\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!C$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!C$\\Axiom$!D\\fCenter!D$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!D$\\RightLabel{\\RightR{\\Weakening}}\\UnaryInf$!D,!C\\fCenter!E,!D$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!D,!C\\fCenter!E,!C\\land!D$\\Axiom$!E\\fCenter!E$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!C,!E\\fCenter!E$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!D,!C,!E\\fCenter!E$\\RightLabel{\\LeftR{\\lif}}\\BinaryInf$!D,!C,(!C\\land!D)\\lif!E\\fCenter!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$!C,(!C\\land!D)\\lif!E\\fCenter!D\\lif!E$\\RightLabel{\\RightR{\\lif}}\\UnaryInf$(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E)$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-005",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 131–136, aligned block 9",
+      "classification": "atomic_axiom_system_reference_mismatch",
+      "source_issue": "The text says G1c has not been proved although the preceding complete G1c proof establishes it; the remaining issue is G3c's atomic leaves.",
+      "minimal_treatment": "Name G3c in the not-yet-established claim.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\Log{G1c}\\Proves(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E),\\]"
+        ],
+        "target_only": [
+          "\\[\\Log{G3c}\\Proves(!C\\land!D)\\lif!E\\fCenter!C\\lif(!D\\lif!E),\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-006",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 138–147, aligned block 10",
+      "classification": "quantifier_depth_body_not_declared",
+      "source_issue": "The quantified body is A while the depth recurrence refers to unrelated B.",
+      "minimal_treatment": "Use the inner formula B in both quantified forms to agree with the recurrence.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!A\\ident\\lexists[x][A]$",
+          "$!A\\ident\\lforall[x][A]$"
+        ],
+        "target_only": [
+          "$!A\\ident\\lexists[x][!B]$",
+          "$!A\\ident\\lforall[x][!B]$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-008",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 191–221, aligned block 15",
+      "classification": "conjunction_identity_shared_context_and_contraction_defects",
+      "source_issue": "The binary rule silently drops a duplicated antecedent, then the final left contraction changes the succedent conjunction to B.",
+      "minimal_treatment": "Retain the common duplicated antecedent through right conjunction, then contract only on the left and retain the conjunction succedent; remove trailing commas.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$!B,\\fCenter!B$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!B,!C,\\fCenter!B$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!C\\fCenter!B$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!B\\land!C\\fCenter!B$\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$!C,\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!B,!C,\\fCenter!C$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!C\\fCenter!C$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!B\\land!C\\fCenter!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!B\\land!C\\fCenter!B\\land!C$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!B\\land!C\\fCenter!B$\\DisplayProof\\]"
+        ],
+        "target_only": [
+          "\\[\\AxiomC{}\\RightLabel{$\\pi_1$}\\Deduce$!B\\fCenter!B$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!B,!C\\fCenter!B$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!C\\fCenter!B$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!B\\land!C\\fCenter!B$\\AxiomC{}\\RightLabel{$\\pi_2$}\\Deduce$!C\\fCenter!C$\\RightLabel{\\LeftR{\\Weakening}}\\UnaryInf$!B,!C\\fCenter!C$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!C\\fCenter!C$\\RightLabel{\\LeftR{\\land}}\\UnaryInf$!B\\land!C,!B\\land!C\\fCenter!C$\\RightLabel{\\RightR{\\land}}\\BinaryInf$!B\\land!C,!B\\land!C\\fCenter!B\\land!C$\\RightLabel{\\LeftR{\\Contraction}}\\UnaryInf$!B\\land!C\\fCenter!B\\land!C$\\DisplayProof\\]"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-009",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 250–267, aligned block 19",
+      "classification": "intuitionistic_subproof_condition_missing",
+      "source_issue": "An unintroduced Delta=emptyset condition does not ensure the premise subproof obeys the intuitionistic single-succedent restriction.",
+      "minimal_treatment": "State the needed premise-proof restriction instead of the irrelevant empty-context formula.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Delta=\\emptyset$"
+        ],
+        "target_only": []
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-010",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 296–320, aligned block 23",
+      "classification": "formula_placeholder_prefix_reversed",
+      "source_issue": "D! reverses the source notation for the formula placeholder !D.",
+      "minimal_treatment": "Use !D.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$D!$"
+        ],
+        "target_only": [
+          "$!D$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-011",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 296–320, aligned block 23",
+      "classification": "second_induction_antecedent_context_mismatch",
+      "source_issue": "The second antecedent context includes Lambda although the required proof needs Gamma.",
+      "minimal_treatment": "Use B,Gamma for the second antecedent context.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Pi=!B,\\Lambda$"
+        ],
+        "target_only": [
+          "$\\Pi=!B,\\Gamma$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTSEQEX-012",
+      "source_locator": "content/proof-theory/sequent-calculus/proof-examples.tex lines 149–159, aligned block 11",
+      "classification": "principal_depth_decrease_scope_overbroad",
+      "source_issue": "The principal-to-active formula depth decrease does not apply to structural rules.",
+      "minimal_treatment": "Explicitly restrict that depth observation to logical rules.",
+      "expected_core_math_delta": {
+        "source_only": [],
+        "target_only": []
+      }
+    }
+  ]
+}

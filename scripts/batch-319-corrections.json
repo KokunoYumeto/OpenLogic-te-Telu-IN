@@ -1,0 +1,42 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0670",
+  "source_path": "content/proof-theory/natural-deduction/translation-G2i.tex",
+  "source_sha256": "c47d1aa05da27e96ff4459611148ca86943441176ce46a67427c3aa59bf38276",
+  "audit_id": "OLTEPTNATG2I-20260928",
+  "audit_review_path": "evidence/OLP-0670-G2I-TRANSLATION-SOURCE-AUDIT.md",
+  "audit_review_sha256": "582513b0acb294cb4c7fabfc17085e9670904325c84020534727dade84d848b7",
+  "audit_findings_path": "evidence/OLP-0670-G2I-TRANSLATION-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "996e68e10c8ba15ff91d3b79c5109ecd7354bd80b705ca62cf194b4d9b868282",
+  "previous_corrections": 590,
+  "treatments": {
+    "OLTEPTNATG2I-001": {
+      "target_line": 22,
+      "body_treatment": "G2ci స్థానంలో G2i వ్యవస్థ పేరు సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-002": {
+      "target_line": 28,
+      "body_treatment": "ఆగమన లక్ష్య వ్యవస్థ N2c కాక N2i అని సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-003": {
+      "target_line": 52,
+      "body_treatment": "ఎడమ బలహీనీకరణ వృక్షంలోని కుడి-బలహీనీకరణ గుర్తును సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-004": {
+      "target_line": 64,
+      "body_treatment": "గుర్తు ప్రతిస్థాపనను G2i π1 కాక N2i δ1లో చేసి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-005": {
+      "target_line": 76,
+      "body_treatment": "ఆగమన నిరూపణ δ1పై ప్రవేశ నియమం వర్తింపజేసి δ పొందే దిశను సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-006": {
+      "target_line": 102,
+      "body_treatment": "ఎడమ అన్వయంలో δ1 గుర్తుల పునర్నామకరణం, δ3 వృక్షానికి Γ1-prime సందర్భం చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATG2I-007": {
+      "target_line": 118,
+      "body_treatment": "రెండో సంయోగ పూర్వపక్షాన్ని Bగా, N2i δ2లో గుర్తుల పునర్నామకరణంగా సరిచేసి ప్రకటించాం."
+    }
+  }
+}

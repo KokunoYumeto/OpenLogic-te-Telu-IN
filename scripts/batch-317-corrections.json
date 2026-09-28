@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0668",
+  "source_path": "content/proof-theory/natural-deduction/rules-proofs.tex",
+  "source_sha256": "0bcf0b2ee130188295f81cabb47e058a856ed3e6eeec2e5df8e552e3e4e8df56",
+  "audit_id": "OLTEPTNATRPR-20260928",
+  "audit_review_path": "evidence/OLP-0668-RULES-PROOFS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "6c87450a9f3b042a79ec90b8f8611c2acfc767cb16f22f6ac430e4a49660b19d",
+  "audit_findings_path": "evidence/OLP-0668-RULES-PROOFS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3a313203087b60fdbc461e04004a9eec24046beb386940aea16274a9c848614c",
+  "previous_corrections": 582,
+  "treatments": {
+    "OLTEPTNATRPR-001": {
+      "target_line": 85,
+      "body_treatment": "N1 నిరూపణలను ఉపపత్తుల నుంచి నిర్మించిన సూత్ర వృక్షాలుగా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATRPR-002": {
+      "target_line": 126,
+      "body_treatment": "మూడో పూర్వపక్షపు A2 పునరావృతాన్ని A3గా సరిచేసి ప్రకటించాం."
+    },
+    "OLTEPTNATRPR-003": {
+      "target_line": 130,
+      "body_treatment": "tab:N1కు N2 పేర్ల బదులు N1c/N1i పేర్లు చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATRPR-004": {
+      "target_line": 166,
+      "body_treatment": "ఉదాహరణలో విసర్జన గుర్తును రెండో సంయుక్త భాగం నుంచి మొత్తం సంయుక్త ఉపపత్తిపైకి మార్చి ప్రకటించాం."
+    },
+    "OLTEPTNATRPR-005": {
+      "target_line": 167,
+      "body_treatment": "తక్షణ ఉపనిరూపణ δ1ను, δ1=0 మరియు δ2=δ3=1 ఎత్తులను సరిచేసి ప్రకటించాం."
+    }
+  }
+}

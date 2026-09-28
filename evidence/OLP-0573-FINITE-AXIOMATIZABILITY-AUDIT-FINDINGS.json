@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTREPLFINITE-20260927",
+  "unit_id": "OLP-0573",
+  "source_path": "content/set-theory/replacement/finiteaxiomatizability.tex",
+  "source_sha256": "31413d0ed7d34d8cd7ee45cbf8f137fb28c954de9ed84ef6bed96f502fad4cf4",
+  "findings": [
+    {
+      "finding_id": "OLTESTREPLFINITE-001",
+      "source_locator": "finiteaxiomatizability.tex line 30, third displayed consequence in the first proof",
+      "classification": "wrong_relativization_domain_for_transitivity_assertion",
+      "source_issue": "The reflected witness condition should evaluate N-is-transitive inside M, but the source superscript N makes it too weak to imply ambient transitivity.",
+      "minimal_treatment": "Relativize the transitivity assertion to M and disclose the change.",
+      "expected_core_math_delta": {
+        "source_only": ["\\begin{align*}\\Th{T}&\\Proves\\forallX(\\psi(X)\\lif(\\existsN\\psi(N))^X)\\\\\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\psi(N))^M)\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\inM)((N)^N\\land(\\theta^N)^M))\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\inM)(N\\land\\theta^N))\\end{align*}"],
+        "target_only": ["\\begin{align*}\\Th{T}&\\Proves\\forallX(\\psi(X)\\lif(\\existsN\\psi(N))^X)\\\\\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\psi(N))^M)\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\inM)((N)^M\\land(\\theta^N)^M))\\Th{T}&\\Proves\\existsM(\\psi(M)\\land(\\existsN\\inM)(N\\land\\theta^N))\\end{align*}"]
+      }
+    }
+  ]
+}

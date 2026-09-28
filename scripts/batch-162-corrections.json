@@ -1,0 +1,15 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0513",
+  "source_path": "content/intuitionistic-logic/tableaux/rules.tex",
+  "source_sha256": "ac874fab0a48018f53cbe714eebbee31221cecb86fe6981fda012dfbd17fabcd",
+  "audit_id": "OLTEINTTABRULE-20260927",
+  "audit_review_path": "evidence/OLP-0513-INTUITIONISTIC-TABLEAUX-RULES-SOURCE-AUDIT.md",
+  "audit_review_sha256": "02dca519a7214a49d645b1a74cd7066981969244ee7e0185079283a46ff848b0",
+  "audit_findings_path": "evidence/OLP-0513-INTUITIONISTIC-TABLEAUX-RULES-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "4443a7336dc965b6c4f2f8816d91540af56f74f88a32e6f65e0b7259a4e472d0",
+  "previous_corrections": 468,
+  "treatments": {
+    "OLTEINTTABRULE-001": {"target_line": 119, "body_treatment": "సోపాధిక సత్య నియమ గద్యంలోని శాఖల చిహ్నాలను మూల పట్టిక ప్రకారం అసత్య పూర్వపక్షం లేదా సత్య ఉత్తరపక్షంగా, రెండు గద్య నియమ సంకేతాల వాదనల క్రమాన్ని పట్టికతో సరిపోల్చి ప్రకటించాం."}
+  }
+}

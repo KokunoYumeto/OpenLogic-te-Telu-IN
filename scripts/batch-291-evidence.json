@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "291",
+  "unit_id": "OLP-0642",
+  "unit_order": 642,
+  "source_path": "content/reference/fraktur-alphabet/fraktur-alphabet.tex",
+  "blocks": 6,
+  "linguistic_blocks": [4],
+  "previous_segments": 9438,
+  "previous_terms": 331,
+  "expected_corrections": 542,
+  "canon_default": ["TE-P003", "TE-P004"],
+  "consultation_phase": "ఫ్రాక్టూర్ వర్ణమాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ లిపి పేర్ల వాడుక పోల్చాం; లాటిన్-ఫ్రాక్టూర్ పెద్ద/చిన్న అక్షరాల పట్టిక గ్లిఫ్‌లను మార్పులేకుండా నిలిపాం.",
+  "evidence_limit": "పట్టికలోని లాటిన్ అక్షరాలు పద్యానువాదం కావు, చిహ్నాలుగా నిలిచాయి; TeX పట్టిక దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T332","source_term":"Fraktur alphabet","telugu":"ఫ్రాక్టూర్ వర్ణమాల","status":"fraktur_title_localized_symbol_table_preserved","passages":["TE-P003","TE-P004"],"basis":"శీర్షిక తెలుగు లిప్యంతరీకరణ, A–Z/a–z ఫ్రాక్టూర్ గణిత గ్లిఫ్ జతలు మూల పట్టికలోలాగే ఉన్నాయి.","uncertainty":"ఫ్రాక్టూర్ అనే లిపి పేరు లిప్యంతరీకరణ; గణిత సంకేతాలకు అనిశ్చితి లేదు.","borrowing":"Latin letter symbols, Fraktur TeX commands and chapter IDs remain source-identifying."}
+}

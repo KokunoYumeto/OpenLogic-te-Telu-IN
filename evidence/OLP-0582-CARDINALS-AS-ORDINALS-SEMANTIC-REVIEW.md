@@ -1,0 +1,3 @@
+# OLP-0582 Cardinals as Ordinals semantic review
+
+Compared the frozen source and Telugu target by paragraph. The initial-ordinal definition is explicitly conditional on well-orderability; the Well-Ordering Axiom supplies totality. Existence, equinumerosity, idempotence, the three comparison biconditionals, and the dependence of the short Schröder–Bernstein re-proof on Replacement and Well-Ordering are retained. The arrow diagram and three source token markers are preserved. Strict structural QA passed 14/14 blocks with no declared correction. TE-T272 records terminology. Full TeX visual compilation remains pending.

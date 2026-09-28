@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "209",
+  "unit_id": "OLP-0560",
+  "unit_order": 560,
+  "source_path": "content/set-theory/spine/recursion.tex",
+  "blocks": 23,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+  "corrections_by_block": {"19": ["OLTESTSPINREC-001"]},
+  "previous_segments": 8276,
+  "previous_terms": 249,
+  "expected_corrections": 486,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర పునరావృత్తి మూలం, తెలుగు లక్ష్యం, పూర్వ క్రమసంఖ్య/ఆగమన/సమితి పదాలు, స్థానిక సమితి/సంఖ్య/తర్క సాక్షులు ఎదురెదురు చూశాం; పరిమిత ఉజ్జాయింపు, సాధారణ పద పథకం, సరళ మూడు-శాఖల రూపం, V-alpha స్థానాపన్నం తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; అతిపరిమిత పునరావృత్తి నిర్వచన-నియంత్రితం. మూల xi విభజిత పదంలో శూన్య ప్రమేయపు శాఖ లోపం OLTESTSPINREC-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T250",
+    "source_term": "bounded/general/simple transfinite recursion; ordinal approximation",
+    "telugu": "పరిమిత/సాధారణ/సరళ అతిపరిమిత పునరావృత్తి; క్రమసంఖ్య ఉజ్జాయింపు",
+    "status": "recursion_schema_and_approximation_definition_controlled_order_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "గామా-ఉజ్జాయింపు నిర్వచన సమితి, పూర్వ ఖండ విలువ, ఏకైకత్వం; పద పథకానికి సమితి ప్రమేయ భేదం; సరళ పునరావృత్తి మూడు శాఖలు నిలిచాయి.",
+    "uncertainty": "పునరావృత్తి ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల సహాయక పదంలోని శూన్య శాఖ సవరించబడింది.",
+    "borrowing": "Greek variables, ordinal macros and displayed recurrences remain source-controlled."
+  }
+}

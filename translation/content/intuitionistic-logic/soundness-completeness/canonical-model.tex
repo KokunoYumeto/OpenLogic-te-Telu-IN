@@ -1,0 +1,93 @@
+% part: intuitionistic-logic
+% chapter: soundness-completeness
+% section: canonical-model
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sc}{mod}
+
+\olsection{కానానికల్ నమూనా}
+
+మన నమూనాలోని లోకాలు ప్రకృతిసంఖ్యల
+పరిమిత క్రమాలు~$\sigma$; అంటే
+$\sigma \in \Nat^*$. $\Nat^*$ను
+కింది విధంగా ఆగమన పద్ధతిలో
+నిర్వచిస్తామని గమనించండి:
+\begin{enumerate}
+\item $\emptyseq \in \Nat^*$.
+\item $\sigma \in \Nat^*$ మరియు $n \in \Nat$
+  అయితే $\sigma.n \in
+  \Nat^*$ (ఇక్కడ $\sigma.n$ అనేది
+  $\sigma \concat \tuple{n}$; $\sigma \concat \sigma'$
+  అనేది $\sigma$, $\sigma'$ల అనుసంధానం).
+\item వీటికి మించి ఏదీ $\Nat^*$లో లేదు.
+\end{enumerate}
+కాబట్టి $\Nat^*$ను ఆగమన నిర్వచనాల కోసం
+వాడవచ్చు.
+
+\tetoken{సూత్రాల}{!!{formula}s} అన్ని జతలను
+$\tuple{!B_1, !C_1}$, $\tuple{!B_2, !C_2}$,
+\dots, అని వరుసపెడదాం. \tetoken{సూత్రాల}{!!{formula}s}
+సమితి~$\Delta$ ఇచ్చినప్పుడు
+$\Delta(\sigma)$ను ఇలా ఆగమన పద్ధతిలో
+నిర్వచిద్దాం:
+\begin{enumerate}
+\item $\Delta(\emptyseq) = \Delta$
+\item $\Delta(\sigma.n) = {}$
+  \[
+  \begin{cases}
+    (\Delta(\sigma) \cup \{!B_n\})^* &
+    \text{$\Delta(\sigma) \cup \{!B_n\} \Proves/ !C_n$ అయితే} \\
+    \Delta(\sigma) & \text{లేకపోతే}
+  \end{cases}
+  \]
+\end{enumerate}
+ఇక్కడ $(\Delta(\sigma) \cup \{!B_n\})^*$
+అంటే, $\Delta(\sigma) \cup \{!B_n\}$ సమితికి,
+\tetoken{సూత్రం}{!!{formula}}~$!C_n$కు
+\olref[lin]{lem:lindenbaum}ను వర్తింపజేస్తే
+లభించే ప్రధాన \tetoken{సూత్రాల}{!!{formula}s}
+సమితి. ఈ నిర్వచనం ప్రకారం
+$\Delta(\sigma) \cup \{!B_n\} \Proves/ !C_n$
+అయితే $\Delta(\sigma.n)
+\Proves !B_n$ మరియు
+$\Delta(\sigma.n) \Proves/ !C_n$ అని
+గమనించండి. ఏ~$n$కైనా
+$\Delta(\sigma) \subseteq \Delta(\sigma.n)$
+అని కూడా గమనించండి. $\Delta$
+ప్రధానమైతే, అన్ని~$\sigma$లకు
+$\Delta(\sigma)$ ప్రధానమే.
+
+\begin{defn}\ollabel{defn:canonical-model}
+  $\Delta$ ప్రధానమని అనుకుందాం. అప్పుడు
+  $\Delta$కు \emph{కానానికల్ నమూనా}
+  $\mModel{M(\Delta)}$ ఇలా నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \item $W = \Nat^*$; ప్రకృతిసంఖ్యల పరిమిత
+    క్రమాల సమితి.
+  \item $R$ అనేది $R\sigma\sigma'$
+    అయితే, అప్పుడే $\sigma$ అనేది~$\sigma'$
+    యొక్క ప్రారంభ భాగం అయ్యే పాక్షిక క్రమం;
+    అంటే ఏదో క్రమం~$\sigma''$కు
+    $\sigma' =
+    \sigma \concat \sigma''$.
+  \item $V(p) = \Setabs{\sigma}{p \in \Delta(\sigma)}$.
+  \end{enumerate}
+\end{defn}
+
+$R$ నిజంగానే పాక్షిక క్రమమని సులభంగా
+తనిఖీ చేయవచ్చు. అలాగే~$V$కు ఏకదిశ
+పెరుగుదల షరతు నెరవేరుతుంది.
+$\Delta(\sigma)
+\subseteq \Delta(\sigma.n)$ కాబట్టి,
+$R\sigma\sigma'$ అయినప్పుడల్లా
+$\Delta(\sigma)
+\subseteq \Delta(\sigma')$ వస్తుంది:
+ఇక్కడ~$\sigma$ను స్థిర మూల క్రమంగా తీసుకొని,
+జోడించిన భాగపు పొడవుపై ఆగమన పద్ధతిలో
+నిరూపించవచ్చు.
+\sourcecorrection{OLTEINTCAN-001}{మూల చివరి వాక్యం $\sigma$పై ఆగమనం అంటుంది; కానీ ఒకే మూల $\sigma$కు చెందిన అనేక విస్తరణలలో చేర్పు నిరూపణ జోడించిన పరిమిత భాగపు పొడవుపై సాగుతుంది.}
+
+\end{document}

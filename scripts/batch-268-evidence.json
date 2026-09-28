@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "268",
+  "unit_id": "OLP-0619",
+  "unit_order": 619,
+  "source_path": "content/methods/induction/relations.tex",
+  "blocks": 23,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22],
+  "previous_segments": 9157,
+  "previous_terms": 308,
+  "expected_corrections": 532,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P008", "TE-P011", "TE-P024"],
+  "consultation_phase": "సంబంధాలు/ప్రమేయాల స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఉపపదం/ఏకైక పఠనీయత/ప్రమేయ పదాలు, స్థానిక సంబంధ-ప్రమేయ సాక్షులు పోల్చాం; రెండు పఠనాల వల్ల విరుద్ధ ఉపపద/లోతు ఫలితాలు, నిజ ప్రారంభ భాగంతో ఏకైకత నిరూపణ తనిఖీ చేశాం.",
+  "evidence_limit": "సంబంధం/ప్రమేయం సాధారణ పదాలకు స్థానిక సాక్షి ఉంది; బ్రాకెట్లు లేని పదాలు, ఉపపదం, లోతు ప్రత్యేక నిర్మాణాలు మూల గణితం ఆధారితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T309","source_term":"subterm; bracketless term; unique readability; depth function","telugu":"ఉపపదం; బ్రాకెట్లు లేని పదం; ఏకైక పఠనీయత; లోతు ప్రమేయం","status":"ambiguous_constructor_readings_distinct_values_source_controlled","passages":["TE-P003","TE-P004","TE-P008","TE-P011","TE-P024"],"basis":"బ్రాకెట్లు ఉన్న పదాల్లో ఏకైక విభజన, బ్రాకెట్లు లేని శ్రేణికి రెండు ఉపపద పఠనాలు, g లోతుకు 3/2 విరుద్ధ విలువలు, f నిర్వచనానికి ఏకైకత అవసరం నిలిచాయి.","uncertainty":"ఏకైక పఠనీయత పూర్వ అనువాద వాడుకతో సరిపోతుంది; ఉపపదం/లోతు ప్రత్యేక పేర్లు మూల ఉదాహరణ నియంత్రితం.","borrowing":"t, f, g, bracket strings, relation and recurrence notation remain unchanged."}
+}

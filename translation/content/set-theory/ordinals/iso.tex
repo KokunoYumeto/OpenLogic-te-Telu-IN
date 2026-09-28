@@ -1,0 +1,314 @@
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{sth}{ordinals}{iso}
+\olsection{క్రమ-సమరూపతలు}
+
+సుక్రమం \emph{ఎంత} దృఢమైన
+భావమో వివరించడానికి,
+సుక్రమాలను పోల్చే ఒక
+పద్ధతిని పరిచయం చేస్తాం.
+
+\begin{defn}
+ఒక \emph{సుక్రమం} అంటే
+$<$, $A$ను సుక్రమితం
+చేసే $\tuple{A, <}$ జంట.
+$\tuple{A, <}$,
+$\tuple{B,
+\lessdot}$ సుక్రమాలు
+\emph{క్రమ-సమరూపమైనవి}
+అంటే, $x < y$ అప్పుడే
+మరియు అప్పుడే $f(x) \lessdot  f(y)$
+అయ్యే ఒక
+\tetoken{ద్విగుణ ప్రమేయం}{!!a{bijection}}
+$f \colon A \to B$
+ఉంటుంది. ఈ సందర్భంలో
+$\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}$
+అని రాసి, $f$ను
+\emph{క్రమ-సమరూపత}
+అంటాం.
+\end{defn}
+\noindent
+ఇకపై సంక్షిప్తత కోసం
+``క్రమ-సమరూపతలు'' బదులు
+``సమరూపతలు'' అంటాం.
+సహజంగా, సమరూపతలు
+నిర్మాణాన్ని సంరక్షించే
+\tetoken{ద్విగుణ ప్రమేయాలు}{!!{bijection}s}.
+వాటి గురించి కొన్ని
+సరళమైన విషయాలు ఇవి.
+
+\begin{lem}\ollabel{isoscompose}
+సమరూపతల సంయుక్తం
+సమరూపతే; అంటే,
+$f \colon A
+\to B$, $g \colon B \to C$
+సమరూపతలైతే,
+$(g \circ f)
+\colon A \to C$
+సమరూపత అవుతుంది.
+\end{lem}
+\begin{prob}
+	\olref[sth][ordinals][iso]{isoscompose}ను నిరూపించండి.
+\end{prob}
+\begin{proof}
+అభ్యాసంగా వదిలాం.
+\end{proof}
+\begin{cor}\ollabel{ordisoisequiv}
+	$\ordeq{X}{Y}$ ఒక
+	సమానతా సంబంధం.
+\end{cor}
+\begin{prop}\ollabel{ordisounique}
+$\tuple{A, <}$,
+$\tuple{B, \lessdot}$
+సుక్రమాలు సమరూపమైనవైతే,
+వాటి మధ్య సమరూపత
+ఏకైకం.
+\end{prop}
+
+\begin{proof}
+$f$, $g$లు $A \to B$
+సమరూపతలు అనుకుందాం.
+\olref[wo]{propwoinduction}ను
+ఉపయోగించి ఆగమనం
+ద్వారా ఫలితాన్ని
+నిరూపిస్తాం. $a\in A$ను
+స్థిరపరచి, ఆగమన
+పరికల్పనగా
+$(\forall b < a)f(b) = g(b)$
+అనుకుందాం. $x \in B$ను
+స్థిరపరచండి.
+
+$x \lessdot f(a)$ అయితే,
+$f^{-1}(x) < a$; $f$,
+$g$ సమరూపతలనే
+విషయాన్ని ఉపయోగిస్తే
+$g(f^{-1}(x)) \lessdot
+g(a)$. కానీ
+$f^{-1}(x) < a$
+కాబట్టి మన పరికల్పన
+ప్రకారం
+$x =f(f^{-1}(x)) = g(f^{-1}(x))$.
+అందువల్ల $x \lessdot g(a)$.
+అదే విధంగా
+$x \lessdot g(a)$ అయితే
+$x \lessdot f(a)$.
+
+సాధారణీకరిస్తే,
+$(\forall x \in B)(x \lessdot f(a) \liff x \lessdot
+g(a))$. అందువల్ల
+\olref[sfr][rel][ord]{prop:extensionality-strictlinearorders}
+ప్రకారం $f(a) = g(a)$.
+కాబట్టి
+\olref[wo]{propwoinduction}
+ప్రకారం
+$(\forall
+a \in A)f(a) = g(a)$.
+\end{proof}\noindent
+ఇది సుక్రమాలు దృఢమైనవనే
+భావాన్ని కొంత ఇస్తుంది.
+దానిని మరింత వివరించడానికి
+కొంత సంకేతలిపిని
+పరిచయం చేయాలి.
+
+\begin{defn}
+$\tuple{A, <}$ ఒక సుక్రమం,
+$a \in A$ అయితే,
+$A_a = \Setabs{x \in A}{x
+< a}$ అనుకుందాం.
+$A_a$ను $A$ యొక్క
+\emph{తనకన్నా చిన్న ఆరంభ ఖండం}
+అంటాం ($A$ స్వయంగా
+కూడా $A$ యొక్క చిన్నది కాని
+ఆరంభ ఖండం కావచ్చని
+అనుమతిస్తాం). $<_a$
+అంటే $<$ను ఆరంభ
+ఖండానికి పరిమితం
+చేసిన సంబంధం; అంటే
+$\funrestrictionto{\mathord{<}}{A_a^2}$.
+\end{defn}
+\noindent
+ఈ సంకేతలిపితో, ఏ
+సుక్రమమూ తనకన్నా చిన్న
+ఆరంభ ఖండాల్లో దేనితోనూ
+సమరూపం కాదని
+ప్రకటించి నిరూపించవచ్చు.
+
+\begin{lem}\ollabel{wellordnotinitial}
+$\tuple{A, <}$ ఒక సుక్రమం,
+$a \in A$ అయితే,
+$\ordneq{\tuple{A, <}}{\tuple{A_a, <_a}}$.
+\end{lem}
+
+\begin{proof}
+వైరుధ్యాన్ని చూపడానికి,
+$f \colon A \to A_a$
+సమరూపత అనుకుందాం.
+$f$ ద్విగుణ ప్రమేయం,
+$A_a \subsetneq A$ కాబట్టి,
+\olref[wo]{wo:strictorder}ను
+ఉపయోగించి $b \neq f(b)$
+అయ్యే $A$లోని $<$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+$b \in A$ను తీసుకుందాం.
+$(\forall x \in A)(x<b \liff x < f(b))$
+అని చూపుతాం; అప్పుడు
+\olref[sfr][rel][ord]{prop:extensionality-strictlinearorders}
+ప్రకారం $b =
+f(b)$ వచ్చి వైరుధ్యం
+పూర్తవుతుంది.
+
+$x < b$ అనుకుందాం.
+$b$ ఎంపిక వల్ల
+$x = f(x)$.
+$f$ సమరూపత కాబట్టి
+$f(x) <
+f(b)$. అందువల్ల
+$x < f(b)$.
+
+$x < f(b)$ అనుకుందాం.
+$f$ సమరూపత కాబట్టి
+$f^{-1}(x) < b$;
+$b$ ఎంపిక వల్ల
+$f^{-1}(x) = x$.
+అందువల్ల $x < b$.
+\end{proof}
+
+తదుపరి ఫలితం, స్థూలంగా,
+సమరూపతలోని ``ఆరంభ
+ఖండం'' కూడా సమరూపతే
+అని చూపుతుంది:
+
+\begin{lem}\ollabel{wellordinitialsegment}
+$\tuple{A, <}$,
+$\tuple{B, \lessdot}$
+సుక్రమాలు అనుకుందాం.
+$f
+\colon A \to B$ సమరూపత,
+$a \in A$ అయితే,
+$\funrestrictionto{f}{A_{a}} : A_a \to B_{f(a)}$
+సమరూపత అవుతుంది.
+\end{lem}
+
+\begin{proof}
+$f$ సమరూపత కాబట్టి:
+	%$f$ సమరూపత కాబట్టి, $b < a$ అప్పుడే మరియు అప్పుడే $f(b) \lessdot f(a)$; అందువల్ల
+\begin{align*}
+	\funimage{f}{A_a} &= \funimage{f}{\Setabs{x \in A}{x < a}}\\
+	&= \funimage{f}{\Setabs{f^{-1}(y) \in A}{f^{-1}(y) < a}} \\
+	&= \Setabs{y \in B}{y \lessdot f(a)} \\
+	&=B_{f(a)} 
+\end{align*}
+ఇంకా $f$ క్రమాన్ని
+సంరక్షిస్తుంది కాబట్టి
+$\funrestrictionto{f}{A_a}$
+కూడా సంరక్షిస్తుంది.
+\end{proof}
+
+తదుపరి రెండు ఫలితాలు
+సుక్రమాలను ఎప్పుడూ
+పోల్చవచ్చని స్థాపిస్తాయి:
+
+\begin{lem}\ollabel{lemordsegments}
+$\tuple{A, <}$,
+$\tuple{B, \lessdot}$
+సుక్రమాలు అనుకుందాం.
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1}, \lessdot_{b_1}}}$
+మరియు $\ordeq{\tuple{A_{{a_2}}, <_{a_2}}}{\tuple{B_{{b_2}},
+\lessdot_{b_2}}}$ అయితే,
+${a_1}  < {a_2} \text{ అప్పుడే మరియు అప్పుడే }{b_1} \lessdot
+{b_2}$.
+\end{lem}
+
+\begin{proof}
+\emph{ఎడమ నుంచి కుడికి}
+నిరూపిస్తాం; మరో దిశ
+కూడా ఇలాగే ఉంటుంది.
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{b_1},
+\lessdot_{b_1}}}$, అలాగే
+$\ordeq{\tuple{A_{{a_2}},
+<_{a_2}}}{\tuple{B_{{b_2}}, \lessdot_{b_2}}}$
+అనుకుందాం; మన సమరూపత
+$f \colon
+A_{{a_2}} \to B_{{b_2}}$.
+${a_1} < {a_2}$ అనుకుందాం;
+అప్పుడు
+\olref{wellordinitialsegment}
+ప్రకారం
+$\ordeq{\tuple{A_{a_1}, <_{a_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$.
+కాబట్టి
+$\ordeq{\tuple{B_{b_1}, \lessdot_{b_1}}}{\tuple{B_{f({a_1})},
+\lessdot_{f({a_1})}}}$;
+అందువల్ల
+\olref{wellordnotinitial}
+ప్రకారం
+${b_1} = f({a_1})$.
+ఇప్పుడు $f$ యొక్క
+విలువల పరిధి $B_{{b_2}}$
+కాబట్టి ${b_1} \lessdot {b_2}$.
+\sourcecorrection{OLTESTORDISO-001}{మూలంలో ఇక్కడ ``నిర్వచన సమితి'' అని ఉంది; సమరూపత లక్ష్య ఖండం కారణంగా ``విలువల పరిధి'' అని సరిచేశాం.}
+\end{proof}
+
+\begin{thm}\ollabel{thm:woalwayscomparable}
+ఏ రెండు సుక్రమాలు ఇచ్చినా,
+ఒకటి మరొకదాని
+ఆరంభ ఖండంతో
+(అది చిన్న ఖండమే
+కావలసిన అవసరం లేదు)
+సమరూపమవుతుంది.
+\end{thm}
+
+\begin{proof}
+$\tuple{A, <}$,
+$\tuple{B, \lessdot}$
+సుక్రమాలు అనుకుందాం.
+వేరుచేయడం ఉపయోగించి,
+\[
+	f = \Setabs{\tuple{a, b} \in A \times B}{
+		\ordeq{\tuple{A_a, <_a}}{\tuple{B_b, \lessdot_b}}}.
+\]
+\olref{lemordsegments}
+ప్రకారం ఇందులోని
+అన్ని $\tuple{a_1, b_1}, \tuple{a_2, b_2} \in f$
+కోసం $a_1 < a_2$
+అప్పుడే మరియు అప్పుడే
+$b_1 \lessdot b_2$.
+కాబట్టి
+$f \colon \dom{f} \to
+\ran{f}$ ఒక సమరూపత.
+
+$a_2 \in \dom{f}$,
+$a_1 < a_2$ అయితే,
+\olref{wellordinitialsegment}
+ప్రకారం $a_1 \in \dom{f}$;
+అందువల్ల $\dom{f}$,
+$A$ యొక్క ఆరంభ
+ఖండం. అదే విధంగా
+$\ran{f}$, $B$
+యొక్క ఆరంభ ఖండం.
+వైరుధ్యాన్ని చూపడానికి
+రెండూ తమ మూల
+సమితులకన్నా \emph{చిన్న}
+ఆరంభ ఖండాలే అనుకుందాం.
+అప్పుడు $A \setminus \dom{f}$లోని
+$<$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+$a$ను తీసుకుందాం;
+అప్పుడు $\dom{f} =
+A_a$. అలాగే
+$B \setminus
+\ran{f}$లోని
+$\lessdot$-అత్యల్ప
+\tetoken{మూలకం}{!!{element}}
+$b$ను తీసుకుందాం;
+అప్పుడు $\ran{f} = B_b$.
+కాబట్టి
+$f \colon A_a \to B_b$
+సమరూపత; అందువల్ల
+$\tuple{a, b} \in f$;
+ఇది వైరుధ్యం.
+\end{proof}
+
+\end{document}

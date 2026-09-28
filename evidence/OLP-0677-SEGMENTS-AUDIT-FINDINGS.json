@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNORSEG-20260928",
+  "unit_id": "OLP-0677",
+  "source_path": "content/proof-theory/normalization/segments.tex",
+  "source_sha256": "083d9544d8870daa58030ddf36209e1447fa7bcbbb2a1cc08f3d1eaf8c3cc9db",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNORSEG-001",
+      "source_locator": "segments.tex lines 64–69, prose before the segment definition",
+      "classification": "reversed_segment_order",
+      "source_issue": "The prose says an elimination-rule minor premise follows its conclusion, contrary to the immediately following formal definition, where A_i is the minor premise and A_{i+1} is the conclusion.",
+      "minimal_treatment": "State that the conclusion follows the minor premise and disclose the reversal.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEPTNORSEG-002",
+      "source_locator": "segments.tex line 78, third segment condition",
+      "classification": "missing_formula_marker",
+      "source_issue": "The consequent occurrence is written A_{i+1}, omitting the ! that marks every member of this same-formula sequence.",
+      "minimal_treatment": "Write !A_{i+1} and disclose the formula-marker repair.",
+      "expected_core_math_delta": {
+        "source_only": ["$A_{i+1}$"],
+        "target_only": ["$!A_{i+1}$"]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORSEG-003",
+      "source_locator": "segments.tex lines 92–97, one-occurrence cut summary",
+      "classification": "incomplete_definition_summary",
+      "source_issue": "The summary says a length-one cut must conclude an introduction rule, omitting the explicit FalseInt alternative in the preceding formal cut definition.",
+      "minimal_treatment": "Include the FalseInt alternative in the summary and disclose the addition.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

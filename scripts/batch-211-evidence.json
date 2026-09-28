@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "211",
+  "unit_id": "OLP-0562",
+  "unit_order": 562,
+  "source_path": "content/set-theory/spine/foundation.tex",
+  "blocks": 19,
+  "linguistic_blocks": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
+  "corrections_by_block": {"15": ["OLTESTSPINFOUND-001"]},
+  "previous_segments": 8316,
+  "previous_terms": 251,
+  "expected_corrections": 487,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "పునాది విభాగపు స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ దశ/సంక్రమణ/సమితి పదాలు, స్థానిక సమితి/తర్క సాక్షులు ఎదురెదురు చూశాం; నియమితత్వం-పునాది భేదం, సంక్రమణ ఆవరణ, స్థాయిక్రమ అంతర్గతత, రెండు అన్వయ దిశలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; పునాది/నియమితత్వం ప్రత్యేక పదాలు నిర్వచన-నియంత్రితం. మూల సుప్రీమం బంధంలో b/B లోపం OLTESTSPINFOUND-001గా ప్రకటించబడింది; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T252",
+    "source_term": "Foundation / Regularity / transitive closure",
+    "telugu": "పునాది / నియమితత్వం / సంక్రమణ ఆవరణ",
+    "status": "axiom_and_closure_definition_controlled_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "నియమితత్వాన్ని దశ-సరిహద్దు సూత్రంగా, పునాదిని శూన్య ఛేదన సూత్రంగా వేరు చేసి, ఆవరణకు మూడు పునరావృత్త సమీకరణాలు, సమానార్థకత్వానికి రెండు దిశలు నిలిపాం.",
+    "uncertainty": "ప్రత్యేక స్వయంసిద్ధ పేర్లకు ప్రత్యక్ష సాక్షి లేదు; గణిత సూత్రాలు, స్థానిక నిర్వచనలు ప్రధాన నియంత్రణ.",
+    "borrowing": "English axiom names remain inside the source-controlled implication math; surrounding prose is Telugu."
+  }
+}

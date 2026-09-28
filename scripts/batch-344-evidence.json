@@ -1,0 +1,40 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "344",
+  "unit_id": "OLP-0695",
+  "unit_order": 695,
+  "source_path": "content/proof-theory/propositions-as-types/terms-to-proofs.tex",
+  "blocks": 8,
+  "linguistic_blocks": [
+    5,
+    6,
+    7
+  ],
+  "corrections_by_block": {},
+  "previous_segments": 10245,
+  "previous_terms": 384,
+  "expected_corrections": 650,
+  "canon_default": [
+    "TE-P008",
+    "TE-P018",
+    "TE-P024",
+    "TE-P025"
+  ],
+  "consultation_phase": "నిరూపణ పునర్నిర్మాణ గద్యం, పూర్వపక్షం, సందర్భం, ప్రక్షేపణ పదాలను పూర్వ విభాగాలతో పోల్చాం.",
+  "evidence_limit": "నిర్మాణ, ఉదాహరణ అర్థ తనిఖీ మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T385",
+    "source_term": "proof reconstruction; free-variable context; antecedent; projection",
+    "telugu": "నిరూపణ పునర్నిర్మాణం; స్వేచ్ఛా చర సందర్భం; పూర్వపక్షం; ప్రక్షేపణ",
+    "status": "definition_controlled_translation_structural_qa_pass",
+    "passages": [
+      "TE-P008",
+      "TE-P018",
+      "TE-P024",
+      "TE-P025"
+    ],
+    "basis": "రకాలను ముందే ఊహించకుండా అక్షయాల నుంచి చివర నిర్ణయించే క్రమం నిలిపాం.",
+    "uncertainty": "నిర్మాణ, ఉదాహరణ అర్థ తనిఖీ మాత్రమే; TeX దృశ్య తనిఖీ లేదు.",
+    "borrowing": "Named systems and formal symbols are retained."
+  }
+}

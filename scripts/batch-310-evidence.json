@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "310",
+  "unit_id": "OLP-0661",
+  "unit_order": 661,
+  "source_path": "content/proof-theory/cut-elimination/midsequent.tex",
+  "blocks": 22,
+  "linguistic_blocks": [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+  "corrections_by_block": {"10": ["OLTEPTCUTMID-001"], "13": ["OLTEPTCUTMID-002"], "18": ["OLTEPTCUTMID-003"]},
+  "previous_segments": 9796,
+  "previous_terms": 350,
+  "expected_corrections": 572,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "మధ్యసీక్వెంట్/హెర్బ్రాండ్ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ కట్/సీక్వెంట్/పరిమాణీకరణిక పదాలు పోల్చాం; ప్రీనెక్స్ నిర్వచనం, రెండు స్థానమార్పు వృక్షజతలు, క్రమ ఆగమన, హెర్బ్రాండ్ తుది నిర్మాణం, మూడు మూల సవరణలు తనిఖీ చేశాం.",
+  "evidence_limit": "ప్రీనెక్స్, మధ్యసీక్వెంట్ రూపాలకు తెలుగు పదాలు భావపారదర్శక ఎంపికలు; ప్రత్యక్ష నిఘంటు ఆధారం పరిమితం. కట్-రహిత నిరూపణ మార్పిడిని స్వతంత్రంగా పూర్తిగా ప్రామాణికీకరించలేదు; TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T351","source_term":"midsequent theorem; prenex form; Herbrand disjunction; order of quantifier inference","telugu":"మధ్యసీక్వెంట్ ప్రమేయం; ప్రీనెక్స్ రూపం; హెర్బ్రాండ్ వియోజనం; పరిమాణీకరణిక నిగమనం క్రమం","status":"midsequent_herbrand_three_source_repairs_disclosed","passages":["TE-P008","TE-P018","TE-P024","TE-P025"],"basis":"మధ్యసీక్వెంట్ క్రమ ఆగమన, ప్రీనెక్స్ షరతు, హెర్బ్రాండ్ వియోజన నిర్మాణం నిలిచాయి; మూడు స్థానిక మూల లోపాలు సరిచేసి ప్రకటించాం.","uncertainty":"మధ్యసీక్వెంట్/ప్రీనెక్స్ తెలుగు రూపాలు భావవివరణతో తాత్కాలికం; నిరూపణ మార్పిడి పూర్తిగా స్వతంత్ర ధృవీకరణ కాలేదు.","borrowing":"Herbrand name, G3c, proof-tree labels and sequent/formula identifiers remain source-identifying."}
+}

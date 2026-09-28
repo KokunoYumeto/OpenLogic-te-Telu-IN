@@ -1,0 +1,18 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0504",
+  "source_path": "content/intuitionistic-logic/soundness-completeness/soundness-axd.tex",
+  "source_sha256": "ad6dd34af76e2848ba49f32f2599bdd96137c93ad50c496f553fddc1755a9125",
+  "audit_id": "OLTEINTSAX-20260927",
+  "audit_review_path": "evidence/OLP-0504-SOUNDNESS-AXD-SOURCE-AUDIT.md",
+  "audit_review_sha256": "9b6c20710518bb6f22712bc73813bbabe01ea5b3505f7aa6b67d08e874d8ba12",
+  "audit_findings_path": "evidence/OLP-0504-SOUNDNESS-AXD-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "359389ca10ef0a85aac5baaaa067e2fae5d3d1d93bd4c62cb4826515a16a2cf9",
+  "previous_corrections": 460,
+  "treatments": {
+    "OLTEINTSAX-001": {
+      "target_line": 50,
+      "body_treatment": "పూర్వాపేక్ష-సభ్యత్వ కేసులో స్థానిక సత్య సంకేతపు అదనపు Gamma వాదన తొలగించి, నిర్వచిత A_n వద్ద w రూపానికి మార్చి పక్కనే ప్రకటించాం."
+    }
+  }
+}

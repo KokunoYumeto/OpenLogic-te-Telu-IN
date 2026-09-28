@@ -1,0 +1,20 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEAMLELBIS-20260927",
+  "unit_id": "OLP-0488",
+  "source_path": "content/applied-modal-logic/epistemic-logic/bisimulations.tex",
+  "source_sha256": "3be0d4f2009365ab48416c0235ba2a8dfa8a5c04a68c0066d377959a0489c60d",
+  "findings": [
+    {
+      "finding_id": "OLTEAMLELBIS-001",
+      "source_locator": "bisimulations.tex lines 39 and 43; language-epistemic-logic.tex lines 13 and 27",
+      "classification": "undefined_agent_set_symbol_in_bisimulation_clauses",
+      "source_issue": "Forth and back clauses quantify agents in A even though the language defines G, not A, as the agent-symbol set.",
+      "minimal_treatment": "Use G for the agent domain in both clauses and disclose after the paired conditions.",
+      "expected_core_math_delta": {
+        "source_only": ["$a\\inA$", "$a\\inA$"],
+        "target_only": ["$a\\inG$", "$a\\inG$"]
+      }
+    }
+  ]
+}

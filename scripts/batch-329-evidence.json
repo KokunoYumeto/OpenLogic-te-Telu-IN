@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "329",
+  "unit_id": "OLP-0680",
+  "unit_order": 680,
+  "source_path": "content/proof-theory/proof-search/introduction.tex",
+  "blocks": 14,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "previous_segments": 10066,
+  "previous_terms": 369,
+  "expected_corrections": 620,
+  "canon_default": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిరూపణ తనిఖీ-అన్వేషణ వ్యత్యాసం, చిహ్న వరుసల గణన, వెనుకకు నియమ వర్తింపు, వెనక్కి తిరిగి ప్రయత్నం, సబబుతనం-సంపూర్ణతలను మూలంతో పోల్చాం.",
+  "evidence_limit": "సమర్థత గురించి మూలం లక్ష్యాన్ని మాత్రమే వివరిస్తుంది; సంక్లిష్టత పరిమితిని ప్రకటించలేదు. TeX దృశ్య తనిఖీ ఇంకా లేదు.",
+  "term_decision": {
+    "term_id": "TE-T370",
+    "source_term": "proof search; proof-search algorithm; backward rule application; backtracking",
+    "telugu": "నిరూపణ అన్వేషణ; నిరూపణ అన్వేషణ అల్గోరిథం; నియమాన్ని వెనుకకు వర్తింపజేయడం; వెనక్కి వచ్చి మళ్లీ ఎంచుకోవడం",
+    "status": "proof_search_introduction_source_faithful",
+    "passages": ["TE-P008", "TE-P018", "TE-P024", "TE-P025"],
+    "basis": "నిరూపణ వృక్షం సరిచూడటం, నిరూపణ కనుగొనడం వేర్వేరు సమస్యలుగా ఉంచాం; నిర్మాణ నియమాలు, సందర్భ విభజన వల్ల వచ్చే ఎంపికలను స్పష్టంగా నిలిపాం.",
+    "uncertainty": "వెనక్కి తిరిగి ప్రయత్నానికి నిర్వచనాత్మక తెలుగు వర్ణన వాడాం; ప్రత్యక్ష సాంకేతిక పదసూచి పరిమితం.",
+    "borrowing": "G3c/G1c/G2c/N1i/N1c and algorithm remain explicit source-identifying borrowings."
+  }
+}

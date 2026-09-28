@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "288",
+  "unit_id": "OLP-0639",
+  "unit_order": 639,
+  "source_path": "content/history/set-theory/hilbert-curve.tex",
+  "blocks": 14,
+  "linguistic_blocks": [4,5,6,7,8,9,10,11,12,13],
+  "corrections_by_block": {"8": ["OLTEHISSETHILB-001", "OLTEHISSETHILB-002"], "11": ["OLTEHISSETHILB-003"], "13": ["OLTEHISSETHILB-004"]},
+  "previous_segments": 9409,
+  "previous_terms": 328,
+  "expected_corrections": 542,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P006", "TE-P008", "TE-P017"],
+  "consultation_phase": "హిల్బర్ట్ వక్రరేఖ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ అవిచ్ఛిన్నత/పరిమితి/స్థలపూరక పదాలు, స్థానిక విశ్లేషణ సాక్షులు పోల్చాం; మూడు చిత్రాల TikZ, రంగు టోకెన్లు, గడి-దూర అంచనా, పరిమితి ప్రవేశ సమితి, అవిచ్ఛిన్నత వాదన తనిఖీ చేశాం.",
+  "evidence_limit": "మూలం అనౌపచారికంగా ఇచ్చిన నిర్మాణానికి పూర్తి పరామితీకరణ/సమచ్ఛిన్న అభిసరణ నిరూపణ ఇవ్వలేదు; నాలుగు గణిత లోపాలు పక్కనే ప్రకటించబడ్డాయి. చారిత్రక పియానో/జోర్డాన్ సందర్భం స్వతంత్రంగా తనిఖీ చేయలేదు; TeX చిత్రం దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T329","source_term":"Hilbert space-filling curve; pointwise limit; continuity; grid-location","telugu":"హిల్బర్ట్ స్థలాన్ని నింపే వక్రరేఖ; బిందువువారీ పరిమితి; అవిచ్ఛిన్నత; గడి","status":"hilbert_sketch_proof_gaps_disclosed_source_controlled","passages":["TE-P003","TE-P004","TE-P006","TE-P008","TE-P017"],"basis":"మూడు ఉజ్జాయింపు చిత్రాలు, రంగు అనుసంధానాలు, గడి-దూర అంచనా, జోర్డాన్ వక్రరేఖ నిర్వచనం నిలిచాయి; ప్రవేశ సమితి సరిచేసి పరిమితి/స్థలపూరక/అవిచ్ఛిన్నత నిరూపణ ఖాళీలు ప్రకటించాం.","uncertainty":"మూలం చెప్పిన పూర్తి స్థలపూరక/అవిచ్ఛిన్నత వాదనలు ఇక్కడ స్థాపితం కాలేదు; నిర్దిష్ట పరామితీకరణ, సమచ్ఛిన్న అభిసరణ వేరుగా అవసరం.","borrowing":"Hilbert, Peano, Jordan, citation key, protected TikZ parameters and colour tokens remain source-identifying."}
+}

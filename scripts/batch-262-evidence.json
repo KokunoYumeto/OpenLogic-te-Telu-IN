@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "262",
+  "unit_id": "OLP-0613",
+  "unit_order": 613,
+  "source_path": "content/methods/induction/induction.tex",
+  "blocks": 12,
+  "linguistic_blocks": [4],
+  "previous_segments": 9074,
+  "previous_terms": 302,
+  "expected_corrections": 528,
+  "canon_default": ["TE-P003", "TE-P004", "TE-P024"],
+  "consultation_phase": "ఆగమనం అధ్యాయ స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ ఆగమన పద నిర్ణయాలు, స్థానిక ఆగమన/నిరూపణ సాక్షులు పోల్చి ఐదు విభాగ దిగుమతులు, ముగింపు హుక్ నిలిచాయని తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P003 ఆగమన సాధారణ వాడుకకు ఆధారం; అధ్యాయపు నిర్మాణాత్మక/బలమైన ఆగమన సిద్ధాంతాలకు కాదు. విభాగాల ఖచ్చితత్వం ఆయా యూనిట్లలో పరిశీలించాలి.",
+  "term_decision": {"term_id":"TE-T303","source_term":"Induction (chapter title)","telugu":"ఆగమనం","status":"induction_chapter_heading_translated_five_imports_preserved","passages":["TE-P003","TE-P004","TE-P024"],"basis":"అధ్యాయ శీర్షికలో పూర్వ ఆగమన పదాన్ని కొనసాగించి, పరిచయం, సహజ సంఖ్యలు, బలమైన ఆగమనం, ఆగమనాత్మక నిర్వచనాలు, నిర్మాణ ఆగమనం, సంబంధాల దిగుమతులు నిలిపాం.","uncertainty":"సాధారణ ఆగమన పదానికి స్థానిక ఆధారం ఉంది; ప్రత్యేక రూపాల పదాలు తరువాతి నిర్వచనాలతో నియంత్రితం.","borrowing":"TeX chapter identifiers and import paths remain unchanged."}
+}

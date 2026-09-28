@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "139",
+  "unit_id": "OLP-0490",
+  "unit_order": 490,
+  "source_path": "content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex",
+  "blocks": 20,
+  "linguistic_blocks": [5, 6, 7, 8, 10, 11, 15, 16, 17, 18, 19],
+  "previous_segments": 7384,
+  "previous_terms": 179,
+  "expected_corrections": 456,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+  "corrections_by_block": {"11": ["OLTEAMLELPALSEM-001"]},
+  "consultation_phase": "స్థిర ప్రకటన అర్థవిజ్ఞాన మూలం, తెలుగు లక్ష్యం, ముందు జ్ఞానసంబంధ సత్య/సామాన్యజ్ఞాన పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; నవీకరించిన W'/R'/V', శూన్యసత్యం, చిత్రంలో b జ్ఞాన మార్పు, విజయవంతం కాని ప్రకటన ఉదాహరణ తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/011/018/024 సాధారణ సమితి/సంబంధ/ప్రమేయకం/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. గతి జ్ఞానసంబంధ ప్రకటన అర్థవిజ్ఞానం లేదా విజయవంతం కాని ప్రకటనకు అవి ప్రత్యక్ష మూలాలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T180",
+    "source_term": "public-announcement model restriction / vacuous announcement truth / unsuccessful announcement",
+    "telugu": "బహిరంగ ప్రకటనతో నమూనా పరిమితం / ప్రకటన శూన్యసత్యం / ప్రకటించిన తరువాత అసత్యమయ్యే ప్రకటన",
+    "status": "native_general_set_relation_function_logic_derivation_register_attested_public_announcement_semantics_source_controlled_one_disclosed_formula_repair",
+    "passages": ["TE-P008", "TE-P010", "TE-P011", "TE-P018", "TE-P024"],
+    "basis": "[!B]!C షరతు, B సత్య లోకాలకు W' పరిమితం, R'_aలో మిగిలిన జతలు, V'లో స్థిర ప్రతిజ్ఞా విలువలు, p ప్రకటనతో bకు జ్ఞానం, CKnows, p∧¬Knows_b p ప్రకటించిన తరువాత అసత్యం నిలిచాయి. మూల [!A]B సంకేతాన్ని ప్రకటించి [!A]!Bగా సరిచేశాం.",
+    "uncertainty": "స్థానిక సాక్షులు ప్రకటన అర్థవిజ్ఞానానికి ప్రత్యక్ష ఆధారం కావు. మూల చిత్రం, ప్రకటన తరువాత అసత్యమయ్యే ఉదాహరణకు పూర్తి స్వతంత్ర నిరూపణ నమోదు కాలేదు; TeX దృశ్య తనిఖీ కూడా లేదు.",
+    "borrowing": "All update-model macros, formula variables, figure coordinates and mathematical labels remain source-controlled; the English figure arrow label alone is localized."
+  }
+}

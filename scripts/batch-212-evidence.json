@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "212",
+  "unit_id": "OLP-0563",
+  "unit_order": 563,
+  "source_path": "content/set-theory/spine/zf.tex",
+  "blocks": 11,
+  "linguistic_blocks": [3, 4, 5, 6, 7, 8, 9, 10],
+  "previous_segments": 8335,
+  "previous_terms": 252,
+  "expected_corrections": 487,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "స్థిర Z/ZF మైలురాయి మూలం, తెలుగు లక్ష్యం, పూర్వ పునాది/నియమితత్వం/ప్రతిస్థాపన పదాలు, స్థానిక సమితి సాక్షులు ఎదురెదురు చూశాం; Z-minus/ZF-minus జోడింపులు, రెండు ఆధార సిద్ధాంతాల సాపేక్ష సమానార్థకత్వం, తరువాతి పని పరిధి తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P004/005/008/018 సాధారణ సమితి/క్రమ/తర్క పదాలకు మాత్రమే సాక్షులు; Z/ZF సిద్ధాంత పదాలు మూల నిర్వచన నియంత్రితం. సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {
+    "term_id": "TE-T253",
+    "source_term": "Z and ZF milestone; Foundation versus Regularity",
+    "telugu": "Z, ZF మైలురాయి; పునాది, నియమితత్వం భేదం",
+    "status": "axiom_system_definition_controlled_set_register_attested",
+    "passages": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+    "basis": "Zకు పునాది, ZFకు పునాది లేదా Zకు ప్రతిస్థాపన చేర్పుల సమాన వివరణ, Z-minusలో పునాది-నియమితత్వ భేదం నిలిచాయి.",
+    "uncertainty": "సిద్ధాంత పేర్లు చిహ్న రూపంలోనే; అధికారం మూల నిర్వచనాలది.",
+    "borrowing": "Theory macros Z, ZF and minus forms remain source-controlled."
+  }
+}

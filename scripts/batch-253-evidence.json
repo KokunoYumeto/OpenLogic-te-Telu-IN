@@ -1,0 +1,16 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "253",
+  "unit_id": "OLP-0604",
+  "unit_order": 604,
+  "source_path": "content/methods/proofs/starting-proofs.tex",
+  "blocks": 10,
+  "linguistic_blocks": [5,6,7,8,9],
+  "previous_segments": 8919,
+  "previous_terms": 293,
+  "expected_corrections": 522,
+  "canon_default": ["TE-P004", "TE-P024", "TE-P025"],
+  "consultation_phase": "నిరూపణ ప్రారంభ విభాగ మూలం, తెలుగు లక్ష్యం, పూర్వ పరికల్పన/నిష్కర్ష/నిర్వచనం పదాలు, స్థానిక నిరూపణ సాక్షులు పోల్చాం; లక్ష్యాన్ని పరికల్పనగా వాడరాదన్న భేదం, కాగితం పై-కింద అమరిక, నిర్వచన అవగాహన తనిఖీ చేశాం.",
+  "evidence_limit": "కాగితంపై రాయమన్నది బోధనాత్మక సూచన; తప్పనిసరి అధికారిక నిరూపణ నియమం కాదు. స్థానిక సాక్షులు సాధారణ నిరూపణ భాషకే ఆధారం; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T294","source_term":"starting a proof; goal, assumption, definition","telugu":"నిరూపణను ప్రారంభించడం; లక్ష్యం, పరికల్పన, నిర్వచనం","status":"pedagogical_goal_assumption_definition_distinction_source_controlled","passages":["TE-P004","TE-P024","TE-P025"],"basis":"నిరూపించాల్సిన లక్ష్యాన్ని పరికల్పనగా అనుమతించకుండా, చెల్లే పరికల్పనలను స్పష్టంగా సూచించి, వర్తించే నిర్వచనాలను ముందుగా అర్థం చేసుకోవాలన్న క్రమం నిలిచింది.","uncertainty":"సాధారణ నిరూపణ పదాలకు ఆధారం ఉంది; కాగితపు పై-కింద అమరిక మూల బోధన రూపకం మాత్రమే.","borrowing":"The propositional variable p and TeX identifiers remain unchanged."}
+}

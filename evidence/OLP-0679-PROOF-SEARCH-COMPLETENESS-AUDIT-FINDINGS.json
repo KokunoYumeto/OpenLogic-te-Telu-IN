@@ -1,0 +1,60 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTPSCPL-20260928",
+  "unit_id": "OLP-0679",
+  "source_path": "content/proof-theory/proof-search/completeness.tex",
+  "source_sha256": "4ae649a8588a1ae4f82c22b142fa67690bfd8615cada1499b02d1d62db87a665",
+  "findings": [
+    {
+      "finding_id": "OLTEPTPSCPL-001",
+      "source_locator": "completeness.tex line 17, falsified succedent formulas",
+      "classification": "missing_formula_name",
+      "source_issue": "The quantification over succedent formulas is written !∈Δ, omitting the formula letter A used in the satisfaction statement.",
+      "minimal_treatment": "Use !A∈Δ and disclose the omission.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$!\\in\\Delta$"
+        ],
+        "target_only": [
+          "$!A\\in\\Delta$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSCPL-002",
+      "source_locator": "completeness.tex lines 33–34, constant set for the failure-branch sequent",
+      "classification": "wrong_succedent_identifier",
+      "source_issue": "The sentence assigns C_n to Π_n⊢Δ_n, although the failure branch was defined with succedent Λ_n.",
+      "minimal_treatment": "Use Λ_n and disclose the identifier repair.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Pi_n\\Sequent\\Delta_n$"
+        ],
+        "target_only": [
+          "$\\Pi_n\\Sequent\\Lambda_n$"
+        ]
+      }
+    },
+    {
+      "finding_id": "OLTEPTPSCPL-003",
+      "source_locator": "completeness.tex lines 59–71, term-model function and predicate interpretation",
+      "classification": "inconsistent_arity_indices",
+      "source_issue": "The function and predicate are declared m-place, but several term lists and the predicate-domain power use n.",
+      "minimal_treatment": "Use m throughout these interpretations and their atomic-truth explanation, with disclosure.",
+      "expected_core_math_delta": {
+        "source_only": [
+          "$\\Assign{f}{M}(t_1,\\dots,t_m)=f(t_1,\\dots,t_n)$",
+          "$\\Assign{R}{M}=\\Setabs{\\tuple{t_1,\\dots,t_m}\\in\\Domain{M}^n}{R(t_1,\\dots,t_n)\\in\\Theta}$",
+          "$\\Sat{M}{R(t_1,\\dots,t_n)}$",
+          "$R(t_1,\\dots,t_n)\\in\\Theta$"
+        ],
+        "target_only": [
+          "$\\Assign{f}{M}(t_1,\\dots,t_m)=f(t_1,\\dots,t_m)$",
+          "$\\Assign{R}{M}=\\Setabs{\\tuple{t_1,\\dots,t_m}\\in\\Domain{M}^m}{R(t_1,\\dots,t_m)\\in\\Theta}$",
+          "$\\Sat{M}{R(t_1,\\dots,t_m)}$",
+          "$R(t_1,\\dots,t_m)\\in\\Theta$"
+        ]
+      }
+    }
+  ]
+}

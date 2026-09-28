@@ -1,0 +1,143 @@
+% Part: applied-modal-logics
+% Chapter: epistemic-logic
+% Section: public-announcement-logic-semantics
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{aml}{el}{psm}
+
+\olsection{బహిరంగ ప్రకటన తర్కపు అర్థవిజ్ఞానం}
+
+బహిరంగ ప్రకటన తర్కాల సంబంధ నమూనాలు జ్ఞానసంబంధ
+తర్కాల్లో ఉన్నవాటిలాగే ఉంటాయి. అయితే బహిరంగ ప్రకటన
+కారకపు అర్థవిజ్ఞానం కొత్తది.
+
+\begin{defn}\ollabel{defn:mmodels} నమూనా~$\mModel M = \tuple{W, R, V}$లో
+  \emph{$w$ వద్ద \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ సత్యం},
+  సంకేతంగా $\mSat{M}{!A}[w]$, ఇలా ఆగమన పద్ధతిలో
+  నిర్వచించబడుతుంది:
+  \begin{enumerate}
+  \tagitem{prvFalse}{\indcase{!A}{\lfalse}{$\mSat{M}{\lfalse}[w]$ ఎప్పుడూ కాదు}.}{}
+  \tagitem{prvTrue}{\indcase{!A}{\ltrue}{$\mSat{M}{\ltrue}[w]$ ఎల్లప్పుడూ}.}{}
+  \item $\mSat{M}{p}[w]$ అయితే, అప్పుడే $w \in V(p)$
+  \tagitem{prvNot}{\indcase{!A}{\lnot !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat/{M}{!B}[w]$}.}{}
+  \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$ మరియు $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$} (లేదా రెండూ).}{}
+  \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat/{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$}.}{}
+  \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ సత్యం; లేదా
+    $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ అసత్యం}.}{}
+  \item\ollabel{defn:sub:mmodels-box}
+    \indcase{!A}{\Knows_a !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $R_a ww'$ అయ్యే ప్రతి $w' \in W$కు $\mSat{M}{!B}[w']$}
+  \item\ollabel{defn:sub:mmodels-pal}
+    \indcase{!A}{[!B] !C}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడే
+    $\mSat{M}{!B}[w]$ నుంచి $\mSat{M \mid !B}{!C}[w]$ వస్తుంది}
+
+
+  ఇక్కడ $\mModel M \mid !B = \tuple{W', R', V'}$ను
+  ఇలా నిర్వచిస్తాం:
+  \begin{enumerate}
+    \item $W' = \Setabs{ u \in W}{\mSat{M}{!B}[u]}$. కాబట్టి
+      $\mModel M \mid !B$లోని లోకాలు, $!B$ సత్యమయ్యే
+      $\mModel M$లోని లోకాలే.
+    \item $R'_a = R_a \cap (W' \times W')$. ప్రతి కర్త
+      ప్రాప్యత సంబంధాన్ని~$W'$లో మిగిలిన లోకాలకే
+      పరిమితం చేస్తాం.
+    \item $V'(p) = \Setabs{ u \in W'}{u \in V(p) }$.
+      అలాగే లోకాల వద్ద ప్రతిజ్ఞావాక్య చరాల విలువలు
+      మారవు; సమాచార ఘటనలు వాటి సత్యమూల్యాలను
+      మార్చవనే భావనను ఇది సూచిస్తుంది.
+  \end{enumerate}
+
+  \end{enumerate}
+\end{defn}
+
+కాబట్టి బహిరంగ ప్రకటన తర్కాల ప్రత్యేకత ఏమిటంటే,
+కొన్నిసార్లు నమూనా~$\mModel M$లో
+\tetoken{ఒక సూత్రం}{!!a{formula}} సత్యమో కాదో
+నిర్ణయించడానికి $\mModel M$ కాక మరొక నమూనాను
+పరిశీలించాల్సి వస్తుంది.
+
+మన అర్థవిజ్ఞానం ప్రకటన కారకాన్ని $\Box$ కారకంగా
+తీసుకుంటుందని కూడా గమనించండి. అందువల్ల
+\tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$ను ఒక లోకం
+వద్ద సత్యంగా ప్రకటించలేకపోతే, అంత్య బిందువుల వద్ద
+అన్ని $\Box$ \tetoken{సూత్రాలు}{!!{formula}s}
+శూన్యసత్యంగా నిలిచినట్లే, అక్కడ $[!A]!B$ కూడా
+శూన్యసత్యంగా నిలుస్తుంది.
+\sourcecorrection{OLTEAMLELPALSEM-001}{మూలంలో ఈ వాక్యం ప్రకటన ఫలితాన్ని $[!A]B$గా వ్రాసింది; ముందరి నిర్మాణ నిబంధనలోని సూత్ర-సంకేత పద్ధతికి అనుగుణంగా $[!A]!B$గా సరిచేశాం.}
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={below left:$p, \lnot q$}]{$w_1$};
+      \node[world] (w2) [left=of w1, label={left:$\lnot p, \lnot q$}]{$w_2$};
+      \node[world] (w3) [above=of w1, label={right:$p, q$}] {$w_3$};
+      \draw[<->] (w1) to [swap] node {$b$} (w2);
+      \draw[->,loop below] (w1) to node {$a, b$} (w1);
+      \draw[<->] (w1) to [swap] node {$a$} (w3);
+      \draw[->,loop above] (w2) to node {$a, b$} (w2) ;
+      \draw[->,loop above] (w3) to node {$a, b$} (w3) ;
+
+      \node[world](v1)[right of=w1, xshift=1.25in, label={right:$p, \lnot q$}]{$w'_1$};
+      \node[world](v3)[above of=v1,label={right:$p,q$}]{$w'_3$};
+      \draw[<->] (v1) to node {$a$} (v3);
+      \draw[->,loop below] (v1) to node {$a,b$} (v1);
+      \draw[->,loop above] (v3) to node {$a,b$} (v3) ;
+
+      \node(m)[below=of w1]{$\mModel M$};
+      \node(m')[below=of v1]{$\mModel M \mid p$};
+
+      \draw[-,dotted] (w1) to node {\footnotesize $p$ ప్రకటన}(v1) ;
+
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p$ను బహిరంగంగా ప్రకటించడానికి ముందు, తరువాత.}
+  \ollabel{fig:announcement-example}
+\end{figure}
+
+\tetoken{ఒక సూత్రం}{!!a{formula}} బహిరంగ ప్రకటనను
+నమూనాను కుదించడం లేదా ఆ \tetoken{సూత్రం}{!!{formula}}
+సత్యమయ్యే లోకాలకే పరిమితం చేయడం అని చూడవచ్చు.
+\olref{fig:announcement-example}లో~$p$ను బహిరంగంగా
+ప్రకటించినప్పుడు కలిగే ఫలితానికి ఉదాహరణ ఉంది.
+ఆ నమూనాలో గమనించదగ్గ విషయం: ప్రకటన వల్ల
+కర్త~$b$కు~$p$ తెలిసింది; కానీ కర్త~$a$కు కొత్తగా
+తెలియలేదు, ఎందుకంటే~$p$ సత్యమని~$a$కు అప్పటికే తెలుసు.
+
+మరింత అధికారికంగా, $\mSat{M}{\lnot \Knows_b p}[w_1]$
+అయితే $\mSat{M
+\mid p}{\Knows_b p}[w'_1]$. దాని నుంచి
+$\mSat{M}{[p] \Knows_b
+p}[w_1]$ వస్తుంది. ప్రకటన ఫలితం గురించి ఇంకా
+బలమైన వాదన చేయవచ్చు: నిజానికి
+$\mSat{M}{[p]\CKnows_{\{a,b\}} p}[w_1]$.
+అంటే, $p$ను ప్రకటించిన తరువాత అది
+\emph{సామాన్య జ్ఞానం} అవుతుంది.
+
+అయితే ఇది సాధారణంగా కూడా జరుగుతుందా?
+సత్యమైన~$!A$ ప్రకటన \emph{ఎల్లప్పుడూ}
+$!A$ను సామాన్య జ్ఞానంగా మారుస్తుందా?
+కాదనే సమాధానం ఆశ్చర్యంగా అనిపించవచ్చు.
+నిజానికి, ప్రకటించగానే అసత్యమయ్యే
+\tetoken{సూత్రాలను}{!!{formula}s} కూడా సత్యంగా
+ప్రకటించడం సాధ్యం. ఉదాహరణకు,
+\olref{fig:announcement-example}లో~$w_1$ వద్ద
+$p \land \lnot \Knows_b p$ను ప్రకటిస్తే
+ఏమవుతుందో చూడండి. నిజానికి $\mModel M \mid p$,
+$\mModel M \mid (p \land \lnot \Knows_b p)$
+ఒకే నమూనా. అయితే మనం ఇప్పటికే చూసినట్లు,
+$\mSat{M \mid p}{\Knows_b
+p}[w'_1]$. అందువల్ల $\mSat{M \mid (p \land \lnot \Knows_b p)}{\lnot
+(p \land \lnot \Knows_b p)}[w'_1]$;
+అంటే, ప్రకటించిన తరువాత అసత్యమయ్యే
+\tetoken{ఒక సూత్రం}{!!a{formula}} ఇది.
+
+\end{document}

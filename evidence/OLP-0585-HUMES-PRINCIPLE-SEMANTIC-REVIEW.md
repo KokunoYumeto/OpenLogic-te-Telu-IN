@@ -1,0 +1,3 @@
+# OLP-0585 Hume's Principle semantic review
+
+Compared the frozen source and Telugu target by paragraph. Cantor's set-cardinality principle is kept distinct from Hume's predicate-position principle; the displayed relation formula, Basic Law V comparison, predicative/impredicative domain contrast, 0–1–2 construction, and Frege's own definitional route are retained. The specialized Telugu compounds follow earlier TE-T223. Hume's historical quotation is translated, citation preserved. Strict structural QA passed 12/12 blocks without correction. TE-T275 records terminology. Full TeX visual compilation remains pending.

@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTESTCARDSIMP-20260927",
+  "unit_id": "OLP-0588",
+  "source_path": "content/set-theory/card-arithmetic/simp.tex",
+  "source_sha256": "a606bab065a11c689b655ff8053e3e77894decb42b88e70605a981c129148da0",
+  "findings": [
+    {
+      "finding_id": "OLTESTCARDSIMP-001",
+      "source_locator": "simp.tex lines 84–96, alphatimesalpha segment bound",
+      "classification": "finite_coordinate_case_omitted_from_segment_bound",
+      "source_issue": "The displayed argument bounds segments only when the maximum coordinate is infinite, but draws a conclusion for all segments.",
+      "minimal_treatment": "Add the finite-maximum case in prose before the all-pairs conclusion and disclose it.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

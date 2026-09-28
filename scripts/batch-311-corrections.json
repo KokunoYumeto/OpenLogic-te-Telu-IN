@@ -1,0 +1,30 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0662",
+  "source_path": "content/proof-theory/natural-deduction/grafting.tex",
+  "source_sha256": "a7157a4cffa4a4a862c3ccca068d1b57b190ac830bbc7ce53a2df999663fe519",
+  "audit_id": "OLTEPTNATGRA-20260927",
+  "audit_review_path": "evidence/OLP-0662-GRAFTING-SOURCE-AUDIT.md",
+  "audit_review_sha256": "bf2970de11c9bb3c85ab39658e0e017d0bf2da218329aa28a93c36d335687f37",
+  "audit_findings_path": "evidence/OLP-0662-GRAFTING-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "3c44a8e30bb285b6c54aa869631515d1ede5170b90fc11d938a174db5e307383",
+  "previous_corrections": 572,
+  "treatments": {
+    "OLTEPTNATGRA-001": {
+      "target_line": 28,
+      "body_treatment": "నిరూపణ వృక్షంలో B→C స్థానంలో B→A నిగమనాన్ని చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATGRA-002": {
+      "target_line": 44,
+      "body_treatment": "సీక్వెంట్ నిరూపణ కోసం N1c/N1i స్థానంలో N2c/N2i పేర్లు చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATGRA-003": {
+      "target_line": 53,
+      "body_treatment": "నిర్వచించని delta స్థానంలో delta_1పై ఆగమనాన్ని చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATGRA-004": {
+      "target_line": 37,
+      "body_treatment": "ప్రతిస్థాపిత తెరిచి ఉన్న ఉపపత్తులు ఫలితంలో మిగలవని స్పష్టంచేసి ప్రకటించాం."
+    }
+  }
+}

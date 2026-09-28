@@ -1,0 +1,3 @@
+# OLP-0598 Intrinsic Choice justification semantic review
+
+Compared the frozen source and Telugu target by paragraph. The stage-acceptance principle, equivalent choice-set formulation for pairwise disjoint nonempty families, exercise, and proposed intrinsic justification are retained. The argument remains explicitly an attempted justification rather than being presented as a ZF proof of Choice. Three source `element` token markers, references, stage macros and citations are preserved. Strict structural QA passed 13/13 blocks without correction. TE-T288 records terminology. Full TeX visual compilation remains pending.

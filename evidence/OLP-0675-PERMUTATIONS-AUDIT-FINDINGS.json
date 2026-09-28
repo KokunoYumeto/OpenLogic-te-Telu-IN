@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEPTNORPER-20260928",
+  "unit_id": "OLP-0675",
+  "source_path": "content/proof-theory/normalization/permutations.tex",
+  "source_sha256": "7e7ecafb16908e749788e898e1651da247561dfe79c9a2539bf79e73099348ed",
+  "findings": [
+    {
+      "finding_id": "OLTEPTNORPER-001",
+      "source_locator": "permutations.tex lines 24–25, first permutation example",
+      "classification": "inconsistent_cut_formula",
+      "source_issue": "The prose identifies A with B∨C although the displayed derivation ends the disjunction elimination in B∧C and then eliminates that conjunction.",
+      "minimal_treatment": "Use A≡B∧C in the Telugu prose and disclose the source inconsistency.",
+      "expected_core_math_delta": {
+        "source_only": ["$!A\\ident!B\\lor!C$"],
+        "target_only": ["$!A\\ident!B\\land!C$"]
+      }
+    },
+    {
+      "finding_id": "OLTEPTNORPER-002",
+      "source_locator": "permutations.tex lines 348–351, second exercise",
+      "classification": "rule_name_inconsistency",
+      "source_issue": "The second rule is spelled \\Elim{\\exists} though this N1i context and the adjoining text use \\Elim{\\lexists}.",
+      "minimal_treatment": "Use \\Elim{\\lexists} for the second rule and disclose the source spelling.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    },
+    {
+      "finding_id": "OLTEPTNORPER-003",
+      "source_locator": "permutations.tex lines 403–406, eigenvariable explanation",
+      "classification": "rule_name_inconsistency",
+      "source_issue": "The prose calls the inference \\Elim{\\exists}, but the displayed inference and surrounding prose use \\Elim{\\lexists}.",
+      "minimal_treatment": "Use \\Elim{\\lexists} consistently and disclose the source spelling.",
+      "expected_core_math_delta": {"source_only": [], "target_only": []}
+    }
+  ]
+}

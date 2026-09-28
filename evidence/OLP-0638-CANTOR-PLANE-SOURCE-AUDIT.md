@@ -1,0 +1,8 @@
+# OLP-0638 — Cantor line–plane source-error audit
+
+Frozen source: `upstream/content/history/set-theory/cantor-plane.tex`, SHA-256 `6abfeede65f95ac668d6e679053e537b0beb2ffcd566c1cdbdc223b0b767c737`. The source is unchanged.
+
+- **OLTEHISSETCANP-001:** Binary expansions of dyadic numbers are not unique, and `1` must use `0.111...` for the displayed fractional form. The target fixes a representation for every input: below `1`, the expansion not eventually all ones; for `1`, the all-ones expansion. Under this convention, the interleaving defines a total map from the closed square to the closed line. Its output is unique as a binary expansion unless both inputs equal `1`; in that case the output is `1` and still unique under the convention. Thus equality of output values implies equality of all input digits and the map is injective.
+- **OLTEHISSETCANP-002:** The source's alleged omitted value `0.1010...` is actually `f(1,0)` under the total-map convention above. Writing the first input as `1.000...` instead makes the displayed fractional interleaving rule undefined at that endpoint. A genuine omitted value has odd-position digits `0,1,1,1,...` (the excluded representation `0.0111...` of `1/2`) and even-position digits `0,1,0,1,...`. Its full expansion has infinitely many zeros and ones, so it is unique; no allowed odd-position input expansion can produce it. The target discloses this adjacent to the source example and correctly calls the expansions binary rather than decimal.
+
+The repaired injection and non-surjection give the cardinal inequality used in the completed proof. This audit does not independently verify the historical correspondence or publication chronology. Bounded structural QA is not a semantic proof or TeX rendering inspection.

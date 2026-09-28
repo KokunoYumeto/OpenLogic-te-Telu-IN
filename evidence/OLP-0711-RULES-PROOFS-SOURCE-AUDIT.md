@@ -1,0 +1,3 @@
+# OLP-0711 — rules proofs source audit
+
+Read all 17 frozen aligned blocks and both conjunction and quantifier rule diagrams. Checked premise/conclusion, contexts, active and principal formulas, the constant eigenvariable convention, recursive proof constructors, and the edge-count height recursion. Two source defects require disclosed local treatments: ambiguous/intervening-sequent height prose and a changed succedent incorrectly claimed invariant under multiset reordering. The displayed proof heights 0,0,1,2 are correct; Proves[4] is a valid weaker bound and is retained, not classified as an error. The reflexive subproof convention including pi_4 itself is preserved.

@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-te-single-unit-correction-config/1",
+  "unit_id": "OLP-0665",
+  "source_path": "content/proof-theory/natural-deduction/quantifiers.tex",
+  "source_sha256": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+  "audit_id": "OLTEPTNATQUA-20260927",
+  "audit_review_path": "evidence/OLP-0665-QUANTIFIERS-SOURCE-AUDIT.md",
+  "audit_review_sha256": "5d5df6cf11d00222b6ff425280bc63484c13cebc5ec0eb23c7fc4e4ee7d0e24a",
+  "audit_findings_path": "evidence/OLP-0665-QUANTIFIERS-AUDIT-FINDINGS.json",
+  "audit_findings_sha256": "1d184a2eea3a85a82427358cf4af186bbf7894015522e467d2afb24ced11997b",
+  "previous_corrections": 578,
+  "treatments": {
+    "OLTEPTNATQUA-001": {
+      "target_line": 95,
+      "body_treatment": "అస్తిత్వ తొలగింపు శాఖలో ప్రతిస్థాపిత ఫలితాలు, రెండు పూర్వపక్షాల వృక్షం చేర్చి ప్రకటించాం."
+    },
+    "OLTEPTNATQUA-002": {
+      "target_line": 122,
+      "body_treatment": "అత్యుపరి అశుభ్రమైన నిగమనాన్ని ఎంచుకుని దాని ఉపనిరూపణ క్రమబద్ధతను సరైన కారణంతో తెలిపి ప్రకటించాం."
+    }
+  }
+}

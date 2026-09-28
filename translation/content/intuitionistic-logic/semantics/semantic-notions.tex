@@ -1,0 +1,83 @@
+% part: intuitionistic-logic
+% chapter: semantics
+% section: semantic-notions
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{sem}{sem}
+
+\olsection{అర్థవిజ్ఞాన భావనలు}
+
+\begin{defn}
+  ప్రతి $w \in W$ వద్ద $\mSat{M}{!A}[w]$ అయితే,
+  $!A$ అనేది \emph{నమూనా~$\mModel{M} = \tuple{W,R,V}$లో
+  సత్యం} అంటాం; $\mSat{M}{!A}$ అని వ్రాస్తాం.
+  అన్ని నమూనాల్లో సత్యమైతే $!A$ను
+  \emph{చెల్లుబాటైనది} అంటాం; $\Entails !A$
+  అని వ్రాస్తాం. ప్రతి నమూనా~$\mModel{M}$,
+  ప్రతి~$w$ విషయంలో $\mSat{M}{\Gamma}[w]$
+  అయితే $\mSat{M}{!A}[w]$ అయినప్పుడు,
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి~$\Gamma$
+  అనేది~$!A$ను \emph{అనుగమింపజేస్తుంది}
+  అంటాం; $\Gamma
+  \Entails !A$ అని వ్రాస్తాం.
+\end{defn}
+
+\begin{prop}\ollabel{prop:sat-entails}
+  \begin{enumerate}
+  \item\ollabel{prop:sat-entails1} $\mSat{M}{\Gamma}[w]$ మరియు
+    $\Gamma \Entails !A$ అయితే $\mSat{M}{!A}[w]$.
+  \item\ollabel{prop:sat-entails2} $\mSat{M}{\Gamma}$ మరియు $\Gamma
+    \Entails !A$ అయితే $\mSat{M}{!A}$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\mSat{M}{\Gamma}[w]$ అనుకుందాం.
+    $\Gamma \Entails !A$ కాబట్టి, అనుగమన
+    నిర్వచనం ప్రకారం $\mSat{M}{!A}[w]$.
+    \sourcecorrection{OLTEINTSEMNOT-001}{మూల నిరూపణ మొదటి అంశానికి స్థానిక పరికల్పన బదులు నమూనా అంతటా $\Gamma$ సత్యమని ఊహించి, అన్ని లోకాల్లో సత్యమని అన్యాయంగా వాడింది; మొదటి అంశానికి కావలసిన $w$ వద్ద పరికల్పన నుంచే ముగింపును తీసుకున్నాం.}
+  \item \olref{prop:sat-entails1} నుంచి వెంటనే వస్తుంది.
+  \end{enumerate}
+\end{proof}
+
+
+\begin{defn}\ollabel{defn:restrict}
+  $\mModel{M}$ ఒక సంబంధ నమూనా,
+  $w \in W$ అనుకుందాం. $w$కు సంబంధించి
+  $\mModel{M}$ యొక్క \emph{పరిమితి}
+  $\mModel{M}_w=\tuple{W_w, R_w, V_w}$ ఇలా ఉంటుంది:
+  \begin{align*}
+    W_w & = \Setabs{u \in W}{Rwu},\\
+    R_w  & = R \cap (W_w)^2, \text{ మరియు}\\
+    V_w(p) & = V(p) \cap W_w.
+  \end{align*}
+\end{defn}
+
+\begin{prop}\ollabel{prop:restrict}
+  $\mSat{M}{!A}[w]$ అయితే, అప్పుడే $\mSat{M_w}{!A}$.
+\end{prop}
+
+\begin{prob}
+  \olref[int][sem][sem]{prop:restrict}ను నిరూపించండి.
+\end{prob}
+
+\begin{prop}
+  $\mSat{M}{\Gamma}$ అయ్యే ప్రతి నమూనా~$\mModel{M}$లో
+  $\mSat{M}{!A}$ అని అనుకుందాం. అప్పుడు
+  $\Gamma \Entails !A$.
+\end{prop}
+
+\begin{proof}
+  $\mSat{M}{\Gamma}[w]$ అనుకుందాం. ప్రతి
+  $!B \in \Gamma$కు \olref{prop:restrict}ను
+  వర్తింపజేస్తే $\mSat{M_w}{\Gamma}$ వస్తుంది.
+  పరికల్పన ప్రకారం $\mSat{M_w}{!A}$.
+  మళ్లీ \olref{prop:restrict} ద్వారా
+  $\mSat{M}{!A}[w]$ వస్తుంది.
+\end{proof}
+
+\end{document}

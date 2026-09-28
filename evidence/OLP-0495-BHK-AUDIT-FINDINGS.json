@@ -1,0 +1,25 @@
+{
+  "schema": "openlogic-te-source-audit-findings/1",
+  "audit_id": "OLTEINTBHK-20260927",
+  "unit_id": "OLP-0495",
+  "source_path": "content/intuitionistic-logic/introduction/bhk-interpretation.tex",
+  "source_sha256": "4a23702a2d57e916ab50e764e61b76bb4e91d6287655d2db737ac71023176794",
+  "findings": [
+    {
+      "finding_id": "OLTEINTBHK-001",
+      "source_locator": "bhk-interpretation.tex line 95; same paragraph's implication and next construction clauses",
+      "classification": "missing_meta_formula_marker_in_currying_output",
+      "source_issue": "The output of a construction for implication into !C is called a construction of C at one occurrence.",
+      "minimal_treatment": "Use !C at that occurrence and disclose beside it.",
+      "expected_core_math_delta": {"source_only": ["$C$"], "target_only": ["$!C$"]}
+    },
+    {
+      "finding_id": "OLTEINTBHK-002",
+      "source_locator": "bhk-interpretation.tex line 136; first and second disjunction injections",
+      "classification": "wrong_component_in_first_tagged_disjunction_pair",
+      "source_issue": "The first injection h_1 receives M_1 but is said to output the tagged pair with M_2, the input for h_2.",
+      "minimal_treatment": "Pair tag 1 with its own input M_1 and disclose beside it.",
+      "expected_core_math_delta": {"source_only": ["$\\tuple{1,M_2}$"], "target_only": ["$\\tuple{1,M_1}$"]}
+    }
+  ]
+}

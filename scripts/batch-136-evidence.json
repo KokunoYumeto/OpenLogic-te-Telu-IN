@@ -1,0 +1,26 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "136",
+  "unit_id": "OLP-0487",
+  "unit_order": 487,
+  "source_path": "content/applied-modal-logic/epistemic-logic/properties-accessibility.tex",
+  "blocks": 13,
+  "linguistic_blocks": [5, 6, 7, 8, 9, 10, 11, 12],
+  "previous_segments": 7333,
+  "previous_terms": 176,
+  "expected_corrections": 454,
+  "canon_default": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+  "corrections_by_block": {},
+  "consultation_phase": "స్థిర ప్రాప్యత-జ్ఞానసూత్ర మూలం, తెలుగు లక్ష్యం, పూర్వ మోడల్ సంబంధ ధర్మ పదాలు, స్థానిక సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తి పేజీలను ఎదురెదురు చూశాం; K/T/4/5, స్వావర్తన/సంక్రామక/యూక్లిడియన్ వరుసలు, విక్టోరియా ఉదాహరణ, రెండు స్వపరిశీలనలు తనిఖీ చేశాం.",
+  "evidence_limit": "TE-P008/010/018/024 సాధారణ సమితి/సంబంధ/తర్క/వ్యుత్పత్తికి మాత్రమే ప్రత్యక్ష సాక్ష్యాలు. జ్ఞానసూత్రాల తాత్విక అంగీకారానికి లేదా ప్రత్యుదాహరణలకు అవి ప్రత్యక్ష నిర్ధారణలు కావు.",
+  "term_decision": {
+    "term_id": "TE-T177",
+    "source_term": "closure / veridicality / positive and negative introspection / Euclidean accessibility",
+    "telugu": "మూసుకుపోవడం / యథార్థసత్యత్వం / సకారాత్మక, నకారాత్మక స్వపరిశీలన / యూక్లిడియన్ ప్రాప్యత",
+    "status": "native_general_relation_logic_derivation_register_attested_epistemic_principles_source_controlled",
+    "passages": ["TE-P008", "TE-P010", "TE-P018", "TE-P024"],
+    "basis": "K closure, T తెలిసినది సత్యం, 4 తెలిసినదని తెలుసు, 5 తెలియదని తెలుసు అనే పట్టిక, చర్చను వేరువేరుగా నిలిపాం. Euclideanకు పూర్వ మోడల్ భాగంలోని యూక్లిడియన్ రూపం కొనసాగించాం.",
+    "uncertainty": "స్థానిక సాక్షులు ఈ జ్ఞానసంబంధ సూత్రాల తెలుగు శాఖా పదాలకు ప్రత్యక్ష సాక్ష్యాలు కావు. తాత్విక వివాద స్థాయి మూల వాదనగానే ఉంచాం; స్వతంత్ర నిపుణ సమీక్ష, TeX దృశ్య తనిఖీ లేవు.",
+    "borrowing": "K/T/4/5, S5, and the source formulas remain controlled notation; Victoria/Vancouver Island proper names remain transcribed."
+  }
+}

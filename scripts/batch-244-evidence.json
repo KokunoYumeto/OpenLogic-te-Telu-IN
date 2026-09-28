@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-te-single-unit-evidence-config/1",
+  "batch": "244",
+  "unit_id": "OLP-0595",
+  "unit_order": 595,
+  "source_path": "content/set-theory/choice/hartogs.tex",
+  "blocks": 12,
+  "linguistic_blocks": [3,4,5,6,7,8,9,10,11],
+  "corrections_by_block": {"6": ["OLTESTCHOICEHART-001"], "7": ["OLTESTCHOICEHART-002"], "10": ["OLTESTCHOICEHART-003"], "11": ["OLTESTCHOICEHART-004"]},
+  "previous_segments": 8769,
+  "previous_terms": 284,
+  "expected_corrections": 512,
+  "canon_default": ["TE-P004", "TE-P005", "TE-P008", "TE-P018"],
+  "consultation_phase": "హార్టోగ్స్ లెమ్మా, పోల్చదగినతన స్థిర మూలం, తెలుగు లక్ష్యం, పూర్వ సుక్రమ/క్రమరక/ఇంజెక్షన్ పదాలు, స్థానిక సమితి/క్రమ సాక్షులు పోల్చాం; ZFలో అధిగమించే క్రమసంఖ్య, సుక్రమపరచడం-కార్డినల్ పోలిక సమానత్వం, ఎంపిక లేకపోతే అసమాన పోలిక తనిఖీ చేశాం.",
+  "evidence_limit": "హార్టోగ్స్ ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల లెమ్మా నియంత్రించింది. మూల నాలుగు రక/సూచిక/సూత్ర లోపాలు OLTESTCHOICEHART-001--004గా ప్రకటించబడ్డాయి; పూర్తి నిరూపణను స్వతంత్రంగా పునర్నిర్మించలేదు; సమగ్ర TeX దృశ్య తనిఖీ లేదు.",
+  "term_decision": {"term_id":"TE-T285","source_term":"Hartogs' Lemma; comparability of cardinalities","telugu":"హార్టోగ్స్ లెమ్మా; కార్డినాలిటీల పోల్చదగినతనం","status":"ZF_hartogs_comparability_equivalence_source_controlled_four_disclosed_repairs","passages":["TE-P004","TE-P005","TE-P008","TE-P018"],"basis":"ZFలో అధిగమించే క్రమసంఖ్య నిర్మాణం, సుక్రమపరచడం-ప్రతి జత పోల్చదగినతనం సమానత్వం, ఎంపిక లేకపోతే అసమాన పరిమాణాల ఉదాహరణ నిలిచాయి.","uncertainty":"పోల్చదగినతనం ప్రత్యేక పదానికి ప్రత్యక్ష సాక్షి లేదు; మూల రెండు-దిశల సిద్ధాంతం నియంత్రించింది.","borrowing":"Hartogs is retained as a named lemma; ordinal and cardinal macros stay source-controlled."}
+}

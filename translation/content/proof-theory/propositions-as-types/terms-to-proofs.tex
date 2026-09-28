@@ -1,0 +1,75 @@
+% part: intuitionistic-logic
+% chapter: propositions-as-types
+% section: terms-to-proofs
+
+\documentclass[../../../include/open-logic-section]{subfiles}
+
+\begin{document}
+
+\olfileid{int}{pty}{tp}
+
+\olsection{నిరూపణ పదాల నుంచి \tetoken{నిగమనాలను}{\usetoken{P}{derivation}} పునర్నిర్మించడం}
+
+ఇప్పుడు మరో దిశను పరిగణిద్దాం: నిరూపణ పదం~$N$ను \Log{N2i}లో \tetoken{ఒక నిరూపణగా}{!!a{proof}} తిరిగి మార్చడం. సాధారణంగా, ఇచ్చిన పదంలో స్వేచ్ఛగా వచ్చే ప్రతి చరం~$x$కు $x : !A$ జత ఉన్న సందర్భానికి సంబంధించి మాత్రమే ఇది సాధ్యం. కానీ స్వేచ్ఛా చరాలు లేని ఉదాహరణతో మొదలుపెడదాం:
+\[
+\lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}]
+\]
+దీని రూపం $\lambd[\typeof{x}{!A \land !B}][N_1]$. \Log{tN2i}లో ఈ రూపం పదాన్ని ఉత్పత్తి చేసే ఏకైక నియమం \Intro{\lif} కనుక, $N$ సంకేతీకరించే \tetoken{నిరూపణ}{!!{proof}} తప్పక \Intro{\lif}తో ముగియాలి. అంటే దాని ముగింపు:
+\[
+  \Axiom$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif !C$
+  \DisplayProof
+  \]
+ఇంకా $!C$ ఏమిటో తెలియదు; కానీ పూర్వపక్షం $!A \land !B$ అని, ఆధార సందర్భంలో $x:!A \land !B$ ఉండాలని తెలుసు.
+
+ఆధారానికి సంబంధించిన నిరూపణ పదం ఇప్పటికే నిర్ణయించబడింది: $\pair{\proj{2}{x}}{\proj{1}{x}}$. \emph{అది} సంకేతీకరించే \tetoken{నిరూపణ}{!!{proof}} తప్పక \Intro{\land}తో ముగియాలి. $!C$ ఏమిటో ఇంకా తెలియకపోయినా, అది \Intro{\land} నిర్ధారణ కనుక సంయోగం కావాలి; అంటే $!C \ident (!C_1 \land !C_2)$. పునర్నిర్మాణాన్ని కొనసాగిద్దాం:
+\[
+  \Axiom$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+నిరూపణ పదం $\pi_2(x)$ ప్రకారం ఎడమపై సీక్వెంట్ \Elim{\land}[2]తో వచ్చింది; కాబట్టి ఆధారం రూపం $!D
+\land !C_1$. కుడివైపున $!C_2$కు తీసుకువచ్చే నియమం \Elim{\land}[1], దాని ఆధారం రూపం $!C_2 \land !E$ అని నిర్ణయించవచ్చు:
+\[
+  \Axiom$x : !A\land !B \fCenter x: !D\land !C_1$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !C_1$
+  \Axiom$x : !A\land !B \fCenter x: !C_2\land !E$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !C_1 \land !C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!C_1 \land !C_2)$
+  \DisplayProof
+  \]
+ఇప్పుడు పై సీక్వెంట్ల నిరూపణ పదాలు చరాలు కనుక అవి అక్షయాలు కావాలి. ఇది $!C_1$, $!C_2$, $!D$, $!E$లను నిర్ణయిస్తుంది: $!D \ident !A$, $!C_1 \ident !B$ కావాలి; లేకపోతే ఎడమ సీక్వెంట్ అక్షయం కాదు. అలాగే $!C_2 \ident !A$, $!E \ident !B$ కావాలి; లేకపోతే కుడి సీక్వెంట్ అక్షయం కాదు. నిరూపణను పూర్తిగా పునర్నిర్మించాం:
+\[
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{2}{x} : !B$
+  \Axiom$x : !A\land !B \fCenter x: !A\land !B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : !A\land !B \fCenter \proj{1}{x} : !A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : !A\land !B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} : 
+    !B \land !A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{!A \land
+  !B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (!A \land !B) \lif (!B \land !A)$
+  \DisplayProof
+  \]
+
+\end{document}

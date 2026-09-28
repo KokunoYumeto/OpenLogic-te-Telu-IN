@@ -1,0 +1,9 @@
+# OLP-0510 — source-error audit
+
+Frozen source: upstream/content/intuitionistic-logic/soundness-completeness/decidability.tex, SHA-256 336d8bc46091819f445eb72e7492c262d01511a56e5771d8e1c424de3ef1d3e5. The source is unchanged.
+
+**OLTEINTDEC-001 (source lines 23–42):** The source identifies worlds only by which propositional variables in P are true, orders those types by inclusion, and claims that this preserves truth of every formula using P. That claim is false for implication. For a concrete counterexample, let w and v be incomparable reflexive worlds, p true only at v, and q false everywhere. Then p→q is true at w, but the atomic type ∅ of w is below the atomic type {p} of v in the proposed finite model, where p→q is false at ∅. The source's induction exercise therefore cannot be completed as stated.
+
+The Telugu repair uses the finite set S of all subformulas of the target formula, defines [w] as the formulas of S true at w, and restricts the induction claim and exercise to formulas in S. Inclusion of these truth types is a partial order, and valuation by membership remains monotone. For the implication induction step, forward preservation follows because the implication itself belongs to S and is inherited along type inclusion; reverse preservation uses an original accessible witness and monotonicity of truth. Negation has the analogous future-world argument. The target formula belongs to S, so its counterexample is retained in a finite model. The correction is disclosed beside the construction.
+
+The independent [University of Hamburg lecture notes on intuitionistic logic](https://www.math.uni-hamburg.de/home/khomskii/intuitionistic_old_2008/PP-2006-25.text.pdf) state that the finite-model argument uses a finite adequate set closed under subformulas (p. 17). They support the repair's finite-subformula premise, not every detail of this local proof. This is a same-agent mathematical audit, not TeX-build confirmation.
