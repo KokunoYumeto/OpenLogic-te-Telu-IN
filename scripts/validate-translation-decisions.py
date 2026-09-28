@@ -6,8 +6,10 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import html
 import importlib.metadata
 import json
+import re
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
@@ -57,6 +59,14 @@ def decision_section(view: str, decision_id: str) -> str:
     if view.count(marker) != 1:
         raise ValueError(f"Review view lacks a unique section for {decision_id}")
     return view.split(marker, 1)[1].split("\n## ", 1)[0]
+
+
+def review_sections(view: str) -> list[tuple[str, str]]:
+    headings = list(re.finditer(r"^## (te-Telu-IN-[^\s]+) — .+$", view, re.MULTILINE))
+    return [
+        (match.group(1), view[match.end():headings[index + 1].start() if index + 1 < len(headings) else len(view)].strip())
+        for index, match in enumerate(headings)
+    ]
 
 
 def main() -> None:
@@ -263,7 +273,75 @@ def main() -> None:
                                          or "Leaving reader-visible explanatory prose untranslated" in alternative_line
                                          or "Translate the defective source wording" in alternative_line):
             raise ValueError(f"Review alternatives retain untranslated explanation: {decision['decision_id']}")
+    review_dir = repo / "docs" / "review"
+    full_sections = review_sections(full_text)
+    priority_sections = review_sections(priority_text)
+    priority_order = [item["decision_id"] for item in decisions if item["review_priority"] in {"urgent", "high"}]
+    if [identifier for identifier, _ in full_sections] != [item["decision_id"] for item in decisions]:
+        raise ValueError("Full Markdown order differs from the canonical register")
+    if [identifier for identifier, _ in priority_sections] != priority_order:
+        raise ValueError("Priority Markdown order differs from the canonical register")
+    full_pages = [review_dir / f"full-{index:02d}.html" for index in range(1, (len(decisions) + 49) // 50 + 1)]
+    priority_pages = [review_dir / f"priority-{index:02d}.html" for index in range(1, (len(priority_order) + 34) // 35 + 1)]
+    expected_html = {"index.html", "priority.html"} | {item.name for item in full_pages + priority_pages}
+    if {item.name for item in review_dir.glob("*.html")} != expected_html:
+        raise ValueError("Review HTML page inventory differs from bounded canonical coverage")
+    rendered_full_ids: list[str] = []
+    rendered_occurrences: list[str] = []
+    rendered_priority_ids: list[str] = []
+    for kind, pages, sections, size in (("full", full_pages, full_sections, 50),
+                                         ("priority", priority_pages, priority_sections, 35)):
+        for page_index, page in enumerate(pages):
+            page_bytes = page.read_bytes()
+            if len(page_bytes) > 800_000:
+                raise ValueError(f"Browser review page exceeds bounded size: {page}")
+            page_text = page_bytes.decode("utf-8")
+            expected_sections = sections[page_index * size:(page_index + 1) * size]
+            rendered_ids = re.findall(r'<article id="([^"]+)" data-decision-id="\1">', page_text)
+            if rendered_ids != [identifier for identifier, _ in expected_sections]:
+                raise ValueError(f"Rendered decision IDs differ from Markdown: {page}")
+            if kind == "full":
+                rendered_full_ids.extend(rendered_ids)
+                rendered_occurrences.extend(re.findall(r'data-occurrence-id="([^"]+)"', page_text))
+            else:
+                rendered_priority_ids.extend(rendered_ids)
+            for identifier, section in expected_sections:
+                if f'href="#{identifier}"' not in page_text:
+                    raise ValueError(f"Decision not reachable from local page contents: {identifier}")
+                for source_line in section.splitlines():
+                    if not source_line.strip():
+                        continue
+                    displayed_line = (source_line[4:] if source_line.startswith("  - ")
+                                      else source_line[2:] if source_line.startswith(("- ", "> "))
+                                      else source_line)
+                    if html.escape(displayed_line, quote=False) not in page_text:
+                        raise ValueError(f"Markdown line missing from browser view: {identifier}: {displayed_line[:70]}")
+                if kind == "priority":
+                    full_index = next(index for index, item in enumerate(decisions) if item["decision_id"] == identifier)
+                    full_link = f'full-{full_index // 50 + 1:02d}.html#{identifier}'
+                    if f'href="{full_link}"' not in page_text:
+                        raise ValueError(f"Priority item lacks full-register link: {identifier}")
+    expected_occurrences = [occurrence["occurrence_id"] for decision in decisions for occurrence in decision["occurrences"]]
+    if rendered_full_ids != [item["decision_id"] for item in decisions] or rendered_occurrences != expected_occurrences:
+        raise ValueError("HTML full review omits or reorders a decision or occurrence")
+    if rendered_priority_ids != priority_order:
+        raise ValueError("HTML priority review omits or reorders a high-priority decision")
+    review_index = (review_dir / "index.html").read_text(encoding="utf-8")
+    priority_index = (review_dir / "priority.html").read_text(encoding="utf-8")
+    for page in full_pages:
+        if f'href="{page.name}"' not in review_index:
+            raise ValueError(f"Main web index omits {page.name}")
+    for page in priority_pages:
+        if f'href="{page.name}"' not in priority_index:
+            raise ValueError(f"Priority web index omits {page.name}")
+    for artifact_name in ("TRANSLATION_DECISIONS_FULL.md", "PRIORITY_REVIEW.md", "DECISIONS.json", "DECISION_OCCURRENCES.csv"):
+        if f"/evidence/{artifact_name}" not in review_index:
+            raise ValueError(f"Exact source download omitted from web index: {artifact_name}")
     start_here = (data_dir / "START_HERE.md").read_text(encoding="utf-8")
+    if ("https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/" not in start_here
+            or "review/" not in (repo / "docs" / "index.html").read_text(encoding="utf-8")
+            or "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/" not in (repo / "README.md").read_text(encoding="utf-8")):
+        raise ValueError("Public Telugu entry points do not route readers to bounded web review")
     if ("722/722" not in start_here or "నిర్ణయాలు" not in start_here
             or "తొలి 80 పదజాల నిర్ణయాల నిర్దిష్ట ఆధార-పరిమితులు" not in start_here
             or "సాక్ష్యపు పూర్తి సూక్ష్మ పరిమితులు ఆంగ్ల సమాంతర నమోదులో ఉన్నాయి" in start_here
@@ -276,6 +354,8 @@ def main() -> None:
             raise ValueError(f"Conservative confidence reconciliation regressed: {identifier}")
 
     artifacts = [artifact(data_dir / name, f"evidence/{name}") for name in SURFACES]
+    review_artifacts = [review_dir / "index.html", review_dir / "priority.html", review_dir / "review.css", *full_pages, *priority_pages]
+    artifacts.extend(artifact(item, item.relative_to(repo).as_posix()) for item in review_artifacts)
     qa = {
         "schema": "openlogic-translation-decision-qa/1",
         "status": "pass",
@@ -306,6 +386,8 @@ def main() -> None:
             "distinct_source_and_target_files_checked": len(checked_files),
             "public_evidence_file_references_checked": evidence_file_refs,
             "reader_locator_status": reader_status_counts,
+            "browser_review_full_pages": len(full_pages),
+            "browser_review_priority_pages": len(priority_pages),
         },
         "checks": {
             "canonical_schema_bytes_exact": True,
@@ -333,6 +415,10 @@ def main() -> None:
             "english_parallel_views_preserved": True,
             "primary_confidence_reconciled": True,
             "occurrence_csv_reconciled": True,
+            "browser_review_bounded_pages": True,
+            "browser_review_exact_decisions_and_occurrences": True,
+            "browser_review_markdown_lines_preserved": True,
+            "browser_review_entry_links_and_downloads": True,
         },
         "artifacts": artifacts,
     }

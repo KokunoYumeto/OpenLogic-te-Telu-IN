@@ -31,7 +31,8 @@ HTML ZIPను విప్పి `index.html` తెరిస్తే ఇం�
 [EPUB తనిఖీ](evidence/FULL-EPUB-QA.json),
 [PDF నిర్మాణ తనిఖీ](evidence/FULL-PDF-STRUCTURAL-QA.json),
 [నమూనా పుటల దృశ్య తనిఖీ](evidence/FULL-PDF-VISUAL-QA.json) కూడా
-విడుదలతో ఉన్నాయి. [తెలుగు సమీక్షా మార్గదర్శి](evidence/START_HERE.md),
+విడుదలతో ఉన్నాయి. [బ్రౌజరులో చదవదగిన తెలుగు సమీక్ష](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/)
+మరియు [తెలుగు సమీక్షా మార్గదర్శి](evidence/START_HERE.md),
 [పదజాలం, మూల దిద్దుబాట్ల యంత్ర-పఠన నిర్ణయాలు](evidence/DECISIONS.json)
 మరియు [తెలుగు మూలాధార సూచీ](evidence/CANON_SOURCES.jsonl) పరిశీలనకు
 అందుబాటులో ఉన్నాయి. మూలంలో సందేహాస్పదమైన చోట్ల ప్రకటిత తెలుగు

@@ -4,8 +4,10 @@ Status: **complete reader coverage — 722 of 722 source units translated**. The
 
 Use these views:
 
-- [Full readable register](TRANSLATION_DECISIONS_FULL.md)
-- [Priority review](PRIORITY_REVIEW.md)
+- [Browser-readable Telugu review](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/)
+- [Browser-readable priority review](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/priority.html)
+- [Exact full Markdown register](TRANSLATION_DECISIONS_FULL.md)
+- [Exact priority Markdown](PRIORITY_REVIEW.md)
 - [Per-occurrence CSV](DECISION_OCCURRENCES.csv)
 - [Canonical machine register](DECISIONS.json)
 - [Canonical JSON Schema](translation-decision.schema.json)

@@ -29,7 +29,9 @@
     "public_evidence_file_references_checked": 5034,
     "reader_locator_status": {
       "available": 2446
-    }
+    },
+    "browser_review_full_pages": 23,
+    "browser_review_priority_pages": 2
   },
   "checks": {
     "canonical_schema_bytes_exact": true,
@@ -52,23 +54,27 @@
     "telugu_review_questions_present": true,
     "english_parallel_views_preserved": true,
     "primary_confidence_reconciled": true,
-    "occurrence_csv_reconciled": true
+    "occurrence_csv_reconciled": true,
+    "browser_review_bounded_pages": true,
+    "browser_review_exact_decisions_and_occurrences": true,
+    "browser_review_markdown_lines_preserved": true,
+    "browser_review_entry_links_and_downloads": true
   },
   "artifacts": [
     {
       "path": "evidence/START_HERE.md",
-      "bytes": 6430,
-      "sha256": "41e19cf32061ea1a227757c0fef9bf5356b71a25dc0ae6f221bc92d291d38bd3"
+      "bytes": 6937,
+      "sha256": "9b138de1b29d475b63813e1a3cc0491d4d7bbd099aa77ab983136f810f9f8306"
     },
     {
       "path": "evidence/START_HERE.te.md",
-      "bytes": 6430,
-      "sha256": "41e19cf32061ea1a227757c0fef9bf5356b71a25dc0ae6f221bc92d291d38bd3"
+      "bytes": 6937,
+      "sha256": "9b138de1b29d475b63813e1a3cc0491d4d7bbd099aa77ab983136f810f9f8306"
     },
     {
       "path": "evidence/START_HERE.en.md",
-      "bytes": 2366,
-      "sha256": "ae1bd9d9739e1643183a82055493238813a320cf759ee6d07314d56a0897a73b"
+      "bytes": 2587,
+      "sha256": "5021b5595bc79de0844684d458f2782085cef2678c47005ca6285c66fe6f60ee"
     },
     {
       "path": "evidence/TRANSLATION_DECISIONS_FULL.md",
@@ -98,7 +104,7 @@
     {
       "path": "evidence/DECISIONS.json",
       "bytes": 21088231,
-      "sha256": "e15d806e700645cf20f9208d74a3f594f4cdca828b3ce8a9805fbfa3856dcba8"
+      "sha256": "ae34ad5863a3564365e047f6d8d1afec046c9a128e07d86302056b31a1dc368e"
     },
     {
       "path": "evidence/TERM_RATIONALES_TE.json",
@@ -119,6 +125,146 @@
       "path": "evidence/translation-decision.schema.json",
       "bytes": 10787,
       "sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
+    },
+    {
+      "path": "docs/review/index.html",
+      "bytes": 6170,
+      "sha256": "0e9e60f763c30832f356b449d3f90f91abb806e385583e91a2d9498e9579dcbf"
+    },
+    {
+      "path": "docs/review/priority.html",
+      "bytes": 19649,
+      "sha256": "155735dcc2a85dd7da5fbe8573e81d1ef40ffd7c49e006c3db5cd188fa68589b"
+    },
+    {
+      "path": "docs/review/review.css",
+      "bytes": 2091,
+      "sha256": "b27940f95e39e7d28a5d03edf05b2bdbe8393215dca6fecf303b92e729fecc73"
+    },
+    {
+      "path": "docs/review/full-01.html",
+      "bytes": 429262,
+      "sha256": "43d41bbf8fd4d7dbc062b3a2a266ef6afa70b1e8db3392739c5a5db5779cc7fc"
+    },
+    {
+      "path": "docs/review/full-02.html",
+      "bytes": 706574,
+      "sha256": "83b98247d556ed20ebc88427e8605257a9138d5203a87220aef9287b90ffeed3"
+    },
+    {
+      "path": "docs/review/full-03.html",
+      "bytes": 660781,
+      "sha256": "b10b03cf9e9ca8c7ec57d481fcc61142a1ab4805b15ec0f1e2ff3818b18d582c"
+    },
+    {
+      "path": "docs/review/full-04.html",
+      "bytes": 486125,
+      "sha256": "337175a4c70762a6c4ff07f412c94ab720546f71ce379e48558919e06b94d0d1"
+    },
+    {
+      "path": "docs/review/full-05.html",
+      "bytes": 400272,
+      "sha256": "1bdb0182d9d0cc2d789efcc071e790837b9986b4db3d529ddf40a649d5b5053e"
+    },
+    {
+      "path": "docs/review/full-06.html",
+      "bytes": 367021,
+      "sha256": "b7dc30318127be6e5a732a767cc72774f036c4dccaadc3687ac8cde68d060114"
+    },
+    {
+      "path": "docs/review/full-07.html",
+      "bytes": 390003,
+      "sha256": "3385eba39293fffdf8d40e98f75bc56d6c5779bb85039f16221f59a28313ec42"
+    },
+    {
+      "path": "docs/review/full-08.html",
+      "bytes": 406172,
+      "sha256": "860533344925fe28aa4a283a2bf5fdb0adb9a6e9671b009af32bcdc47fe17c0f"
+    },
+    {
+      "path": "docs/review/full-09.html",
+      "bytes": 302577,
+      "sha256": "3738d2f401d359cede39a54094e63c3cd729824851079ef502c7f53d70858733"
+    },
+    {
+      "path": "docs/review/full-10.html",
+      "bytes": 265813,
+      "sha256": "9616cc0010d8f0fae14b4d2a823e47a8fa009696d477cfdd93f7835cc8f90e9c"
+    },
+    {
+      "path": "docs/review/full-11.html",
+      "bytes": 256662,
+      "sha256": "5bf01e46fa06b745089c348ef071dd1dc5e9ec377b6fc40b5141a40b06d19ee7"
+    },
+    {
+      "path": "docs/review/full-12.html",
+      "bytes": 266694,
+      "sha256": "10690e801591cecf7c6223fc286d06f6a1973338c329270fdcebb7b69d66728a"
+    },
+    {
+      "path": "docs/review/full-13.html",
+      "bytes": 267421,
+      "sha256": "20cce3d6b6ccbac1c14576a9ad3e1d43569d54edd0b3cee6a633b468f018bedd"
+    },
+    {
+      "path": "docs/review/full-14.html",
+      "bytes": 256878,
+      "sha256": "d3416f75fd25563e212f294f7cb6e726340740e6ed8668b127d18d72924dfb4d"
+    },
+    {
+      "path": "docs/review/full-15.html",
+      "bytes": 259874,
+      "sha256": "6f2e880d4da2ba4b2fffcc7586c69201bc3e340ff393740b025839dd4c5f381d"
+    },
+    {
+      "path": "docs/review/full-16.html",
+      "bytes": 259921,
+      "sha256": "f35d95709afcd91107510f9ea579d22f6912792305936d90bd5197d4278bb04e"
+    },
+    {
+      "path": "docs/review/full-17.html",
+      "bytes": 258006,
+      "sha256": "a7891a0f2b8ca4ec39e8bcc27794dcd54458710e8dab190dfa4e90543c7a679d"
+    },
+    {
+      "path": "docs/review/full-18.html",
+      "bytes": 253169,
+      "sha256": "5c5d43d4ec6a259b076b917898fe8f2862a0211b1be333244a3656216349536d"
+    },
+    {
+      "path": "docs/review/full-19.html",
+      "bytes": 252603,
+      "sha256": "efa8de0641b7c60b071167011234c14e9175879c8c8aa44c9460b19445787a3b"
+    },
+    {
+      "path": "docs/review/full-20.html",
+      "bytes": 251708,
+      "sha256": "9f70b83fe676146ef9f588cd3d72dae4f1b436e0e4006cc678e1aecf54885c04"
+    },
+    {
+      "path": "docs/review/full-21.html",
+      "bytes": 248969,
+      "sha256": "0bd5bb5b7c0ea1e176cfa95cf793a52569972f00b03c6478630b317027447e74"
+    },
+    {
+      "path": "docs/review/full-22.html",
+      "bytes": 252606,
+      "sha256": "75840cd9f396372a99485065aeebcda0c7b4fe76939c30859e840a0382cd0cb6"
+    },
+    {
+      "path": "docs/review/full-23.html",
+      "bytes": 95042,
+      "sha256": "0803c111435bd4aaf4edb48915b36397fff187666ac5a50ca956c5e0ee1c47ff"
+    },
+    {
+      "path": "docs/review/priority-01.html",
+      "bytes": 265414,
+      "sha256": "af9d196dcdeffc5ab925fcd219fda01429881daff691ea50c91542e7fa650a26"
+    },
+    {
+      "path": "docs/review/priority-02.html",
+      "bytes": 349312,
+      "sha256": "ab0bee685861d4ee9c33fc9838db4f161720f8bd4449339cc2568df7609b43c9"
     }
   ]
 }
