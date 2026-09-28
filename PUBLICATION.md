@@ -1,6 +1,6 @@
 # Verified publication checkpoints
 
-## Corrected complete v1.0.1 GitHub release — 2026-09-28
+## Corrected complete v1.0.1 GitHub and Zenodo release — 2026-09-28
 
 The [corrected complete 722-unit Telugu release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
 is public. Its tag resolves to source commit
@@ -15,11 +15,17 @@ the short English connectives and visible TeX spacing marks fixed after the
 first full release. Use v1.0.1 for reading and citation; v1.0.0 remains
 historical.
 
-The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937)
-still has no complete-edition version. Its latest public record remains the
-partial v0.4.0 edition; do not cite that DOI as the corrected full edition
-until a new version in the same lineage has been published and verified,
-including a live preview of the full PDF.
+The corrected edition is also published as
+[Zenodo version DOI 10.5281/zenodo.23018659](https://doi.org/10.5281/zenodo.23018659)
+in the existing [concept DOI lineage](https://doi.org/10.5281/zenodo.22307937).
+The new record preserves all 20 historical files and adds the same eight
+v1.0.1 assets. An unauthenticated readback downloaded and SHA-256-verified
+every new file, checked the inherited file identities, open license, metadata,
+DOI lineage and current concept resolution, and confirmed that the live
+preview is the complete PDF; see the
+[Zenodo readback receipt](evidence/ZENODO-FULL-V101-READBACK.json). Cite the
+new version DOI for this corrected full edition. The inherited partial files
+remain historical and are not substitutes for the complete reader.
 
 ## Complete v1.0.0 GitHub release — 2026-09-28
 
@@ -36,10 +42,9 @@ machine-assisted review boundary and source limitations.
 This historical first full edition retains the residual short English and
 reader-spacing issues documented in the v1.0.1 correction record.
 
-The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937)
-currently still identifies the historical partial-edition lineage; do not
-describe its latest version as the complete 722-unit reader until that version
-has been published and anonymously verified.
+This first full GitHub release was not separately mirrored to Zenodo. The
+same [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22307937) now resolves
+to the corrected v1.0.1 full edition described above.
 
 ## Historical v0.4.0 cumulative mirror — 2026-09-26
 

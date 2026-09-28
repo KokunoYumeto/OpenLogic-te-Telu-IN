@@ -1,0 +1,63 @@
+{
+  "schema": "openlogic-te-zenodo-full-release-readback/1",
+  "status": "COMPLETE_PASS",
+  "record_id": 23018659,
+  "doi": "10.5281/zenodo.23018659",
+  "conceptdoi": "10.5281/zenodo.22307937",
+  "prior_version_doi": "10.5281/zenodo.22726674",
+  "title": "ఓపెన్ లాజిక్ తెలుగు (te-Telu-IN): పూర్తి 722-విభాగాల పాఠక సంచిక",
+  "version": "1.0.1",
+  "access_right": "open",
+  "inherited_files_preserved": 20,
+  "new_assets_anonymously_verified": [
+    {
+      "filename": "00-openlogic-te-Telu-IN-full-OLP0722-v1.0.1-full-olp0722.pdf",
+      "bytes": 86689372,
+      "sha256": "a89900a46b7567eb73132b146dabadea0402a9ed4aa09859db4f0287819683c5",
+      "role": "complete_tagged_searchable_pdf"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-QA-OLP0722-v1.0.1-full-olp0722.zip",
+      "bytes": 970791,
+      "sha256": "e6fbbef57c07fcb47e937103f800f53ce68d6e5389272032c9f4e2cffc252e30",
+      "role": "release_qa_receipts_and_review_disclosures"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-editable-TeX-OLP0722-v1.0.1-full-olp0722.zip",
+      "bytes": 1907473,
+      "sha256": "1404151fb7d89406d27b45626bbb1443dfef2d107f7b8d0e633fd8ffb14aacb0",
+      "role": "all_722_editable_telugu_tex_units"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-HTML-OLP0722-v1.0.1-full-olp0722.zip",
+      "bytes": 5564196,
+      "sha256": "934d216e4ed56dfca7562cebf110d800619d0b1ca7c8398a9d5f977c2b0edcfc",
+      "role": "complete_offline_html_reader"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-OLP0722-v1.0.1-full-olp0722.epub",
+      "bytes": 4139553,
+      "sha256": "d6d52155f7bc9e08671252c97d7189c12b6af8633a88c543b2b09aa6a7623d45",
+      "role": "complete_reflowable_mathml_epub"
+    },
+    {
+      "filename": "openlogic-te-Telu-IN-full-source-OLP0722-v1.0.1-full-olp0722.zip",
+      "bytes": 74576212,
+      "sha256": "ebbfe4a24405f16fc3e3f051ee1f94d5b0ff511471c177887d2ac736383880ce",
+      "role": "committed_full_source_snapshot"
+    },
+    {
+      "filename": "release-manifest-v1.0.1-full-olp0722.json",
+      "bytes": 4016,
+      "sha256": "1b5c601007bb7191bb948279105acc30c798052b4f7760d82945a4027b99e565",
+      "role": "release_manifest"
+    },
+    {
+      "filename": "SHA256SUMS-v1.0.1-full-olp0722.txt",
+      "bytes": 874,
+      "sha256": "39da511a12949602551924ee5374a9d38cb4422a9f847162eb430a5d82c6d7b2",
+      "role": "sha256_checksums"
+    }
+  ],
+  "live_preview_filename": "00-openlogic-te-Telu-IN-full-OLP0722-v1.0.1-full-olp0722.pdf"
+}

@@ -10,6 +10,8 @@
 [v1.0.1 సరిచేసిన పూర్తి విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
 లో 722/722 విభాగాలను కలిపిన, వెతకగల PDF, రీఫ్లో EPUB, ఆఫ్‌లైన్
 సెమాంటిక్ HTML, సంపాదించగల తెలుగు TeX, పూర్తి మూలసంగ్రహం ఉన్నాయి.
+[Zenodo పూర్తి సంచిక DOI](https://doi.org/10.5281/zenodo.23018659)లోనూ
+ఇదే విడుదల అందుబాటులో ఉంది; అక్కడ పూర్తి PDF ప్రత్యక్ష నమూనా.
 HTML ZIPను విప్పి `index.html` తెరిస్తే ఇంటర్నెట్ లేకుండానే చదవవచ్చు.
 గణితం MathMLలో, చిత్రాలు స్థానిక SVGలలో ఉన్నాయి; పాఠక రూపానికి
 బాహ్య స్క్రిప్టు సేవ అవసరం లేదు.
@@ -41,13 +43,13 @@ v1.0.1నే వాడండి; పాత సంచిక చారిత్ర
 [v0.4.0 సంచిత విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
 OLP-0004–OLP-0279లోని 276 విభాగాలకు 515 పేజీల PDF, రీఫ్లో EPUB,
 సంపాదించగల LaTeX, నిర్మాణ మూలాలను ఇస్తుంది. [వెబ్ పాఠక సంచిక](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
-ఇప్పటికీ OLP-0004–OLP-0026లోని 23 విభాగాలకే పరిమితం. ప్రస్తుత
-[Zenodo సంచిక](https://doi.org/10.5281/zenodo.22726674),
-[కొనసాగే DOI](https://doi.org/10.5281/zenodo.22307937) కూడా ఆ పాక్షిక
-విడుదలకే చెందుతాయి; వాటిని 722-విభాగాల పూర్తి పాఠక సంచికగా భావించవద్దు.
+ఇప్పటికీ OLP-0004–OLP-0026లోని 23 విభాగాలకే పరిమితం. చారిత్రక
+[Zenodo v0.4.0 సంచిక](https://doi.org/10.5281/zenodo.22726674) కూడా పాక్షికమే;
+[కొనసాగే DOI](https://doi.org/10.5281/zenodo.22307937) ఇప్పుడు పైన పేర్కొన్న
+పూర్తి v1.0.1 సంచికకు దారి చూపుతుంది.
 
 పాత వెబ్ నమూనా, దాని Zenodo సంచికలను కొత్త పూర్తి విడుదలతో కలపకండి;
-పూర్తి పాఠ్యానికి పై v1.0.0 ఆస్తులనే వాడండి.
+పూర్తి పాఠ్యానికి పై v1.0.1 ఆస్తులనే వాడండి.
 
 ## మూలం, హక్కులు, పునర్నిర్మాణం
 
@@ -89,6 +91,7 @@ passes all 10,611 aligned blocks. This is machine-assisted work with
 source-comparison evidence, not an independently human-reviewed translation.
 The complete integrated reader is available in the
 [corrected v1.0.1 full release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
+and [Zenodo version DOI](https://doi.org/10.5281/zenodo.23018659)
 as a tagged/searchable PDF, reflowable EPUB, and self-contained offline HTML,
 alongside all editable TeX units and reproducible source and QA archives.
 Validation is structural and machine-assisted, with sampled semantic and
@@ -99,9 +102,10 @@ English connectives missed in two units and removes printed TeX spacing marks.
 The [earlier v0.4.0 release](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v0.4.0-cumulative-olp0279)
 remains a 276-unit cumulative PDF/EPUB and editable-source tranche. The
 [deployed web reader](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/sfr/)
-covers 23 units. Its [Zenodo version DOI](https://doi.org/10.5281/zenodo.22726674)
-and [continuing concept DOI](https://doi.org/10.5281/zenodo.22307937)
-identify that historical partial edition, not the GitHub v1.0.0 assets.
+covers 23 units. The earlier [Zenodo v0.4.0 version DOI](https://doi.org/10.5281/zenodo.22726674)
+identifies that historical partial edition; the
+[continuing concept DOI](https://doi.org/10.5281/zenodo.22307937) now resolves
+to the corrected complete v1.0.1 edition.
 
 The Open Logic text and this adaptation are distributed under CC BY 4.0;
 bundled Noto fonts have their own SIL OFL 1.1 license. See

@@ -99,7 +99,7 @@ def local_assets() -> tuple[dict, list[dict]]:
 
 
 def old_public_record(session: requests.Session) -> tuple[dict, dict[str, tuple[int, str]]]:
-    record = get_json(session, f"{API}/records/22307937")
+    record = get_json(session, f"{API}/records/{OLD_ID}")
     require(record.get("id") == OLD_ID and record.get("doi") == OLD_DOI
             and record.get("conceptdoi") == CONCEPT,
             "Existing Zenodo lineage changed; inspect it before publishing")
@@ -299,6 +299,21 @@ def anonymous_readback(record_id: int, inherited: dict[str, tuple[int, str]], as
             "Published version is not in the existing concept DOI lineage")
     latest = get_json(anonymous, f"{API}/records/22307937")
     require(latest.get("id") == record_id, "Concept DOI does not resolve to the full edition")
+    metadata = record.get("metadata", {})
+    require(metadata.get("title") == "ఓపెన్ లాజిక్ తెలుగు (te-Telu-IN): పూర్తి 722-విభాగాల పాఠక సంచిక"
+            and metadata.get("version") == "1.0.1"
+            and metadata.get("publication_date") == "2026-09-28"
+            and metadata.get("access_right") == "open"
+            and metadata.get("license", {}).get("id") == "cc-by-4.0",
+            "Published complete-edition metadata differs")
+    related = {(item.get("relation"), item.get("identifier"))
+               for item in metadata.get("related_identifiers", [])}
+    require(("isDocumentedBy", f"https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/{TAG}") in related
+            and ("isNewVersionOf", OLD_DOI) in related,
+            "Published release or prior-version relation differs")
+    require("all 722 tracked" in metadata.get("description", "")
+            and "not received independent human expert review" in metadata.get("description", ""),
+            "Published description omits the complete scope or review boundary")
     landing = anonymous.get(f"https://zenodo.org/records/{record_id}", timeout=60)
     landing.raise_for_status()
     preview_match = re.search(r'<span id="preview-file-title">([^<]+)</span>', landing.text)
@@ -335,6 +350,9 @@ def anonymous_readback(record_id: int, inherited: dict[str, tuple[int, str]], as
         "doi": record["doi"],
         "conceptdoi": CONCEPT,
         "prior_version_doi": OLD_DOI,
+        "title": metadata["title"],
+        "version": metadata["version"],
+        "access_right": metadata["access_right"],
         "inherited_files_preserved": len(inherited),
         "new_assets_anonymously_verified": checked,
         "live_preview_filename": preview_filename,
@@ -346,12 +364,22 @@ def anonymous_readback(record_id: int, inherited: dict[str, tuple[int, str]], as
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--execute", action="store_true", help="Create/publish the inherited new version and verify it")
+    parser.add_argument("--verify-existing", type=int,
+                        help="Anonymously verify an already-published record without an API token")
     args = parser.parse_args()
+    require(not (args.execute and args.verify_existing), "Choose either --execute or --verify-existing")
     manifest, assets = local_assets()
     public, inherited = old_public_record(requests.Session())
     require(manifest["lineage"]["zenodo_concept_doi"] == CONCEPT
             and manifest["lineage"]["prior_zenodo_version_doi"] == OLD_DOI,
             "Local manifest points to a different Zenodo lineage")
+    if args.verify_existing:
+        receipt = anonymous_readback(args.verify_existing, inherited, assets)
+        print(json.dumps({"status": receipt["status"], "doi": receipt["doi"],
+                          "new_assets": len(receipt["new_assets_anonymously_verified"])}, ensure_ascii=False))
+        return
+    require(get_json(requests.Session(), f"{API}/records/22307937").get("id") == OLD_ID,
+            "Existing Zenodo concept already has a newer public version")
     print(json.dumps({"preflight": "pass", "latest_record_id": public["id"],
                       "inherited_files": len(inherited), "new_assets": len(assets)}, ensure_ascii=False))
     if not args.execute:
