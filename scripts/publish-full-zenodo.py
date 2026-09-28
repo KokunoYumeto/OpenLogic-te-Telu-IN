@@ -143,6 +143,9 @@ def metadata_for(draft: dict) -> dict:
             "content TeX units at frozen source revision "
             "<code>9620cc73f9c8e0ad003c514a5d3748f29611c4c0</code>. "
             "The integrated edition includes the main text, alternative arrangements and formal-only units.</p>"
+            "<p>This corrected 1.0.1 edition replaces the first full release for reading and citation. "
+            "It translates residual short English connectives and removes visible TeX spacing marks "
+            "from the reader.</p>"
             "<p>Read the complete, searchable and tagged PDF first; the release also provides a "
             "reflowable MathML EPUB, self-contained offline HTML, all editable Telugu TeX units, "
             "full source and QA evidence. The full PDF is the intended record preview.</p>"
@@ -180,6 +183,30 @@ def checked_draft(draft: dict, inherited: dict[str, tuple[int, str]], assets: li
             require(files[name] == (item["bytes"], md5(OUT / name)),
                     f"A conflicting draft asset already exists: {name}")
     return files
+
+
+def sort_complete_pdf_first(session: requests.Session, draft: dict,
+                            inherited: dict[str, tuple[int, str]], assets: list[dict]) -> dict:
+    """Use Zenodo's documented deposit file sort before setting the preview."""
+    pdf_name = next(item["filename"] for item in assets
+                    if item["role"] == "complete_tagged_searchable_pdf")
+    expected = set(inherited) | {item["filename"] for item in assets}
+    by_name = {normalized_file(item)[0]: item for item in draft["files"]}
+    require(set(by_name) == expected and len(draft["files"]) == len(expected),
+            "Cannot sort an incomplete or duplicate draft file inventory")
+    order = [pdf_name, *sorted(expected - {pdf_name})]
+    require(all(isinstance(by_name[name].get("id"), str) for name in order),
+            "A draft file has no Zenodo file identifier")
+    url = f"{API}/deposit/depositions/{draft['id']}/files"
+    response = session.put(url, json=[{"id": by_name[name]["id"]} for name in order], timeout=60)
+    response.raise_for_status()
+    require([normalized_file(item)[0] for item in response.json()] == order,
+            "Zenodo did not confirm the complete PDF first in file order")
+    updated = get_json(session, draft["links"]["self"])
+    checked_draft(updated, inherited, assets)
+    require([normalized_file(item)[0] for item in updated["files"]] == order,
+            "Zenodo draft did not retain the complete PDF first in file order")
+    return updated
 
 
 def set_complete_pdf_preview(session: requests.Session, draft_id: int,
@@ -245,6 +272,7 @@ def publish(session: requests.Session, inherited: dict[str, tuple[int, str]], as
     draft = get_json(session, latest_draft)
     checked_draft(draft, inherited, assets)
     require(len(draft["files"]) == len(inherited) + len(assets), "Draft file count is incomplete")
+    draft = sort_complete_pdf_first(session, draft, inherited, assets)
     preview_pdf = set_complete_pdf_preview(session, int(draft["id"]), inherited, assets)
     require(preview_pdf.startswith("00-"), "Unexpected complete PDF preview filename")
     require(draft["metadata"]["title"] == metadata["title"]
