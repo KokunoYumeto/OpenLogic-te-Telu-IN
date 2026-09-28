@@ -1,0 +1,34 @@
+{
+  "schema": "openlogic-te-review-html-public-readback/1",
+  "checked_utc": "2026-09-28T18:18:48Z",
+  "published_commit": "42c743b29905823a6a106cb96906315bbbf5f596",
+  "artifact_manifest": {
+    "path": "evidence/TRANSLATION_DECISION_QA.json",
+    "sha256": "9afe133a1ac7e656389f300ca3d728f17efd888822d1ff16acd9b1e85aa52010"
+  },
+  "anonymous_raw_github": {
+    "base_url": "https://raw.githubusercontent.com/KokunoYumeto/OpenLogic-te-Telu-IN/42c743b29905823a6a106cb96906315bbbf5f596/",
+    "files_checked": 33,
+    "bytes_read": 36777886,
+    "sha256_matches_local": 33,
+    "scope": "All 28 docs/review files plus START_HERE.md, TRANSLATION_DECISIONS_FULL.md, PRIORITY_REVIEW.md, DECISIONS.json, and TRANSLATION_DECISION_QA.json in evidence/",
+    "method": "Unauthenticated HTTP GET; compare each response byte SHA-256 with its local committed file"
+  },
+  "anonymous_github_pages": {
+    "base_url": "https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/review/",
+    "files_checked": 28,
+    "bytes_read": 8270507,
+    "sha256_matches_local": 28,
+    "scope": "All 23 full pages, two priority pages, two indexes, and the shared stylesheet",
+    "method": "Unauthenticated HTTP GET; compare each response byte SHA-256 with its local committed file",
+    "pages_build_commit": "42c743b29905823a6a106cb96906315bbbf5f596",
+    "pages_build_status": "built"
+  },
+  "browser_navigation": {
+    "index_to_full_page": "review/ → full-01.html; TE-T003 authority scope, alternatives, and occurrence locator visible",
+    "full_page_to_priority": "full-01.html → priority.html; 70 high/urgent decisions and two priority pages visible",
+    "priority_to_full_decision": "priority.html → priority-01.html#te-Telu-IN-TE-T003 → full-01.html#te-Telu-IN-TE-T003",
+    "source_correction_sample": "full-09.html#te-Telu-IN-OLFUN-001; disclosed Telugu correction note and two occurrence locators visible"
+  },
+  "boundary": "Static review presentation only; canonical decision objects, translation TeX, mathematical reader assets, and release archives unchanged"
+}
