@@ -1,0 +1,48 @@
+{
+  "schema": "openlogic-te-source-addendum-public-readback/1",
+  "verified_utc_date": "2026-09-28",
+  "scope_units": 722,
+  "inlined_source_sha256_checks": 722,
+  "inlined_body_sha256_checks": 722,
+  "unwrapped_fragments": ["OLP-0001", "OLP-0660"],
+  "companion_zip_entries": 3328,
+  "github": {
+    "release_url": "https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722",
+    "asset_count": 10,
+    "public_download_credentials_used": false,
+    "new_asset_sha256_verified": true,
+    "source_deps_commit_on_main": "ad88b418c2e053f9905de9d68edf90b8484e0c2b"
+  },
+  "zenodo": {
+    "version_record_id": 23019353,
+    "version": "1.0.2",
+    "doi": "10.5281/zenodo.23019353",
+    "concept_doi": "10.5281/zenodo.22307937",
+    "concept_resolves_to_record_id": 23019353,
+    "previous_complete_record_id": 23018659,
+    "inherited_file_identities_preserved": 28,
+    "published_file_count": 30,
+    "public_download_credentials_used": false,
+    "new_asset_sha256_verified": true,
+    "live_preview_filename": "00-openlogic-te-Telu-IN-full-OLP0722-v1.0.1-full-olp0722.pdf",
+    "resource_type_previous_and_current": "publication/book",
+    "description_language": "te"
+  },
+  "new_assets": [
+    {
+      "filename": "01-openlogic-te-Telu-IN-direct-LaTeX-OLP0722-v1.0.1-full-olp0722.tex",
+      "bytes": 5746582,
+      "sha256": "5d0b41ed64c495d5e8b2aab485a6754096e67e1418dc9642244c456d0eb0af7a",
+      "github_public_sha256_match": true,
+      "zenodo_public_sha256_match": true
+    },
+    {
+      "filename": "02-openlogic-te-Telu-IN-full-source-OLP0722-v1.0.1-full-olp0722-addendum.zip",
+      "bytes": 74195266,
+      "sha256": "1692c8557ad12bc0375bed6a13ed1e6145794a4ad467f659ef48bcba09958969",
+      "github_public_sha256_match": true,
+      "zenodo_public_sha256_match": true
+    }
+  ],
+  "rendering_note": "The direct TeX is a source compendium, not the driver of the unchanged accepted 951-page HTML-derived PDF; no new TeX/PDF build is claimed."
+}

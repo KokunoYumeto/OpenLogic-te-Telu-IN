@@ -10,8 +10,11 @@
 [v1.0.1 సరిచేసిన పూర్తి విడుదల](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.1-full-olp0722)
 లో 722/722 విభాగాలను కలిపిన, వెతకగల PDF, రీఫ్లో EPUB, ఆఫ్‌లైన్
 సెమాంటిక్ HTML, సంపాదించగల తెలుగు TeX, పూర్తి మూలసంగ్రహం ఉన్నాయి.
-[Zenodo పూర్తి సంచిక DOI](https://doi.org/10.5281/zenodo.23018659)లోనూ
-ఇదే విడుదల అందుబాటులో ఉంది; అక్కడ పూర్తి PDF ప్రత్యక్ష నమూనా.
+[Zenodo తాజా పూర్తి సంచిక DOI](https://doi.org/10.5281/zenodo.23019353)లోనూ
+ఇదే పాఠక రూపం, నేరుగా పొందగల మూల అనుబంధం అందుబాటులో ఉన్నాయి;
+అక్కడ పూర్తి PDF ప్రత్యక్ష నమూనా. ఇది [సరిచేసిన 1.0.1 పాఠక
+నమోదు](https://doi.org/10.5281/zenodo.23018659) తరువాతి 1.0.2 మూల-రూప
+సంచిక; పాఠక పాఠ్యం మారలేదు.
 [ఒకే ఫైలులోని పూర్తి LaTeX మూలం](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.1-full-olp0722/01-openlogic-te-Telu-IN-direct-LaTeX-OLP0722-v1.0.1-full-olp0722.tex),
 [పునర్నిర్మాణ ఆధారాల ZIP](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.1-full-olp0722/02-openlogic-te-Telu-IN-full-source-OLP0722-v1.0.1-full-olp0722-addendum.zip)
 కూడా ఉన్నాయి. ఈ నేరుగా పొందగల TeX 722 విభాగాల అసలు శరీరాలను కలిగి
