@@ -57,13 +57,13 @@
   "artifacts": [
     {
       "path": "evidence/START_HERE.md",
-      "bytes": 6344,
-      "sha256": "e3afcb789793740d03c9ff4b12217e7f46c68fcb5ebc34de34d3408f4a1e6726"
+      "bytes": 6430,
+      "sha256": "41e19cf32061ea1a227757c0fef9bf5356b71a25dc0ae6f221bc92d291d38bd3"
     },
     {
       "path": "evidence/START_HERE.te.md",
-      "bytes": 6344,
-      "sha256": "e3afcb789793740d03c9ff4b12217e7f46c68fcb5ebc34de34d3408f4a1e6726"
+      "bytes": 6430,
+      "sha256": "41e19cf32061ea1a227757c0fef9bf5356b71a25dc0ae6f221bc92d291d38bd3"
     },
     {
       "path": "evidence/START_HERE.en.md",
@@ -98,7 +98,7 @@
     {
       "path": "evidence/DECISIONS.json",
       "bytes": 21088231,
-      "sha256": "b475c1dc338844a1d3a4947ad15ae0ecb2caf7c07351fb3a772ecb44ce91f4de"
+      "sha256": "e15d806e700645cf20f9208d74a3f594f4cdca828b3ce8a9805fbfa3856dcba8"
     },
     {
       "path": "evidence/TERM_RATIONALES_TE.json",

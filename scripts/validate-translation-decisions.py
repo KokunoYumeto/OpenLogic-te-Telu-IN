@@ -265,6 +265,8 @@ def main() -> None:
             raise ValueError(f"Review alternatives retain untranslated explanation: {decision['decision_id']}")
     start_here = (data_dir / "START_HERE.md").read_text(encoding="utf-8")
     if ("722/722" not in start_here or "నిర్ణయాలు" not in start_here
+            or "తొలి 80 పదజాల నిర్ణయాల నిర్దిష్ట ఆధార-పరిమితులు" not in start_here
+            or "సాక్ష్యపు పూర్తి సూక్ష్మ పరిమితులు ఆంగ్ల సమాంతర నమోదులో ఉన్నాయి" in start_here
             or start_here != (data_dir / "START_HERE.te.md").read_text(encoding="utf-8")
             or not (data_dir / "START_HERE.en.md").is_file()):
         raise ValueError("Current Telugu review entry point or English parallel view is incomplete")
