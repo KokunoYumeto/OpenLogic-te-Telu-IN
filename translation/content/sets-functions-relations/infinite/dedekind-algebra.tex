@@ -9,19 +9,19 @@
 \olfileid{sfr}{infinite}{dedekind}
 \olsection{డెడెకిండ్ బీజగణితాలు}
 
-సహజ సంఖ్యలు అనంతంగా ఉండాలని మాత్రమే కాదు; వాటికి కొన్ని (బీజగణిత)
-ధర్మాలు ఉండాలని కూడా కోరుకుంటాం: సంకలనం, గుణకారం మొదలైన వాటి కింద
-అవి సరిగ్గా ప్రవర్తించాలి.
+సహజ సంఖ్యలు అనంతంగా ఉండాలి. వాటికి కొన్ని (బీజగణిత)
+ధర్మాలూ ఉండాలి. సంకలనం, గుణకారం మొదలైన క్రియల విషయంలో
+అవి ఆశించిన ధర్మాలను పాటించాలి.
 
 \emph{ఉత్తరవర్తి ప్రమేయం} అనే ఆలోచనను ప్రాథమికంగా తీసుకుని, కింది
 ధర్మాలు గలవాటిగా సంఖ్యలను వర్ణించాలనేది డెడెకిండ్ ఆలోచన:
 \begin{enumerate}
 	\item ఏ సంఖ్యకూ ఉత్తరవర్తి కాని $0$ అనే ఒక సంఖ్య ఉంది
-	\\i.e., $0 \notin \ran{s}$
-	\\i.e., $\forall x\ s(x) \neq 0$
+	\\ అంటే, $0 \notin \ran{s}$
+	\\ అంటే, $\forall x\ s(x) \neq 0$
 	\item భిన్న సంఖ్యలకు భిన్న ఉత్తరవర్తులు ఉంటాయి
-	\\i.e., $s$ is \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
-	\\i.e., $\forall x \forall y (s(x) = s(y) \lif x = y)$
+	\\ అంటే, $s$ అనేది \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
+	\\ అంటే, $\forall x \forall y (s(x) = s(y) \lif x = y)$
 	\item\ollabel{repeatedapplication} ఉత్తరవర్తి ప్రమేయాన్ని $0$కు
 	పునఃపునః వర్తింపజేయడం ద్వారా ప్రతి సంఖ్య లభిస్తుంది.
 \end{enumerate}
@@ -35,31 +35,21 @@
 	సమితిలోని ఏ \tetoken{మూలకానికైనా}{!!{element}} $s$ను వర్తింపజేస్తే సమితిలోని మరో
 	\tetoken{మూలకం}{!!{element}} లభిస్తుంది.
 \end{enumerate}
-\sourcecorrection{OLTEINF-001}{ఆంగ్ల మూలంలోని 3$'$ షరతు ``ఉత్తరవర్తి
-ప్రమేయం కింద సంవృతమైన అతి చిన్న సమితి'' అని మాత్రమే చెప్పి, $0$ను
-కలిగి ఉండాలనే అవసరాన్ని వదిలింది; అలా అయితే ఖాళీ సమితే అతి చిన్నది.
-ముందున్న పునరావృత-వర్తింపు షరతుకు, తరువాతి సంవృత నిర్వచనానికి సరిపోయేలా
-``$0$ను కలిగి ఉండి'' అని చేర్చాం.}
 కానీ దీనిని నెమ్మదిగా పూర్తిగా వివరించాలి.
 
 \begin{defn}\ollabel{Closure}
 	ఏ $f \colon A \to A$కైనా, $X \subseteq A$ సమితి
-$f$-\emph{సంవృతం} కావడం {iff} $(\forall x \in X)f(x) \in X$.
+$f$-\emph{సంవృతం} కావడానికి అవసరమైన, సరిపడే షరతు $(\forall x \in X)f(x) \in X$ కావడం.
 ఇప్పుడు ఏ $o \in A$కైనా ఇలా నిర్వచించండి:
-	$$\closureofunder{f}{o} = \bigcap\Setabs{X \subseteq A}{o \in X\text{ and }X
-\text{ is $f$-closed}}$$
+	$$\closureofunder{f}{o} = \bigcap\Setabs{X \subseteq A}{o \in X\text{ మరియు }X
+\text{ అనేది $f$-సంవృతం}}$$
 \end{defn}
-\sourcecorrection{OLTEINF-002}{ఆంగ్ల మూలం ``ఏ ప్రమేయం $f$కైనా'' అని
-చెప్పి, తరువాతి లెమ్మాలో బంధించని $A$ను వాడింది. అంతేకాక మూలం ఇచ్చిన
-$\ran{f}\cup\{o\}$ సాక్షి, ఉద్దేశించిన స్వ-ప్రమేయ రకం ఉన్నప్పుడే
-$f$-సంవృతం. తరువాతి డెడెకిండ్ బీజగణిత నిర్వచనం నిర్ణయించినట్లుగా
-$f \colon A\to A$, $o\in A$, $X\subseteq A$ అని రకాలను స్పష్టం చేశాం.}
 
 కాబట్టి $\closureofunder{f}{o}$ అనేది $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
-$f$-సంవృత సమితులన్నిటి ఛేదనం. అంతర్బుద్ధి ప్రకారం,
+$f$-సంవృత సమితులన్నిటి ఛేదనం. సహజంగా అనిపించేది ఇదే.
 $\closureofunder{f}{o}$ అనేది $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
-\emph{అతి చిన్న} $f$-సంవృత సమితి. ఈ అంతర్బుద్ధి ఆలోచనను తదుపరి
-ఫలితం కచ్చితంగా చెబుతుంది:
+\emph{అతి చిన్న} $f$-సంవృత సమితి. ఈ భావాన్ని కింది
+ఫలితం కచ్చితంగా తెలియజేస్తుంది.
 \begin{lem}\ollabel{closureproperties}
 	ఏ ప్రమేయం $f \colon A \to A$కు, ఏ $o \in A$కైనా:
 	\begin{enumerate}
@@ -74,7 +64,7 @@ $\closureofunder{f}{o}$ అనేది $o$ను \tetoken{ఒక మూలక�
 $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన కనీసం ఒక $f$-సంవృత సమితి ఉంది; అదే
 $\ran{f}\cup \{o\}$. కాబట్టి అటువంటి సమితులన్నిటి ఛేదనమైన
 $\closureofunder{f}{o}$ ఉనికిలో ఉంటుంది. ఇప్పుడు
-\olref{closurehaselem}--\olref{closuresmallest}లను తనిఖీ చేయాలి.
+\olref{closurehaselem}--\olref{closuresmallest}లను నిరూపించాలి.
 
 \olref{closurehaselem} గురించి: $\closureofunder{f}{o}$ అనేది
 $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన సమితుల ఛేదనం కనుక
@@ -89,14 +79,14 @@ $f(x) \in \closureofunder{f}{o}$.
 $\bigcap C \subseteq X$.
 \end{proof}
 
-దీన్ని ఉపయోగించి ఇలా చెప్పవచ్చు:
+దీని ఆధారంగా కింది నిర్వచనాన్ని ఇస్తాం.
 
 \begin{defn}
 \emph{డెడెకిండ్ బీజగణితం} అంటే, $f \colon A \to A$ అనే ప్రమేయం,
-ఏదో $o \in A$తో కూడిన, కింది షరతులను సంతృప్తిపరిచే $A$ అనే సమితి:
+ఏదో $o \in A$తో కూడిన, కింది షరతులను తీర్చే $A$ అనే సమితి:
 	\begin{enumerate}
 		\item \ollabel{ded:proper} $o \notin \ran{f}$
-		\item \ollabel{ded:injection} $f$ is \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
+		\item \ollabel{ded:injection} $f$ అనేది \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}}
 		\item \ollabel{ded:closure} $A = \closureofunder{f}{o}$
 	\end{enumerate}
 \end{defn}
@@ -104,8 +94,8 @@ $\bigcap C \subseteq X$.
 $A = \closureofunder{f}{o}$ కనుక, $o$ను \tetoken{ఒక మూలకంగా}{!!a{element}} కలిగిన
 $f$-సంవృత సమితుల్లో $A$ అతి చిన్నదని మునుపటి ఫలితం చెబుతుంది.
 డెడెకిండ్ బీజగణితం డెడెకిండ్ అనంతమని స్పష్టం; నిర్వచనంలోని
-\olref{ded:proper}, \olref{ded:injection} ఉపవాక్యాలను చూడండి.
-అయితే మరింత ఆసక్తికరమైన విషయం ఏమిటంటే, ఏ డెడెకిండ్ అనంత సమితినైనా
+\olref{ded:proper}, \olref{ded:injection} షరతులను చూడండి.
+అయితే ఇంకా ఆసక్తికరమైన విషయం ఉంది. ఏ డెడెకిండ్ అనంత సమితినైనా
 డెడెకిండ్ బీజగణితంగా మార్చవచ్చు.
 
 \begin{thm}\ollabel{thm:DedekindInfiniteAlgebra}
@@ -127,11 +117,11 @@ $\ran{f} \subseteq \ran{g}$ కనుక $o\notin \ran{f}$.
 కాబట్టి $f \subseteq g$ కూడా ఒకటి-ఒకటి ప్రమేయం కావాలి.
 
 \olref{ded:closure} గురించి: \olref{closureproperties} ప్రకారం $A$
-$g$-సంవృతం; మరింత స్పష్టంగా, $A$ $f$-సంవృతం కూడా. అందువల్ల
+$g$-సంవృతం; కనుక $A$ $f$-సంవృతం కూడా. అందువల్ల
 \olref{closureproperties} ప్రకారం $\closureofunder{f}{o} \subseteq A$.
 అలాగే $\closureofunder{f}{o}$ $f$-సంవృతం, మరియు
 $f = \funrestrictionto{g}{A}$ కనుక, $\closureofunder{f}{o}$
-$g$-సంవృతమని వస్తుంది. కాబట్టి \olref{closureproperties} ప్రకారం
+అది $g$-సంవృతమని తేలుతుంది. కాబట్టి \olref{closureproperties} ప్రకారం
 $A \subseteq \closureofunder{f}{o}$.
 \end{proof}
 

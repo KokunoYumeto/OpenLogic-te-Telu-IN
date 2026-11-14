@@ -26,8 +26,8 @@
 \end{explain}
 
 \begin{defn}[\tetoken{సంగ్రస్త}{!!^{surjective}} ప్రమేయం]
-$B$ అనేది $f$ వ్యాప్తి కూడా అయితే, అప్పుడే
-$f \colon A \rightarrow B$ అనే ప్రమేయాన్ని \emph{\tetoken{సంగ్రస్త}{!!{surjective}}} అంటాం.
+$f \colon A \rightarrow B$ అనే ప్రమేయం \emph{\tetoken{సంగ్రస్త}{!!{surjective}}} కావడానికి
+అవసరమైన మరియు సరిపడే షరతు, $B$ అనేది $f$ వ్యాప్తి కూడా కావడం.
 అంటే ప్రతి $y \in B$కూ $f(x) = y$ అయ్యే $x \in A$ కనీసం ఒకటి ఉంటుంది.
 సంకేతాలలో:
 \[
@@ -48,7 +48,7 @@ $\ran{f}$ను $\Setabs{f(x) \in B}{x \in A}$గా \emph{నిర్వచి
 \end{explain}
 
 \begin{explain}
-ఏ ప్రమేయమైనా సాధ్యమైన ప్రతి ఇన్‌పుట్‌ను ఒకే ఫలితానికి ప్రతిచిత్రిస్తుంది.
+ఏ ప్రమేయమైనా సాధ్యమైన ప్రతి ఇన్‌పుట్‌కూ ఒకే ఒక్క ఫలితాన్ని కేటాయిస్తుంది.
 అయితే వేర్వేరు ఇన్‌పుట్లను ఎప్పుడూ ఒకే ఫలితానికి ప్రతిచిత్రించని
 ప్రమేయాలు కూడా ఉంటాయి. ఇటువంటి ప్రమేయాలను \tetoken{ఒకటి-ఒకటి}{!!{injective}} అంటాం;
 వీటిని \olref{fig:injective}లో చూపినట్లు చిత్రించవచ్చు.
@@ -61,8 +61,9 @@ $\ran{f}$ను $\Setabs{f(x) \in B}{x \in A}$గా \emph{నిర్వచి
 \end{explain}
 
 \begin{defn}[\tetoken{ఒకటి-ఒకటి}{!!^{injective}} ప్రమేయం]
-ప్రతి $y \in B$కూ, $f(x) = y$ అయ్యే $x \in A$ గరిష్ఠంగా ఒకటే ఉంటే,
-అప్పుడే $f \colon A \rightarrow B$ను \emph{\tetoken{ఒకటి-ఒకటి}{!!{injective}}} అంటాం.
+$f \colon A \rightarrow B$ అనే ప్రమేయం \emph{\tetoken{ఒకటి-ఒకటి}{!!{injective}}} కావడానికి
+అవసరమైన మరియు సరిపడే షరతు: ప్రతి $y \in B$కూ, $f(x) = y$ అయ్యే
+$x \in A$ ఒకటి కంటే ఎక్కువ ఉండకపోవడం.
 ఇటువంటి ప్రమేయాన్ని $A$ నుంచి $B$కు \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injection}} అంటాం.
 \end{defn}
 
@@ -75,7 +76,7 @@ $f$ \tetoken{ఒక ఒకటి-ఒకటి ప్రమేయం}{!!a{injecti
 $f(x) = 1$ ద్వారా ఇచ్చే స్థిర ప్రమేయం $f\colon \Nat \to \Nat$,
 \tetoken{ఒకటి-ఒకటి}{!!{injective}} కాదు, \tetoken{సంగ్రస్త}{!!{surjective}} కూడా కాదు.
 
-$f(x) = x$ ద్వారా ఇచ్చే తాదాత్మ్య ప్రమేయం $f\colon \Nat \to \Nat$,
+$f(x) = x$ ద్వారా ఇచ్చే తత్సమ ప్రమేయం $f\colon \Nat \to \Nat$,
 \tetoken{ఒకటి-ఒకటి}{!!{injective}}, \tetoken{సంగ్రస్త}{!!{surjective}} రెండూ అవుతుంది.
 
 $f(x) = x+1$ ద్వారా ఇచ్చే ఉత్తరవర్తి ప్రమేయం $f \colon \Nat \to \Nat$,
@@ -107,8 +108,8 @@ $f(x) = x+1$ ద్వారా ఇచ్చే ఉత్తరవర్తి �
 \end{explain}
 
 \begin{defn}[\tetoken{ద్విగుణ ప్రమేయం}{!!^{bijection}}]
-$f \colon A \to B$ అనే ప్రమేయం \tetoken{సంగ్రస్త}{!!{surjective}}, \tetoken{ఒకటి-ఒకటి}{!!{injective}} రెండూ
-అయితే, అప్పుడే అది \emph{\tetoken{ద్విగుణ}{!!{bijective}}} అవుతుంది.
+$f \colon A \to B$ అనే ప్రమేయం \emph{\tetoken{ద్విగుణ}{!!{bijective}}} కావడానికి అవసరమైన
+మరియు సరిపడే షరతు, అది \tetoken{సంగ్రస్త}{!!{surjective}}, \tetoken{ఒకటి-ఒకటి}{!!{injective}} రెండూ కావడం.
 ఇటువంటి ప్రమేయాన్ని $A$ నుంచి $B$కు (లేదా $A$, $B$ల మధ్య)
 \tetoken{ఒక ద్విగుణ ప్రమేయం}{!!a{bijection}} అంటాం.
 \end{defn}

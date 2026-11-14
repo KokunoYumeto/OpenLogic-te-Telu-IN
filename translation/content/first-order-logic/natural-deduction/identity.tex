@@ -35,7 +35,7 @@
 
 పై నియమాల్లో $t$, $t_1$, $t_2$లు సంవృత పదాలు. \Intro{\eq} నియమం
 ఎలాంటి పరికల్పనలూ లేకుండానే $\eq[t][t]$ రూపంలోని ఏ తాదాత్మ్య
-ప్రకటననైనా నేరుగా \tetoken{నిగమనం}{!!{derive}} చేయనిస్తుంది.
+ప్రకటననైనా నేరుగా \tetoken{నిగమనం}{!!{derive}} చేయడానికి వీలు కల్పిస్తుంది.
 
 \begin{ex}
 $s$, $t$లు సంవృత పదాలైతే $!A(s), \eq[s][t] \Proves !A(t)$:
@@ -45,8 +45,8 @@ $s$, $t$లు సంవృత పదాలైతే $!A(s), \eq[s][t] \Proves !
 \RightLabel{$\Elim{\eq}$}
 \BinaryInfC{$!A(t)$}
 \end{prooftree}
-ఇది “తాదాత్మ్యాల ప్రతిస్థాపనీయతా సూత్రం” లేదా లైబ్నిజ్ నియమంగా
-పరిచయం ఉండవచ్చు.
+ఒకే వస్తువును సూచించే పదాల్లో ఒకదాని స్థానంలో మరొకదాన్ని పెట్టవచ్చనే
+సూత్రంగా, లేదా లైబ్నిట్స్ నియమంగా, ఇది మీకు తెలిసి ఉండవచ్చు.
 \end{ex}
 
 \begin{prob}
@@ -75,7 +75,7 @@ $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y] \land \eq[y][z])
 \RightLabel{\Intro{\lforall}}
 \UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
 \end{prooftree}
-ఇప్పుడు ప్రధాన పరికల్పనను వాడాలి: అది ఒక అస్తిత్వ \tetoken{సూత్రం}{!!{formula}} కనుక
+ఇప్పుడు ప్రధాన పరికల్పనను వాడాలి. అది ఒక అస్తిత్వ \tetoken{సూత్రం}{!!{formula}} కనుక
 మధ్యంతర నిష్కర్ష $\eq[a][b]$ను \tetoken{నిగమనం}{!!{derive}} చేయడానికి
 \Elim{\lexists}ను వాడతాం.
 \begin{prooftree}
@@ -93,8 +93,8 @@ $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y] \land \eq[y][z])
 \RightLabel{\Intro{\lforall}}
 \UnaryInfC{$\lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]$}
 \end{prooftree}
-కుడివైపు పైనున్న ఉప-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} దాని పరికల్పనలతో
-$\eq[a][c]$, $\eq[b][c]$ అని చూపి పూర్తి చేస్తాం. ఇందుకు రెండు వేరు
+కుడివైపు పై భాగంలో ఉన్న ఉప-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} దాని పరికల్పనల నుంచి
+$\eq[a][c]$, $\eq[b][c]$ వస్తాయని చూపి పూర్తి చేస్తాం. ఇందుకు రెండు వేర్వేరు
 \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} అవసరం. $\eq[a][c]$కు \tetoken{వ్యుత్పత్తి}{!!{derivation}} కిందివిధంగా ఉంటుంది:
 \begin{prooftree}
 \AxiomC{$\Discharge{\lforall[y][(!A(y) \lif \eq[y][c]])}{2}$}
@@ -111,7 +111,7 @@ $\eq[a][c]$, $\eq[b][c]$ నుంచి \Elim{\eq} ద్వారా $\eq[a][b
 \end{ex}
 
 \begin{prob}
-కింది \tetoken{సూత్రాలు}{!!{formula}s} యొక్క \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
+కింది \tetoken{సూత్రాలకు}{!!{formula}s} \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఇవ్వండి:
 \begin{enumerate}
 \item $\lforall[x][\lforall[y][((\eq[x][y] \land !A(x)) \lif !A(y))]]$
 \item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land

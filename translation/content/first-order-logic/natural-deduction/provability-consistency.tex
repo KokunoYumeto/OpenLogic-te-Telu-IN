@@ -12,9 +12,9 @@
 
 \olsection{\usetoken{S}{derivability} మరియు అవైరుధ్యం}
 
-ఇప్పుడు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధపు అనేక ధర్మాలను స్థాపిస్తాం. అవి
-స్వతంత్రంగా ఆసక్తికరమైనవి; అంతేకాక ప్రతి ఒక్కటీ సంపూర్ణతా సిద్ధాంతపు
-నిరూపణలో ఒక పాత్ర పోషిస్తుంది.
+ఇప్పుడు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధానికి సంబంధించిన కొన్ని ధర్మాలను నిరూపిస్తాం.
+ఒక్కో ధర్మమూ దానికదే ఆసక్తికరమైనది. సంపూర్ణతా సిద్ధాంతపు
+నిరూపణలో ప్రతి ధర్మాన్నీ ఉపయోగిస్తాం.
 
 \begin{prop}\ollabel{prop:provability-contr}
   $\Gamma \Proves !A$ అయి, $\Gamma \cup \{!A\}$ వైరుధ్యభరితమైతే,
@@ -22,8 +22,8 @@
 \end{prop}
 
 \begin{proof}
-$\Gamma$ నుంచి $!A$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అనీ,
-$\Gamma \cup \{!A\}$ నుంచి $\lfalse$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}}
+$\Gamma$ నుంచి $!A$కు \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అనీ,
+$\Gamma \cup \{!A\}$ నుంచి $\lfalse$కు \tetoken{వ్యుత్పత్తిని}{!!{derivation}}
 $\delta_2$ అనీ అందాం. అప్పుడు కిందివిధంగా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
 \begin{prooftree}
 \AxiomC{$\Gamma, \Discharge{!A}{1}$}
@@ -37,20 +37,20 @@ $\delta_2$ అనీ అందాం. అప్పుడు కిందివ�
 \RightLabel{\Elim{\lnot}}
 \BinaryInfC{$\lfalse$}
 \end{prooftree}
-కొత్త \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} పరికల్పన~$!A$ \tetoken{ఉపసంహరించిన}{!!{discharged}} అయింది; కాబట్టి
+కొత్త \tetoken{వ్యుత్పత్తిలో}{!!{derivation}} పరికల్పన~$!A$ \tetoken{ఉపసంహరించబడింది}{!!{discharged}}. కాబట్టి
 అది $\Gamma$ నుంచి ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
 \end{proof}
 
 \begin{prop}
 \ollabel{prop:prov-incons}
-$\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే $\Gamma \cup \{\lnot !A\}$
-వైరుధ్యభరితమైనది.
+$\Gamma \Proves !A$ నెరవేరడానికి అవసరమూ, చాలినదీ $\Gamma \cup \{\lnot !A\}$
+వైరుధ్యభరితంగా ఉండటం.
 \end{prop}
 
 \begin{proof}
-మొదట $\Gamma \Proves !A$ అనుకుందాం; అంటే \tetoken{ఉపసంహరించని}{!!{undischarged}}
-పరికల్పనలు~$\Gamma$ నుంచి $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta_0$
-ఉంది. కిందివిధంగా $\Gamma \cup \{\lnot !A\}$ నుంచి $\lfalse$ యొక్క
+మొదట $\Gamma \Proves !A$ అనుకుందాం. అంటే \tetoken{ఉపసంహరించని}{!!{undischarged}}
+పరికల్పనలన్నీ~$\Gamma$లో ఉండే $!A$కు ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta_0$
+ఉంది. కిందివిధంగా $\Gamma \cup \{\lnot !A\}$ నుంచి $\lfalse$కు
 ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} పొందుతాం:
 \begin{prooftree}
   \AxiomC{$\lnot !A$}
@@ -61,24 +61,24 @@ $\Gamma \Proves !A$ అయితే, అప్పుడు మాత్రమే
   \BinaryInfC{$\lfalse$}
 \end{prooftree}
 
-ఇప్పుడు $\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమని అనుకుందాం;
-దానికి అనుగుణంగా $\Gamma \cup \{\lnot !A\}$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}}
-పరికల్పనల నుంచి $\lfalse$ యొక్క \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అందాం.
-$\FalseCl$ను ఉపయోగించి $\Gamma$ ఒక్కదాని నుంచి $!A$ యొక్క ఒక
+ఇప్పుడు $\Gamma \cup \{\lnot !A\}$ వైరుధ్యభరితమని అనుకుందాం.
+దాన్ని బట్టి $\Gamma \cup \{\lnot !A\}$లోని \tetoken{ఉపసంహరించని}{!!{undischarged}}
+పరికల్పనల నుంచి $\lfalse$కు \tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\delta_1$ అందాం.
+$\FalseCl$ను ఉపయోగించి $\Gamma$ ఒక్కదాని నుంచి $!A$కు ఒక
 \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} ఇలా పొందుతాం:
 \begin{prooftree}
   \AxiomC{$\Gamma, \Discharge{\lnot !A}{1}$}
   \RightLabel{$\delta_1$}
   \DeduceC{$\lfalse$}
-  \RightLabel{\FalseCl}
+  %
   \DischargeRule{\FalseCl}{1}
   \UnaryInfC{$!A$}
 \end{prooftree}
 \end{proof}
 
 \begin{prob}
-$\Gamma \Proves \lnot !A$ అయితే, అప్పుడు మాత్రమే
-$\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూపించండి.
+$\Gamma \Proves \lnot !A$ నెరవేరడానికి అవసరమూ, చాలినదీ
+$\Gamma \cup \{!A\}$ వైరుధ్యభరితంగా ఉండటమే అని నిరూపించండి.
 \end{prob}
 
 \begin{prop}\ollabel{prop:explicit-inc}
@@ -88,8 +88,8 @@ $\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూప�
 
 \begin{proof}
   $\Gamma \Proves !A$, $\lnot !A \in \Gamma$ అనుకుందాం. అప్పుడు
-  $\Gamma$ నుంచి $!A$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta$ ఉంటుంది.
-  $\Elim{\lnot}$ నియమాన్ని ఇలా సరళంగా వర్తింపజేయండి:
+  $\Gamma$ నుంచి $!A$కు ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}~$\delta$ ఉంటుంది.
+  $\Elim{\lnot}$ నియమాన్ని కిందివిధంగా నేరుగా వర్తింపజేయవచ్చు:
   \begin{prooftree}
     \AxiomC{$\lnot !A$}
     \AxiomC{$\Gamma$}
@@ -99,7 +99,7 @@ $\Gamma \cup \{!A\}$ వైరుధ్యభరితమని నిరూప�
     \BinaryInfC{$\lfalse$}
   \end{prooftree}
   $\lnot !A \in \Gamma$ కనుక అన్ని \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలూ
-  $\Gamma$లోనే ఉన్నాయి; అందువల్ల $\Gamma \Proves \lfalse$.
+  $\Gamma$లోనే ఉన్నాయి. అందువల్ల $\Gamma \Proves \lfalse$.
 \end{proof}
 
 \begin{prop}\ollabel{prop:provability-exhaustive}
@@ -125,8 +125,8 @@ $\Gamma \cup \{ !A \}$ నుంచి $\lfalse$ను, $\Gamma \cup \{ \lnot !A
 \RightLabel{\Elim{\lnot}}
 \BinaryInfC{$\lfalse$}
 \end{prooftree}
-$!A$, $\lnot !A$ పరికల్పనలు \tetoken{ఉపసంహరించిన}{!!{discharged}} అయ్యాయి కనుక ఇది
-$\Gamma$ ఒక్కదాని నుంచి $\lfalse$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}. అందువల్ల
+$!A$, $\lnot !A$ పరికల్పనలు \tetoken{ఉపసంహరించబడ్డాయి}{!!{discharged}} కనుక ఇది
+$\Gamma$ ఒక్కదాని నుంచి $\lfalse$కు ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}. అందువల్ల
 $\Gamma$ వైరుధ్యభరితమైనది.
 \end{proof}
 

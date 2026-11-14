@@ -11,20 +11,20 @@
 \olsection{\usetoken{P}{valuation} మరియు సంతృప్తి}
 
 \begin{defn}[\tetoken{సత్యమూల్య కేటాయింపులు}{!!^{valuation}s}]
-$V$ సత్యమూల్యాల సమితి అనుకుందాం. $\Lang{L}$ నుంచి~$V$లోకి
-ఒక \emph{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}} అంటే, భాషలోని
-\tetoken{ప్రతిజ్ఞావాక్య చరాలకు}{!!{propositional variable}s}
-$V$లోని \tetoken{ఒక మూలకాన్ని}{!!a{element}} కేటాయించే
-ప్రమేయం~$\pAssign{v}$; అంటే $\pAssign{v} \colon
+$V$ సత్యమూల్యాల సమితి అనుకుందాం. $\Lang{L}$ భాషకు
+విలువలను~$V$ నుంచి తీసుకునే \emph{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}}
+అంటే ఆ భాషలోని ప్రతి \tetoken{ప్రతిజ్ఞావాక్య చరానికీ}{!!{propositional variable}s}
+$V$లోని \tetoken{ఒక మూలకాన్ని}{!!a{element}} కేటాయించే ప్రమేయం~$\pAssign{v}$.
+అంటే $\pAssign{v} \colon
 \PVar \to V$.
 \end{defn}
 
 \begin{defn}\ollabel{defn:pValue}
-  బహుమూల్య తర్కం~$\Log L$ యొక్క సత్యమూల్యాల సమితి~$V$లోకి
-  వెళ్లే \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$
-  ఇచ్చినప్పుడు, మూల్యాంకన ప్రమేయం
+  బహుమూల్య తర్కం~$\Log L$కు చెందిన సత్యమూల్యాల సమితి~$V$ అనుకుందాం.
+  ఆ సమితి నుంచి విలువలను కేటాయించే \tetoken{సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$ను
+  తీసుకుంటే, దానికి సంబంధించిన మూల్యాంకన ప్రమేయం
   $\pValue{v} \colon \Frm[L] \to V$ను కింది విధంగా
-  ఆగమనాత్మకంగా నిర్వచిస్తాం:
+  ఆగమన పద్ధతిలో నిర్వచితమవుతుంది:
   \begin{enumerate}
     \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
     \item $\star$ ఒక $0$-స్థానిక సంయోజకం అయితే,
@@ -40,14 +40,14 @@ $V$లోని \tetoken{ఒక మూలకాన్ని}{!!a{element}} క�
 \begin{defn}[సంతృప్తి]
 \ollabel{defn:satisfaction} \tetoken{సూత్రం}{!!{formula}}~$!A$,
   \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$లో
-  \emph{సంతృప్తమవడం}, అంటే $\pSat{v}{!A}[\Log L]$ కావడం,
-  $\pValue{v}(!A)[\Log L] \in V^+$ అయినప్పుడూ, అప్పుడు మాత్రమే;
-  ఇక్కడ $V^+$ అనేది~$\Log L$ యొక్క నిర్దేశిత సత్యమూల్యాల సమితి.
+  \emph{సంతృప్తమవుతుందని} $\pSat{v}{!A}[\Log L]$తో సూచిస్తాం.
+  ఇది $\pValue{v}(!A)[\Log L] \in V^+$ అయినప్పుడు, అప్పుడే మాత్రమే నెరవేరుతుంది.
+  ఇక్కడ $V^+$ అనేది~$\Log L$కు చెందిన నిర్దేశిత సత్యమూల్యాల సమితి.
 
   $\pSat/{v}{!A}[\Log L]$తో ``$\pSat{v}{!A}[\Log
   L]$ కాదు'' అని సూచిస్తాం. $\Gamma$ ఒక
   \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే, ప్రతి~$!A \in \Gamma$కు
-  $\pSat{v}{!A}[\Log L]$ అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\pSat{v}{!A}[\Log L]$ నెరవేరినప్పుడు, అప్పుడే మాత్రమే
   $\pSat{v}{\Gamma}[\Log L]$.
 \end{defn}
 

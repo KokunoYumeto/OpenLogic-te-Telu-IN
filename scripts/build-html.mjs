@@ -7,7 +7,9 @@ import {parseBibliography} from './bibtex-reader.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const publishPages=process.argv.includes('--pages');
 const scopeArg=process.argv.find(a=>a.startsWith('--scope='));
-if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scope=')))throw new Error('Unknown option');
+const outputArg=process.argv.find(a=>a.startsWith('--output-dir='));
+if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scope=')&&!a.startsWith('--output-dir=')))throw new Error('Unknown option');
+if(publishPages&&outputArg)throw new Error('Choose --pages or --output-dir');
 const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
  sets:{start:4,end:10,slug:'sets',title:'సమితులు',lead:'పూర్తి సమితుల అధ్యాయం',scope:'7 of 722 units; complete Sets chapter, not full edition'},
@@ -17,7 +19,8 @@ const profiles={
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
-const out=publishPages?path.join(root,'docs',profile.slug):path.join(root,'output/html',profile.slug);
+const out=outputArg?path.resolve(outputArg.slice('--output-dir='.length)):publishPages?path.join(root,'docs',profile.slug):path.join(root,'output/html',profile.slug);
+const diagnosticDirectory=outputArg?path.dirname(out):path.join(root,'tmp');
 const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 const selectiveConfig=fs.readFileSync(path.join(root,'upstream/open-logic-config.sty'),'utf8');
 const defaultTags=defaultTagsFromConfig(selectiveConfig);
@@ -141,7 +144,6 @@ function prepareReaderSource(source,unit){
  // Presentation-only local definitions do not contribute reader content.
  source=source.replace(/\\def\\(?:arraystretch|fCenter)\{[^{}]*\}/gu,'');
  source=source.replace(/\\hbox\s+to\s*\.?\d+\\textwidth\s*\{/gu,'{');
- if(unit.unit_id==='OLP-0468')source=source.replace(/(\\sourcecorrection\{OLTENMLTABCPL-00[456]\}\{[^{}]*\})(\s*\n  \\item \\indcase)/gu,'$1}$2');
  let prepared=source.replace(tikzPattern,snippet=>{
   const digest=sha(snippet),name='inline-'+digest.slice(0,16),record=compiledByName.get(name);
   if(!record)return '\\readerdiagram{'+name+'}';
@@ -219,9 +221,9 @@ function diagram(relative,language){
    'OLP-0454':{te:'మోడల్ ఫిల్ట్రేషన్ ఉదాహరణ: అసలు లోకాలు లేదా వాటి సమానతా తరగతులు, ప్రాప్త్యత బాణాలతో.',en:'Modal-filtration example: original worlds or their equivalence classes connected by accessibility arrows.'},
    'OLP-0459':{te:'యూక్లిడియన్ ఫ్రేము ఫిల్ట్రేషన్: అసలు లోకాలు లేదా కలిపిన తరగతుల మధ్య ప్రాప్త్యత.',en:'Euclidean-frame filtration: accessibility among original worlds or their identified quotient classes.'},
    'OLP-0469':{te:'మోడల్ టాబ్లోకు ప్రతినమూనా: లోకాల మధ్య ప్రాప్త్యత, వాటి వద్ద p, q సత్యస్థితులు.',en:'Countermodel for a modal tableau: accessibility between worlds and truth values of p and q.'},
-   'OLP-0486':{te:'జ్ఞాన తర్కపు సాధ్యలోకాల పటం: ప్రాప్త్యత బాణాలు, ప్రతి లోకంలో p, q సత్యస్థితులు.',en:'Epistemic possible-world graph: accessibility arrows and the truth values of p and q at each world.'},
-   'OLP-0488':{te:'ద్విసంబంధ అనుకరణ పటం: ఏజెంట్ పేర్లతో గుర్తించిన బాణాలు సాధ్యలోకాలను కలుపుతాయి.',en:'Bisimulation graph: agent-labelled arrows connect possible worlds.'},
-   'OLP-0490':{te:'బహిరంగ ప్రకటన నమూనా: p, q విలువలతో గుర్తించిన లోకాలు, ప్రకటన తరువాత నిలిచే ప్రాప్త్యత సంబంధం.',en:'Public-announcement model: worlds are labelled by p and q; accessibility shows the relation retained after announcement.'},
+   'OLP-0486':{te:'జ్ఞానసంబంధ తర్కపు ఈ పటంలో ప్రాప్యత బాణాలూ, ప్రతి లోకం వద్ద p, q సత్యమూల్యాలూ కనిపిస్తాయి.',en:'Epistemic possible-world graph: accessibility arrows and the truth values of p and q at each world.'},
+   'OLP-0488':{te:'ద్విసమానుకరణ పటంలో కర్తల సంకేతాలతో గుర్తించిన ప్రాప్యత బాణాలూ, రెండు నమూనాల్లోని లోకాలను జతచేసే చుక్కల రేఖలూ కనిపిస్తాయి.',en:'Bisimulation graph: agent-labelled arrows connect possible worlds.'},
+   'OLP-0490':{te:'బహిరంగ ప్రకటనకు ముందు, తరువాత ఉన్న లోకాలను వాటి p, q సత్యమూల్యాలతో చూపిన పటం. ప్రకటన తరువాత మిగిలే ప్రాప్యత సంబంధాలూ కనిపిస్తాయి.',en:'Public-announcement model: worlds are labelled by p and q; accessibility shows the relation retained after announcement.'},
    'OLP-0523':{te:'ప్రతివాస్తవికాల గోళ వ్యవస్థ: w చుట్టూ సమకేంద్ర సమీపత్వ గోళాలను ఒక ప్రతిపాదన ప్రాంతం ఛేదిస్తుంది.',en:'Counterfactual sphere system: a proposition region intersects concentric closeness spheres around w.'},
    'OLP-0524':{te:'ప్రతివాస్తవిక గోళ నమూనా: w చుట్టూ సమకేంద్ర గోళాలలో ఇతర లోకాలు అమర్చబడ్డాయి.',en:'Counterfactual sphere model: possible worlds lie in concentric spheres around w.'},
    'OLP-0525':{te:'ప్రతివాస్తవిక సత్యస్థితి పటం: w చుట్టూ సమీపత్వ గోళాలు, ప్రతిపాదన ప్రాంతాలు, వాటి ఛేదనలు.',en:'Counterfactual truth-condition diagram: closeness spheres around w and intersecting proposition regions.'},
@@ -292,7 +294,7 @@ const units=manifest.map(u=>{
  return {...u,en,te,segments,astTe,astEn};
 });
 if(parseErrors.length){
- const diagnosticPath=path.join(root,'tmp',profile.slug+'-parse-errors.json');
+ const diagnosticPath=path.join(diagnosticDirectory,profile.slug+'-parse-errors.json');
  fs.mkdirSync(path.dirname(diagnosticPath),{recursive:true});
  fs.writeFileSync(diagnosticPath,JSON.stringify(parseErrors,null,2)+'\n');
  throw new Error('Reader parse diagnostics found '+parseErrors.length+' failures; see '+diagnosticPath);
@@ -307,13 +309,13 @@ for(const u of units){
  mathDiagnostics.push(...collector.mathErrors.slice(teBefore).map(record=>({...record,unit_id:u.unit_id,language:'te'})),...enCollector.mathErrors.slice(enBefore).map(record=>({...record,unit_id:u.unit_id,language:'en'})));
 }
 if(renderErrors.length){
- const diagnosticPath=path.join(root,'tmp',profile.slug+'-render-errors.json');
+ const diagnosticPath=path.join(diagnosticDirectory,profile.slug+'-render-errors.json');
  fs.mkdirSync(path.dirname(diagnosticPath),{recursive:true});
  fs.writeFileSync(diagnosticPath,JSON.stringify(renderErrors,null,2)+'\n');
  throw new Error('Reader collection render diagnostics found '+renderErrors.length+' failures; see '+diagnosticPath);
 }
 if(mathDiagnostics.length){
- const diagnosticPath=path.join(root,'tmp',profile.slug+'-math-errors.json');
+ const diagnosticPath=path.join(diagnosticDirectory,profile.slug+'-math-errors.json');
  fs.mkdirSync(path.dirname(diagnosticPath),{recursive:true});
  fs.writeFileSync(diagnosticPath,JSON.stringify(mathDiagnostics,null,2)+'\n');
  throw new Error('Semantic math diagnostics found '+mathDiagnostics.length+' failures; see '+diagnosticPath);
@@ -368,15 +370,17 @@ const contents=scope==='full'?fullContents():'<ol>'+sections.map(s=>'<li><a href
 const scopeNotice=scope==='full'
  ?'స్థిర ఆంగ్ల మూలంలోని 722 .tex విభాగాలన్నీ ఈ పాఠక రూపంలో ఉన్నాయి: ప్రధాన పాఠం, ప్రత్యామ్నాయ అమరికలు, సహాయక భాగాలు సహా. మూలంలో లేని అంతర్గత సూచనలను పాఠ్యంలో స్పష్టంగా గుర్తించాం.'
  :'ఇది పూర్తి గ్రంథం కాదు. పూర్తి తెలుగు సంచికపై పని కొనసాగుతోంది.';
-const reviewNotice='ఈ తెలుగు పాఠ్యం యంత్ర సహాయంతో అనువదించి, స్థిర ఆంగ్ల మూలంతో విభాగాలవారీగా సరిపోల్చబడింది. మానవ లేదా స్వతంత్ర నిపుణ సమీక్ష జరిగిందని పేర్కొనడం లేదు.';
+const reviewNotice='ఈ తెలుగు పాఠ్యాన్ని కృత్రిమ మేధ అనువదించింది. అనువాదాన్ని స్థిర ఆంగ్ల మూలంతో విభాగాలవారీగా పోల్చారు. స్వతంత్ర మానవ నిపుణ సమీక్ష జరగలేదు.';
 // The existing DOI identifies an earlier bounded tranche, not the full
 // edition. A complete-edition archive link belongs here only after readback.
 const archiveLink=scope==='full'?'':' · <a href="https://doi.org/10.5281/zenodo.22307937">సంచిక సంరక్షణ</a>';
-const html=('<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు: '+escapeHtml(profile.lead)+'; 722లో '+unitCount+' మూల విభాగాలు."><title>'+escapeHtml(profile.title)+' · OpenLogic తెలుగు</title><link rel="stylesheet" href="reader.css"></head><body>'+
+// Reloads must not combine new proof markup with a cached earlier stylesheet.
+const stylesheetSha=sha(fs.readFileSync(path.join(root,'editions/reader.css')));
+const html=('<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు: '+escapeHtml(profile.lead)+'; 722లో '+unitCount+' మూల విభాగాలు."><title>'+escapeHtml(profile.title)+' · OpenLogic తెలుగు</title><link rel="stylesheet" href="reader.css?v='+stylesheetSha+'"></head><body>'+
  '<a class="skip-link" href="#reader">ప్రధాన పాఠ్యానికి వెళ్లండి</a><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>'+escapeHtml(profile.title)+'</h1><p class="lead">'+escapeHtml(profile.lead)+' · 722 మూల విభాగాలలో '+unitCount+'</p><p>'+scopeNotice+'</p><p>'+reviewNotice+'</p></header>'+
  '<nav aria-label="విషయ సూచిక"><h2>విషయ సూచిక</h2>'+contents+'<a href="#edition-notes">సంచిక గురించి</a></nav>'+
  '<main id="reader">'+units.map(u=>u.html).join('\n')+'</main>'+
- '<footer id="edition-notes"><h2>సంచిక గురించి</h2><p>సహజ సంఖ్యలలో 0ను చేర్చే ఆంగ్ల మూలపు ఆనవాయితీని ఉంచాం. కొన్ని సాంకేతిక పదాలు తాత్కాలిక నిర్ణయాలు; నిర్వచనాలే వాటి కచ్చితమైన అర్థాన్ని నిర్ణయిస్తాయి. మూల పాఠ్యంలో లేని సమాధానాలు చేర్చలేదు.</p><p>ఇది అదనపు సాఫ్ట్‌వేర్ లేదా ఇంటర్నెట్ లేకుండా చదవగల HTML పాఠ్యం. గణితానికి MathML వాడాం. పొడవైన సూత్రాల ప్రాంతాన్ని అవసరమైతే అడ్డంగా జరపవచ్చు. ప్రతి విభాగం చివర ఆంగ్ల మూలాన్ని విడిగా తెరవవచ్చు.</p>'+bibliographyHtml+'<p>మూలం: <a href="https://openlogicproject.org/">Open Logic Project</a> · <a href="https://openlogicproject.org/people/">మూల రచయితలు</a> · <a href="LICENSE.md">CC BY 4.0 అనుమతి</a>. తెలుగు అనువాదం, పాఠక రూపకల్పన మూలానికి చేసిన మార్పులు; మూల రచయితల ఆమోదం ఉందని సూచించడం లేదు.</p><p><a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN">సంపాదించగల మూలాలు, ఆధారాలు</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/main/evidence/START_HERE.te.md">తెలుగు సమీక్షా మార్గదర్శి</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">అనువాదాల కేంద్రం</a>'+archiveLink+'</p><p>Noto Serif Telugu: SIL OFL 1.1 (<a href="fonts/OFL.txt">అనుమతి</a>). MathMLను తయారుచేసిన KaTeXకు <a href="KATEX-LICENSE">MIT అనుమతి</a> వర్తిస్తుంది. మూల తెలుగు సాక్ష్య గ్రంథాల పూర్తి ప్రతులు లేదా పుట చిత్రాలు ఇక్కడ చేర్చలేదు.</p></footer></body></html>\n').replace(/[ \t]+$/gm,'');
+ '<footer id="edition-notes"><h2>సంచిక గురించి</h2><p>సహజ సంఖ్యలలో 0ను చేర్చే ఆంగ్ల మూలపు ఆనవాయితీని ఉంచాం. కొన్ని సాంకేతిక పదాలు తాత్కాలిక నిర్ణయాలు; నిర్వచనాలే వాటి కచ్చితమైన అర్థాన్ని నిర్ణయిస్తాయి. మూల పాఠ్యంలో లేని సమాధానాలు చేర్చలేదు.</p><p>ఇది అదనపు సాఫ్ట్‌వేర్ లేదా ఇంటర్నెట్ లేకుండా చదవగల HTML పాఠ్యం. గణితానికి MathML వాడాం. పొడవైన సూత్రాల ప్రాంతాన్ని అవసరమైతే అడ్డంగా జరపవచ్చు. ప్రతి విభాగం చివర ఆంగ్ల మూలాన్ని విడిగా తెరవవచ్చు.</p>'+bibliographyHtml+'<p>మూలం: <a href="https://openlogicproject.org/">Open Logic Project</a> · <a href="https://openlogicproject.org/people/">మూల రచయితలు</a> · <a href="LICENSE.md">CC BY 4.0 అనుమతి</a>. తెలుగు అనువాదాన్నీ, పాఠక రూపాన్నీ కృత్రిమ మేధ రూపొందించింది. ఇది ఓపెన్ లాజిక్ ప్రాజెక్టు అధికారిక సంచిక కాదు.</p><p><a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN">సంపాదించగల మూలాలు, ఆధారాలు</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/blob/main/evidence/START_HERE.te.md">తెలుగు సమీక్షా మార్గదర్శి</a> · <a href="https://github.com/KokunoYumeto/OpenLogic-translations">అనువాదాల కేంద్రం</a>'+archiveLink+'</p><p>Noto Serif Telugu: SIL OFL 1.1 (<a href="fonts/OFL.txt">అనుమతి</a>). MathMLను తయారుచేసిన KaTeXకు <a href="KATEX-LICENSE">MIT అనుమతి</a> వర్తిస్తుంది. మూల తెలుగు సాక్ష్య గ్రంథాల పూర్తి ప్రతులు లేదా పుట చిత్రాలు ఇక్కడ చేర్చలేదు.</p></footer></body></html>\n').replace(/[ \t]+$/gm,'');
 fs.mkdirSync(path.join(out,'fonts'),{recursive:true});
 fs.writeFileSync(path.join(out,'index.html'),html);
 fs.copyFileSync(path.join(root,'editions/reader.css'),path.join(out,'reader.css'));
@@ -390,7 +394,7 @@ fs.copyFileSync(path.join(root,'LICENSE.md'),path.join(out,'LICENSE.md'));
 fs.copyFileSync(path.join(root,'node_modules/katex/LICENSE'),path.join(out,'KATEX-LICENSE'));
 if(publishPages){
  fs.writeFileSync(path.join(root,'docs','.nojekyll'),'');
- fs.writeFileSync(path.join(root,'docs','index.html'),'<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు పాఠక సంచిక"><title>OpenLogic తెలుగు</title><link rel="stylesheet" href="'+profile.slug+'/reader.css"></head><body><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>OpenLogic తెలుగు పాఠక సంచిక</h1><p class="lead"><a href="'+profile.slug+'/">'+escapeHtml(profile.title)+' — '+escapeHtml(profile.lead)+' చదవండి</a></p><p>'+scopeNotice+'</p></header></body></html>\n');
+ fs.writeFileSync(path.join(root,'docs','index.html'),'<!doctype html>\n<html lang="te-Telu-IN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OpenLogic తెలుగు పాఠక సంచిక"><title>OpenLogic తెలుగు</title><link rel="stylesheet" href="'+profile.slug+'/reader.css?v='+stylesheetSha+'"></head><body><header><p class="eyebrow">OpenLogic · తెలుగు</p><h1>OpenLogic తెలుగు పాఠక సంచిక</h1><p class="lead"><a href="'+profile.slug+'/">'+escapeHtml(profile.title)+' — '+escapeHtml(profile.lead)+' చదవండి</a></p><p>'+scopeNotice+'</p></header></body></html>\n');
 }
 const receipt={schema:'openlogic-te-semantic-html/1',source_revision:manifest[0].source_commit,scope:profile.scope,profile:scope,html_sha256:sha(html),katex_version:JSON.parse(fs.readFileSync(path.join(root,'node_modules/katex/package.json'),'utf8')).version,math_output:'native MathML; no client JavaScript or remote runtime dependencies',selective_config_sha256:sha(selectiveConfig),selective_defaults:Object.fromEntries([...defaultTags].sort(([a],[b])=>a.localeCompare(b))),reader_source_projection_repairs:readerSourceProjectionRepairs,units:unitRecords,assets:[...assetsUsed.values()],labels:[...labels.entries()],english_labels:[...enLabels.entries()],duplicate_labels:collector.duplicateLabels,english_duplicate_labels:enCollector.duplicateLabels,references:reader.references,english_references:english.references,conditional_branches:reader.conditions,english_conditional_branches:english.conditions,citation_keys:citationKeys,math:reader.math,english_math:english.math,telugu_command_totals:reader.commands,english_command_totals:english.commands,parser_policy:'Unknown commands/environments, unknown reference labels, or math errors fail closed; all ordinary text is parsed and rendered. References to canonical labels that are unavailable in this bounded reader scope are rendered as explicit external-reference markers and retained in the receipt. Upstream selective tags are projected with the exact frozen default configuration, any-active list semantics, inverse not-tags, tagged lists/references, and conditional problem blocks before parsing, including inside mathematics. Conditional label projection follows available labels. Evident frozen-source delimiter defects listed in reader_source_projection_repairs are balanced only in the semantic projection; source bytes remain unchanged. Repeated labels in alternative source units keep the first canonical target and receive unique duplicate anchors, with every occurrence recorded. Inline TikZ and approved frozen diagram assets are source-hash-bound to local SVG projections with localized semantic descriptions; citation commands retain keys and locators and link to local bibliography entries.',status:'deterministic_qa_pending'};
 fs.writeFileSync(path.join(out,'render-manifest.json'),JSON.stringify(receipt,null,2)+'\n');

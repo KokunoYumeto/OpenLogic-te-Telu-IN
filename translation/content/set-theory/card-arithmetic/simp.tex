@@ -5,11 +5,16 @@
 
 \olsection{కూడిక, గుణకారాల సరళీకరణ}
 
-అతిపరిమిత కార్డినల్ కూడిక, గుణకారాల ఫలితాలు \emph{చాలా} సులభమని తేలుతుంది. కార్డినల్ సంఖ్యలు (కొన్ని) క్రమసంఖ్యలు, అందువల్ల సుక్రమితాలు; కాబట్టి వాటిని ఒక ప్రత్యేక పద్ధతిలో నిర్వహించవచ్చనే విషయం ఇందుకు కారణం. అయితే దీన్ని చూపడం అంత \emph{సులభం కాదు}. ముందుగా కొంచెం చతురమైన నిర్వచనం కావాలి:
+అతిపరిమిత కార్డినల్ సంఖ్యలను కూడడం, గుణించడం
+\emph{చాలా} సులభమని తేలుతుంది. కార్డినల్ సంఖ్యలు కొన్ని
+నిర్దిష్ట క్రమసంఖ్యలే. కాబట్టి అవి సుక్రమంలో ఉంటాయి.
+ఆ క్రమాన్ని ఒక ప్రత్యేక పద్ధతిలో వాడుకోవచ్చు. అయితే
+దీన్ని చూపడం అంత \emph{సులభం కాదు}. ముందుగా కాస్త
+నేర్పుతో ఒక క్రమాన్ని నిర్వచించాలి.
 
 \begin{defn}
-క్రమసంఖ్యల యుగ్మాలపై ఒక \emph{ప్రామాణిక క్రమం} $\canonord$ను ఇలా నిర్వచిస్తాం: $\tuple{\alpha_1, \alpha_2} \canonord
-\tuple{\beta_1, \beta_2}$ అప్పుడూ అప్పుడే వీటిలో ఒకటి నిజమైతే:
+క్రమసంఖ్యల క్రమయుగ్మాలపై ఒక \emph{ప్రామాణిక క్రమం} $\canonord$ను ఇలా నిర్వచిస్తాం. $\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ కావడానికి కింది షరతుల్లో కనీసం ఒకటి నెరవేరాలి. ఏ ఒక్కటి నెరవేరినా సరిపోతుంది.
 \begin{enumerate}
 	\item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$; లేదా
 	\item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ మరియు $\alpha_1 < \beta_1$; లేదా
@@ -22,17 +27,22 @@
 \end{lem}
 
 \begin{proof}
-$\alpha \times \alpha$పై $\canonord$ సంబంధం అనుసంధితమని స్పష్టం. ఎందుకంటే $\tuple{\alpha_1, \alpha_2}$, $\tuple{\beta_1,
-\beta_2}$లలో ఏదీ మరొకదాని కంటే $\canonord$లో చిన్నది కాదనుకుందాం. అప్పుడు $\max(\alpha_1,
-\alpha_2) = \max(\beta_1, \beta_2)$, $\alpha_1 = \beta_1$, $\alpha_2 = \beta_2$; కాబట్టి $\tuple{\alpha_1, \alpha_2} =
+$\alpha \times \alpha$పై $\canonord$ సంపర్క సంబంధమని స్పష్టం. ఎందుకంటే $\tuple{\alpha_1, \alpha_2}$, $\tuple{\beta_1,
+\beta_2}$లలో ఏదీ మరో క్రమయుగ్మం కంటే $\canonord$లో చిన్నది కాదనుకుందాం. అప్పుడు $\max(\alpha_1,
+\alpha_2) = \max(\beta_1, \beta_2)$, $\alpha_1 = \beta_1$, $\alpha_2 = \beta_2$. కాబట్టి $\tuple{\alpha_1, \alpha_2} =
 \tuple{\beta_1,  \beta_2}$.
 
-సుక్రమతను చూపడానికి, ఖాళీ కాని $X \subseteq \alpha\times\alpha$ తీసుకుందాం. $\alpha$ క్రమసంఖ్య కాబట్టి $\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
-\gamma_2} \in X}$లో అత్యల్ప మూలకం $\delta$ ఉంది. ఇప్పుడు $\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
-\delta}$లో మొదటి నిర్దేశాంకం అత్యల్పంగా లేని యుగ్మాలను తొలగిద్దాం; మిగిలినవాటిలో రెండవ నిర్దేశాంకం అత్యల్పమైన యుగ్మమే $X$లో $\canonord$-అత్యల్ప మూలకం.
+ఇది సుక్రమమని చూపడానికి, శూన్యం కాని
+$X \subseteq \alpha\times\alpha$ తీసుకుందాం.
+$\alpha$ క్రమసంఖ్య కాబట్టి $\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$లో $\delta$ అనే అత్యల్ప మూలకం ఉంది.
+ఇప్పుడు $\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$లో మొదటి నిరూపకం అత్యల్పంగా ఉన్న
+క్రమయుగ్మాలను మాత్రమే ఉంచుదాం. వాటిలో రెండో నిరూపకం
+అత్యల్పంగా ఉన్న క్రమయుగ్మమే $X$లో $\canonord$-అత్యల్ప మూలకం.
 \end{proof}
 \noindent
-ఇప్పుడు ఒక చిన్న, సరళమైన పరిశీలన:
+ఇప్పుడు ఒక చిన్న ఫలితం.
 
 \begin{prop}\ollabel{simplecardproduct}
 $\cardeq{\alpha}{\beta}$ అయితే $\cardeq{\alpha \times \alpha}{\beta
@@ -41,16 +51,25 @@ $\cardeq{\alpha}{\beta}$ అయితే $\cardeq{\alpha \times \alpha}{\beta
 
 \begin{proof}
 $f \colon \alpha \to \beta$ ద్వారా $\tuple{\gamma_1,
-\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$ను ఏర్పరిస్తే చాలు.
+\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$గా పంపితే చాలు.
 \end{proof}
 \noindent
-ఇప్పుడు కీలకమైన లెమ్మాను నిరూపించడానికి ఈ విషయాలన్నిటినీ వాడుదాం:
+ఈ విషయాలన్నిటినీ వాడి ఒక ముఖ్యమైన ఉపపత్తిని నిరూపిద్దాం.
 \begin{lem}\ollabel{alphatimesalpha}
 ఏ అనంత క్రమసంఖ్య $\alpha$కైనా $\cardeq{\alpha}{\alpha \times \alpha}$.
 \end{lem}
 
 \begin{proof}
-వైరుధ్యం కోసం, ఈ వాదన తప్పే అత్యల్ప అనంత క్రమసంఖ్య $\alpha$ అనుకుందాం. $\cardeq{\omega}{\omega\times\omega}$ అని \olref[sfr][siz][zigzag]{natsquaredenumerable} చూపుతుంది; కనుక $\omega \in \alpha$. ఇంకా, $\alpha$ కార్డినల్ సంఖ్య: కాదనుకుంటే, వైరుధ్యం కోసం, $\card{\alpha} \in \alpha$. అప్పుడు ఆగమన పరికల్పన ప్రకారం $\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$; నిర్వచనం ప్రకారం $\cardeq{\card{\alpha}}{\alpha}$; కాబట్టి \olref{simplecardproduct} ప్రకారం $\cardeq{\alpha}{\alpha\times\alpha}$.
+వైరుధ్యం కోసం, ఈ ఫలితం వర్తించని
+అత్యల్ప అనంత క్రమసంఖ్య $\alpha$ అనుకుందాం.
+$\cardeq{\omega}{\omega\times\omega}$ అని
+\olref[sfr][siz][zigzag]{natsquaredenumerable} చూపుతుంది.
+కాబట్టి $\omega \in \alpha$. అంతేకాక $\alpha$ కార్డినల్ సంఖ్య.
+అది కార్డినల్ సంఖ్య కాదనుకుంటే $\card{\alpha} \in \alpha$.
+అప్పుడు ఆగమన పరికల్పన ప్రకారం
+$\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$.
+నిర్వచనం ప్రకారం $\cardeq{\card{\alpha}}{\alpha}$. కాబట్టి
+\olref{simplecardproduct} ప్రకారం $\cardeq{\alpha}{\alpha\times\alpha}$.
 
 ఇప్పుడు ప్రతి $\tuple{\gamma_1, \gamma_2} \in \alpha \times \alpha$కు ఈ ఖండాన్ని తీసుకుందాం:
 \begin{align*}
@@ -66,11 +85,10 @@ $\gamma = \max(\gamma_1, \gamma_2)$ అనుకుంటే, $\tuple{\gamma_1, 
 	& \prec \alpha\text{, $\alpha$ కార్డినల్ సంఖ్య కాబట్టి}
 \end{align*}
 మిగిలిన పరిమిత సూచిక సందర్భంలో ఖండం పరిమితమే; అనంత కార్డినల్ సంఖ్యతో పోల్చినప్పుడు అవసరమైన కఠిన అసమానత అక్కడ కూడా వస్తుంది.
-\sourcecorrection{OLTESTCARDSIMP-001}{మూల నిరూపణ అనంత గరిష్ఠ నిర్దేశాంకానికి మాత్రమే ఖండ-పరిమాణాన్ని చూపి, అన్ని యుగ్మాలకు వచ్చే ముగింపును ప్రకటించింది. పరిమిత నిర్దేశాంకంలో ఖండం పరిమితమనే తప్పిపోయిన సందర్భాన్ని చేర్చాం.}
-అందువల్ల $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$, కాబట్టి $\cardle{\alpha \times \alpha}{\alpha}$. మరోవైపు $\cardle{\alpha}{\alpha \times \alpha}$ కూడా స్పష్టం; కనుక ష్రోడర్--బెర్న్‌స్టీన్ ద్వారా ఫలితం వస్తుంది.
+అందువల్ల $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$. కాబట్టి $\cardle{\alpha \times \alpha}{\alpha}$. మరోవైపు $\cardle{\alpha}{\alpha \times \alpha}$ కూడా స్పష్టం. కాబట్టి ష్రోడర్--బెర్న్‌స్టీన్ ద్వారా ఫలితం వస్తుంది.
 \end{proof}
 
-చివరికి మన సరళీకరణ ఫలితం:
+ఇప్పుడు కూడిక, గుణకారం రెండింటినీ సరళీకరించే ఫలితం.
 
 \begin{thm}\ollabel{cardplustimesmax}
 $\cardfont{a}, \cardfont{b}$ అనంత కార్డినల్ సంఖ్యలు అయితే:
@@ -82,10 +100,10 @@ $\cardfont{a}, \cardfont{b}$ అనంత కార్డినల్ సంఖ�
 \end{thm}
 
 \begin{proof}
-సాధారణతకు భంగం లేకుండా $\cardfont{a} = \max(\cardfont{a},
+సాధారణత్వానికి భంగం లేకుండా $\cardfont{a} = \max(\cardfont{a},
 \cardfont{b})$ అనుకుందాం. అప్పుడు \olref{alphatimesalpha}ను వాడితే $\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
 \cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
-\cardfont{a} \cardtimes \cardfont{a}$. \end{proof}\noindent అలాగే $\cardfont{a}$ అనంతమైతే, ఒక్కొక్కటి $\leq\cardfont{a}$ పరిమాణం గల $\cardfont{a}$ సంఖ్యలో సమితుల సమ్మేళనానికి పరిమాణం $\leq\cardfont{a}$:
+\cardfont{a} \cardtimes \cardfont{a}$. గుణకారానికి $\cardfont{a} \leq \cardfont{a} \cardtimes \cardfont{b} \leq \cardfont{a} \cardtimes \cardfont{a} = \cardfont{a}$. \end{proof}\noindent అలాగే $\cardfont{a}$ అనంతమైతే, ఒక్కొక్కదాని పరిమాణం $\leq\cardfont{a}$ అయిన $\cardfont{a}$ సమితులను తీసుకుంటే, వాటి సమ్మేళనం పరిమాణం $\leq\cardfont{a}$.
 
 \begin{prop}\ollabel{kappaunionkappasize}
 $\cardfont{a}$ అనంత కార్డినల్ సంఖ్య అనుకుందాం. ప్రతి క్రమసంఖ్య $\beta
@@ -95,9 +113,9 @@ $\cardfont{a}$ అనంత కార్డినల్ సంఖ్య అన�
 
 \begin{proof}
 ప్రతి $\beta \in \cardfont{a}$కు $f_\beta \colon
-X_\beta \to \cardfont{a}$ అనే \tetoken{ఇంజెక్షన్‌ను}{!!a{injection}} ఎంచుకుందాం.\footnote{వీటిని ఎలా ``ఎంచుకున్నాం''? \olref[sth][choice][countablechoice]{sec} చూడండి.} ఇప్పుడు $g \colon
+X_\beta \to \cardfont{a}$ అనే \tetoken{ఒకటి-ఒకటి ప్రమేయాన్ని}{!!a{injection}} ఎంచుకుందాం.\footnote{వీటిని ఎలా ``ఎంచుకున్నాం''? \olref[sth][choice][countablechoice]{sec} చూడండి.} ఇప్పుడు $g \colon
 \bigcup_{\beta \in \cardfont{a}} X_\beta \to \cardfont{a} \times
-\cardfont{a}$ అనే \tetoken{ఇంజెక్షన్‌ను}{!!a{injection}} $g(v) = \tuple{\beta, f_\beta(v)}$గా నిర్వచిద్దాం; ఇక్కడ $v \in
+\cardfont{a}$ అనే \tetoken{ఒకటి-ఒకటి ప్రమేయాన్ని}{!!a{injection}} $g(v) = \tuple{\beta, f_\beta(v)}$గా నిర్వచిద్దాం. ఇక్కడ $v \in
 X_\beta$, అలాగే ఏ $\gamma \in \beta$కూ $v \notin X_\gamma$. ఇప్పుడు \olref{cardplustimesmax} ప్రకారం $\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq \cardfont{a} \times
 \cardfont{a} \approx \cardfont{a}$.
 \end{proof}

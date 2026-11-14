@@ -10,10 +10,10 @@
 
 \olsection{\Log{K}లో నిరూపణలు}
 
-అతి చిన్న మోడల్ వ్యవస్థలో నిరూపణలను సాధన చేయడానికి,
-\olref[syn][sch]{tab:valid-invalidSchemas} ఎడమవైపున ఉన్న
-చెల్లుబాటయ్యే \tetoken{సూత్రాలన్నిటికీ}{!!{formula}s}
-\Log{K}లో నిరూపణలు ఇవ్వవచ్చని చూపుతాం.
+అతి చిన్న మోడల్ వ్యవస్థలో నిరూపణలు చేయడం అలవాటు చేసుకోవడానికి,
+\olref[syn][sch]{tab:valid-invalidSchemas}లో ఎడమవైపున ఉన్న
+చెల్లుబాటయ్యే \tetoken{సూత్రాలన్నింటినీ}{!!{formula}s}
+\Log{K}లో నిరూపించవచ్చని చూపుదాం.
 
 \begin{prop}
   $\Log{K} \Proves \Box!A \lif \Box (!B\lif !A)$
@@ -71,16 +71,16 @@ $9$వ పంక్తిలోని \tetoken{సూత్రం}{!!{formula}} 
     4. & $\Box!A \lif \Box(!B \lif (!A \land !B))$ & \MP, 2, 3\\
     5. & $\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))$ & \Ax{K} \\
     6. & $(\Box!A \lif \Box(!B \lif (!A \land !B))) \lif {}$ \\
-    & \qquad $(\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
+    & \qquad $((\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B))))$ & \Taut\\
     7. & $(\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 4, 6\\
-    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 5, 7\\
-    9. & $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))) \lif {}$\\
+    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B))$ & \MP, 5, 7\\
+    9. & $(\Box!A \lif (\Box !B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $((\Box!A \land \Box!B) \lif \Box(!A \land !B))$ & \Taut\\
     10. & $(\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \MP, 8, 9
   \end{derivation}
-  $6$, $9$ పంక్తుల్లోని \tetoken{సూత్రాలు}{!!{formula}s}
+  $6$వ, $9$వ పంక్తుల్లోని \tetoken{సూత్రాలు}{!!{formula}s}
   కింది సర్వసత్యాల ప్రతిస్థాపన నిదర్శనాలు:
   \begin{align*}
     (p \lif q) & \lif ((q \lif r) \lif (p \lif r)) \\
@@ -111,7 +111,7 @@ $9$వ పంక్తిలోని \tetoken{సూత్రం}{!!{formula}} 
     11. & $(\lnot \Box \lnot\lnot p \lif \Diamond \lnot p) \lif (\lnot \Box p \lif \Diamond\lnot p)$ & \MP, 9, 10\\
     12. & $\lnot\Box p \lif \Diamond \lnot p$ & \MP, 3, 11\\
   \end{derivation}
-  $8$, $10$ పంక్తుల్లోని \tetoken{సూత్రాలు}{!!{formula}s}
+  $8$వ, $10$వ పంక్తుల్లోని \tetoken{సూత్రాలు}{!!{formula}s}
   కింది సర్వసత్యాల ప్రతిస్థాపన నిదర్శనాలు:
   \begin{align*}
     & (p \lif q) \lif (\lnot q \lif \lnot p) \\
@@ -127,7 +127,7 @@ $9$వ పంక్తిలోని \tetoken{సూత్రం}{!!{formula}} 
     6. & $\lnot \Box p \lif \lnot\Box\lnot\lnot p$ & \MP, 4, 5\\
     & $\lnot\Box p \lif \Diamond \lnot p$
   \end{derivation}
-  చివరి పంక్తి $\lnot \Box p \lif \Diamond\lnot p$;
+  చివరి పంక్తిలో $\lnot \Box p \lif \Diamond\lnot p$ వస్తుంది.
   ఎందుకంటే $\Diamond$ను $\lnot\Box\lnot$గా నిర్వచించాం.
   $5$వ పంక్తిలోని \tetoken{సూత్రం}{!!{formula}} కింది
   సర్వసత్యానికి ప్రతిస్థాపన నిదర్శనం:
@@ -153,7 +153,7 @@ $9$వ పంక్తిలోని \tetoken{సూత్రం}{!!{formula}} 
 
 \begin{prob}
   కింది \tetoken{సూత్రాలకు}{!!{formula}s}~$\Log{K}$లో
-  \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} కనుగొనండి:
+  \tetoken{వ్యుత్పత్తులను}{!!{derivation}s} కనుక్కోండి.
   \begin{enumerate}
     \item $\Box \lnot p \lif \Box(p \lif q)$
     \item $(\Box p \lor \Box q) \lif \Box(p \lor q)$

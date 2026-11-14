@@ -13,12 +13,12 @@
 \olsection{సంపూర్ణతా సిద్ధాంతం}
 
 \begin{explain}
-మన ఫలితాలను కలుపుదాం: సంపూర్ణతా సిద్ధాంతానికి చేరుకుంటాం.
+ఇప్పటివరకు నిరూపించిన ఫలితాలను కలిపితే సంపూర్ణతా సిద్ధాంతం వస్తుంది.
 \end{explain}
 
 \begin{thm}[సంపూర్ణతా సిద్ధాంతం]
 \ollabel{thm:completeness}
-$\Gamma$ ఒక \tetoken{వాక్యాలు}{!!{sentence}s} సమితి అనుకుందాం. $\Gamma$ అవైరుధ్యమైతే,
+$\Gamma$ ఒక \tetoken{వాక్యాల}{!!{sentence}s} సమితి అనుకుందాం. $\Gamma$ అవైరుధ్యమైతే,
 అది సంతృప్తిపరచదగినది.
 \end{thm}
 
@@ -35,40 +35,40 @@ $\Gamma^* \supseteq \iftag{FOL}{\Gamma'}{\Gamma}$ అయ్యే అవైర�
   \iftag{prvEx}
         {$\lexists[x][!A(x)] \lif !A(c)$}
         {$\lnot\lforall[x][!A(x)] \lif \lnot !A(c)$}
-  రూపంలోని \tetoken{ఒక వాక్యం}{!!a{sentence}} ఉంటుంది; అందువల్ల $\Gamma^*$
+  రూపంలోని \tetoken{ఒక వాక్యం}{!!a{sentence}} ఉంటుంది. అందువల్ల $\Gamma^*$
   సంతృప్తీకృతమైనది. $\Gamma$లో~$\eq$ లేకపోతే,}{అప్పుడు}
 \olref[mod]{lem:truth} ప్రకారం,
 $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$ అయినప్పుడు,
 అప్పుడు మాత్రమే $!A \in \Gamma^*$. ప్రత్యేకంగా, ప్రతి $!A \in
-\Gamma$కు $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$;
+\Gamma$కు $\iftag{FOL}{\Sat{M(\Gamma^*)}}{\pSat{v(\Gamma^*)}}{!A}$.
 కాబట్టి $\Gamma$ సంతృప్తిపరచదగినది.\iftag{FOL}{
-  $\Gamma$లో~$\eq$ ఉంటే, \olref[ide]{lem:truth} ప్రకారం అన్ని
-  \tetoken{వాక్యాలు}{!!{sentence}s}~$!A$కు $\Sat{\equivclass{M}{\approx}}{!A}$ అయినప్పుడు,
+  $\Gamma$లో~$\eq$ ఉంటే, \olref[ide]{lem:truth} ప్రకారం ప్రతి
+  \tetoken{వాక్యం}{!!{sentence}s}~$!A$కూ $\Sat{\equivclass{M}{\approx}}{!A}$ అయినప్పుడు,
   అప్పుడు మాత్రమే $!A \in \Gamma^*$. ప్రత్యేకంగా, ప్రతి $!A \in
-  \Gamma$కు $\Sat{\equivclass{M}{\approx}}{!A}$; కాబట్టి $\Gamma$
+  \Gamma$కు $\Sat{\equivclass{M}{\approx}}{!A}$. కాబట్టి $\Gamma$
   సంతృప్తిపరచదగినది.}{}
 \end{proof}
 
 \begin{cor}[సంపూర్ణతా సిద్ధాంతం, రెండవ రూపం]
 \ollabel{cor:completeness}
-అన్ని~$\Gamma$, \tetoken{వాక్యాలు}{!!{sentence}s}~$!A$లకు: $\Gamma \Entails !A$ అయితే
+ఏ~$\Gamma$కైనా, ఏ \tetoken{వాక్యం}{!!{sentence}s}~$!A$కైనా, $\Gamma \Entails !A$ అయితే
 $\Gamma \Proves !A$.
 \end{cor}
 
 \begin{proof}
 \olref{cor:completeness}, \olref{thm:completeness}లలోని~$\Gamma$లు
-సార్వత్రికంగా పరిమాణీకృతమయ్యాయని గమనించండి. మనం గందరగోళపడకుండా,
-\olref{thm:completeness}ను వేరొక చరరాశితో మళ్లీ చెబుదాం: ఏ
-\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Delta$కైనా, $\Delta$ అవైరుధ్యమైతే అది
-సంతృప్తిపరచదగినది. ప్రతిపక్షం ద్వారా, $\Delta$
+సార్వత్రికంగా పరిమాణీకృతమయ్యాయని గమనించండి. వాటిని వేరుగా గుర్తించడానికి
+\olref{thm:completeness}ను వేరొక చరరాశితో మళ్లీ చెబుదాం. ఏ
+\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Delta$కైనా, $\Delta$ అవైరుధ్యమైతే అది
+సంతృప్తిపరచదగినది. విపర్యయాన్ని తీసుకుంటే, $\Delta$
 సంతృప్తిపరచదగినది కాకపోతే $\Delta$ వైరుధ్యభరితమైనది. ఉపఫలితాన్ని
 నిరూపించడానికి దీన్ని ఉపయోగిస్తాం.
 
 $\Gamma \Entails !A$ అని అనుకుందాం. అప్పుడు
 \olref[syn][sem]{prop:entails-unsat} ప్రకారం $\Gamma \cup \{\lnot !A\}$
 సంతృప్తిపరచలేనిది. మన~$\Delta$గా $\Gamma \cup \{\lnot !A\}$ను
-తీసుకుంటే, \olref{thm:completeness} యొక్క ముందరి రూపం $\Gamma \cup
-\{\lnot !A\}$ వైరుధ్యభరితమని ఇస్తుంది. కింది ఫలితం ప్రకారం
+తీసుకుంటే, \olref{thm:completeness} మొదటి రూపం ప్రకారం $\Gamma \cup
+\{\lnot !A\}$ వైరుధ్యభరితమని తెలుస్తుంది. కింది ఫలితం ప్రకారం
 \iftag{FOL}{%
   \tagrefs{prfAX/{fol:axd:prv:prop:prov-incons},
     prfSC/{fol:seq:prv:prop:prov-incons},
@@ -84,16 +84,16 @@ $\Gamma \Proves !A$.
 \tagprob{FOL}
 \begin{prob}
 \olref[fol][com][cth]{cor:completeness}ను ఉపయోగించి
-\olref[fol][com][cth]{thm:completeness}ను నిరూపించండి; తద్వారా
-సంపూర్ణతా సిద్ధాంతపు రెండు సూత్రీకరణలు సమానార్థకాలని చూపండి.
+\olref[fol][com][cth]{thm:completeness}ను నిరూపించి
+సంపూర్ణతా సిద్ధాంతపు రెండు సూత్రీకరణలు తుల్యమని చూపండి.
 \end{prob}
 \tagendprob
 
 \tagprob{notFOL}
 \begin{prob}
 \olref[pl][com][cth]{cor:completeness}ను ఉపయోగించి
-\olref[pl][com][cth]{thm:completeness}ను నిరూపించండి; తద్వారా
-సంపూర్ణతా సిద్ధాంతపు రెండు సూత్రీకరణలు సమానార్థకాలని చూపండి.
+\olref[pl][com][cth]{thm:completeness}ను నిరూపించి
+సంపూర్ణతా సిద్ధాంతపు రెండు సూత్రీకరణలు తుల్యమని చూపండి.
 \end{prob}
 \tagendprob
 
@@ -105,8 +105,8 @@ $\Gamma \Proves !A$.
 అవసరమయ్యాయి? ఈ నియమాల్లో ఏవైనా నిరూపణలో ఎక్కడా ఉపయోగించబడలేదా? ఈ
 ప్రశ్నలకు సమాధానం ఇవ్వడానికి,
 \olref[fol][com][cth]{thm:completeness} నిరూపణకు దారితీసే ఏ ఫలితాల్లో
-ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
-తయారుచేయండి. ఈ నిరూపణల్లో నియమాల అవ్యక్త ఉపయోగాలనూ తప్పకుండా
+ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించారో చూపే జాబితా లేదా రేఖాచిత్రం
+తయారుచేయండి. ఈ నిరూపణల్లో ప్రత్యేకంగా చెప్పకుండా వాడిన నియమాలనూ తప్పకుండా
 గుర్తించండి.
 \end{prob}
 \tagendprob
@@ -119,8 +119,8 @@ $\Gamma \Proves !A$.
 అవసరమయ్యాయి? ఈ నియమాల్లో ఏవైనా నిరూపణలో ఎక్కడా ఉపయోగించబడలేదా? ఈ
 ప్రశ్నలకు సమాధానం ఇవ్వడానికి,
 \olref[pl][com][cth]{thm:completeness} నిరూపణకు దారితీసే ఏ ఫలితాల్లో
-ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించబడ్డాయో చూపే జాబితా లేదా రేఖాచిత్రం
-తయారుచేయండి. ఈ నిరూపణల్లో నియమాల అవ్యక్త ఉపయోగాలనూ తప్పకుండా
+ఏ \tetoken{వ్యుత్పత్తి}{!!{derivation}} నియమాలు ఉపయోగించారో చూపే జాబితా లేదా రేఖాచిత్రం
+తయారుచేయండి. ఈ నిరూపణల్లో ప్రత్యేకంగా చెప్పకుండా వాడిన నియమాలనూ తప్పకుండా
 గుర్తించండి.
 \end{prob}
 \tagendprob

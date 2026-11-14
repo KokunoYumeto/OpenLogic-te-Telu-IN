@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="86.077pt" height="86.276pt" viewBox="0 -86.276 86.077 86.276" data-generator="dvisvgm-no-fonts">
+<g id="page1">
+<g transform="matrix(1 0 0 -1 0 0)">
+<path d="M3.1875 3.386719V83.0898H82.8906V3.386719Z" stroke="#808080" fill="none" stroke-width=".3985" stroke-miterlimit="10"/>
+<path d="M3.1875 3.386719H82.8906M3.1875 13.35156H82.8906M3.1875 23.3125H82.8906M3.1875 33.2734H82.8906M3.1875 43.2383H82.8906M3.1875 53.1992H82.8906M3.1875 63.1641H82.8906M3.1875 73.125H82.8906M3.1875 83.0781H82.8906M3.1875 3.386719V83.0898M13.15234 3.386719V83.0898M23.1133 3.386719V83.0898M33.0781 3.386719V83.0898M43.0391 3.386719V83.0898M53 3.386719V83.0898M62.9648 3.386719V83.0898M72.9258 3.386719V83.0898M82.8789 3.386719V83.0898" stroke="#808080" fill="none" stroke-width=".19925" stroke-miterlimit="10"/>
+<path d="M8.16797 3.386719V8.36719" stroke="#ad3040" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M77.9102 3.386719V8.36719" stroke="#ad3040" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M77.9102 48.2187V38.2578" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M8.16797 38.2578V48.2187" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M38.0586 48.2187H48.0195" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M77.9102 48.2187V38.2578" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M8.16797 38.2578V28.293H18.1328V38.2578H28.0938H38.0586V28.293H28.0938V18.332H38.0586V8.36719H28.0938H18.1328V18.332H8.16797V8.36719" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M8.16797 48.2187H18.1328V58.1836H8.16797V68.1445V78.1094H18.1328V68.1445H28.0938V78.1094H38.0586V68.1445V58.1836H28.0938V48.2187H38.0586" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M48.0195 48.2187H57.9844V58.1836H48.0195V68.1445V78.1094H57.9844V68.1445H67.9453V78.1094H77.9102V68.1445V58.1836H67.9453V48.2187H77.9102" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M77.9102 8.36719V18.332H67.9453V8.36719H57.9844H48.0195V18.332H57.9844V28.293H48.0195V38.2578H57.9844H67.9453V28.293H77.9102V38.2578" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+</g>
+</g>
+</svg>

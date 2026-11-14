@@ -16,9 +16,9 @@
 \olsection{\usetoken{S}{derivability}, ప్రతిజ్ఞావాక్య సంయోజకాలు}
 
 \begin{explain}
-  సీక్వెంట్ కలనం యొక్క \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$ ప్రతిజ్ఞావాక్య
-  సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక విషయాలను స్థాపించగలంత
-  బలమైనదని చూపుతాం. ఉదాహరణకు $!A \land !B \Proves !A$ మరియు
+  సీక్వెంట్ కలనంలోని \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$ ప్రతిజ్ఞావాక్య
+  సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక ఫలితాలను నిరూపించగలిగేంత
+  బలమైనదని చూపుతాం. ఉదాహరణకు, $!A \land !B \Proves !A$ మరియు
   $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్). సంపూర్ణతా సిద్ధాంత
   నిరూపణకు ఈ విషయాలు అవసరం.
 \end{explain}
@@ -35,7 +35,7 @@
 \begin{proof}
   \begin{enumerate}
   \item $!A \land !B \Sequent !A$, $!A \land !B \Sequent !B$ అనే
-    రెండు సీక్వెంట్లూ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
+    రెండు సీక్వెంట్లూ \tetoken{వ్యుత్పాదించదగినవి}{!!{derivable}}:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \RightLabel{\LeftR{\land}}
@@ -82,8 +82,8 @@
       \RightLabel{\LeftR{\lor}}
       \BinaryInf$ !A \lor !B, \lnot !A, \lnot !B \fCenter $
     \end{prooftree}
-    (ద్విరేఖ నిగమన గీతలు అనేక బలహీనీకరణ, సంకోచన, మార్పిడి
-    నిగమనాలను సూచిస్తాయని గుర్తు చేసుకోండి.)
+    (రెండు నిగమన గీతలు అనేక బలహీనీకరణ, సంకోచన, మార్పిడి
+    నిగమనాలను సూచిస్తాయని గుర్తుంచుకోండి.)
   \item $!A \Sequent !A \lor !B$, $!B \Sequent !A \lor !B$ అనే
     రెండు సీక్వెంట్లకూ \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} ఉన్నాయి:
     \begin{prooftree}

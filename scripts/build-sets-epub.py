@@ -288,17 +288,24 @@ def normalize_epub_mathml(root: etree._Element) -> dict[str, int]:
     return counts
 
 
-def relocate_figure_anchor(figure: etree._Element) -> None:
-    """Move a trailing empty TeX-label paragraph onto its figure container."""
+def relocate_figure_anchor(figure: etree._Element, caption: etree._Element) -> None:
+    """Move empty TeX labels before the caption while preserving every ID."""
     for child in list(figure):
-        if etree.QName(child).localname != "p" or normalized("".join(child.itertext())) or len(child) != 1:
+        if etree.QName(child).localname != "p" or normalized("".join(child.itertext())) or not len(child):
             continue
-        anchor = child[0]
-        classes = set((anchor.get("class") or "").split())
-        if etree.QName(anchor).localname == "span" and classes == {"anchor"} and anchor.get("id"):
-            require(not figure.get("id"), "figure already has an ID")
-            figure.set("id", anchor.get("id"))
-            figure.remove(child)
+        if not all(etree.QName(anchor).localname == "span"
+                   and set((anchor.get("class") or "").split()) == {"anchor"}
+                   and anchor.get("id") for anchor in child):
+            continue
+        if not figure.get("id"):
+            figure.set("id", child[0].get("id"))
+            child.remove(child[0])
+        anchors = list(child)
+        figure.remove(child)
+        index = 1 if figure[0] is caption else figure.index(caption)
+        for offset, anchor in enumerate(anchors):
+            child.remove(anchor)
+            figure.insert(index + offset, anchor)
 
 
 def normalize_epub_figures(root: etree._Element) -> int:
@@ -316,7 +323,7 @@ def normalize_epub_figures(root: etree._Element) -> int:
             )
             parent.tag = f"{{{XHTML_NS}}}figure"
             promoted += 1
-        relocate_figure_anchor(parent)
+        relocate_figure_anchor(parent, caption)
         require(
             parent.index(caption) in {0, len(parent) - 1},
             "figcaption must be the first or final figure child",

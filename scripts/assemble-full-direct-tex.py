@@ -8,6 +8,7 @@ tracked source tree, its dependencies, this generator, and reconstruction notes.
 from __future__ import annotations
 
 import hashlib
+import io
 import json
 import re
 import subprocess
@@ -33,6 +34,14 @@ def require(condition: bool, message: str) -> None:
 
 def sha(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
+
+
+def write_immutable_asset(path: Path, data: bytes) -> None:
+    if path.exists():
+        require(path.read_bytes() == data, f"Refusing to overwrite changed asset: {path.name}")
+        return
+    with path.open("xb") as output:
+        output.write(data)
 
 
 def source_rows() -> list[dict]:
@@ -107,7 +116,7 @@ PREAMBLE = r"""% ఓపెన్ లాజిక్ తెలుగు — ప�
 \def\figurename{{\telugufont పటం}}
 \def\proofname{{\telugufont నిరూపణ}}
 \hypersetup{pdftitle={ఓపెన్ లాజిక్ తెలుగు — పూర్తి 722-విభాగాల మూలసంగ్రహం},
-  pdfauthor={The Open Logic Project; OpenAI Codex machine-assisted Telugu edition}}
+  pdfauthor={The Open Logic Project; AI-translated Telugu edition}}
 \tolerance=3000
 \emergencystretch=4em
 \raggedbottom
@@ -117,8 +126,9 @@ PREAMBLE = r"""% ఓపెన్ లాజిక్ తెలుగు — ప�
 \vskip 3ex
 {\Large\telugufont పూర్తి 722-విభాగాల సవరించగల LaTeX మూలసంగ్రహం\par}
 \vfill
-{\telugufont ఇది యంత్ర-సహాయ అనువాదం. స్వతంత్ర మానవ నిపుణ సమీక్ష జరగలేదు.
-ప్రచురిత పాఠక PDF, EPUB, HTML వేరు; ఈ ఫైలు వాటి TeX నిర్మాణ నకలు కాదు.\par}
+{\telugufont మూల రచన: The Open Logic Project. తెలుగు అనువాదం కృత్రిమ మేధతో రూపొందింది.
+స్వతంత్ర మానవ నిపుణ సమీక్ష జరగలేదు.
+సమగ్ర పాఠక PDFను సెమాంటిక్ HTML నుంచి రూపొందించారు.\par}
 \end{titlingpage}
 \frontmatter
 \tableofcontents*
@@ -206,7 +216,8 @@ def companion_zip(tex: bytes, manifest: bytes) -> dict:
             and any(name.startswith("upstream/assets/") for name, _data in files)
             and any(name.startswith("fonts/") for name, _data in files),
             "Class, macro, figure or font dependencies are missing")
-    with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
         for name, data in sorted(files):
             normalized = PurePosixPath(name)
             require(not normalized.is_absolute() and ".." not in normalized.parts,
@@ -215,12 +226,14 @@ def companion_zip(tex: bytes, manifest: bytes) -> dict:
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, data, compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
-    with zipfile.ZipFile(output) as archive:
+    payload = buffer.getvalue()
+    with zipfile.ZipFile(io.BytesIO(payload)) as archive:
         require(archive.testzip() is None and len(archive.namelist()) == len(files),
                 "Companion ZIP failed integrity or count checks")
         require(sha(archive.read(TEX_NAME)) == sha(tex)
                 and sha(archive.read(ASSEMBLY_NAME)) == sha(manifest),
                 "Companion ZIP changed the assembled source")
+    write_immutable_asset(output, payload)
     return {"filename": ZIP_NAME, "bytes": output.stat().st_size,
             "sha256": sha(output.read_bytes()), "entries": len(files)}
 
@@ -234,10 +247,7 @@ def main() -> None:
     tex_path = OUT / TEX_NAME
     manifest_path = OUT / ASSEMBLY_NAME
     for path, data in ((tex_path, tex), (manifest_path, manifest)):
-        if path.exists():
-            require(path.read_bytes() == data, f"Refusing to overwrite changed asset: {path.name}")
-        else:
-            path.write_bytes(data)
+        write_immutable_asset(path, data)
     archive = companion_zip(tex, manifest)
     print(json.dumps({"direct_tex": {"filename": TEX_NAME, "bytes": len(tex), "sha256": sha(tex)},
                       "assembly_manifest": {"filename": ASSEMBLY_NAME, "bytes": len(manifest),

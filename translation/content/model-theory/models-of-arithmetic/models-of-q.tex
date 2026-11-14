@@ -12,22 +12,22 @@
 \begin{explain}
 $\Struct{N}$ సత్యం చేసే \tetoken{వాక్యాలనే}{!!{sentence}s} సత్యం
 చేసే అప్రామాణిక \tetoken{నిర్మాణాలు}{!!{structure}s} ఉన్నాయని మనకు
-తెలుసు; అంటే, $\Th{TA}$కు అప్రామాణిక నమూనా ఉంది. $\Sat{N}{\Th{Q}}$
-కాబట్టి $\Th{TA}$ యొక్క ప్రతి నమూనా $\Th{Q}$కు కూడా నమూనా.
+తెలుసు. అంటే, $\Th{TA}$కు అప్రామాణిక నమూనాలు ఉన్నాయి. $\Sat{N}{\Th{Q}}$
+కాబట్టి $\Th{TA}$కు ఉన్న ప్రతి నమూనా $\Th{Q}$కు కూడా నమూనా.
 $\Th{Q}$, $\Th{TA}$ కంటే చాలా బలహీనమైనది; ఉదాహరణకు
 $\Th{Q}\Proves/\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$.
-బలహీన సిద్ధాంతాలను సంతృప్తిపరచడం సులభం: వాటికి ఎక్కువ నమూనాలు
-ఉంటాయి. ఉదాహరణకు
+బలహీనమైన సిద్ధాంతాలు సంతృప్తిపరచడం సులభం కనుక వాటికి ఎక్కువ
+నమూనాలు ఉంటాయి. ఉదాహరణకు
 $\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]$ను అసత్యం చేసే
 $\Th{Q}$ నమూనాలు ఉన్నాయి; కానీ అవి $\Th{TA}$కు, లేదా
-$\Th{PA}$కు కూడా, నమూనాలు కాలేవు. $\Th{Q}$ నమూనాలు సాపేక్షంగా
-సరళమైనవి కూడా: వాటిని స్పష్టంగా నిర్దేశించవచ్చు.
+$\Th{PA}$కు కూడా, నమూనాలు కాలేవు. $\Th{Q}$ నమూనాలు తులనాత్మకంగా
+సరళమైనవి కూడా. వాటిని నేరుగా నిర్దేశించవచ్చు.
 \end{explain}
 
 \begin{ex}
 \ollabel{ex:model-K-of-Q}
 $\Domain{K}=\Nat\cup\{a\}$ గల \tetoken{నిర్మాణం}{!!{structure}}~
-$\Struct{K}$ను, ఈ అర్థనిర్దేశాలతో పరిశీలించండి:
+$\Struct{K}$ను పరిశీలించండి. దాని అర్థనిర్దేశాలు ఇవి:
 \begin{align*}
   \Assign{\Obj{0}}{K} & = 0\\
   \Assign{\prime}{K}(x) & =
@@ -53,7 +53,7 @@ $\Struct{K}$ను, ఈ అర్థనిర్దేశాలతో పరి�
 $\Sat{K}{\Th{Q}}$ అని చూపాలంటే, $\Th{Q}$ స్వీకృతాలన్నీ
 $\Struct{K}$లో సత్యమని నిర్ధారించాలి. సౌలభ్యం కోసం
 $\Assign{\prime}{K}(x)$ను ($\Struct{K}$లో $x$ యొక్క
-“ఉత్తరాధికారి”) $x^\nssucc$గా, $\Assign{+}{K}(x,y)$ను
+“ఉత్తరవర్తి”) $x^\nssucc$గా, $\Assign{+}{K}(x,y)$ను
 ($\Struct{K}$లో $x$, $y$ల “మొత్తం”) $x\nsplus y$గా,
 $\Assign{\times}{K}(x,y)$ను ($\Struct{K}$లో $x$, $y$ల “లబ్ధం”)
 $x\nstimes y$గా, $\tuple{x,y}\in\Assign{<}{K}$ను
@@ -88,7 +88,7 @@ $n$, $m\in\Nat$లకు $n\nsless m$ అవడం సరిగ్గా $n<m$ �
 
 $\nssucc$ \tetoken{ఒకటి-ఒకటి}{!!{injective}} కాబట్టి
 $\Sat{K}{\lforall[x][\lforall[y][(\eq[x'][y']\lif\eq[x][y])]]}$.
-$\Struct{K}$లో $0$ ఏ $\nssucc$-ఉత్తరాధికారీ కాదు కాబట్టి
+$\Struct{K}$లో $0$ ఏ $\nssucc$-ఉత్తరవర్తీ కాదు కాబట్టి
 $\Sat{K}{\lforall[x][\eq/[\Obj 0][x']]}$. ప్రతి $n>0$కు
 $n=(n-1)^\nssucc$, అలాగే $a=a^\nssucc$ కాబట్టి
 $\Sat{K}{\lforall[x][(\eq[x][\Obj 0]\lor
@@ -96,8 +96,8 @@ $\Sat{K}{\lforall[x][(\eq[x][\Obj 0]\lor
 
 $n\nsplus0=n+0=n$, $\nsplus$ నిర్వచనం వల్ల $a\nsplus0=a$ కాబట్టి
 $\Sat{K}{\lforall[x][\eq[(x+\Obj 0)][x]]}$.
-$\Sat{K}{\lforall[x][\lforall[y][\eq[(x+y')][(x+y)']]]}$ కొంచెం
-క్లిష్టమైనది. $n$, $m$ రెండూ ప్రామాణికమైతే
+$\Sat{K}{\lforall[x][\lforall[y][\eq[(x+y')][(x+y)']]]}$ అని చూపడం కొంచెం
+కష్టం. $n$, $m$ రెండూ ప్రామాణికమైతే
 \begin{align*}
 (n \nsplus m^\nssucc) & = (n+(m+1)) = (n+m)+1 = (n \nsplus m)^\nssucc
 \intertext{ఎందుకంటే ప్రామాణిక సంఖ్యలపై $\nsplus$, $^\nssucc$లు
@@ -112,10 +112,6 @@ $\Sat{K}{\lforall[x][\lforall[y][\eq[(x+y')][(x+y)']]]}$ కొంచెం
 (a \nsplus a^\nssucc) & = (a \nsplus a) = a = a^\nssucc
   = (a \nsplus a)^\nssucc
 \end{align*}
-\sourcecorrection{OLTEMODARI-008}{$\Struct{K}$ వ్యక్తి క్షేత్రంలో
-$\Nat$కు అదనంగా ఉన్నది $a$ మాత్రమే; అయినా ఆంగ్ల మూలం చివరి
-సందర్భ విభజనలో $y=b$ అంటుంది. దాని వెంటనే ఉన్న సరైన $a$-సూత్రాలకు
-అనుగుణంగా $y=a$గా సరిచేశాం.}
 ఇది అవసరమైనదానికంటే కొంచెం వివరంగానే ఉంది. ఉదాహరణకు,
 $z$ ఏదైనా $a\nsplus z=a$ కాబట్టి
 $a\nsplus a^\nssucc=a$ అని వెంటనే చెప్పవచ్చు. మిగిలిన స్వీకృతాలను
@@ -123,7 +119,7 @@ $a\nsplus a^\nssucc=a$ అని వెంటనే చెప్పవచ్చ�
 
 ఈ విధంగా $\Struct{K}$, $\Th{Q}$కు నమూనా. దాని “సంకలనం”
 $\nsplus$ వినిమయ ధర్మం గలది కూడా. అయితే $\Struct{N}$లో సత్యమై
-$\Struct{K}$లో అసత్యమైన, అలాగే విపర్యయంగా ఉండే ఇతర వాక్యాలు ఉన్నాయి.
+$\Struct{K}$లో అసత్యమయ్యే వాక్యాలూ, తిరుగుగా సత్యాసత్యాలు గల వాక్యాలూ ఉన్నాయి.
 ఉదాహరణకు $a\nsless a$; కనుక $\Sat{K}{\lexists[x][x<x]}$ మరియు
 $\Sat/{K}{\lforall[x][\lnot x<x]}$. దీనివల్ల
 $\Th{Q}\Proves/\lforall[x][\lnot x<x]$.
@@ -186,10 +182,6 @@ $x$, $y$ రెండూ అప్రామాణికమైతే నాలు
 &  n \nsplus b^\nssucc  = n \nsplus b = a = a^\nssucc
   = (n \nsplus b)^\nssucc
 \end{align*}
-\sourcecorrection{OLTEMODARI-009}{$b\nsplus a^\nssucc$ సందర్భంలోని
-ఆంగ్ల మూల సమానతా శ్రేణి చివర $(b\nsplus y)^\nssucc$ అని, ఆ శాఖలో
-నిర్దిష్టమైన $a$ స్థానంలో స్వేచ్ఛా $y$ను ఉంచుతుంది. అదే పట్టికకూ
-సమానతా శ్రేణికీ సరిపడేలా $(b\nsplus a)^\nssucc$గా సరిచేశాం.}
 కాబట్టి $\Sat{L}{!Q_5}$. అయితే
 $a\nsplus0\neq0\nsplus a$ కాబట్టి
 $\Sat/{L}{\lforall[x][\lforall[y][\eq[(x+y)][(y+x)]]]}$.
@@ -218,9 +210,8 @@ $b^\nssucc=a$ అయ్యే $\Th{Q}$ నమూనా ఏదైనా ఉంద
 \begin{explain}
 అప్రామాణిక \tetoken{మూలకాలు}{!!{element}s}, ప్రామాణిక మూలకాలకు
 “ఆవల” ఉండే $\Th{Q}$ నమూనాలను మనం స్పష్టంగా నిర్మించాం. వాస్తవానికి,
-స్వీకృతాలు కనీసం అంతవరకు తప్పనిసరి చేస్తాయి. ఒక అప్రామాణిక
-\tetoken{మూలకం}{!!{element}}~$x$కు ${}\nsless 0$ సంబంధం
-ఉండదు; ఎందుకంటే $\Th{Q}\Proves\lforall[x][\lnot x<0]$
+ఆ మూలకాలు ఆవలే ఉండాలని స్వీకృతాల నుంచి వస్తుంది. ఒక అప్రామాణిక
+\tetoken{మూలకం}{!!{element}}~$x$ ఎప్పుడూ ${}\nsless 0$ కాదు; ఎందుకంటే $\Th{Q}\Proves\lforall[x][\lnot x<0]$
 (\olref[inc][req][min]{lem:less-zero} చూడండి). అలాగే ప్రతి $n$కూ
 $\Th{Q}\Proves\lforall[x][(x<\num{n}'\lif
 (\eq[x][\num{0}]\lor\eq[x][\num{1}]\lor\dots\lor

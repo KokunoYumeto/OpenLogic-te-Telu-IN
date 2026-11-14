@@ -1,6 +1,6 @@
-% part: intuitionistic-logic
-% chapter: semantics
-% section: propositions
+% భాగం: అంతఃప్రజ్ఞావాద తర్కం
+% అధ్యాయం: అర్థవిచారం
+% విభాగం: ప్రతిపాదనలు
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -10,11 +10,11 @@
 
 \olsection{ప్రతిపాదనలు}
 
-కొన్నిసార్లు \tetoken{సంబంధ నమూనా}{!!a{relational model}}~$\mModel{M}$లో \tetoken{సూత్రం}{!!a{formula}}~$!A$ సత్యమయ్యే లోకాల సమితికి పేరు ఉండటం ఉపయోగకరం. దాన్ని~$!A$ నిర్వచించే \emph{ప్రతిపాదన} అని పిలిచి $\Prop{M}{!A}$గా రాస్తాం.
+\tetoken{సంబంధ నమూనా}{!!a{relational model}}~$\mModel{M}$లో \tetoken{సూత్రం}{!!a{formula}}~$!A$ సత్యమయ్యే లోకాల సమితికి కొన్నిసార్లు పేరు పెట్టడం ఉపయోగపడుతుంది. ఆ సమితిని~$!A$ నిర్వచించే \emph{ప్రతిపాదన} అని పిలుస్తాం. దాన్ని $\Prop{M}{!A}$గా రాస్తాం.
 
 \begin{defn}
-  $V$ ప్రమేయాన్ని $\Prop{M}{!A} \colon \Frm
-  \to \Pow{W}$ ప్రమేయంగా ఆగమనాత్మకంగా ఇలా విస్తరిస్తాం:
+  $V$ ప్రమేయాన్ని ఆగమన పద్ధతిలో కింది విధంగా విస్తరించి $\Prop{M}{!A} \colon \Frm
+  \to \Pow{W}$ ప్రమేయాన్ని పొందుతాం.
   \begin{enumerate}
   \item $\Prop{M}{\lfalse} = \emptyset$
   \item $\Prop{M}{p} = V(p)$
@@ -35,7 +35,7 @@
 
 \begin{prop}
   \ollabel{prop:propositions-true}
-  $\mModel{M}{!A}[w]$ కావడానికి, కావలసినదీ చాలునదీ $w \in \Prop{M}{!A}$.
+  $\mSat{M}{!A}[w]$ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే $w \in \Prop{M}{!A}$.
 \end{prop}
 
 \begin{proof}

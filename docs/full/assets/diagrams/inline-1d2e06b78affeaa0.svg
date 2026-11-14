@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="86.476pt" height="86.077pt" viewBox="0 -86.077 86.476 86.077" data-generator="dvisvgm-no-fonts">
+<g id="page1">
+<g transform="matrix(1 0 0 -1 0 0)">
+<path d="M3.386719 3.1875V82.8906H83.0898V3.1875Z" stroke="#808080" fill="none" stroke-width=".3985" stroke-miterlimit="10"/>
+<path d="M3.386719 3.1875H83.0898M3.386719 23.1133H83.0898M3.386719 43.0391H83.0898M3.386719 62.9648H83.0898M3.386719 82.8789H83.0898M3.386719 3.1875V82.8906M23.3125 3.1875V82.8906M43.2383 3.1875V82.8906M63.1641 3.1875V82.8906M83.0781 3.1875V82.8906" stroke="#808080" fill="none" stroke-width=".19925" stroke-miterlimit="10"/>
+<path d="M3.386719 13.15234H13.35156" stroke="#ad3040" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M73.125 13.15234H83.0898" stroke="#ad3040" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M13.35156 33.0781V53" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M33.2734 53H53.1992" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M73.125 53V33.0781" stroke="#4d6f39" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M13.35156 33.0781H33.2734V13.15234H13.35156" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M13.35156 53V72.9258H33.2734V53" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M53.1992 53V72.9258H73.125V53" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+<path d="M73.125 13.15234H53.1992V33.0781H73.125" stroke="#000" fill="none" stroke-width=".79701" stroke-miterlimit="10"/>
+</g>
+</g>
+</svg>

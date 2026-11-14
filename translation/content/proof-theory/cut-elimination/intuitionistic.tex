@@ -34,7 +34,7 @@ $!A \ident (!B \lif !C)$ అయితే $\pi$ ఇలా ముగుస్త�
 \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
 \DisplayProof
 \]
-దీనికి~$\pi$కన్నా తక్కువ కట్ \tetoken{ఎత్తు}{!!{height}} ఉంది. ఆగమన పరికల్పన వల్ల $\Gamma, \Pi \fCenter \Delta, \Lambda, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1''$ వస్తుంది. \Cut{}తో ముగిసే \tetoken{నిరూపణ}{!!{proof}} ఇది:
+$\pi$తో పోలిస్తే ఈ నిరూపణకు కట్ \tetoken{ఎత్తు}{!!{height}} తక్కువ. ఆగమన పరికల్పన ప్రకారం $\Gamma, \Pi \fCenter \Delta, \Lambda, !B$కు \tetoken{ఒక నిరూపణ}{!!a{proof}}~$\pi_1''$ వస్తుంది. \Cut{}తో ముగిసే \tetoken{నిరూపణ}{!!{proof}} ఇది:
 \[
 \AxiomC{}
 \RightLabel{$\pi_1'$}
@@ -46,22 +46,17 @@ $!A \ident (!B \lif !C)$ అయితే $\pi$ ఇలా ముగుస్త�
 \BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
 \DisplayProof
 \]
-\sourcecorrection{OLTEPTCUTAUX-001}{ఈ నిరూపణ వృక్షంలో మూలం మొదటి పూర్వాంగాన్ని $B!$గా తారుమారు చేసింది; ముందు, తరువాతి సీక్వెంట్‌లకు అనుగుణంగా $!B$గా సరిచేశాం.}
-దీని కట్ స్థాయి, కట్ \tetoken{ఎత్తు}{!!{height}} రెండూ~$\pi$ కట్ స్థాయి, \tetoken{ఎత్తు}{!!{height}}లకన్నా తక్కువ. కాబట్టి ఆగమన పరికల్పన వల్ల $!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
-\Lambda$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}}~$\pi_2'''$ వస్తుందని మూలం చెబుతుంది. ఇప్పుడు \Cut{}తో ముగిసే ఈ \tetoken{నిరూపణ}{!!{proof}}కు ఆగమన పరికల్పన వర్తింపజేయండి:
+ఈ నిరూపణ కట్ స్థాయి, కట్ \tetoken{ఎత్తు}{!!{height}} వరుసగా~$\pi$లోని కట్ స్థాయి, కట్ \tetoken{ఎత్తు}{!!{height}} కన్నా తక్కువ. కాబట్టి ఆగమన పరికల్పన వల్ల $!B, \Gamma, \Pi \fCenter \Delta, \Lambda$కు \Log{G3c}-\tetoken{నిరూపణ}{!!{proof}}~$\pi_2'''$ వస్తుంది. ఇప్పుడు \Cut{}తో ముగిసే ఈ \tetoken{నిరూపణకు}{!!{proof}} ఆగమన పరికల్పనను వర్తింపజేయండి:
 \[
 \AxiomC{}
 \RightLabel{$\pi_1''$}
 \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, !B$
 \AxiomC{}
 \RightLabel{$\pi_2'''$}
-\Deduce$!B, \Gamma, \Pi, \Pi \fCenter \Delta, \Lambda,
-\Lambda$
+\Deduce$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
 \RightLabel{\Cut}
-\BinaryInf$!B, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\BinaryInf$\Gamma, \Gamma, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda$
 \DisplayProof
 \]
-(దీని కట్ స్థాయి $< \cutrank{\pi}$) అని మూలం ఉద్దేశించిన చోట $\Gamma,
-\Gamma, \Pi, \Pi, \Pi \fCenter \Delta, \Lambda, \Lambda, \Lambda$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} వస్తుందని చెబుతుంది. \sourcecorrection{OLTEPTCUTAUX-002}{మూలంలోని నిర్వచించని $\cutr{\pi}$ స్థానంలో ఈ అధ్యాయంలో వాడిన $\cutrank{\pi}$ను పెట్టాం.}
-\sourcecorrection{OLTEPTCUTAUX-003}{ఈ సహాయక తునకలో చివరి రెండు కట్ వృక్షాల ముగింపులు, వాటి తరువాతి గద్యంలోని సందర్భ ప్రతుల సంఖ్యలు సాధారణ \Cut{} నియమంతో ఒకదానికొకటి సరిపోవు. మూల వృక్షాలను అలాగే నిలిపి, ఈ లోపాన్ని ప్రకటించాం; ఇక్కడ పూర్తిస్థాయి నిరూపణ పునర్నిర్మాణం చేయలేదు.}
-\olref[seq][inv]{prop:G3c-cont-adm} వర్తింపజేసి $\Gamma, \Pi \fCenter \Delta, \Lambda$ యొక్క \tetoken{నిరూపణ}{!!{proof}} $\pi'$ను పొందుతాం.
+ఈ నిరూపణ కట్ స్థాయి $< \cutr{\pi}$ కనుక $\Gamma, \Gamma, \Pi, \Pi \fCenter \Delta, \Delta, \Lambda, \Lambda$కు \tetoken{ఒక నిరూపణ}{!!a{proof}} పొందుతాం.
+\olref[seq][inv]{prop:G3c-cont-adm} వర్తింపజేసి $\Gamma, \Pi \fCenter \Delta, \Lambda$కు \tetoken{నిరూపణ}{!!{proof}} $\pi'$ను పొందుతాం.

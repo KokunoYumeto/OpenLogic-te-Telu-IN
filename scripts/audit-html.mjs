@@ -6,7 +6,9 @@ const root=path.resolve(import.meta.dirname,'..');
 const pages=process.argv.includes('--pages');
 const scopeArg=process.argv.find(a=>a.startsWith('--scope='));
 const receiptArg=process.argv.find(a=>a.startsWith('--receipt='));
-if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scope=')&&!a.startsWith('--receipt=')))throw new Error('Unknown option');
+const inputArg=process.argv.find(a=>a.startsWith('--input-dir='));
+if(process.argv.some(a=>a.startsWith('--')&&a!=='--pages'&&!a.startsWith('--scope=')&&!a.startsWith('--receipt=')&&!a.startsWith('--input-dir=')))throw new Error('Unknown option');
+if(pages&&inputArg)throw new Error('Choose --pages or --input-dir');
 const scope=scopeArg?.slice('--scope='.length)??'sets';
 const profiles={
  sets:{start:4,end:10,slug:'sets',label:'Sets chapter, OLP-0004..OLP-0010',expectedAssets:3,chapterTitles:[[0,'సమితులు']]},
@@ -16,12 +18,13 @@ const profiles={
 };
 const profile=profiles[scope];
 if(!profile)throw new Error('Unknown scope '+scope);
-const dir=pages?path.join(root,'docs',profile.slug):path.join(root,'output/html',profile.slug);
+const dir=inputArg?path.resolve(inputArg.slice('--input-dir='.length)):pages?path.join(root,'docs',profile.slug):path.join(root,'output/html',profile.slug);
 const read=name=>fs.readFileSync(path.join(dir,name));
 const text=name=>read(name).toString('utf8');
 const sha=data=>crypto.createHash('sha256').update(data).digest('hex');
 const count=(s,re)=>(s.match(re)??[]).length;
 const assert=(ok,message)=>{if(!ok)throw new Error(message);};
+assert(text('index.html').includes('href="reader.css?v='+sha(read('reader.css'))+'"'),'Stylesheet URL is not bound to current CSS bytes');
 const jsonl=name=>fs.readFileSync(path.join(root,'evidence',name),'utf8').trim().split(/\r?\n/u).map(JSON.parse);
 const sourceManifest=jsonl('SOURCE_MANIFEST.jsonl').filter(row=>row.order>=profile.start&&row.order<=profile.end);
 const segmentLedger=jsonl('SEGMENT_CANON_USE.jsonl').filter(row=>{

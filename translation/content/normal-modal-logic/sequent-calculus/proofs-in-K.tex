@@ -8,14 +8,14 @@
 
 \olfileid{nml}{seq}{prk}
 
-\olsection{\Log{K} కోసం సీక్వెంట్ \usetoken{P}{derivation}}
+\olsection{\Log{K}లో సీక్వెంట్ \usetoken{P}{derivation}}
 
 \iftag{prvBox}{
 
 \begin{ex}
   $\Proves (\Box!A \land \Box!B)
-  \lif \Box (!A \land !B)$ అని చూపే సీక్వెంట్ కలనశాస్త్ర
-  \tetoken{వ్యుత్పత్తిని}{!!{derivation}} ఇస్తాం.
+  \lif \Box (!A \land !B)$ అని కింద ఇచ్చిన సీక్వెంట్
+  \tetoken{వ్యుత్పత్తి}{!!{derivation}} చూపుతుంది.
   \begin{prooftree}
     \Axiom$!A \fCenter !A$
     \doubleLine
@@ -48,8 +48,8 @@
 \iftag{prvDiamond}{
   \begin{ex}
     $\Proves \Diamond(!A
-    \lor !B) \lif (\Diamond !A \lor \Diamond!B)$ అని చూపే
-    సీక్వెంట్ కలనశాస్త్ర \tetoken{వ్యుత్పత్తిని}{!!{derivation}} ఇస్తాం.
+    \lor !B) \lif (\Diamond !A \lor \Diamond!B)$ అని కింద ఇచ్చిన
+    సీక్వెంట్ \tetoken{వ్యుత్పత్తి}{!!{derivation}} చూపుతుంది.
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \doubleLine
@@ -81,7 +81,7 @@
 }{}
 
 \iftag{notprvBox,notprvDiamond}{}{
-  \Dual{}కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఇది.
+  \Dual{}కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} కింద ఇచ్చాం.
   \begin{prooftree}
     \Axiom$!A \fCenter !A$
     \RightLabel{\LeftR{\lnot}}
@@ -108,11 +108,6 @@
     \RightLabel{\RightR{\land}}
     \BinaryInf$\fCenter \Box !A \liff \lnot\Diamond\lnot !A$
   \end{prooftree}
-  \sourcecorrection{OLTENMLSEQPRK-001}{\Dual{} వ్యుత్పత్తిలో
-    ఎడమవైపున నిరాకరణను ప్రవేశపెట్టే మొదటి, చివరి-ముందు
-    దశలకు మూలం పొరపాటుగా కుడి నిరాకరణ నియమ చీటీ వేసింది;
-    ముందటి LK నియమ పట్టిక ప్రకారం రెండు చీటీలనూ
-    ఎడమ నిరాకరణగా మార్చాం.}
 
 % this does not work if problems are deferred
 % \begin{prob}
@@ -122,8 +117,8 @@
 }
 
 \begin{prob}
-  కింది \tetoken{సూత్రాలకు}{!!{formula}s} $\Log{K}$లో
-  సీక్వెంట్ కలనశాస్త్ర నిరూపణలను కనుగొనండి:
+  కింది \tetoken{సూత్రాలకు}{!!{formula}s} $\Log{K}$ సీక్వెంట్
+  కలనంలో నిరూపణలు కనుగొనండి:
   \begin{enumerate}
     \item $\Box \lnot p \lif \Box(p \lif q)$
     \item $(\Box p \lor \Box q) \lif \Box(p \lor q)$

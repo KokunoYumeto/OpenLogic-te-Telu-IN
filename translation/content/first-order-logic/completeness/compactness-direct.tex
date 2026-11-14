@@ -10,29 +10,29 @@
       {\olfileid{fol}{com}{cpd}}
       {\olfileid{pl}{com}{cpd}}
 
-\olsection{సంహతత్వ సిద్ధాంతానికి నేర నిరూపణ}
+\olsection{సంహతత్వ సిద్ధాంతానికి ప్రత్యక్ష నిరూపణ}
 
 సంపూర్ణతా సిద్ధాంతాన్ని ఆశ్రయించకుండా, సంపూర్ణతా సిద్ధాంతపు నిరూపణలోని
 ఆలోచనలనే ఉపయోగించి సంహతత్వ సిద్ధాంతాన్ని నేరుగా నిరూపించవచ్చు.
-సంపూర్ణతా సిద్ధాంతపు నిరూపణలో అవైరుధ్య \tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma$తో
+సంపూర్ణతా సిద్ధాంతపు నిరూపణలో అవైరుధ్య \tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$తో
 మొదలుపెట్టి, దాన్ని అవైరుధ్యమైన,\iftag{FOL}{ సంతృప్తీకృతమైన,}{}
-\tetoken{సంపూర్ణ}{!!{complete}} \tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma^*$గా విస్తరించాం. తరువాత
+\tetoken{సంపూర్ణ}{!!{complete}} \tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma^*$గా విస్తరించాం. తరువాత
 $\Gamma^*$ నుంచి నిర్మించిన \iftag{FOL}{పద
   నమూనా~$\Struct{M(\Gamma^*)}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v(\Gamma^*)}$}
-లో~$\Gamma$లోని అన్ని \tetoken{వాక్యాలు}{!!{sentence}s} సత్యమని చూపాం; కాబట్టి $\Gamma$
+లో~$\Gamma$లోని అన్ని \tetoken{వాక్యాలు}{!!{sentence}s} సత్యమని చూపాం. కాబట్టి $\Gamma$
 సంతృప్తిపరచదగినది.
 
-వాక్యాల పరిమితంగా సంతృప్తిపరచదగిన సమితి సంతృప్తిపరచదగినదని చూపడానికి
+పరిమితంగా సంతృప్తిపరచదగిన వాక్యాల సమితి సంతృప్తిపరచదగినదని చూపడానికి
 ఇదే పద్ధతిని ఉపయోగించవచ్చు. సత్య ఉపసిద్ధాంతానికి దారితీసే ఫలితాల్లో
 ``అవైరుధ్యమైనది'' స్థానంలో ``పరిమితంగా సంతృప్తిపరచదగినది''ని ఉంచిన
 సంబంధిత రూపాలను నిరూపిస్తే చాలు.
 
 \begin{prop}
 \ollabel{prop:fsat-ccs}
-$\Gamma$ \tetoken{సంపూర్ణ}{!!{complete}}, పరిమితంగా సంతృప్తిపరచదగినది అనుకుందాం. అప్పుడు:
+$\Gamma$ \tetoken{సంపూర్ణమైనదీ}{!!{complete}} పరిమితంగా సంతృప్తిపరచదగినదీ అనుకుందాం. అప్పుడు:
 \begin{enumerate}
 \tagitem{prvAnd}{$(!A \land !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
-  మాత్రమే $!A \in \Gamma$, $!B \in \Gamma$ రెండూ.}{}
+  మాత్రమే $!A \in \Gamma$, $!B \in \Gamma$ రెండూ ఉంటాయి.}{}
 
 \tagitem{prvOr}{$(!A \lor !B) \in \Gamma$ అయినప్పుడు, అప్పుడు
   మాత్రమే $!A \in \Gamma$ లేదా $!B \in \Gamma$.}{}
@@ -66,7 +66,7 @@ $\Gamma$ \tetoken{సంపూర్ణ}{!!{complete}}, పరిమితంగ
 
 \tagprob{FOL}
 \begin{prob}
-\olref[fol][com][cpd]{lem:fsat-henkin}ను నిరూపించండి. (సూచన:
+\olref[fol][com][cpd]{lem:fsat-henkin}ను నిరూపించండి. (సూచన.
 $\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, \tetoken{వ్యుత్పత్తులు}{!!{derivation}s} లేదా
 అవైరుధ్యాన్ని ఏమాత్రం ఆశ్రయించకుండా $\Gamma_n \cup \{!D_n\}$ కూడా
 పరిమితంగా సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
@@ -81,7 +81,7 @@ $\Gamma$ సంపూర్ణమైనది, పరిమితంగా స�
 \tagitem{prvEx}{$\lexists[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
   మాత్రమే కనీసం ఒక సంవృత పదం~$t$కు $!A(t) \in \Gamma$.}{}
 \tagitem{prvAll}{$\lforall[x][!A(x)] \in \Gamma$ అయినప్పుడు, అప్పుడు
-  మాత్రమే అన్ని సంవృత పదాలు~$t$కు $!A(t) \in \Gamma$.}{}
+  మాత్రమే ప్రతి సంవృత పదం~$t$కూ $!A(t) \in \Gamma$.}{}
 \end{tagenumerate}
 \end{prop}
 }{}
@@ -100,7 +100,7 @@ $\Gamma$ సంపూర్ణమైనది, పరిమితంగా స�
 
 \tagprob{FOL}
 \begin{prob}
-\olref[fol][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన:
+\olref[fol][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన.
 $\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, $\Gamma_n \cup \{!A_n\}$
 లేదా $\Gamma_n \cup \{\lnot !A_n\}$లలో కనీసం ఒకటి పరిమితంగా
 సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
@@ -109,7 +109,7 @@ $\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగ�
 
 \tagprob{notFOL}
 \begin{prob}
-\olref[pl][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన:
+\olref[pl][com][cpd]{lem:fsat-lindenbaum}ను నిరూపించండి. (సూచన.
 $\Gamma_n$ పరిమితంగా సంతృప్తిపరచదగినదైతే, $\Gamma_n \cup \{!A_n\}$
 లేదా $\Gamma_n \cup \{\lnot !A_n\}$లలో కనీసం ఒకటి పరిమితంగా
 సంతృప్తిపరచదగినదని చూపడమే కీలకమైన అడుగు.)
@@ -126,7 +126,7 @@ $\Gamma$ సంతృప్తిపరచదగినదైతే, అన్న
 $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ అయ్యే
 \iftag{FOL}{\tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct{M}$}{\tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$}
 ఉంటుంది. ఈ \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} సహజంగానే
-~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితిని కూడా సంతృప్తిపరుస్తుంది; కాబట్టి
+~$\Gamma$లోని ప్రతి పరిమిత ఉపసమితిని కూడా సంతృప్తిపరుస్తుంది. కాబట్టి
 $\Gamma$ పరిమితంగా సంతృప్తిపరచదగినది.
 
 ఇప్పుడు~$\Gamma$ పరిమితంగా సంతృప్తిపరచదగినదని అనుకుందాం.\iftag{FOL}{
@@ -135,17 +135,17 @@ $\Gamma$ పరిమితంగా సంతృప్తిపరచదగి�
 \olref{lem:fsat-lindenbaum} ప్రకారం,
 $\iftag{FOL}{\Gamma'}{\Gamma}$ను \tetoken{ఒక సంపూర్ణ}{!!a{complete}}, పరిమితంగా
 సంతృప్తిపరచదగిన సమితి~$\Gamma^*$గా విస్తరించవచ్చు\iftag{FOL}{;
-  $\Gamma^*$ ఇంకా సంతృప్తీకృతంగానే ఉంటుంది}{}. పద
-\iftag{FOL}{నమూనా~$\Struct{M(\Gamma^*)}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v(\Gamma^*)}$}
+  $\Gamma^*$ ఇంకా సంతృప్తీకృతంగానే ఉంటుంది}{}.
+\iftag{FOL}{పద నమూనా~$\Struct{M(\Gamma^*)}$}{\tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v(\Gamma^*)}$}
 ను \olref[mod]{defn:termmodel}లో ఉన్నట్లుగా నిర్మించండి.\iftag{FOL}{
 \olref[mod]{prop:quant-termmodel} అనేది $\Gamma^*$ అవైరుధ్యమనే
 వాస్తవంపై (లేదా, నిజానికి అది \tetoken{సంపూర్ణ}{!!{complete}} లేదా సంతృప్తీకృతమనే
-వాస్తవంపై) ఆధారపడలేదు; $\Struct{M(\Gamma^*)}$ ఆవరితమనే వాస్తవంపైనే
+వాస్తవంపై) ఆధారపడలేదు. $\Struct{M(\Gamma^*)}$ ఆవరితమనే వాస్తవంపైనే
 ఆధారపడిందని గమనించండి.}{} సత్య ఉపసిద్ధాంతం
-(\olref[mod]{lem:truth}) యొక్క నిరూపణలో
-\olref[ccs]{prop:ccs}\iftag{FOL}{, \olref[hen]{prop:saturated-instances}
-సూచనల స్థానంలో వరుసగా \olref{prop:fsat-ccs},
-\olref{prop:fsat-instances}} సూచనలను ఉంచితే అదే నిరూపణ పనిచేస్తుంది.
+(\olref[mod]{lem:truth}) నిరూపణలో
+\olref[ccs]{prop:ccs} స్థానంలో \olref{prop:fsat-ccs}ను
+\iftag{FOL}{, \olref[hen]{prop:saturated-instances} స్థానంలో
+\olref{prop:fsat-instances}ను}{} ఉంచితే అదే నిరూపణ వర్తిస్తుంది.
 \end{proof}
 
 \tagprob{FOL}

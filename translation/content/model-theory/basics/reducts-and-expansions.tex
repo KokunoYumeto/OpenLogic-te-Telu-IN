@@ -7,28 +7,27 @@
 \begin{document}
 
 \olfileid{mod}{bas}{red}
-\section{సంకుచిత రూపాలు మరియు విస్తరణలు}
+\section{సంకుచిత రూపాలు, విస్తరణలు}
 
-కొన్ని ఉమ్మడి సంకేతాలు గల భాషలను, అలాగే ఆ భాషల
-\tetoken{నిర్మాణాలను}{!!{structure}s} పోల్చడం తరచుగా ఉపయోగకరం లేదా అవసరం. అత్యంత
+ఉమ్మడి సంకేతాలు గల భాషలనూ, ఆ భాషలకు చెందిన
+\tetoken{నిర్మాణాలనూ}{!!{structure}s} పోల్చడం తరచుగా ఉపయోగకరం లేదా అవసరం. అత్యంత
 సాధారణ సందర్భంలో \tetoken{ఒక భాష}{!!a{language}}~$\Lang{L}$లోని సంకేతాలన్నీ
-\tetoken{మరో భాష}{!!a{language}}~$\Lang{L'}$లోనూ భాగమవుతాయి; అంటే,
+\tetoken{మరో భాష}{!!a{language}}~$\Lang{L'}$లోనూ ఉంటాయి. అంటే
 $\Lang{L} \subseteq \Lang{L'}$. అప్పుడు ఉమ్మడి సంకేతాల
-అర్థనిర్దేశాలను మార్చకుండా, అదనపు సంకేతాలకు అర్థనిర్దేశాలు చేర్చి,
+అర్థనిర్దేశాలను అలాగే ఉంచి, అదనపు సంకేతాలకు అర్థనిర్దేశాలు ఇచ్చి,
 ఒక $\Lang{L}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$ను ఎల్లప్పుడూ
 $\Lang{L'}$-\tetoken{నిర్మాణంగా}{!!{structure}} విస్తరించవచ్చు. మరోవైపు,
 $\Lang{L'}$-నిర్మాణం~$\Struct{M'}$ నుంచి
-$\Lang{L}$లో లేని సంకేతాల అర్థనిర్దేశాలను “మరచిపోవడం” ద్వారా
+$\Lang{L}$లో లేని సంకేతాల అర్థనిర్దేశాలను ``మరచిపోవడం'' ద్వారా
 $\Lang{L}$-నిర్మాణాన్ని పొందవచ్చు.
 
 \begin{defn}
 \ollabel{defn:reduct}
-$\Lang L \subseteq \Lang L'$ అనుకుందాం; $\Struct M$ ఒక
+$\Lang L \subseteq \Lang L'$ అనీ, $\Struct M$ ఒక
 $\Lang L$-\tetoken{నిర్మాణం}{!!{structure}}, $\Struct M'$ ఒక
-$\Lang L'$-\tetoken{నిర్మాణం}{!!{structure}} అనుకుందాం. కింది షరతులు నెరవేరితే,
-అప్పుడే $\Struct M$ను $\Lang L$కు పరిమితమైన $\Struct M'$ యొక్క
-\emph{సంకుచిత రూపం} అంటాం; $\Struct M'$ను $\Lang L'$కు విస్తరించిన
-$\Struct M$ యొక్క \emph{విస్తరణ} అంటాం:
+$\Lang L'$-\tetoken{నిర్మాణం}{!!{structure}} అనీ అనుకుందాం. కింది షరతులన్నీ నెరవేరినప్పుడే $\Struct M$ను $\Lang L$కు సంబంధించి $\Struct M'$కు చెందిన
+\emph{సంకుచిత రూపం} అంటాం. అలాగే $\Struct M'$ను $\Lang L'$కు విస్తరించిన
+$\Struct M$కు చెందిన \emph{విస్తరణ} అంటాం:
 \begin{enumerate}
 \item $\Domain{M} = \Domain{M'}$.
 \item ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$c \in \Lang L$కు,
@@ -43,15 +42,15 @@ $\Struct M$ యొక్క \emph{విస్తరణ} అంటాం:
 \begin{prop}
 \ollabel{prop:reduct}
 ఒక $\Lang{L}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M}$,
-$\Lang{L'}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$ యొక్క సంకుచిత
+$\Lang{L'}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$కు సంకుచిత
 రూపమైతే, ప్రతి $\Lang{L}$-\tetoken{వాక్యం}{!!{sentence}s}~$!A$కు
 \[
-\Sat{M}{!A} \text{ అవుతుంది అప్పుడే } \Sat{M'}{!A}.
+\Sat{M}{!A} \text{ అవుతుంది అప్పుడే, అప్పుడు మాత్రమే } \Sat{M'}{!A}.
 \]
 \end{prop}
 
 \begin{proof}
-  అభ్యాసం.
+  సాధన.
 \end{proof}
 
 \begin{prob}
@@ -62,9 +61,9 @@ $\Lang{L'}$-\tetoken{నిర్మాణం}{!!{structure}}~$\Struct{M'}$ య�
 మనకు $\Lang{L}$-నిర్మాణం $\Struct{M}$ ఉందనుకుందాం.
 ఒకే ఒక $n$-స్థాన \tetoken{విధేయ సంకేతం}{!!{predicate}}~$P$ను చేర్చి
 $\Lang{L}$ నుంచి పొందిన విస్తరణ $\Lang{L'} = \Lang{L} \cup \{P\}$
-అనుకుందాం; $R \subseteq \Domain{M}^n$ ఒక $n$-స్థాన సంబంధం అనుకుందాం.
+అనీ, $R \subseteq \Domain{M}^n$ ఒక $n$-స్థాన సంబంధమనీ అనుకుందాం.
 అప్పుడు $\Assign{P}{M'} = R$ అయ్యేలా $\Struct{M}$ను విస్తరించి పొందిన
-$\Struct{M'}$ను $\Expan{M}{R}$గా రాస్తాం.
+$\Struct{M'}$ను $\Expan{M}{R}$ అని రాస్తాం.
 \end{defn}
 
 \end{document}

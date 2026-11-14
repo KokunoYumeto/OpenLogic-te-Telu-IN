@@ -15,18 +15,18 @@
 \begin{defn}
 \begin{enumerate}
 \item ఏదో~$\pAssign{v}$కు $\pSat{v}{!A}$ అయితే
-  \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ \emph{సంతృప్తిపరచదగినది}; ఏ
-  $\pAssign{v}$కూ $\pSat{v}{!A}$ కాకపోతే అది
+  \tetoken{సూత్రం}{!!^a{formula}}~$!A$ \emph{సంతృప్తిపరచదగినది}; ఏ
+  $\pAssign{v}$కూ $\pSat{v}{!A}$ వర్తించకపోతే అది
   \emph{సంతృప్తిపరచలేనిది};
-\item అన్ని \tetoken{సత్యమూల్య కేటాయింపులు}{!!{valuation}s}~$\pAssign{v}$కు $\pSat{v}{!A}$ అయితే
-  \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ ఒక \emph{సర్వసత్యం};
-\item \tetoken{ఒక సూత్రం}{!!^a{formula}}~$!A$ సంతృప్తిపరచదగినదై, సర్వసత్యం కాకపోతే అది
+\item ప్రతి \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}s}~$\pAssign{v}$లో $\pSat{v}{!A}$ అయితే
+  \tetoken{సూత్రం}{!!^a{formula}}~$!A$ ఒక \emph{సర్వసత్యం};
+\item \tetoken{సూత్రం}{!!^a{formula}}~$!A$ సంతృప్తిపరచదగినదై, సర్వసత్యం కాకపోతే అది
   \emph{పరిస్థిత్యాధీనమైనది};
-\item $\Gamma$ ఒక \tetoken{సూత్రాలు}{!!{formula}s} సమితి అయితే, $\pSat{v}{\Gamma}$ అయ్యే
-  ప్రతి \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$కు $\pSat{v}{!A}$ అయినప్పుడూ,
-  అప్పుడు మాత్రమే $\Gamma \Entails !A$ (“$\Gamma$ నుంచి $!A$
+\item $\Gamma$ ఒక \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే, $\pSat{v}{\Gamma}$ అయ్యే
+  ప్రతి \tetoken{సత్యమూల్య కేటాయింపు}{!!{valuation}}~$\pAssign{v}$కు $\pSat{v}{!A}$ అయినప్పుడు,
+  అయినప్పుడు మాత్రమే $\Gamma \Entails !A$ (“$\Gamma$ నుంచి $!A$
   అర్థపరంగా అనుగమిస్తుంది”).
-\item $\Gamma$ ఒక \tetoken{సూత్రాలు}{!!{formula}s} సమితి అయితే, ఏదో
+\item $\Gamma$ ఒక \tetoken{సూత్రాల}{!!{formula}s} సమితి అయితే, ఏదో
   \tetoken{ఒక సత్యమూల్య కేటాయింపు}{!!a{valuation}}~$\pAssign{v}$కు $\pSat{v}{\Gamma}$ అయినప్పుడు
   $\Gamma$ \emph{సంతృప్తిపరచదగినది}; లేకపోతే $\Gamma$
   \emph{సంతృప్తిపరచలేనిది}.
@@ -47,15 +47,15 @@
 \begin{prop}
 \ollabel{prop:semanticalfacts}
 \begin{enumerate}
-\item $!A$ ఒక సర్వసత్యం అయినప్పుడూ, అప్పుడు మాత్రమే
+\item $!A$ ఒక సర్వసత్యం అయినప్పుడు, అయినప్పుడు మాత్రమే
   $\emptyset \Entails !A$;
 \item $\Gamma \Entails !A$, $\Gamma \Entails !A \lif !B$ అయితే
   $\Gamma \Entails !B$;
-\item $\Gamma$ సంతృప్తిపరచదగినదైతే, $\Gamma$ యొక్క ప్రతి పరిమిత
+\item $\Gamma$ సంతృప్తిపరచదగినదైతే, $\Gamma$లోని ప్రతి పరిమిత
   ఉపసమితి కూడా సంతృప్తిపరచదగినదే;
 \item \ollabel{def:monotonicity} ఏకదిశత: $\Gamma \subseteq \Delta$,
   $\Gamma \Entails !A$ అయితే $\Delta \Entails !A$ కూడా;
-\item \ollabel{def:Cut} సంక్రమణశీలత: $\Gamma \Entails !A$,
+\item \ollabel{def:Cut} సంక్రామకత్వం: $\Gamma \Entails !A$,
   $\Delta \cup \{ !A\} \Entails !B$ అయితే
   $\Gamma \cup \Delta \Entails !B$.
 \end{enumerate}
@@ -70,7 +70,7 @@
 \end{prob}
 
 \begin{prop}\ollabel{prop:entails-unsat}
-  $\Gamma \Entails !A$ అయినప్పుడూ, అప్పుడు మాత్రమే
+  $\Gamma \Entails !A$ అయినప్పుడు, అయినప్పుడు మాత్రమే
   $\Gamma \cup \{\lnot !A\}$ సంతృప్తిపరచలేనిది.
 \end{prop}
 
@@ -84,7 +84,7 @@
 
 \begin{thm}[అర్థపర నిగమన సిద్ధాంతం]
   \ollabel{thm:sem-deduction} $\Gamma \Entails !A \lif !B$
-  అయినప్పుడూ, అప్పుడు మాత్రమే $\Gamma \cup \{!A\} \Entails !B$.
+  అయినప్పుడు, అయినప్పుడు మాత్రమే $\Gamma \cup \{!A\} \Entails !B$.
 \end{thm}
 
 \begin{proof}

@@ -12,7 +12,7 @@
 
 \begin{prop}\ollabel{prop:derivabilityfacts}
   $\Sigma$ ఒక మోడల్ వ్యవస్థ, $\Gamma$ మోడల్
-  \tetoken{సూత్రాల}{!!{formula}s} సమితి అనుకుందాం. అప్పుడు కింది లక్షణాలు వర్తిస్తాయి:
+  \tetoken{సూత్రాల}{!!{formula}s} సమితి అనుకుందాం. అప్పుడు కింది ధర్మాలు నెరవేరతాయి.
   \begin{enumerate}
   \item\ollabel{prop:derivabilityfacts-monotonicity} \emph{ఏకదిశత}:
     $\Gamma \Proves[\Sigma] !A$ మరియు $\Gamma \subseteq \Delta$ అయితే,
@@ -24,8 +24,8 @@
     \Proves[\Sigma] !A$ మరియు $\Delta \cup \{!A\} \Proves[\Sigma] !B$
     అయితే, $\Gamma \cup \Delta \Proves[\Sigma] !B$;
   \item\ollabel{prop:derivabilityfacts-deduction} \emph{నిగమన సిద్ధాంతం}:
-    $\Gamma \cup \{!B\} \Proves[\Sigma] !A$ అయితే, అప్పుడు మాత్రమే
-    $\Gamma \Proves[\Sigma] !B \lif !A$;
+    $\Gamma \cup \{!B\} \Proves[\Sigma] !A$ అయ్యేది
+    $\Gamma \Proves[\Sigma] !B \lif !A$ అయినప్పుడు, అప్పుడే మాత్రమే;
   \item \ollabel{prop:derivabilityfacts-ruleT}% \emph{Rule T}: If
     $\Gamma \Proves[\Sigma] !A_1$ మరియు \dots{} మరియు $\Gamma
     \Proves[\Sigma] !A_n$ అయ్యి, $!A_1 \to (!A_2 \lif \cdots (!A_n \lif
@@ -34,8 +34,8 @@
   \end{enumerate}
 \end{prop}
 
-నిరూపణ సులభమైన వ్యాయామం. \olref{prop:derivabilityfacts-ruleT},
-అంటే \olref{prop:derivabilityfacts}లోని ఆ భాగం వల్ల, ఉదాహరణకు,
+దీని నిరూపణ సులభమైన అభ్యాసం. \olref{prop:derivabilityfacts-ruleT}
+అనే \olref{prop:derivabilityfacts} భాగం ప్రకారం, ఉదాహరణకు,
 $\Gamma \Proves[\Sigma] !A \lor !B$ మరియు
 $\Gamma \Proves[\Sigma] \lnot !A$ అయితే,
 $\Gamma \Proves[\Sigma] !B$ అని వస్తుంది. అలాగే, ఇకపై
@@ -44,8 +44,9 @@ $\Gamma, !A \Proves[\Sigma] !B$ అని రాస్తాం.
 
 \begin{defn}
   $\Gamma$ సమితి, $\Sigma$ వ్యవస్థకు సాపేక్షంగా
-  \emph{నిగమన పరంగా సంవృతం} అంటే, $\Gamma \Proves[\Sigma] !A$
-  అయినప్పుడల్లా $!A \in \Gamma$ కావడం.
+  \emph{నిగమనపరంగా సంవృతం} కావడానికి కింది షరతు అవసరం, అది ఉంటే సరిపోతుంది.
+  $\Gamma \Proves[\Sigma] !A$ అయినప్పుడల్లా $!A \in \Gamma$
+  కావాలి.
 \end{defn}
 
 \end{document}

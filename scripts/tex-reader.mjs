@@ -148,7 +148,7 @@ export function parseTex(source) {
         out.push({type:'command',name,args:[value],options:[],start});continue;
       }
       const arities={documentclass:1,olpart:2,olchapter:3,olfileid:3,olsection:1,chapter:1,'chapter*':1,addcontentsline:3,section:1,subsection:1,olimport:1,ollabel:1,olref:1,Olref:1,oliflabeldef:3,olasset:1,readerdiagram:1,intertext:1,H:1,l:0,S:0,P:0,'ను':0,'MPని':0,'QRతో':0,'dotsను':0,'dotsకు':0,item:0,setcounter:2,DeclareRobustCommand:2,usetoken:2,printtoken:2,caption:1,emph:1,textit:1,textbf:1,textrm:1,texttt:1,textsc:1,footnote:1,href:2,url:1,gitissue:1,label:1,ref:1,cref:1,Cref:1,sourcecorrection:2,cite:1,citealt:1,citeauthor:1,citep:1,citet:1,citeyear:1,startycommalist:0,ycomma:0,indcase:3,'indcase*':3,Intro:1,Elim:1,LeftR:1,RightR:1,TRule:2,Weakening:0,Contraction:0,Exchange:0,Cut:0,FalseInt:0,FalseCl:0,MP:0,QR:0,Hyp:0,TAss:0,Log:1,article:1,Article:1,sFmla:2,ext:0};
-      Object.assign(arities,{LogCL:0,LogLuk:0,L:0,Box:0,lif:0,Ax:1,mTrue:1,mFalse:1,ST:0,RK:0,Nec:0,PL:0,Dual:0,CutCS:0,crefrange:2,eqref:1,olphoto:2,subfile:1,paragraph:1,citeyearpar:1,stageshier:0,stagesord:0,stagesacc:0,stagessucc:0,stagesinf:0,stagesinex:0,stagescofin:0,limofsize:0});
+      Object.assign(arities,{LogCL:0,LogGod:0,LogLuk:0,L:0,Box:0,lif:0,Ax:1,mTrue:1,mFalse:1,ST:0,RK:0,Nec:0,PL:0,Dual:0,Taut:0,CutCS:0,crefrange:2,eqref:1,olphoto:2,subfile:1,paragraph:1,citeyearpar:1,stageshier:0,stagesord:0,stagesacc:0,stagessucc:0,stagesinf:0,stagesinex:0,stagescofin:0,limofsize:0});
       Object.assign(arities,{Axiom:0,AxiomC:1,Deduce:0,DeduceC:1,UnaryInf:0,UnaryInfC:1,BinaryInf:0,BinaryInfC:1,TrinaryInf:0,TrinaryInfC:1,RightLabel:1,LeftLabel:1,DisplayProof:0,shortDeduce:0,DischargeRule:2,Discharge:2,bottomAlignProof:0,insertBetweenHyps:1,LeftSubproofLabel:1,RightSubproofLabel:1});
       Object.assign(arities,{tetoken:2,text:1,hbox:1,texorpdfstring:2,multirow:3,Entails:0,True:0,False:0,Undef:0,sigma:0,liff:0,pSat:0,ss:0,newline:0,noLine:0,iR:2});
       if(['OLEndPartHook','OLEndChapterHook','clearpage','dots','ldots','par','noindent','textparagraph','centering','hfill','qquad','quad','small','large','Large','em'].includes(name)){out.push({type:'command',name,args:[],options:[],start});continue;}
@@ -170,6 +170,11 @@ export function parseTex(source) {
         }else args=Array.from({length:arities[name]},()=>group());
       }
       catch(error){throw new Error('Command \\'+name+' arguments at '+start+': '+error.message,{cause:error});}
+      // These two commands take their prefix/line option AFTER the mandatory
+      // arguments in the frozen source, as well as in mathematical contexts.
+      if(['sFmla','TRule'].includes(name)){
+        space();while(source[pos]==='['){options.push(group('[',']'));space();}
+      }
       out.push({type:'command',name,args,options,modifier,start});
     }
     if(until)throw new Error('Unclosed environment '+until);
@@ -289,6 +294,8 @@ const names={
  en:{defn:'Definition',ex:'Example',prop:'Proposition',thm:'Theorem',lem:'Lemma',cor:'Corollary',prob:'Exercise',proof:'Proof',figure:'Figure'}
 };
 function canonicalReferenceKey(key){
+  // Compatibility for an earlier Telugu-only rename, not an OLP source erratum.
+  if(key==='int:pty:typ:tab:tN3ip')return 'int:pty:typ:tab:tN2ip';
   if(key==='pl:prp:axd:prop:prov-incons')return 'fol:axd:prv:prop:prov-incons';
   if(key==='pl:prp:sem:prop:semanticalfacts')return 'pl:syn:sem:prop:semanticalfacts';
   const match=/^fol:(seq|ntd):prv:prop:provability-(land-left|land-right|lor-left|lor-right|lif|mp)$/u.exec(key);
@@ -486,6 +493,215 @@ function normalizeMathTex(input) {
     .replace(/!([A-Z])/gu,'{$1}')
     .replace(/(?<!\\)\$/gu,'');
 }
+// Alignment separators outside mathematics/groups are structure, not text.
+// Preserve escaped &, $, braces and separators inside formulae or arguments.
+function splitAlignment(value,kind){
+  const parts=[];let start=0,depth=0,math=false;
+  for(let i=0;i<value.length;i++){
+    if(value[i]==='\\'){
+      if(!depth&&!math&&kind==='row'&&value[i+1]==='\\'){
+        parts.push(value.slice(start,i));i++;
+        if(value[i+1]==='['){
+          const close=value.indexOf(']',i+2);
+          if(close<0)throw new Error('Unclosed alignment row spacing');
+          i=close;
+        }
+        start=i+1;
+      }else i++;
+      continue;
+    }
+    if(value[i]==='$'){math=!math;continue;}
+    if(math)continue;
+    if(value[i]==='{')depth++;else if(value[i]==='}')depth--;
+    if(!depth&&kind==='cell'&&value[i]==='&'){
+      parts.push(value.slice(start,i));start=i+1;
+    }
+  }
+  if(depth||math)throw new Error('Unbalanced alignment cell');
+  parts.push(value.slice(start));return parts;
+}
+
+export function parseDerivationRows(raw){
+  // TeX comments must not introduce phantom rows/cells. Escaped percent is text.
+  const source=raw.replace(/(?<!\\)%[^\n]*/gu,'');
+  const rows=[];
+  for(const row of splitAlignment(source,'row')){
+    const cells=splitAlignment(row,'cell').map(cell=>cell.trim());
+    if(!cells.some(Boolean))continue;
+    if(cells.length<2||cells.length>3||! /^(?:\d+\.)?$/u.test(cells[0]))
+      throw new Error('Unsupported derivation row structure');
+    const [number,formula,annotation='']=cells;
+    if(!formula)throw new Error('Empty derivation formula');
+    const continued=!number&&/^\\(?:qquad|quad)\b/u.test(formula);
+    if(continued){
+      const previous=rows.at(-1);
+      if(!previous?.number||previous.annotation)
+        throw new Error('Orphan derivation continuation');
+      previous.formula+=' '+formula.replace(/^\\(?:qquad|quad)\b\s*/u,'');
+      previous.annotation=annotation;
+    }else rows.push({number,formula,annotation});
+  }
+  if(!rows.length)throw new Error('Empty derivation environment');
+  return rows;
+}
+
+export function parseTableau(raw){
+  const source=raw.replace(/(?<!\\)%[^\n]*/gu,'');
+  let cursor=0;
+  const space=()=>{while(/\s/u.test(source[cursor]??''))cursor++;};
+  function node(depth){
+    space();if(source[cursor++]!=='[')throw new Error('Expected tableau node');
+    const start=cursor;
+    while(cursor<source.length){
+      if(source[cursor]==='\\'){
+        const command=/^\\[A-Za-z]+/u.exec(source.slice(cursor));
+        cursor+=command?.[0].length??2;
+        // Optional arguments of formula commands are not child nodes.
+        while(true){
+          const group=readDelimited(source,cursor,'{','}');
+          if(!group)break;cursor=group.end;
+        }
+        if(command?.[0]==='\\sFmla'){
+          const option=readDelimited(source,cursor,'[',']');
+          if(option&&/^(?:\\sigma|[A-Za-z0-9]+)(?:\.[A-Za-z0-9]+)*$/u.test(option.value.trim()))cursor=option.end;
+        }
+      }else if(source[cursor]==='{'){
+        cursor=readDelimited(source,cursor,'{','}').end;
+      }else if(['[',']'].includes(source[cursor]))break;
+      else cursor++;
+    }
+    const header=source.slice(start,cursor).trim();
+    const parts=[];let from=0;
+    for(let i=0;i<header.length;i++){
+      if(header[i]==='\\'){i++;continue;}
+      if(header[i]==='{'){const group=readDelimited(header,i,'{','}');i=group.end-1;continue;}
+      if(header[i]===','){parts.push(header.slice(from,i).trim());from=i+1;}
+    }
+    parts.push(header.slice(from).trim());
+    const formula=parts.shift();
+    const result={formula,depth,annotation:'',checked:false,closed:false,options:[],children:[]};
+    for(const option of parts.filter(Boolean)){
+      if(/^just\s*=/u.test(option)){
+        const value=option.replace(/^just\s*=\s*/u,'');
+        const group=readDelimited(value,0,'{','}');
+        result.annotation=group&&group.end===value.length?group.value:value;
+      }else if(option==='checked')result.checked=true;
+      else if(option==='close')result.closed=true;
+      else if(/^name\s*=/u.test(option))result.options.push(option);
+      else if(/^move by\s*=\s*[1-9]\d*$/u.test(option)){
+        result.depth+=Number(option.split('=')[1])-1;result.options.push(option);
+      }
+      else throw new Error('Unsupported tableau option: '+option);
+    }
+    space();while(source[cursor]==='['){result.children.push(node(result.depth+1));space();}
+    if(source[cursor++]!==']')throw new Error('Unclosed tableau node');
+    if(result.closed&&result.children.length)throw new Error('Closed tableau node has children');
+    if(!result.formula&&result.children.length)throw new Error('Empty internal tableau node');
+    return result;
+  }
+  space();
+  // Some frozen examples pass an empty tableau-format group explicitly.
+  let numbering=true;
+  if(source[cursor]==='{'){
+    const format=readDelimited(source,cursor,'{','}');
+    if(format.value.trim()==='not line numbering')numbering=false;
+    else if(format.value.trim())throw new Error('Unsupported tableau format');
+    cursor=format.end;
+  }
+  const tree=node(1);space();if(cursor!==source.length)throw new Error('Unexpected text after tableau');
+  tree.numbering=numbering;return tree;
+}
+
+export function parseBussProofs(raw){
+  // Parse both brace-delimited and dollar-delimited Buss proofs.
+  let source=raw.replace(/(?<!\\)%[^\n]*/gu,'');
+  for(const command of ['shoveleft','shoveright'])source=rewriteMathCommand(source,command,(text,index)=>{
+    const group=readDelimited(text,index,'{','}');
+    return group?{text:group.value,end:group.end}:null;
+  });
+  const pattern=/\\(AxiomC|UnaryInfC|BinaryInfC|TrinaryInfC|DeduceC|Axiom|UnaryInf|BinaryInf|TrinaryInf|Deduce|DischargeRule|RightSubproofLabel|LeftSubproofLabel|RightLabel|LeftLabel|insertBetweenHyps|shortDeduce|noLine|doubleLine|DisplayProof)\b/gu;
+  const proofs=[],stack=[];let end=0,residual='',label='',line=true,match;
+  let before='';
+  const layout=value=>value.replace(/\\begin\{tabular\}(?:\[[^\]]*\])?\{(?:[^{}]|\{[^{}]*\})*\}|\\begin\{array\}\{[^{}]*\}|\\end\{(?:array|tabular)\}|\\(?:begin|end)\{center\}|\\(?:hline|centering|bottomAlignProof|hfill|noindent|small)\b|\\hskip\s*[-\d.]+[A-Za-z]+|\\[\[\]]|\\\\(?:\[[^\]]*\])?|&/gu,' ').trim();
+  const bridge=value=>{
+    const text=layout(value).replace(/\\(?:quad|qquad)\b/gu,'').trim();
+    if(!text)return '';
+    const prose=/^\\text\{([^{}]*)\}$/u.exec(text);
+    if(prose)return prose[1];
+    const arrow=text.replace(/^\$([\s\S]*)\$$/u,'$1');
+    if(/^\\(?:longrightarrow|rightarrow|Longrightarrow|Rightarrow|redone)(?:\[[^\]]*\])?$/u.test(arrow))
+      return '$'+arrow+'$';
+    return null;
+  };
+  const flush=()=>{
+    const tree=stack.pop();
+    if(before)tree.before=before;
+    proofs.push(tree);
+    before='';
+  };
+  while((match=pattern.exec(source))){
+    const between=source.slice(end,match.index);
+    if(!stack.length&&proofs.length){
+      const value=bridge(between);
+      if(value===null)residual+=between;
+      else if(value)before=value;
+    }else residual+=between;
+    let cursor=pattern.lastIndex;
+    const name=match[1];
+    if(name==='noLine')line=false;
+    else if(name==='doubleLine')line='double';
+    else if(name==='shortDeduce')line='deduce';
+    else if(name==='DisplayProof'){
+      if(stack.length!==1)throw new Error('Incomplete Buss proof stack');
+      flush();label='';line=true;
+    }else{
+      let arg;
+      if(['Axiom','UnaryInf','BinaryInf','TrinaryInf','Deduce'].includes(name)){
+        while(/\s/u.test(source[cursor]??''))cursor++;
+        if(source[cursor]!=='$')return null;
+        const start=++cursor;
+        while(cursor<source.length){
+          if(source[cursor]==='\\'){cursor+=2;continue;}
+          if(source[cursor]==='$')break;
+          cursor++;
+        }
+        if(cursor>=source.length)throw new Error('Unclosed Buss dollar argument');
+        arg={value:'$'+source.slice(start,cursor)+'$',end:cursor+1};
+      }else arg=readDelimited(source,cursor,'{','}');
+      if(!arg)throw new Error('Missing Buss proof argument');cursor=arg.end;
+      if(name==='RightLabel'||name==='LeftLabel')label=arg.value;
+      else if(name==='DischargeRule'){
+        const group=readDelimited(source,cursor,'{','}');
+        if(!group)return null;
+        const rule=arg.value.trim().replace(/^\$([\s\S]*)\$$/u,'$1');
+        label='$'+rule+'^{'+group.value+'}$';
+        cursor=group.end;
+      }else if(name==='LeftSubproofLabel'||name==='RightSubproofLabel'){
+        if(!stack.length)return null;
+        stack.at(-1)[name==='LeftSubproofLabel'?'leftSubproof':'rightSubproof']=arg.value;
+      }else if(name==='insertBetweenHyps'){
+        if(!/^\s*\\(?:hspace\*?\{[^{}]+\}|hskip\s*[-\d.]+[A-Za-z]+)\s*$/u.test(arg.value))return null;
+      }
+      else{
+        const count={AxiomC:0,UnaryInfC:1,BinaryInfC:2,TrinaryInfC:3,DeduceC:1,Axiom:0,UnaryInf:1,BinaryInf:2,TrinaryInf:3,Deduce:1}[name];
+        if(stack.length<count)throw new Error('Buss inference lacks premises');
+        const children=stack.splice(stack.length-count,count);
+        stack.push({formula:arg.value,annotation:label,line:name.startsWith('Deduce')?'deduce':line,children});
+        label='';line=true;
+      }
+    }
+    end=cursor;pattern.lastIndex=cursor;
+  }
+  residual+=source.slice(end);
+  if(!proofs.length&&!stack.length)return null;
+  if(stack.length){if(stack.length!==1)throw new Error('Incomplete Buss proof stack');flush();}
+  residual=layout(residual);
+  // A residual group indicates an enclosing construct this subset cannot
+  // account for. Keep the existing explicit fallback, never discard its text.
+  if(residual.replace(/\\(?:quad|qquad)\b/gu,'').trim())return null;
+  return {proofs,residual};
+}
+
 export class Reader {
   constructor({language='te',labels=new Map(),knownLabels=new Set(),assets,citationData=new Map(),collect=false,prefix=''}){
     Object.assign(this,{language,labels,knownLabels,assets,citationData,collect,prefix});
@@ -508,7 +724,13 @@ export class Reader {
       else this.labels.set(key,{number,id:key});
     }
     const id=this.prefix+key+(occurrence>1?'--duplicate-'+occurrence:'');
-    return '<span class="anchor" id="'+escapeHtml(id)+'"></span>';
+    const anchor='<span class="anchor" id="'+escapeHtml(id)+'"></span>';
+    // Keep old reader fragment links working while the TeX label remains faithful.
+    if(key==='int:pty:typ:tab:tN2ip'){
+      const legacyId=this.prefix+'int:pty:typ:tab:tN3ip'+(occurrence>1?'--duplicate-'+occurrence:'');
+      return anchor+'<span class="anchor" id="'+escapeHtml(legacyId)+'"></span>';
+    }
+    return anchor;
   }
   rewriteMathReferences(source){
     for(const name of ['olref','Olref','ref','cref','Cref','eqref'])source=rewriteMathCommand(source,name,(text,index)=>{
@@ -529,8 +751,16 @@ export class Reader {
   }
   renderMath(node){
     let anchors='';
+    // A source equation can have an explicit literal tag, e.g. (*).
+    // Its reference must show that tag, not an invented chapter counter.
+    // Do not confuse multiple per-row tags or TeX-valued tags with one
+    // plain equation label; those retain their existing handling.
+    const literalTags=[...node.tex.matchAll(/\\tag\*?\s*\{([^{}\\$]+)\}/gu)];
+    const tagCount=[...node.tex.matchAll(/\\tag\*?(?![A-Za-z])/gu)].length;
+    const explicitTag=tagCount===1&&literalTags.length===1?literalTags[0][1].trim():null;
     const sourceWithoutLabels=this.rewriteMathReferences(node.tex).replace(/\\(ollabel|label)\{([^{}]+)\}/gu,(_whole,command,label)=>{
-      const number=this.chapter+'.'+(++this.equation),key=command==='label'?label:this.refKey([],label);
+      const fallbackNumber=this.chapter+'.'+(++this.equation);
+      const number=explicitTag||fallbackNumber,key=command==='label'?label:this.refKey([],label);
       anchors+=this.register(key,number);return '';
     });
     if(/\\(?:AxiomC?|UnaryInfC?|BinaryInfC?|TrinaryInfC?|DeduceC|DisplayProof)\b/u.test(sourceWithoutLabels)){
@@ -718,6 +948,8 @@ export class Reader {
           paragraph+=this.renderMath({tex:'\\mathrm{ext}',display:false});
         }else if(n.name==='LogCL'){
           paragraph+=this.renderMath({tex:'\\mathbf{C}',display:false});
+        }else if(n.name==='LogGod'){
+          paragraph+=this.renderMath({tex:'\\LogGod'+(n.options[0]?'_{'+n.options[0]+'}':''),display:false});
         }else if(n.name==='LogLuk'){
           paragraph+=this.renderMath({tex:'\\mathbf{Ł}'+(n.options[0]?'_{'+n.options[0]+'}':''),display:false});
         }else if(n.name==='Box'){
@@ -740,7 +972,7 @@ export class Reader {
           paragraph+=this.renderMath({tex:n.name==='mTrue'?a:'\\lnot '+a,display:false});
         }else if(n.name==='ST'||n.name==='CutCS'){
           paragraph+=this.renderMath({tex:n.name==='ST'?'\\mathrm{ST}':'\\mathrm{Cut}_{\\mathrm{CS}}',display:false});
-        }else if(['RK','Nec','PL','Dual'].includes(n.name)){
+        }else if(['RK','Nec','PL','Dual','Taut'].includes(n.name)){
           paragraph+='<span class="small-caps">'+n.name.toLowerCase()+'</span>';
         }else if(n.name==='L'){
           paragraph+='Ł';this.textRuns.push('Ł');
@@ -814,7 +1046,9 @@ export class Reader {
   }
 
   renderTabular(raw){
-    let source=raw.trim();
+    let source=raw.replace(/(?<!\\)%[^\n]*/gu,'').trim();
+    const position=readDelimited(source,0,'[',']');
+    if(position)source=source.slice(position.end).trimStart();
     if(source.startsWith('{')){
       let depth=0,end=-1;
       for(let i=0;i<source.length;i++){
@@ -828,7 +1062,9 @@ export class Reader {
     source=rewriteMathCommand(source,'multicolumn',(text,index)=>{
       const span=readDelimited(text,index,'{','}');if(!span)return null;
       const alignment=readDelimited(text,span.end,'{','}');if(!alignment)return null;
-      const body=readDelimited(text,alignment.end,'{','}');return body?{text:body.value,end:body.end}:null;
+      const body=readDelimited(text,alignment.end,'{','}');
+      if(!/^\d+$/u.test(span.value)||Number(span.value)<1||Number(span.value)>100)throw new Error('Unsupported table column span');
+      return body?{text:'\\readerSpan{'+span.value+'}{'+body.value+'}',end:body.end}:null;
     });
     source=rewriteMathCommand(source,'phantom',(text,index)=>{
       const body=readDelimited(text,index,'{','}');return body?{text:'',end:body.end}:null;
@@ -839,10 +1075,13 @@ export class Reader {
       return {text:'$\\TMtrans{'+values.join('}{')+'}$',end:cursor};
     });
     const split=(value,kind)=>{
-      const parts=[];let start=0,depth=0,math=false;
+      const parts=[];let start=0,depth=0,nestedTables=0,math=false;
       for(let i=0;i<value.length;i++){
         if(value[i]==='$'){math=!math;continue;}
         if(math)continue;
+        if(value.startsWith('\\begin{tabular}',i)){nestedTables++;i+='\\begin{tabular}'.length-1;continue;}
+        if(value.startsWith('\\end{tabular}',i)){nestedTables--;i+='\\end{tabular}'.length-1;continue;}
+        if(nestedTables)continue;
         if(value[i]==='{')depth++;else if(value[i]==='}')depth--;
         if(depth)continue;
         if(kind==='row'&&value.startsWith('\\\\',i)){
@@ -851,23 +1090,127 @@ export class Reader {
       }
       parts.push(value.slice(start));return parts;
     };
-    const rows=split(source,'row').map(row=>split(row,'cell').map(cell=>cell.trim())).filter(row=>row.some(Boolean));
+    const cell=value=>{
+      value=value.trim();
+      if(value.startsWith('\\readerSpan')){
+        const span=readDelimited(value,'\\readerSpan'.length,'{','}');
+        const body=readDelimited(value,span.end,'{','}');
+        if(body.end!==value.length)throw new Error('Unexpected text after spanned cell');
+        return {value:body.value,span:Number(span.value)};
+      }
+      return {value,span:1};
+    };
+    const rows=split(source,'row').map(row=>split(row,'cell').map(cell)).filter(row=>row.some(cell=>cell.value));
     if(!rows.length)throw new Error('Empty tabular environment');
-    const width=Math.max(...rows.map(row=>row.length));
-    if(rows.some(row=>row.length!==width))throw new Error('Inconsistent tabular row width');
-    const make=(row,tag)=>'<tr>'+row.map(cell=>'<'+tag+'>'+this.inline(cell)+'</'+tag+'>').join('')+'</tr>';
+    const width=Math.max(...rows.map(row=>row.reduce((sum,cell)=>sum+cell.span,0)));
+    for(const row of rows){
+      const missing=width-row.reduce((sum,cell)=>sum+cell.span,0);
+      if(missing)row.push({span:missing,value:''});
+    }
+    const renderCell=value=>{
+      if(value.startsWith('\\begin{tabular}')&&value.endsWith('\\end{tabular}'))
+        return this.renderTabular(value.slice('\\begin{tabular}'.length,-'\\end{tabular}'.length));
+      const before=/^\s*\$(\\(?:longrightarrow|rightarrow|Longrightarrow|Rightarrow))\$\s*(?=\\Axiom)/u.exec(value);
+      const after=/\$(\\(?:longrightarrow|rightarrow|Longrightarrow|Rightarrow))\$\s*$/u.exec(value);
+      if(/\\(?:AxiomC|Axiom)\b/u.test(value)&&(before||after)){
+        const math=match=>match?this.renderMath({tex:match[1],display:false}):'';
+        return math(before)+this.renderFormal(value.slice(before?.[0].length??0,after?.index),'bussproof')+math(after);
+      }
+      return /\\(?:AxiomC|Axiom)\b/u.test(value)?this.renderFormal(value,'bussproof'):this.inline(value);
+    };
+    const make=(row,tag)=>'<tr>'+row.map(cell=>'<'+tag+(cell.span>1?' colspan="'+cell.span+'"':'')+'>'+renderCell(cell.value)+'</'+tag+'>').join('')+'</tr>';
     return '<div class="table-scroll"><table class="reader-table"><thead>'+make(rows[0],'th')+'</thead>'+(rows.length>1?'<tbody>'+rows.slice(1).map(row=>make(row,'td')).join('')+'</tbody>':'')+'</table></div>';
   }
 
   renderFormal(raw,name){
+    if(name==='probtag'){
+      const tags=readDelimited(raw,0,'{','}');
+      if(!tags)throw new Error('Missing tagged exercise selection');
+      return this.renderNodes([{type:'environment',name:'prob',children:parseTex(raw.slice(tags.end))}]);
+    }
     let anchors='';
     const labelMatches=[...raw.matchAll(/\\(ollabel|label)\{([^{}]+)\}/gu)];
     const captionCommand=/\\caption\s*\{/u.exec(raw);
-    const caption=captionCommand?readDelimited(raw,captionCommand.index+'\\caption'.length,'{','}')?.value:null;
+    const captionGroup=captionCommand?readDelimited(raw,captionCommand.index+'\\caption'.length,'{','}'):null;
+    const caption=captionGroup?.value;
     const number=caption||labelMatches.length?this.chapter+'.'+(++this.figure):'';
     for(const match of labelMatches){
       const key=match[1]==='label'?match[2]:this.refKey([],match[2]);
       anchors+=this.register(key,number);
+    }
+    if(name==='derivation'){
+      const rows=parseDerivationRows(raw.replace(/\\(?:ollabel|label)\{[^{}]+\}/gu,''));
+      const body=rows.map(row=>{
+        // A wrapped formula remains ONE proof step, not several incomplete
+        // expressions. Annotation mathematics belongs in the justification.
+        const nodes=parseTex(row.formula);
+        const onlyMath=nodes.every(node=>node.type==='math'||
+          (node.type==='text'&&!node.value.trim())||
+          (node.type==='command'&&['quad','qquad'].includes(node.name)));
+        const formula=onlyMath
+          ?this.renderMath({tex:nodes.filter(node=>node.type==='math').map(node=>node.tex).join(' '),display:false})
+          :this.inline(row.formula);
+        return '<tr>'+(row.number?'<th scope="row" class="derivation-number">'+escapeHtml(row.number)+'</th>':'<td class="derivation-number"></td>')+
+          '<td class="derivation-formula">'+formula+'</td><td class="derivation-justification">'+this.inline(row.annotation)+'</td></tr>';
+      }).join('');
+      const headings=this.language==='te'?['పంక్తి','సూత్రం','సమర్థన']:['Line','Formula','Justification'];
+      const title=this.language==='te'?'వ్యుత్పత్తి':'Derivation';
+      return anchors+'<figure class="formal-display"><figcaption>'+title+'</figcaption><div class="table-scroll"><table class="reader-table derivation-table"><thead><tr>'+headings.map(text=>'<th scope="col">'+text+'</th>').join('')+'</tr></thead><tbody>'+body+'</tbody></table></div><details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
+    }
+    if(name==='oltableau'||name==='tableau'){
+      const tree=parseTableau(raw);
+      const math=formula=>{
+        let tex=formula.trim();
+        // Preserve the existing reader projection for frozen, already
+        // disclosed one-group signed formulas; target repairs use two groups.
+        tex=rewriteMathCommand(tex,'sFmla',(source,index)=>{
+          const arg=readDelimited(source,index,'{','}');if(!arg)return null;
+          const merged=/^(\\(?:True|False))\{([\s\S]*)\}$/u.exec(arg.value.trim());
+          return merged?{text:'\\sFmla{'+merged[1]+'}{'+merged[2]+'}',end:arg.end}:null;
+        });
+        tex=rewriteMathCommand(tex,'pFmla',(source,index)=>{
+          const args=[];let cursor=index;
+          for(let i=0;i<3;i++){const arg=readDelimited(source,cursor,'{','}');if(!arg)throw new Error('Missing prefixed tableau formula argument');args.push(arg.value);cursor=arg.end;}
+          return {text:args[2]+'\\,'+args[0]+'\\;'+args[1],end:cursor};
+        });
+        return this.renderMath({tex:tex.replace(/^\$|\$$/gu,''),display:false});
+      };
+      const chain=node=>{
+        let body='';
+        while(node){
+          body+='<li class="tableau-node" data-tableau-line="'+node.depth+'"><div class="tableau-row">'+(tree.numbering&&node.formula?'<span class="tableau-number">'+node.depth+'.</span>':'')+'<span class="tableau-formula">'+(node.formula?math(node.formula):'<span class="tableau-continuation">'+(this.language==='te'?'కొనసాగింపు':'Continuation')+'</span>')+'</span><span class="tableau-justification">'+this.inline(node.annotation)+'</span>'+
+            (node.checked?'<span class="tableau-checked" aria-label="'+(this.language==='te'?'పరిశీలించబడింది':'Checked')+'">✓</span>':'')+'</div>'+
+            (node.closed?'<div class="tableau-closed" aria-label="'+(this.language==='te'?'సంవృత శాఖ':'Closed branch')+'">×</div>':'');
+          if(node.children.length>1)body+='<div class="tableau-fork">'+node.children.map(child=>'<ol class="tableau-chain">'+chain(child)+'</ol>').join('')+'</div>';
+          body+='</li>';node=node.children.length===1?node.children[0]:null;
+        }
+        return body;
+      };
+      return anchors+'<figure class="formal-display tableau-display"><figcaption>'+(this.language==='te'?'టాబ్లో':'Tableau')+'</figcaption><div class="tableau-scroll"><ol class="tableau-chain">'+chain(tree)+'</ol></div><details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
+    }
+    if(name==='defish'&&!/\\(?:AxiomC?|DisplayProof)\b/u.test(raw)){
+      return anchors+'<div class="definition-display">'+this.renderNodes(parseTex(raw.replace(/\\(?:ollabel|label)\{[^{}]+\}/gu,'')))+'</div>';
+    }
+    const formalBody=(captionGroup?raw.slice(0,captionCommand.index)+raw.slice(captionGroup.end):raw).replace(/\\(?:ollabel|label)\{[^{}]+\}/gu,'');
+    if(name==='longtable'){
+      const title=caption?'<figcaption>'+this.inline(caption)+'</figcaption>':'';
+      return anchors+'<figure class="formal-display">'+title+this.renderTabular(formalBody)+'</figure>';
+    }
+    if(['proof','prooftree','bussproof','tabular','defish'].includes(name)){
+      const array=/^\s*\\begin\{array\}([\s\S]*)\\end\{array\}\s*$/u.exec(formalBody);
+      if(array)return anchors+this.renderTabular(array[1]);
+      const parsed=parseBussProofs(formalBody);
+      if(parsed){
+        const label=(value,style)=>value?'<span class="'+style+'">'+this.inline(value)+'</span>':'';
+        const tree=node=>'<li class="inference-node">'+(node.children.length?'<ul class="inference-premises">'+node.children.map(tree).join('')+'</ul>':'')+
+          (node.children.length&&node.line==='deduce'?'<div class="inference-deduction">⋮</div>':'')+
+          '<div class="inference-conclusion'+(node.children.length&&node.line&&node.line!=='deduce'?' inference-line':'')+
+          (node.children.length&&node.line==='double'?' inference-double-line':'')+'">'+label(node.leftSubproof,'inference-subproof')+
+          '<span>'+(node.formula.includes('$')?this.inline(node.formula):node.formula?this.renderMath({tex:node.formula,display:false}):'')+'</span>'+
+          label(node.annotation,'inference-label')+label(node.rightSubproof,'inference-subproof')+'</div></li>';
+        const proofs=parsed.proofs.map(node=>(node.before?'<li class="inference-bridge">'+this.inline(node.before)+'</li>':'')+tree(node)).join('');
+        return anchors+'<figure class="formal-display inference-display"><figcaption>'+(caption?this.inline(caption):(this.language==='te'?'నిగమన నియమం / నిరూపణ':'Inference rule / proof'))+'</figcaption><div class="inference-scroll"><ul class="inference-proofs">'+proofs+'</ul></div>'+(parsed.residual?this.inline(parsed.residual):'')+'<details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
+      }
     }
     const expressions=[];
     const add=tex=>{const cleaned=tex.trim().replace(/^\$|\$$/gu,'');if(cleaned)expressions.push(cleaned);};
@@ -908,6 +1251,7 @@ export class Reader {
     }
     const title=caption?this.inline(caption):(this.language==='te'?'ఆధికారిక నిరూపణ ప్రదర్శన':'Formal proof display');
     const steps=expressions.length?'<ol class="formal-steps">'+expressions.map(tex=>'<li>'+this.renderMath({tex,display:true})+'</li>').join('')+'</ol>':'';
-    return anchors+'<figure class="formal-display"><figcaption>'+title+'</figcaption>'+steps+'<details><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
+    const fallback=name==='tabular'||/\\(?:AxiomC?|DisplayProof)\b/u.test(raw);
+    return anchors+'<figure class="formal-display'+(fallback?' formal-source-fallback':'')+'"><figcaption>'+title+'</figcaption>'+steps+'<details'+(fallback?' open':'')+'><summary>'+(this.language==='te'?'TeX మూలం':'TeX source')+'</summary><pre>'+escapeHtml(raw.trim())+'</pre></details></figure>';
   }
 }

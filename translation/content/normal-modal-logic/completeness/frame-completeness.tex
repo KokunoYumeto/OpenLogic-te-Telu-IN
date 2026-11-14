@@ -8,24 +8,26 @@
 
 \olfileid{nml}{com}{fra}
 
-\olsection{ఫ్రేమ్ సంపూర్ణత}
+\olsection{చట్రాల పరంగా సంపూర్ణత}
 
-ఒక తర్కానికి చెందిన కానానికల్ నమూనాకు తగిన ఫ్రేమ్ ధర్మం
-ఉందని చూపిన తరువాత, \Log{K} సంపూర్ణతా సిద్ధాంతాన్ని ఇతర
-మోడల్ వ్యవస్థలకు కూడా విస్తరించవచ్చు.
+ఒక తర్కానికి చెందిన కానానికల్ నమూనాకు దానికి అనురూపమైన చట్ర ధర్మం
+ఉందని చూపగలిగితే, \Log{K} సంపూర్ణతా సిద్ధాంతాన్ని ఇతర
+మోడల్ వ్యవస్థలకు కూడా విస్తరించవచ్చు. మునుపటి నిర్వచనం ప్రకారం,
+ఈ విభాగంలో కానానికల్ నమూనాను వాడినప్పుడు దానికి చెందిన వ్యవస్థ
+అవిరుద్ధమని తీసుకుంటాం.
 
 \begin{thm}\ollabel{thm:completeframeprops}
   నార్మల్ మోడల్ తర్కం $\Sigma$లో
-  \olref{tab:correspondencetable} ఎడమవైపు ఉన్న
+  \olref{tab:correspondencetable}లో ఎడమవైపు చూపిన
   \tetoken{సూత్రాల}{!!{formula}s}లో ఒకటి ఉంటే, $\Sigma$కు చెందిన
-  కానానికల్ నమూనాకు కుడివైపు ఉన్న సంబంధిత ధర్మం ఉంటుంది.
+  కానానికల్ నమూనాకు కుడివైపు చూపిన అనురూప ధర్మం ఉంటుంది.
 \end{thm}
 
 \begin{table}[htp]
   \centering
     \begin{tabular}{| l || l |}
       \hline
-      \emph{$\Sigma$లో ఇవి ఉంటే \dots} & \emph{\dots $\Sigma$కు చెందిన
+      \emph{$\Sigma$లో \dots ఉంటే} & \emph{\dots $\Sigma$కు చెందిన
         కానానికల్ నమూనా:} \\
       \hline \hline
       \Ax{D}:\;\; $\Box!A \lif \Diamond !A$ & \quad సీరియల్; \\
@@ -39,7 +41,7 @@
       \Ax{5}: \;\; $\Diamond !A \lif \Box\Diamond!A$& \quad యూక్లిడియన్.\\
       \hline
     \end{tabular}
-    \caption{ప్రాథమిక అనురూపత వాస్తవాలు.}
+    \caption{ప్రాథమిక అనురూపతలు.}
     \ollabel{tab:correspondencetable}
 \end{table}
 
@@ -51,10 +53,10 @@
   ఉందని చూపాలి. $\Box^{-1}\Delta$ $\Sigma$-అవిరుద్ధమని
   చూపితే చాలు. అప్పుడు లిండెన్‌బామ్ ఉపసిద్ధాంతం ప్రకారం
   సంపూర్ణ $\Sigma$-అవిరుద్ధ సమితి
-  $\Delta' \supseteq \Box^{-1}\Delta$ ఉంటుంది;
+  $\Delta' \supseteq \Box^{-1}\Delta$ ఉంటుంది.
   $R^\Sigma$ నిర్వచనం \iftag{prvBox}{}{మరియు
     \olref[mod]{lem:box-iff-diamond} }ప్రకారం
-  $R^\Sigma \Delta\Delta'$ అవుతుంది. కాబట్టి విరోధార్థం
+  $R^\Sigma \Delta\Delta'$ నెరవేరుతుంది. వైరుధ్యం ద్వారా చూపడానికి
   $\Box^{-1}\Delta$ $\Sigma$-అవిరుద్ధం \emph{కాదని}, అంటే
   $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$ అని అనుకుందాం.
   \olref[mod]{lem:box2} ప్రకారం $\Delta \Proves[\Sigma]
@@ -74,10 +76,9 @@
 
   ఇప్పుడు $\Sigma$లో \Ax{B} ఉందని, $\Delta$,
   $\Delta' \in W^\Sigma$లకు $R^\Sigma \Delta\Delta'$
-  అని అనుకుందాం. $R^\Sigma \Delta'\Delta$ అని, అంటే
-  \iftag{prvBox}{$\Box^{-1}\Delta' \subseteq \Delta$
-    అని చూపాలి. \olref[mod]{lem:box-iff-diamond}
-    ప్రకారం ఇది తుల్యం}{}
+  అని అనుకుందాం. $R^\Sigma \Delta'\Delta$ అని చూపాలి.
+  \iftag{prvBox}{అంటే $\Box^{-1}\Delta' \subseteq \Delta$ అని చూపాలి.
+    \olref[mod]{lem:box-iff-diamond} ప్రకారం అది కింది షరతుకు తుల్యం.}{అంటే}
   $\Diamond\Delta \subseteq \Delta'$ అని చూపాలి.
   $!A \in \Delta$ అనుకుందాం. \Ax{B} వల్ల
   $\Box\Diamond!A \in \Delta$ కూడా. $R^\Sigma
@@ -93,13 +94,13 @@
     \olref[mod]{lem:box-iff-diamond}} ప్రకారం
   $\Box^{-1}\Delta_1 \subseteq \Delta_2$ మరియు
   $\Box^{-1}\Delta_2 \subseteq \Delta_3$ రెండూ ఉన్నాయి.
-  $R^\Sigma \Delta_1\Delta_3$ కోసం
+  $R^\Sigma \Delta_1\Delta_3$ నెరవేరుతుందని చూపడానికి
   $\Box^{-1}\Delta_1 \subseteq \Delta_3$ అని చూపితే చాలు.
   $!B \in \Box^{-1}\Delta_1$, అంటే $\Box!B \in
   \Delta_1$ అనుకుందాం. \Ax{4} వల్ల $\Box\Box!B \in
-  \Delta_1$ కూడా. పరికల్పనను మొదట వాడితే
-  $\Box!B \in \Delta_2$; రెండవసారి వాడితే కావలసినట్లే
-  $!B \in \Delta_3$.
+  \Delta_1$ కూడా. మొదటి పరికల్పనతో
+  $\Box!B \in \Delta_2$ వస్తుంది. రెండో పరికల్పన వల్ల
+  $!B \in \Delta_3$ వస్తుంది. కావలసింది ఇదే.
 
   ఇప్పుడు $\Sigma$లో \Ax{5} ఉందని, $R^\Sigma
   \Delta_1\Delta_2$, $R^\Sigma \Delta_1\Delta_3$ అని
@@ -120,11 +121,10 @@
   పరికల్పన వల్ల కావలసినట్లే $\Diamond!A \in \Delta_2$.
   \end{proof}
 
-ఈ ఫలితాల అనుబంధంగా అనేక వ్యవస్థలకు సంపూర్ణతా ఫలితాలు
-లభిస్తాయి. ఉదాహరణకు $\Log{S5} = \Log{KT5} =
-\Log{KTB4}$ అన్ని స్వావర్తన, యూక్లిడియన్ నమూనాల
-వర్గానికి సంబంధించి సంపూర్ణమని తెలుసు. ఇదే అన్ని
-స్వావర్తన, సౌష్ఠవ, సంక్రామక నమూనాల వర్గం.
+దీని నుంచి అనేక వ్యవస్థలకు సంపూర్ణతా ఫలితాలు లభిస్తాయి. ఉదాహరణకు,
+$\Log{S5} = \Log{KT5} = \Log{KTB4}$ స్వావర్తనమూ
+యూక్లిడియన్ ధర్మమూ గల నమూనాలన్నిటి వర్గానికి సంబంధించి సంపూర్ణం.
+ఆ వర్గమే స్వావర్తన, సౌష్ఠవ, సంక్రామక ధర్మాలన్నీ గల నమూనాల వర్గం.
 
 \begin{thm}\ollabel{thm:generaldet}
   $\mClass{C}_\Ax{D}$, $\mClass{C}_\Ax{T}$,
@@ -132,8 +132,8 @@
   $\mClass{C}_\Ax{5}$ వరుసగా అన్ని సీరియల్, స్వావర్తన,
   సౌష్ఠవ, సంక్రామక, యూక్లిడియన్ నమూనాల వర్గాలు
   అనుకుందాం. అప్పుడు \Ax{D}, \Ax{T}, \Ax{B},
-  \Ax{4}, \Ax{5}లలోని ఏ స్కీమాలైనా $!A_1$,
-  \dots, $!A_n$కు వ్యవస్థ $\Log{K}!A_1 \dots !A_n$ను
+  \Ax{4}, \Ax{5}లలో $!A_1$,
+  \dots, $!A_n$ ఏ పథకాలైనా, వాటికి చెందిన వ్యవస్థ $\Log{K}!A_1 \dots !A_n$ను
   నమూనాల వర్గం $\mClass{C} = \mClass{C}_{!A_1} \cap
   \dots \cap \mClass{C}_{!A_n}$ నిర్ణయిస్తుంది.
 \end{thm}
@@ -142,20 +142,20 @@
   $\Sigma$ నార్మల్ మోడల్ తర్కం అనుకుందాం. అప్పుడు:
   \begin{enumerate}
   \item\ollabel{prop:anotherfive-a}%
-    $\Sigma$లో స్కీమా $\Diamond!A \lif \Box !A$ ఉంటే,
+    $\Sigma$లో పథకం $\Diamond!A \lif \Box !A$ ఉంటే,
     $\Sigma$కు చెందిన కానానికల్ నమూనా పాక్షిక ప్రమేయాత్మకమైనది.
-  \item $\Sigma$లో స్కీమా $\Diamond!A \liff \Box !A$
+  \item $\Sigma$లో పథకం $\Diamond!A \liff \Box !A$
     ఉంటే, $\Sigma$కు చెందిన కానానికల్ నమూనా ప్రమేయాత్మకమైనది.
-  \item $\Sigma$లో స్కీమా $\Box\Box!A \lif \Box !A$
+  \item $\Sigma$లో పథకం $\Box\Box!A \lif \Box !A$
     ఉంటే, $\Sigma$కు చెందిన కానానికల్ నమూనా బలహీన సాంద్రత గలది.
   \end{enumerate}
-  (ఈ ఫ్రేమ్ ధర్మాల నిర్వచనాలకు
+  (ఈ చట్ర ధర్మాల నిర్వచనాలకు
   \olref[frd][acc]{tab:anotherfive} చూడండి.)
 \end{prop}
 
 \begin{proof}
   \begin{enumerate}
-  \item $\Sigma$లో స్కీమా $\Diamond !A \lif \Box !A$
+  \item $\Sigma$లో పథకం $\Diamond !A \lif \Box !A$
     ఉందని అనుకుందాం. $R^\Sigma$ పాక్షిక ప్రమేయాత్మకమైనది
     అని చూపడానికి, ఏ $\Delta_1$, $\Delta_2$, $\Delta_3 \in
     W^\Sigma$లకైనా $R^\Sigma \Delta_1\Delta_2$ మరియు
@@ -166,21 +166,21 @@
     $\Box^{-1}\Delta_1 \subseteq \Delta_3$\iftag{prvBox}{}{;
       రెండూ \olref[mod]{lem:box-iff-diamond} ప్రకారం}.
     $\Delta_2 \subseteq \Delta_3$, $\Delta_3 \subseteq
-    \Delta_2$ అనే రెండు సమ్మిళితత్వాలను స్థాపిస్తే
-    $\Delta_2=\Delta_3$ అనుసరిస్తుంది. మొదటి సమ్మిళితత్వానికి
+    \Delta_2$ అనే రెండు ఉపసమితి సంబంధాలనూ చూపితే
+    $\Delta_2=\Delta_3$ అనుసరిస్తుంది. మొదటి సంబంధాన్ని చూపడానికి
     $!A \in \Delta_2$ అనుకుందాం; అప్పుడు $\Diamond!A
-    \in \Delta_1$. స్కీమా, $\Delta_1$ నిగమన సంవృతత వల్ల
+    \in \Delta_1$. ఆ పథకం, $\Delta_1$ నిగమన సంవృతత వల్ల
     $\Box!A \in \Delta_1$ కూడా. $R^\Sigma
     \Delta_1\Delta_3$ పరికల్పన వల్ల $!A \in \Delta_3$.
-    రెండవ సమ్మిళితత్వం కూడా ఇదే విధంగా వస్తుంది.
+    రెండో ఉపసమితి సంబంధాన్నీ ఇదే విధంగా చూపవచ్చు.
 
   \item ఇది \olref{prop:anotherfive-a} అంశం,
     \olref{thm:completeframeprops}లోని సీరియల్ ధర్మ నిరూపణ
     నుంచే వెంటనే అనుసరిస్తుంది.
 
-    \item $\Sigma$లో స్కీమా $\Box\Box!A \lif \Box!A$
+    \item $\Sigma$లో పథకం $\Box\Box!A \lif \Box!A$
     ఉందని అనుకుందాం. $R^\Sigma$ బలహీన సాంద్రత గలదని
-    చూపడానికి $R^\Sigma \Delta_1\Delta_2$ను తీసుకుందాం.
+    చూపడానికి $R^\Sigma \Delta_1\Delta_2$ అనుకుందాం.
     $R^\Sigma \Delta_1\Delta_3$ మరియు $R^\Sigma
     \Delta_3\Delta_2$ అయ్యే సంపూర్ణ $\Sigma$-అవిరుద్ధ
     సమితి $\Delta_3$ ఒకటి ఉందని చూపాలి. ఇలా ఉంచుదాం:
@@ -197,16 +197,20 @@
     $R^\Sigma \Delta_3\Delta_2$\iftag{prvBox}{(
       \olref[mod]{lem:box-iff-diamond} ప్రకారం)}{}.
 
-    విరోధార్థం $\Gamma$ అవిరుద్ధం కాదని అనుకుందాం.
+    వైరుధ్యాన్ని రాబట్టడానికి $\Gamma$ అవిరుద్ధం కాదని అనుకుందాం.
     అప్పుడు $\Box!A_1$, \dots, $\Box!A_n \in \Delta_1$
     అయ్యే \tetoken{సూత్రాలు}{!!{formula}s}, అలాగే
     $!B_1$, \dots,~$!B_m \in \Delta_2$ ఉండి, \[!A_1, \dots,
     !A_n, \Diamond!B_1, \dots, \Diamond!B_m \Proves[\Sigma]
-    \lfalse.\] ప్రతి నార్మల్ మోడల్ తర్కంలో
+    \lfalse.\] వైరుధ్య వ్యుత్పత్తి నిలుస్తుంది కాబట్టి, అవసరమైతే
+    మొదటి జాబితాకు మొదటి సమితిలో ఉండే అవశ్యకీకరించిన సర్వసత్యాన్నీ,
+    రెండో జాబితాకు రెండో సమితిలో ఉండే సర్వసత్యాన్నీ
+    సాక్షులుగా చేర్చి జాబితాలు రెండూ ఖాళీ కాకుండా తీసుకోవచ్చు.
+    ప్రతి నార్మల్ మోడల్ తర్కంలో
     $\Diamond (!B_1 \land \dots \land !B_m) \to
     (\Diamond!B_1 \land \dots \land \Diamond!B_m)$
-    \tetoken{వ్యుత్పాద్యం}{!!{derivable}} కనుక, కింది విధంగా
-    వాదిస్తాం; ఇది~$\Delta_2$ అవైరుధ్యానికి విరుద్ధం:
+    \tetoken{వ్యుత్పాద్యం}{!!{derivable}} కనుక, కింది వాదనతో
+    $\Delta_2$ అవైరుధ్యానికి విరుద్ధమైన ఫలితానికి వస్తాం.
     \begin{align*}
       !A_1, \dots, !A_n, & \Diamond!B_1, \dots,
       \Diamond!B_m \Proves[\Sigma] \lfalse \\
@@ -230,7 +234,7 @@
       \Box!A_1, \dots,\Box!A_n
       & \Proves[\Sigma]
       \Box\lnot (!B_1 \land \dots \land !B_m)\\
-      &\qquad\text{స్కీమా $\Box\Box!A \lif \Box!A$ ప్రకారం} \\
+      &\qquad\text{పథకం $\Box\Box!A \lif \Box!A$ ప్రకారం} \\
       \Delta_1 & \Proves[\Sigma]
       \Box\lnot (!B_1 \land \dots \land !B_m)\\
       &\qquad\text{ఏకదిశత్వం, \olref[prf][prp]{prop:derivabilityfacts}\olref[prf][prp]{prop:derivabilityfacts-monotonicity} ప్రకారం} \\
@@ -240,20 +244,15 @@
       &\qquad \text{ఎందుకంటే }
       R^\Sigma \Delta_1\Delta_2.
     \end{align*}
-    ఆ సాక్షి సూత్రాలన్నీ రెండవ సమితిలోనే ఉండగా వాటి
-    సంయోగ నిషేధమూ అక్కడ ఉండటం అవైరుధ్యానికి విరుద్ధం.
-    \sourcecorrection{OLTENMLCOMFRA-001}{స్థిర మూలం
-      చివరి ప్రదర్శిత వరుసతో నిరూపణను ముగిస్తుంది.
-      ప్రారంభంలో తీసుకున్న అన్ని $!B_i$లు $\Delta_2$లో
-      ఉన్నందున వాటి సంయోగ నిషేధం కూడా అక్కడ ఉండటం
-      అవైరుధ్యానికి విరుద్ధమని ముగింపు దశను స్పష్టం చేశాం.}
+    రెండో జాబితాలోని సాక్షి సూత్రాలన్నీ రెండో సమితిలో ఉండగా,
+    వాటి సంయోగ నిషేధమూ అదే సమితిలో ఉండటం అవైరుధ్యానికి విరుద్ధం.
   \end{enumerate}
 \end{proof}
 
-ఈ ఉదాహరణలను బట్టి, ప్రతి మోడల్ తర్క వ్యవస్థ~$\Sigma$
+ఈ ఉదాహరణలను బట్టి ప్రతి మోడల్ తర్క వ్యవస్థ~$\Sigma$
 \emph{సంపూర్ణం} అని అనిపించవచ్చు: అంటే, $\Sigma$లోని ప్రతి
-సిద్ధాంతం చెల్లుబాటయ్యే ప్రతి ఫ్రేమ్‌లో చెల్లుబాటయ్యే ప్రతి
-సూత్రాన్నీ ఆ వ్యవస్థ నిరూపిస్తుందని. దురదృష్టవశాత్తు,
+సిద్ధాంత వాక్యమూ చెల్లుబాటయ్యే చట్రాలను తీసుకుంటే, ఆ చట్రాలన్నింటిలో
+చెల్లుబాటయ్యే ప్రతి సూత్రాన్నీ ఆ వ్యవస్థ నిరూపిస్తుందని అనిపించవచ్చు. దురదృష్టవశాత్తు,
 ఈ అర్థంలో సంపూర్ణం కాని వ్యవస్థలు ఎన్నో ఉన్నాయి.
 
 \end{document}

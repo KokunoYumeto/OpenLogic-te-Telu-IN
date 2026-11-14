@@ -15,22 +15,21 @@
 \end{thm}
 
 \begin{proof}
-  ప్రతివిపర్యయాన్ని నిరూపిస్తాం:
+  ప్రతివిపర్యయాన్ని నిరూపిద్దాం.
   $\Gamma \Proves/ !A$ అనుకుందాం.
   \olref[lin]{lem:lindenbaum} ప్రకారం
   $\Gamma^*
   \supseteq \Gamma$, $\Gamma^* \Proves/ !A$
-  అయ్యే ప్రధాన సమితి ఉంది.
-  \olref[mod]{defn:canonical-model}లో
-  నిర్వచించిన $\Gamma^*$కు చెందిన
-  కానానికల్ నమూనా~$\mModel{M(\Gamma^*)}$ను
-  పరిగణిద్దాం. ఏ $!B \in \Gamma$కైనా
+  అనే రెండు షరతులూ నెరవేర్చే ప్రధాన సమితి ఒకటి ఉంటుంది.
+  \olref[mod]{defn:canonical-model}లో ఇచ్చిన నిర్వచనం
+  ప్రకారం $\Gamma^*$కు చెందిన కానానికల్
+  నమూనా~$\mModel{M(\Gamma^*)}$ను తీసుకుందాం. ఏ $!B \in \Gamma$కైనా
   $\Gamma^*
   \Proves !B$. $\Gamma^*(\emptyseq) =
   \Gamma^*$ అని గమనించండి. సత్య
   ఉపప్రమేయం (\olref[tru]{lem:truth}) ప్రకారం
-  అన్ని $!B \in \Gamma$లకు
-  $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$,
+  ప్రతి $!B \in \Gamma$కు
+  $\mSat{M(\Gamma^*)}{!B}[\emptyseq]$ నెరవేరుతుంది.
   అలాగే $\mSat/{M(\Gamma^*)}{!A}[\emptyseq]$.
   కాబట్టి $\Gamma
   \Entails/ !A$.
@@ -55,8 +54,7 @@
 \end{prob}
 
 \begin{prob}
-  $\mModel{M}$ ఒక రేఖీయ క్రమాన్ని ఉపయోగించే
-  సంబంధ నమూనా అయితే
+  సంబంధ నమూనా~$\mModel{M}$లో రేఖీయ క్రమం ఉంటే
   $\mSat{M}{(!A \lif !B)\lor(!B \lif !A)}$
   అని చూపండి.
 \end{prob}

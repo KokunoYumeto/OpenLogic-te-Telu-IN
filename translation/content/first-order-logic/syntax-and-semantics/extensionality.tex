@@ -11,23 +11,23 @@
 \olsection{విస్తారత}
 
 \begin{explain}
-కొన్నిసార్లు సంబద్ధత అని కూడా పిలిచే విస్తారతను అనౌపచారికంగా ఇలా
-చెప్పవచ్చు: \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో, \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు
-సాపేక్షంగా \tetoken{సూత్రం}{!!{formula}}~$!A$ యొక్క సంతృప్తిపై ప్రభావం చూపే అంశాలు,
-\tetoken{వ్యక్తి క్షేత్రం}{!!{domain}} యొక్క పరిమాణం, అలాగే $!A$లో నిజంగా కనిపించే భాషా అంశాలకు
-$\Struct M$, ~$s$లు చేసే నిర్దేశాలు మాత్రమే.
+విస్తారతను కొన్నిసార్లు ప్రాసంగికత అని కూడా అంటారు. దీన్ని అనౌపచారికంగా ఇలా
+చెప్పవచ్చు: \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో, ఒక \tetoken{చర}{!!a{variable}} నిర్దేశం~$s$కు
+సాపేక్షంగా \tetoken{సూత్రం}{!!{formula}}~$!A$ సంతృప్తమవుతుందో లేదో నిర్ణయించేవి
+\tetoken{వ్యక్తి క్షేత్రపు}{!!{domain}} పరిమాణం, అలాగే $!A$లో కనిపించే భాషా సంకేతాలకు
+$\Struct M$, ~$s$లు ఇచ్చే నిర్దేశాలు మాత్రమే.
 
-విస్తారతకు తక్షణ పర్యవసానం ఒకటి: ఒక వాక్యం~$!A$లో కనిపించే భాషా
-అంశాలన్నింటిపై రెండు \tetoken{నిర్మాణాలు}{!!{structure}s}~$\Struct M$, ~$\Struct M'$లు
-ఏకీభవించి, వాటి వ్యక్తి క్షేత్రం ఒకటే అయితే, $!A$ సత్యమా కాదా అనే
-విషయంలో కూడా $\Struct M$, ~$\Struct M'$లు తప్పక ఏకీభవిస్తాయి.
+విస్తారత నుంచి నేరుగా ఒక పర్యవసానం వస్తుంది. ఒక వాక్యం~$!A$లో కనిపించే భాషా
+సంకేతాలన్నింటికీ రెండు \tetoken{నిర్మాణాలు}{!!{structure}s}~$\Struct M$, ~$\Struct M'$లు
+ఒకే అర్థాన్ని ఇచ్చి, వాటి వ్యక్తి క్షేత్రం ఒకటే అయితే, $!A$ సత్యమా కాదా అనే
+విషయంలో కూడా $\Struct M$, ~$\Struct M'$లు ఒకే ఫలితాన్ని ఇస్తాయి.
 \end{explain}
 
 \begin{prop}[విస్తారత]
   \ollabel{prop:extensionality}
   $!A$ ఒక \tetoken{సూత్రం}{!!a{formula}} అనీ, $\Struct M_1$, ~$\Struct M_2$లు
   $\Domain{M_1} = \Domain{M_2}$ గల \tetoken{నిర్మాణాలు}{!!{structure}s} అనీ, ~$s$ అనేది
-  $\Domain{M_1} = \Domain{M_2}$పై ఒక చర నిర్దేశమనీ అనుకుందాం. $!A$లో
+  $\Domain{M_1} = \Domain{M_2}$పై నిర్వచించిన చర నిర్దేశమనీ అనుకుందాం. $!A$లో
   కనిపించే ప్రతి \tetoken{స్థిరసంకేతం}{!!{constant}}~$c$, సంబంధ సంకేతం~$R$, \tetoken{ప్రమేయ సంకేతం}{!!{function}}~$f$కు
   $\Assign{c}{M_1} = \Assign{c}{M_2}$,
   $\Assign{R}{M_1}=\Assign{R}{M_2}$, అలాగే
@@ -37,18 +37,18 @@ $\Struct M$, ~$s$లు చేసే నిర్దేశాలు మాత్
 \end{prop}
 
 \begin{proof}
-  మొదట ప్రతి పదానికీ $\Value{t}{M_1}[s] = \Value{t}{M_2}[s]$ అని
-  ($t$పై ఆగమనం ద్వారా) నిరూపించండి. తరువాత ఇప్పుడే నిరూపించిన వాదనను,
-  $!A$ పరమాణువుగా ఉండే ఆగమన ఆధారంలో ఉపయోగిస్తూ, ~$!A$పై ఆగమనం ద్వారా
+  మొదట, ఈ సూత్రంలో కనిపించే తార్కికేతర సంకేతాలనే వాడే ప్రతి పదానికీ, ఏ ఉమ్మడి చర నిర్దేశానికైనా
+  $\Value{t}{M_1}[s] = \Value{t}{M_2}[s]$ అని ($t$పై ఆగమనం ద్వారా) నిరూపించండి. తరువాత అదే సంకేతాలున్న భాషలో
+  $!A$ పరమాణువుగా ఉండే ఆధార సందర్భంలో పదాలకు నిరూపించిన ఫలితాన్ని వాడి, ~$!A$పై ఆగమనం ద్వారా
   ప్రతిపాదనను నిరూపించండి.
 \end{proof}
 
 \begin{prob}
-\olref[fol][syn][ext]{prop:extensionality} యొక్క నిరూపణను వివరంగా
-చేయండి.
+\olref[fol][syn][ext]{prop:extensionality} నిరూపణను వివరంగా
+రాయండి.
 \end{prob}
 
-\begin{cor}[\tetoken{వాక్యాలు}{!!^{sentence}s} కోసం విస్తారత]
+\begin{cor}[\tetoken{వాక్యాలకు}{!!^{sentence}s} విస్తారత]
   \ollabel{cor:extensionality-sent}
   $!A$ ఒక \tetoken{వాక్యం}{!!a{sentence}} అనీ, $\Struct{M_1}$, ~$\Struct{M_2}$లు
   \olref{prop:extensionality}లో ఉన్నట్లే అనీ అనుకుందాం. అప్పుడు
@@ -56,12 +56,12 @@ $\Struct M$, ~$s$లు చేసే నిర్దేశాలు మాత్
 \end{cor}
 
 \begin{proof}
-\olref{prop:extensionality} అనేది \olref[ass]{cor:sat-sentence} ప్రకారం
-అనుగమిస్తుంది.
+\olref[ass]{cor:sat-sentence}ను ఉపయోగిస్తే ఈ ఫలితం
+\olref{prop:extensionality} నుంచి వస్తుంది.
 \end{proof}
 
-అంతేకాక, ఒక పదం యొక్క విలువ, \tetoken{ఒక నిర్మాణం}{!!a{structure}} ఒక \tetoken{సూత్రాన్ని}{!!a{formula}}
-సంతృప్తిపరుస్తుందా లేదా అనేవి, దాని ఉపపదాల విలువలపైన మాత్రమే
+అంతేకాక, ఒక పదానికి గల విలువా, \tetoken{ఒక నిర్మాణం}{!!a{structure}} ఒక \tetoken{సూత్రాన్ని}{!!a{formula}}
+సంతృప్తిపరుస్తుందా లేదా అన్నదీ, వాటి ఉపపదాల విలువలపైన మాత్రమే
 ఆధారపడతాయి.
 
 \begin{prop}\ollabel{prop:ext-terms}
@@ -102,19 +102,19 @@ $t$పై ఆగమనం ద్వారా నిరూపిస్తాం.
 & = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
     \text{$\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ నిర్వచనం ప్రకారం}
   \end{aligned}
-\end{multline*}\sourcecorrection{OLTEFOLEXT-001}{మూల ప్రదర్శన మొదటి పంక్తి చివర, తరువాతి సమానతా పంక్తి ముందు ఉన్న అదనపు సమానతా చిహ్నాన్ని తొలగించాం.}
+\end{multline*}
 \end{enumerate}
 \end{proof}
 
 \begin{prop}\ollabel{prop:ext-formulas} $\Struct M$ ఒక
-\tetoken{నిర్మాణం}{!!a{structure}}, ~$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}}, ~$t'$ ఒక పదం, ~$s$ ఒక చర
+\tetoken{నిర్మాణం}{!!a{structure}}, ~$!A$ ఒక \tetoken{సూత్రం}{!!a{formula}}, ~$t'$ అనేది $!A$లో $x$కు బదులుగా ప్రతిస్థాపించడానికి స్వేచ్ఛగా ఉండే పదం, ~$s$ ఒక చర
 నిర్దేశం అనుకుందాం. అప్పుడు $\Sat{M}{\Subst{!A}{t'}{x}}[s]$ అవుతుంది
 అప్పుడే, అప్పుడు మాత్రమే
 $\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
 \end{prop}
 
 \begin{proof}
-వ్యాయామం.
+సాధన.
 \end{proof}
 
 \begin{prob}
@@ -122,20 +122,20 @@ $\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
 \end{prob}
 
 \begin{explain}
-  \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas} యొక్క
-  ఉద్దేశం ఇది. మనకు ఒక పదం~$t$ లేదా \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, మరొక పదం~$t'$
+  \cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas}కు సంబంధించిన
+  విషయం ఇది. మనకు ఒక పదం~$t$ లేదా \tetoken{ఒక సూత్రం}{!!a{formula}}~$!A$, మరొక పదం~$t'$
   ఉన్నాయనీ, $\Subst{t}{t'}{x}$ విలువను లేదా
   $\Subst{!A}{t'}{x}$ అనేది \tetoken{ఒక నిర్మాణం}{!!a{structure}}~$\Struct M$లో
-  \tetoken{ఒక చరం}{!!a{variable}} నిర్దేశం~$s$కు సాపేక్షంగా సంతృప్తమవుతుందో లేదో
+  ఒక \tetoken{చర}{!!a{variable}} నిర్దేశం~$s$కు సాపేక్షంగా సంతృప్తమవుతుందో లేదో
   తెలుసుకోవాలనీ అనుకుందాం. అప్పుడు ముందుగా ప్రతిస్థాపన చేసి, తరువాత
-  $\Struct{M}$, ~$s$లకు సాపేక్షంగా విలువను లేదా సంతృప్తిని పరిశీలించవచ్చు;
-  లేదా ముందుగా $\Struct{M}$లో $s$కు సాపేక్షంగా $t'$ యొక్క విలువ
-  $m = \Value{t'}{M}[s]$ను నిర్ణయించి, \tetoken{చరం}{!!{variable}} నిర్దేశాన్ని
+  $\Struct{M}$, ~$s$లకు సాపేక్షంగా విలువను లేదా సంతృప్తిని పరిశీలించవచ్చు.
+  లేదా ముందుగా $\Struct{M}$లో $s$కు సాపేక్షంగా $t'$ విలువ
+  $m = \Value{t'}{M}[s]$ను నిర్ణయించి, \tetoken{చర}{!!{variable}} నిర్దేశాన్ని
   $\Subst{s}{m}{x}$గా మార్చి, తరువాత $\Struct{M}$లో
   $\Subst{s}{m}{x}$కు సాపేక్షంగా~$t$ విలువను, లేదా
   $\Sat{M}{!A}[\Subst{s}{m}{x}]$ అవుతుందో పరిశీలించవచ్చు.
   \Cref{fol:syn:ext:prop:ext-terms,fol:syn:ext:prop:ext-formulas} ప్రకారం,
-  మనం ఏ మార్గంలో చేసినా సమాధానం ఒకటే.
+  ఏ పద్ధతి వాడినా సమాధానం ఒకటే.
 \end{explain}
 
 \end{document}

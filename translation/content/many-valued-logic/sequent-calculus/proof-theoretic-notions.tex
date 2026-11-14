@@ -1,6 +1,6 @@
-% Part: many-valued-logics
-% Chapter: sequent-calculus
-% Section: proof-theoretic-notions
+% భాగం: బహుమూల్య తర్కం
+% అధ్యాయం: సీక్వెంట్ కలనం
+% విభాగం: నిరూపణ సిద్ధాంత భావనలు
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -11,40 +11,37 @@
 \olsection{నిరూపణ-సిద్ధాంత భావనలు}
 
 \begin{explain}
-కొన్ని ముఖ్యమైన అర్థపర భావనలను (చెల్లుబాటుతనం, అనుగమనం,
-సంతృప్తిపరచదగినతనం) నిర్వచించినట్లే, ఇప్పుడు వాటికి సరిపోలే
-\emph{నిరూపణ-సిద్ధాంత భావనలను} నిర్వచిస్తాం. వీటిని \tetoken{నిర్మాణాలలో}{!!{structure}s}
-\tetoken{వాక్యాలు}{!!{sentence}s} సంతృప్తి చెందడాన్ని ఆశ్రయించి నిర్వచించం; కొన్ని
-సీక్వెంట్ల \tetoken{వ్యుత్పాద్యత}{!!{derivability}} లేదా \tetoken{అవ్యుత్పాద్యతను}{!!{nonderivability}} ఆశ్రయించి
-నిర్వచిస్తాం. ఈ రెండు రకాల భావనలు ఏకీభవిస్తాయనేది ఒక ముఖ్యమైన
-ఆవిష్కరణ. అవి ఏకీభవిస్తాయనే విషయమే \emph{నిర్దుష్టత},
-\emph{సంపూర్ణతా సిద్ధాంతాల} సారం.
+కొన్ని ముఖ్యమైన అర్థపర భావనలను (చెల్లుబాటుతనం, అర్థపర అనుగమనం,
+సంతృప్తిపరచదగినతనం) నిర్వచించినట్లే, ఇప్పుడు వాటికి అనురూపమైన
+\emph{నిరూపణ-సిద్ధాంత భావనలను} నిర్వచిస్తాం. వీటిని నిర్వచించడానికి \tetoken{నిర్మాణాలలో}{!!{structure}s}
+\tetoken{వాక్యాలు}{!!{sentence}s} సంతృప్తమవుతాయా అన్నది చూడం. కొన్ని
+సీక్వెంట్ల \tetoken{వ్యుత్పాద్యతను}{!!{derivability}} లేదా \tetoken{అవ్యుత్పాద్యతను}{!!{nonderivability}} ఆధారంగా
+తీసుకుంటాం. ఈ రెండు రకాల భావనలు ఒకటేనని తెలుసుకోవడం ఒక ముఖ్యమైన ఆవిష్కరణ. అవి ఒకటేనన్నదే \emph{నిర్దుష్టత}, \emph{సంపూర్ణత} సిద్ధాంతం చెప్పే విషయం.
 \end{explain}
 
 \begin{defn}[సిద్ధాంతాలు]
-\tetoken{ఒక వాక్యం}{!!^a{sentence}}~$!A$కు $\quad \Sequent !A$ సీక్వెంట్ యొక్క ఒక
-$\Log{LK}$ \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఉంటే, దానిని \emph{సిద్ధాంతం} అంటాం.
+$\quad \Sequent !A$ అనే సీక్వెంట్‌కు $\Log{LK}$లో \tetoken{వ్యుత్పత్తి}{!!a{derivation}} ఉంటే, \tetoken{వాక్యం}{!!^a{sentence}}~$!A$ను \emph{సిద్ధాంతం} అంటాం.
 $!A$ సిద్ధాంతమైతే $\Proves !A$ అనీ, కాకపోతే $\Proves/ !A$ అనీ రాస్తాం.
 \end{defn}
 
 \begin{defn}[\tetoken{వ్యుత్పాద్యత}{!!^{derivability}}]
-\tetoken{వాక్యాలు}{!!{sentence}s} సమితి~$\Gamma$ నుంచి \tetoken{ఒక వాక్యం}{!!^a{sentence}}~$!A$
-\emph{\tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}}, అంటే $\Gamma \Proves !A$, అవుతుంది అంటే:
+\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$ నుంచి \tetoken{ఒక వాక్యం}{!!^a{sentence}}~$!A$
+\emph{\tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}} అనడానికి ($\Gamma \Proves !A$) కింది షరతు అవసరం, సరిపోతుంది.
 $\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత ఉపసమితి, $\Gamma_0$లోని
-\tetoken{వాక్యాలతో}{!!{sentence}s} కూడిన $\Gamma_0'$ అనే ఒక క్రమం ఉండి, $\Log{LK}$
-$\Gamma_0' \Sequent !A$ను \tetoken{నిగమనం}{!!{derive}s} చేయాలి. $\Gamma$ నుంచి $!A$
-\tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} కాకపోతే $\Gamma \Proves/ !A$ అని రాస్తాం.
+\tetoken{వాక్యాలతో}{!!{sentence}s} కూడిన $\Gamma_0'$ అనే ఒక అనుక్రమం ఉండి, ఆ అనుక్రమాన్ని పూర్వాంగంగా తీసుకుంటే $\Log{LK}$
+$\Gamma_0' \Sequent !A$ను \tetoken{వ్యుత్పాదిస్తుంది}{!!{derive}s}. $\Gamma$ నుంచి $!A$
+\tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} కాకపోతే $\Gamma \Proves/ !A$ అని రాస్తాం.
 \end{defn}
 
 సంకోచనం, బలహీనీకరణ, మార్పిడి నియమాల వల్ల $\Gamma_0'$లోని
-\tetoken{వాక్యాలు}{!!{sentence}s} క్రమమూ, వాటి సంఖ్యా ముఖ్యం కాదు: $\Gamma_0' \Sequent !A$
-సీక్వెంట్ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అయితే, $\Gamma_0'$లో ఉన్న \tetoken{వాక్యాలే}{!!{sentence}s}
+\tetoken{వాక్యాల}{!!{sentence}s} క్రమం గానీ, ఒక్కో వాక్యం ఎన్నిసార్లు వస్తుందన్నది గానీ ఫలితాన్ని మార్చవు. $\Gamma_0' \Sequent !A$
+సీక్వెంట్ \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} అయితే, $\Gamma_0'$లో ఉన్న \tetoken{వాక్యాలే}{!!{sentence}s}
 కలిగిన ఏ $\Gamma_0''$కైనా $\Gamma_0'' \Sequent !A$ కూడా
-నిగమించదగినది. ఉదాహరణకు $\Gamma_0 = \{!B, !C\}$ అయితే,
+వ్యుత్పాదించదగినది. ఉదాహరణకు $\Gamma_0 = \{!B, !C\}$ అయితే,
 $\Gamma_0' = \tuple{!B, !B, !C}$, $\Gamma_0'' =
 \tuple{!C, !C, !B}$ రెండూ $\Gamma_0$లోని \tetoken{వాక్యాలే}{!!{sentence}s} కలిగిన
-క్రమాలు. వీటిలో ఒకదాన్ని కలిగిన సీక్వెంట్ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అయితే
-మరొకదాన్ని కలిగినదీ అలాగే అవుతుంది; ఉదాహరణకు:
+క్రమాలు. వీటిలో ఒకదాన్ని పూర్వాంగంగా తీసుకున్న సీక్వెంట్ \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}} అయితే
+మరొకదాన్ని పూర్వాంగంగా తీసుకున్న సీక్వెంట్ కూడా వ్యుత్పాదించదగినదే. ఉదాహరణకు
 \begin{prooftree}
   \AxiomC{}
   \Deduce$!B, !B, !C \fCenter !A$
@@ -55,17 +52,16 @@ $\Gamma_0' = \tuple{!B, !B, !C}$, $\Gamma_0'' =
   \RightLabel{\LeftR{\Weakening}}
   \UnaryInf$!C, !C, !B \fCenter !A$
 \end{prooftree}
-ఇకపై $\Gamma_0$ ఒక పరిమిత \tetoken{వాక్యాలు}{!!{sentence}s} సమితి అయితే,
-$\Gamma_0 \Sequent !A$ అనేది $\Gamma_0$లోని \tetoken{వాక్యాలు}{!!{sentence}s} క్రమాన్ని
-పూర్వాంగంగా కలిగిన ఏ సీక్వెంట్‌నైనా సూచిస్తుందని అంటాం; అవసరమైతే
-సంకోచనాలు, మార్పిడులు, బలహీనీకరణలను మౌనంగా చేర్చినట్లు భావిస్తాం.
+ఇకపై $\Gamma_0$ ఒక పరిమిత \tetoken{వాక్యాల}{!!{sentence}s} సమితి అయితే,
+$\Gamma_0 \Sequent !A$ అనేది $\Gamma_0$లోని \tetoken{వాక్యాల}{!!{sentence}s} క్రమాన్ని
+పూర్వాంగంగా కలిగిన ఏ సీక్వెంట్‌నైనా సూచిస్తుంది. అవసరమైనప్పుడు
+సంకోచనం, మార్పిడి, బలహీనీకరణ నియమాలను ప్రత్యేకంగా పేర్కొనకుండానే వర్తింపజేస్తాం.
 
 \begin{defn}[అవైరుధ్యం]
 $\Gamma_0 \subseteq \Gamma$ అనే ఏదో పరిమిత ఉపసమితికి
-$\Gamma_0 \Sequent \quad$ను $\Log{LK}$ \tetoken{నిగమనం}{!!{derive}s} చేస్తే, అప్పుడు
-మాత్రమే వాక్యాల సమితి~$\Gamma$ \emph{వైరుధ్యభరితం}. $\Gamma$
+$\Gamma_0 \Sequent \quad$ను $\Log{LK}$ \tetoken{వ్యుత్పాదిస్తే}{!!{derive}s}, అప్పుడే, అప్పుడు మాత్రమే వాక్యాల సమితి~$\Gamma$ \emph{వైరుధ్యభరితం}. $\Gamma$
 వైరుధ్యభరితం కాకపోతే, అంటే ప్రతి పరిమిత $\Gamma_0 \subseteq \Gamma$కు
-$\Log{LK}$ అనేది $\Gamma_0 \Sequent \quad$ను \tetoken{నిగమనం}{!!{derive}} చేయకపోతే,
+$\Log{LK}$ అనేది $\Gamma_0 \Sequent \quad$ను \tetoken{వ్యుత్పాదించకపోతే}{!!{derive}},
 దాన్ని \emph{అవైరుధ్యమైనది} అంటాం.
 \end{defn}
 
@@ -75,7 +71,7 @@ $!A \in \Gamma$ అయితే $\Gamma \Proves !A$.
 \end{prop}
 
 \begin{proof}
-ప్రారంభ సీక్వెంట్ $!A \Sequent !A$ అనేది \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}; అంతేకాక
+ప్రారంభ సీక్వెంట్ $!A \Sequent !A$ \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}. అంతేకాక
 $\{!A\} \subseteq \Gamma$.
 \end{proof}
 
@@ -87,9 +83,9 @@ $\Delta \Proves !A$.
 
 \begin{proof}
 $\Gamma \Proves !A$ అనుకుందాం. అంటే $\Gamma_0 \subseteq \Gamma$ అనే
-ఒక పరిమిత సమితికి $\Gamma_0 \Sequent !A$ \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}} అవుతుంది.
+ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent !A$ \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}.
 $\Gamma \subseteq \Delta$ కనుక $\Gamma_0$ అనేది $\Delta$కు కూడా
-పరిమిత ఉపసమితి. కాబట్టి $\Gamma_0 \Sequent !A$ యొక్క \tetoken{వ్యుత్పత్తి}{!!{derivation}}
+పరిమిత ఉపసమితి. కాబట్టి $\Gamma_0 \Sequent !A$కు ఉన్న \tetoken{వ్యుత్పత్తి}{!!{derivation}}
 $\Delta \Proves !A$ అని కూడా చూపుతుంది.
 \end{proof}
 
@@ -101,9 +97,9 @@ $\Gamma \cup \Delta \Proves !B$.
 
 \begin{proof}
 $\Gamma \Proves !A$ అయితే $\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత
-సమితి, $\Gamma_0 \Sequent !A$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}~$\pi_0$ ఉంటాయి.
+ఉపసమితి, $\Gamma_0 \Sequent !A$కు \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}~$\pi_0$ ఉంటాయి.
 $\{!A\} \cup \Delta \Proves !B$ అయితే ఏదో పరిమిత ఉపసమితి
-$\Delta_0 \subseteq \Delta$కు $!A, \Delta_0 \Sequent !B$ యొక్క
+$\Delta_0 \subseteq \Delta$కు $!A, \Delta_0 \Sequent !B$ను ఇచ్చే
 \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}}~$\pi_1$ ఉంటుంది. కింది \tetoken{వ్యుత్పత్తిని}{!!{derivation}} పరిశీలించండి:
 \begin{prooftree}
   \AxiomC{}
@@ -120,14 +116,14 @@ $\Gamma \cup \Delta \Proves !B$ అని చూపుతుంది.
 \end{proof}
 
 ప్రత్యేకంగా $\Gamma \Proves !A$, $!A \Proves !B$ అయితే
-$\Gamma \Proves !B$ అని దీని అర్థమని గమనించండి. అలాగే
+$\Gamma \Proves !B$ అని ఈ ఫలితం చెబుతుంది. అలాగే
 $!A_1, \dots, !A_n \Proves !B$ అయి, ప్రతి~$i$కి
 $\Gamma \Proves !A_i$ అయితే $\Gamma \Proves !B$ అని కూడా వస్తుంది.
 
 \begin{prop}
 \ollabel{prop:incons}
-ప్రతి వాక్యం~$!A$కు $\Gamma \Proves {!A}$ అయినప్పుడు, అప్పుడు మాత్రమే
-$\Gamma$ వైరుధ్యభరితం.
+ప్రతి వాక్యం~$!A$కు $\Gamma \Proves {!A}$ చెల్లడం
+$\Gamma$ వైరుధ్యభరితం కావడానికి అవసరమైన, సరిపడే షరతు.
 \end{prop}
 
 \begin{proof}
@@ -143,7 +139,7 @@ $\Gamma$ వైరుధ్యభరితం.
   \begin{enumerate}
   \item $\Gamma \Proves !A$ అయితే $\Gamma_0 \Proves !A$ అయ్యేలా
     $\Gamma_0 \subseteq \Gamma$ అనే ఒక పరిమిత ఉపసమితి ఉంటుంది.
-  \item $\Gamma$ యొక్క ప్రతి పరిమిత ఉపసమితి అవైరుధ్యమైతే,
+  \item $\Gamma$లోని ప్రతి పరిమిత ఉపసమితి అవైరుధ్యమైతే,
     $\Gamma$ అవైరుధ్యమైనది.
   \end{enumerate}
 \end{prop}
@@ -151,12 +147,11 @@ $\Gamma$ వైరుధ్యభరితం.
 \begin{proof}
   \begin{enumerate}
     \item $\Gamma \Proves !A$ అయితే $\Gamma_0 \subseteq \Gamma$ అనే
-      ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent !A$ సీక్వెంట్ యొక్క
+      ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent !A$ సీక్వెంట్‌కు
       \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} ఉంటుంది. కాబట్టి $\Gamma_0 \Proves !A$.
     \item $\Gamma$ వైరుధ్యభరితమైతే, $\Gamma_0 \subseteq \Gamma$ అనే
       ఒక పరిమిత ఉపసమితికి $\Gamma_0 \Sequent \quad$ను $\Log{LK}$
-      \tetoken{నిగమనం}{!!{derive}s} చేస్తుంది. కానీ అప్పుడు $\Gamma_0$ అనేది
-      వైరుధ్యభరితమైన, $\Gamma$ యొక్క పరిమిత ఉపసమితి.
+      \tetoken{వ్యుత్పాదిస్తుంది}{!!{derive}s}. అప్పుడు $\Gamma_0$ అనేది $\Gamma$లోని వైరుధ్యభరిత పరిమిత ఉపసమితి.
   \end{enumerate}
 \end{proof}
 

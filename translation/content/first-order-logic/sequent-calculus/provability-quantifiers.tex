@@ -10,19 +10,19 @@
 \olsection{\usetoken{S}{derivability}, పరిమాణీకరణలు}
 
 \begin{explain}
-  ఈ విభాగంలో స్థాపించే $\Proves$కు సంబంధించిన విషయాలు సీక్వెంట్ కలనం
-  నియమాల నుంచి రావాలని కూడా సంపూర్ణతా సిద్ధాంతం కోరుతుంది.
+  సంపూర్ణతా సిద్ధాంతానికి మరో అవసరం ఉంది. ఈ విభాగంలో $\Proves$ గురించి
+  నిరూపించే ఫలితాలు సీక్వెంట్ కలన నియమాల నుంచి రావాలి.
 \end{explain}
 
 \begin{thm}
-\ollabel{thm:strong-generalization} $c$ అనే స్థిరాంకం $\Gamma$లో గానీ
+\ollabel{thm:strong-generalization} $c$ అనే స్థిరసంకేతం $\Gamma$లో గానీ
 $!A(x)$లో గానీ కనిపించకుండా, $\Gamma \Proves !A(c)$ అయితే,
 $\Gamma \Proves \lforall[x][!A(x)]$.
 \end{thm}
 
 \begin{proof}
 ఏదో పరిమిత $\Gamma_0 \subseteq \Gamma$కు $\Gamma_0 \Sequent !A(c)$
-యొక్క $\Log{LK}$-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\pi_0$ అందాం. ఒక
+సీక్వెంట్‌కు ఇచ్చిన $\Log{LK}$-\tetoken{వ్యుత్పత్తిని}{!!{derivation}} $\pi_0$ అందాం. ఒక
 $\RightR{\lforall}$ నిగమనాన్ని చేరిస్తే
 $\Gamma_0 \Sequent \lforall[x][!A(x)]$ యొక్క \tetoken{ఒక వ్యుత్పత్తి}{!!a{derivation}} వస్తుంది.
 $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో గానీ కనిపించదు కనుక ఐగెన్
@@ -40,14 +40,14 @@ $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో గానీ క�
 \begin{proof}
 \begin{tagenumerate}{prvEx,prvAll}
 \tagitem{prvEx}{$!A(t) \Sequent \lexists[x][!A(x)]$ సీక్వెంట్
-  \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
+  \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}:
   \begin{prooftree}
     \Axiom$!A(t) \fCenter !A(t)$
     \RightLabel{\RightR{\lexists}}
     \UnaryInf$!A(t) \fCenter \lexists[x][!A(x)]$
     \end{prooftree}}{}
 \tagitem{prvAll}{$\lforall[x][!A(x)] \Sequent !A(t)$ సీక్వెంట్
-  \tetoken{వ్యుత్పాదించదగిన}{!!{derivable}}:
+  \tetoken{వ్యుత్పాదించదగినది}{!!{derivable}}:
   \begin{prooftree}
     \Axiom$!A(t) \fCenter !A(t)$
     \RightLabel{\LeftR{\lforall}}

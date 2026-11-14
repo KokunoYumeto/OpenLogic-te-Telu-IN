@@ -211,7 +211,7 @@ def about_page(html_digest: str) -> bytes:
     main = legacy.append(body, "main", epub_type="backmatter")
     legacy.append(main, "h1", "సంచిక గురించి")
     legacy.append(main, "p", "ఈ EPUB స్థిర ఆంగ్ల మూలంలోని 722 .tex విభాగాలన్నిటినీ సమగ్ర పఠన క్రమంలో కలిగి ఉంది. ప్రతి తెలుగు విభాగంతో పాటు తెరవగల ఆంగ్ల మూలం, MathML గణితం, స్థానిక చిత్రాలు ఉన్నాయి.")
-    legacy.append(main, "p", "యంత్ర సహాయంతో చేసిన అనువాదం, మూలంతో విభాగాలవారీ సరిపోలిక. మానవ లేదా స్వతంత్ర నిపుణ భాషా సమీక్ష జరిగిందని పేర్కొనడం లేదు. మూలంలో నిర్వచించని ఒక సూచనను అందుబాటులో లేనిదిగా గుర్తించాం; తప్పుడు లంకెను సృష్టించలేదు.")
+    legacy.append(main, "p", "ఈ తెలుగు పాఠ్యాన్ని కృత్రిమ మేధ అనువదించింది. అనువాదాన్ని స్థిర ఆంగ్ల మూలంతో విభాగాలవారీగా పోల్చారు. స్వతంత్ర మానవ నిపుణ సమీక్ష జరగలేదు. అందుబాటులో లేని మూల సూచనలను పాఠ్యంలో గుర్తించాం.")
     legacy.append(main, "p", f"మూల సవరణ: {UPSTREAM_REVISION}. అంగీకరించిన HTML SHA-256: {html_digest}. EPUB సంచిక: {VERSION}.")
     links = legacy.append(main, "p")
     legacy.append(links, "a", "Open Logic Project", href="https://openlogicproject.org/")
@@ -250,7 +250,7 @@ def opf(identifier: str, chunks: list[str], diagrams: list[str], pages: dict[str
     return etree.tostring(package, encoding="utf-8", xml_declaration=True, pretty_print=True)
 
 
-def build(output: Path, unpacked: Path, *, accepted: bool = True) -> dict[str, object]:
+def build(output: Path, unpacked: Path | None, *, accepted: bool = True) -> dict[str, object]:
     document, manifest = input_document(accepted)
     html_digest = manifest["html_sha256"]
     groups = chunks_for(manifest, unit_sizes(document))
@@ -287,11 +287,11 @@ def build(output: Path, unpacked: Path, *, accepted: bool = True) -> dict[str, o
         files["OEBPS/assets/diagrams/" + diagram.name] = diagram.read_bytes()
     identifier = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, f"https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/{VERSION}/{html_digest}"))
     files["OEBPS/package.opf"] = opf(identifier, chunk_files, [path.name for path in diagram_paths], files)
-    if accepted:
+    if accepted and unpacked is not None:
         legacy.write_unpacked(unpacked, files)
     legacy.zip_epub(output, files)
     receipt = {"schema": "openlogic-te-full-epub-build/1", "version": VERSION, "source_revision": UPSTREAM_REVISION, "source_html_sha256": html_digest, "source_manifest_sha256": sha256(MANIFEST.read_bytes()), "source_html_qa_sha256": sha256(QA.read_bytes()) if accepted else None, "units": 722, "reader_documents": len(groups), "diagram_assets": len(diagram_paths), "identifier": identifier, "filename": output.name, "bytes": output.stat().st_size, "sha256": sha256(output.read_bytes()), "entries": len(files), "status": "built_qa_pending" if accepted else "diagnostic_unaccepted"}
-    if accepted:
+    if accepted and unpacked is not None:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         (OUTPUT_DIR / ("cold-build-receipt.json" if unpacked.name == "cold-unpacked" else "build-receipt.json")).write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return receipt

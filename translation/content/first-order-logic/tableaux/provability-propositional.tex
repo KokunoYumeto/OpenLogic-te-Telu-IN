@@ -13,19 +13,20 @@
       {\olfileid{fol}{tab}{ppr}}
       {\olfileid{pl}{tab}{ppr}}
 
-\olsection{\usetoken{S}{derivability} మరియు ప్రతిపాదనాత్మక సంయోజకాలు}
+\olsection{\usetoken{S}{derivability}, ప్రతిజ్ఞావాక్య సంయోజకాలు}
 
 \begin{explain}
   టాబ్లోల \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$, $!A \land !B
   \Proves !A$, $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్) వంటి
-  ప్రతిపాదనాత్మక సంయోజకాల ప్రాథమిక వాస్తవాలను స్థాపించగలిగేంత
-  బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతపు నిరూపణకు ఈ వాస్తవాలు అవసరం.
+  ప్రతిజ్ఞావాక్య సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక ఫలితాలను
+  నిరూపించగలిగేంత బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతాన్ని
+  నిరూపించడానికి ఈ ఫలితాలు అవసరం.
 \end{explain}
 
 \begin{prop}\ollabel{prop:provability-land}
   \begin{enumerate}
   \item \ollabel{prop:provability-land-left} $!A \land !B \Proves
-    !A$, $!A \land !B \Proves !B$ రెండూ.
+    !A$, $!A \land !B \Proves !B$ రెండూ నెరవేరుతాయి.
   \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land
     !B$.
   \end{enumerate}
@@ -56,13 +57,6 @@
         ]
       ]
     \end{oltableau}
-    \sourcecorrection{OLTETAB-007}{ఈ నిరూపణలోని నాలుగు టాబ్లోల్లో
-    ఆంగ్ల మూలం ఎనిమిది చోట్ల \texttt{sFmla} స్థూలనిర్దేశానికి సంకేతం,
-    సూత్రం అనే రెండు ఆర్గ్యుమెంటులు ఇవ్వకుండా, సూత్రాన్ని
-    \texttt{True} లేదా \texttt{False} ఆర్గ్యుమెంటులో కలిపింది.
-    నిర్వచిత \texttt{sFmla\{Sign\}\{Formula\}} ఆకారానికి అనుగుణంగా
-    అన్ని ఎనిమిది చిహ్నిత సూత్రాల కుండలీకరణాలను సరిచేశాం; సంకేతాలు,
-    సూత్రాలు, శాఖల మూసివేతలు మారలేదు.}
     \item $\{\sFmla{\True}{!A}, \sFmla{\True}{!B},
       \sFmla{\False}{!A \land !B}\}$కు సంవృత \tetoken{టాబ్లో}{!!{tableau}} ఇది:
       \begin{oltableau}
@@ -81,7 +75,7 @@
 \begin{prop}\ollabel{prop:provability-lor}
   \begin{enumerate}
   \item $\{!A \lor !B, \lnot !A, \lnot !B\}$ వైరుధ్యభరితమైనది.
-  \item $!A \Proves !A \lor !B$, $!B \Proves !A \lor !B$ రెండూ.
+  \item $!A \Proves !A \lor !B$, $!B \Proves !A \lor !B$ రెండూ నెరవేరుతాయి.
   \end{enumerate}
 \end{prop}
 
@@ -134,7 +128,7 @@
   \begin{enumerate}
   \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
   \item \ollabel{prop:provability-lif-right}
-    $\lnot !A \Proves !A \lif !B$, $!B \Proves !A \lif !B$ రెండూ.
+    $\lnot !A \Proves !A \lif !B$, $!B \Proves !A \lif !B$ రెండూ నెరవేరుతాయి.
   \end{enumerate}
 \end{prop}
 

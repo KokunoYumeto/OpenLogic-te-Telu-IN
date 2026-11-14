@@ -1,40 +1,40 @@
-% Part: first-order-logic
-% Chapter: completeness
-% Section: maximally-consistent-sets
+% భాగం: మొదటిస్థాయి తర్కం
+% అధ్యాయం: సంపూర్ణత
+% విభాగం: గరిష్ఠ అవైరుధ్య సమితులు
 
-% Definition of maximally consistent sets. Properties of mcs required
-% for completeness proved are in maximally-consistent-sets.tex in the
-% chapter on the proof system used.
+% గరిష్ఠ అవైరుధ్య సమితుల నిర్వచనం. సంపూర్ణత కోసం అవసరమైన వాటి ధర్మాల
+% నిరూపణలు ఉపయోగించిన నిరూపణ వ్యవస్థకు సంబంధించిన అధ్యాయంలోని
+% maximally-consistent-sets.tex ఫైలులో ఉన్నాయి.
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
 \begin{document}
 
 \olfileid{fol}{com}{mcs}
-\olsection{\usetoken{P}{sentence} యొక్క గరిష్ఠ అవైరుధ్య సమితులు}
+\olsection{\usetoken{P}{sentence}ల గరిష్ఠ అవైరుధ్య సమితులు}
 
 \begin{defn}[గరిష్ఠ అవైరుధ్య సమితి]
 \ollabel{mcs}
-\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$ \emph{గరిష్ఠ అవైరుధ్యమైనది} కావడానికి, కావలసినవీ చాలునవీ:
+\tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$ \emph{గరిష్ఠ అవైరుధ్యమైనది} కావడానికి కింది రెండు షరతులూ అవసరం. రెండూ కలిపి సరిపోతాయి.
 \begin{enumerate}
-\item $\Gamma$ అవైరుధ్యమైనది, మరియు
+\item $\Gamma$ అవైరుధ్యమైనది.
 \item $\Gamma \subsetneq \Gamma'$ అయితే $\Gamma'$ వైరుధ్యపూరితం.
 \end{enumerate}
 \end{defn}
 
 \begin{explain}
-పైనిదానికి తుల్యమైన ప్రత్యామ్నాయ నిర్వచనం: వాక్యాల సమితి $\Gamma$ \emph{గరిష్ఠ అవైరుధ్యమైనది} కావడానికి, కావలసినవీ చాలునవీ:
+దీనికి తుల్యమైన మరో నిర్వచనం ఉంది. దాని ప్రకారం వాక్యాల సమితి $\Gamma$ \emph{గరిష్ఠ అవైరుధ్యమైనది} కావడానికి కింది రెండు షరతులూ అవసరం. రెండూ కలిపి సరిపోతాయి.
 \begin{enumerate}
-\item $\Gamma$ అవైరుధ్యమైనది, మరియు
+\item $\Gamma$ అవైరుధ్యమైనది.
 \item $\Gamma \cup \{ !A \}$ అవైరుధ్యమైతే $!A \in \Gamma$.
 \end{enumerate}
-మరో మాటలో, $\Gamma$లో అప్పటికే లేని \tetoken{వాక్యాలను}{!!{sentence}s} గరిష్ఠ అవైరుధ్య సమితి~$\Gamma$కి జోడించి, ఫలితంగా వచ్చే పెద్ద సమితిని అవైరుధ్యంగానే ఉంచలేం.
+మరో మాటలో చెప్పాలంటే, గరిష్ఠ అవైరుధ్య సమితి~$\Gamma$లో లేని \tetoken{వాక్యాలను}{!!{sentence}s} ఆ సమితి~$\Gamma$కు చేర్చగానే అది వైరుధ్యపూరితమవుతుంది.
 \end{explain}
 
 \begin{explain}
-సంపూర్ణత నిరూపణలో గరిష్ఠ అవైరుధ్య సమితులు ముఖ్యమైనవి. ఎందుకంటే ప్రతి అవైరుధ్య \tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$, ఏదో గరిష్ఠ అవైరుధ్య సమితి~$\Gamma^*$లో ఇమిడి ఉంటుందని హామీ ఇవ్వగలం. అలాగే గరిష్ఠ అవైరుధ్య సమితిలో ప్రతి \tetoken{వాక్యానికి}{!!{sentence}}~$!A$, $!A$ లేదా దాని నిరాకరణ $\lnot !A$ ఉంటుంది. ముఖ్యంగా అణు \tetoken{వాక్యాలకూ}{!!{sentence}s} ఇది వర్తిస్తుంది. కనుక \tetoken{స్థిరాంకాలతో}{!!{constant}s} తగినట్లు విస్తరించిన భాషలోని గరిష్ఠ అవైరుధ్య సమితి నుంచి \tetoken{ఒక నిర్మాణాన్ని}{!!a{structure}} నిర్మించవచ్చు; అందులో \tetoken{విధేయాల}{!!{predicate}s} అన్వయాన్ని $\Gamma^*$లో ఏ అణు \tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయనే దాని ప్రకారం నిర్వచిస్తాం. తరువాత ఈ \tetoken{నిర్మాణం}{!!{structure}}, $\Gamma^*$లోని అన్ని \tetoken{వాక్యాలను}{!!{sentence}s} (అందువల్ల $\Gamma$లోని వాటిని కూడా) సత్యం చేస్తుందని చూపవచ్చు. ఈ చివరి విషయ నిరూపణకు $\lnot !A \in
-\Gamma^*$ కావడానికి, కావలసినదీ చాలునదీ $!A \notin \Gamma^*$ కావడం; అలాగే $(!A \lor !B) \in \Gamma^*$ కావడానికి, కావలసినదీ చాలునదీ $!A
-\in \Gamma^*$ లేదా $!B \in \Gamma^*$ కావడం మొదలైనవి అవసరం.
+సంపూర్ణత నిరూపణలో గరిష్ఠ అవైరుధ్య సమితులు ముఖ్యమైనవి. ప్రతి అవైరుధ్య \tetoken{వాక్యాల}{!!{sentence}s} సమితి~$\Gamma$ ఏదో ఒక గరిష్ఠ అవైరుధ్య సమితి~$\Gamma^*$లో ఇమిడి ఉంటుందని చూపగలం. అలాగే గరిష్ఠ అవైరుధ్య సమితిలో ప్రతి \tetoken{వాక్యానికి}{!!{sentence}}~$!A$, $!A$ లేదా దాని నిషేధం $\lnot !A$ ఉంటుంది. ముఖ్యంగా పరమాణు \tetoken{వాక్యాలకూ}{!!{sentence}s} ఇది వర్తిస్తుంది. కనుక \tetoken{స్థిరసంకేతాలతో}{!!{constant}s} తగినట్లు విస్తరించిన భాషలోని గరిష్ఠ అవైరుధ్య సమితి నుంచి \tetoken{ఒక నిర్మాణాన్ని}{!!a{structure}} రూపొందించవచ్చు. అందులో \tetoken{విధేయాల}{!!{predicate}s} అర్థనిర్దేశాన్ని $\Gamma^*$లో ఏ పరమాణు \tetoken{వాక్యాలు}{!!{sentence}s} ఉన్నాయో బట్టి నిర్వచిస్తాం. తరువాత $\Gamma^*$లోని అన్ని \tetoken{వాక్యాలూ}{!!{sentence}s} (అందువల్ల $\Gamma$లోని వాక్యాలూ) ఈ \tetoken{నిర్మాణం}{!!{structure}}లో సత్యమని చూపవచ్చు. ఈ చివరి విషయాన్ని నిరూపించడానికి $\lnot !A \in
+\Gamma^*$ కావడానికి $!A \notin \Gamma^*$ కావడం అవసరం, సరిపోతుంది. అలాగే $(!A \lor !B) \in \Gamma^*$ కావడానికి $!A
+\in \Gamma^*$ లేదా $!B \in \Gamma^*$ కావడం అవసరం, సరిపోతుంది. ఇలాంటి ఫలితాలు ఆ నిరూపణకు అవసరం.
 \end{explain}
 
 \begin{prop}
@@ -48,21 +48,21 @@ $\Gamma$ గరిష్ఠ అవైరుధ్యమైనదని అను
   \Gamma$ లేదా $\lnot !A \in \Gamma$.
 
 \tagitem{prvAnd}{\ollabel{prop:mcs-and} $(!A \land !B) \in \Gamma$
-  కావడానికి, కావలసినదీ చాలునదీ $!A \in \Gamma$, $!B \in \Gamma$ రెండూ.}{}
+  కావడానికి $!A \in \Gamma$, $!B \in \Gamma$ రెండూ అవసరం. రెండూ కలిపి సరిపోతాయి.}{}
 
-\tagitem{prvOr}{\ollabel{prop:mcs-or} $(!A \lor !B) \in \Gamma$ కావడానికి, కావలసినదీ చాలునదీ $!A \in \Gamma$ లేదా $!B \in \Gamma$.}{}
+\tagitem{prvOr}{\ollabel{prop:mcs-or} $(!A \lor !B) \in \Gamma$ కావడానికి $!A \in \Gamma$ లేదా $!B \in \Gamma$ కావడం అవసరం, సరిపోతుంది.}{}
 
-\tagitem{prvIf}{\ollabel{prop:mcs-if} $(!A \lif !B) \in \Gamma$ కావడానికి, కావలసినదీ చాలునదీ $!A \notin \Gamma$ లేదా $!B \in \Gamma$.}{}
+\tagitem{prvIf}{\ollabel{prop:mcs-if} $(!A \lif !B) \in \Gamma$ కావడానికి $!A \notin \Gamma$ లేదా $!B \in \Gamma$ కావడం అవసరం, సరిపోతుంది.}{}
 \end{enumerate}
 \end{prop}
 
 \begin{proof}
-క్రింది వాటన్నింటిలో $\Gamma$ గరిష్ఠ అవైరుధ్యమైనదని అనుకుందాం.
+కింది అంశాలన్నింటిలోనూ $\Gamma$ గరిష్ఠ అవైరుధ్యమైనదని అనుకుందాం.
 \begin{enumerate}
 \item $\Gamma \Proves !A$ అయితే $!A \in \Gamma$.
 
-$\Gamma \Proves !A$ అనుకుందాం. దీనికి విరుద్ధంగా $!A
-\notin \Gamma$ అనుకుందాం. $\Gamma$ గరిష్ఠ అవైరుధ్యమైనది కనుక $\Gamma
+$\Gamma \Proves !A$ అనుకుందాం. ఇప్పుడు $!A
+\notin \Gamma$ అని అనుకుంటే వచ్చే వైరుధ్యాన్ని చూద్దాం. $\Gamma$ గరిష్ఠ అవైరుధ్యమైనది కనుక $\Gamma
 \cup \{!A\}$ వైరుధ్యపూరితం; కాబట్టి $\Gamma \cup \{!A\} \Proves
 \lfalse$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-contr},prfND/{fol:ntd:prv:prop:provability-contr}} ప్రకారం $\Gamma$ వైరుధ్యపూరితం. కానీ ఇది $\Gamma$ అవైరుధ్యమనే పరికల్పనకు విరుద్ధం. అందువల్ల $!A \notin
 \Gamma$ అనడం కుదరదు; కాబట్టి $!A \in \Gamma$.
@@ -70,41 +70,41 @@ $\Gamma \Proves !A$ అనుకుందాం. దీనికి విరు
 \item ఏ $!A$కైనా $!A \in \Gamma$ లేదా $\lnot !A \in \Gamma$.
 
 విరుద్ధంగా, ఏదో~$!A$కు $!A \notin \Gamma$, $\lnot !A \notin \Gamma$ రెండూ అనుకుందాం. $\Gamma$ గరిష్ఠ అవైరుధ్యమైనది కనుక $\Gamma \cup \{!A\}$, $\Gamma \cup \{\lnot !A\}$ రెండూ వైరుధ్యపూరితాలు. అంటే $\Gamma \cup \{!A\} \Proves \lfalse$, $\Gamma \cup
-\{\lnot !A\} \Proves \lfalse$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-exhaustive},prfND/{fol:ntd:prv:prop:provability-exhaustive}} ప్రకారం $\Gamma$ వైరుధ్యపూరితం అవుతుంది---ఇది వైరుధ్యం. కాబట్టి అటువంటి \tetoken{వాక్యం}{!!a{sentence}}~$!A$ ఉండదు; ప్రతి $!A$కు $!A \in \Gamma$ లేదా $\lnot !A
+\{\lnot !A\} \Proves \lfalse$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-exhaustive},prfND/{fol:ntd:prv:prop:provability-exhaustive}} ప్రకారం $\Gamma$ వైరుధ్యపూరితమవుతుంది. ఇది మన పరికల్పనకు విరుద్ధం. కాబట్టి అటువంటి \tetoken{వాక్యం}{!!a{sentence}}~$!A$ ఉండదు; ప్రతి $!A$కు $!A \in \Gamma$ లేదా $\lnot !A
 \in \Gamma$.
 
 \tagitem{defAnd}{}{%
 \iftag{probAnd}{సాధన.}{%
-$(!A \land !B) \in \Gamma$ కావడానికి, కావలసినదీ చాలునదీ $!A \in \Gamma$, $!B \in \Gamma$ రెండూ:
+$(!A \land !B) \in \Gamma$ కావడానికి $!A \in \Gamma$, $!B \in \Gamma$ రెండూ అవసరం. రెండూ కలిపి సరిపోతాయి.
 
-ముందు దిశకు $(!A \land !B) \in \Gamma$ అనుకుందాం. అప్పుడు $\Gamma \Proves !A \land !B$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-land-left},prfND/{fol:ntd:prv:prop:provability-land-left}} ప్రకారం $\Gamma \Proves !A$, $\Gamma \Proves !B$. \olref{prop:mcs-prov-in} ప్రకారం కావలసినట్లు $!A \in \Gamma$, $!B \in \Gamma$.
+ముందు దిశలో $(!A \land !B) \in \Gamma$ అనుకుందాం. అప్పుడు $\Gamma \Proves !A \land !B$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-land-left},prfND/{fol:ntd:prv:prop:provability-land-left}} ప్రకారం $\Gamma \Proves !A$, $\Gamma \Proves !B$. \olref{prop:mcs-prov-in} ప్రకారం కావలసినట్లు $!A \in \Gamma$, $!B \in \Gamma$.
 
-వెనుక దిశకు $!A \in \Gamma$, $!B \in
+వెనుక దిశలో $!A \in \Gamma$, $!B \in
 \Gamma$ అనుకుందాం. అప్పుడు $\Gamma \Proves !A$, $\Gamma \Proves !B$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-land-right},prfND/{fol:ntd:prv:prop:provability-land-right}} ప్రకారం $\Gamma \Proves !A \land !B$. \olref{prop:mcs-prov-in} ప్రకారం $(!A \land
 !B) \in \Gamma$.}}
 
 \tagitem{defOr}{}{%
 \iftag{probOr}{సాధన.}{%
-$(!A \lor !B) \in \Gamma$ కావడానికి, కావలసినదీ చాలునదీ $!A \in \Gamma$ లేదా $!B \in \Gamma$.
+$(!A \lor !B) \in \Gamma$ కావడానికి $!A \in \Gamma$ లేదా $!B \in \Gamma$ కావడం అవసరం, సరిపోతుంది.
 
-ముందు దిశకు వ్యతిరేకాన్వయంగా $!A
+మొదటి దిశకు ప్రతివర్తిత సోపాధికాన్ని నిరూపిద్దాం. $!A
 \notin \Gamma$, $!B \notin \Gamma$ అనుకుందాం. $(!A \lor
 !B) \notin \Gamma$ అని చూపాలి. $\Gamma$ గరిష్ఠ అవైరుధ్యమైనది కనుక $\Gamma
 \cup \{!A\} \Proves \lfalse$, $\Gamma \cup \{!B\} \Proves \lfalse$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-lor-left},prfND/{fol:ntd:prv:prop:provability-lor-left}} ప్రకారం $\Gamma \cup \{(!A \lor !B)\}$ వైరుధ్యపూరితం. అందుచేత కావలసినట్లు $(!A \lor !B)
 \notin \Gamma$.
 
-వెనుక దిశకు $!A \in \Gamma$ లేదా $!B \in
+వెనుక దిశలో $!A \in \Gamma$ లేదా $!B \in
 \Gamma$ అనుకుందాం. అప్పుడు $\Gamma \Proves !A$ లేదా $\Gamma \Proves !B$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-lor-right},prfND/{fol:ntd:prv:prop:provability-lor-right}} ప్రకారం $\Gamma \Proves !A \lor !B$. \olref{prop:mcs-prov-in} ప్రకారం కావలసినట్లు $(!A \lor
 !B) \in \Gamma$.}}
 
 \tagitem{defIf}{}{%
 \iftag{probIf}{సాధన.}{%
-$(!A \lif !B) \in \Gamma$ కావడానికి, కావలసినదీ చాలునదీ $!A \notin \Gamma$ లేదా $!B \in \Gamma$:
+$(!A \lif !B) \in \Gamma$ కావడానికి $!A \notin \Gamma$ లేదా $!B \in \Gamma$ కావడం అవసరం, సరిపోతుంది.
 
-ముందు దిశకు $(!A \lif !B) \in \Gamma$ అనుకుందాం; దీనికి విరుద్ధంగా $!A \in \Gamma$, $!B \notin \Gamma$ అనుకుందాం. ఈ పరికల్పనల ప్రకారం $\Gamma \Proves !A \lif !B$, $\Gamma \Proves !A$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-mp},prfND/{fol:ntd:prv:prop:provability-mp}} ప్రకారం $\Gamma \Proves !B$. కానీ \olref{prop:mcs-prov-in} వల్ల $!B \in
+ముందు దిశలో $(!A \lif !B) \in \Gamma$ అనుకుందాం; దీనికి విరుద్ధంగా $!A \in \Gamma$, $!B \notin \Gamma$ అనుకుందాం. ఈ పరికల్పనల ప్రకారం $\Gamma \Proves !A \lif !B$, $\Gamma \Proves !A$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-mp},prfND/{fol:ntd:prv:prop:provability-mp}} ప్రకారం $\Gamma \Proves !B$. కానీ \olref{prop:mcs-prov-in} వల్ల $!B \in
 \Gamma$; ఇది $!B \notin \Gamma$ అనే పరికల్పనకు విరుద్ధం.
 
-వెనుక దిశకు, ముందుగా $!A \notin
+వెనుక దిశలో, ముందుగా $!A \notin
 \Gamma$ సందర్భాన్ని చూద్దాం. \olref{prop:mcs-either-or} ప్రకారం $\lnot !A \in \Gamma$; అందుచేత $\Gamma \Proves \lnot !A$. \tagrefs{prfSC/{fol:seq:prv:prop:provability-lif},prfND/{fol:ntd:prv:prop:provability-lif}} ప్రకారం $\Gamma \Proves !A \lif !B$. మళ్లీ \olref{prop:mcs-prov-in} వల్ల కావలసినట్లు $(!A \lif !B) \in \Gamma$.
 
 ఇప్పుడు $!B \in \Gamma$ సందర్భాన్ని చూద్దాం. అప్పుడు $\Gamma \Proves !B$; \tagrefs{prfSC/{fol:seq:prv:prop:provability-lif},prfND/{fol:ntd:prv:prop:provability-lif}} ప్రకారం $\Gamma \Proves !A \lif !B$. \olref{prop:mcs-prov-in} వల్ల $(!A \lif

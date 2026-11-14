@@ -13,19 +13,19 @@
       {\olfileid{fol}{ntd}{ppr}}
       {\olfileid{pl}{ntd}{ppr}}
 
-\olsection{\usetoken{S}{derivability} మరియు ప్రతిపాదనాత్మక సంయోజకాలు}
+\olsection{\usetoken{S}{derivability}, ప్రతిజ్ఞావాక్య సంయోజకాలు}
 
 \begin{explain}
   సహజ నిగమనపు \tetoken{వ్యుత్పాద్యత}{!!{derivability}} సంబంధం~$\Proves$, $!A \land !B
   \Proves !A$, $!A, !A \lif !B \Proves !B$ (మోడస్ పోనెన్స్) వంటి
-  ప్రతిపాదనాత్మక సంయోజకాల ప్రాథమిక వాస్తవాలను స్థాపించగలిగేంత
-  బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతపు నిరూపణకు ఈ వాస్తవాలు అవసరం.
+  ప్రతిజ్ఞావాక్య సంయోజకాలకు సంబంధించిన కొన్ని ప్రాథమిక ఫలితాలను నిరూపించగలిగేంత
+  బలమైనదని చూపుతాం. సంపూర్ణతా సిద్ధాంతపు నిరూపణకు ఈ ఫలితాలు అవసరం.
 \end{explain}
 
 \begin{prop}\ollabel{prop:provability-land}
   \begin{enumerate}
   \item \ollabel{prop:provability-land-left} $!A \land !B \Proves
-    !A$, $!A \land !B \Proves !B$ రెండూ.
+    !A$, $!A \land !B \Proves !B$ రెండూ నెరవేరుతాయి.
   \item \ollabel{prop:provability-land-right} $!A, !B \Proves !A \land !B$.
   \end{enumerate}
 \end{prop}
@@ -56,7 +56,7 @@
 \begin{prop}\ollabel{prop:provability-lor}
   \begin{enumerate}
   \item $!A \lor !B, \lnot !A, \lnot !B$ వైరుధ్యభరితమైనది.
-  \item $!A \Proves !A \lor !B$, $!B \Proves !A \lor !B$ రెండూ.
+  \item $!A \Proves !A \lor !B$, $!B \Proves !A \lor !B$ రెండూ నెరవేరుతాయి.
   \end{enumerate}
 \end{prop}
 
@@ -77,7 +77,7 @@
       \TrinaryInfC{$\lfalse$}
     \end{prooftree}
     ఇది \tetoken{ఉపసంహరించని}{!!{undischarged}} పరికల్పనలు $!A \lor !B$, $\lnot !A$,
-    $\lnot !B$ల నుంచి $\lfalse$ యొక్క ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
+    $\lnot !B$ల నుంచి $\lfalse$కు ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}.
   \item రెండింటినీ ఇలా \tetoken{నిగమనం}{!!{derive}} చేయవచ్చు:
     \begin{prooftree}
       \AxiomC{$!A$}
@@ -95,7 +95,7 @@
   \begin{enumerate}
   \item \ollabel{prop:provability-lif-left} $!A, !A \lif !B \Proves !B$.
   \item \ollabel{prop:provability-lif-right}
-    $\lnot !A \Proves !A \lif !B$, $!B \Proves !A \lif !B$ రెండూ.
+    $\lnot !A \Proves !A \lif !B$, $!B \Proves !A \lif !B$ రెండూ నెరవేరుతాయి.
   \end{enumerate}
 \end{prop}
 
@@ -124,8 +124,8 @@
       \RightLabel{\Intro{\lif}}
       \UnaryInfC{$!A \lif !B$}
     \end{prooftree}
-    $\Intro{\lif}$ పరికల్పన~$!A$ను \tetoken{ఉపసంహరణ}{!!{discharge}} చేయవచ్చు; కానీ
-    తప్పనిసరిగా చేయనవసరం లేదని గమనించండి.
+    $\Intro{\lif}$తో పరికల్పన~$!A$ను \tetoken{ఉపసంహరణ}{!!{discharge}} చేయవచ్చు.
+    ఉపసంహరించడం తప్పనిసరి కాదని గమనించండి.
   \end{enumerate}
 \end{proof}
 

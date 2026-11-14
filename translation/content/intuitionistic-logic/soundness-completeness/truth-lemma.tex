@@ -10,18 +10,18 @@
 
 \olsection{సత్య ఉపప్రమేయం}
 
-కింది ఉపప్రమేయం కానానికల్ నమూనాలో సంతృప్తిని,
-ఏ \tetoken{సూత్రాలు}{!!{formula}s} ప్రధాన
-సమితి $\Delta$కు \tetoken{మూలకాలో}{!!{element}s}
-అనే విషయంతో అనుసంధానిస్తుంది.
+కానానికల్ నమూనాలో $\sigma$ వద్ద \tetoken{సూత్రాల}{!!{formula}s}
+సంతృప్తికీ, అవి ప్రధాన సమితి $\Delta(\sigma)$లో
+\tetoken{మూలకాలుగా}{!!{element}s} ఉండటానికీ ఉన్న సంబంధాన్ని
+కింది ఉపప్రమేయం చూపుతుంది.
 
 \begin{lem}\ollabel{lem:truth}
   $\Delta$ ప్రధానమైతే, $\mSat{M(\Delta)}{!A}[\sigma]$
-  అయితే, అప్పుడే $\Delta(\sigma) \Proves !A$.
+  అప్పుడే, అప్పుడు మాత్రమే $\Delta(\sigma) \Proves !A$.
 \end{lem}
 
 \begin{proof}
-  $!A$పై ఆగమన పద్ధతిలో.
+  $!A$ నిర్మాణంపై ఆగమనం వాడతాం.
   \begin{enumerate}
     \item \indcase{!A}{\lfalse}{$\Delta(\sigma)$
       ప్రధానం కాబట్టి అవైరుధ్యమైనది; అందువల్ల
@@ -31,38 +31,38 @@
       \item \indcase{!A}{p}{$\mSat{{}}{}$
         నిర్వచనం ప్రకారం
         $\mSat{M(\Delta)}{\indfrm}[\sigma]$
-        అయితే, అప్పుడే $\sigma \in V(p)$;
+        నెరవేరేది $\sigma \in V(p)$ అయినప్పుడు, అప్పుడే మాత్రమే.
         అంటే $\Delta(\sigma) \Proves \indfrm$.}
       \item \indcase!{!A}{\lnot !B}{}
       \item \indcase{!A}{!B \land
         !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
-        అయితే, అప్పుడే
+        అప్పుడే, అప్పుడు మాత్రమే
         $\mSat{M(\Delta)}{!B}[\sigma]$ మరియు
         $\mSat{M(\Delta)}{!C}[\sigma]$.
         ఆగమన పరికల్పన ప్రకారం
         $\mSat{M(\Delta)}{!B}[\sigma]$
-        అయితే, అప్పుడే $\Delta(\sigma) \Proves
+        అప్పుడే, అప్పుడు మాత్రమే $\Delta(\sigma) \Proves
         !B$;~$!C$కూ ఇదే. కానీ
         $\Delta(\sigma) \Proves !B$ మరియు
         $\Delta(\sigma) \Proves !C$
-        అయితే, అప్పుడే $\Delta(\sigma)
+        అప్పుడే, అప్పుడు మాత్రమే $\Delta(\sigma)
         \Proves \indfrm$.}
       \item \indcase{!A}{!B \lor
         !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
-        అయితే, అప్పుడే
+        అప్పుడే, అప్పుడు మాత్రమే
         $\mSat{M(\Delta)}{!B}[\sigma]$ లేదా
         $\mSat{M(\Delta)}{!C}[\sigma]$.
         ఆగమన పరికల్పన ప్రకారం, ఇది
         $\Delta(\sigma) \Proves !B$ లేదా
         $\Delta(\sigma) \Proves !C$
-        అయినప్పుడే నిలుస్తుంది. ఇదే
+        అప్పుడే, అప్పుడు మాత్రమే నెరవేరుతుంది. ఈ షరతు
         $\Delta(\sigma) \Proves \indfrm$
-        అయినప్పుడే నిలుస్తుందని చూపాలి.
-        ఎడమ నుంచి కుడి దిశ స్పష్టం.
-        కుడి నుంచి ఎడమ దిశ
-        $\Delta(\sigma)$ ప్రధానత వల్ల వస్తుంది.}
+        అప్పుడే, అప్పుడు మాత్రమే నెరవేరుతుందని చూపాలి.
+        ఎడమ నుంచి కుడికి దిశ స్పష్టమే.
+        కుడి నుంచి ఎడమకు దిశ
+        $\Delta(\sigma)$ ప్రధాన సమితి కావడం వల్ల వస్తుంది.}
       \item \indcase{!A}{!B \lif !C}{ముందుగా
-        ఎడమ నుంచి కుడి దిశ ప్రతివిపర్యయం:
+        ఎడమ నుంచి కుడికి దిశలోని అనుగమనానికి ప్రతివిపర్యయాన్ని చూపుదాం.
         $\Delta(\sigma) \Proves/ !B
         \lif !C$ అనుకుందాం. అప్పుడు
         $\Delta(\sigma) \cup \{!B\} \Proves/
@@ -85,12 +85,12 @@
         \Delta(\sigma')$ కాబట్టి,
         $\Delta(\sigma') \Proves
         !B$ అయితే $\Delta(\sigma') \Proves
-        !C$. మరో మాటలో,
-        $R\sigma\sigma'$ అయ్యే ప్రతి
+        !C$. మరో మాటలో చెప్పాలంటే,
+        $R\sigma\sigma'$ ఉన్న ప్రతి
         $\sigma'$కు $\Delta(\sigma') \Proves/
         !B$ లేదా $\Delta(\sigma') \Proves
         !C$. ఆగమన పరికల్పన ప్రకారం
-        $R\sigma\sigma'$ అయినప్పుడల్లా
+        $R\sigma\sigma'$ ఉన్నప్పుడల్లా
         $\mSat/{M(\Delta)}{!B}[\sigma']$ లేదా
         $\mSat{M(\Delta)}{!C}[\sigma']$;
         అంటే $\mSat{M(\Delta)}{\indfrm}[\sigma]$.}

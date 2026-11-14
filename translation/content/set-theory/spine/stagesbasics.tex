@@ -5,14 +5,18 @@
 \olfileid{sth}{spine}{Valphabasic}
 \olsection{దశల ప్రాథమిక ధర్మాలు}
 
-$V_\alpha$ల నిర్వచనానికి ఉన్న పునాది ప్రాధాన్యాన్ని స్పష్టం చేయడానికి, వాటి గురించి కొన్ని ప్రాథమిక ఫలితాలు ఇస్తాం. ఒక నిర్వచనంతో మొదలెడదాం:\footnote{``potent''కు స్థిరపడిన పదజాలం లేదు; \citet{ButtonLT1} వాడిన పేరు ఇదే.}
+సమితి సిద్ధాంతపు పునాదులకు $V_\alpha$ల నిర్వచనం ఎందుకు
+ముఖ్యమో చెప్పడానికి, వాటి గురించి కొన్ని ప్రాథమిక
+ఫలితాలను చూద్దాం. ముందుగా ఒక నిర్వచనం:\footnote{ఈ ధర్మానికి
+స్థిరపడిన పేరు లేదు. ఇక్కడ \citet{ButtonLT1} వాడిన పేరునే అనుసరిస్తున్నాం.}
 \begin{defn}
-	$A$ సమితి \emph{సమర్థమైనది} అవుతుంది, అప్పుడూ అప్పుడే $\forall x((\exists y \in A)x \subseteq y \lif x \in A)$.
+	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ నెరవేరినప్పుడు,
+	అప్పుడే మాత్రమే $A$ సమితిని \emph{సమర్థ సమితి} అంటాం.
 \end{defn}
 \begin{lem}\ollabel{Valphabasicprops}
 ప్రతి క్రమసంఖ్య $\alpha$కు:
 \begin{enumerate}
-	\item\ollabel{Valphatrans} ప్రతి $V_\alpha$ సంక్రమణ సమితి.
+	\item\ollabel{Valphatrans} ప్రతి $V_\alpha$ సంక్రామక సమితి.
 	\item\ollabel{Valphapotent} ప్రతి $V_\alpha$ సమర్థమైనది.
 	\item\ollabel{Valphacum} $\gamma \in \alpha$ అయితే $V_\gamma
 	\in V_\alpha$ (కాబట్టి \olref{Valphatrans} ప్రకారం $V_\gamma \subseteq V_\alpha$ కూడా).
@@ -20,13 +24,32 @@ $V_\alpha$ల నిర్వచనానికి ఉన్న పునాద�
 \end{lem}
 
 \begin{proof}
-వీటిని (ఏకకాల) అతిపరిమిత ఆగమనం ద్వారా నిరూపిస్తాం. ఆగమనానికి, ప్రతి క్రమసంఖ్య $\beta < \alpha$కు \olref{Valphatrans}--\olref{Valphacum} వర్తిస్తాయని అనుకుందాం.
+మూడు ధర్మాలనూ ఒకేసారి అతిపరిమిత ఆగమనంతో నిరూపిస్తాం.
+ఆగమన పరికల్పనగా ప్రతి క్రమసంఖ్య $\beta < \alpha$కు
+\olref{Valphatrans}--\olref{Valphacum} వర్తిస్తాయని అనుకుందాం.
 
 $\alpha = \emptyset$ సందర్భం సులభం.
 
-$\alpha = \ordsucc{\beta}$ అనుకుందాం. \olref{Valphacum} కోసం, $\gamma \in \alpha$ అయితే ఆగమన ఊహ ప్రకారం $V_\gamma \subseteq V_\beta$; కాబట్టి $V_\gamma \in \Pow{V_\beta} = V_\alpha$. \olref{Valphapotent} కోసం, $A \subseteq B \in V_\alpha$, అంటే $A \subseteq B \subseteq V_\beta$ అనుకుందాం; అప్పుడు $A \subseteq V_\beta$, అందుచేత $A \in V_\alpha$. \olref{Valphatrans} కోసం, $x \in A \in V_\alpha$ అయితే $A \subseteq V_\beta$ కాబట్టి $x \in V_\beta$; ఆగమన ఊహ ప్రకారం $V_\beta$ సంక్రమణ సమితి కావడంతో $x \subseteq V_\beta$, అందువల్ల $x \in V_\alpha$.
+$\alpha = \ordsucc{\beta}$ అనుకుందాం.
+\olref{Valphacum}ను చూపడానికి, $\gamma \in \alpha$ అయితే
+ఆగమన పరికల్పన ప్రకారం $V_\gamma \subseteq V_\beta$.
+కాబట్టి $V_\gamma \in \Pow{V_\beta} = V_\alpha$.
+\olref{Valphapotent}ను చూపడానికి, $A \subseteq B \in V_\alpha$,
+అంటే $A \subseteq B \subseteq V_\beta$ అనుకుందాం. అప్పుడు
+$A \subseteq V_\beta$. కాబట్టి $A \in V_\alpha$.
+\olref{Valphatrans} కోసం, $x \in A \in V_\alpha$ అయితే
+$A \subseteq V_\beta$. అందువల్ల $x \in V_\beta$.
+ఆగమన పరికల్పన ప్రకారం $V_\beta$ సంక్రామక సమితి కాబట్టి
+$x \subseteq V_\beta$. అందువల్ల $x \in V_\alpha$.
 
-$\alpha$ సీమా క్రమసంఖ్య అనుకుందాం. \olref{Valphacum} కోసం, $\gamma \in \alpha$ అయితే $\gamma \in \ordsucc{\gamma} \in \alpha$; ఊహ ప్రకారం $V_\gamma \in V_{\ordsucc{\gamma}}$, కాబట్టి $V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$. \olref{Valphatrans}, \olref{Valphapotent} కోసం, సంక్రమణ (వరుసగా సమర్థ) సమితుల సమ్మేళనం కూడా సంక్రమణ (వరుసగా సమర్థ) సమితి అని గమనిస్తే చాలు.
+$\alpha$ సీమా క్రమసంఖ్య అనుకుందాం. \olref{Valphacum}ను
+చూపడానికి, $\gamma \in \alpha$ అనుకుందాం. అప్పుడు
+$\gamma \in \ordsucc{\gamma} \in \alpha$. ఆగమన పరికల్పన
+ప్రకారం $V_\gamma \in V_{\ordsucc{\gamma}}$, కాబట్టి
+$V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$.
+\olref{Valphatrans}, \olref{Valphapotent} కోసం, సంక్రామక
+సమితుల సమ్మేళనం సంక్రామకమనీ సమర్థ సమితుల సమ్మేళనం
+సమర్థమైనదనీ గమనిస్తే చాలు.
 \end{proof}
 
 \begin{lem}\ollabel{Valphanotref}
@@ -34,26 +57,45 @@ $\alpha$ సీమా క్రమసంఖ్య అనుకుందాం. \
 \end{lem}
 
 \begin{proof}
-అతిపరిమిత ఆగమనం ద్వారా. స్పష్టంగా $V_\emptyset \notin V_\emptyset$.
+అతిపరిమిత ఆగమనంతో నిరూపిద్దాం. $V_\emptyset \notin V_\emptyset$ అనేది స్పష్టం.
 
-$V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ అయితే $V_{\ordsucc{\alpha}} \subseteq V_\alpha$; ఇంకా \olref{Valphabasicprops} ప్రకారం $V_\alpha \in V_{\ordsucc{\alpha}}$ కనుక $V_\alpha \in V_\alpha$. దీని వ్యతిరేక రూపంలో, $V_\alpha \notin V_\alpha$ అయితే $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
+$V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ అయితే $V_{\ordsucc{\alpha}} \subseteq V_\alpha$; ఇంకా \olref{Valphabasicprops} ప్రకారం $V_\alpha \in V_{\ordsucc{\alpha}}$ కనుక $V_\alpha \in V_\alpha$. దీని ప్రతివిపర్యయం ప్రకారం, $V_\alpha \notin V_\alpha$ అయితే $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
 
 $\alpha$ సీమా క్రమసంఖ్య కాగా $V_\alpha \in V_\alpha = \bigcup_{\beta \in
-\alpha}V_\beta$ అయితే, ఏదో $\beta \in \alpha$కు $V_\alpha \in V_\beta$; అయితే $V_\beta \in V_\alpha$ కూడా, అందువల్ల \olref{Valphabasicprops}ను రెండుసార్లు వాడితే $V_\beta \in V_\beta$. దీని వ్యతిరేక రూపంలో, ప్రతి $\beta \in \alpha$కు $V_\beta \notin V_\beta$ అయితే $V_\alpha \notin V_\alpha$.
+\alpha}V_\beta$ అయితే, ఏదో $\beta \in \alpha$కు $V_\alpha \in V_\beta$; అయితే $V_\beta \in V_\alpha$ కూడా, అందువల్ల \olref{Valphabasicprops}ను రెండుసార్లు వాడితే $V_\beta \in V_\beta$. దీని ప్రతివిపర్యయం ప్రకారం, ప్రతి $\beta \in \alpha$కు $V_\beta \notin V_\beta$ అయితే $V_\alpha \notin V_\alpha$.
 \end{proof}
 
 \begin{cor}
-ఏ క్రమసంఖ్యలు $\alpha, \beta$కైనా: $\alpha \in \beta$ అప్పుడూ అప్పుడే $V_\alpha \in V_\beta$.
+$\alpha, \beta$ ఏ రెండు క్రమసంఖ్యలైనా, $\alpha \in \beta$
+అయినప్పుడు, అప్పుడే మాత్రమే $V_\alpha \in V_\beta$.
 \end{cor}
 
 \begin{proof}
-ఒక దిశను \Olref{Valphabasicprops} ఇస్తుంది. తిరిగి, $V_\alpha \in V_\beta$ అనుకుందాం. \olref{Valphanotref} ప్రకారం $\alpha \neq \beta$; అలాగే $\beta \notin \alpha$, ఎందుకంటే అలా అయితే $V_\beta \in V_\alpha$; అప్పుడు \olref{Valphabasicprops}ను రెండుసార్లు వాడితే $V_\beta \in V_\beta$, ఇది \olref{Valphanotref}కు విరుద్ధం. కాబట్టి త్రిభేద ధర్మం ప్రకారం $\alpha \in \beta$.
+ఒక దిశలో కావలసిన ఫలితం \Olref{Valphabasicprops} నుంచి వస్తుంది.
+మరో దిశ కోసం $V_\alpha \in V_\beta$ అనుకుందాం.
+\olref{Valphanotref} ప్రకారం $\alpha \neq \beta$.
+అలాగే $\beta \notin \alpha$. ఒకవేళ ఆ సభ్యత్వం ఉంటే,
+$V_\beta \in V_\alpha$ అవుతుంది. అప్పుడు
+\olref{Valphabasicprops}ను రెండుసార్లు వాడితే $V_\beta \in V_\beta$,
+ఇది \olref{Valphanotref}కు విరుద్ధం.
+కాబట్టి త్రివిధత ప్రకారం $\alpha \in \beta$.
 \end{proof}
 \noindent
-ఇవన్నీ ప్రతి $V_\alpha$ను స్థాయిక్రమంలోని $\alpha$వ దశగా భావించడానికి అనుమతిస్తాయి. ఎందుకంటే:
+ఈ ఫలితాల వల్ల ప్రతి $V_\alpha$ను స్థాయిక్రమంలోని $\alpha$వ దశగా
+భావించవచ్చు. కారణం ఇలా ఉంది.
 
-క్రమసంఖ్యల వాడకం పునరావర్తన భావనను అనుసరిస్తుంది కాబట్టి, మన $V_\alpha$లు ఒక \emph{పునరావర్తన} ప్రక్రియలో ఏర్పడినవిగా భావించవచ్చు. అంతేకాక, ఒక దశ మరొకదానికి ముందు ఏర్పడితే, అంటే $V_\beta \in V_\alpha$, అంటే $\beta \in \alpha$ అయితే, $V_\beta \subseteq V_\alpha$ కాబట్టి నిర్మాణ ప్రక్రియ \emph{సంచితమైనది}. చివరగా, ఏ ఉత్తరవర్తి దశ $V_{\ordsucc{\alpha}}$ అయినా తన ముందు దశ $V_\alpha$ యొక్క ఘాత సమితి కాబట్టి, ముందరి దశలలో అందుబాటులో ఉన్న సమితుల \emph{అన్ని} సాధ్యమైన సమాహారాలను నిజంగానే ఏర్పరుస్తున్నాం.
+క్రమసంఖ్యలు దశలు ఒకదాని తరువాత మరొకటి ఏర్పడే క్రమాన్ని
+సూచిస్తాయి. అందువల్ల $V_\alpha$లు ఒక \emph{దశలవారీ}
+ప్రక్రియలో ఏర్పడినవిగా భావించవచ్చు. ఒక దశ మరొక దశకు ముందు
+ఏర్పడితే, అంటే $V_\beta \in V_\alpha$, లేదా అదే అర్థంలో
+$\beta \in \alpha$ అయితే, $V_\beta \subseteq V_\alpha$. కనుక
+ఈ నిర్మాణ ప్రక్రియ \emph{సంచితమైనది}. చివరగా, ఏ ఉత్తరవర్తి
+దశ $V_{\ordsucc{\alpha}}$ అయినా దానికి సరిగ్గా ముందున్న దశ $V_\alpha$కు
+ఘాత సమితి. కాబట్టి ముందరి దశల్లో లభించిన సమితులతో ఏర్పడగల
+\emph{సమాహారాలన్నింటినీ} నిజంగానే ఏర్పరుస్తున్నాం.
 
-సంక్షిప్తంగా: $\ZFminus$తో, సమితుల సంచిత-పునరావర్తన స్థాయిక్రమపు మన చిత్రణ \emph{దాదాపు} పూర్తయింది. (అయితే ప్రతిస్థాపనను ఇంకా సమర్థించాలి.)
+క్లుప్తంగా చెప్పాలంటే, $\ZFminus$తో సమితుల సంచిత-దశలవారీ
+స్థాయిక్రమాన్ని వివరించే పని \emph{దాదాపు} పూర్తయింది.
+(అయితే ప్రతిస్థాపనను ఇంకా సమర్థించాలి.)
 
 \end{document}

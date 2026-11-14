@@ -11,23 +11,23 @@
 
 \olfileid{fol}{ntd}{qpr}
 
-\olsection{\usetoken{S}{derivability} మరియు పరిమాణీకరణికాలు}
+\olsection{\usetoken{S}{derivability}, పరిమాణీకరణలు}
 
 \begin{explain}
-  ఈ విభాగంలో స్థాపించే $\Proves$ గురించిన వాస్తవాలను సహజ నిగమన
-  నియమాలు ఇవ్వడం కూడా సంపూర్ణతా సిద్ధాంతానికి అవసరం.
+  సంపూర్ణతా సిద్ధాంతానికి మరో అవసరం ఉంది. ఈ విభాగంలో $\Proves$ గురించి
+  నిరూపించే ఫలితాలు సహజ నిగమన నియమాల నుంచి రావాలి.
 \end{explain}
 
 \begin{thm}
 \ollabel{thm:strong-generalization} $\Gamma$లో గానీ $!A(x)$లో గానీ
-కనిపించని స్థిరాంకం $c$ అయి, $\Gamma \Proves !A(c)$ అయితే,
+కనిపించని స్థిరసంకేతం $c$ అయి, $\Gamma \Proves !A(c)$ అయితే,
 $\Gamma \Proves \lforall[x][!A(x)]$.
 \end{thm}
 
 \begin{proof}
-$\Gamma$ నుంచి $!A(c)$ యొక్క ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} $\delta$ అందాం.
-ఒక \Intro{\lforall} నిగమనాన్ని చేర్చి $\lforall[x][!A(x)]$ యొక్క
-ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} పొందుతాం. $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో
+$\Gamma$ నుంచి $!A(c)$కు ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} $\delta$ అందాం.
+ఒక \Intro{\lforall} నిగమనాన్ని చేరిస్తే $\lforall[x][!A(x)]$కు
+ఒక \tetoken{వ్యుత్పత్తిని}{!!a{derivation}} వస్తుంది. $c$ అనేది $\Gamma$లో గానీ $!A(x)$లో
 గానీ కనిపించదు కనుక ఐగెన్ చరరాశి షరతు నెరవేరుతుంది.
 \end{proof}
 
@@ -42,7 +42,7 @@ $\Gamma$ నుంచి $!A(c)$ యొక్క ఒక \tetoken{వ్యుత
 
 \begin{proof}
 \begin{tagenumerate}{prvEx,prvAll}
-\tagitem{prvEx}{కిందిది $!A(t)$ నుంచి $\lexists[x][!A(x)]$ యొక్క
+\tagitem{prvEx}{కిందిది $!A(t)$ నుంచి $\lexists[x][!A(x)]$కు
   ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}:
 \begin{prooftree}
 \AxiomC{$!A(t)$}
@@ -50,7 +50,7 @@ $\Gamma$ నుంచి $!A(c)$ యొక్క ఒక \tetoken{వ్యుత
 \UnaryInfC{$\lexists[x][!A(x)]$}
 \end{prooftree}}{}
 
-\tagitem{prvAll}{కిందిది $\lforall[x][!A(x)]$ నుంచి $!A(t)$ యొక్క
+\tagitem{prvAll}{కిందిది $\lforall[x][!A(x)]$ నుంచి $!A(t)$కు
   ఒక \tetoken{వ్యుత్పత్తి}{!!a{derivation}}:
 \begin{prooftree}
 \AxiomC{$\lforall[x][!A(x)]$}

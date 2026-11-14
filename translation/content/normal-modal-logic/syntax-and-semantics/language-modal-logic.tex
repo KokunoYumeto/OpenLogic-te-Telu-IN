@@ -11,13 +11,13 @@
 \olsection{మౌలిక మోడల్ తర్కపు భాష}
 
 \begin{defn}
-మోడల్ తర్కపు మౌలిక భాషలో ఇవి ఉంటాయి:
+మౌలిక మోడల్ తర్కపు భాషలో ఇవి ఉంటాయి:
 \begin{enumerate}
   \tagitem{prvFalse}{\tetoken{అసత్యాన్ని}{!!{falsity}} సూచించే ప్రతిజ్ఞావాక్య
     స్థిరాంకం~$\lfalse$.}{}
   \tagitem{prvTrue}{\tetoken{సత్యాన్ని}{!!{truth}} సూచించే ప్రతిజ్ఞావాక్య
     స్థిరాంకం~$\ltrue$.}{}
-  \item \tetoken{లెక్కించదగిన}{!!{denumerable}s}
+  \item \tetoken{అనంతంగా లెక్కించదగిన}{!!{denumerable}s}
     \tetoken{ప్రతిజ్ఞావాక్య చరాల}{!!{propositional variable}s}
     సమితి: $\Obj p_0$, $\Obj p_1$, $\Obj p_2$, \dots
   \item ప్రతిజ్ఞావాక్య సంయోజకాలు: \startycommalist
@@ -34,7 +34,7 @@
 \begin{defn}
 మౌలిక మోడల్ భాషలోని
 \emph{\tetoken{సూత్రాలను}{!!^{formula}s}}
-కింది విధంగా ఆగమనాత్మకంగా నిర్వచిస్తాం:
+ఆగమన పద్ధతిలో కింది విధంగా నిర్వచిస్తాం:
 \begin{enumerate}
 \tagitem{prvFalse}{$\lfalse$ ఒక పరమాణు
   \tetoken{సూత్రం}{!!{formula}}.}{}
@@ -87,21 +87,20 @@
 
 \begin{tagblock}{defNot,defOr,defAnd,defIf,defIff,defTrue,defFalse,defBox,defDiamond}
 \begin{defn}
-నిర్వచిత సంచాలకాలతో నిర్మించిన
-సూత్రాలను కింది విధంగా అర్థం
-చేసుకోవాలి:
+నిర్వచించి ఇచ్చిన సంచాలకాలతో నిర్మించిన సూత్రాలను
+ఇలా అర్థం చేసుకోవాలి.
 
 \begin{tagenumerate}{defTrue,defFalse,defNot,defOr,defAnd,defIf,defIff,defBox,defDiamond}
 
 \tagitem{defTrue}{$\ltrue$ అనేది
-  \iftag{prvFalse}{$\lnot\lfalse$}{$(!A \lor \lnot !A)$;
-    ఇక్కడ $!A$ ఒక నిర్దిష్ట పరమాణు
-    \tetoken{సూత్రం}{!!{formula}}}కు సంక్షిప్త రూపం.}{}
+  \iftag{prvFalse}{$\lnot\lfalse$కు సంక్షిప్త రూపం.}{%
+    $(!A \lor \lnot !A)$కు సంక్షిప్త రూపం. ఇక్కడ $!A$ ఒక నిర్దిష్ట
+    పరమాణు \tetoken{సూత్రం}{!!{formula}}.}}{}
 
 \tagitem{defFalse}{$\lfalse$ అనేది
-  \iftag{prvTrue}{$\lnot\ltrue$}{$(!A \land \lnot !A)$;
-    ఇక్కడ $!A$ ఒక నిర్దిష్ట పరమాణు
-    \tetoken{సూత్రం}{!!{formula}}}కు సంక్షిప్త రూపం.}{}
+  \iftag{prvTrue}{$\lnot\ltrue$కు సంక్షిప్త రూపం.}{%
+    $(!A \land \lnot !A)$కు సంక్షిప్త రూపం. ఇక్కడ $!A$ ఒక నిర్దిష్ట
+    పరమాణు \tetoken{సూత్రం}{!!{formula}}.}}{}
 
 \tagitem{defNot}{$\lnot !A$ అనేది
   $!A \lif \lfalse$కు సంక్షిప్త రూపం.}{}
@@ -117,11 +116,7 @@
 \tagitem{defIf}{$!A \lif !B$ అనేది
   \iftag{prvOr}{$\lnot !A \lor !B$}{$\lnot (!A \land \lnot !B)$}కు
   సంక్షిప్త రూపం.
-  \sourcecorrection{OLTENMLLAN-001}{ఆంగ్ల మూలంలోని
-  మొదటి ప్రత్యామ్నాయ వ్యక్తీకరణ చివర జతలేని
-  ముగింపు కుండలీకరణ ఉంది. దాన్ని మాత్రమే
-  తొలగించాం; నిషేధం, వికల్పం, రెండు
-  ఉపసూత్రాలు యథాతథంగా ఉన్నాయి.}}{}
+}{}
 
 \tagitem{defIff}{$!A \liff !B$ అనేది
   $(!A \lif !B) \land (!B \lif !A)$కు
