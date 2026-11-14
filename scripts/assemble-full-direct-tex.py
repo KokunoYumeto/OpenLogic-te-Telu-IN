@@ -89,12 +89,19 @@ PREAMBLE = r"""% ఓపెన్ లాజిక్ తెలుగు — ప�
   BoldFont=NotoSerifTelugu-Bold.ttf,
   ItalicFont=NotoSerifTelugu-Regular.ttf,
   BoldItalicFont=NotoSerifTelugu-Bold.ttf]
-\usepackage[Latin,Telugu]{ucharclasses}
-\setTransitionsForLatin{\rmfamily}{}
-\setTransitionTo{Telugu}{\telugufont}
+\usepackage[Telugu]{ucharclasses}
+\setTransitionsForTelugu{\begingroup\telugufont}{\endgroup}
 \XeTeXgenerateactualtext=1
 \input{upstream/sty/open-logic.sty}
 \input{upstream/sty/open-logic-defer.sty}
+% The two completeness references use the contrapositive of this proposition.
+\newcommand{\teluguConsistencyReference}[1]{%
+  \oliflabeldef{#1:axd:prv:prop:provability-exhaustive}{%
+    \csletcs{r@pl:prp:axd:prop:phi}{r@#1:axd:prv:prop:provability-exhaustive}%
+    \csletcs{r@pl:prp:axd:prop:phi@cref}{r@#1:axd:prv:prop:provability-exhaustive@cref}%
+  }{}%
+}
+\AtBeginDocument{\iftag{FOL}{\teluguConsistencyReference{fol}}{\teluguConsistencyReference{pl}}}
 \includeenv{editorial}
 \problemsperchapter
 \let\cleardoublepage\clearpage
@@ -104,8 +111,16 @@ PREAMBLE = r"""% ఓపెన్ లాజిక్ తెలుగు — ప�
 \providecommand{\MPని}{\MP{}\ను}
 \providecommand{\QRతో}{\QR{}{\telugufont తో}}
 \providecommand{\dotsను}{\dots{}\ను}
-\providecommand{\dotsకు}{\dots{}\telugufont కు}
+\providecommand{\dotsకు}{\dots{}{\telugufont కు}}
+\providecommand{\dotsలను}{\dots{}{\telugufont లను}}
+\providecommand{\Cutను}{\Cut{}\ను}
+\providecommand{\FalseClను}{\FalseCl{}\ను}
 \providecommand{\sourcecorrection}[2]{}
+\let\openLogicUseToken\usetoken
+\newcommand{\teluguUseToken}[2]{%
+  \ifcsname TOK@#1@#2\endcsname\openLogicUseToken{#1}{#2}\else#1\fi}
+\let\usetoken\teluguUseToken
+% TELUGU TOKEN DEFINITIONS
 % దిగుమతుల శరీరాలన్నీ ఇప్పటికే ఇక్కడ ఉన్నాయి; మళ్లీ లోడ్ చేయవద్దు.
 \RenewDocumentCommand\olimport{s o m o}{}
 \ProvideDocumentCommand\subfile{m}{}
@@ -146,7 +161,14 @@ POSTAMBLE = r"""
 def assemble() -> tuple[bytes, dict]:
     rows = source_rows()
     hashes = accepted_unit_hashes()
-    parts = [PREAMBLE.encode("utf-8")]
+    tokens = json.loads((ROOT / "translation/TELUGU_TOKENS.json").read_text(encoding="utf-8"))
+    definitions = []
+    for key, entry in tokens["tokens"].items():
+        for form, field in (("s", "singular"), ("S", "singular"), ("p", "plural"), ("P", "plural")):
+            definitions.append(r"\definetoken{" + form + "}{" + key + "}{" + entry[field] + "}")
+        for form in ("a", "A"):
+            definitions.append(r"\definetoken{" + form + "}{" + key + "}{" + tokens["article"] + "}")
+    parts = [PREAMBLE.replace("% TELUGU TOKEN DEFINITIONS", "\n".join(definitions)).encode("utf-8")]
     offset = len(parts[0])
     entries = []
     for row in rows:

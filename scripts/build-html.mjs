@@ -85,9 +85,6 @@ function canonicalLabelCatalog(rows){
  return labels;
 }
 const knownLabels=canonicalLabelCatalog(allManifest);
-// This label is referenced twice by frozen OLP-0714 but is defined nowhere
-// in the 722-file source archive. Preserve a visible unresolved marker.
-knownLabels.add('pl:prp:axd:prop:phi');
 const ledger=jsonl('SEGMENT_CANON_USE.jsonl');
 const assetsUsed=new Map();
 const compiledManifest=JSON.parse(fs.readFileSync(path.join(root,'editions/reader-assets/diagrams/manifest.json'),'utf8'));

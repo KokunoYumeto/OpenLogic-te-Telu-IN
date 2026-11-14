@@ -2,7 +2,7 @@
 
 ఇది [Open Logic Project](https://openlogicproject.org/) రచించిన *The Open Logic Text*కు కృత్రిమ మేధతో రూపొందించిన తెలుగు అనువాదం. స్థిర ఆంగ్ల మూలం `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`లోని 722 TeX విభాగాలు ఇందులో ఉన్నాయి. సమితులు, సంబంధాలు, ప్రమేయాలు, ప్రతిజ్ఞావాక్య తర్కం, విధేయ తర్కం, నిరూపణ సిద్ధాంతం, గణనీయత, అసంపూర్ణత, సమితి సిద్ధాంతం తదితర విషయాలు ఇందులో ఉన్నాయి.
 
-[పూర్తి PDF](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.3-full-olp0722/openlogic-te-Telu-IN-full-OLP0722-v1.0.3.pdf) · [వెబ్ పాఠక రూపం](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/full/) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.3-full-olp0722/openlogic-te-Telu-IN-full-OLP0722-v1.0.3.epub) · [విడుదల, ఆఫ్‌లైన్ HTML, LaTeX](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.3-full-olp0722)
+[పూర్తి PDF](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.4-full-olp0722/openlogic-te-Telu-IN-full-OLP0722-v1.0.4.pdf) · [వెబ్ పాఠక రూపం](https://kokunoyumeto.github.io/OpenLogic-te-Telu-IN/full/) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/download/v1.0.4-full-olp0722/openlogic-te-Telu-IN-full-OLP0722-v1.0.4.epub) · [విడుదల, ఆఫ్‌లైన్ HTML, LaTeX](https://github.com/KokunoYumeto/OpenLogic-te-Telu-IN/releases/tag/v1.0.4-full-olp0722)
 
 ప్రతి తెలుగు విభాగానికి అసలు మూల మార్గం, OLP గుర్తింపు ఉన్నాయి. HTML, EPUBలో గణితం MathMLలో ఉంది. ప్రతి విభాగానికి ఆంగ్ల మూలాన్ని కూడా తెరవవచ్చు. మూలంలో గమ్యం లేని రెండు సూచనలను పాఠ్యంలో గుర్తించాం. స్థిర మూలంలో జీవనచరిత్రల ఛాయాచిత్ర ఫైళ్లు అందుబాటులో లేవు.
 

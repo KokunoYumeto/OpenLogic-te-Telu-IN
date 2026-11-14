@@ -293,7 +293,12 @@ const names={
  te:{defn:'నిర్వచనం',ex:'ఉదాహరణ',prop:'ప్రతిపాదన',thm:'సిద్ధాంతం',lem:'ఉపసిద్ధాంతం',cor:'పర్యవసానం',prob:'అభ్యాసం',proof:'నిరూపణ',figure:'పటం'},
  en:{defn:'Definition',ex:'Example',prop:'Proposition',thm:'Theorem',lem:'Lemma',cor:'Corollary',prob:'Exercise',proof:'Proof',figure:'Figure'}
 };
-function canonicalReferenceKey(key){
+function canonicalReferenceKey(key,labels){
+  if(key==='pl:prp:axd:prop:phi'){
+    // Both completeness proofs use the contrapositive of this proposition.
+    const firstOrder='fol:axd:prv:prop:provability-exhaustive';
+    return labels.has(firstOrder)?firstOrder:'pl:axd:prv:prop:provability-exhaustive';
+  }
   // Compatibility for an earlier Telugu-only rename, not an OLP source erratum.
   if(key==='int:pty:typ:tab:tN3ip')return 'int:pty:typ:tab:tN2ip';
   if(key==='pl:prp:axd:prop:prov-incons')return 'fol:axd:prv:prop:prov-incons';
@@ -739,7 +744,7 @@ export class Reader {
       const argument=readDelimited(text,cursor,'{','}');if(!argument)return null;cursor=argument.end;
       const keys=['ref','cref','Cref','eqref'].includes(name)?argument.value.split(',').map(value=>value.trim()).filter(Boolean):[this.refKey(options,argument.value)];
       const numbers=keys.map(key=>{
-        const targetKey=canonicalReferenceKey(key);
+        const targetKey=canonicalReferenceKey(key,this.labels);
         const target=this.labels.get(targetKey),knownMissing=!target&&this.knownLabels.has(key);
         this.references.push({key,target_key:targetKey,resolved:!!target,known_missing:knownMissing,context:'math'});
         if(!target&&!knownMissing&&!this.collect)throw new Error('Unknown reference '+key);
@@ -882,7 +887,7 @@ export class Reader {
           const open=n.name==='eqref'?'(':'',close=n.name==='eqref'?')':'';
           paragraph+=open;
           paragraph+=keys.map(key=>{
-            const targetKey=canonicalReferenceKey(key);
+            const targetKey=canonicalReferenceKey(key,this.labels);
             const target=this.labels.get(targetKey),knownMissing=!target&&this.knownLabels.has(key);
             this.references.push({key,target_key:targetKey,resolved:!!target,known_missing:knownMissing,context:'prose'});
             if(!target&&!knownMissing&&!this.collect)throw new Error('Unknown reference '+key);
