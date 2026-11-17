@@ -24,7 +24,8 @@
 ఒక టాబ్లో శాఖలో $\sFmla{\True}{!A}$, $\sFmla{\False}{!A}$ రెండూ ఉంటే, లేదా $\sFmla{\True}{\lfalse}$ ఉంటే, ఆ శాఖ \emph{మూసుకుంది} అంటాం. ప్రతి శాఖా మూసుకుంటే టాబ్లో అంతా మూసుకుందని అంటాం. ఉదాహరణకు, $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
 (!A \lor !C)$కు ఒక మూసుకున్న టాబ్లో ఇది. అంటే $\sFmla{\True}{!A \lor (!B \land
 !C)}$, $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$తో మొదలుపెడతాం:
-\begin{oltableau}
+\begin{maxwidth}
+  \begin{tableau}{}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
     just=\TAss, checked
     [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
@@ -82,7 +83,8 @@
       ]
     ]
   ]
-\end{oltableau}
+\end{tableau}
+\end{maxwidth}
 
 చిహ్నిత \tetoken{సూత్రం}{!!a{formula}} పక్కన తనిఖీ గుర్తు ఉంటే, దాని కింద ఉన్న అన్ని శాఖల్లోనూ దానికి సంబంధించిన నియమాన్ని వర్తింపజేశామని అర్థం. $\otimes$ చిహ్నం ఆ శాఖ మూసుకుందని తెలుపుతుంది. నియమాల పక్కన ఇచ్చిన పంక్తి సంఖ్యలు వాటిని ఏ చిహ్నిత \tetoken{సూత్రాలకు}{!!{formula}s} వర్తింపజేశామో తెలుపుతాయి. అంటే నియమాన్ని అదే శాఖలో సూచించిన పంక్తిలోని \tetoken{సూత్రానికి}{!!{formula}} వర్తింపజేశాం.
 
@@ -114,7 +116,9 @@ c_0$ నుంచి), ప్రారంభ \tetoken{సూత్రాల్�
 స్వీకృతం అవుతుంది. టాబ్లోలో ఒకదాని వెంట మరొకటి వచ్చే కొన్ని శీర్షాలకు ఒకే
 సీక్వెంట్‌ను గుర్తుగా ఇస్తాం. పునరుక్తులను తొలగించండి. ఉదాహరణకు,
 పై టాబ్లోను కింది \tetoken{నిరూపణగా}{!!{proof}} మార్చవచ్చు.
-\[\small
+
+\begin{maxwidth}
+$
 \Axiom$!A \fCenter !A, !B$
 \RightLabel{\RightR{\lor}}
 \UnaryInf$!A \fCenter !A \lor !B$
@@ -139,7 +143,7 @@ c_0$ నుంచి), ప్రారంభ \tetoken{సూత్రాల్�
 \RightLabel{\LeftR{\lor}}
 \BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
 (!A \lor !C)$
-\DisplayProof
-\]
+\DisplayProof$
+\end{maxwidth}
 
 \end{document}

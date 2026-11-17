@@ -94,16 +94,18 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
       $\mSat{M}{p}[v]$ కనుక
       $\mSat{M}{\indfrm}[w]$.}
 
-    \tagitem{prvNot}{\iftag{probNot}{అభ్యాసం.}{\indcase{!A}{\lnot
-          !B}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+    \tagitem{prvNot}{\indcase{!A}{\lnot !B}
+         {\iftag{probNot}{అభ్యాసం.}
+         {$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat/{M}{!B}[w]$. ఆగమన పరికల్పన ప్రకారం,
           $\mSat/{M}{!B}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat/{M^*}{!B}[{[w]}]$. చివరగా,
           $\mSat/{M^*}{!B}[{[w]}]$ అయితే, అప్పుడు మాత్రమే
           $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
 
-    \tagitem{prvAnd}{\iftag{probAnd}{అభ్యాసం.}{\indcase{!A}{(!B \land
-          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land !C)}
+          {\iftag{probAnd}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat{M}{!B}[w]$, $\mSat{M}{!C}[w]$ రెండూ.
           ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
           అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
@@ -113,8 +115,9 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
           $\mSat{M^*}{!B}[{[w]}]$,
           $\mSat{M^*}{!C}[{[w]}]$ రెండూ.}}}{}
 
-    \tagitem{prvOr}{\iftag{probOr}{అభ్యాసం.}{\indcase{!A}{(!B \lor
-          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor !C)}
+          {\iftag{probOr}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$.
           ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
           అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
@@ -124,8 +127,9 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
           $\mSat{M^*}{!B}[{[w]}]$ లేదా
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIf}{\iftag{probIf}{అభ్యాసం.}{\indcase{!A}{(!B \lif
-          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif !C)}
+          {\iftag{probIf}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat/{M}{!B}[w]$ లేదా $\mSat{M}{!C}[w]$.
           ఆగమన పరికల్పన ప్రకారం, $\mSat{M}{!B}[w]$
           అయితే, అప్పుడు మాత్రమే $\mSat{M^*}{!B}[{[w]}]$;
@@ -135,8 +139,9 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
           $\mSat/{M^*}{!B}[{[w]}]$ లేదా
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIff}{\iftag{probIff}{అభ్యాసం.}{\indcase{!A}{(!B \liff
-          !C)}{$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff !C)}
+          {\iftag{probIff}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అయితే, అప్పుడు మాత్రమే
           $\mSat{M}{!B}[w]$ మరియు $\mSat{M}{!C}[w]$,
           లేదా $\mSat/{M}{!B}[w]$ మరియు
           $\mSat/{M}{!C}[w]$. ఆగమన పరికల్పన ప్రకారం,
@@ -150,8 +155,9 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
           $\mSat/{M^*}{!B}[{[w]}]$ మరియు
           $\mSat/{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvBox}{\iftag{probBox}{అభ్యాసం.}{\indcase{!A}{\Box
-          !B}{$\mSat{M}{\indfrm}[w]$ అనుకుందాం.
+    \tagitem{prvBox}{\indcase{!A}{\Box !B}
+          {\iftag{probBox}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అనుకుందాం.
           $\mSat{M^*}{\indfrm}[{[w]}]$ అని చూపడానికి,
           $R^*[w][v]$ అయ్యే $v$ను తీసుకుందాం.
           \olref{defn:filtration}\olref{defn:filtration-R2} వల్ల
@@ -167,8 +173,9 @@ V(p)$కు $w \equiv u$ అని మాత్రమే తేల్చగల�
           $\mSat{M}{!B}[v]$; $v$ ఏదైనా కావచ్చు కనుక
           $\mSat{M}{\indfrm}[w]$.}}}{}
 
-    \tagitem{prvDiamond}{\iftag{probDiamond}{అభ్యాసం.}{\indcase{!A}{\Diamond
-          !B}{$\mSat{M}{\indfrm}[w]$ అనుకుందాం. అప్పుడు
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond !B}
+          {\iftag{probDiamond}{అభ్యాసం.}
+          {$\mSat{M}{\indfrm}[w]$ అనుకుందాం. అప్పుడు
           ఏదో $v \in W$కు $Rwv$, $\mSat{M}{!B}[v]$.
           ఆగమన పరికల్పన వల్ల $\mSat{M^*}{!B}[{[v]}]$;
           \olref{defn:filtration}\olref{defn:filtration-R1} వల్ల

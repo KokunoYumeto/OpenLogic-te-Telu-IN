@@ -162,7 +162,8 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$; $\Xi = \Delta$ కనుక అదే
   $!C \in \Xi$ కూడా. అందువల్ల ప్రతి సందర్భంలో
   \iftag{FOL}{$\Struct M$}{$\pAssign{v}$} అనేది
-  $!A \land !B, \Gamma \Sequent \Delta$ను సంతృప్తిపరుస్తుంది.
+  $!A \land !B, \Gamma \Sequent \Delta$, అంటే
+  $\Theta \Sequent \Xi$ను సంతృప్తిపరుస్తుంది.
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ఏదైనా కావచ్చు
   కనుక $!A \land !B, \Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుంది.
   $!B$ నుంచి $!A \land !B$ను నిగమించే సందర్భాన్ని కూడా ఇదే విధంగా,
@@ -205,22 +206,21 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   నిష్కర్ష కూడా చెల్లుబాటు అవుతుందని చూపాలి.
   ఏదో ఒక \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}ను తీసుకుందాం.
   $!A, \Gamma \Sequent \Delta, !B$ చెల్లుబాటు కనుక కింది సందర్భాల్లో
-  కనీసం ఒకటి నెరవేరుతుంది: (a)
-  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)
-  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, (c) ఏదో
+  కనీసం ఒకటి నెరవేరుతుంది: (a)~$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$, (b)~$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$, (c)~ఏదో
   $~!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$, లేదా
-  (d) ఏదో $!C \in \Delta$కు
-  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (a) లేదా (b) సందర్భంలో
+  (d)~ఏదో $!C \in \Delta$కు
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (a) లేదా~(b) సందర్భంలో
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lif !B}$; అందువల్ల
   ఒక $!C \in \Delta, !A \lif !B$కు
-  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (c) సందర్భంలో ఏదో
+  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. (c)~సందర్భంలో ఏదో
   $!C \in \Gamma$కు $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$.
-  (d) సందర్భంలో ఏదో $!C \in \Delta$కు
+  (d)~సందర్భంలో ఏదో $!C \in \Delta$కు
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. ప్రతి సందర్భంలో
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
-  $\Gamma \Sequent \Delta, !A \lif !B$ను సంతృప్తిపరుస్తుంది.
+  $\Gamma \Sequent \Delta, !A \lif !B$, అంటే
+  $\Theta \Sequent \Xi$ను సంతృప్తిపరుస్తుంది.
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ఏదైనా కావచ్చు
-  కనుక $\Gamma \Sequent \Delta, !A \lif !B$ చెల్లుబాటు అవుతుంది.
+  కనుక $\Theta \Sequent \Xi$ చెల్లుబాటు అవుతుంది.
   \iftag{FOL}{%
 \item చివరి నిగమనం \LeftR{\lforall}: అప్పుడు ఒక \tetoken{సూత్రం}{!!a{formula}}~$!A(x)$,
   ఒక సంవృత పదం~$t$ ఉండి, $\pi$ ఇలా ముగుస్తుంది:
@@ -233,16 +233,17 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ అనే నిష్కర్ష
   చెల్లుబాటు అవుతుందని చూపాలి. ఒక \tetoken{నిర్మాణం}{!!a{structure}}~$\Struct M$ను
   పరిశీలించండి. $!A(t), \Gamma \Sequent \Delta$ అనే పూర్వాధారం
-  చెల్లుబాటు కనుక, (a) $\Sat/{M}{!A(t)}$, (b) ఏదో
+  చెల్లుబాటు కనుక, (a)~$\Sat/{M}{!A(t)}$, (b)~ఏదో
   $!C \in \Gamma$కు $\Sat/{M}{!C}$, లేదా (c) ఏదో
-  $!C \in \Delta$కు $\Sat{M}{!C}$. (a) సందర్భంలో
+  $!C \in \Delta$కు $\Sat{M}{!C}$. (a)~సందర్భంలో
   \olref[syn][sem]{prop:quant-terms} ప్రకారం,
   $\Sat{M}{\lforall[x][!A(x)]}$ అయితే $\Sat{M}{!A(t)}$. కానీ
-  $\Sat/{M}{!A(t)}$ కనుక $\Sat/{M}{\lforall[x][!A(x)]}$. (b), (c)
+  $\Sat/{M}{!A(t)}$ కనుక $\Sat/{M}{\lforall[x][!A(x)]}$. (b),~(c)
   సందర్భాల్లో కూడా $\Struct{M}$ అనేది
   $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ను సంతృప్తిపరుస్తుంది.
   $\Struct M$ ఏ నిర్మాణమైనా కావచ్చు కనుక
-  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ చెల్లుబాటు అవుతుంది.
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$, అంటే
+  $\Theta \Sequent \Xi$, చెల్లుబాటు అవుతుంది.
 \item చివరి నిగమనం \RightR{\lexists}: అభ్యాసం.
 \item చివరి నిగమనం \RightR{\lforall}: అప్పుడు ఒక
   \tetoken{సూత్రం}{!!a{formula}}~$!A(x)$, ఒక \tetoken{స్థిరసంకేతం}{!!a{constant}}~$a$ ఉండి, $\pi$ ఇలా ముగుస్తుంది:
@@ -256,10 +257,10 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   $\Gamma$, $\Delta$లలో కనిపించదు. చివరి నిగమనం పూర్వాధారం
   చెల్లుబాటు అవుతుందని ఆగమన పరికల్పన చెబుతుంది. దాని నిష్కర్ష కూడా
   చెల్లుబాటు అవుతుందని చూపాలి. అంటే ఏ \tetoken{నిర్మాణం}{!!{structure}}~$\Struct M$కైనా,
-  (a) $\Sat{M}{\lforall[x][!A(x)]}$, (b) ఏదో $!C \in \Gamma$కు
+  (a)~$\Sat{M}{\lforall[x][!A(x)]}$, (b)~ఏదో $!C \in \Gamma$కు
   $\Sat/{M}{!C}$, లేదా (c) ఏదో $!C \in \Delta$కు $\Sat{M}{!C}$.
 
-  $\Struct{M}$ ఏ \tetoken{నిర్మాణమైనా}{!!{structure}} కావచ్చు. (b) లేదా (c)
+  $\Struct{M}$ ఏ \tetoken{నిర్మాణమైనా}{!!{structure}} కావచ్చు. (b) లేదా~(c)
   నెరవేరితే పని పూర్తయింది. కాబట్టి ఆ రెండింటిలో ఏదీ నెరవేరదని అనుకుందాం. ప్రతి
   $!C \in \Gamma$కు $\Sat{M}{!C}$; ప్రతి $!C \in \Delta$కు
   $\Sat/{M}{!C}$. మనం (a), అంటే
@@ -298,13 +299,11 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
     {$\pAssign{v}$ అనే ఒక \tetoken{సత్యమూల్య కేటాయింపును}{!!a{valuation}}} తీసుకోండి. ఆగమన పరికల్పన
   ప్రకారం పూర్వాధారాలు చెల్లుబాటు అవుతాయి. కాబట్టి
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} రెండు పూర్వాధారాలనూ
-  సంతృప్తిపరుస్తుంది. రెండు సందర్భాలను వేరుచేద్దాం: (a)
-  $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$; (b)
-  $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. (a) సందర్భంలో ఎడమ
+  సంతృప్తిపరుస్తుంది. రెండు సందర్భాలను వేరుచేద్దాం: (a)~$\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$; (b)~$\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. (a)~సందర్భంలో ఎడమ
   పూర్వాధారాన్ని సంతృప్తిపరచాలంటే
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
   $\Gamma \Sequent \Delta$ను సంతృప్తిపరచాలి. అప్పుడు అది నిష్కర్షను
-  కూడా సంతృప్తిపరుస్తుంది. (b) సందర్భంలో కుడి పూర్వాధారాన్ని
+  కూడా సంతృప్తిపరుస్తుంది. (b)~సందర్భంలో కుడి పూర్వాధారాన్ని
   సంతృప్తిపరచాలంటే \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
   $\Pi \Sequent \Lambda$ను సంతృప్తిపరచాలి. మళ్లీ,
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} నిష్కర్షను
@@ -323,7 +322,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} అనేది
   $\Gamma \Sequent \Delta$ను సంతృప్తిపరిస్తే పని పూర్తయింది. అది
   సంతృప్తిపరచదని అనుకుందాం. ఆగమన పరికల్పన ప్రకారం
-  $\Gamma \fCenter \Delta, !A$ చెల్లుబాటు కనుక
+  $\Gamma \Sequent \Delta, !A$ చెల్లుబాటు కనుక
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. అదే విధంగా
   $\Gamma \Sequent \Delta, !B$ చెల్లుబాటు కనుక
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!B}$. అందువల్ల
